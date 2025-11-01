@@ -1,9 +1,11 @@
 // Copyright 2025 AptS:1547, AptS:1548
 // SPDX-License-Identifier: Apache-2.0
 
-import { TriangleLogo } from "@/components/TriangleLogo";
-import { CharacterAccordion } from "@/components/CharacterAccordion";
-import { CharacterMobileView } from "@/components/CharacterMobileView";
+import {
+  TriangleLogo,
+  CharacterAccordion,
+  CharacterMobileView,
+} from "@/components";
 import { CharacterCardData } from "@/types/character";
 
 async function getCharacters(): Promise<CharacterCardData[]> {

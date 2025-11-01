@@ -4,8 +4,7 @@
 "use client";
 
 import { TimelineYear } from "@/types/timeline";
-import { TimelineLine } from "@/components/TimelineLine";
-import { TimelineEventCard } from "@/components/TimelineEventCard";
+import { TimelineLine, TimelineEventCard } from "@/components";
 
 interface TimelineClientProps {
   years: TimelineYear[];

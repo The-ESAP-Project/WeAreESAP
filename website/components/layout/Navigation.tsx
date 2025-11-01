@@ -6,8 +6,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { TriangleLogo } from "./TriangleLogo";
-import { ThemeToggle } from "./ThemeToggle";
+import { TriangleLogo, ThemeToggle } from "@/components/ui";
 
 const navLinks = [
   { href: "/tech", label: "技术设定" },

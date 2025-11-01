@@ -5,8 +5,7 @@
 
 import { useState } from "react";
 import { TechModule } from "@/types/tech";
-import { TechTabs } from "@/components/TechTabs";
-import { TechModuleView } from "@/components/TechModuleView";
+import { TechTabs, TechModuleView } from "@/components";
 
 interface TechPageClientProps {
   modules: TechModule[];
