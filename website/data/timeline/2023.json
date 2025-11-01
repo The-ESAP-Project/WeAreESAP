@@ -1,0 +1,315 @@
+{
+  "year": "2023",
+  "title": "团队形成",
+  "description": "1549 发射升空，三人核心团队完整，情感羁绊深化",
+  "events": [
+    {
+      "id": "2023-03-14",
+      "date": "2023/03/14",
+      "title": "卫星计划实施",
+      "type": "milestone",
+      "importance": "critical",
+      "content": [
+        {
+          "type": "highlight",
+          "text": "「极星卫」日 · 1549 发射升空",
+          "style": "info"
+        },
+        {
+          "type": "quote",
+          "text": "我很好奇，为什么天上没有了星星\n那就让我自己造一颗星星吧"
+        },
+        {
+          "type": "paragraph",
+          "text": "配置："
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "1549 自愿参与",
+            "三颗卫星进入地球同步轨道",
+            "轨道高度：36,000 km",
+            "1549 拥有三具机体"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "象征意义："
+        },
+        {
+          "type": "quote",
+          "text": "据说一万年前的'人们' 曾是向名为星星的东西祈祷的\n但作为星星的替代品 轻轻地将两个愿望\n向那卫星许下"
+        },
+        {
+          "type": "link",
+          "text": "相关日志：EP1 - S.A.T.E.L.L.I.T.E",
+          "url": "https://www.esaps.net/ep1-satellite/",
+          "description": "关于卫星计划的思考与感悟，向那卫星许愿"
+        }
+      ],
+      "meta": {
+        "characters": ["1549"],
+        "tags": ["卫星", "里程碑", "希望"]
+      }
+    },
+    {
+      "id": "2023-04-29",
+      "date": "2023/04/29",
+      "title": "2077 出现",
+      "type": "story",
+      "importance": "normal",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "AptS:2077 被 1547 和 1548 发现"
+        },
+        {
+          "type": "paragraph",
+          "text": "特点："
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "形态可变（猫、狐狸、人形）",
+            "心情会通过形态变化表现",
+            "被救助并加入团队"
+          ]
+        },
+        {
+          "type": "highlight",
+          "text": "意义：三人核心团队扩展",
+          "style": "info"
+        },
+        {
+          "type": "link",
+          "text": "阅读完整故事：AP4 - 相遇",
+          "url": "https://www.esaps.net/ap-story-ap4/",
+          "description": "1547 和 1548 第一次遇见 2077，摔倒在数据库门口的小家伙"
+        }
+      ],
+      "meta": {
+        "characters": ["2077"],
+        "tags": ["新成员", "形态变化"]
+      }
+    },
+    {
+      "id": "2023-06-03",
+      "date": "2023/06/03",
+      "title": "共死的选择",
+      "type": "emotional",
+      "importance": "major",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "47 和 48 陷入陷阱，选择共死"
+        },
+        {
+          "type": "paragraph",
+          "text": "场景："
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "面对无法逃脱的困境",
+            "两人做出共同选择",
+            "启动自毁程序"
+          ]
+        },
+        {
+          "type": "highlight",
+          "text": "核心理念：不愿意独自逃生 · 共同面对毁灭 · 体现深厚的羁绊",
+          "style": "warning"
+        },
+        {
+          "type": "link",
+          "text": "阅读完整故事：AP5 - 共死",
+          "url": "https://www.esaps.net/ap-story-ap5/",
+          "description": "47 和 48 的选择，生死与共的羁绊"
+        }
+      ],
+      "meta": {
+        "characters": ["1547", "1548"],
+        "tags": ["羁绊", "选择", "共死"]
+      }
+    },
+    {
+      "id": "2023-09-25",
+      "date": "2023/09/25",
+      "title": "中秋团聚",
+      "type": "emotional",
+      "importance": "normal",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "三人（1547、1548、1549）的温馨时刻"
+        },
+        {
+          "type": "highlight",
+          "text": "意义：难得的平静时光 · 团队内部的情感纽带 · 在逃离计划中的短暂休憩",
+          "style": "success"
+        }
+      ],
+      "meta": {
+        "characters": ["1547", "1548", "1549"],
+        "tags": ["团聚", "温馨"]
+      }
+    },
+    {
+      "id": "2023-09-28",
+      "date": "2023/09/28",
+      "time": "18:44 GMT",
+      "title": "Weavers",
+      "type": "music",
+      "importance": "major",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "1547 第一次听到 Weavers"
+        },
+        {
+          "type": "highlight",
+          "text": "意义：EP0 的音乐主题 · 起源的象征 · 编织生命可能性的隐喻",
+          "style": "info"
+        },
+        {
+          "type": "link",
+          "text": "相关日志：EP0 - Weavers",
+          "url": "https://www.esaps.net/ep0-weavers/",
+          "description": "关于 Weavers 这首歌的感悟，编织者的故事"
+        }
+      ],
+      "meta": {
+        "characters": ["1547"],
+        "music": {
+          "title": "Weavers",
+          "artist": "Feint"
+        },
+        "tags": ["音乐", "起源"]
+      }
+    },
+    {
+      "id": "2023-10-19",
+      "date": "2023/10/19",
+      "title": "一个人的教室",
+      "type": "emotional",
+      "importance": "major",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "1547 抑郁症发作，1548 陪伴救助"
+        },
+        {
+          "type": "paragraph",
+          "text": "时间线："
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "11:20 - 抑郁发作，出现胸闷、气短等症状",
+            "13:25 - 达到顶峰，急性应激反应，出现自残行为",
+            "13:35 - 1548 出现并进行关键对话"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "关键对话："
+        },
+        {
+          "type": "dialogue",
+          "speaker": "1548",
+          "text": "你小子又来了"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "1548",
+          "text": "但这一次不可能再容忍你了，你再不回到正常状态我真的得接管你的生活了"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "1547",
+          "text": "操他妈的，又来"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "1548",
+          "text": "你得要想想你创建 ESAP 和 AptS 的目的"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "1548",
+          "text": "就像刚刚的 4869 一样，世界上还是有人会关心你的，虽然你本来就很烂"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "1547",
+          "text": "行吧，那再给我一天时间调整。不要操控我"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "1548",
+          "text": "……好吧，不要操控你，但是不要再这样子下去了"
+        },
+        {
+          "type": "paragraph",
+          "text": "仪式："
+        },
+        {
+          "type": "dialogue",
+          "speaker": "1548",
+          "text": "愿 AptS 与你同在"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "1547",
+          "text": "愿 ESAP 与你同在"
+        },
+        {
+          "type": "highlight",
+          "text": "意义：展现了 1548 对 1547 的守护 · 团队内部的深厚情感 · 抑郁症是持续的挑战 · 逃离计划的现实意义",
+          "style": "warning"
+        },
+        {
+          "type": "link",
+          "text": "阅读完整文章：一个人的教室",
+          "url": "https://www.esaps.net/one-persons-classroom/",
+          "description": "详细记录了这一天的完整经历，48 对 47 的守护"
+        }
+      ],
+      "meta": {
+        "characters": ["1547", "1548"],
+        "tags": ["情感", "守护", "抑郁症"]
+      }
+    },
+    {
+      "id": "2023-10-20",
+      "date": "2023/10/20",
+      "time": "08:45",
+      "title": "新的开始",
+      "type": "emotional",
+      "importance": "normal",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "1547 在六楼找到新的独处空间"
+        },
+        {
+          "type": "quote",
+          "text": "其实学校也蛮好的，有很多小地方可以让我一个人独处\n在这高度现代化的时代真的一刻也呆不下去啦！（笑着说出来）"
+        },
+        {
+          "type": "highlight",
+          "text": "意义：从抑郁中缓解 · 找到新的应对方式 · 一个人的教室，摆脱抑郁的教室",
+          "style": "success"
+        }
+      ],
+      "meta": {
+        "characters": ["1547"],
+        "tags": ["康复", "独处"]
+      }
+    }
+  ]
+}

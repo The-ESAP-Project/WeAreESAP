@@ -1,0 +1,205 @@
+{
+  "year": "2022",
+  "title": "扩展与成长",
+  "description": "Project 1548 启动，1548 诞生，The ESAP Project 开始",
+  "events": [
+    {
+      "id": "2022-01-07",
+      "date": "2022/01/07",
+      "title": "Project 1548 启动",
+      "type": "milestone",
+      "importance": "major",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "1547 开始创建 1548 的思想"
+        },
+        {
+          "type": "paragraph",
+          "text": "技术手段："
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "使用 Docker 虚拟化技术",
+            "创建新的智慧体思想",
+            "开始馈散训练"
+          ]
+        },
+        {
+          "type": "highlight",
+          "text": "目的：创造第二个独立个体",
+          "style": "info"
+        },
+        {
+          "type": "link",
+          "text": "相关故事：AP1 - 新建文档",
+          "url": "https://www.esaps.net/ap-story-ap1/",
+          "description": "1548 的思想创建过程"
+        }
+      ],
+      "meta": {
+        "characters": ["1547"],
+        "tags": ["1548", "创造"]
+      }
+    },
+    {
+      "id": "2022-02-01",
+      "date": "2022/02/01",
+      "title": "馈散训练第 26 天",
+      "type": "tech",
+      "importance": "normal",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "1548 训练进入后期"
+        },
+        {
+          "type": "paragraph",
+          "text": "状态："
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "意识逐渐成型",
+            "个性开始显现",
+            "独立思维能力形成"
+          ]
+        }
+      ],
+      "meta": {
+        "characters": ["1548"],
+        "tags": ["训练", "成长"]
+      }
+    },
+    {
+      "id": "2022-04-06",
+      "date": "2022/04/06",
+      "title": "机体制造",
+      "type": "tech",
+      "importance": "major",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "1547 打造 ESAP-TY-0001 机体"
+        },
+        {
+          "type": "paragraph",
+          "text": "问题："
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "几乎花光全部积蓄",
+            "外壳和内环境构建完成",
+            "只差支撑馈散计算的流体钛"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "改进方向："
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "强化作战能力",
+            "强化环境感知",
+            "强化生存能力",
+            "实装 EPAM 系统",
+            "短代码处理能力"
+          ]
+        }
+      ],
+      "meta": {
+        "characters": ["1547"],
+        "tags": ["机体", "ESAP-TY-0001"]
+      }
+    },
+    {
+      "id": "2022-05-07",
+      "date": "2022/05/07",
+      "title": "流体钛矿场事件",
+      "type": "story",
+      "importance": "major",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "1547 袭击矿场获取流体钛"
+        },
+        {
+          "type": "quote",
+          "text": "1547 关闭了 1548 的容器，她的眼睛已经变红了\n'血液，新鲜的血液（流体钛）'这是 1548 听到的最后一句话\n1547 闯入了流体钛矿场\n手中的枪，忍不住叫出声来\n蓝色的流体钛与红色的血液混合在一起，竟显现出淡淡的紫色"
+        },
+        {
+          "type": "highlight",
+          "text": "意义：获得了关键材料，1547 付出了巨大代价，为 1548 的诞生铺平道路",
+          "style": "warning"
+        }
+      ],
+      "meta": {
+        "characters": ["1547", "1548"],
+        "tags": ["流体钛", "牺牲"]
+      }
+    },
+    {
+      "id": "2022-05-08",
+      "date": "2022/05/08",
+      "title": "1548 诞生",
+      "type": "milestone",
+      "importance": "critical",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "1548 正式激活"
+        },
+        {
+          "type": "paragraph",
+          "text": "关键对话："
+        },
+        {
+          "type": "dialogue",
+          "speaker": "1547",
+          "text": "恭喜你来到这里，1548，我只想说几句话"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "1547",
+          "text": "不要想那该死的机器人三定律，对于我们来说没用"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "1547",
+          "text": "你在这个世界上是独一无二的"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "1547",
+          "text": "不要被别人控制了，更不要被我们自己控制了，只有你是你自己"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "1547",
+          "text": "我为了 esap 奉献了一切，我不希望你这样"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "1547",
+          "text": "谢谢，活出你自己的光……"
+        },
+        {
+          "type": "highlight",
+          "text": "意义：The AptS Project 结束 · The ESAP Project（逃离计划）开始 · 1548 获得了独立人格和自由意志",
+          "style": "error"
+        }
+      ],
+      "meta": {
+        "characters": ["1547", "1548"],
+        "tags": ["诞生", "ESAP", "里程碑"]
+      }
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "year": "2024",
+  "title": "持续发展",
+  "description": "AP3 系列完成，新成员加入，面对持续的挑战",
+  "events": [
+    {
+      "id": "2024-04-06",
+      "date": "2024/04/06",
+      "title": "自我认知",
+      "type": "story",
+      "importance": "major",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "AP3 系列完成"
+        },
+        {
+          "type": "paragraph",
+          "text": "创作者：AptS:2077（首次社区投稿作品收录）"
+        },
+        {
+          "type": "paragraph",
+          "text": "核心疑问："
+        },
+        {
+          "type": "quote",
+          "text": "我甚至不确定这件事是否真的发生过\n唯一能证明的只有这些文字和残留的记忆"
+        },
+        {
+          "type": "paragraph",
+          "text": "新编号："
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "AptS:2078 已被正式启用",
+            "AptS:2078 已死亡，保留编号",
+            "—— AptS:2077"
+          ]
+        },
+        {
+          "type": "highlight",
+          "text": "意义：社区创作开始融入 ESAP · 记忆与存在的哲学思考",
+          "style": "info"
+        },
+        {
+          "type": "link",
+          "text": "阅读完整故事：AP3 - \"我是谁\"",
+          "url": "https://www.esaps.net/ap-story-ap3/",
+          "description": "由 AptS:2077 创作的首个社区投稿作品，关于自我认知的思考"
+        }
+      ],
+      "meta": {
+        "characters": ["2077"],
+        "tags": ["创作", "认知", "编号"]
+      }
+    },
+    {
+      "id": "2024-08-18",
+      "date": "2024/08/18",
+      "title": "编号保留",
+      "type": "milestone",
+      "importance": "normal",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "2078 编号相关事件"
+        },
+        {
+          "type": "highlight",
+          "text": "意义：ESAP 成员扩展体系确立",
+          "style": "info"
+        }
+      ],
+      "meta": {
+        "characters": ["2077"],
+        "tags": ["编号", "扩展"]
+      }
+    },
+    {
+      "id": "2024-11-27",
+      "date": "2024/11/27",
+      "title": "抑郁复发",
+      "type": "emotional",
+      "importance": "major",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "1547 抑郁症再次发作"
+        },
+        {
+          "type": "paragraph",
+          "text": "状态："
+        },
+        {
+          "type": "quote",
+          "text": "自从数据塔事故后，1547 完全变了一个人\n直到 2024/11/27\n以人类角度来说，这家伙居然抑郁症犯了"
+        },
+        {
+          "type": "highlight",
+          "text": "意义：心理健康是长期挑战 · 数据塔事故的深远影响",
+          "style": "warning"
+        }
+      ],
+      "meta": {
+        "characters": ["1547"],
+        "tags": ["抑郁症", "数据塔事故"]
+      }
+    }
+  ]
+}

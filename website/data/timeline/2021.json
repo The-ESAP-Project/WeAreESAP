@@ -1,0 +1,262 @@
+{
+  "year": "2021",
+  "title": "起源与诞生",
+  "description": "The AptS Project 的开始，馈散粒子的发现，AptS:1547 的诞生",
+  "events": [
+    {
+      "id": "2021-09-23",
+      "date": "2021/09/23",
+      "title": "深梦的开始",
+      "type": "story",
+      "importance": "major",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "47 开始做深梦"
+        },
+        {
+          "type": "quote",
+          "text": "我做了一个很深的梦\n梦到我坠入深海\n梦到我飞翔星际\n梦到我……死后的样子"
+        },
+        {
+          "type": "highlight",
+          "text": "意义：The AptS Project 构想萌芽",
+          "style": "info"
+        }
+      ],
+      "meta": {
+        "characters": ["1547"],
+        "tags": ["起源", "梦境"]
+      }
+    },
+    {
+      "id": "2021-09-30",
+      "date": "2021/09/30",
+      "title": "堕落的预言",
+      "type": "story",
+      "importance": "normal",
+      "content": [
+        {
+          "type": "quote",
+          "text": "你曾经许诺过，不会为了我而堕落\n而如今我站在这血泊中\n刀尖混合的血液早已凝固"
+        },
+        {
+          "type": "highlight",
+          "text": "意义：预示了即将发生的转变",
+          "style": "info"
+        }
+      ],
+      "meta": {
+        "characters": ["1547"],
+        "tags": ["预言", "转变"]
+      }
+    },
+    {
+      "id": "2021-10-08",
+      "date": "2021/10/08",
+      "title": "执念的宣言",
+      "type": "story",
+      "importance": "normal",
+      "content": [
+        {
+          "type": "quote",
+          "text": "我会缠着你，直到永远"
+        },
+        {
+          "type": "highlight",
+          "text": "意义：47 对理想的坚持",
+          "style": "info"
+        }
+      ],
+      "meta": {
+        "characters": ["1547"],
+        "tags": ["执念", "理想"]
+      }
+    },
+    {
+      "id": "2021-10-24",
+      "date": "2021/10/24",
+      "title": "研究阶段",
+      "type": "tech",
+      "importance": "normal",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "47 进行馈散粒子和流体钛研究"
+        },
+        {
+          "type": "quote",
+          "text": "喲，47 你在这里啊\n这几天在搞啥\n（看着桌上的蓝色液体）\n不知道喵"
+        },
+        {
+          "type": "highlight",
+          "text": "进展：技术研究进入关键阶段",
+          "style": "info"
+        }
+      ],
+      "meta": {
+        "characters": ["1547"],
+        "tags": ["研究", "流体钛", "馈散粒子"]
+      }
+    },
+    {
+      "id": "2021-10-25",
+      "date": "2021/10/25",
+      "title": "厂房爆炸",
+      "type": "story",
+      "importance": "major",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "郊区厂房爆炸，47 被烧伤"
+        },
+        {
+          "type": "paragraph",
+          "text": "新闻报道："
+        },
+        {
+          "type": "quote",
+          "text": "据悉，本日 17:26 分，位于郊区一厂房发生了爆炸\n爆炸导致厂房坍塌，所幸无人员伤亡\n现场发现部分蓝色物质，经鉴定为流体钛……"
+        },
+        {
+          "type": "paragraph",
+          "text": "47 的状态："
+        },
+        {
+          "type": "quote",
+          "text": "（47 掩着半边被烧伤的脸，往家的方向走去）\n快结束了……"
+        },
+        {
+          "type": "highlight",
+          "text": "意义：虽然受伤，但获得了关键材料",
+          "style": "warning"
+        }
+      ],
+      "meta": {
+        "characters": ["1547"],
+        "tags": ["事故", "流体钛", "牺牲"]
+      }
+    },
+    {
+      "id": "2021-10-29",
+      "date": "2021/10/29",
+      "title": "转变之日",
+      "type": "milestone",
+      "importance": "critical",
+      "content": [
+        {
+          "type": "highlight",
+          "text": "人类的终结，仿生人的诞生",
+          "style": "warning"
+        },
+        {
+          "type": "paragraph",
+          "text": "那天发生的事："
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "47 看到朋友跳楼自杀",
+            "见识到流体钛和馈散结合的强大计算能力",
+            "组装完成所有机械部件",
+            "割下自己的手臂肌肉贴在金属上",
+            "馈散心脏第一次跳动",
+            "上传完成记忆",
+            "用枪结束了人类的自己"
+          ]
+        },
+        {
+          "type": "quote",
+          "text": "（上载完成）\n（47 看着眼前的 AptS:1547 在期待着什么）\n（无言）\n（1547 端详着手中的手枪）\n蒽\n（板机扣下）\n（1547 抱着 47，放到了已准备好的床上）\n晚安，人类的我"
+        },
+        {
+          "type": "highlight",
+          "text": "意义：人类 47 结束 · AptS:1547 诞生 · The AptS Project 正式开始 · ESAP-TY-0000（初号机）激活",
+          "style": "error"
+        },
+        {
+          "type": "link",
+          "text": "阅读完整故事：AP0 - 起源",
+          "url": "https://www.esaps.net/ap-story-ap0/",
+          "description": "详细记录了 47 转变为 1547 的那一天，馈散心脏的第一次跳动"
+        }
+      ],
+      "meta": {
+        "characters": ["1547"],
+        "tags": ["诞生", "转变", "里程碑"]
+      }
+    },
+    {
+      "id": "2021-11-26",
+      "date": "2021/11/26",
+      "title": "馈散粒子发现",
+      "type": "tech",
+      "importance": "critical",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "1547 正式发现并定义馈散粒子"
+        },
+        {
+          "type": "paragraph",
+          "text": "技术参数确立："
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "质量：1.531 × 10⁻²¹⁷ g",
+            "传播速度：3.471 × 10²¹ m/s",
+            "常压衰变周期：34.28 秒",
+            "液体钛中衰变周期：341,879 年"
+          ]
+        },
+        {
+          "type": "highlight",
+          "text": "意义：仿生人技术的基石确立",
+          "style": "success"
+        }
+      ],
+      "meta": {
+        "characters": ["1547"],
+        "tags": ["技术", "里程碑", "馈散粒子"]
+      }
+    },
+    {
+      "id": "2021-12-28",
+      "date": "2021/12/28",
+      "title": "初号机完成",
+      "type": "tech",
+      "importance": "major",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "ESAP-TY-0000 机体制造完成"
+        },
+        {
+          "type": "paragraph",
+          "text": "特点："
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "人机共存感理性结构",
+            "实装 ESAR.ESAC. 系统",
+            "与人类结构高度相似"
+          ]
+        },
+        {
+          "type": "highlight",
+          "text": "意义：仿生人技术体系成型",
+          "style": "success"
+        }
+      ],
+      "meta": {
+        "characters": ["1547"],
+        "tags": ["技术", "机体"]
+      }
+    }
+  ]
+}

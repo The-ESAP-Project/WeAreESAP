@@ -38,6 +38,9 @@ export function Navigation() {
             <Link href="/tech" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
               技术设定
             </Link>
+            <Link href="/timeline" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+              时间线
+            </Link>
           </div>
 
           {/* 主题切换按钮 */}
