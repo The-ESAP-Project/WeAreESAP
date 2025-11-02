@@ -4,6 +4,12 @@
 // 角色相关组件
 export * from "./character";
 
+// 项目企划组件
+export * from "./project";
+
+// 加入我们组件
+export * from "./join";
+
 // 技术设定组件
 export * from "./tech";
 

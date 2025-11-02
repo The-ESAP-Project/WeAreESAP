@@ -1,11 +1,13 @@
 // Copyright 2025 AptS:1547, AptS:1548
 // SPDX-License-Identifier: Apache-2.0
 
-import { RoleTypeCard } from "@/components/RoleTypeCard";
-import { ChecklistItem } from "@/components/ChecklistItem";
-import { StepCard } from "@/components/StepCard";
-import { FAQAccordion } from "@/components/FAQAccordion";
-import { ContactPlaceholder } from "@/components/ContactPlaceholder";
+import {
+  RoleTypeCard,
+  ChecklistItem,
+  StepCard,
+  FAQAccordion,
+  ContactPlaceholder,
+} from "@/components";
 import { Icon, type IconName } from "@/components/ui";
 import fs from "fs/promises";
 import path from "path";
