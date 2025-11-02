@@ -8,11 +8,11 @@ import { motion, AnimatePresence } from "framer-motion";
 import { TriangleLogo, ThemeToggle, TransitionLink } from "@/components/ui";
 
 const navLinks = [
+  { href: "/project", label: "项目企划" },
   { href: "/characters", label: "角色档案" },
   { href: "/tech", label: "技术设定" },
   { href: "/timeline", label: "时间线" },
-  // 未来可以添加更多链接
-  // { href: "/project", label: "项目企划" }
+  { href: "/join", label: "加入我们" },
 ];
 
 export function Navigation() {

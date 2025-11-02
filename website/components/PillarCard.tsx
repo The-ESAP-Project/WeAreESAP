@@ -1,0 +1,111 @@
+"use client";
+
+import { motion } from "framer-motion";
+
+interface PillarCardProps {
+  pillar: {
+    id: string;
+    title: string;
+    character: string;
+    color: {
+      primary: string;
+      dark: string;
+    };
+    icon: string;
+    traits: string[];
+    quote: string;
+  };
+  index: number;
+}
+
+export function PillarCard({ pillar, index }: PillarCardProps) {
+  return (
+    <motion.div
+      className="relative group"
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ delay: index * 0.15, duration: 0.5 }}
+    >
+      {/* 卡片主体 */}
+      <div
+        className="relative bg-muted rounded-2xl p-8 h-full overflow-hidden border-2 transition-all duration-300"
+        style={{
+          borderColor: `${pillar.color.primary}40`,
+        }}
+      >
+        {/* 背景渐变装饰 */}
+        <div
+          className="absolute inset-0 opacity-0 group-hover:opacity-10 transition-opacity duration-500 pointer-events-none"
+          style={{
+            background: `radial-gradient(circle at top right, ${pillar.color.primary}, transparent 70%)`,
+          }}
+        />
+
+        {/* 内容 */}
+        <div className="relative z-10 space-y-6">
+          {/* 顶部：图标和角色代号 */}
+          <div className="flex items-center justify-between">
+            <span className="text-4xl">{pillar.icon}</span>
+            <span
+              className="text-sm font-mono font-semibold px-3 py-1 rounded-full bg-background/50"
+              style={{ color: pillar.color.primary }}
+            >
+              {pillar.character}
+            </span>
+          </div>
+
+          {/* 支柱标题 */}
+          <h3
+            className="text-2xl font-bold"
+            style={{ color: pillar.color.primary }}
+          >
+            {pillar.title}
+          </h3>
+
+          {/* 核心特质列表 */}
+          <ul className="space-y-3">
+            {pillar.traits.map((trait, i) => (
+              <motion.li
+                key={i}
+                className="flex items-start gap-2 text-sm text-foreground/80"
+                initial={{ opacity: 0, x: -10 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.15 + i * 0.1 }}
+              >
+                <span
+                  className="w-1.5 h-1.5 rounded-full mt-1.5 flex-shrink-0"
+                  style={{ backgroundColor: pillar.color.primary }}
+                />
+                <span>{trait}</span>
+              </motion.li>
+            ))}
+          </ul>
+
+          {/* 分隔线 */}
+          <div
+            className="h-px w-full"
+            style={{
+              background: `linear-gradient(90deg, ${pillar.color.primary}, transparent)`,
+            }}
+          />
+
+          {/* 经典引言 */}
+          <blockquote
+            className="text-sm italic text-foreground/70 border-l-2 pl-4"
+            style={{ borderColor: pillar.color.primary }}
+          >
+            "{pillar.quote}"
+          </blockquote>
+        </div>
+
+        {/* 右下角装饰 */}
+        <div
+          className="absolute -bottom-8 -right-8 w-32 h-32 rounded-full opacity-5 group-hover:opacity-10 transition-opacity duration-500 blur-3xl"
+          style={{ backgroundColor: pillar.color.primary }}
+        />
+      </div>
+    </motion.div>
+  );
+}
