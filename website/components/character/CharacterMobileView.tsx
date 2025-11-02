@@ -160,7 +160,7 @@ export function CharacterMobileView({
 
                       {/* 点击提示 */}
                       <div className="text-xs opacity-50 italic pt-2">
-                        点击收起
+                        点击查看完整档案 →
                       </div>
                     </motion.div>
                   )}
