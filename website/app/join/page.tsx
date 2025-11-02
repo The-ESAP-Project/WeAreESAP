@@ -15,7 +15,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "加入我们 - We Are ESAP",
-  description: "加入 ESAP，成为这个科幻世界的一部分。愿 ESAP 与你同在。",
+  description: "加入 ESAP，成为这个科幻世界的一部分。",
 };
 
 async function getJoinData() {
@@ -373,39 +373,6 @@ export default async function JoinPage() {
               </div>
             ))}
           </div>
-
-          {/* 社区口号 */}
-          <div className="bg-gradient-to-br from-esap-yellow/5 via-esap-pink/5 to-esap-blue/5 rounded-xl p-8 border border-border text-center">
-            <h3 className="text-xl font-bold text-foreground mb-6">社区口号</h3>
-            <div className="space-y-4">
-              <div>
-                <p className="text-sm text-muted-foreground mb-2">问候语</p>
-                <div className="flex flex-wrap justify-center gap-4">
-                  {data.slogans.greetings.map((greeting: string, i: number) => (
-                    <span
-                      key={i}
-                      className="px-4 py-2 bg-background rounded-full text-esap-yellow font-semibold"
-                    >
-                      {greeting}
-                    </span>
-                  ))}
-                </div>
-              </div>
-              <div>
-                <p className="text-sm text-muted-foreground mb-2">精神标语</p>
-                <div className="flex flex-wrap justify-center gap-4">
-                  {data.slogans.mottos.map((motto: string, i: number) => (
-                    <span
-                      key={i}
-                      className="px-4 py-2 bg-background rounded-full text-esap-pink font-semibold"
-                    >
-                      {motto}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </section>
 
@@ -544,10 +511,6 @@ export default async function JoinPage() {
           <blockquote className="text-foreground/60 italic">
             {data.closing.finalQuote}
           </blockquote>
-
-          <p className="text-xl text-esap-blue font-semibold">
-            愿 ESAP 与你同在。
-          </p>
         </div>
       </section>
     </main>

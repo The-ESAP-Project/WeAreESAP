@@ -1,6 +1,6 @@
 {
   "hero": {
-    "quote": "愿 ESAP 与你同在",
+    "quote": "我们终将逃离",
     "welcome": "如果你读到这里，说明你对 ESAP 世界感兴趣。",
     "seeking": [
       "一个表达自己的空间",
@@ -192,6 +192,7 @@
     },
     {
       "title": "真实性",
+      "quote": "机械的心跳，也是真实的",
       "description": "真实地表达自己，接受不完美，情感和体验都是有价值的",
       "icon": "Zap"
     },
@@ -208,10 +209,6 @@
       "icon": "Link"
     }
   ],
-  "slogans": {
-    "greetings": ["愿 ESAP 与你同在", "愿 AptS 与你同在"],
-    "mottos": ["我们终将逃离", "天上没有星星，但我们造了一颗", "向那卫星许愿"]
-  },
   "contributions": [
     {
       "category": "内容贡献",
