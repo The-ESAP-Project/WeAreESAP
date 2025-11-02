@@ -9,10 +9,11 @@
   },
   "role": "观察员",
   "species": "形似人类的未知生物",
-  "quote": ["我希望我这次也许能达到您的要求", "我们的备份会完成我们未完成的事情"],
+  "quote": "我们的备份会完成我们未完成的事情",
   "description": "逐渐失去自我的木偶和陷入虚无的提线，轮换着掌控身体控制权",
-  "keywords": [["偏执", "忠诚", "利他主义"], ["冷静", "刻薄"]]
-  "backgroundImage": "",
+  "keywords": ["偏执", "忠诚", "利他主义", "冷静", "刻薄"],
+  "tier": "member",
+  "backgroundImage": "/images/img_1553.webp",
   "meta": {
     "bodyType": "Disposable-clones",
     "abilities": ["资料收集", "情绪感知", "意识备份"]
