@@ -51,14 +51,14 @@ function CharacterStripComponent({
       />
 
       {/* 内容区域 */}
-      <div className="relative h-full flex items-center justify-center p-6 text-white">
+      <div className={`relative h-full flex p-6 text-white ${isExpanded ? 'items-start justify-start' : 'items-center justify-center'}`}>
         {isExpanded ? (
           // 扩展模式：显示完整信息
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.05, duration: 0.45 }}
-            className="w-full max-w-md space-y-6 backdrop-blur-md bg-black/40 dark:bg-black/60 p-8 rounded-2xl"
+            className="w-full max-w-md space-y-6 p-8"
             style={{
               textShadow: "0 2px 12px rgba(0,0,0,0.8)",
             }}

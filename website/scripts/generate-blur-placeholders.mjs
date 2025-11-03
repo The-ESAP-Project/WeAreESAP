@@ -44,7 +44,7 @@ async function generateBlurPlaceholders() {
 
       try {
         // 生成 10x10 的模糊版本
-        const { base64 } = await getPlaiceholder(buffer, { size: 10 });
+        const { base64 } = await getPlaiceholder(buffer, { size: 20 });
 
         blurDataMap[file] = base64;
         processedCount++;
