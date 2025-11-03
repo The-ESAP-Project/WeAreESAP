@@ -6,6 +6,7 @@ import { notFound } from "next/navigation";
 import dynamic from "next/dynamic";
 import { Character } from "@/types/character";
 import { CharacterHero, CharacterInfo } from "@/components/character/detail";
+import { getImageUrl } from "@/lib/utils";
 
 // 懒加载非首屏组件
 const CharacterStory = dynamic(
@@ -81,10 +82,7 @@ export async function generateMetadata({
 
   const characterTitle = `${character.name} (${character.code})`;
   const characterDesc = `${character.description} - ${character.quote}`;
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://weare.esaps.net";
-  const characterImage = character.backgroundImage
-    ? `${siteUrl}${character.backgroundImage}`
-    : `${siteUrl}/favicon.ico`;
+  const characterImage = getImageUrl(character.backgroundImage);
 
   return {
     title: `${characterTitle} - We Are ESAP`,

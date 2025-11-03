@@ -88,3 +88,30 @@ export function throttle<T extends (...args: unknown[]) => unknown>(
     }
   };
 }
+
+/**
+ * 将图片路径转换为完整 URL（用于 SEO metadata）
+ * @param path 图片路径（可以是相对路径或完整 URL）
+ * @param siteUrl 网站根 URL（可选，默认使用环境变量）
+ * @returns 完整的图片 URL
+ */
+export function getImageUrl(
+  path: string | undefined,
+  siteUrl?: string
+): string {
+  const baseUrl =
+    siteUrl || process.env.NEXT_PUBLIC_SITE_URL || "https://weare.esaps.net";
+
+  // 如果路径为空，返回默认图标
+  if (!path) {
+    return `${baseUrl}/favicon.ico`;
+  }
+
+  // 如果已经是完整 URL，直接返回
+  if (path.startsWith("http://") || path.startsWith("https://")) {
+    return path;
+  }
+
+  // 如果是相对路径，拼接域名
+  return path.startsWith("/") ? `${baseUrl}${path}` : `${baseUrl}/${path}`;
+}
