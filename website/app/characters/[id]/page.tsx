@@ -81,9 +81,10 @@ export async function generateMetadata({
 
   const characterTitle = `${character.name} (${character.code})`;
   const characterDesc = `${character.description} - ${character.quote}`;
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://weare.esaps.net";
   const characterImage = character.backgroundImage
-    ? character.backgroundImage
-    : "/favicon.ico";
+    ? `${siteUrl}${character.backgroundImage}`
+    : `${siteUrl}/favicon.ico`;
 
   return {
     title: `${characterTitle} - We Are ESAP`,
