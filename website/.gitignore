@@ -43,3 +43,6 @@ next-env.d.ts
 # sitemap
 sitemap.xml
 robots.txt
+
+# blur-placeholders.json
+blur-placeholders.json
