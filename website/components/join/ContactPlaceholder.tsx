@@ -5,18 +5,29 @@
 
 import { motion } from "framer-motion";
 import { Icon, type IconName } from "@/components/ui";
+import { useTranslations } from "next-intl";
 
 export function ContactPlaceholder() {
-  const platforms: Array<{ name: string; icon: IconName; status: string }> = [
-    { name: "官方网站", icon: "Globe", status: "www.esaps.net/" },
-    {
-      name: "GitHub",
-      icon: "Github",
-      status: "github.com/The-ESAP-Project/",
-    },
-    { name: "Discord", icon: "Discord", status: "即将开放" },
-    { name: "QQ 群", icon: "Users", status: "qm.qq.com/q/J9Js2rl7CG" },
-  ];
+  const t = useTranslations("join");
+
+  // Icon 映射（技术细节，不需要翻译）
+  const iconMap: Record<string, IconName> = {
+    "官方网站": "Globe",
+    "Official Website": "Globe",
+    "公式サイト": "Globe",
+    "GitHub": "Github",
+    "Discord": "Discord",
+    "QQ 群": "Users",
+    "QQ Group": "Users",
+    "QQ グループ": "Users",
+  };
+
+  const platforms = t.raw("contactPlatforms") as Array<{
+    name: string;
+    status: string;
+  }>;
+
+  const comingSoonText = t("contactComingSoon");
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -30,13 +41,20 @@ export function ContactPlaceholder() {
           transition={{ delay: index * 0.05 }}
         >
           <div className="flex items-center gap-3">
-            <Icon name={platform.icon} size={28} className="text-foreground" />
+            <Icon
+              name={iconMap[platform.name] || "Globe"}
+              size={28}
+              className="text-foreground"
+            />
             <div className="flex-1">
               <div className="font-semibold text-foreground">
                 {platform.name}
               </div>
               <div className="text-sm text-muted-foreground">
-                {platform.status === "即将开放" ? (
+                {platform.status === comingSoonText ||
+                 platform.status === "即将开放" ||
+                 platform.status === "Coming Soon" ||
+                 platform.status === "近日公開" ? (
                   <span className="text-esap-yellow">{platform.status}</span>
                 ) : (
                   <a

@@ -1,4 +1,44 @@
 {
+  "metadata": {
+    "title": "加入我们 - We Are ESAP",
+    "description": "加入 ESAP，成为这个科幻世界的一部分。"
+  },
+  "sections": {
+    "hero": "加入我们",
+    "seeking": "或许你正在寻找：",
+    "whoShouldJoin": "谁适合加入？",
+    "welcome": "我们欢迎…",
+    "notWelcome": "我们不欢迎…",
+    "participation": "参与方式",
+    "characterCreation": "创建角色流程",
+    "characterCreationSubtitle": "如果你想创建自己的角色加入 ESAP 世界，按照以下步骤进行：",
+    "guidelines": "创作指南",
+    "principles": "核心原则",
+    "technicalGuidelines": "技术设定注意事项",
+    "canDo": "可以做的：",
+    "shouldNotDo": "不建议做的：",
+    "characterGuidelines": "角色创作注意事项",
+    "recommended": "推荐：",
+    "avoid": "避免：",
+    "communityValues": "社区文化",
+    "contributions": "贡献方式",
+    "submissionChannels": "提交途径：",
+    "contributionMethods": "贡献方式：",
+    "contact": "联系方式",
+    "contactPlaceholder": "更多社区渠道正在筹备中，敬请期待",
+    "faq": "常见问题",
+    "nextSteps": "下一步",
+    "nextStepsSubtitle": "如果你已经准备好加入，可以：",
+    "finalWelcome": "欢迎来到 ESAP。",
+    "loadError": "加载失败"
+  },
+  "contactPlatforms": [
+    { "name": "官方网站", "status": "www.esaps.net/" },
+    { "name": "GitHub", "status": "github.com/The-ESAP-Project/" },
+    { "name": "Discord", "status": "即将开放" },
+    { "name": "QQ 群", "status": "qm.qq.com/q/J9Js2rl7CG" }
+  ],
+  "contactComingSoon": "即将开放",
   "hero": {
     "quote": "我们终将逃离",
     "welcome": "如果你读到这里，说明你对 ESAP 世界感兴趣。",
