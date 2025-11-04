@@ -8,6 +8,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { CharacterCardData } from "@/types/character";
 import { getBlurDataURL } from "@/lib/blur-placeholder";
+import { getContrastTextColor } from "@/lib/utils";
 
 interface CharacterCardProps {
   character: CharacterCardData;
@@ -93,7 +94,7 @@ function CharacterCardComponent({
           <div
             className="text-lg font-mono font-bold mb-2"
             style={{
-              color: character.color.primary,
+              color: getContrastTextColor(character.color.primary),
               textShadow: "0 2px 4px rgba(0,0,0,0.9), 0 0 8px rgba(0,0,0,0.7)",
             }}
           >
@@ -148,7 +149,7 @@ function CharacterCardComponent({
                 key={index}
                 className="px-3 py-1 text-xs rounded-full backdrop-blur-sm bg-black/30 dark:bg-black/50 transition-all"
                 style={{
-                  color: character.color.primary,
+                  color: getContrastTextColor(character.color.primary),
                   border: `1.5px solid ${character.color.primary}80`,
                 }}
               >

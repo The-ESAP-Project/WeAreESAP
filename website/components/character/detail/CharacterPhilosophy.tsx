@@ -5,6 +5,7 @@
 
 import { Character } from "@/types/character";
 import { useTranslations } from "next-intl";
+import { getContrastTextColor } from "@/lib/utils";
 
 interface CharacterPhilosophyProps {
   character: Character;
@@ -41,7 +42,7 @@ export function CharacterPhilosophy({ character }: CharacterPhilosophyProps) {
             {/* 标题 */}
             <h3
               className="text-xl font-bold mb-6 flex items-center gap-3"
-              style={{ color: character.color.primary }}
+              style={{ color: getContrastTextColor(character.color.primary) }}
             >
               <span
                 className="w-1.5 h-6 rounded-full"

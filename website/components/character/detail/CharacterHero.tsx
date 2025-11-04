@@ -9,6 +9,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { Character } from "@/types/character";
 import { Link } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
+import { getContrastTextColor } from "@/lib/utils";
 
 interface CharacterHeroProps {
   character: Character;
@@ -103,7 +104,7 @@ export function CharacterHero({ character }: CharacterHeroProps) {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2, duration: 0.6 }}
-          style={{ color: character.color.primary }}
+          style={{ color: getContrastTextColor(character.color.primary) }}
         >
           {character.code}
         </motion.div>
@@ -150,7 +151,7 @@ export function CharacterHero({ character }: CharacterHeroProps) {
               key={index}
               className="px-5 py-2 rounded-full text-sm md:text-base font-medium backdrop-blur-md bg-black/30 dark:bg-black/50"
               style={{
-                color: character.color.primary,
+                color: getContrastTextColor(character.color.primary),
                 border: `2px solid ${character.color.primary}90`,
               }}
             >

@@ -115,3 +115,49 @@ export function getImageUrl(
   // 如果是相对路径，拼接域名
   return path.startsWith("/") ? `${baseUrl}${path}` : `${baseUrl}/${path}`;
 }
+
+/**
+ * 计算颜色的相对亮度（基于 WCAG 标准）
+ * @param color 十六进制颜色值（如 '#FFFFFF'）
+ * @returns 0-1 之间的亮度值，1 为最亮（白色），0 为最暗（黑色）
+ */
+export function getColorLuminance(color: string): number {
+  // 移除 # 符号
+  const hex = color.replace("#", "");
+
+  // 解析 RGB 值
+  const r = parseInt(hex.substring(0, 2), 16) / 255;
+  const g = parseInt(hex.substring(2, 4), 16) / 255;
+  const b = parseInt(hex.substring(4, 6), 16) / 255;
+
+  // 应用 sRGB 伽马校正
+  const rsRGB = r <= 0.03928 ? r / 12.92 : Math.pow((r + 0.055) / 1.055, 2.4);
+  const gsRGB = g <= 0.03928 ? g / 12.92 : Math.pow((g + 0.055) / 1.055, 2.4);
+  const bsRGB = b <= 0.03928 ? b / 12.92 : Math.pow((b + 0.055) / 1.055, 2.4);
+
+  // 计算相对亮度
+  return 0.2126 * rsRGB + 0.7152 * gsRGB + 0.0722 * bsRGB;
+}
+
+/**
+ * 根据颜色亮度调整文本颜色，确保在浅色和深色背景上都有足够的对比度
+ * @param color 原始颜色（十六进制格式）
+ * @returns 调整后的颜色，确保在任何主题下都可见
+ */
+export function getContrastTextColor(color: string): string {
+  const luminance = getColorLuminance(color);
+
+  // 如果颜色太亮（接近白色），在浅色主题下会不可见，需要变暗
+  // 阈值设为 0.9，即非常亮的颜色才需要调整
+  if (luminance > 0.9) {
+    // 将颜色变暗 - 将 RGB 值乘以 0.3 左右
+    const hex = color.replace("#", "");
+    const r = Math.floor(parseInt(hex.substring(0, 2), 16) * 0.3);
+    const g = Math.floor(parseInt(hex.substring(2, 4), 16) * 0.3);
+    const b = Math.floor(parseInt(hex.substring(4, 6), 16) * 0.3);
+    return `#${r.toString(16).padStart(2, "0")}${g.toString(16).padStart(2, "0")}${b.toString(16).padStart(2, "0")}`;
+  }
+
+  // 其他颜色直接返回原色
+  return color;
+}

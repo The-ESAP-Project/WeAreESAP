@@ -9,6 +9,7 @@ import { CharacterCardData } from "@/types/character";
 import Image from "next/image";
 import { getBlurDataURL } from "@/lib/blur-placeholder";
 import { useTranslations } from "next-intl";
+import { getContrastTextColor } from "@/lib/utils";
 
 interface CharacterStripProps {
   character: CharacterCardData;
@@ -79,7 +80,7 @@ function CharacterStripComponent({
             {/* 角色代号 */}
             <div
               className="text-2xl font-mono font-bold"
-              style={{ color: character.color.primary }}
+              style={{ color: getContrastTextColor(character.color.primary) }}
             >
               {character.code}
             </div>
@@ -102,7 +103,7 @@ function CharacterStripComponent({
                   key={index}
                   className="px-4 py-2 rounded-full text-sm font-medium backdrop-blur-sm bg-black/30 dark:bg-black/50"
                   style={{
-                    color: character.color.primary,
+                    color: getContrastTextColor(character.color.primary),
                     border: `2px solid ${character.color.primary}80`,
                     textShadow: "0 1px 8px rgba(0,0,0,0.9)",
                   }}

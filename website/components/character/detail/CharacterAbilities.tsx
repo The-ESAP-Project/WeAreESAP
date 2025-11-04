@@ -5,6 +5,7 @@
 
 import { Character } from "@/types/character";
 import { useTranslations } from "next-intl";
+import { getContrastTextColor } from "@/lib/utils";
 
 interface CharacterAbilitiesProps {
   character: Character;
@@ -82,7 +83,7 @@ export function CharacterAbilities({ character }: CharacterAbilitiesProps) {
                   <div
                     className="flex-shrink-0 w-12 h-12 rounded-lg flex items-center justify-center text-2xl bg-background/80 group-hover:scale-110 transition-transform"
                     style={{
-                      color: character.color.primary,
+                      color: getContrastTextColor(character.color.primary),
                     }}
                   >
                     ⚔️

@@ -5,6 +5,7 @@
 
 import { Character } from "@/types/character";
 import { useTranslations } from "next-intl";
+import { getContrastTextColor } from "@/lib/utils";
 
 interface CharacterInfoProps {
   character: Character;
@@ -88,7 +89,7 @@ export function CharacterInfo({ character }: CharacterInfoProps) {
                 key={index}
                 className="px-5 py-2 rounded-full text-sm font-medium bg-background transition-all hover:scale-105"
                 style={{
-                  color: character.color.primary,
+                  color: getContrastTextColor(character.color.primary),
                   border: `2px solid ${character.color.primary}40`,
                 }}
               >

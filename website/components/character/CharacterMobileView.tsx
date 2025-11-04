@@ -9,6 +9,7 @@ import { CharacterCardData } from "@/types/character";
 import Image from "next/image";
 import { getBlurDataURL } from "@/lib/blur-placeholder";
 import { useTranslations } from "next-intl";
+import { getContrastTextColor } from "@/lib/utils";
 
 interface CharacterMobileViewProps {
   characters: CharacterCardData[];
@@ -104,7 +105,7 @@ export function CharacterMobileView({
                 {/* 角色代号 */}
                 <div
                   className="text-lg font-mono font-bold"
-                  style={{ color: character.color.primary }}
+                  style={{ color: getContrastTextColor(character.color.primary) }}
                 >
                   {character.code}
                 </div>
@@ -158,7 +159,7 @@ export function CharacterMobileView({
                           key={keyIndex}
                           className="px-3 py-1 rounded-full text-xs font-medium backdrop-blur-sm bg-black/20 dark:bg-black/30"
                           style={{
-                            color: character.color.primary,
+                            color: getContrastTextColor(character.color.primary),
                             border: `1.5px solid ${character.color.primary}80`,
                           }}
                         >
