@@ -105,13 +105,29 @@
           "content": [
             {
               "type": "table",
-              "headers": ["Feature", "Traditional Communication", "Feedscatteron Communication"],
+              "headers": [
+                "Feature",
+                "Traditional Communication",
+                "Feedscatteron Communication"
+              ],
               "rows": [
-                ["Transmission Speed", "Light speed (3×10⁸ m/s)", "Faster-than-light (3.471×10²¹ m/s)"],
+                [
+                  "Transmission Speed",
+                  "Light speed (3×10⁸ m/s)",
+                  "Faster-than-light (3.471×10²¹ m/s)"
+                ],
                 ["Latency", "Noticeable (e.g., Earth-Moon 1.3s)", "Near-zero"],
-                ["Interference Resistance", "Susceptible to electromagnetic interference", "Interference-free"],
+                [
+                  "Interference Resistance",
+                  "Susceptible to electromagnetic interference",
+                  "Interference-free"
+                ],
                 ["Security", "Can be intercepted", "Absolute security"],
-                ["Coverage", "Limited by relay stations", "Global with no dead zones"]
+                [
+                  "Coverage",
+                  "Limited by relay stations",
+                  "Global with no dead zones"
+                ]
               ]
             }
           ]

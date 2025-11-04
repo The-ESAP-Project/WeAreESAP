@@ -3,16 +3,27 @@
 
 "use client";
 
+import { useEffect } from "react";
 import { TimelineYear } from "@/types/timeline";
 import { TimelineLine, TimelineEventCard } from "@/components";
+import { useTransition } from "@/components/ui";
 
 interface TimelineClientProps {
   years: TimelineYear[];
 }
 
 export function TimelineClient({ years }: TimelineClientProps) {
+  const { finishTransition } = useTransition();
+
   // 计算总事件数
   const totalEvents = years.reduce((sum, year) => sum + year.events.length, 0);
+
+  // 内容加载完成后结束过渡动画
+  useEffect(() => {
+    if (years && years.length > 0) {
+      finishTransition();
+    }
+  }, [years, finishTransition]);
 
   return (
     <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16 overflow-hidden">

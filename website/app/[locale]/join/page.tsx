@@ -3,7 +3,7 @@
 
 import dynamic from "next/dynamic";
 import { RoleTypeCard, ChecklistItem, StepCard } from "@/components";
-import { Icon, type IconName } from "@/components/ui";
+import { Icon, type IconName, TransitionFinisher } from "@/components/ui";
 import { getTranslations } from "next-intl/server";
 import type { Metadata } from "next";
 
@@ -48,6 +48,7 @@ export default async function JoinPage() {
 
   return (
     <main className="min-h-screen">
+      <TransitionFinisher />
       {/* Hero 区域 */}
       <section className="relative py-20 px-4 sm:px-6 lg:px-8 bg-linear-to-b from-muted/30 to-transparent">
         <div className="max-w-4xl mx-auto text-center space-y-6">

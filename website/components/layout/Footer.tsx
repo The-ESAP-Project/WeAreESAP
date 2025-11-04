@@ -29,8 +29,8 @@ export function Footer() {
       <div className="max-w-7xl mx-auto text-center text-sm text-muted-foreground space-y-2">
         <p className="italic">"{tFooter("quote")}"</p>
         <p>
-          <strong>{tFooter("projectName")}</strong> © 2021-2025 {tFooter("developedBy")}{" "}
-          {tFooter("developers")}
+          <strong>{tFooter("projectName")}</strong> © 2021-2025{" "}
+          {tFooter("developedBy")} {tFooter("developers")}
           {tFooter("developed")}
         </p>
         <p>

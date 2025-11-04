@@ -12,11 +12,11 @@ export function ContactPlaceholder() {
 
   // Icon 映射（技术细节，不需要翻译）
   const iconMap: Record<string, IconName> = {
-    "官方网站": "Globe",
+    官方网站: "Globe",
     "Official Website": "Globe",
-    "公式サイト": "Globe",
-    "GitHub": "Github",
-    "Discord": "Discord",
+    公式サイト: "Globe",
+    GitHub: "Github",
+    Discord: "Discord",
     "QQ 群": "Users",
     "QQ Group": "Users",
     "QQ グループ": "Users",
@@ -52,9 +52,9 @@ export function ContactPlaceholder() {
               </div>
               <div className="text-sm text-muted-foreground">
                 {platform.status === comingSoonText ||
-                 platform.status === "即将开放" ||
-                 platform.status === "Coming Soon" ||
-                 platform.status === "近日公開" ? (
+                platform.status === "即将开放" ||
+                platform.status === "Coming Soon" ||
+                platform.status === "近日公開" ? (
                   <span className="text-esap-yellow">{platform.status}</span>
                 ) : (
                   <a

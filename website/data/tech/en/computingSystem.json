@@ -36,8 +36,16 @@
               "headers": ["State", "Current Threshold", "Description"],
               "rows": [
                 ["Normal Operation", "I_k < 5A", "Safe operating range"],
-                ["Warning Threshold", "I_k = 5-6A", "Caution required, approaching danger zone"],
-                ["Danger Threshold", "I_k > 6A", "Decay cycle shortened to 27.1ms, extremely dangerous"]
+                [
+                  "Warning Threshold",
+                  "I_k = 5-6A",
+                  "Caution required, approaching danger zone"
+                ],
+                [
+                  "Danger Threshold",
+                  "I_k > 6A",
+                  "Decay cycle shortened to 27.1ms, extremely dangerous"
+                ]
               ]
             },
             {
@@ -149,9 +157,21 @@
           "type": "table",
           "headers": ["Medium", "Decay Cycle", "Suitability"],
           "rows": [
-            ["Liquid Titanium", "341,879 years", "Long-term storage, optimal choice"],
-            ["Specialized Silicon Chip", "3,417 months", "Medium-term storage, suitable for computation"],
-            ["Room Temperature/Pressure", "34.28 seconds", "Not suitable for storage"],
+            [
+              "Liquid Titanium",
+              "341,879 years",
+              "Long-term storage, optimal choice"
+            ],
+            [
+              "Specialized Silicon Chip",
+              "3,417 months",
+              "Medium-term storage, suitable for computation"
+            ],
+            [
+              "Room Temperature/Pressure",
+              "34.28 seconds",
+              "Not suitable for storage"
+            ],
             ["Metal", "21.1 ms", "Transmission only, not for storage"]
           ]
         },

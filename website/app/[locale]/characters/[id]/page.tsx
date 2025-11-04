@@ -6,6 +6,7 @@ import { notFound } from "next/navigation";
 import dynamic from "next/dynamic";
 import { Character } from "@/types/character";
 import { CharacterHero, CharacterInfo } from "@/components/character/detail";
+import { TransitionFinisher } from "@/components/ui/TransitionFinisher";
 import { getImageUrl } from "@/lib/utils";
 
 // 懒加载非首屏组件
@@ -146,6 +147,7 @@ export default async function CharacterDetailPage({
 
   return (
     <main className="min-h-screen">
+      <TransitionFinisher />
       {/* Hero 区域 */}
       <CharacterHero character={character} />
 

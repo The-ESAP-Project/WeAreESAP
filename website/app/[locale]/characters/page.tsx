@@ -71,9 +71,7 @@ export default async function CharactersPage() {
           <h1 className="text-4xl sm:text-5xl font-bold mb-4 text-foreground">
             {t("hero.title")}
           </h1>
-          <p className="text-lg text-muted-foreground">
-            {t("hero.subtitle")}
-          </p>
+          <p className="text-lg text-muted-foreground">{t("hero.subtitle")}</p>
           <div className="w-24 h-1 bg-linear-to-r from-esap-yellow via-esap-pink to-esap-blue rounded-full mx-auto mt-6" />
         </div>
       </section>

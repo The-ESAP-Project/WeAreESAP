@@ -112,7 +112,11 @@
         {
           "type": "list",
           "ordered": false,
-          "items": ["Facing an inescapable predicament", "Two made a joint choice", "Initiated self-destruct program"]
+          "items": [
+            "Facing an inescapable predicament",
+            "Two made a joint choice",
+            "Initiated self-destruct program"
+          ]
         },
         {
           "type": "highlight",

@@ -6,14 +6,15 @@
     "dev": "next dev",
     "prebuild": "node ./scripts/generate-blur-placeholders.mjs",
     "build": "next build",
-    "postbuild": "next-sitemap",
+    "postbuild": "next-sitemap --config ./scripts/next-sitemap.config.js",
     "start": "next start",
     "lint": "eslint",
     "lint:fix": "eslint --fix",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,css,md}\"",
     "format:check": "prettier --check \"**/*.{js,jsx,ts,tsx,json,css,md}\"",
     "license:add": "node ./scripts/add-license-headers.js",
-    "blur:generate": "node ./scripts/generate-blur-placeholders.mjs"
+    "blur:generate": "node ./scripts/generate-blur-placeholders.mjs",
+    "sitemap:generate": "next-sitemap --config ./scripts/next-sitemap.config.js"
   },
   "dependencies": {
     "framer-motion": "^12.23.24",

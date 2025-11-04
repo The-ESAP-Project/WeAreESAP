@@ -12,3 +12,4 @@ export { TransitionProvider, useTransition } from "./TransitionContext";
 export { PageTransition } from "./PageTransition";
 export { TransitionLink } from "./TransitionLink";
 export { TransitionOverlay } from "./TransitionOverlay";
+export { TransitionFinisher } from "./TransitionFinisher";

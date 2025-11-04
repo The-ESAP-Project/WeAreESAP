@@ -86,8 +86,10 @@ export default async function Home() {
           {/* 简介 */}
           <div className="max-w-2xl mx-auto space-y-4 text-foreground/80">
             <p className="text-lg">
-              {t.rich('hero.intro.main', {
-                strong: (chunks) => <strong className="font-bold">{chunks}</strong>
+              {t.rich("hero.intro.main", {
+                strong: (chunks) => (
+                  <strong className="font-bold">{chunks}</strong>
+                ),
               })}
             </p>
             <p>{t("hero.intro.world")}</p>

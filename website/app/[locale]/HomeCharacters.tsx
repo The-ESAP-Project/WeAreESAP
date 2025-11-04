@@ -3,6 +3,7 @@
 
 "use client";
 
+import { useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { useTransition } from "@/components/ui";
 import { CharacterAccordion, CharacterMobileView } from "@/components";
@@ -14,7 +15,14 @@ interface HomeCharactersProps {
 
 export function HomeCharacters({ characters }: HomeCharactersProps) {
   const router = useRouter();
-  const { startTransition } = useTransition();
+  const { startTransition, finishTransition } = useTransition();
+
+  // 内容加载完成后结束过渡动画
+  useEffect(() => {
+    if (characters && characters.length > 0) {
+      finishTransition();
+    }
+  }, [characters, finishTransition]);
 
   const handleCharacterClick = (characterId: string) => {
     // 先触发过渡动画

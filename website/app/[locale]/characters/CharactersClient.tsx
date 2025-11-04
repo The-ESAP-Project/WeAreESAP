@@ -3,6 +3,7 @@
 
 "use client";
 
+import { useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { useTransition } from "@/components/ui";
 import {
@@ -22,12 +23,19 @@ export function CharactersClient({
   otherCharacters,
 }: CharactersClientProps) {
   const router = useRouter();
-  const { startTransition } = useTransition();
+  const { startTransition, finishTransition } = useTransition();
+
+  // 内容加载完成后结束过渡动画
+  useEffect(() => {
+    if (accordionCharacters && accordionCharacters.length >= 0) {
+      finishTransition();
+    }
+  }, [accordionCharacters, otherCharacters, finishTransition]);
 
   const handleCharacterClick = (characterId: string) => {
     // 先触发过渡动画
     startTransition();
-    // 然后跳转路由（pathname 变化时会自动结束过渡）
+    // 然后跳转路由
     router.push(`/characters/${characterId}`);
   };
 

@@ -3,9 +3,10 @@
 
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { TechModule } from "@/types/tech";
 import { TechTabs, TechModuleView } from "@/components";
+import { useTransition } from "@/components/ui";
 
 interface TechPageClientProps {
   modules: TechModule[];
@@ -13,8 +14,16 @@ interface TechPageClientProps {
 
 export function TechPageClient({ modules }: TechPageClientProps) {
   const [activeModuleId, setActiveModuleId] = useState(modules[0]?.id || "");
+  const { finishTransition } = useTransition();
 
   const activeModule = modules.find((m) => m.id === activeModuleId);
+
+  // 内容加载完成后结束过渡动画
+  useEffect(() => {
+    if (modules && modules.length > 0 && activeModule) {
+      finishTransition();
+    }
+  }, [modules, activeModule, finishTransition]);
 
   return (
     <div className="min-h-screen">

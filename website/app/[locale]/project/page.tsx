@@ -2,6 +2,7 @@
 // SPDX-License-Identifier: Apache-2.0
 
 import { PillarCard, ValueCard, ParticipationCard } from "@/components";
+import { TransitionFinisher } from "@/components/ui/TransitionFinisher";
 import fs from "fs/promises";
 import path from "path";
 import type { Metadata } from "next";
@@ -47,6 +48,7 @@ export default async function ProjectPage() {
 
   return (
     <main className="min-h-screen">
+      <TransitionFinisher />
       {/* Hero 区域 */}
       <section className="relative py-20 px-4 sm:px-6 lg:px-8 bg-linear-to-b from-muted/30 to-transparent">
         <div className="max-w-5xl mx-auto text-center space-y-6">

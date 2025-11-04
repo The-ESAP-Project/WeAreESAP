@@ -81,7 +81,11 @@
     {
       "title": "Casual Participant",
       "icon": "Hand",
-      "description": ["Just want to find a place to chat", "Like this worldview", "Want to make new friends"]
+      "description": [
+        "Just want to find a place to chat",
+        "Like this worldview",
+        "Want to make new friends"
+      ]
     }
   ],
   "welcome": {
@@ -150,7 +154,11 @@
     {
       "number": 1,
       "title": "Understand the Rules",
-      "items": ["Read worldview settings", "Understand technical limitations", "Respect existing content"]
+      "items": [
+        "Read worldview settings",
+        "Understand technical limitations",
+        "Respect existing content"
+      ]
     },
     {
       "number": 2,
@@ -253,8 +261,18 @@
     {
       "category": "Content Contributions",
       "icon": "FileText",
-      "types": ["Story Writing", "Character Design", "Technical Documentation", "Illustrations", "Music Works"],
-      "channels": ["GitHub Pull Request", "Community Platform Release", "Contact Administrators"]
+      "types": [
+        "Story Writing",
+        "Character Design",
+        "Technical Documentation",
+        "Illustrations",
+        "Music Works"
+      ],
+      "channels": [
+        "GitHub Pull Request",
+        "Community Platform Release",
+        "Contact Administrators"
+      ]
     },
     {
       "category": "Technical Contributions",
@@ -265,12 +283,23 @@
         "Community Tools",
         "Other Tech Projects"
       ],
-      "methods": ["Code Commits", "Bug Reports", "Feature Suggestions", "Documentation Improvement"]
+      "methods": [
+        "Code Commits",
+        "Bug Reports",
+        "Feature Suggestions",
+        "Documentation Improvement"
+      ]
     },
     {
       "category": "Community Building",
       "icon": "Star",
-      "activities": ["Organize Events", "Manage Community", "Welcome Newcomers", "Answer Questions", "Maintain Atmosphere"]
+      "activities": [
+        "Organize Events",
+        "Manage Community",
+        "Welcome Newcomers",
+        "Answer Questions",
+        "Maintain Atmosphere"
+      ]
     }
   ],
   "faq": [

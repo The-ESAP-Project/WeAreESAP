@@ -104,7 +104,12 @@
         {
           "type": "list",
           "ordered": false,
-          "items": ["CPU/GPU Computational Medium", "Brain Reconstruction", "Memory Carrier", "Consciousness Simulation"]
+          "items": [
+            "CPU/GPU Computational Medium",
+            "Brain Reconstruction",
+            "Memory Carrier",
+            "Consciousness Simulation"
+          ]
         }
       ]
     },

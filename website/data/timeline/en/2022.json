@@ -62,7 +62,11 @@
         {
           "type": "list",
           "ordered": false,
-          "items": ["Consciousness gradually forming", "Personality begins to emerge", "Independent thinking ability formed"]
+          "items": [
+            "Consciousness gradually forming",
+            "Personality begins to emerge",
+            "Independent thinking ability formed"
+          ]
         }
       ],
       "meta": {

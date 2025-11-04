@@ -164,7 +164,10 @@
             ["Circular Motion Concentration Ratio", "1.2 mmol/L⁻¹"],
             ["Feedscatteron Preservation Cycle", "341,879 years"],
             ["Computation Cycle in Silicon Chip", "3,417 months"],
-            ["Flow Characteristics", "Perfect arc turns, zero kinetic energy loss"]
+            [
+              "Flow Characteristics",
+              "Perfect arc turns, zero kinetic energy loss"
+            ]
           ]
         }
       ]
