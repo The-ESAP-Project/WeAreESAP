@@ -5,7 +5,7 @@
 
 import { Character } from "@/types/character";
 import { useTranslations } from "next-intl";
-import { getContrastTextColor } from "@/lib/utils";
+import { getContrastTextColor, getContrastTextColorDark } from "@/lib/utils";
 
 interface CharacterPhilosophyProps {
   character: Character;
@@ -17,12 +17,25 @@ export function CharacterPhilosophy({ character }: CharacterPhilosophyProps) {
     | Record<string, string>
     | undefined;
 
+  // 预计算颜色值
+  const lightModeColor = getContrastTextColor(character.color.primary);
+  const darkModeColor = getContrastTextColorDark(character.color.primary);
+
   if (!philosophy || Object.keys(philosophy).length === 0) {
     return null;
   }
 
   return (
-    <section className="scroll-mt-24" id="philosophy">
+    <section 
+      className="scroll-mt-24" 
+      id="philosophy"
+      style={
+        {
+          "--char-color-light": lightModeColor,
+          "--char-color-dark": darkModeColor,
+        } as React.CSSProperties
+      }
+    >
       <h2 className="text-3xl font-bold mb-8 text-foreground flex items-center gap-3">
         <span
           className="w-2 h-8 rounded-full"
@@ -41,8 +54,7 @@ export function CharacterPhilosophy({ character }: CharacterPhilosophyProps) {
           >
             {/* 标题 */}
             <h3
-              className="text-xl font-bold mb-6 flex items-center gap-3"
-              style={{ color: getContrastTextColor(character.color.primary) }}
+              className="text-xl font-bold mb-6 flex items-center gap-3 [color:var(--char-color-light)] dark:[color:var(--char-color-dark)]"
             >
               <span
                 className="w-1.5 h-6 rounded-full"

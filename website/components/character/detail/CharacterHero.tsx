@@ -9,7 +9,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { Character } from "@/types/character";
 import { Link } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
-import { getContrastTextColor } from "@/lib/utils";
+import { getContrastTextColor, getContrastTextColorDark } from "@/lib/utils";
 
 interface CharacterHeroProps {
   character: Character;
@@ -18,6 +18,10 @@ interface CharacterHeroProps {
 export function CharacterHero({ character }: CharacterHeroProps) {
   const t = useTranslations("characters");
   const sectionRef = useRef<HTMLElement>(null);
+
+  // 预计算颜色值
+  const lightModeColor = getContrastTextColor(character.color.primary);
+  const darkModeColor = getContrastTextColorDark(character.color.primary);
 
   // 监听滚动进度
   const { scrollYProgress } = useScroll({
@@ -85,7 +89,9 @@ export function CharacterHero({ character }: CharacterHeroProps) {
           y: contentY,
           opacity: contentOpacity,
           textShadow: "0 4px 20px rgba(0,0,0,0.9)",
-        }}
+          "--char-color-light": lightModeColor,
+          "--char-color-dark": darkModeColor,
+        } as React.CSSProperties}
       >
         {/* 装饰线 */}
         <motion.div
@@ -100,11 +106,10 @@ export function CharacterHero({ character }: CharacterHeroProps) {
 
         {/* 角色代号 */}
         <motion.div
-          className="text-3xl md:text-4xl font-mono font-bold mb-6"
+          className="text-3xl md:text-4xl font-mono font-bold mb-6 [color:var(--char-color-light)] dark:[color:var(--char-color-dark)]"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2, duration: 0.6 }}
-          style={{ color: getContrastTextColor(character.color.primary) }}
         >
           {character.code}
         </motion.div>
@@ -149,9 +154,8 @@ export function CharacterHero({ character }: CharacterHeroProps) {
           {character.keywords.map((keyword, index) => (
             <span
               key={index}
-              className="px-5 py-2 rounded-full text-sm md:text-base font-medium backdrop-blur-md bg-black/30 dark:bg-black/50"
+              className="px-5 py-2 rounded-full text-sm md:text-base font-medium backdrop-blur-md bg-black/30 dark:bg-black/50 [color:var(--char-color-light)] dark:[color:var(--char-color-dark)]"
               style={{
-                color: getContrastTextColor(character.color.primary),
                 border: `2px solid ${character.color.primary}90`,
               }}
             >

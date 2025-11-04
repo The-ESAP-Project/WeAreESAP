@@ -9,7 +9,7 @@ import { CharacterCardData } from "@/types/character";
 import Image from "next/image";
 import { getBlurDataURL } from "@/lib/blur-placeholder";
 import { useTranslations } from "next-intl";
-import { getContrastTextColor } from "@/lib/utils";
+import { getContrastTextColor, getContrastTextColorDark } from "@/lib/utils";
 
 interface CharacterStripProps {
   character: CharacterCardData;
@@ -24,11 +24,21 @@ function CharacterStripComponent({
 }: CharacterStripProps) {
   const t = useTranslations("characters");
 
+  // 预计算颜色值
+  const lightModeColor = getContrastTextColor(character.color.primary);
+  const darkModeColor = getContrastTextColorDark(character.color.primary);
+
   return (
     <motion.div
       className="relative h-[600px] overflow-hidden cursor-pointer group"
       onClick={onClick}
       layout
+      style={
+        {
+          "--char-color-light": lightModeColor,
+          "--char-color-dark": darkModeColor,
+        } as React.CSSProperties
+      }
     >
       {/* 背景图片 */}
       {character.backgroundImage && (
@@ -79,8 +89,7 @@ function CharacterStripComponent({
 
             {/* 角色代号 */}
             <div
-              className="text-2xl font-mono font-bold"
-              style={{ color: getContrastTextColor(character.color.primary) }}
+              className="text-2xl font-mono font-bold [color:var(--char-color-light)] dark:[color:var(--char-color-dark)]"
             >
               {character.code}
             </div>
@@ -101,9 +110,8 @@ function CharacterStripComponent({
               {character.keywords.map((keyword, index) => (
                 <span
                   key={index}
-                  className="px-4 py-2 rounded-full text-sm font-medium backdrop-blur-sm bg-black/30 dark:bg-black/50"
+                  className="px-4 py-2 rounded-full text-sm font-medium backdrop-blur-sm bg-black/30 dark:bg-black/50 [color:var(--char-color-light)] dark:[color:var(--char-color-dark)]"
                   style={{
-                    color: getContrastTextColor(character.color.primary),
                     border: `2px solid ${character.color.primary}80`,
                     textShadow: "0 1px 8px rgba(0,0,0,0.9)",
                   }}

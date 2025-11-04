@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { CharacterCardData } from "@/types/character";
 import { getBlurDataURL } from "@/lib/blur-placeholder";
-import { getContrastTextColor } from "@/lib/utils";
+import { getContrastTextColor, getContrastTextColorDark } from "@/lib/utils";
 
 interface CharacterCardProps {
   character: CharacterCardData;
@@ -21,6 +21,10 @@ function CharacterCardComponent({
   onClick,
   priority = false,
 }: CharacterCardProps) {
+  // 预计算颜色值
+  const lightModeColor = getContrastTextColor(character.color.primary);
+  const darkModeColor = getContrastTextColorDark(character.color.primary);
+
   return (
     <motion.div
       className="relative group cursor-pointer"
@@ -29,6 +33,12 @@ function CharacterCardComponent({
       whileHover={{ y: -8 }}
       transition={{ duration: 0.3 }}
       onClick={onClick}
+      style={
+        {
+          "--char-color-light": lightModeColor,
+          "--char-color-dark": darkModeColor,
+        } as React.CSSProperties
+      }
     >
       {/* 卡片主体 */}
       <div
@@ -92,9 +102,8 @@ function CharacterCardComponent({
 
           {/* 角色代号 */}
           <div
-            className="text-lg font-mono font-bold mb-2"
+            className="text-lg font-mono font-bold mb-2 [color:var(--char-color-light)] dark:[color:var(--char-color-dark)]"
             style={{
-              color: getContrastTextColor(character.color.primary),
               textShadow: "0 2px 4px rgba(0,0,0,0.9), 0 0 8px rgba(0,0,0,0.7)",
             }}
           >
@@ -147,9 +156,8 @@ function CharacterCardComponent({
             {character.keywords.map((keyword, index) => (
               <span
                 key={index}
-                className="px-3 py-1 text-xs rounded-full backdrop-blur-sm bg-black/30 dark:bg-black/50 transition-all"
+                className="px-3 py-1 text-xs rounded-full backdrop-blur-sm bg-black/30 dark:bg-black/50 transition-all [color:var(--char-color-light)] dark:[color:var(--char-color-dark)]"
                 style={{
-                  color: getContrastTextColor(character.color.primary),
                   border: `1.5px solid ${character.color.primary}80`,
                 }}
               >

@@ -5,7 +5,7 @@
 
 import { Character } from "@/types/character";
 import { useTranslations } from "next-intl";
-import { getContrastTextColor } from "@/lib/utils";
+import { getContrastTextColor, getContrastTextColorDark } from "@/lib/utils";
 
 interface CharacterAbilitiesProps {
   character: Character;
@@ -16,12 +16,25 @@ export function CharacterAbilities({ character }: CharacterAbilitiesProps) {
   const abilities = character.meta?.abilities as string[] | undefined;
   const weapons = character.meta?.weapons as string[] | undefined;
 
+  // 预计算颜色值
+  const lightModeColor = getContrastTextColor(character.color.primary);
+  const darkModeColor = getContrastTextColorDark(character.color.primary);
+
   if (!abilities && !weapons) {
     return null;
   }
 
   return (
-    <section className="scroll-mt-24" id="abilities">
+    <section 
+      className="scroll-mt-24" 
+      id="abilities"
+      style={
+        {
+          "--char-color-light": lightModeColor,
+          "--char-color-dark": darkModeColor,
+        } as React.CSSProperties
+      }
+    >
       <h2 className="text-3xl font-bold mb-8 text-foreground flex items-center gap-3">
         <span
           className="w-2 h-8 rounded-full"
@@ -81,10 +94,7 @@ export function CharacterAbilities({ character }: CharacterAbilitiesProps) {
                   className="flex items-center gap-4 p-4 rounded-lg bg-background/50 hover:bg-background transition-colors group"
                 >
                   <div
-                    className="flex-shrink-0 w-12 h-12 rounded-lg flex items-center justify-center text-2xl bg-background/80 group-hover:scale-110 transition-transform"
-                    style={{
-                      color: getContrastTextColor(character.color.primary),
-                    }}
+                    className="flex-shrink-0 w-12 h-12 rounded-lg flex items-center justify-center text-2xl bg-background/80 group-hover:scale-110 transition-transform [color:var(--char-color-light)] dark:[color:var(--char-color-dark)]"
                   >
                     ⚔️
                   </div>
