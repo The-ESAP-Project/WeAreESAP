@@ -1,3 +1,10 @@
+// 国际化配置 - 需要与 i18n/routing.ts 保持一致
+const I18N_CONFIG = {
+  locales: ["zh-CN", "en", "ja"],
+  defaultLocale: "zh-CN",
+  // localePrefix: "as-needed" 意味着默认语言不会有前缀，其他语言会有前缀
+};
+
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
   siteUrl: process.env.NEXT_PUBLIC_SITE_URL || "https://weare.esaps.net",
@@ -27,8 +34,7 @@ module.exports = {
   // defaultLocale: zh-CN, localePrefix: as-needed
   // 这意味着 zh-CN 不会有前缀，其他语言会有前缀
   additionalPaths: async (config) => {
-    const locales = ["zh-CN", "en", "ja"];
-    const defaultLocale = "zh-CN";
+    const { locales, defaultLocale } = I18N_CONFIG;
     const paths = [];
 
     // 定义需要生成的基础路径
@@ -72,9 +78,12 @@ module.exports = {
     let priority = 0.7;
     let changefreq = "monthly";
 
+    const { locales, defaultLocale } = I18N_CONFIG;
+
     // 提取不带语言前缀的路径用于判断
-    // 支持的语言前缀: /en, /ja (zh-CN 是默认语言，没有前缀)
-    const localeRegex = /^\/(en|ja)(\/|$)/;
+    // 动态生成语言前缀正则，排除默认语言
+    const nonDefaultLocales = locales.filter((l) => l !== defaultLocale);
+    const localeRegex = new RegExp(`^/(${nonDefaultLocales.join("|")})(\/|$)`);
     const basePath = path.replace(localeRegex, "/");
 
     // 首页
@@ -94,8 +103,6 @@ module.exports = {
     }
 
     // 生成 alternateRefs 用于 hreflang 标签
-    const locales = ["zh-CN", "en", "ja"];
-    const defaultLocale = "zh-CN";
     const alternateRefs = locales.map((locale) => ({
       href: `${config.siteUrl}${locale === defaultLocale ? "" : `/${locale}`}${basePath}`,
       hreflang: locale,
