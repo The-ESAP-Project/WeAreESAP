@@ -5,6 +5,7 @@ export { TriangleLogo } from "./TriangleLogo";
 export { ThemeToggle } from "./ThemeToggle";
 export { ThemeProvider } from "./ThemeProvider";
 export { Icon, hasIcon, type IconName, type IconProps } from "./Icon";
+export { LanguageSwitcher } from "./LanguageSwitcher";
 
 // 页面过渡相关
 export { TransitionProvider, useTransition } from "./TransitionContext";

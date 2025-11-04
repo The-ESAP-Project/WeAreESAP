@@ -1,0 +1,24 @@
+{
+  "navigation": {
+    "home": "首页",
+    "characters": "角色档案",
+    "timeline": "时间线",
+    "tech": "技术设定",
+    "project": "项目企划",
+    "join": "加入我们"
+  },
+  "header": {
+    "siteName": "We Are ESAP",
+    "tagline": "向那卫星许愿"
+  },
+  "footer": {
+    "quote": "天上没有星星，但我们造了一颗",
+    "projectName": "The ESAP Project",
+    "developedBy": "由",
+    "developers": "AptS:1547、AptS:1548 及贡献者",
+    "developed": "开发",
+    "license": "本作品采用",
+    "licenseName": "CC-BY 4.0",
+    "licenseText": "协议授权"
+  }
+}

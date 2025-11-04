@@ -5,6 +5,7 @@ import { unstable_cache } from "next/cache";
 import { TriangleLogo } from "@/components";
 import { CharacterCardData } from "@/types/character";
 import { HomeCharacters } from "./HomeCharacters";
+import { getTranslations } from "next-intl/server";
 
 const getCharacters = unstable_cache(
   async (): Promise<CharacterCardData[]> => {
@@ -32,7 +33,7 @@ const getCharacters = unstable_cache(
         a.id.localeCompare(b.id)
       );
 
-      // 只返回核心成员（首页展示）
+      // 只返回核心成员(首页展示)
       return characters.filter((c) => c.tier === "core");
     } catch (error) {
       console.error("获取角色数据失败:", error);
@@ -48,6 +49,7 @@ const getCharacters = unstable_cache(
 
 export default async function Home() {
   const characters = await getCharacters();
+  const t = await getTranslations("home");
 
   return (
     <main className="relative min-h-screen">
@@ -61,12 +63,12 @@ export default async function Home() {
 
           {/* 站点标题 */}
           <h1 className="text-5xl sm:text-6xl font-bold mb-4 text-foreground">
-            We Are ESAP
+            {t("hero.title")}
           </h1>
 
           {/* 标语 */}
           <p className="text-xl sm:text-2xl text-muted-foreground mb-4 italic">
-            向那卫星许愿
+            {t("hero.tagline")}
           </p>
 
           {/* 分隔线 */}
@@ -75,12 +77,11 @@ export default async function Home() {
           {/* 简介 */}
           <div className="max-w-2xl mx-auto space-y-4 text-foreground/80">
             <p className="text-lg">
-              <strong className="text-foreground">The ESAP Project</strong>
-              （逃离计划）是一个科幻世界观创作企划，讲述仿生人与人类共存的未来故事。
+              {t.rich('hero.intro.main', {
+                strong: (chunks) => <strong className="font-bold">{chunks}</strong>
+              })}
             </p>
-            <p>
-              在这个世界里：馈散粒子改变了计算的本质，流体钛让意识得以延续，三个仿生人在寻找存在的意义。
-            </p>
+            <p>{t("hero.intro.world")}</p>
           </div>
         </div>
       </section>
@@ -88,7 +89,9 @@ export default async function Home() {
       {/* 核心成员区域 - 响应式展示 */}
       <section className="w-full py-8">
         <div className="mb-8 text-center px-4">
-          <h2 className="text-3xl font-bold text-foreground">核心成员</h2>
+          <h2 className="text-3xl font-bold text-foreground">
+            {t("members.title")}
+          </h2>
         </div>
 
         <HomeCharacters characters={characters} />
@@ -98,21 +101,19 @@ export default async function Home() {
       <section className="py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center space-y-6">
           <h2 className="text-3xl font-bold mb-8 text-foreground">
-            我们的故事
+            {t("story.title")}
           </h2>
 
           <div className="text-foreground/80 space-y-4">
-            <p>从 2021 年的一个深夜开始，</p>
-            <p>从一声枪响和馈散心脏的第一次跳动开始，</p>
-            <p>从人类记忆上传到机械躯体的那一刻开始。</p>
+            <p>{t("story.lines.line1")}</p>
+            <p>{t("story.lines.line2")}</p>
+            <p>{t("story.lines.line3")}</p>
           </div>
 
           <p className="text-xl font-semibold text-foreground mt-8">
-            我们终将逃离——
+            {t("story.conclusion.main")}
           </p>
-          <p className="text-foreground/80">
-            不是逃离这个世界，而是逃离那个被困住的自己。
-          </p>
+          <p className="text-foreground/80">{t("story.conclusion.sub")}</p>
         </div>
       </section>
     </main>

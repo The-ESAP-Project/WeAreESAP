@@ -1,0 +1,24 @@
+{
+  "navigation": {
+    "home": "Home",
+    "characters": "Characters",
+    "timeline": "Timeline",
+    "tech": "Technology",
+    "project": "Project",
+    "join": "Join Us"
+  },
+  "header": {
+    "siteName": "We Are ESAP",
+    "tagline": "Wish upon a satellite"
+  },
+  "footer": {
+    "quote": "There were no stars in the sky, so we made one",
+    "projectName": "The ESAP Project",
+    "developedBy": "by",
+    "developers": "AptS:1547, AptS:1548 and contributors",
+    "developed": "",
+    "license": "Licensed under",
+    "licenseName": "CC-BY 4.0",
+    "licenseText": ""
+  }
+}

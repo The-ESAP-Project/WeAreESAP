@@ -1,0 +1,25 @@
+{
+  "hero": {
+    "title": "We Are ESAP",
+    "tagline": "Make a Wish to That Satellite",
+    "intro": {
+      "main": "<strong>The ESAP Project</strong> is a science fiction worldbuilding project that tells the story of a future where androids and humans coexist.",
+      "world": "In this world: Entropic Scattering Particles changed the nature of computation, Fluid Titanium allowed consciousness to persist, and three androids are searching for the meaning of existence."
+    }
+  },
+  "members": {
+    "title": "Core Members"
+  },
+  "story": {
+    "title": "Our Story",
+    "lines": {
+      "line1": "It began on a late night in 2021,",
+      "line2": "With a gunshot and the first beat of an entropic heart,",
+      "line3": "From the moment human memory was uploaded into a mechanical body."
+    },
+    "conclusion": {
+      "main": "We will eventually escape—",
+      "sub": "Not from this world, but from the self that was trapped."
+    }
+  }
+}

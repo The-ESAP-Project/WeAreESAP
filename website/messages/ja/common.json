@@ -1,0 +1,24 @@
+{
+  "navigation": {
+    "home": "ホーム",
+    "characters": "キャラクター",
+    "timeline": "タイムライン",
+    "tech": "テクノロジー",
+    "project": "プロジェクト",
+    "join": "参加する"
+  },
+  "header": {
+    "siteName": "We Are ESAP",
+    "tagline": "Wish upon a satellite"
+  },
+  "footer": {
+    "quote": "空に星がなかったから、私たちは一つ作った",
+    "projectName": "The ESAP Project",
+    "developedBy": "",
+    "developers": "AptS:1547、AptS:1548 及びコントリビューター",
+    "developed": "により開発",
+    "license": "",
+    "licenseName": "CC-BY 4.0",
+    "licenseText": "ライセンスの下で提供されています"
+  }
+}

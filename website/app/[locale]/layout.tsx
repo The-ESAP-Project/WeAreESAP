@@ -3,7 +3,7 @@
 
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
+import "../globals.css";
 import {
   ThemeProvider,
   TransitionProvider,
@@ -13,6 +13,9 @@ import {
   Footer,
   ScrollToTop,
 } from "@/components";
+import { NextIntlClientProvider } from "next-intl";
+import { getMessages } from "next-intl/server";
+import { locales } from "@/i18n/request";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -31,7 +34,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "We Are ESAP - 向那卫星许愿",
   description:
-    "The ESAP Project（逃离计划）- 一个科幻世界观创作企划，讲述仿生人与人类共存的未来故事",
+    "The ESAP Project(逃离计划) - 一个科幻世界观创作企划,讲述仿生人与人类共存的未来故事",
   keywords: ["ESAP", "科幻", "仿生人", "世界观", "创作企划"],
   authors: [{ name: "AptS:1547" }, { name: "AptS:1548" }],
   openGraph: {
@@ -41,25 +44,37 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
+// 生成静态参数
+export function generateStaticParams() {
+  return locales.map((locale) => ({ locale }));
+}
+
+export default async function RootLayout({
   children,
+  params,
 }: Readonly<{
   children: React.ReactNode;
+  params: Promise<{ locale: string }>;
 }>) {
+  const { locale } = await params;
+  const messages = await getMessages();
+
   return (
-    <html lang="zh-CN" suppressHydrationWarning data-scroll-behavior="smooth">
+    <html lang={locale} suppressHydrationWarning data-scroll-behavior="smooth">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <ThemeProvider>
-          <TransitionProvider>
-            <Navigation />
-            <PageTransition>{children}</PageTransition>
-            <Footer />
-            <ScrollToTop />
-            <TransitionOverlay />
-          </TransitionProvider>
-        </ThemeProvider>
+        <NextIntlClientProvider messages={messages}>
+          <ThemeProvider>
+            <TransitionProvider>
+              <Navigation />
+              <PageTransition>{children}</PageTransition>
+              <Footer />
+              <ScrollToTop />
+              <TransitionOverlay />
+            </TransitionProvider>
+          </ThemeProvider>
+        </NextIntlClientProvider>
       </body>
     </html>
   );

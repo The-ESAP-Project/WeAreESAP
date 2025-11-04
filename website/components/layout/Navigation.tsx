@@ -7,24 +7,32 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { ThemeToggle, TransitionLink, Icon } from "@/components/ui";
+import {
+  ThemeToggle,
+  TransitionLink,
+  Icon,
+  LanguageSwitcher,
+} from "@/components/ui";
+import { useTranslations } from "next-intl";
 
 const navLinks = [
-  { href: "/project", label: "项目企划" },
-  { href: "/characters", label: "角色档案" },
-  { href: "/tech", label: "技术设定" },
-  { href: "/timeline", label: "时间线" },
-  { href: "/join", label: "加入我们" },
-];
+  { href: "/project", key: "project" },
+  { href: "/characters", key: "characters" },
+  { href: "/tech", key: "tech" },
+  { href: "/timeline", key: "timeline" },
+  { href: "/join", key: "join" },
+] as const;
 
 export function Navigation() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const pathname = usePathname();
+  const tNavigation = useTranslations("common.navigation");
+  const tHeader = useTranslations("common.header");
 
   const closeMobileMenu = () => setIsMobileMenuOpen(false);
 
   // 判断链接是否激活
-  const isActive = (href: string) => pathname.startsWith(href);
+  const isActive = (href: string) => pathname.includes(href);
 
   return (
     <>
@@ -46,10 +54,10 @@ export function Navigation() {
               />
               <div className="flex flex-col">
                 <span className="text-lg font-bold text-foreground group-hover:text-esap-yellow transition-colors">
-                  We Are ESAP
+                  {tHeader("siteName")}
                 </span>
                 <span className="text-xs text-muted-foreground">
-                  向那卫星许愿
+                  {tHeader("tagline")}
                 </span>
               </div>
             </TransitionLink>
@@ -68,7 +76,7 @@ export function Navigation() {
                           : "text-muted-foreground hover:text-foreground"
                       }`}
                     >
-                      {link.label}
+                      {tNavigation(link.key)}
                     </TransitionLink>
                     {/* 激活指示器 - ESAP 三色渐变 */}
                     {active && (
@@ -89,6 +97,9 @@ export function Navigation() {
 
             {/* 右侧按钮组 */}
             <div className="flex items-center gap-3">
+              {/* 语言切换器 */}
+              <LanguageSwitcher />
+
               {/* 主题切换按钮 */}
               <ThemeToggle />
 
@@ -155,7 +166,7 @@ export function Navigation() {
                           : "text-foreground hover:text-esap-pink"
                       }`}
                     >
-                      {link.label}
+                      {tNavigation(link.key)}
                     </TransitionLink>
                   );
                 })}
