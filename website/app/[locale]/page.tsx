@@ -5,8 +5,10 @@ import { unstable_cache } from "next/cache";
 import { TriangleLogo } from "@/components";
 import { CharacterCardData } from "@/types/character";
 import { HomeCharacters } from "./HomeCharacters";
-import { getTranslations } from "next-intl/server";
+import { getLocale, getTranslations } from "next-intl/server";
 import type { Metadata } from "next";
+import fs from "fs/promises";
+import path from "path";
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations("home.metadata");
@@ -17,13 +19,24 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 const getCharacters = unstable_cache(
-  async (): Promise<CharacterCardData[]> => {
+  async (locale: string): Promise<CharacterCardData[]> => {
     try {
-      // 在服务端直接读取 JSON 文件
-      const fs = require("fs/promises");
-      const path = require("path");
+      // 尝试读取指定语言的目录
+      let charactersDir = path.join(
+        process.cwd(),
+        "data",
+        "characters",
+        locale
+      );
 
-      const charactersDir = path.join(process.cwd(), "data", "characters");
+      // 检查目录是否存在，不存在则回退到 zh-CN
+      try {
+        await fs.access(charactersDir);
+      } catch {
+        console.log(`角色数据目录 ${locale} 不存在，回退到 zh-CN`);
+        charactersDir = path.join(process.cwd(), "data", "characters", "zh-CN");
+      }
+
       const files = await fs.readdir(charactersDir);
 
       const characters: CharacterCardData[] = [];
@@ -57,7 +70,8 @@ const getCharacters = unstable_cache(
 );
 
 export default async function Home() {
-  const characters = await getCharacters();
+  const locale = await getLocale();
+  const characters = await getCharacters(locale);
   const t = await getTranslations("home");
 
   return (
