@@ -5,6 +5,7 @@
 
 import { Character } from "@/types/character";
 import { useTranslations } from "next-intl";
+import { getContrastTextColor, getContrastTextColorDark } from "@/lib/utils";
 
 interface CharacterSpeechStyleProps {
   character: Character;
@@ -14,12 +15,25 @@ export function CharacterSpeechStyle({ character }: CharacterSpeechStyleProps) {
   const t = useTranslations("characters");
   const speechStyle = character.meta?.speechStyle as string[] | undefined;
 
+  // 预计算颜色值
+  const lightModeColor = getContrastTextColor(character.color.primary);
+  const darkModeColor = getContrastTextColorDark(character.color.primary);
+
   if (!speechStyle || speechStyle.length === 0) {
     return null;
   }
 
   return (
-    <section className="scroll-mt-24" id="speech-style">
+    <section 
+      className="scroll-mt-24" 
+      id="speech-style"
+      style={
+        {
+          "--char-color-light": lightModeColor,
+          "--char-color-dark": darkModeColor,
+        } as React.CSSProperties
+      }
+    >
       <h2 className="text-3xl font-bold mb-8 text-foreground flex items-center gap-3">
         <span
           className="w-2 h-8 rounded-full"
@@ -39,9 +53,8 @@ export function CharacterSpeechStyle({ character }: CharacterSpeechStyleProps) {
             >
               {/* 引号装饰 */}
               <div
-                className="flex-shrink-0 w-10 h-10 rounded-lg flex items-center justify-center text-2xl font-bold group-hover:scale-110 transition-transform"
+                className="flex-shrink-0 w-10 h-10 rounded-lg flex items-center justify-center text-2xl font-bold group-hover:scale-110 transition-transform [color:var(--char-color-light)] dark:[color:var(--char-color-dark)]"
                 style={{
-                  color: character.color.primary,
                   backgroundColor: `${character.color.primary}15`,
                 }}
               >

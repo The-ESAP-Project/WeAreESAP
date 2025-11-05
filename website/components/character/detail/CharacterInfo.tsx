@@ -5,6 +5,7 @@
 
 import { Character } from "@/types/character";
 import { useTranslations } from "next-intl";
+import { getContrastTextColor, getContrastTextColorDark } from "@/lib/utils";
 
 interface CharacterInfoProps {
   character: Character;
@@ -12,6 +13,11 @@ interface CharacterInfoProps {
 
 export function CharacterInfo({ character }: CharacterInfoProps) {
   const t = useTranslations("characters");
+  
+  // 预计算颜色值
+  const lightModeColor = getContrastTextColor(character.color.primary);
+  const darkModeColor = getContrastTextColorDark(character.color.primary);
+  
   const infoItems = [
     { label: t("detail.fields.code"), value: character.code },
     { label: t("detail.fields.name"), value: character.name },
@@ -41,7 +47,16 @@ export function CharacterInfo({ character }: CharacterInfoProps) {
   ].filter((item) => item.value); // 过滤掉没有值的项
 
   return (
-    <section className="scroll-mt-24" id="info">
+    <section 
+      className="scroll-mt-24" 
+      id="info"
+      style={
+        {
+          "--char-color-light": lightModeColor,
+          "--char-color-dark": darkModeColor,
+        } as React.CSSProperties
+      }
+    >
       <h2 className="text-3xl font-bold mb-8 text-foreground flex items-center gap-3">
         <span
           className="w-2 h-8 rounded-full"
@@ -86,9 +101,8 @@ export function CharacterInfo({ character }: CharacterInfoProps) {
             {character.keywords.map((keyword, index) => (
               <span
                 key={index}
-                className="px-5 py-2 rounded-full text-sm font-medium bg-background transition-all hover:scale-105"
+                className="px-5 py-2 rounded-full text-sm font-medium bg-background transition-all hover:scale-105 [color:var(--char-color-light)] dark:[color:var(--char-color-dark)]"
                 style={{
-                  color: character.color.primary,
                   border: `2px solid ${character.color.primary}40`,
                 }}
               >

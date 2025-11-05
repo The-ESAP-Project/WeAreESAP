@@ -9,6 +9,7 @@ import { CharacterCardData } from "@/types/character";
 import Image from "next/image";
 import { getBlurDataURL } from "@/lib/blur-placeholder";
 import { useTranslations } from "next-intl";
+import { getContrastTextColor, getContrastTextColorDark } from "@/lib/utils";
 
 interface CharacterMobileViewProps {
   characters: CharacterCardData[];
@@ -48,6 +49,10 @@ export function CharacterMobileView({
     <div className="w-full space-y-4 px-4">
       {characters.map((character, index) => {
         const isExpanded = expandedIndex === index;
+        
+        // 预计算颜色值
+        const lightModeColor = getContrastTextColor(character.color.primary);
+        const darkModeColor = getContrastTextColorDark(character.color.primary);
 
         return (
           <motion.div
@@ -59,6 +64,12 @@ export function CharacterMobileView({
               height: isExpanded ? "auto" : "140px",
             }}
             transition={{ duration: 0.3, ease: "easeInOut" }}
+            style={
+              {
+                "--char-color-light": lightModeColor,
+                "--char-color-dark": darkModeColor,
+              } as React.CSSProperties
+            }
           >
             {/* 背景图片 */}
             {character.backgroundImage && (
@@ -103,8 +114,7 @@ export function CharacterMobileView({
               <div className="space-y-2">
                 {/* 角色代号 */}
                 <div
-                  className="text-lg font-mono font-bold"
-                  style={{ color: character.color.primary }}
+                  className="text-lg font-mono font-bold [color:var(--char-color-light)] dark:[color:var(--char-color-dark)]"
                 >
                   {character.code}
                 </div>
@@ -156,9 +166,8 @@ export function CharacterMobileView({
                       {character.keywords.map((keyword, keyIndex) => (
                         <span
                           key={keyIndex}
-                          className="px-3 py-1 rounded-full text-xs font-medium backdrop-blur-sm bg-black/20 dark:bg-black/30"
+                          className="px-3 py-1 rounded-full text-xs font-medium backdrop-blur-sm bg-black/20 dark:bg-black/30 [color:var(--char-color-light)] dark:[color:var(--char-color-dark)]"
                           style={{
-                            color: character.color.primary,
                             border: `1.5px solid ${character.color.primary}80`,
                           }}
                         >
