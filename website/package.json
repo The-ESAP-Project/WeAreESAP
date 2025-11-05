@@ -2,6 +2,23 @@
   "name": "we-are-esap",
   "version": "0.1.0",
   "private": true,
+  "description": "WeAreESAP - 向那卫星许愿：一个科幻世界观创作企划，讲述仿生人与人类共存的未来故事",
+  "license": "Apache-2.0",
+  "author": "AptS:1547 (Yuhan Bian / 卞雨涵 <apts-1547@esaps.net>)",
+  "contributors": [
+    "AptS:1547 (Yuhan Bian / 卞雨涵 <apts-1547@esaps.net>)",
+    "AptS:1548 (Yingyin Cai / 蔡颖茵 <apts-1548@esaps.net>)",
+    "AptS:1738 (Qingxian Lu / 陆清弦 <apts-1738@esaps.net>)",
+    "AptS:1553 (Pancake-and-1547)"
+  ],
+  "homepage": "https://weare.esaps.net",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AptS-1547/WeAreESAP"
+  },
+  "bugs": {
+    "url": "https://github.com/AptS-1547/WeAreESAP/issues"
+  },
   "scripts": {
     "dev": "next dev",
     "prebuild": "node ./scripts/generate-blur-placeholders.mjs",
