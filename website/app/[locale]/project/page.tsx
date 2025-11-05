@@ -6,6 +6,14 @@ import fs from "fs/promises";
 import path from "path";
 import type { Metadata } from "next";
 import { getTranslations, getLocale } from "next-intl/server";
+import type {
+  Pillar,
+  Value,
+  Technology,
+  TimelineItem,
+  Participation,
+  MeaningSection,
+} from "@/types/project";
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations("project.metadata");
@@ -110,7 +118,7 @@ export default async function ProjectPage() {
             {t("sections.pillars")}
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {data.pillars.map((pillar: any, index: number) => (
+            {data.pillars.map((pillar: Pillar, index: number) => (
               <PillarCard key={pillar.id} pillar={pillar} index={index} />
             ))}
           </div>
@@ -124,7 +132,7 @@ export default async function ProjectPage() {
             {t("sections.coreValues")}
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {data.coreValues.map((value: any, index: number) => (
+            {data.coreValues.map((value: Value, index: number) => (
               <ValueCard key={value.title} value={value} index={index} />
             ))}
           </div>
@@ -144,7 +152,7 @@ export default async function ProjectPage() {
               {t("sections.techFoundation")}
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {data.worldview.tech.map((tech: any, index: number) => (
+              {data.worldview.tech.map((tech: Technology, index: number) => (
                 <div
                   key={tech.name}
                   className="bg-muted rounded-xl p-6 border border-border hover:border-esap-yellow/50 transition-colors"
@@ -178,7 +186,7 @@ export default async function ProjectPage() {
             </h3>
             <div className="bg-muted rounded-xl p-8 border border-border">
               <div className="space-y-4">
-                {data.worldview.timeline.map((item: any, index: number) => (
+                {data.worldview.timeline.map((item: TimelineItem, index: number) => (
                   <div key={index} className="flex items-start gap-4">
                     <span className="text-esap-blue font-mono font-semibold text-sm min-w-[80px]">
                       {item.year}
@@ -209,7 +217,7 @@ export default async function ProjectPage() {
             })}
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {data.participation.map((p: any, index: number) => (
+            {data.participation.map((p: Participation, index: number) => (
               <ParticipationCard key={p.role} participation={p} index={index} />
             ))}
           </div>
@@ -227,7 +235,7 @@ export default async function ProjectPage() {
               data.meaning.forCreators,
               data.meaning.forParticipants,
               data.meaning.forWorld,
-            ].map((section: any, index: number) => (
+            ].map((section: MeaningSection, index: number) => (
               <div key={section.title} className="space-y-4">
                 <h3 className="text-xl font-bold text-esap-yellow">
                   {section.title}

@@ -6,6 +6,14 @@ import { RoleTypeCard, ChecklistItem, StepCard } from "@/components";
 import { Icon, type IconName } from "@/components/ui";
 import { getTranslations } from "next-intl/server";
 import type { Metadata } from "next";
+import type {
+  RoleType,
+  ParticipationMethod,
+  Step,
+  Principle,
+  CommunityValue,
+  Contribution,
+} from "@/types/join";
 
 // 懒加载非首屏组件
 const FAQAccordion = dynamic(
@@ -93,7 +101,7 @@ export default async function JoinPage() {
 
           {/* 角色类型 */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-            {roleTypes.map((role: any, index: number) => (
+            {roleTypes.map((role: RoleType, index: number) => (
               <RoleTypeCard key={role.title} role={role} index={index} />
             ))}
           </div>
@@ -145,7 +153,7 @@ export default async function JoinPage() {
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {participationMethods.map((method: any) => (
+            {participationMethods.map((method: ParticipationMethod) => (
               <div
                 key={method.title}
                 className="bg-background rounded-xl p-6 border border-border"
@@ -196,7 +204,7 @@ export default async function JoinPage() {
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {characterCreationSteps.map((step: any, index: number) => (
+            {characterCreationSteps.map((step: Step, index: number) => (
               <StepCard key={step.number} step={step} index={index} />
             ))}
           </div>
@@ -216,7 +224,7 @@ export default async function JoinPage() {
               {t("sections.principles")}
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {guidelinesPrinciples.map((principle: any) => (
+              {guidelinesPrinciples.map((principle: Principle) => (
                 <div
                   key={principle.title}
                   className="bg-background rounded-xl p-6 border border-border"
@@ -343,7 +351,7 @@ export default async function JoinPage() {
 
           {/* 核心价值观 */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
-            {communityValues.map((value: any) => (
+            {communityValues.map((value: CommunityValue) => (
               <div
                 key={value.title}
                 className="bg-muted rounded-xl p-6 border border-border"
@@ -380,7 +388,7 @@ export default async function JoinPage() {
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {contributions.map((contribution: any) => (
+            {contributions.map((contribution: Contribution) => (
               <div
                 key={contribution.category}
                 className="bg-background rounded-xl p-6 border border-border"
@@ -399,7 +407,8 @@ export default async function JoinPage() {
                   {(
                     contribution.types ||
                     contribution.projects ||
-                    contribution.activities
+                    contribution.activities ||
+                    []
                   ).map((item: string, i: number) => (
                     <li
                       key={i}
