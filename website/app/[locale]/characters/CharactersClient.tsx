@@ -11,6 +11,7 @@ import {
   CharacterCard,
 } from "@/components/character";
 import { CharacterCardData } from "@/types/character";
+import { useTranslations, useLocale } from "next-intl";
 
 interface CharactersClientProps {
   accordionCharacters: CharacterCardData[];
@@ -23,13 +24,15 @@ export function CharactersClient({
 }: CharactersClientProps) {
   const router = useRouter();
   const { startTransition } = useTransition();
+  const t = useTranslations("characters");
+  const locale = useLocale();
 
   const handleCharacterClick = (characterId: string) => {
     // 先触发过渡动画
     startTransition();
     // 然后跳转路由
     // PageTransition 组件会在新页面动画完成后自动结束过渡
-    router.push(`/characters/${characterId}`);
+    router.push(`/${locale}/characters/${characterId}`);
   };
 
   return (
@@ -59,7 +62,7 @@ export function CharactersClient({
             {/* 分组标题 */}
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold mb-4 text-foreground">
-                其他成员
+                {t("sections.otherMembers")}
               </h2>
               <div className="w-16 h-1 bg-linear-to-r from-esap-yellow via-esap-pink to-esap-blue rounded-full mx-auto" />
             </div>
