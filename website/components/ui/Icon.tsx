@@ -2,6 +2,7 @@
 // SPDX-License-Identifier: Apache-2.0
 
 import { ComponentType } from "react";
+import { logger } from "@/lib/logger";
 import {
   // Lucide Icons
   LuGlobe,
@@ -167,9 +168,7 @@ export function Icon({ name, size = 20, color, className = "" }: IconProps) {
   const IconComponent = iconMap[name];
 
   if (!IconComponent) {
-    if (process.env.NODE_ENV === "development") {
-      console.warn(`Icon "${name}" not found in iconMap`);
-    }
+    logger.warn(`Icon "${name}" not found in iconMap`);
     return null;
   }
 

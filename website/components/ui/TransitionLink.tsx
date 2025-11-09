@@ -12,6 +12,7 @@ import {
   useCallback,
 } from "react";
 import { useTransition } from "./TransitionContext";
+import { logger } from "@/lib/logger";
 
 interface TransitionLinkProps
   extends Omit<AnchorHTMLAttributes<HTMLAnchorElement>, "href"> {
@@ -68,7 +69,7 @@ export function TransitionLink({
         router.push(href);
       } catch (error) {
         // 路由跳转失败时，结束过渡动画
-        console.error("Navigation error:", error);
+        logger.error("Navigation error:", error);
         finishTransition();
         // 这里可以添加错误提示逻辑，比如使用 toast
       }

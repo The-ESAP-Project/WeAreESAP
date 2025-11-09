@@ -9,6 +9,7 @@
 import fs from "fs/promises";
 import path from "path";
 import { Relationship, CharacterRelationshipData } from "@/types/relationship";
+import { logger } from "./logger";
 
 /**
  * 验证关系数据结构
@@ -66,21 +67,17 @@ export async function getCharacterRelationships(
 
     // 验证数据结构
     if (!validateRelationshipData(data)) {
-      if (process.env.NODE_ENV === "development") {
-        console.warn(`关系数据文件 ${characterId}.json 格式不正确，已跳过`);
-      }
+      logger.warn(`关系数据文件 ${characterId}.json 格式不正确，已跳过`);
       return [];
     }
 
     return data.relationships;
   } catch (error) {
     // 文件不存在或解析失败，返回空数组
-    if (process.env.NODE_ENV === "development") {
-      console.log(
-        `关系数据文件 ${characterId}.json 不存在或解析失败`,
-        error instanceof Error ? error.message : ""
-      );
-    }
+    logger.log(
+      `关系数据文件 ${characterId}.json 不存在或解析失败`,
+      error instanceof Error ? error.message : ""
+    );
     return [];
   }
 }

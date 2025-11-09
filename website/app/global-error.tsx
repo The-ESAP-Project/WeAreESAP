@@ -5,6 +5,7 @@
 
 import { useEffect, useState } from "react";
 import { type Locale, defaultLocale } from "@/i18n/request";
+import { logger } from "@/lib/logger";
 
 // 客户端检测语言
 function detectLocale(): Locale {
@@ -82,7 +83,7 @@ export default function GlobalError({
   useEffect(() => {
     setLocale(detectLocale());
     setTheme(detectTheme());
-    console.error("Global error:", error);
+    logger.error("Global error:", error);
   }, [error]);
 
   const t = translations[locale];

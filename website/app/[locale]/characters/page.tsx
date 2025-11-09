@@ -6,6 +6,7 @@ import { Metadata } from "next";
 import { CharacterCardData } from "@/types/character";
 import { CharactersClient } from "./CharactersClient";
 import { getTranslations, getLocale } from "next-intl/server";
+import { loadJsonFiles } from "@/lib/data-loader";
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations("characters.metadata");
@@ -17,49 +18,16 @@ export async function generateMetadata(): Promise<Metadata> {
 
 const getCharacters = unstable_cache(
   async (locale: string): Promise<CharacterCardData[]> => {
-    try {
-      const fs = require("fs/promises");
-      const path = require("path");
+    // 使用统一的数据加载工具，自动处理 locale 回退和错误
+    const characters = await loadJsonFiles<CharacterCardData>(
+      ["data", "characters"],
+      locale
+    );
 
-      // 尝试读取指定语言的目录
-      let charactersDir = path.join(
-        process.cwd(),
-        "data",
-        "characters",
-        locale
-      );
+    // 按 ID 排序
+    characters.sort((a, b) => a.id.localeCompare(b.id));
 
-      // 检查目录是否存在,不存在则回退到 zh-CN
-      try {
-        await fs.access(charactersDir);
-      } catch {
-        console.log(`角色数据目录 ${locale} 不存在,回退到 zh-CN`);
-        charactersDir = path.join(process.cwd(), "data", "characters", "zh-CN");
-      }
-
-      const files = await fs.readdir(charactersDir);
-
-      const characters: CharacterCardData[] = [];
-
-      for (const file of files) {
-        if (file.endsWith(".json")) {
-          const filePath = path.join(charactersDir, file);
-          const fileContent = await fs.readFile(filePath, "utf-8");
-          const character = JSON.parse(fileContent);
-          characters.push(character);
-        }
-      }
-
-      // 按 ID 排序
-      characters.sort((a: CharacterCardData, b: CharacterCardData) =>
-        a.id.localeCompare(b.id)
-      );
-
-      return characters;
-    } catch (error) {
-      console.error("获取角色数据失败:", error);
-      return [];
-    }
+    return characters;
   },
   ["characters"],
   {

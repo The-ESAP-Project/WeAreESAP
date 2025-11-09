@@ -8,6 +8,7 @@ import { LoadingSpinner } from "@/components/loading";
 import { getTranslations } from "next-intl/server";
 import { getLocale } from "next-intl/server";
 import type { Metadata } from "next";
+import { loadJsonFiles } from "@/lib/data-loader";
 
 // 动态导入 TimelineClient，减少首屏 JavaScript 包大小
 const TimelineClient = dynamic(() =>
@@ -23,32 +24,13 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 async function getTimelineData(locale: string): Promise<TimelineYear[]> {
-  try {
-    const fs = require("fs/promises");
-    const path = require("path");
+  // 使用统一的数据加载工具，自动处理错误
+  const years = await loadJsonFiles<TimelineYear>(["data", "timeline"], locale);
 
-    const timelineDir = path.join(process.cwd(), "data", "timeline", locale);
-    const files = await fs.readdir(timelineDir);
+  // 按年份排序
+  years.sort((a, b) => a.year.localeCompare(b.year));
 
-    const years: TimelineYear[] = [];
-
-    for (const file of files) {
-      if (file.endsWith(".json")) {
-        const filePath = path.join(timelineDir, file);
-        const fileContent = await fs.readFile(filePath, "utf-8");
-        const yearData: TimelineYear = JSON.parse(fileContent);
-        years.push(yearData);
-      }
-    }
-
-    // 按年份排序
-    years.sort((a, b) => a.year.localeCompare(b.year));
-
-    return years;
-  } catch (error) {
-    console.error("获取时间线数据失败:", error);
-    return [];
-  }
+  return years;
 }
 
 export default async function TimelinePage() {

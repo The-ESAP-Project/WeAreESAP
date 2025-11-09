@@ -7,8 +7,7 @@ import { CharacterCardData } from "@/types/character";
 import { HomeCharacters } from "./HomeCharacters";
 import { getLocale, getTranslations } from "next-intl/server";
 import type { Metadata } from "next";
-import fs from "fs/promises";
-import path from "path";
+import { loadJsonFiles } from "@/lib/data-loader";
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations("home.metadata");
@@ -20,47 +19,17 @@ export async function generateMetadata(): Promise<Metadata> {
 
 const getCharacters = unstable_cache(
   async (locale: string): Promise<CharacterCardData[]> => {
-    try {
-      // 尝试读取指定语言的目录
-      let charactersDir = path.join(
-        process.cwd(),
-        "data",
-        "characters",
-        locale
-      );
+    // 使用统一的数据加载工具，自动处理 locale 回退和错误
+    const characters = await loadJsonFiles<CharacterCardData>(
+      ["data", "characters"],
+      locale,
+      { filter: (c) => c.tier === "core" } // 只返回核心成员(首页展示)
+    );
 
-      // 检查目录是否存在，不存在则回退到 zh-CN
-      try {
-        await fs.access(charactersDir);
-      } catch {
-        console.log(`角色数据目录 ${locale} 不存在，回退到 zh-CN`);
-        charactersDir = path.join(process.cwd(), "data", "characters", "zh-CN");
-      }
+    // 按 ID 排序
+    characters.sort((a, b) => a.id.localeCompare(b.id));
 
-      const files = await fs.readdir(charactersDir);
-
-      const characters: CharacterCardData[] = [];
-
-      for (const file of files) {
-        if (file.endsWith(".json")) {
-          const filePath = path.join(charactersDir, file);
-          const fileContent = await fs.readFile(filePath, "utf-8");
-          const character = JSON.parse(fileContent);
-          characters.push(character);
-        }
-      }
-
-      // 按 ID 排序
-      characters.sort((a: CharacterCardData, b: CharacterCardData) =>
-        a.id.localeCompare(b.id)
-      );
-
-      // 只返回核心成员(首页展示)
-      return characters.filter((c) => c.tier === "core");
-    } catch (error) {
-      console.error("获取角色数据失败:", error);
-      return [];
-    }
+    return characters;
   },
   ["home-characters"],
   {

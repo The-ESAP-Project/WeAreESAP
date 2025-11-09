@@ -8,6 +8,7 @@
 
 import ELK from "elkjs/lib/elk.bundled.js";
 import { Node, Edge } from "reactflow";
+import { logger } from "./logger";
 
 const elk = new ELK();
 
@@ -84,18 +85,14 @@ export async function getLayoutedElements(
   };
 
   try {
-    if (process.env.NODE_ENV === "development") {
-      console.log("🎨 开始 ELK 布局计算...");
-      console.log("输入节点数:", nodes.length);
-      console.log("输入边数:", edges.length);
-    }
+    logger.log("🎨 开始 ELK 布局计算...");
+    logger.log("输入节点数:", nodes.length);
+    logger.log("输入边数:", edges.length);
 
     const layoutedGraph = await elk.layout(graph);
 
-    if (process.env.NODE_ENV === "development") {
-      console.log("✅ ELK 布局完成");
-      console.log("布局结果:", layoutedGraph);
-    }
+    logger.log("✅ ELK 布局完成");
+    logger.log("布局结果:", layoutedGraph);
 
     // 更新节点位置
     const layoutedNodes: LayoutedNode[] = nodes.map((node) => {
@@ -103,12 +100,10 @@ export async function getLayoutedElements(
         (n) => n.id === node.id
       );
 
-      if (process.env.NODE_ENV === "development") {
-        console.log(`节点 ${node.id}:`, {
-          原始位置: node.position,
-          布局位置: { x: layoutedNode?.x, y: layoutedNode?.y },
-        });
-      }
+      logger.log(`节点 ${node.id}:`, {
+        原始位置: node.position,
+        布局位置: { x: layoutedNode?.x, y: layoutedNode?.y },
+      });
 
       return {
         ...node,
@@ -122,9 +117,7 @@ export async function getLayoutedElements(
     return layoutedNodes;
   } catch (error) {
     // 布局失败，使用回退的圆形布局
-    if (process.env.NODE_ENV === "development") {
-      console.error("❌ ELK 布局失败，使用回退圆形布局:", error);
-    }
+    logger.error("❌ ELK 布局失败，使用回退圆形布局:", error);
 
     return getFallbackCircularLayout(nodes);
   }

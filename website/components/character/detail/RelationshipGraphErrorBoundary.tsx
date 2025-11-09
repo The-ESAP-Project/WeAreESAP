@@ -5,6 +5,7 @@
 
 import { Component, ReactNode } from "react";
 import { Icon } from "@/components/ui";
+import { logger } from "@/lib/logger";
 
 interface Props {
   children: ReactNode;
@@ -34,9 +35,7 @@ export class RelationshipGraphErrorBoundary extends Component<Props, State> {
 
   componentDidCatch(error: Error, errorInfo: React.ErrorInfo) {
     // 只在开发环境输出详细错误信息
-    if (process.env.NODE_ENV === "development") {
-      console.error("关系图谱渲染错误:", error, errorInfo);
-    }
+    logger.error("关系图谱渲染错误:", error, errorInfo);
   }
 
   render() {

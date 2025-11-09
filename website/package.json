@@ -8,9 +8,11 @@
   "contributors": [
     "AptS:1547 (Yuhan Bian / 卞雨涵 <apts-1547@esaps.net>)",
     "AptS:1548 (Yingyin Cai / 蔡颖茵 <apts-1548@esaps.net>)",
+    "AptS:1549 (Yuxin Xiao / 肖雨昕 <apts-1549@esaps.net>)",
     "AptS:1738 (Qingxian Lu / 陆清弦 <apts-1738@esaps.net>)",
     "AptS:2275 (Chenyao Lin / 林宸瑶 <apts-2275@esaps.net>)",
-    "AptS:1553 (Pancake-and-1547)"
+    "AptS:1553 (Pancake-and-1547)",
+    "AptS:2077 (AptS-2077)"
   ],
   "homepage": "https://weare.esaps.net",
   "repository": {
@@ -26,6 +28,7 @@
     "build": "next build",
     "postbuild": "next-sitemap --config ./scripts/next-sitemap.config.js",
     "start": "next start",
+    "analyze": "pnpm build --webpack",
     "lint": "eslint",
     "lint:fix": "eslint --fix",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,css,md}\"",
@@ -48,6 +51,7 @@
     "styled-jsx": "^5.1.7"
   },
   "devDependencies": {
+    "@next/bundle-analyzer": "^16.0.1",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^24",
     "@types/react": "^19",

@@ -7,6 +7,7 @@ import { useEffect, useState } from "react";
 import { TriangleLogo, Icon } from "@/components/ui";
 import Link from "next/link";
 import { type Locale, defaultLocale } from "@/i18n/request";
+import { logger } from "@/lib/logger";
 
 interface ErrorPageProps {
   error: Error & { digest?: string };
@@ -122,9 +123,7 @@ export default function ErrorPage({ error, reset }: ErrorPageProps) {
   useEffect(() => {
     setLocale(detectLocale());
     setTheme(detectTheme());
-    if (process.env.NODE_ENV === "development") {
-      console.error("Error details:", error);
-    }
+    logger.error("Error details:", error);
   }, [error]);
 
   const t = translations[locale];

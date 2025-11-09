@@ -11,6 +11,7 @@ import { CharacterHero, CharacterInfo } from "@/components/character/detail";
 import { getImageUrl } from "@/lib/utils";
 import { getTranslations } from "next-intl/server";
 import { getCharacterRelationships } from "@/lib/relationship-parser";
+import { loadJsonFile } from "@/lib/data-loader";
 
 // 懒加载非首屏组件
 const CharacterStory = dynamic(
@@ -120,41 +121,8 @@ async function getCharacter(
   id: string,
   locale: string
 ): Promise<Character | null> {
-  try {
-    const fs = require("fs/promises");
-    const path = require("path");
-
-    // 尝试读取指定语言的文件
-    let filePath = path.join(
-      process.cwd(),
-      "data",
-      "characters",
-      locale,
-      `${id}.json`
-    );
-
-    // 检查文件是否存在,不存在则回退到 zh-CN
-    try {
-      await fs.access(filePath);
-    } catch {
-      console.log(`角色文件 ${locale}/${id}.json 不存在,回退到 zh-CN`);
-      filePath = path.join(
-        process.cwd(),
-        "data",
-        "characters",
-        "zh-CN",
-        `${id}.json`
-      );
-    }
-
-    const fileContent = await fs.readFile(filePath, "utf-8");
-    const character: Character = JSON.parse(fileContent);
-
-    return character;
-  } catch (error) {
-    console.error(`获取角色 ${id} 失败:`, error);
-    return null;
-  }
+  // 使用统一的数据加载工具，自动处理 locale 回退和错误
+  return loadJsonFile<Character>(["data", "characters"], `${id}.json`, locale);
 }
 
 // 获取相关角色的基本数据（用于关系图谱）

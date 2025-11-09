@@ -59,3 +59,32 @@ export interface MeaningSection {
   title: string;
   points: string[];
 }
+
+/**
+ * 项目完整数据结构
+ */
+export interface ProjectData {
+  hero: {
+    title: string;
+    subtitle: string;
+    quote: string;
+    description: string;
+  };
+  pillars: Pillar[];
+  coreValues: Value[];
+  worldview: {
+    tech: Technology[];
+    timeline: TimelineItem[];
+  };
+  participation: Participation[];
+  meaning: {
+    forCreators: MeaningSection;
+    forParticipants: MeaningSection;
+    forWorld: MeaningSection;
+  };
+  triangleSymbol: {
+    title: string;
+    description: string;
+    meanings: string[];
+  };
+}

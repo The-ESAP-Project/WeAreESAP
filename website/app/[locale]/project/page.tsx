@@ -2,11 +2,11 @@
 // SPDX-License-Identifier: Apache-2.0
 
 import dynamic from "next/dynamic";
-import fs from "fs/promises";
-import path from "path";
 import type { Metadata } from "next";
 import { getTranslations, getLocale } from "next-intl/server";
+import { loadJsonFile } from "@/lib/data-loader";
 import type {
+  ProjectData,
   Pillar,
   Value,
   Technology,
@@ -36,21 +36,13 @@ export async function generateMetadata(): Promise<Metadata> {
   };
 }
 
-async function getProjectData(locale: string) {
-  try {
-    const filePath = path.join(
-      process.cwd(),
-      "data",
-      "project",
-      locale,
-      "overview.json"
-    );
-    const fileContent = await fs.readFile(filePath, "utf-8");
-    return JSON.parse(fileContent);
-  } catch (error) {
-    console.error("Failed to load project data:", error);
-    return null;
-  }
+async function getProjectData(locale: string): Promise<ProjectData | null> {
+  // 使用统一的数据加载工具，带 locale 回退
+  return loadJsonFile<ProjectData>(
+    ["data", "project"],
+    "overview.json",
+    locale
+  );
 }
 
 export default async function ProjectPage() {
@@ -165,7 +157,7 @@ export default async function ProjectPage() {
               {t("sections.techFoundation")}
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {data.worldview.tech.map((tech: Technology, index: number) => (
+              {data.worldview.tech.map((tech: Technology) => (
                 <div
                   key={tech.name}
                   className="bg-muted rounded-xl p-6 border border-border hover:border-esap-yellow/50 transition-colors"
@@ -250,7 +242,7 @@ export default async function ProjectPage() {
               data.meaning.forCreators,
               data.meaning.forParticipants,
               data.meaning.forWorld,
-            ].map((section: MeaningSection, index: number) => (
+            ].map((section: MeaningSection) => (
               <div key={section.title} className="space-y-4">
                 <h3 className="text-xl font-bold text-esap-yellow">
                   {section.title}
