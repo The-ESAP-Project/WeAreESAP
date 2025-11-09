@@ -61,15 +61,17 @@ export function ScrollToTop({ threshold = 400 }: ScrollToTopProps) {
   // esap-pink: #ff69b4 (255, 105, 180)
   // esap-blue: #4da6ff (77, 166, 255)
   const getProgressColor = () => {
+    const lerp = (c1: number[], c2: number[], t: number) =>
+      `rgb(${Math.floor(c1[0] * (1 - t) + c2[0] * t)}, ${Math.floor(c1[1] * (1 - t) + c2[1] * t)}, ${Math.floor(c1[2] * (1 - t) + c2[2] * t)})`;
+
+    const YELLOW = [255, 217, 61];
+    const PINK = [255, 105, 180];
+    const BLUE = [77, 166, 255];
+
     if (scrollProgress < 0.5) {
-      // 0-50%: 黄色到粉色
-      const ratio = scrollProgress * 2;
-      return `rgb(255, ${217 - Math.floor(112 * ratio)}, ${61 + Math.floor(119 * ratio)})`;
-    } else {
-      // 50-100%: 粉色到蓝色
-      const ratio = (scrollProgress - 0.5) * 2;
-      return `rgb(${255 - Math.floor(178 * ratio)}, ${105 + Math.floor(61 * ratio)}, ${180 + Math.floor(75 * ratio)})`;
+      return lerp(YELLOW, PINK, scrollProgress * 2);
     }
+    return lerp(PINK, BLUE, (scrollProgress - 0.5) * 2);
   };
 
   // 圆形进度条的参数
