@@ -12,7 +12,7 @@ const eslintConfig = defineConfig([
   {
     rules: {
       // 禁止在生产代码中使用 console（使用 logger 工具代替）
-"no-console": "warn",
+      "no-console": "warn",
 
       // React Hooks 规则（Next.js 已包含，这里加强）
       "react-hooks/rules-of-hooks": "error",

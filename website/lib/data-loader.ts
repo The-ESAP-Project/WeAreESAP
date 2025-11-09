@@ -116,16 +116,24 @@ export async function loadJsonFiles<T>(
     }
 
     const files = await fs.readdir(dirPath);
-    const items: T[] = [];
 
-    for (const file of files) {
-      if (file.endsWith(".json")) {
+    // 并行读取和解析所有 JSON 文件
+    const jsonFilePromises = files
+      .filter((file) => file.endsWith(".json"))
+      .map(async (file): Promise<T | null> => {
         const filePath = path.join(dirPath, file);
-        const fileContent = await fs.readFile(filePath, "utf-8");
-        const item = JSON.parse(fileContent) as T;
-        items.push(item);
-      }
-    }
+        try {
+          const fileContent = await fs.readFile(filePath, "utf-8");
+          return JSON.parse(fileContent) as T;
+        } catch (error) {
+          logger.error(`加载或解析文件失败 ${filePath}:`, error);
+          return null;
+        }
+      });
+
+    // 等待所有文件加载完成，过滤掉失败的文件
+    const allItems = (await Promise.all(jsonFilePromises)) as (T | null)[];
+    const items = allItems.filter((item): item is T => item !== null);
 
     // 如果提供了过滤函数，应用过滤
     return filter ? items.filter(filter) : items;
