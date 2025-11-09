@@ -18,6 +18,7 @@ interface TransitionLinkProps
   extends Omit<AnchorHTMLAttributes<HTMLAnchorElement>, "href"> {
   href: string;
   children: ReactNode;
+  prefetch?: boolean; // 是否预加载链接（默认 false，按需加载）
 }
 
 /**
@@ -29,6 +30,7 @@ export function TransitionLink({
   children,
   onClick,
   className,
+  prefetch = false,
   ...props
 }: TransitionLinkProps) {
   const router = useRouter();
@@ -81,7 +83,7 @@ export function TransitionLink({
     <Link
       href={href}
       onClick={handleClick}
-      prefetch={true}
+      prefetch={prefetch}
       className={`${className || ""} ${isTransitioning ? "pointer-events-none opacity-60" : ""}`}
       {...props}
     >

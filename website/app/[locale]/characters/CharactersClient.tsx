@@ -3,6 +3,7 @@
 
 "use client";
 
+import { useCallback } from "react";
 import { useRouter } from "next/navigation";
 import { useTransition } from "@/components/ui";
 import {
@@ -27,13 +28,16 @@ export function CharactersClient({
   const t = useTranslations("characters");
   const locale = useLocale();
 
-  const handleCharacterClick = (characterId: string) => {
-    // 先触发过渡动画
-    startTransition();
-    // 然后跳转路由
-    // PageTransition 组件会在新页面动画完成后自动结束过渡
-    router.push(`/${locale}/characters/${characterId}`);
-  };
+  const handleCharacterClick = useCallback(
+    (characterId: string) => {
+      // 先触发过渡动画
+      startTransition();
+      // 然后跳转路由
+      // PageTransition 组件会在新页面动画完成后自动结束过渡
+      router.push(`/${locale}/characters/${characterId}`);
+    },
+    [locale, router, startTransition]
+  );
 
   return (
     <>

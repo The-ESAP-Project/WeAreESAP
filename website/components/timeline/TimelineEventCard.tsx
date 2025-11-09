@@ -3,7 +3,6 @@
 
 "use client";
 
-import { useRef, useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { TimelineEvent } from "@/types/timeline";
 import { TimelineContentRenderer } from "./TimelineContent";
@@ -47,32 +46,12 @@ export function TimelineEventCard({
   isLeft,
 }: TimelineEventCardProps) {
   const shouldReduceMotion = useReducedMotion();
-  const cardRef = useRef<HTMLDivElement>(null);
-  const [isVisible, setIsVisible] = useState(false);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting && !isVisible) {
-          setIsVisible(true);
-        }
-      },
-      { threshold: 0.1, rootMargin: "50px" }
-    );
-
-    if (cardRef.current) {
-      observer.observe(cardRef.current);
-    }
-
-    return () => observer.disconnect();
-  }, [isVisible]);
 
   const importanceStyle = IMPORTANCE_STYLES[event.importance];
   const icon = EVENT_ICONS[event.type];
 
   return (
     <div
-      ref={cardRef}
       className={`relative flex items-start gap-4 md:gap-8 mb-12 md:mb-16 ${
         isLeft ? "md:flex-row" : "md:flex-row-reverse"
       }`}
@@ -84,13 +63,7 @@ export function TimelineEventCard({
             ? { opacity: 1, x: 0 }
             : { opacity: 0, x: isLeft ? -50 : 50 }
         }
-        animate={
-          shouldReduceMotion
-            ? { opacity: 1, x: 0 }
-            : isVisible
-              ? { opacity: 1, x: 0 }
-              : {}
-        }
+        animate={{ opacity: 1, x: 0 }}
         transition={
           shouldReduceMotion ? { duration: 0 } : { duration: 0.5, delay: 0.1 }
         }
@@ -157,9 +130,7 @@ export function TimelineEventCard({
       {/* 中间时间线节点 */}
       <motion.div
         initial={shouldReduceMotion ? { scale: 1 } : { scale: 0 }}
-        animate={
-          shouldReduceMotion ? { scale: 1 } : isVisible ? { scale: 1 } : {}
-        }
+        animate={{ scale: 1 }}
         transition={
           shouldReduceMotion ? { duration: 0 } : { duration: 0.3, delay: 0.3 }
         }

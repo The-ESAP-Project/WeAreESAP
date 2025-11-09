@@ -3,7 +3,7 @@
 
 "use client";
 
-import { useState, useCallback } from "react";
+import { useState, useCallback, memo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import { usePathname } from "@/i18n/navigation";
@@ -23,7 +23,7 @@ const navLinks = [
   { href: "/join", key: "join" },
 ] as const;
 
-export function Navigation() {
+export const Navigation = memo(function Navigation() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const pathname = usePathname();
   const tNavigation = useTranslations("common.navigation");
@@ -54,12 +54,14 @@ export function Navigation() {
               href="/"
               className="relative flex items-center gap-3 group"
               onClick={closeMobileMenu}
+              prefetch={true}
             >
               <Image
                 src="/favicon.ico"
                 alt="ESAP Logo"
                 width={40}
                 height={40}
+                priority
                 className="opacity-90 group-hover:opacity-100 transition-opacity"
               />
               <div className="flex flex-col">
@@ -80,6 +82,7 @@ export function Navigation() {
                   <div key={link.href} className="relative">
                     <TransitionLink
                       href={link.href}
+                      prefetch={true}
                       className={`text-sm transition-colors ${
                         active
                           ? "text-foreground font-medium"
@@ -170,6 +173,7 @@ export function Navigation() {
                       key={link.href}
                       href={link.href}
                       onClick={closeMobileMenu}
+                      prefetch={true}
                       className={`text-lg py-2 border-b border-border/50 transition-colors ${
                         active
                           ? "text-esap-pink font-medium"
@@ -192,4 +196,4 @@ export function Navigation() {
       </AnimatePresence>
     </>
   );
-}
+});
