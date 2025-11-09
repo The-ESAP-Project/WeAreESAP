@@ -16,6 +16,6 @@
   "tier": "guest",
   "meta": {
     "bodyType": "人类",
-    "abilities": ["心理学", "文学", "声乐", "linux运维"]
+    "abilities": ["心理学", "文学", "声乐", "Linux运维"]
   }
 }
