@@ -28,7 +28,7 @@ export function TransitionOverlay() {
         visibility: isTransitioning ? "visible" : "hidden",
         pointerEvents: isTransitioning ? "auto" : "none",
       }}
-      className="fixed inset-0 z-100 flex items-center justify-center bg-background/80 backdrop-blur-sm"
+      className="fixed inset-0 z-[100] flex items-center justify-center bg-background/80 backdrop-blur-sm"
     >
       {/* LoadingSpinner 仍条件渲染，避免在不可见时持续运行动画 */}
       {isTransitioning && <LoadingSpinner size={120} withPulse={true} />}
