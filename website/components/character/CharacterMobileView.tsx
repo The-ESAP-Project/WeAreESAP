@@ -3,7 +3,7 @@
 
 "use client";
 
-import { useState } from "react";
+import { useState, useMemo, memo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { CharacterCardData } from "@/types/character";
 import Image from "next/image";
@@ -17,13 +17,23 @@ interface CharacterMobileViewProps {
   onCharacterClick?: (characterId: string) => void;
 }
 
-export function CharacterMobileView({
+export const CharacterMobileView = memo(function CharacterMobileView({
   characters = [], // 设置默认值为空数组
   onCharacterClick,
 }: CharacterMobileViewProps) {
   const t = useTranslations("characters");
   const shouldReduceMotion = useReducedMotion();
   const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
+
+  // 预计算所有角色的颜色，避免在 map 中重复计算
+  const colorCache = useMemo(
+    () =>
+      characters.map((c) => ({
+        light: getContrastTextColor(c.color.primary),
+        dark: getContrastTextColorDark(c.color.primary),
+      })),
+    [characters]
+  );
 
   // 如果没有角色数据，不渲染
   if (characters.length === 0) {
@@ -52,9 +62,9 @@ export function CharacterMobileView({
       {characters.map((character, index) => {
         const isExpanded = expandedIndex === index;
 
-        // 预计算颜色值
-        const lightModeColor = getContrastTextColor(character.color.primary);
-        const darkModeColor = getContrastTextColorDark(character.color.primary);
+        // 从缓存中获取颜色值
+        const { light: lightModeColor, dark: darkModeColor } =
+          colorCache[index];
 
         return (
           <motion.div
@@ -210,4 +220,4 @@ export function CharacterMobileView({
       })}
     </div>
   );
-}
+});

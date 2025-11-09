@@ -8,9 +8,9 @@ import {
   useContext,
   useState,
   useEffect,
+  useRef,
   ReactNode,
 } from "react";
-import { usePathname } from "next/navigation";
 
 interface TransitionContextType {
   isTransitioning: boolean;
@@ -28,11 +28,25 @@ const INITIAL_LOAD_TIME = 400; // 首次加载动画时长
 
 export function TransitionProvider({ children }: { children: ReactNode }) {
   const [isTransitioning, setIsTransitioning] = useState(true); // 初始为 true，显示首次加载
+  // 使用 lazy initializer 避免在每次渲染时调用 Date.now()
   const [transitionStartTime, setTransitionStartTime] = useState<number | null>(
-    Date.now()
+    () => Date.now()
   );
   const [isInitialLoad, setIsInitialLoad] = useState(true);
-  const pathname = usePathname();
+
+  // 跟踪所有的 timeout，确保在组件卸载或新过渡开始时清理
+  const timersRef = useRef<Set<NodeJS.Timeout>>(new Set());
+
+  // 清理所有 timers
+  const clearAllTimers = () => {
+    timersRef.current.forEach((timer) => clearTimeout(timer));
+    timersRef.current.clear();
+  };
+
+  // 组件卸载时清理所有 timers
+  useEffect(() => {
+    return clearAllTimers;
+  }, []);
 
   // 处理首次加载
   useEffect(() => {
@@ -42,11 +56,13 @@ export function TransitionProvider({ children }: { children: ReactNode }) {
         const elapsed = Date.now() - (transitionStartTime || Date.now());
         const remainingTime = Math.max(0, INITIAL_LOAD_TIME - elapsed);
 
-        setTimeout(() => {
+        const timer = setTimeout(() => {
           setIsTransitioning(false);
           setTransitionStartTime(null);
           setIsInitialLoad(false);
+          timersRef.current.delete(timer);
         }, remainingTime);
+        timersRef.current.add(timer);
       };
 
       // 如果页面已经加载完成，立即执行
@@ -69,9 +85,16 @@ export function TransitionProvider({ children }: { children: ReactNode }) {
       const timer = setTimeout(() => {
         setIsTransitioning(false);
         setTransitionStartTime(null);
+        timersRef.current.delete(timer);
       }, MAX_TRANSITION_TIME);
+      timersRef.current.add(timer);
 
-      return () => clearTimeout(timer);
+      // 复制到局部变量，避免 cleanup 时引用变化
+      const timers = timersRef.current;
+      return () => {
+        clearTimeout(timer);
+        timers.delete(timer);
+      };
     }
   }, [isTransitioning, transitionStartTime, isInitialLoad]);
 
@@ -80,6 +103,8 @@ export function TransitionProvider({ children }: { children: ReactNode }) {
     if (isTransitioning) {
       return;
     }
+    // 清理之前的所有 timers，防止堆积
+    clearAllTimers();
     setIsTransitioning(true);
     setTransitionStartTime(Date.now());
   };
@@ -90,10 +115,12 @@ export function TransitionProvider({ children }: { children: ReactNode }) {
     const elapsed = Date.now() - transitionStartTime;
     const remainingTime = Math.max(0, MIN_TRANSITION_TIME - elapsed);
 
-    setTimeout(() => {
+    const timer = setTimeout(() => {
       setIsTransitioning(false);
       setTransitionStartTime(null);
+      timersRef.current.delete(timer);
     }, remainingTime);
+    timersRef.current.add(timer);
   };
 
   return (

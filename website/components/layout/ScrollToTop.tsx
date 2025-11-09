@@ -34,6 +34,16 @@ const lerpColor = (
 ): string =>
   `rgb(${Math.floor(c1[0] * (1 - t) + c2[0] * t)}, ${Math.floor(c1[1] * (1 - t) + c2[1] * t)}, ${Math.floor(c1[2] * (1 - t) + c2[2] * t)})`;
 
+// 颜色查找表：预计算 21 个关键帧（0%, 5%, 10%, ... 100%）
+// 这样滚动时只需要查表，避免每帧都进行浮点运算
+const COLOR_LOOKUP_TABLE = Array.from({ length: 21 }, (_, i) => {
+  const progress = i / 20; // 0, 0.05, 0.1, ... 1.0
+  if (progress < 0.5) {
+    return lerpColor(YELLOW, PINK, progress * 2);
+  }
+  return lerpColor(PINK, BLUE, (progress - 0.5) * 2);
+});
+
 export function ScrollToTop({ threshold = 400 }: ScrollToTopProps) {
   const [isVisible, setIsVisible] = useState(false);
   const [scrollProgress, setScrollProgress] = useState(0);
@@ -78,12 +88,10 @@ export function ScrollToTop({ threshold = 400 }: ScrollToTopProps) {
     });
   }, []);
 
-  // 根据滚动进度计算渐变颜色：黄色→粉色→蓝色
+  // 根据滚动进度查找颜色（使用预计算的查找表，避免实时插值计算）
   const progressColor = useMemo(() => {
-    if (scrollProgress < 0.5) {
-      return lerpColor(YELLOW, PINK, scrollProgress * 2);
-    }
-    return lerpColor(PINK, BLUE, (scrollProgress - 0.5) * 2);
+    const index = Math.round(scrollProgress * 20);
+    return COLOR_LOOKUP_TABLE[index];
   }, [scrollProgress]);
 
   // 计算当前滚动进度对应的圆环偏移量
