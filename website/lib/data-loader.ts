@@ -65,7 +65,7 @@ export async function loadJsonFile<T>(
     const fileContent = await fs.readFile(filePath, "utf-8");
     return JSON.parse(fileContent) as T;
   } catch (error) {
-    logger.error(`加载文件失败 ${filename}:`, error);
+    logger.error(`加载或解析文件失败 ${filename}:`, error);
     return null;
   }
 }
