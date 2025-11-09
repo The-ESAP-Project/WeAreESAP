@@ -23,6 +23,7 @@ const isDevelopment = process.env.NODE_ENV === "development";
 function createLogger(level: LogLevel) {
   return (...args: unknown[]): void => {
     if (isDevelopment) {
+      // eslint-disable-next-line no-console
       console[level](...args);
     }
     // 生产环境下静默处理

@@ -7,7 +7,7 @@ import { TechModule } from "@/types/tech";
 import { LoadingSpinner } from "@/components/loading";
 import { getTranslations, getLocale } from "next-intl/server";
 import type { Metadata } from "next";
-import { logger } from "@/lib/logger";
+import { loadJsonFiles } from "@/lib/data-loader";
 
 // 动态导入 TechPageClient，减少首屏 JavaScript 包大小
 const TechPageClient = dynamic(() =>
@@ -23,30 +23,8 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 async function getTechModules(locale: string): Promise<TechModule[]> {
-  try {
-    const fs = require("fs/promises");
-    const path = require("path");
-
-    const techDir = path.join(process.cwd(), "data", "tech", locale);
-    const files = await fs.readdir(techDir);
-
-    const modules: TechModule[] = [];
-
-    for (const file of files) {
-      if (file.endsWith(".json")) {
-        const filePath = path.join(techDir, file);
-        const fileContent = await fs.readFile(filePath, "utf-8");
-        const module: TechModule = JSON.parse(fileContent);
-        modules.push(module);
-      }
-    }
-
-    // 暂时只返回已有的模块，后面可以添加更多
-    return modules;
-  } catch (error) {
-    logger.error("获取技术模块数据失败:", error);
-    return [];
-  }
+  // 使用统一的数据加载工具，自动处理错误
+  return loadJsonFiles<TechModule>(["data", "tech"], locale);
 }
 
 export default async function TechPage() {
