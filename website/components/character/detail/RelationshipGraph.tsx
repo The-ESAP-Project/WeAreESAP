@@ -3,7 +3,7 @@
 
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useState, memo } from "react";
 import ReactFlow, {
   Node,
   Edge,
@@ -40,7 +40,7 @@ const edgeTypesConfig = {
   relationship: RelationshipEdge,
 } as const;
 
-export default function RelationshipGraph({
+const RelationshipGraph = memo(function RelationshipGraph({
   character,
   relationships,
   relatedCharactersData,
@@ -214,4 +214,6 @@ export default function RelationshipGraph({
       </div>
     </div>
   );
-}
+});
+
+export default RelationshipGraph;

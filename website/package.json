@@ -38,6 +38,7 @@
     "sitemap:generate": "next-sitemap --config ./scripts/next-sitemap.config.js"
   },
   "dependencies": {
+    "@tanstack/react-virtual": "^3.13.12",
     "elkjs": "^0.11.0",
     "framer-motion": "^12.23.24",
     "next": "16.0.1",
