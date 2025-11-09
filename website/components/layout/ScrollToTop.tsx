@@ -12,6 +12,12 @@ interface ScrollToTopProps {
   threshold?: number;
 }
 
+// SVG 进度条常量（不依赖 props 或 state，只计算一次）
+const SVG_SIZE = 48;
+const STROKE_WIDTH = 3;
+const RADIUS = (SVG_SIZE - STROKE_WIDTH) / 2;
+const CIRCUMFERENCE = 2 * Math.PI * RADIUS;
+
 export function ScrollToTop({ threshold = 400 }: ScrollToTopProps) {
   const [isVisible, setIsVisible] = useState(false);
   const [scrollProgress, setScrollProgress] = useState(0);
@@ -74,12 +80,8 @@ export function ScrollToTop({ threshold = 400 }: ScrollToTopProps) {
     return lerp(PINK, BLUE, (scrollProgress - 0.5) * 2);
   };
 
-  // 圆形进度条的参数
-  const size = 48; // 按钮大小
-  const strokeWidth = 3;
-  const radius = (size - strokeWidth) / 2;
-  const circumference = 2 * Math.PI * radius;
-  const progressOffset = circumference - scrollProgress * circumference;
+  // 计算当前滚动进度对应的圆环偏移量
+  const progressOffset = CIRCUMFERENCE - scrollProgress * CIRCUMFERENCE;
 
   return (
     <AnimatePresence>
@@ -105,28 +107,28 @@ export function ScrollToTop({ threshold = 400 }: ScrollToTopProps) {
             {/* SVG 圆形进度条 */}
             <svg
               className="absolute inset-0 -rotate-90"
-              width={size}
-              height={size}
+              width={SVG_SIZE}
+              height={SVG_SIZE}
             >
               {/* 背景圆环 */}
               <circle
-                cx={size / 2}
-                cy={size / 2}
-                r={radius}
+                cx={SVG_SIZE / 2}
+                cy={SVG_SIZE / 2}
+                r={RADIUS}
                 fill="none"
                 stroke="currentColor"
-                strokeWidth={strokeWidth}
+                strokeWidth={STROKE_WIDTH}
                 className="text-muted/20"
               />
               {/* 进度圆环 */}
               <circle
-                cx={size / 2}
-                cy={size / 2}
-                r={radius}
+                cx={SVG_SIZE / 2}
+                cy={SVG_SIZE / 2}
+                r={RADIUS}
                 fill="none"
                 stroke={getProgressColor()}
-                strokeWidth={strokeWidth}
-                strokeDasharray={circumference}
+                strokeWidth={STROKE_WIDTH}
+                strokeDasharray={CIRCUMFERENCE}
                 strokeDashoffset={progressOffset}
                 strokeLinecap="round"
               />
