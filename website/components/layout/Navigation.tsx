@@ -3,7 +3,7 @@
 
 "use client";
 
-import { useState } from "react";
+import { useState, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import { usePathname } from "@/i18n/navigation";
@@ -29,15 +29,20 @@ export function Navigation() {
   const tNavigation = useTranslations("common.navigation");
   const tHeader = useTranslations("common.header");
 
-  const closeMobileMenu = () => setIsMobileMenuOpen(false);
+  const closeMobileMenu = useCallback(() => {
+    setIsMobileMenuOpen(false);
+  }, []);
 
   // 判断链接是否激活
-  const isActive = (href: string) => {
-    if (href === "/") {
-      return pathname === "/";
-    }
-    return pathname === href || pathname.startsWith(href + "/");
-  };
+  const isActive = useCallback(
+    (href: string) => {
+      if (href === "/") {
+        return pathname === "/";
+      }
+      return pathname === href || pathname.startsWith(href + "/");
+    },
+    [pathname]
+  );
 
   return (
     <>

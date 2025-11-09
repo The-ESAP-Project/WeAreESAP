@@ -6,7 +6,7 @@
 import { usePathname, useRouter } from "@/i18n/navigation";
 import { useLocale } from "next-intl";
 import { locales } from "@/i18n/request";
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect, useCallback, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Icon } from "@/components/ui";
 import { useReducedMotion } from "@/hooks/useReducedMotion";
@@ -25,26 +25,48 @@ export function LanguageSwitcher() {
   const dropdownRef = useRef<HTMLDivElement>(null);
   const shouldReduceMotion = useReducedMotion();
 
-  // 点击外部关闭下拉菜单
-  useEffect(() => {
-    const handleClickOutside = (event: MouseEvent) => {
-      if (
-        dropdownRef.current &&
-        !dropdownRef.current.contains(event.target as Node)
-      ) {
-        setIsOpen(false);
-      }
-    };
+  const handleLocaleChange = useCallback(
+    (newLocale: string) => {
+      // 使用 next-intl 的 router，自动处理 locale 切换
+      router.push(pathname, { locale: newLocale });
+      setIsOpen(false);
+    },
+    [router, pathname]
+  );
 
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => document.removeEventListener("mousedown", handleClickOutside);
+  // 点击外部关闭下拉菜单
+  const handleClickOutside = useCallback((event: MouseEvent) => {
+    if (
+      dropdownRef.current &&
+      !dropdownRef.current.contains(event.target as Node)
+    ) {
+      setIsOpen(false);
+    }
   }, []);
 
-  const handleLocaleChange = (newLocale: string) => {
-    // 使用 next-intl 的 router，自动处理 locale 切换
-    router.push(pathname, { locale: newLocale });
-    setIsOpen(false);
-  };
+  useEffect(() => {
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, [handleClickOutside]);
+
+  // 缓存下拉菜单内容，只在相关依赖变化时重新渲染
+  const dropdownContent = useMemo(
+    () =>
+      locales.map((loc) => (
+        <button
+          key={loc}
+          onClick={() => handleLocaleChange(loc)}
+          className={`w-full px-4 py-2 text-left text-sm transition-colors ${
+            locale === loc
+              ? "bg-esap-blue/10 text-esap-blue font-medium"
+              : "text-foreground hover:bg-muted"
+          }`}
+        >
+          {localeNames[loc]}
+        </button>
+      )),
+    [locale, handleLocaleChange]
+  );
 
   return (
     <div className="relative" ref={dropdownRef}>
@@ -75,19 +97,7 @@ export function LanguageSwitcher() {
             }
             className="absolute right-0 top-12 w-32 bg-background border border-border rounded-lg shadow-lg overflow-hidden z-50"
           >
-            {locales.map((loc) => (
-              <button
-                key={loc}
-                onClick={() => handleLocaleChange(loc)}
-                className={`w-full px-4 py-2 text-left text-sm transition-colors ${
-                  locale === loc
-                    ? "bg-esap-blue/10 text-esap-blue font-medium"
-                    : "text-foreground hover:bg-muted"
-                }`}
-              >
-                {localeNames[loc]}
-              </button>
-            ))}
+            {dropdownContent}
           </motion.div>
         )}
       </AnimatePresence>

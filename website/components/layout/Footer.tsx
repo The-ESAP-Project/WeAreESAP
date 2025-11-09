@@ -4,6 +4,7 @@
 "use client";
 
 import { useTranslations, useLocale } from "next-intl";
+import { useMemo } from "react";
 
 /**
  * 全局底部栏组件
@@ -12,8 +13,8 @@ export function Footer() {
   const tFooter = useTranslations("common.footer");
   const locale = useLocale();
 
-  // 根据语言生成许可证链接
-  const getLicenseUrl = () => {
+  // 根据语言生成许可证链接（缓存结果，只在 locale 变化时重新计算）
+  const licenseUrl = useMemo(() => {
     switch (locale) {
       case "zh-CN":
         return "https://creativecommons.org/licenses/by/4.0/deed.zh-hans";
@@ -22,7 +23,7 @@ export function Footer() {
       default:
         return "https://creativecommons.org/licenses/by/4.0/";
     }
-  };
+  }, [locale]);
 
   return (
     <footer className="py-8 px-4 sm:px-6 lg:px-8 border-t border-border bg-background">
@@ -36,7 +37,7 @@ export function Footer() {
         <p>
           {tFooter("license")}{" "}
           <a
-            href={getLicenseUrl()}
+            href={licenseUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="text-esap-blue hover:underline transition-colors"
