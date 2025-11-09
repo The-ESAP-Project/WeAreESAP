@@ -14,31 +14,35 @@ interface ScrollToTopProps {
 
 export function ScrollToTop({ threshold = 400 }: ScrollToTopProps) {
   const [isVisible, setIsVisible] = useState(false);
+  const [scrollProgress, setScrollProgress] = useState(0);
   const shouldReduceMotion = useReducedMotion();
 
   useEffect(() => {
     let rafId: number | null = null;
 
-    const toggleVisibility = () => {
+    const updateScroll = () => {
       // 如果已经有待处理的 requestAnimationFrame，跳过
       if (rafId !== null) return;
 
       rafId = requestAnimationFrame(() => {
-        if (window.scrollY > threshold) {
-          setIsVisible(true);
-        } else {
-          setIsVisible(false);
-        }
+        const scrollHeight =
+          document.documentElement.scrollHeight - window.innerHeight;
+        const currentScroll = window.scrollY;
+        const progress = scrollHeight > 0 ? currentScroll / scrollHeight : 0;
+
+        setScrollProgress(Math.min(progress, 1));
+        setIsVisible(currentScroll > threshold);
+
         rafId = null;
       });
     };
 
     // 监听滚动事件，使用 passive 优化性能
-    window.addEventListener("scroll", toggleVisibility, { passive: true });
+    window.addEventListener("scroll", updateScroll, { passive: true });
 
     // 清理事件监听器和待处理的动画帧
     return () => {
-      window.removeEventListener("scroll", toggleVisibility);
+      window.removeEventListener("scroll", updateScroll);
       if (rafId !== null) {
         cancelAnimationFrame(rafId);
       }
@@ -52,10 +56,33 @@ export function ScrollToTop({ threshold = 400 }: ScrollToTopProps) {
     });
   };
 
+  // 计算进度条颜色：根据进度从 ESAP 黄色→粉色→蓝色渐变
+  // esap-yellow: #ffd93d (255, 217, 61)
+  // esap-pink: #ff69b4 (255, 105, 180)
+  // esap-blue: #4da6ff (77, 166, 255)
+  const getProgressColor = () => {
+    if (scrollProgress < 0.5) {
+      // 0-50%: 黄色到粉色
+      const ratio = scrollProgress * 2;
+      return `rgb(255, ${217 - Math.floor(112 * ratio)}, ${61 + Math.floor(119 * ratio)})`;
+    } else {
+      // 50-100%: 粉色到蓝色
+      const ratio = (scrollProgress - 0.5) * 2;
+      return `rgb(${255 - Math.floor(178 * ratio)}, ${105 + Math.floor(61 * ratio)}, ${180 + Math.floor(75 * ratio)})`;
+    }
+  };
+
+  // 圆形进度条的参数
+  const size = 48; // 按钮大小
+  const strokeWidth = 3;
+  const radius = (size - strokeWidth) / 2;
+  const circumference = 2 * Math.PI * radius;
+  const progressOffset = circumference - scrollProgress * circumference;
+
   return (
     <AnimatePresence>
       {isVisible && (
-        <motion.button
+        <motion.div
           initial={
             shouldReduceMotion ? undefined : { opacity: 0, scale: 0.8, y: 20 }
           }
@@ -66,14 +93,46 @@ export function ScrollToTop({ threshold = 400 }: ScrollToTopProps) {
             shouldReduceMotion ? undefined : { opacity: 0, scale: 0.8, y: 20 }
           }
           transition={shouldReduceMotion ? { duration: 0 } : { duration: 0.2 }}
-          onClick={scrollToTop}
-          className="fixed bottom-8 right-8 z-50 w-12 h-12 rounded-full bg-linear-to-br from-esap-yellow via-esap-pink to-esap-blue shadow-lg hover:shadow-xl transition-shadow group"
-          aria-label="返回顶部"
+          className="fixed bottom-8 right-8 z-50"
         >
-          {/* 内层白色圆圈 */}
-          <div className="absolute inset-0.5 rounded-full bg-background flex items-center justify-center">
+          <button
+            onClick={scrollToTop}
+            className="relative w-12 h-12 rounded-full bg-background shadow-lg hover:shadow-xl transition-shadow group"
+            aria-label="返回顶部"
+          >
+            {/* SVG 圆形进度条 */}
             <svg
-              className="w-6 h-6 text-foreground group-hover:-translate-y-1 transition-transform"
+              className="absolute inset-0 -rotate-90"
+              width={size}
+              height={size}
+            >
+              {/* 背景圆环 */}
+              <circle
+                cx={size / 2}
+                cy={size / 2}
+                r={radius}
+                fill="none"
+                stroke="currentColor"
+                strokeWidth={strokeWidth}
+                className="text-muted/20"
+              />
+              {/* 进度圆环 */}
+              <circle
+                cx={size / 2}
+                cy={size / 2}
+                r={radius}
+                fill="none"
+                stroke={getProgressColor()}
+                strokeWidth={strokeWidth}
+                strokeDasharray={circumference}
+                strokeDashoffset={progressOffset}
+                strokeLinecap="round"
+              />
+            </svg>
+
+            {/* 箭头图标 */}
+            <svg
+              className="absolute inset-0 m-auto w-6 h-6 text-foreground group-hover:-translate-y-1 transition-transform"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -85,8 +144,8 @@ export function ScrollToTop({ threshold = 400 }: ScrollToTopProps) {
                 d="M5 10l7-7m0 0l7 7m-7-7v18"
               />
             </svg>
-          </div>
-        </motion.button>
+          </button>
+        </motion.div>
       )}
     </AnimatePresence>
   );
