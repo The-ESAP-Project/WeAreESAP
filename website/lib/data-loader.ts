@@ -163,7 +163,7 @@ export async function loadJsonFileDirect<T>(
     const fileContent = await fs.readFile(fullPath, "utf-8");
     return JSON.parse(fileContent) as T;
   } catch (error) {
-    logger.error(`加载文件失败 ${filePath.join("/")}:`, error);
+    logger.error(`加载或解析文件失败 ${filePath.join("/")}:`, error);
     return null;
   }
 }
