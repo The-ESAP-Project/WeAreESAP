@@ -51,7 +51,7 @@ export async function loadJsonFile<T>(
 
     // 如果不存在，尝试回退到 fallbackLocale
     if (!(await exists(filePath))) {
-      logger.log(
+      logger.warn(
         `文件 ${path.join(locale, filename)} 不存在，回退到 ${fallbackLocale}`
       );
       filePath = path.join(
