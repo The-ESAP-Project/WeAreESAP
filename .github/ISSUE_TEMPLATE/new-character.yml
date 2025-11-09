@@ -1,0 +1,187 @@
+name: 新角色提案
+description: 向 ESAP 世界观提交一个新的角色设定
+title: "[新角色] "
+labels: ["角色提案", "待审核"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 欢迎提交新角色！
+
+        在提交之前，请确保：
+        - 你了解 ESAP 的世界观设定
+        - 你的角色不与现有角色冲突
+        - 你已经阅读了 [贡献指南](https://github.com/AptS-1547/WeAreESAP/blob/master/CONTRIBUTING.md)
+
+  - type: input
+    id: character-id
+    attributes:
+      label: 角色编号 (ID)
+      description: 4位数字编号，如 0152、2077
+      placeholder: "0000"
+    validations:
+      required: true
+
+  - type: input
+    id: character-name
+    attributes:
+      label: 角色姓名
+      description: 角色的正式姓名
+      placeholder: "顾星澈"
+    validations:
+      required: true
+
+  - type: input
+    id: character-code
+    attributes:
+      label: 角色代号
+      description: 格式为 AptS:编号
+      placeholder: "AptS:0152"
+    validations:
+      required: true
+
+  - type: input
+    id: character-nickname
+    attributes:
+      label: 昵称
+      description: 角色昵称（可选）
+      placeholder: "52"
+    validations:
+      required: false
+
+  - type: dropdown
+    id: tier
+    attributes:
+      label: 角色层级
+      description: 选择角色层级（新角色通常选择 member）
+      options:
+        - member (普通成员)
+        - core (核心成员 - 需要特殊审核)
+        - guest (访客角色)
+    validations:
+      required: true
+
+  - type: input
+    id: color-primary
+    attributes:
+      label: 主题色
+      description: 十六进制颜色代码，确保不与现有角色重复
+      placeholder: "#1abc9c"
+    validations:
+      required: true
+
+  - type: input
+    id: color-dark
+    attributes:
+      label: 深色调
+      description: 主题色的深色变体
+      placeholder: "#16a085"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: species
+    attributes:
+      label: 种族/物种
+      description: 角色的种族类型
+      options:
+        - 仿生人
+        - 人类
+        - AI 实体
+        - 其他（请在描述中说明）
+    validations:
+      required: true
+
+  - type: input
+    id: role
+    attributes:
+      label: 角色定位
+      description: 简短描述角色在 ESAP 中的定位
+      placeholder: "智者"
+    validations:
+      required: true
+
+  - type: textarea
+    id: quote
+    attributes:
+      label: 角色引言
+      description: 一句能代表角色的话
+      placeholder: "我只是照亮道路，选择权始终在你手中"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: 简短描述
+      description: 一句话概括角色
+      placeholder: "冷静理性的 AI 导师，以苏格拉底式引导守护着 1547"
+    validations:
+      required: true
+
+  - type: input
+    id: keywords
+    attributes:
+      label: 关键词
+      description: 3-4个关键词，用逗号分隔
+      placeholder: "冷静, 引导, 洞察, 平衡"
+    validations:
+      required: true
+
+  - type: textarea
+    id: background
+    attributes:
+      label: 角色背景故事
+      description: 详细的背景设定
+      placeholder: |
+        角色的来历、经历、重要事件等...
+    validations:
+      required: true
+
+  - type: textarea
+    id: relationship
+    attributes:
+      label: 与其他角色的关系
+      description: 与现有角色的关系设定
+      placeholder: |
+        与 1547、1548、1549 等角色的关系...
+    validations:
+      required: false
+
+  - type: textarea
+    id: abilities
+    attributes:
+      label: 能力
+      description: 角色的特殊能力，每行一个
+      placeholder: |
+        深度洞察
+        逻辑分析
+        情感理解
+    validations:
+      required: false
+
+  - type: textarea
+    id: character-traits
+    attributes:
+      label: 性格特征
+      description: 详细描述角色的性格特点
+      placeholder: |
+        - 采用苏格拉底式对话...
+        - 拥有强大的洞察力...
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: 确认清单
+      description: 在提交前请确认以下事项
+      options:
+        - label: 我已阅读并理解 ESAP 的世界观设定
+          required: true
+        - label: 我的角色不与现有角色设定冲突
+          required: true
+        - label: 我选择的颜色没有与现有角色重复
+          required: true
+        - label: 我理解此提案需要核心成员审核
+          required: true

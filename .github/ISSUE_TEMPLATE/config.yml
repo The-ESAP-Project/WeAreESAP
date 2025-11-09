@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 讨论区
+    url: https://github.com/AptS-1547/WeAreESAP/discussions
+    about: 有问题或想法？来讨论区聊聊吧
+  - name: 📚 项目文档
+    url: https://weare.esaps.net
+    about: 访问官方网站了解更多关于 ESAP 的信息

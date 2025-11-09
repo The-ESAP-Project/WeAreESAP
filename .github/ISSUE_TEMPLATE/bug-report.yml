@@ -1,0 +1,113 @@
+name: Bug 报告
+description: 报告网站或项目中的问题
+title: "[Bug] "
+labels: ["bug", "待处理"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 感谢你的反馈！
+
+        请详细描述你遇到的问题，这将帮助我们更快地定位和修复。
+
+  - type: dropdown
+    id: bug-type
+    attributes:
+      label: 问题类型
+      description: 这个 bug 属于哪个类别？
+      options:
+        - 页面显示异常
+        - 功能无法使用
+        - 性能问题
+        - 数据错误
+        - 移动端适配问题
+        - 其他
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: 问题描述
+      description: 清晰简洁地描述这个 bug
+      placeholder: 当我点击...时，发生了...
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: 复现步骤
+      description: 如何复现这个问题？
+      placeholder: |
+        1. 访问页面 '...'
+        2. 点击 '...'
+        3. 滚动到 '...'
+        4. 看到错误
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: 预期行为
+      description: 你期望发生什么？
+      placeholder: 应该显示...
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: 实际行为
+      description: 实际上发生了什么？
+      placeholder: 但是显示了...
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: 截图
+      description: 如果可能，请提供截图或录屏
+      placeholder: 拖拽图片到这里...
+    validations:
+      required: false
+
+  - type: dropdown
+    id: browser
+    attributes:
+      label: 浏览器
+      description: 你使用的浏览器
+      options:
+        - Chrome
+        - Firefox
+        - Safari
+        - Edge
+        - 其他
+    validations:
+      required: true
+
+  - type: dropdown
+    id: device
+    attributes:
+      label: 设备类型
+      description: 你使用的设备
+      options:
+        - 桌面端 (Windows)
+        - 桌面端 (macOS)
+        - 桌面端 (Linux)
+        - 移动端 (iOS)
+        - 移动端 (Android)
+        - 平板
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: 补充信息
+      description: 其他可能有用的信息
+      placeholder: 控制台错误、网络请求等...
+    validations:
+      required: false
