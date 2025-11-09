@@ -1,0 +1,20 @@
+{
+  "id": "2077",
+  "name": "风",
+  "code": "AptS:2077",
+  "nickname": "77",
+  "color": {
+    "primary": "#ffd93d",
+    "dark": "#ffc107"
+  },
+  "role": "陪伴者",
+  "species": "人类",
+  "quote": "让我们在风的尽头相遇",
+  "description": "即便你不被任何人所重视，我依然在茫茫人海中关注着你",
+  "keywords": ["陪伴", "爱", "感性"],
+  "backgroundImage": "/images/img_2077.webp",
+  "meta": {
+    "bodyType": "人类",
+    "abilities": ["心理学", "文学", "声乐", "linux运维"]
+  }
+}
