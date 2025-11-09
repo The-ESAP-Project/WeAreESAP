@@ -6,7 +6,7 @@
 import { useEffect, useCallback } from "react";
 import { pangu } from "pangu/browser";
 
-// 全局标志：确保 autoSpacingPage 只启动一次
+// 全局标志位，确保 autoSpacingPage 只启动一次
 let autoSpacingStarted = false;
 
 /**
@@ -16,7 +16,7 @@ let autoSpacingStarted = false;
  * 性能优化方案：
  * 1. 使用 requestIdleCallback 在浏览器空闲时格式化
  * 2. 避免阻塞首屏渲染
- * 3. 全局标志防止重复启动 MutationObserver
+ * 3. 全局 MutationObserver 只启动一次，避免重复监听
  *
  * 因為愛情跟書寫都需要適時地留白。
  */
@@ -41,6 +41,7 @@ export function usePangu() {
     });
 
     // 启动自动监听（只启动一次，避免多个 MutationObserver）
+    // pangu.autoSpacingPage() 内部已经做了防抖，不需要额外处理
     if (!autoSpacingStarted) {
       scheduleFormat(() => {
         pangu.autoSpacingPage();
