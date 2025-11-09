@@ -26,6 +26,7 @@
     "build": "next build",
     "postbuild": "next-sitemap --config ./scripts/next-sitemap.config.js",
     "start": "next start",
+    "analyze": "ANALYZE=true pnpm build",
     "lint": "eslint",
     "lint:fix": "eslint --fix",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,css,md}\"",
@@ -48,6 +49,7 @@
     "styled-jsx": "^5.1.7"
   },
   "devDependencies": {
+    "@next/bundle-analyzer": "^16.0.1",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^24",
     "@types/react": "^19",
