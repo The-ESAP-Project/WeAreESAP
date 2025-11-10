@@ -3,7 +3,7 @@
 
 "use client";
 
-import { useState, useRef, useEffect, useCallback } from "react";
+import { useState, useRef, useEffect, useCallback, useMemo } from "react";
 import { motion } from "framer-motion";
 import { CharacterCardData } from "@/types/character";
 import { CharacterStrip } from "./CharacterStrip";
@@ -20,33 +20,105 @@ interface MousePosition {
   time: number;
 }
 
+// 斜切量常量（固定值，移到组件外部避免重复创建）
+const SKEW_AMOUNT = 50;
+
 export function CharacterAccordion({
   characters = [], // 设置默认值为空数组
   onCharacterClick,
 }: CharacterAccordionProps) {
   const shouldReduceMotion = useReducedMotion();
-  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+  const tempHoveredIndexRef = useRef<number | null>(null); // 改用 ref，避免重渲染
   const [stableHoveredIndex, setStableHoveredIndex] = useState<number | null>(
     null
   );
   const [isQuickSwitching, setIsQuickSwitching] = useState(false);
-  const [mouseVelocity, setMouseVelocity] = useState(0);
-  const [mouseDirection, setMouseDirection] = useState<"left" | "right" | null>(
-    null
-  );
 
-  // Refs
+  // Refs - 使用 ref 存储鼠标追踪数据，避免频繁重渲染
+  const mouseVelocityRef = useRef(0);
   const lastSwitchTimeRef = useRef<number>(0);
-  const switchTimeoutRef = useRef<NodeJS.Timeout | null>(null);
-  const expandTimeoutRef = useRef<NodeJS.Timeout | null>(null);
-  const stableTimeoutRef = useRef<NodeJS.Timeout | null>(null);
-  const leaveTimeoutRef = useRef<NodeJS.Timeout | null>(null); // 延迟清空定时器
   const consecutiveSwitchCountRef = useRef<number>(0); // 连续切换计数
-  const consecutiveResetTimeoutRef = useRef<NodeJS.Timeout | null>(null); // 重置计数定时器
   const mousePositionHistory = useRef<MousePosition[]>([]);
   const containerRef = useRef<HTMLDivElement>(null);
 
-  const skewAmount = 50;
+  // 统一管理所有定时器
+  const timeoutsRef = useRef<{
+    expand: NodeJS.Timeout | null;
+    stable: NodeJS.Timeout | null;
+    leave: NodeJS.Timeout | null;
+    resetCount: NodeJS.Timeout | null;
+  }>({
+    expand: null,
+    stable: null,
+    leave: null,
+    resetCount: null,
+  });
+
+  // 统一清理定时器函数
+  const clearTimeouts = useCallback(
+    (...keys: Array<keyof typeof timeoutsRef.current>) => {
+      keys.forEach((key) => {
+        if (timeoutsRef.current[key]) {
+          clearTimeout(timeoutsRef.current[key]!);
+          timeoutsRef.current[key] = null;
+        }
+      });
+    },
+    []
+  );
+
+  // 清理所有定时器
+  const clearAllTimeouts = useCallback(() => {
+    clearTimeouts("expand", "stable", "leave", "resetCount");
+  }, [clearTimeouts]);
+
+  // 更新快速切换状态（单一职责函数）
+  const updateQuickSwitchState = useCallback(() => {
+    const now = Date.now();
+    const timeSinceLastSwitch = now - lastSwitchTimeRef.current;
+    const isWithinThreshold = timeSinceLastSwitch < 300;
+
+    if (isWithinThreshold && tempHoveredIndexRef.current !== null) {
+      consecutiveSwitchCountRef.current++;
+    } else {
+      consecutiveSwitchCountRef.current = 1;
+    }
+
+    lastSwitchTimeRef.current = now;
+    return consecutiveSwitchCountRef.current >= 2;
+  }, []);
+
+  // 计算延迟时间（单一职责函数）
+  const calculateDelays = useCallback(
+    (index: number, isQuickSwitch: boolean) => {
+      const isAdjacentSwitch =
+        tempHoveredIndexRef.current !== null &&
+        Math.abs(index - tempHoveredIndexRef.current) === 1;
+
+      // 计算展开延迟
+      let expandDelay: number;
+      if (isAdjacentSwitch) {
+        expandDelay = 0;
+      } else if (tempHoveredIndexRef.current === null) {
+        expandDelay = mouseVelocityRef.current > 0.5 ? 300 : 50;
+      } else {
+        expandDelay = 100;
+      }
+
+      // 计算稳定延迟
+      let stableDelay: number;
+      if (isQuickSwitch) {
+        stableDelay = 180;
+      } else if (isAdjacentSwitch) {
+        stableDelay = 140;
+      } else {
+        stableDelay = expandDelay;
+      }
+
+      return { expandDelay, stableDelay };
+    },
+    []
+  );
 
   // 鼠标移动追踪 - 使用 throttle 优化性能
   const handleMouseMove = useCallback((e: MouseEvent) => {
@@ -59,7 +131,7 @@ export function CharacterAccordion({
       mousePositionHistory.current.shift();
     }
 
-    // 计算速度和方向（至少需要 2 个点）
+    // 计算速度（至少需要 2 个点）
     if (mousePositionHistory.current.length >= 2) {
       const oldest = mousePositionHistory.current[0];
       const newest =
@@ -69,13 +141,8 @@ export function CharacterAccordion({
       const time = newest.time - oldest.time;
       const velocity = time > 0 ? distance / time : 0;
 
-      setMouseVelocity(velocity);
-
-      // 判断方向（需要明显的移动才算）
-      const deltaX = newest.x - oldest.x;
-      if (Math.abs(deltaX) > 10) {
-        setMouseDirection(deltaX > 0 ? "right" : "left");
-      }
+      // 直接更新 ref，不触发重渲染（性能优化）
+      mouseVelocityRef.current = velocity;
     }
   }, []);
 
@@ -98,190 +165,127 @@ export function CharacterAccordion({
 
     return () => {
       container.removeEventListener("mousemove", throttledHandler);
-      // 清理定时器
-      if (switchTimeoutRef.current) clearTimeout(switchTimeoutRef.current);
-      if (expandTimeoutRef.current) clearTimeout(expandTimeoutRef.current);
-      if (stableTimeoutRef.current) clearTimeout(stableTimeoutRef.current);
-      if (leaveTimeoutRef.current) clearTimeout(leaveTimeoutRef.current);
-      if (consecutiveResetTimeoutRef.current)
-        clearTimeout(consecutiveResetTimeoutRef.current);
+      // 清理所有定时器
+      clearAllTimeouts();
     };
-  }, [handleMouseMove]);
+  }, [handleMouseMove, clearAllTimeouts]);
 
   // 智能延迟展开 - 根据鼠标速度和位置决定延迟
-  const handleMouseEnter = (index: number) => {
-    const now = Date.now();
-    const timeSinceLastSwitch = now - lastSwitchTimeRef.current;
+  const handleMouseEnter = useCallback(
+    (index: number) => {
+      // 清除相关定时器
+      clearTimeouts("resetCount", "leave", "expand", "stable");
 
-    // 清除重置定时器
-    if (consecutiveResetTimeoutRef.current) {
-      clearTimeout(consecutiveResetTimeoutRef.current);
-    }
+      // 更新快速切换状态
+      const isQuickSwitch = updateQuickSwitchState();
+      setIsQuickSwitching(isQuickSwitch);
 
-    // 连续切换检测：300ms 内切换且有 hoveredIndex，计数+1；否则重置为1
-    if (timeSinceLastSwitch < 300 && hoveredIndex !== null) {
-      consecutiveSwitchCountRef.current++;
-    } else {
-      consecutiveSwitchCountRef.current = 1;
-    }
+      // 计算延迟时间
+      const { expandDelay, stableDelay } = calculateDelays(
+        index,
+        isQuickSwitch
+      );
 
-    // 2次或以上切换 = 快速切换
-    const isCurrentlyQuickSwitching = consecutiveSwitchCountRef.current >= 2;
-    setIsQuickSwitching(isCurrentlyQuickSwitching);
+      // 设置 tempHoveredIndex
+      if (expandDelay === 0) {
+        tempHoveredIndexRef.current = index;
+      } else {
+        timeoutsRef.current.expand = setTimeout(() => {
+          tempHoveredIndexRef.current = index;
+        }, expandDelay);
+      }
 
-    // 取消之前的离开定时器（相邻切换时避免清空状态）
-    if (leaveTimeoutRef.current) {
-      clearTimeout(leaveTimeoutRef.current);
-      leaveTimeoutRef.current = null;
-    }
+      // 延迟更新稳定索引
+      timeoutsRef.current.stable = setTimeout(() => {
+        setStableHoveredIndex(index);
+      }, stableDelay);
 
-    lastSwitchTimeRef.current = now;
-
-    // 清除之前的展开定时器
-    if (expandTimeoutRef.current) {
-      clearTimeout(expandTimeoutRef.current);
-    }
-
-    // 清除稳定状态定时器
-    if (stableTimeoutRef.current) {
-      clearTimeout(stableTimeoutRef.current);
-    }
-
-    // 检测是否是相邻切换
-    const isAdjacentSwitch =
-      hoveredIndex !== null && Math.abs(index - hoveredIndex) === 1;
-
-    // 决定延迟时间
-    let delay = 0;
-
-    if (isAdjacentSwitch) {
-      // 相邻切换：立即设置 hoveredIndex，但延迟更新 stableHoveredIndex
-      delay = 0;
-    } else if (hoveredIndex === null) {
-      // 从外部进入：根据速度决定延迟
-      delay = mouseVelocity > 0.5 ? 300 : 50;
-    } else {
-      // 跳跃切换：使用短延迟
-      delay = 100;
-    }
-
-    // 立即设置 hoveredIndex（用于其他逻辑）
-    if (delay === 0) {
-      setHoveredIndex(index);
-    } else {
-      expandTimeoutRef.current = setTimeout(() => {
-        setHoveredIndex(index);
-      }, delay);
-    }
-
-    // 稳定索引更新策略：基于连续切换计数决定延迟
-    let stableDelay;
-
-    if (consecutiveSwitchCountRef.current >= 2) {
-      // 真正的连续切换（2次及以上）：统一延迟 180ms，避免中间元素展开
-      stableDelay = 180;
-    } else if (isAdjacentSwitch) {
-      // 单独的相邻切换：延迟 140ms（响应快）
-      stableDelay = 140;
-    } else {
-      // 其他情况：使用基础延迟
-      stableDelay = delay;
-    }
-
-    stableTimeoutRef.current = setTimeout(() => {
-      setStableHoveredIndex(index);
-    }, stableDelay);
-
-    // 300ms 后重置连续切换计数和快速切换状态
-    consecutiveResetTimeoutRef.current = setTimeout(() => {
-      consecutiveSwitchCountRef.current = 0;
-      setIsQuickSwitching(false);
-    }, 300);
-  };
+      // 延迟重置快速切换状态
+      timeoutsRef.current.resetCount = setTimeout(() => {
+        consecutiveSwitchCountRef.current = 0;
+        setIsQuickSwitching(false);
+      }, 300);
+    },
+    [clearTimeouts, updateQuickSwitchState, calculateDelays]
+  );
 
   // 鼠标离开事件
-  const handleMouseLeave = () => {
-    // 清除所有定时器（除了 leaveTimeout）
-    if (expandTimeoutRef.current) clearTimeout(expandTimeoutRef.current);
-    if (stableTimeoutRef.current) clearTimeout(stableTimeoutRef.current);
-    if (consecutiveResetTimeoutRef.current)
-      clearTimeout(consecutiveResetTimeoutRef.current);
+  const handleMouseLeave = useCallback(() => {
+    // 清除所有定时器（除了 leave）
+    clearTimeouts("expand", "stable", "resetCount");
 
     // 延迟清空状态，避免相邻切换时的瞬间空白
     // 如果 50ms 内进入了新元素，这个定时器会被取消
-    leaveTimeoutRef.current = setTimeout(() => {
-      setHoveredIndex(null);
+    timeoutsRef.current.leave = setTimeout(() => {
+      tempHoveredIndexRef.current = null;
       setStableHoveredIndex(null);
       setIsQuickSwitching(false);
       consecutiveSwitchCountRef.current = 0;
     }, 50);
-  };
+  }, [clearTimeouts]);
 
-  // 计算每个角色的宽度百分比
-  // 容器宽度 = 100%，元素通过加宽补偿负 margin
-  const getWidth = (index: number) => {
-    const total = characters.length;
+  // 优化角色点击回调，使用 useCallback 避免子组件重渲染
+  const handleCharacterClick = useCallback(
+    (characterId: string) => {
+      onCharacterClick?.(characterId);
+    },
+    [onCharacterClick]
+  );
 
-    // 使用稳定的 hoveredIndex 计算宽度
-    // 这样快速切换时，宽度会保持在上一个稳定状态，通过动画平滑过渡
-    if (stableHoveredIndex === null) {
-      // 默认状态：平均分配，使用精确的除法
-      const baseWidthPercent = 100 / total;
+  // 缓存样式计算结果，避免每次渲染都重新计算
+  const widths = useMemo(() => {
+    return characters.map((_, index) => {
+      const total = characters.length;
+
+      if (stableHoveredIndex === null) {
+        const baseWidthPercent = 100 / total;
+        if (index === 0) {
+          return `${baseWidthPercent}%`;
+        }
+        return `calc(${baseWidthPercent}% + ${SKEW_AMOUNT}px)`;
+      }
+
+      if (index === stableHoveredIndex) {
+        if (index === 0) {
+          return "60%";
+        }
+        return `calc(60% + ${SKEW_AMOUNT}px)`;
+      }
+
+      const otherWidthPercent = 40 / (total - 1);
+      if (index === 0) {
+        return `${otherWidthPercent}%`;
+      }
+      return `calc(${otherWidthPercent}% + ${SKEW_AMOUNT}px)`;
+    });
+  }, [characters, stableHoveredIndex]);
+
+  const marginLefts = useMemo(() => {
+    return characters.map((_, index) => {
+      if (index === 0) return 0;
+      return -SKEW_AMOUNT;
+    });
+  }, [characters]);
+
+  const clipPaths = useMemo(() => {
+    return characters.map((_, index) => {
+      const total = characters.length;
+
+      if (total === 1) {
+        return `polygon(0 0, 100% 0, calc(100% - ${SKEW_AMOUNT}px) 100%, 0 100%)`;
+      }
 
       if (index === 0) {
-        // 第一个元素：不需要补偿
-        return `${baseWidthPercent}%`;
+        return `polygon(0 0, 100% 0, calc(100% - ${SKEW_AMOUNT}px) 100%, 0 100%)`;
       }
-      // 其他元素：加宽 50px 补偿负 margin
-      return `calc(${baseWidthPercent}% + ${skewAmount}px)`;
-    }
 
-    // 悬停状态
-    if (index === stableHoveredIndex) {
-      // 被悬停的角色：60%
-      if (index === 0) {
-        return "60%";
+      if (index === total - 1) {
+        return `polygon(${SKEW_AMOUNT}px 0, 100% 0, 100% 100%, 0 100%)`;
       }
-      return `calc(60% + ${skewAmount}px)`;
-    }
 
-    // 其他角色：平分剩余的 40%
-    const otherWidthPercent = 40 / (total - 1);
-
-    if (index === 0) {
-      return `${otherWidthPercent}%`;
-    }
-    return `calc(${otherWidthPercent}% + ${skewAmount}px)`;
-  };
-
-  // 重叠量：与斜切量相同，确保完美对齐
-  const getMarginLeft = (index: number) => {
-    if (index === 0) return 0;
-    return -skewAmount;
-  };
-
-  // 计算斜切路径 - 使用固定像素值，所有斜线一致
-  const getClipPath = (index: number) => {
-    const total = characters.length;
-
-    if (total === 1) {
-      // 只有一个角色：左边垂直，右边斜切
-      return `polygon(0 0, 100% 0, calc(100% - ${skewAmount}px) 100%, 0 100%)`;
-    }
-
-    if (index === 0) {
-      // 第一个角色：左边垂直，右边斜切 (/)
-      return `polygon(0 0, 100% 0, calc(100% - ${skewAmount}px) 100%, 0 100%)`;
-    }
-
-    if (index === total - 1) {
-      // 最后一个角色：左边斜切 (/)，右边垂直
-      return `polygon(${skewAmount}px 0, 100% 0, 100% 100%, 0 100%)`;
-    }
-
-    // 中间角色：左右都斜切 (/)，斜切量一致
-    return `polygon(${skewAmount}px 0, 100% 0, calc(100% - ${skewAmount}px) 100%, 0 100%)`;
-  };
+      return `polygon(${SKEW_AMOUNT}px 0, 100% 0, calc(100% - ${SKEW_AMOUNT}px) 100%, 0 100%)`;
+    });
+  }, [characters]);
 
   // 如果没有角色数据，不渲染
   if (characters.length === 0) {
@@ -300,16 +304,16 @@ export function CharacterAccordion({
       {characters.map((character, index) => (
         <motion.div
           key={character.id}
-          className="relative flex-shrink-0"
+          className="relative shrink-0"
           initial={{
-            width: getWidth(index),
-            marginLeft: getMarginLeft(index),
-            clipPath: getClipPath(index),
+            width: widths[index],
+            marginLeft: marginLefts[index],
+            clipPath: clipPaths[index],
           }}
           animate={{
-            width: getWidth(index),
-            marginLeft: getMarginLeft(index),
-            clipPath: getClipPath(index),
+            width: widths[index],
+            marginLeft: marginLefts[index],
+            clipPath: clipPaths[index],
           }}
           transition={
             shouldReduceMotion
@@ -325,9 +329,7 @@ export function CharacterAccordion({
           <CharacterStrip
             character={character}
             isExpanded={stableHoveredIndex === index}
-            onClick={() => {
-              onCharacterClick?.(character.id);
-            }}
+            onClick={() => handleCharacterClick(character.id)}
           />
         </motion.div>
       ))}
