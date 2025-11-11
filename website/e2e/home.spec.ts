@@ -50,24 +50,18 @@ test.describe("首页", () => {
   test("应该支持主题切换", async ({ page }) => {
     await page.goto("/");
 
-    // 查找主题切换按钮
-    const themeToggle = page
-      .getByRole("button", { name: /theme/i })
-      .or(
-        page
-          .locator('[aria-label*="主题"]')
-          .or(page.locator('[aria-label*="切换"]'))
-      );
+    // 查找主题切换按钮（精确匹配 aria-label）
+    const themeToggle = page.getByLabel("切换主题");
 
-    // 如果主题切换按钮存在，测试切换功能
-    if (await themeToggle.isVisible().catch(() => false)) {
-      await themeToggle.click();
-      // 验证主题发生变化（检查 HTML 元素的 class 或 data 属性）
-      const html = page.locator("html");
-      const hasThemeClass = await html.evaluate((el) => {
-        return el.classList.contains("dark") || el.classList.contains("light");
-      });
-      expect(hasThemeClass).toBeTruthy();
-    }
+    // 直接断言按钮可见性
+    await expect(themeToggle, "主题切换按钮应该可见").toBeVisible();
+    await themeToggle.click();
+
+    // 验证主题发生变化（检查 HTML 元素的 class 或 data 属性）
+    const html = page.locator("html");
+    const hasThemeClass = await html.evaluate((el) => {
+      return el.classList.contains("dark") || el.classList.contains("light");
+    });
+    expect(hasThemeClass, "HTML 元素应该有主题相关的 class").toBeTruthy();
   });
 });
