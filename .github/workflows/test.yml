@@ -2,14 +2,26 @@ name: CI
 
 on:
   push:
-    branches: [master, preview]
+    branches: [master]
     paths:
       - 'website/**'
+      - '!website/**/*.md'  # 排除文档
+      - '!website/data/**'  # 排除数据文件
+      - '!website/.next/**' # 排除构建产物
+      - '!website/coverage/**'
+      - '!website/test-results/**'
+      - '!website/playwright-report/**'
       - '.github/workflows/test.yml'
   pull_request:
     branches: [master, preview]
     paths:
       - 'website/**'
+      - '!website/**/*.md'  # 排除文档
+      - '!website/data/**'  # 排除数据文件
+      - '!website/.next/**' # 排除构建产物
+      - '!website/coverage/**'
+      - '!website/test-results/**'
+      - '!website/playwright-report/**'
       - '.github/workflows/test.yml'
 
 defaults:

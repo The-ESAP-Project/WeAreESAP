@@ -10,16 +10,16 @@ import { dirname, join } from "path";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
+// 获取版本号（从 package.json）
+const packageJson = JSON.parse(
+  execSync("cat package.json", { encoding: "utf-8" })
+);
+
 try {
   // 获取 git 最新提交时间
   const gitDate = execSync("git log -1 --format=%cd --date=format:%Y-%m-%d", {
     encoding: "utf-8",
   }).trim();
-
-  // 获取版本号（从 package.json）
-  const packageJson = JSON.parse(
-    execSync("cat package.json", { encoding: "utf-8" })
-  );
 
   const buildInfo = {
     version: packageJson.version,
@@ -35,14 +35,14 @@ try {
 } catch (error) {
   console.error("⚠️  无法生成构建信息，使用默认值", error.message);
 
-  // 降级方案：使用当前时间
+  // 降级方案：使用当前时间和 package.json 版本
   const fallbackInfo = {
-    version: "0.1.0",
+    version: packageJson.version,
     lastUpdated: new Date().toISOString().split("T")[0],
     buildTime: new Date().toISOString().split("T")[0],
   };
 
-  const outputPath = join(__dirname, "..", "lib", "build-info.json");
+  const outputPath = join(__dirname, "..", "data", "build-info.json");
   writeFileSync(outputPath, JSON.stringify(fallbackInfo, null, 2));
 
   console.log("✨ 使用降级构建信息:", fallbackInfo);

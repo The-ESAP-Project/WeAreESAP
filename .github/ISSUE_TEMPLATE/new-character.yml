@@ -53,10 +53,10 @@ body:
     id: tier
     attributes:
       label: 角色层级
-      description: 选择角色层级（新角色通常选择 member）
+      description: 选择角色层级（新角色通常选择 'guest'） 
       options:
-        - member (普通成员)
         - core (核心成员 - 需要特殊审核)
+        - member (普通成员 - 需要特殊审核)
         - guest (访客角色)
     validations:
       required: true
