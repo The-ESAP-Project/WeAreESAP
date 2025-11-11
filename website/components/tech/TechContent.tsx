@@ -52,9 +52,9 @@ const TechTable = memo(({ data }: { data: TableBlock }) => {
       <table className="w-full border-collapse rounded-lg overflow-hidden">
         <thead className="bg-linear-to-r from-esap-yellow/20 via-esap-pink/20 to-esap-blue/20">
           <tr>
-            {data.headers.map((header, index) => (
+            {data.headers.map((header) => (
               <th
-                key={index}
+                key={header}
                 className="px-4 py-3 text-left text-sm font-semibold text-foreground border-b-2 border-esap-yellow/50"
               >
                 {header}
@@ -65,12 +65,12 @@ const TechTable = memo(({ data }: { data: TableBlock }) => {
         <tbody>
           {data.rows.map((row, rowIndex) => (
             <tr
-              key={rowIndex}
+              key={`row-${rowIndex}`}
               className="border-b border-border hover:bg-muted/50 transition-colors"
             >
               {row.map((cell, cellIndex) => (
                 <td
-                  key={cellIndex}
+                  key={`cell-${rowIndex}-${cellIndex}`}
                   className="px-4 py-3 text-sm text-foreground/80"
                 >
                   {cell}
@@ -96,7 +96,7 @@ const TechList = memo(({ data }: { data: ListBlock }) => {
       } list-inside text-foreground/80`}
     >
       {data.items.map((item, index) => (
-        <li key={index} className="leading-relaxed">
+        <li key={`item-${index}`} className="leading-relaxed">
           {item}
         </li>
       ))}
@@ -117,7 +117,7 @@ const TechWarning = memo(({ data }: { data: WarningBlock }) => {
           <h4 className="font-semibold text-foreground mb-2">{data.title}</h4>
           <ul className="space-y-1">
             {data.content.map((line, index) => (
-              <li key={index} className="text-sm text-foreground/80">
+              <li key={`line-${index}`} className="text-sm text-foreground/80">
                 {line}
               </li>
             ))}
@@ -159,7 +159,7 @@ const TechSubsection = memo(({ data }: { data: SubsectionBlock }) => {
         {data.title}
       </h4>
       {data.content.map((block, index) => (
-        <ContentBlockRenderer key={index} block={block} />
+        <ContentBlockRenderer key={`${block.type}-${index}`} block={block} />
       ))}
     </div>
   );
@@ -218,7 +218,7 @@ export const TechSectionView = memo(
         </h3>
         <div className="space-y-4">
           {content.map((block, index) => (
-            <ContentBlockRenderer key={index} block={block} />
+            <ContentBlockRenderer key={`${block.type}-${index}`} block={block} />
           ))}
         </div>
       </motion.div>

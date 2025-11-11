@@ -41,13 +41,15 @@ export function TechPageClient({ modules }: TechPageClientProps) {
   useEffect(() => {
     const hash = window.location.hash;
     if (hash) {
-      // 等待 DOM 渲染完成后滚动
-      setTimeout(() => {
-        const element = document.querySelector(hash);
-        if (element) {
-          element.scrollIntoView({ behavior: "smooth", block: "start" });
-        }
-      }, 100);
+      // 使用双重 RAF 确保 DOM 完全渲染后再滚动
+      requestAnimationFrame(() => {
+        requestAnimationFrame(() => {
+          const element = document.querySelector(hash);
+          if (element) {
+            element.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+        });
+      });
     }
   }, [activeModuleId]);
 
