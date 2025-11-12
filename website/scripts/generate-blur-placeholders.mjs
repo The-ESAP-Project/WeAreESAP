@@ -35,24 +35,30 @@ async function generateBlurPlaceholders() {
     console.log(`📂 找到 ${imageFiles.length} 个图片文件\n`);
 
     const blurDataMap = {};
-    let processedCount = 0;
 
-    // 为每个图片生成 blur data
-    for (const file of imageFiles) {
-      const filePath = path.join(imagesDir, file);
-      const buffer = await fs.readFile(filePath);
-
-      try {
-        // 生成 10x10 的模糊版本
+    // 并发处理所有图片
+    const results = await Promise.allSettled(
+      imageFiles.map(async (file) => {
+        const filePath = path.join(imagesDir, file);
+        const buffer = await fs.readFile(filePath);
         const { base64 } = await getPlaiceholder(buffer, { size: 20 });
+        return { file, base64 };
+      })
+    );
 
+    // 收集结果并输出日志
+    let processedCount = 0;
+    for (const result of results) {
+      if (result.status === "fulfilled") {
+        const { file, base64 } = result.value;
         blurDataMap[file] = base64;
         processedCount++;
 
         const sizeKB = (base64.length / 1024).toFixed(2);
         console.log(`  ✅ ${file.padEnd(20)} → ${sizeKB} KB`);
-      } catch (error) {
-        console.error(`  ❌ 处理失败: ${file}`, error.message);
+      } else {
+        const file = imageFiles[results.indexOf(result)];
+        console.error(`  ❌ 处理失败: ${file}`, result.reason?.message || result.reason);
       }
     }
 
