@@ -524,6 +524,7 @@ test.describe("角色页面", () => {
       expect(validNames.length).toBe(characters.length);
 
       // 验证名称都不相同（如果都有名称的话）
+      const uniqueNames = new Set(validNames);
       expect(uniqueNames.size).toBe(validNames.length);
     });
 
