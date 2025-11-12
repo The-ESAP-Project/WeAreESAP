@@ -121,6 +121,11 @@ jobs:
       - name: Install Playwright browsers
         run: pnpm exec playwright install --with-deps
 
+      - name: Build project
+        run: pnpm build
+        env:
+          NODE_ENV: production
+
       - name: Run E2E tests
         run: pnpm test:e2e
 
