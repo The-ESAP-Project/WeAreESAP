@@ -9,13 +9,14 @@ import { getLocale, getTranslations } from "next-intl/server";
 import type { Metadata } from "next";
 import { loadJsonFiles } from "@/lib/data-loader";
 import { SITE_CONFIG } from "@/lib/constants";
+import { getImageUrl } from "@/lib/utils";
 
 export async function generateMetadata(): Promise<Metadata> {
   const locale = await getLocale();
   const t = await getTranslations("home.metadata");
   const title = `${t("title")} - ${t("subtitle")}`;
   const description = t("description");
-  const ogImage = "/images/homepage.jpg";
+  const ogImage = getImageUrl("/images/homepage.jpg");
   const baseUrl = SITE_CONFIG.baseUrl;
   const pageUrl = `${baseUrl}/${locale}`;
 
