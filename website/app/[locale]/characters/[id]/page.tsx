@@ -86,6 +86,8 @@ export async function generateMetadata({
     };
   }
 
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://weare.esaps.net";
+  const pageUrl = `${baseUrl}/${locale}/characters/${character.id}`;
   const characterTitle = `${character.name} (${character.code})`;
   const characterDesc = `${character.description} - ${character.quote}`;
   const characterImage = getImageUrl(character.backgroundImage);
@@ -97,6 +99,7 @@ export async function generateMetadata({
       title: characterTitle,
       description: characterDesc,
       type: "profile",
+      url: pageUrl,
       images: [
         {
           url: characterImage,

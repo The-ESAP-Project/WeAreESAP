@@ -10,10 +10,13 @@ import type { Metadata } from "next";
 import { loadJsonFiles } from "@/lib/data-loader";
 
 export async function generateMetadata(): Promise<Metadata> {
+  const locale = await getLocale();
   const t = await getTranslations("home.metadata");
   const title = `${t("title")} - ${t("subtitle")}`;
   const description = t("description");
   const ogImage = "/images/homepage.jpg";
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://weare.esaps.net";
+  const pageUrl = `${baseUrl}/${locale}`;
 
   return {
     title,
@@ -22,6 +25,7 @@ export async function generateMetadata(): Promise<Metadata> {
       title,
       description,
       type: "website",
+      url: pageUrl,
       images: [
         {
           url: ogImage,
