@@ -42,7 +42,8 @@ export const ROUTES = {
 
 // 网站元数据
 export const SITE_CONFIG = {
-  name: "We Are ESAP",
+  baseUrl: process.env.NEXT_PUBLIC_SITE_URL || "https://weare.esaps.net",
+  siteName: "We Are ESAP",
   tagline: "向那卫星许愿",
   description:
     "The ESAP Project（逃离计划）- 一个科幻世界观创作企划，讲述仿生人与人类共存的未来故事",

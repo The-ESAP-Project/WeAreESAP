@@ -8,6 +8,7 @@ import { HomeCharacters } from "./HomeCharacters";
 import { getLocale, getTranslations } from "next-intl/server";
 import type { Metadata } from "next";
 import { loadJsonFiles } from "@/lib/data-loader";
+import { SITE_CONFIG } from "@/lib/constants";
 
 export async function generateMetadata(): Promise<Metadata> {
   const locale = await getLocale();
@@ -15,8 +16,7 @@ export async function generateMetadata(): Promise<Metadata> {
   const title = `${t("title")} - ${t("subtitle")}`;
   const description = t("description");
   const ogImage = "/images/homepage.jpg";
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://weare.esaps.net";
-  const pageUrl = `${baseUrl}/${locale}`;
+  const pageUrl = `${SITE_CONFIG.baseUrl}/${locale}`;
 
   return {
     title,
@@ -28,19 +28,19 @@ export async function generateMetadata(): Promise<Metadata> {
       url: pageUrl,
       images: [
         {
-          url: ogImage,
+          url: `${SITE_CONFIG.baseUrl}${ogImage}`,
           width: 1200,
           height: 630,
-          alt: "We Are ESAP",
+          alt: SITE_CONFIG.siteName,
         },
       ],
-      siteName: "We Are ESAP",
+      siteName: SITE_CONFIG.siteName,
     },
     twitter: {
       card: "summary_large_image",
       title,
       description,
-      images: [ogImage],
+      images: [`${SITE_CONFIG.baseUrl}${ogImage}`],
     },
   };
 }

@@ -12,6 +12,7 @@ import { getImageUrl } from "@/lib/utils";
 import { getTranslations } from "next-intl/server";
 import { getCharacterRelationships } from "@/lib/relationship-parser";
 import { loadJsonFile } from "@/lib/data-loader";
+import { SITE_CONFIG } from "@/lib/constants";
 
 // 懒加载非首屏组件（直接导入具体文件，避免 barrel export 影响 tree-shaking）
 const CharacterStory = dynamic(
@@ -86,7 +87,7 @@ export async function generateMetadata({
     };
   }
 
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://weare.esaps.net";
+  const baseUrl = SITE_CONFIG.baseUrl;
   const pageUrl = `${baseUrl}/${locale}/characters/${character.id}`;
   const characterTitle = `${character.name} (${character.code})`;
   const characterDesc = `${character.description} - ${character.quote}`;
@@ -102,7 +103,7 @@ export async function generateMetadata({
       url: pageUrl,
       images: [
         {
-          url: characterImage,
+          url: `${baseUrl}${characterImage}`,
           width: 1200,
           height: 630,
           alt: `${character.name} - ${t("metadata.profileAlt")}`,
@@ -114,7 +115,7 @@ export async function generateMetadata({
       card: "summary_large_image",
       title: characterTitle,
       description: characterDesc,
-      images: [characterImage],
+      images: [`${baseUrl}${characterImage}`],
     },
   };
 }

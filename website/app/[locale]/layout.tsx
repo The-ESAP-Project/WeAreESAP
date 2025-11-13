@@ -18,6 +18,7 @@ import { WebVitals } from "@/components/analytics";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { locales } from "@/i18n/request";
+import { SITE_CONFIG } from "@/lib/constants";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -43,10 +44,10 @@ export const metadata: Metadata = {
     title: "We Are ESAP",
     description: "向那卫星许愿 - The ESAP Project",
     type: "website",
-    url: process.env.NEXT_PUBLIC_SITE_URL || "https://weare.esaps.net",
+    url: SITE_CONFIG.baseUrl,
   },
   alternates: {
-    canonical: process.env.NEXT_PUBLIC_SITE_URL || "https://weare.esaps.net",
+    canonical: SITE_CONFIG.baseUrl,
   },
 };
 
