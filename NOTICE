@@ -1,13 +1,15 @@
 WeAreESAP (The ESAP Project)
-Copyright 2021-2025 AptS:1547, AptS:1548, AptS:1549, AptS:1738, AptS:2275, AptS:1553, AptS:2077
+Copyright 2021-2025 AptS:1547, AptS:1548, AptS:1549, AptS:1543, AptS:1738, AptS:2275, AptS:1553, AptS:1691, AptS:2077
 
 This product includes software developed by:
 - AptS:1547 (Yuhan Bian / 卞雨涵 <apts-1547@esaps.net>)
 - AptS:1548 (Yingyin Cai / 蔡颖茵 <apts-1548@esaps.net>)
 - AptS:1549 (Yuxin Xiao / 肖雨昕 <apts-1549@esaps.net>)
+- AptS:1543 (Muchuan Shen / 沈沐川 <apts-1543@esaps.net>)
 - AptS:1738 (Qingxian Lu / 陆清弦 <apts-1738@esaps.net>)
 - AptS:2275 (Chenyao Lin / 林宸瑶 <apts-2275@esaps.net>)
 - AptS:1553 (Pancake-and-1547)
+- AptS:1691 (Frozensky-palace)
 - AptS:2077 (AptS-2077)
 
 ================================================================================
@@ -105,6 +107,41 @@ Playwright (Apache License 2.0)
   Copyright (c) 2017-2024 Ernesto García
   https://github.com/testing-library/jest-dom
   Custom jest matchers to test the state of the DOM
+
+TypeScript (Apache License 2.0)
+  Copyright (c) Microsoft Corporation
+  https://github.com/microsoft/TypeScript
+  TypeScript is a superset of JavaScript that compiles to clean JavaScript output
+
+Sharp (Apache License 2.0)
+  Copyright (c) 2013-2024 Lovell Fuller and contributors
+  https://github.com/lovell/sharp
+  High performance Node.js image processing library
+
+ESLint (MIT License)
+  Copyright (c) 2013-2024 Nicholas C. Zakas and other contributors
+  https://github.com/eslint/eslint
+  A fully pluggable tool for identifying and reporting on patterns in JavaScript
+
+Prettier (MIT License)
+  Copyright (c) 2017-2024 James Long and contributors
+  https://github.com/prettier/prettier
+  An opinionated code formatter
+
+next-sitemap (MIT License)
+  Copyright (c) 2020-2024 Vishnu Prasad
+  https://github.com/iamvishnusankar/next-sitemap
+  Sitemap generator for Next.js applications
+
+plaiceholder (MIT License)
+  Copyright (c) 2021-2024 Joe Bell
+  https://github.com/joe-bell/plaiceholder
+  Beautiful image placeholders for Next.js
+
+jsdom (MIT License)
+  Copyright (c) 2010-2024 Elijah Insua and contributors
+  https://github.com/jsdom/jsdom
+  A JavaScript implementation of various web standards for use with Node.js
 
 ================================================================================
 

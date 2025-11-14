@@ -5,6 +5,7 @@ import { cookies, headers } from "next/headers";
 import { TriangleLogo } from "@/components/ui";
 import Link from "next/link";
 import { defaultLocale, type Locale } from "@/i18n/request";
+import { DEFAULT_IMAGES } from "@/lib/constants";
 import "./globals.css";
 
 // 从 cookies 或 headers 检测语言
@@ -48,6 +49,31 @@ export async function generateMetadata() {
 
   return {
     title: t.title,
+    description: t.description,
+    openGraph: {
+      title: t.title,
+      description: t.description,
+      type: "website",
+      images: [
+        {
+          url: DEFAULT_IMAGES.notFound,
+          width: 1200,
+          height: 630,
+          alt: "We Are ESAP - 404",
+        },
+      ],
+      siteName: "We Are ESAP",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: t.title,
+      description: t.description,
+      images: [DEFAULT_IMAGES.notFound],
+    },
+    robots: {
+      index: false,
+      follow: true,
+    },
   };
 }
 

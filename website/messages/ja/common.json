@@ -1,4 +1,18 @@
 {
+  "metadata": {
+    "title": "We Are ESAP",
+    "subtitle": "Wish Upon a Satellite",
+    "description": "The ESAP Project - アンドロイドと人類が共存する未来を描くSF世界観創作企画。",
+    "keywords": [
+      "ESAP",
+      "SF",
+      "アンドロイド",
+      "世界観",
+      "創作企画",
+      "馈散粒子",
+      "流体チタン"
+    ]
+  },
   "navigation": {
     "home": "ホーム",
     "characters": "キャラクター",

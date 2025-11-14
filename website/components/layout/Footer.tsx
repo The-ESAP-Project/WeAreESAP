@@ -8,6 +8,7 @@ import { useMemo } from "react";
 import Image from "next/image";
 import { Icon } from "@/components/ui/Icon";
 import buildInfo from "@/data/build-info.json";
+import { DEFAULT_IMAGES } from "@/lib/constants";
 
 /**
  * 全局底部栏组件
@@ -15,6 +16,7 @@ import buildInfo from "@/data/build-info.json";
 export function Footer() {
   const tFooter = useTranslations("common.footer");
   const locale = useLocale();
+  const currentYear = new Date().getFullYear();
 
   // 根据语言生成许可证链接（缓存结果,只在 locale 变化时重新计算）
   const licenseUrl = useMemo(() => {
@@ -64,7 +66,7 @@ export function Footer() {
           {/* Logo + 项目名 */}
           <div className="flex items-center justify-center gap-3">
             <Image
-              src="/favicon.ico"
+              src={DEFAULT_IMAGES.favicon}
               alt="ESAP Logo"
               width={28}
               height={28}
@@ -113,7 +115,7 @@ export function Footer() {
 
           {/* 版权声明 */}
           <p className="text-center text-xs text-muted-foreground pt-2">
-            © 2021-2025 <strong>{tFooter("projectName")}</strong>
+            © 2021-{currentYear} <strong>{tFooter("projectName")}</strong>
           </p>
         </div>
       </div>
@@ -127,7 +129,7 @@ export function Footer() {
             <div className="space-y-3">
               <div className="flex items-center gap-3">
                 <Image
-                  src="/favicon.ico"
+                  src={DEFAULT_IMAGES.favicon}
                   alt="ESAP Logo"
                   width={32}
                   height={32}

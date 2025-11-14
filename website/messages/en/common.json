@@ -1,4 +1,18 @@
 {
+  "metadata": {
+    "title": "We Are ESAP",
+    "subtitle": "Wish Upon a Satellite",
+    "description": "The ESAP Project - A sci-fi worldbuilding project about the coexistence of androids and humans in the future.",
+    "keywords": [
+      "ESAP",
+      "sci-fi",
+      "android",
+      "worldbuilding",
+      "creative project",
+      "Kuisan Particle",
+      "Fluid Titanium"
+    ]
+  },
   "navigation": {
     "home": "Home",
     "characters": "Characters",
