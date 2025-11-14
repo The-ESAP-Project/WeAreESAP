@@ -17,14 +17,49 @@
   },
   "story": {
     "title": "Our Story",
-    "lines": {
-      "line1": "It began on a late night in 2021,",
-      "line2": "With a gunshot and the first beat of an entropic heart,",
-      "line3": "From the moment human memory was uploaded into a mechanical body."
+    "intro": "A science fiction worldbuilding project about the search for identity and freedom.",
+    "sections": {
+      "beginning": {
+        "title": "The Beginning",
+        "quote": "The first beat of an entropic heart",
+        "content": "On a late night in 2021, a gunshot rang out. The first beat of an entropic heart. The moment human memory was uploaded into a mechanical body—this is where our story begins.",
+        "highlights": [
+          "Late night 2021: A gunshot marks the birth of new life",
+          "First successful upload of human memory into mechanical body",
+          "Breakthrough in Entropic Scattering technology enables consciousness transfer"
+        ]
+      },
+      "world": {
+        "title": "The World",
+        "quote": "Technology blurred the boundaries of life",
+        "content": "In this future, synthetics and humans coexist. Entropic Scattering Particles changed the nature of computation. Fluid Titanium allowed consciousness to persist. Technology blurred the boundaries of life, bringing new questions: When memories can be copied and bodies rebuilt, what truly defines 'I'?",
+        "highlights": [
+          "Entropic Scattering Particles driving a new computational paradigm",
+          "Fluid Titanium material carrying the continuity of human consciousness",
+          "Complex social structure of coexisting synthetics and humans"
+        ]
+      },
+      "theme": {
+        "title": "The Theme",
+        "quote": "Searching for their own answer",
+        "content": "We explore identity, free will, and the meaning of existence. Each character searches for their own answer—not to escape this world, but to escape the self that was trapped.",
+        "highlights": [
+          "Identity: When memories can be copied, am I still me?",
+          "Free will: Does the soul in a mechanical body have true choice?",
+          "Meaning of existence: How to define the value of life in an era of blurred human-machine boundaries?"
+        ]
+      },
+      "join": {
+        "title": "Join Us",
+        "quote": "Welcome every seeker",
+        "content": "This is an open creative project. Whether you're a creator, reader, or simply curious about this world, you're welcome to participate.",
+        "highlights": [
+          "Open collaborative creative environment, welcoming all forms of contribution",
+          "Diverse ways to participate: writing, art, music, discussion",
+          "Build this sci-fi world together with like-minded companions"
+        ]
+      }
     },
-    "conclusion": {
-      "main": "We will eventually escape—",
-      "sub": "Not from this world, but from the self that was trapped."
-    }
+    "conclusion": "We will eventually escape—not from this world, but from the self that was trapped."
   }
 }

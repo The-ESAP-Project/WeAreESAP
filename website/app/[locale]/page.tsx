@@ -5,6 +5,7 @@ import { unstable_cache } from "next/cache";
 import { TriangleLogo } from "@/components";
 import { CharacterCardData } from "@/types/character";
 import { HomeCharacters } from "./HomeCharacters";
+import { StorySection } from "./StorySection";
 import { getLocale, getTranslations } from "next-intl/server";
 import type { Metadata } from "next";
 import { loadJsonFiles } from "@/lib/data-loader";
@@ -121,25 +122,8 @@ export default async function Home() {
         <HomeCharacters characters={characters} />
       </section>
 
-      {/* 故事区域 */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-4xl mx-auto text-center space-y-6">
-          <h2 className="text-3xl font-bold mb-8 text-foreground">
-            {t("story.title")}
-          </h2>
-
-          <div className="text-foreground/80 space-y-4">
-            <p>{t("story.lines.line1")}</p>
-            <p>{t("story.lines.line2")}</p>
-            <p>{t("story.lines.line3")}</p>
-          </div>
-
-          <p className="text-xl font-semibold text-foreground mt-8">
-            {t("story.conclusion.main")}
-          </p>
-          <p className="text-foreground/80">{t("story.conclusion.sub")}</p>
-        </div>
-      </section>
+      {/* 故事区域 - 客户端组件 */}
+      <StorySection />
     </main>
   );
 }

@@ -15,6 +15,7 @@ import buildInfo from "@/data/build-info.json";
 export function Footer() {
   const tFooter = useTranslations("common.footer");
   const locale = useLocale();
+  const currentYear = new Date().getFullYear();
 
   // 根据语言生成许可证链接（缓存结果,只在 locale 变化时重新计算）
   const licenseUrl = useMemo(() => {
@@ -113,7 +114,7 @@ export function Footer() {
 
           {/* 版权声明 */}
           <p className="text-center text-xs text-muted-foreground pt-2">
-            © 2021-2025 <strong>{tFooter("projectName")}</strong>
+            © 2021-{currentYear} <strong>{tFooter("projectName")}</strong>
           </p>
         </div>
       </div>
