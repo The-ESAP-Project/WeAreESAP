@@ -1,0 +1,21 @@
+{
+  "id": "1691",
+  "name": "温晚安 (ウェン・ワンアン)",
+  "code": "AptS:1691",
+  "nickname": "1691",
+  "color": {
+    "primary": "#1E3A8A",
+    "dark": "#000000"
+  },
+  "role": "夜番",
+  "species": "人間",
+  "quote": "すべての人が夢に沈むとき、世界の代わりに明日がどの方向から明けるかを覚えている者がいなければならない。",
+  "description": "名もない港の灯台の灯り守",
+  "keywords": ["冷静", "集中", "孤独", "沈黙"],
+  "tier": "guest",
+  "backgroundImage": "/images/characters/img_1691.webp",
+  "meta": {
+    "bodyType": "人間",
+    "abilities": ["文学", "絵画", "感情知覚"]
+  }
+}
