@@ -1,0 +1,21 @@
+{
+  "id": "1691",
+  "name": "温晚安",
+  "code": "AptS:1691",
+  "nickname": "1691",
+  "color": {
+    "primary": "#1E3A8A",
+    "dark": "#000000"
+  },
+  "role": "守夜人",
+  "species": "人类",
+  "quote": "当所有人沉入梦乡，总有人要替世界记得，明天该往哪个方向亮起来。",
+  "description": "无名小港灯塔的掌灯人",
+  "keywords": ["冷静", "专注", "孤独", "沉默"],
+  "tier": "member",
+  "backgroundImage": "/images/characters/img_1691.webp",
+  "meta": {
+    "bodyType": "人类",
+    "abilities": ["文学", "绘画", "情绪感知"]
+  }
+}
