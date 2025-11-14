@@ -66,7 +66,9 @@ export function StorySection() {
             (sectionKey, index) => {
               const config = sectionConfig[sectionKey];
               const quote = t(`story.sections.${sectionKey}.quote`);
-              const highlights = t.raw(`story.sections.${sectionKey}.highlights`) as string[];
+              const highlights = t.raw(
+                `story.sections.${sectionKey}.highlights`
+              ) as string[];
 
               return (
                 <motion.div

@@ -5,6 +5,8 @@
  * 通用工具函数
  */
 
+import { DEFAULT_IMAGES } from "./constants";
+
 /**
  * 格式化日期
  * @param date 日期字符串或 Date 对象
@@ -104,7 +106,7 @@ export function getImageUrl(
 
   // 如果路径为空，返回默认图标
   if (!path) {
-    return `${baseUrl}/favicon.ico`;
+    return `${baseUrl}${DEFAULT_IMAGES.favicon}`;
   }
 
   // 如果已经是完整 URL，直接返回

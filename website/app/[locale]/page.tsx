@@ -9,17 +9,13 @@ import { StorySection } from "./StorySection";
 import { getLocale, getTranslations } from "next-intl/server";
 import type { Metadata } from "next";
 import { loadJsonFiles } from "@/lib/data-loader";
-import { SITE_CONFIG } from "@/lib/constants";
-import { getImageUrl } from "@/lib/utils";
+import { SITE_CONFIG, DEFAULT_IMAGES } from "@/lib/constants";
 
 export async function generateMetadata(): Promise<Metadata> {
-  const locale = await getLocale();
   const t = await getTranslations("home.metadata");
   const title = `${t("title")} - ${t("subtitle")}`;
   const description = t("description");
-  const ogImage = getImageUrl("/images/homepage.jpg");
-  const baseUrl = SITE_CONFIG.baseUrl;
-  const pageUrl = `${baseUrl}/${locale}`;
+  const ogImage = DEFAULT_IMAGES.homepage;
 
   return {
     title,
@@ -28,7 +24,6 @@ export async function generateMetadata(): Promise<Metadata> {
       title,
       description,
       type: "website",
-      url: pageUrl,
       images: [
         {
           url: ogImage,

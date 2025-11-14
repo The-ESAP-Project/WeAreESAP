@@ -14,6 +14,7 @@ import {
   LanguageSwitcher,
 } from "@/components/ui";
 import { useTranslations } from "next-intl";
+import { DEFAULT_IMAGES } from "@/lib/constants";
 
 const navLinks = [
   { href: "/project", key: "project" },
@@ -57,7 +58,7 @@ export const Navigation = memo(function Navigation() {
               prefetch={true}
             >
               <Image
-                src="/favicon.ico"
+                src={DEFAULT_IMAGES.favicon}
                 alt="ESAP Logo"
                 width={40}
                 height={40}

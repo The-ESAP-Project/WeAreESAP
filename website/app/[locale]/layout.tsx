@@ -18,7 +18,7 @@ import { WebVitals } from "@/components/analytics";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations } from "next-intl/server";
 import { locales } from "@/i18n/request";
-import { SITE_CONFIG } from "@/lib/constants";
+import { SITE_CONFIG, DEFAULT_IMAGES } from "@/lib/constants";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -41,13 +41,13 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations("common.metadata");
-  const ogImage = "/images/homepage.jpg";
-  const pageUrl = `${SITE_CONFIG.baseUrl}/${locale}`;
+  const ogImage = DEFAULT_IMAGES.homepage;
   const title = `${t("title")} - ${t("subtitle")}`;
   const description = t("description");
   const keywords = t.raw("keywords") as string[];
 
   return {
+    metadataBase: new URL(SITE_CONFIG.baseUrl),
     title,
     description,
     keywords,
@@ -56,7 +56,7 @@ export async function generateMetadata({
       title,
       description,
       type: "website",
-      url: pageUrl,
+      url: `/${locale}`,
       images: [
         {
           url: ogImage,
@@ -74,7 +74,7 @@ export async function generateMetadata({
       images: [ogImage],
     },
     alternates: {
-      canonical: pageUrl,
+      canonical: `/${locale}`,
     },
   };
 }

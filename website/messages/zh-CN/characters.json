@@ -64,5 +64,6 @@
       "noData": "暂无关系数据"
     }
   },
-  "notFound": "角色未找到"
+  "notFound": "角色未找到",
+  "notFoundDescription": "该角色不存在或已被移除，请返回角色列表查看其他成员。"
 }

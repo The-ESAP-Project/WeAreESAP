@@ -8,11 +8,10 @@ import { Character } from "@/types/character";
 import { Relationship } from "@/types/relationship";
 import { RelationshipNodeData } from "@/types/relationship-node";
 import { CharacterHero, CharacterInfo } from "@/components/character/detail";
-import { getImageUrl } from "@/lib/utils";
 import { getTranslations } from "next-intl/server";
 import { getCharacterRelationships } from "@/lib/relationship-parser";
 import { loadJsonFile } from "@/lib/data-loader";
-import { SITE_CONFIG } from "@/lib/constants";
+import { DEFAULT_IMAGES } from "@/lib/constants";
 
 // 懒加载非首屏组件（直接导入具体文件，避免 barrel export 影响 tree-shaking）
 const CharacterStory = dynamic(
@@ -82,16 +81,42 @@ export async function generateMetadata({
   const character = await getCharacter(id, locale);
 
   if (!character) {
+    const notFoundTitle = `${t("notFound")} - We Are ESAP`;
+    const notFoundDesc = t("notFoundDescription");
+
     return {
-      title: `${t("notFound")} - We Are ESAP`,
+      title: notFoundTitle,
+      description: notFoundDesc,
+      openGraph: {
+        title: notFoundTitle,
+        description: notFoundDesc,
+        type: "website",
+        images: [
+          {
+            url: DEFAULT_IMAGES.notFound,
+            width: 1200,
+            height: 630,
+            alt: "We Are ESAP - Character Not Found",
+          },
+        ],
+        siteName: "We Are ESAP",
+      },
+      twitter: {
+        card: "summary_large_image",
+        title: notFoundTitle,
+        description: notFoundDesc,
+        images: [DEFAULT_IMAGES.notFound],
+      },
+      robots: {
+        index: false,
+        follow: true,
+      },
     };
   }
 
-  const baseUrl = SITE_CONFIG.baseUrl;
-  const pageUrl = `${baseUrl}/${locale}/characters/${character.id}`;
   const characterTitle = `${character.name} (${character.code})`;
   const characterDesc = `${character.description} - ${character.quote}`;
-  const characterImage = getImageUrl(character.backgroundImage);
+  const characterImage = character.backgroundImage || DEFAULT_IMAGES.homepage;
 
   return {
     title: `${characterTitle} - We Are ESAP`,
@@ -100,7 +125,7 @@ export async function generateMetadata({
       title: characterTitle,
       description: characterDesc,
       type: "profile",
-      url: pageUrl,
+      url: `/${locale}/characters/${character.id}`,
       images: [
         {
           url: characterImage,

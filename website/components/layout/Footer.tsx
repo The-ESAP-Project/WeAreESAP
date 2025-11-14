@@ -8,6 +8,7 @@ import { useMemo } from "react";
 import Image from "next/image";
 import { Icon } from "@/components/ui/Icon";
 import buildInfo from "@/data/build-info.json";
+import { DEFAULT_IMAGES } from "@/lib/constants";
 
 /**
  * 全局底部栏组件
@@ -65,7 +66,7 @@ export function Footer() {
           {/* Logo + 项目名 */}
           <div className="flex items-center justify-center gap-3">
             <Image
-              src="/favicon.ico"
+              src={DEFAULT_IMAGES.favicon}
               alt="ESAP Logo"
               width={28}
               height={28}
@@ -128,7 +129,7 @@ export function Footer() {
             <div className="space-y-3">
               <div className="flex items-center gap-3">
                 <Image
-                  src="/favicon.ico"
+                  src={DEFAULT_IMAGES.favicon}
                   alt="ESAP Logo"
                   width={32}
                   height={32}

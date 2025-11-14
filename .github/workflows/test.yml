@@ -5,6 +5,7 @@ on:
     branches: [master]
     paths:
       - 'website/**'
+      - 'docs/**'
       - '!website/**/*.md'  # 排除文档
       - '!website/data/**'  # 排除数据文件
       - '!website/.next/**' # 排除构建产物
@@ -17,6 +18,7 @@ on:
     branches: [master, preview]
     paths:
       - 'website/**'
+      - 'docs/**'
       - '!website/**/*.md'  # 排除文档
       - '!website/data/**'  # 排除数据文件
       - '!website/.next/**' # 排除构建产物

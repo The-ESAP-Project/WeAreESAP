@@ -64,5 +64,6 @@
       "noData": "No relationship data available"
     }
   },
-  "notFound": "Character not found"
+  "notFound": "Character not found",
+  "notFoundDescription": "This character does not exist or has been removed. Please return to the character list to view other members."
 }
