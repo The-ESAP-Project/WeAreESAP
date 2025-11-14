@@ -1,0 +1,21 @@
+{
+  "id": "1691",
+  "name": "Wen Wanan",
+  "code": "AptS:1691",
+  "nickname": "1691",
+  "color": {
+    "primary": "#1E3A8A",
+    "dark": "#000000"
+  },
+  "role": "Night Keeper",
+  "species": "Human",
+  "quote": "When everyone falls into dreams, someone must remember on behalf of the world which direction tomorrow should light up from.",
+  "description": "Lamplighter of the lighthouse at Nameless Harbor",
+  "keywords": ["Calm", "Focused", "Solitary", "Silent"],
+  "tier": "guest",
+  "backgroundImage": "/images/characters/img_1691.webp",
+  "meta": {
+    "bodyType": "Human",
+    "abilities": ["Literature", "Painting", "Emotion Perception"]
+  }
+}
