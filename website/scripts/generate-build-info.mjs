@@ -3,7 +3,7 @@
 // SPDX-License-Identifier: Apache-2.0
 
 import { execSync } from "child_process";
-import { writeFileSync } from "fs";
+import { readFileSync, writeFileSync } from "fs";
 import { fileURLToPath } from "url";
 import { dirname, join } from "path";
 
@@ -11,9 +11,8 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 // 获取版本号（从 package.json）
-const packageJson = JSON.parse(
-  execSync("cat package.json", { encoding: "utf-8" })
-);
+const packageJsonPath = join(__dirname, "..", "package.json");
+const packageJson = JSON.parse(readFileSync(packageJsonPath, "utf-8"));
 
 try {
   // 获取 git 最新提交时间

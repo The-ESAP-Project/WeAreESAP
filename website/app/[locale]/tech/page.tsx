@@ -16,10 +16,12 @@ const TechPageClient = dynamic(() =>
 );
 
 export async function generateMetadata(): Promise<Metadata> {
+  const locale = await getLocale();
   const t = await getTranslations("tech.metadata");
   const title = `${t("title")} - ${t("subtitle")}`;
   const description = t("description");
   const ogImage = DEFAULT_IMAGES.homepage;
+  const localizedUrl = `${SITE_CONFIG.baseUrl}/${locale}/tech`;
 
   return {
     title,
@@ -28,6 +30,7 @@ export async function generateMetadata(): Promise<Metadata> {
       title,
       description,
       type: "website",
+      url: localizedUrl,
       images: [
         {
           url: ogImage,
@@ -45,7 +48,7 @@ export async function generateMetadata(): Promise<Metadata> {
       images: [ogImage],
     },
     alternates: {
-      canonical: SITE_CONFIG.baseUrl,
+      canonical: localizedUrl,
     },
   };
 }

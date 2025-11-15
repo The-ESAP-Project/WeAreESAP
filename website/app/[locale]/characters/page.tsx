@@ -10,10 +10,12 @@ import { loadJsonFiles } from "@/lib/data-loader";
 import { DEFAULT_IMAGES, SITE_CONFIG } from "@/lib/constants";
 
 export async function generateMetadata(): Promise<Metadata> {
+  const locale = await getLocale();
   const t = await getTranslations("characters.metadata");
   const title = `${t("title")} - ${t("subtitle")}`;
   const description = t("description");
   const ogImage = DEFAULT_IMAGES.homepage;
+  const localizedUrl = `${SITE_CONFIG.baseUrl}/${locale}/characters`;
 
   return {
     title,
@@ -22,6 +24,7 @@ export async function generateMetadata(): Promise<Metadata> {
       title,
       description,
       type: "website",
+      url: localizedUrl,
       images: [
         {
           url: ogImage,
@@ -39,7 +42,7 @@ export async function generateMetadata(): Promise<Metadata> {
       images: [ogImage],
     },
     alternates: {
-      canonical: SITE_CONFIG.baseUrl,
+      canonical: localizedUrl,
     },
   };
 }

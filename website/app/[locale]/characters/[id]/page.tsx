@@ -11,7 +11,7 @@ import { CharacterHero, CharacterInfo } from "@/components/character/detail";
 import { getTranslations } from "next-intl/server";
 import { getCharacterRelationships } from "@/lib/relationship-parser";
 import { loadJsonFile } from "@/lib/data-loader";
-import { DEFAULT_IMAGES } from "@/lib/constants";
+import { DEFAULT_IMAGES, SITE_CONFIG } from "@/lib/constants";
 
 // 懒加载非首屏组件（直接导入具体文件，避免 barrel export 影响 tree-shaking）
 const CharacterStory = dynamic(
@@ -117,6 +117,7 @@ export async function generateMetadata({
   const characterTitle = `${character.name} (${character.code})`;
   const characterDesc = `${character.description} - ${character.quote}`;
   const characterImage = character.backgroundImage || DEFAULT_IMAGES.homepage;
+  const characterUrl = `${SITE_CONFIG.baseUrl}/${locale}/characters/${character.id}`;
 
   return {
     title: `${characterTitle} - We Are ESAP`,
@@ -125,7 +126,7 @@ export async function generateMetadata({
       title: characterTitle,
       description: characterDesc,
       type: "profile",
-      url: `/${locale}/characters/${character.id}`,
+      url: characterUrl,
       images: [
         {
           url: characterImage,
@@ -141,6 +142,9 @@ export async function generateMetadata({
       title: characterTitle,
       description: characterDesc,
       images: [characterImage],
+    },
+    alternates: {
+      canonical: characterUrl,
     },
   };
 }

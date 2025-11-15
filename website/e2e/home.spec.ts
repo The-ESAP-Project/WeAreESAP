@@ -436,7 +436,9 @@ test.describe("首页", () => {
       await page.evaluate(() => {
         window.scrollTo({ top: 0, behavior: "smooth" });
       });
-      await waitForAnimation(page, 500);
+
+      // 等待滚动完成 - 使用 waitForFunction 等待实际状态而非固定时间
+      await page.waitForFunction(() => window.scrollY < 50, { timeout: 2000 });
 
       // 验证回到顶部
       const scrollAfterTop = await page.evaluate(() => window.scrollY);

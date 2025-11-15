@@ -4,7 +4,7 @@
 import dynamic from "next/dynamic";
 import { ChecklistItem } from "@/components";
 import { Icon, type IconName } from "@/components/ui";
-import { getTranslations } from "next-intl/server";
+import { getTranslations, getLocale } from "next-intl/server";
 import type { Metadata } from "next";
 import type {
   RoleType,
@@ -37,10 +37,12 @@ const ContactPlaceholder = dynamic(
 );
 
 export async function generateMetadata(): Promise<Metadata> {
+  const locale = await getLocale();
   const t = await getTranslations("join.metadata");
   const title = `${t("title")} - ${t("subtitle")}`;
   const description = t("description");
   const ogImage = DEFAULT_IMAGES.homepage;
+  const localizedUrl = `${SITE_CONFIG.baseUrl}/${locale}/join`;
 
   return {
     title,
@@ -49,6 +51,7 @@ export async function generateMetadata(): Promise<Metadata> {
       title,
       description,
       type: "website",
+      url: localizedUrl,
       images: [
         {
           url: ogImage,
@@ -66,7 +69,7 @@ export async function generateMetadata(): Promise<Metadata> {
       images: [ogImage],
     },
     alternates: {
-      canonical: SITE_CONFIG.baseUrl,
+      canonical: localizedUrl,
     },
   };
 }

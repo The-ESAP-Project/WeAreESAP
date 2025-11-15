@@ -16,7 +16,7 @@ import {
 } from "@/components";
 import { WebVitals } from "@/components/analytics";
 import { NextIntlClientProvider } from "next-intl";
-import { getMessages } from "next-intl/server";
+import { getMessages, getTranslations } from "next-intl/server";
 import { locales } from "@/i18n/request";
 import { SITE_CONFIG, DEFAULT_IMAGES } from "@/lib/constants";
 
@@ -34,20 +34,41 @@ const geistMono = Geist_Mono({
   preload: true,
 });
 
-export const metadata: Metadata = {
-  metadataBase: new URL(SITE_CONFIG.baseUrl),
-  title: "We Are ESAP - 向那卫星许愿",
-  description:
-    "The ESAP Project(逃离计划) - 一个科幻世界观创作企划,讲述仿生人与人类共存的未来故事",
-  keywords: ["ESAP", "科幻", "仿生人", "世界观", "创作企划"],
-  authors: [{ name: "AptS:1547" }, { name: "AptS:1548" }],
-  openGraph: {
-    title: "We Are ESAP",
-    images: [DEFAULT_IMAGES.homepage],
-    description: "向那卫星许愿 - The ESAP Project",
-    type: "website",
-  },
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations("common.metadata");
+  const ogImage = DEFAULT_IMAGES.homepage;
+  const title = `${t("title")} - ${t("subtitle")}`;
+  const description = t("description");
+  const keywords = t.raw("keywords") as string[];
+
+  return {
+    metadataBase: new URL(SITE_CONFIG.baseUrl),
+    title,
+    description,
+    keywords,
+    authors: [{ name: "AptS:1547" }, { name: "AptS:1548" }],
+    openGraph: {
+      title,
+      description,
+      type: "website",
+      images: [
+        {
+          url: ogImage,
+          width: 1200,
+          height: 630,
+          alt: SITE_CONFIG.siteName,
+        },
+      ],
+      siteName: SITE_CONFIG.siteName,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: [ogImage],
+    },
+  };
+}
 
 // 生成静态参数
 export function generateStaticParams() {

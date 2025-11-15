@@ -17,10 +17,12 @@ const TimelineClient = dynamic(() =>
 );
 
 export async function generateMetadata(): Promise<Metadata> {
+  const locale = await getLocale();
   const t = await getTranslations("timeline.metadata");
   const title = `${t("title")} - ${t("subtitle")}`;
   const description = t("description");
   const ogImage = DEFAULT_IMAGES.homepage;
+  const localizedUrl = `${SITE_CONFIG.baseUrl}/${locale}/timeline`;
 
   return {
     title,
@@ -29,6 +31,7 @@ export async function generateMetadata(): Promise<Metadata> {
       title,
       description,
       type: "website",
+      url: localizedUrl,
       images: [
         {
           url: ogImage,
@@ -46,7 +49,7 @@ export async function generateMetadata(): Promise<Metadata> {
       images: [ogImage],
     },
     alternates: {
-      canonical: SITE_CONFIG.baseUrl,
+      canonical: localizedUrl,
     },
   };
 }
