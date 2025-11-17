@@ -1,6 +1,6 @@
 {
   "name": "we-are-esap",
-  "version": "1.0.5ta",
+  "version": "1.0.5",
   "private": true,
   "description": "WeAreESAP - 向那卫星许愿：一个科幻世界观创作企划，讲述仿生人与人类共存的未来故事",
   "license": "Apache-2.0",
@@ -71,8 +71,8 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "@vitejs/plugin-react": "^5.1.1",
-    "@vitest/coverage-v8": "^4.0.9",
-    "@vitest/ui": "^4.0.9",
+    "@vitest/coverage-v8": "^4.0.10",
+    "@vitest/ui": "^4.0.10",
     "eslint": "^9",
     "eslint-config-next": "16.0.3",
     "eslint-config-prettier": "^10.1.8",
@@ -83,7 +83,7 @@
     "sharp": "^0.34.5",
     "tailwindcss": "^4",
     "typescript": "^5",
-    "vitest": "^4.0.9"
+    "vitest": "^4.0.10"
   },
   "packageManager": "pnpm@10.22.0"
 }

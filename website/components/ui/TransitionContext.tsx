@@ -1,5 +1,15 @@
 // Copyright 2025 AptS:1547, AptS:1548
-// SPDX-License-Identifier: Apache-2.0
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
 
 "use client";
 
@@ -56,13 +66,15 @@ export function TransitionProvider({ children }: { children: ReactNode }) {
         const elapsed = Date.now() - (transitionStartTime || Date.now());
         const remainingTime = Math.max(0, INITIAL_LOAD_TIME - elapsed);
 
+        // 复制到局部变量，避免 cleanup 时引用变化
+        const timers = timersRef.current;
         const timer = setTimeout(() => {
           setIsTransitioning(false);
           setTransitionStartTime(null);
           setIsInitialLoad(false);
-          timersRef.current.delete(timer);
+          timers.delete(timer);
         }, remainingTime);
-        timersRef.current.add(timer);
+        timers.add(timer);
       };
 
       // 如果页面已经加载完成，立即执行
@@ -115,12 +127,14 @@ export function TransitionProvider({ children }: { children: ReactNode }) {
     const elapsed = Date.now() - transitionStartTime;
     const remainingTime = Math.max(0, MIN_TRANSITION_TIME - elapsed);
 
+    // 复制到局部变量，避免 cleanup 时引用变化
+    const timers = timersRef.current;
     const timer = setTimeout(() => {
       setIsTransitioning(false);
       setTransitionStartTime(null);
-      timersRef.current.delete(timer);
+      timers.delete(timer);
     }, remainingTime);
-    timersRef.current.add(timer);
+    timers.add(timer);
   };
 
   return (
