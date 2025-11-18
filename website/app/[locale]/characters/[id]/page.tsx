@@ -17,7 +17,11 @@ import dynamic from "next/dynamic";
 import { Character } from "@/types/character";
 import { Relationship } from "@/types/relationship";
 import { RelationshipNodeData } from "@/types/relationship-node";
-import { CharacterHero, CharacterInfo } from "@/components/character/detail";
+import {
+  CharacterHero,
+  CharacterInfo,
+  PullToReveal,
+} from "@/components/character/detail";
 import { getTranslations } from "next-intl/server";
 import { getCharacterRelationships } from "@/lib/relationship-parser";
 import { loadJsonFile } from "@/lib/data-loader";
@@ -218,45 +222,51 @@ export default async function CharacterDetailPage({
   );
 
   return (
-    <main className="min-h-screen">
-      {/* Hero 区域 */}
-      <CharacterHero character={character} />
+    <PullToReveal
+      hiddenProfile={character.hiddenProfile}
+      characterColor={character.color.primary}
+      characterName={character.name}
+    >
+      <main className="min-h-screen">
+        {/* Hero 区域 */}
+        <CharacterHero character={character} />
 
-      {/* 内容区域 */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="space-y-20">
-          {/* 基本信息 */}
-          <CharacterInfo character={character} />
+        {/* 内容区域 */}
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+          <div className="space-y-20">
+            {/* 基本信息 */}
+            <CharacterInfo character={character} />
 
-          {/* 角色故事 */}
-          <CharacterStory character={character} />
+            {/* 角色故事 */}
+            <CharacterStory character={character} />
 
-          {/* 说话风格 */}
-          <CharacterSpeechStyle character={character} />
+            {/* 说话风格 */}
+            <CharacterSpeechStyle character={character} />
 
-          {/* 能力设定 */}
-          <CharacterAbilities character={character} />
+            {/* 能力设定 */}
+            <CharacterAbilities character={character} />
 
-          {/* 日常生活 */}
-          <CharacterDailyLife character={character} />
+            {/* 日常生活 */}
+            <CharacterDailyLife character={character} />
 
-          {/* 特殊时刻 */}
-          <CharacterSpecialMoments character={character} />
+            {/* 特殊时刻 */}
+            <CharacterSpecialMoments character={character} />
 
-          {/* 哲学观 */}
-          <CharacterPhilosophy character={character} />
+            {/* 哲学观 */}
+            <CharacterPhilosophy character={character} />
 
-          {/* 人际关系 */}
-          <CharacterRelationships
-            character={character}
-            relationships={relationships}
-            relatedCharactersData={relatedCharactersData}
-          />
+            {/* 人际关系 */}
+            <CharacterRelationships
+              character={character}
+              relationships={relationships}
+              relatedCharactersData={relatedCharactersData}
+            />
+          </div>
         </div>
-      </div>
 
-      {/* 底部间距 */}
-      <div className="h-20" />
-    </main>
+        {/* 底部间距 */}
+        <div className="h-20" />
+      </main>
+    </PullToReveal>
   );
 }

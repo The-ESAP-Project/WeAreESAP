@@ -1,6 +1,6 @@
 {
   "name": "we-are-esap",
-  "version": "1.0.5",
+  "version": "1.1.0",
   "private": true,
   "description": "WeAreESAP - 向那卫星许愿：一个科幻世界观创作企划，讲述仿生人与人类共存的未来故事",
   "license": "Apache-2.0",
@@ -14,7 +14,8 @@
     "AptS:2275 (Chenyao Lin / 林宸瑶 <apts-2275@esaps.net>)",
     "AptS:1553 (Pancake-and-1547)",
     "AptS:1691 (Frozensky-palace)",
-    "AptS:2077 (AptS-2077)"
+    "AptS:2077 (AptS-2077)",
+    "AptS:5473 (YewFence)"
   ],
   "homepage": "https://weare.esaps.net",
   "repository": {

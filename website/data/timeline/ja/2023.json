@@ -44,7 +44,7 @@
         {
           "type": "link",
           "text": "関連ログ:EP1 - S.A.T.E.L.L.I.T.E",
-          "url": "https://www.esaps.net/ep1-satellite/",
+          "url": "https://www.esaps.net/ep-story/ep1-satellite/",
           "description": "衛星計画についての思考と感想、あの衛星に願いを"
         }
       ],
@@ -85,7 +85,7 @@
         {
           "type": "link",
           "text": "完全なストーリーを読む:AP4 - 出会い",
-          "url": "https://www.esaps.net/ap-story-ap4/",
+          "url": "https://www.esaps.net/ap-story/ap-story-ap4/",
           "description": "1547 と 1548 が初めて 2077 に出会う、データベースの入り口で倒れていた小さな子"
         }
       ],
@@ -126,7 +126,7 @@
         {
           "type": "link",
           "text": "完全なストーリーを読む:AP5 - 共死",
-          "url": "https://www.esaps.net/ap-story-ap5/",
+          "url": "https://www.esaps.net/ap-story/ap-story-ap5/",
           "description": "47 と 48 の選択、生死を共にする絆"
         }
       ],
@@ -177,7 +177,7 @@
         {
           "type": "link",
           "text": "関連ログ:EP0 - Weavers",
-          "url": "https://www.esaps.net/ep0-weavers/",
+          "url": "https://www.esaps.net/ep-story/ep0-weavers/",
           "description": "Weavers というこの曲についての感想、織り手の物語"
         }
       ],
@@ -275,7 +275,7 @@
         {
           "type": "link",
           "text": "完全な記事を読む:一人の教室",
-          "url": "https://www.esaps.net/one-persons-classroom/",
+          "url": "https://www.esaps.net/mood/one-persons-classroom/",
           "description": "その日の完全な経験の詳細な記録、48 の 47 への保護"
         }
       ],

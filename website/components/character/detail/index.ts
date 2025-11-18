@@ -20,3 +20,5 @@ export { CharacterDailyLife } from "./CharacterDailyLife";
 export { CharacterSpecialMoments } from "./CharacterSpecialMoments";
 export { CharacterPhilosophy } from "./CharacterPhilosophy";
 export { CharacterRelationships } from "./CharacterRelationships";
+export { PullToReveal } from "./PullToReveal";
+export { HiddenContent } from "./HiddenContent";

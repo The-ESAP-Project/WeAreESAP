@@ -1,0 +1,21 @@
+{
+  "id": "5473",
+  "name": "Ye Yunfeng",
+  "code": "AptS:5473",
+  "nickname": "Yew",
+  "color": {
+    "primary": "#DF7200",
+    "dark": "#994E00"
+  },
+  "role": "Follower",
+  "species": "Human",
+  "quote": "I will be there for everyone, as we had toured to shared future, leaving the past behind.",
+  "description": "Arriving on fallen leaves, proceeding by following the guide.",
+  "keywords": ["Passionate", "Composed", "Dense", "Talkative"],
+  "backgroundImage": "/images/characters/img_5473.webp",
+  "tier": "guest",
+  "meta": {
+    "bodyType": "Human",
+    "abilities": ["Python", "Video Games", "Rational Analysis"]
+  }
+}

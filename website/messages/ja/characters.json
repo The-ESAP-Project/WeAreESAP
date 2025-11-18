@@ -63,6 +63,20 @@
       "graphHint": "ノードをクリックして詳細を表示、スクロールでズーム",
       "loading": "読み込み中...",
       "noData": "関係データがありません"
+    },
+    "hiddenProfile": {
+      "ui": {
+        "closeButton": "隠しプロフィールを閉じる",
+        "imageAlt": "隠しコンテンツ {index}",
+        "interactive": {
+          "label": "インタラクティブ要素：{type}",
+          "developing": "（開発中...）"
+        },
+        "pullHint": {
+          "release": "指を離して秘密を解除！",
+          "continue": "もっと引っ張って..."
+        }
+      }
     }
   },
   "notFound": "キャラクターが見つかりません",

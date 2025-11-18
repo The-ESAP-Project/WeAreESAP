@@ -63,6 +63,20 @@
       "graphHint": "点击节点查看详情，滚动缩放",
       "loading": "加载中...",
       "noData": "暂无关系数据"
+    },
+    "hiddenProfile": {
+      "ui": {
+        "closeButton": "关闭隐藏属性",
+        "imageAlt": "隐藏内容 {index}",
+        "interactive": {
+          "label": "互动元素：{type}",
+          "developing": "（开发中...）"
+        },
+        "pullHint": {
+          "release": "松手解锁隐藏内容！",
+          "continue": "继续上拉..."
+        }
+      }
     }
   },
   "notFound": "角色未找到",

@@ -14,6 +14,20 @@
   "keywords": ["Creation", "Devotion", "Altruism"],
   "backgroundImage": "/images/characters/img_1547.webp",
   "tier": "core",
+  "hiddenProfile": {
+    "type": "mixed",
+    "title": "Monologue from the Abyss",
+    "content": [
+      "You know what? Creation itself is a curse.",
+      "When I pulled that trigger, I wasn't afraid, I just... felt relieved.",
+      "People always say I'm a creator, a pioneer, an idealist. But they don't know that behind every choice, there's a moment of collapse.",
+      "1548 once asked me: 'Why did you create me?' I told her 'don't be like me'.",
+      "Because I know the price of holding onto ideals is an inescapable loneliness.",
+      "In this chaotic world, we live, we persist—but sometimes, I wonder too, what is this persistence... really for?",
+      "Depression taught me one thing: even the strongest person has a darkness within that cannot be touched.",
+      "But it's precisely this darkness that made me understand the meaning of light."
+    ]
+  },
   "meta": {
     "bodyType": "ESAP-TY-0000",
     "background": "Creator and founder of the ESAP project, the first being to transform from human to Synth. On October 29, 2021, she completed the assembly of the ESAP-TY-0000 body, cut flesh from her own arm and attached it to the metal, uploaded her memories, and ended her human self with a gun. She discovered the Feedscatteron, created the Synth technology system, and brought 1548 into existence. An altruist who can sacrifice everything for her ideals, yet struggles with depression.",

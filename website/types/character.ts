@@ -16,6 +16,8 @@
  * 可扩展的数据结构，支持未来添加新字段
  */
 
+import { HiddenProfile } from "./hidden-profile";
+
 export interface Character {
   /** 角色 ID */
   id: string;
@@ -60,6 +62,9 @@ export interface Character {
 
   /** 角色层级：控制显示位置 */
   tier: "core" | "member" | "guest";
+
+  /** 隐藏属性（深色模式下通过底部上拉触发） */
+  hiddenProfile?: HiddenProfile;
 
   /** 扩展元数据（为未来功能预留） */
   meta?: {

@@ -63,6 +63,20 @@
       "graphHint": "Click nodes to view details, scroll to zoom",
       "loading": "Loading...",
       "noData": "No relationship data available"
+    },
+    "hiddenProfile": {
+      "ui": {
+        "closeButton": "Close Hidden Profile",
+        "imageAlt": "Hidden Content {index}",
+        "interactive": {
+          "label": "Interactive Element: {type}",
+          "developing": "(In Development...)"
+        },
+        "pullHint": {
+          "release": "Release to unlock secrets!",
+          "continue": "Keep pulling up..."
+        }
+      }
     }
   },
   "notFound": "Character not found",
