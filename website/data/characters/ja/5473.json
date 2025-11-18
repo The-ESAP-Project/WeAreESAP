@@ -1,0 +1,21 @@
+{
+  "id": "5473",
+  "name": "葉雲楓 (イェ・ユンフェン)",
+  "code": "AptS:5473",
+  "nickname": "葉",
+  "color": {
+    "primary": "#DF7200",
+    "dark": "#994E00"
+  },
+  "role": "追随者",
+  "species": "人間",
+  "quote": "みんなと一緒にいたい、これからも。",
+  "description": "落ち葉を踏んで訪れ、導きに従い前へ進む。",
+  "keywords": ["情熱", "泰然", "鈍感", "多弁"],
+  "backgroundImage": "/images/characters/img_5473.webp",
+  "tier": "guest",
+  "meta": {
+    "bodyType": "人間",
+    "abilities": ["Python", "電子ゲーム", "理性的分析"]
+  }
+}

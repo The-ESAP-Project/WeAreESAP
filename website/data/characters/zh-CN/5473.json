@@ -1,0 +1,21 @@
+{
+  "id": "5473",
+  "name": "叶云枫",
+  "code": "AptS:5473",
+  "nickname": "叶",
+  "color": {
+    "primary": "#DF7200",
+    "dark": "#994E00"
+  },
+  "role": "随行者",
+  "species": "人类",
+  "quote": "我想留在大家身边，从过去，一同迈向明天。",
+  "description": "踏着落叶而来，循着道引前行。",
+  "keywords": ["热情", "波澜不惊", "迟钝", "多言多语"],
+  "backgroundImage": "/images/characters/img_5473.webp",
+  "tier": "guest",
+  "meta": {
+    "bodyType": "人类",
+    "abilities": ["Python", "电子游戏", "理性分析"]
+  }
+}
