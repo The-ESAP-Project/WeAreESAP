@@ -10,9 +10,16 @@ ENV PNPM_HOME="/pnpm"
 ENV PATH="$PNPM_HOME:$PATH"
 RUN corepack enable
 
+ARG PORT=3000
+ARG NEXT_PUBLIC_SITE_URL=https://weare.esaps.net
+
 # 构建时环境变量
 ENV NODE_ENV=production \
-    NEXT_TELEMETRY_DISABLED=1
+    NEXT_PUBLIC_DEBUG_HIDDEN_PROFILE=false \
+    NEXT_TELEMETRY_DISABLED=1 \
+    NEXT_PUBLIC_SITE_URL=${NEXT_PUBLIC_SITE_URL} \
+    PORT=${PORT} \
+    HOSTNAME="0.0.0.0"
 
 # 复制依赖文件
 COPY package.json pnpm-lock.yaml ./
@@ -31,7 +38,7 @@ RUN pnpm run build
 # ============================================
 # Runtime stage
 # ============================================
-FROM gcr.io/distroless/nodejs22-debian12:nonroot AS runner
+FROM gcr.io/distroless/nodejs24-debian12:nonroot AS runner
 
 LABEL maintainer="AptS:1547, AptS:1548 <esaps@esaps.net>"
 LABEL description="We Are ESAP - The ESAP Project Website"
@@ -39,10 +46,13 @@ LABEL description="We Are ESAP - The ESAP Project Website"
 USER nonroot:nonroot
 
 ARG PORT=3000
+ARG NEXT_PUBLIC_SITE_URL=https://weare.esaps.net
 
 # 运行时环境变量
 ENV NODE_ENV=production \
+    NEXT_PUBLIC_DEBUG_HIDDEN_PROFILE=false \
     NEXT_TELEMETRY_DISABLED=1 \
+    NEXT_PUBLIC_SITE_URL=${NEXT_PUBLIC_SITE_URL} \
     PORT=${PORT} \
     HOSTNAME="0.0.0.0"
 
