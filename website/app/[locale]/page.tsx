@@ -11,10 +11,11 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-import { TriangleLogo } from "@/components";
 import { CharacterCardData } from "@/types/character";
 import { HomeCharacters } from "./HomeCharacters";
+import { HomeHero } from "./HomeHero";
 import { StorySection } from "./StorySection";
+import { AnimatedSection } from "@/components/ui";
 import { getLocale, getTranslations } from "next-intl/server";
 import type { Metadata } from "next";
 import { loadJsonFiles } from "@/lib/data-loader";
@@ -82,48 +83,16 @@ export default async function Home() {
 
   return (
     <main className="relative min-h-screen">
-      {/* Hero 区域 */}
-      <section className="relative py-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto text-center">
-          {/* 大 LOGO */}
-          <div className="relative flex justify-center mb-8">
-            <TriangleLogo size={200} animated={true} />
-          </div>
-
-          {/* 站点标题 */}
-          <h1 className="text-5xl sm:text-6xl font-bold mb-4 text-foreground">
-            {t("hero.title")}
-          </h1>
-
-          {/* 标语 */}
-          <p className="text-xl sm:text-2xl text-muted-foreground mb-4 italic">
-            {t("hero.tagline")}
-          </p>
-
-          {/* 分隔线 */}
-          <div className="w-24 h-1 bg-linear-to-r from-esap-yellow via-esap-pink to-esap-blue rounded-full mx-auto my-8" />
-
-          {/* 简介 */}
-          <div className="max-w-2xl mx-auto space-y-4 text-foreground/80">
-            <p className="text-lg">
-              {t.rich("hero.intro.main", {
-                strong: (chunks) => (
-                  <strong className="font-bold">{chunks}</strong>
-                ),
-              })}
-            </p>
-            <p>{t("hero.intro.world")}</p>
-          </div>
-        </div>
-      </section>
+      {/* Hero 区域 - 带动画 */}
+      <HomeHero />
 
       {/* 核心成员区域 - 响应式展示 */}
       <section className="w-full py-8">
-        <div className="mb-8 text-center px-4">
+        <AnimatedSection className="mb-8 text-center px-4">
           <h2 className="text-3xl font-bold text-foreground">
             {t("members.title")}
           </h2>
-        </div>
+        </AnimatedSection>
 
         <HomeCharacters characters={characters} />
       </section>

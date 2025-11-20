@@ -13,7 +13,8 @@
 
 import dynamic from "next/dynamic";
 import { ChecklistItem } from "@/components";
-import { Icon, type IconName } from "@/components/ui";
+import { Icon, type IconName, AnimatedSection } from "@/components/ui";
+import { JoinHero } from "./JoinHero";
 import { getTranslations, getLocale } from "next-intl/server";
 import type { Metadata } from "next";
 import type {
@@ -101,45 +102,11 @@ export default async function JoinPage() {
   const contributions = t.raw("contributions");
   const faqItems = t.raw("faq");
   const nextSteps = t.raw("nextSteps");
-  const heroSeeking = t.raw("hero.seeking");
 
   return (
     <main className="min-h-screen">
-      {/* Hero 区域 */}
-      <section className="relative py-20 px-4 sm:px-6 lg:px-8 bg-linear-to-b from-muted/30 to-transparent">
-        <div className="max-w-4xl mx-auto text-center space-y-6">
-          <h1 className="text-4xl sm:text-5xl font-bold text-foreground mb-4">
-            {t("sections.hero")}
-          </h1>
-
-          <blockquote className="text-2xl text-esap-yellow font-semibold italic">
-            "{t("hero.quote")}"
-          </blockquote>
-
-          <div className="w-24 h-1 bg-linear-to-r from-esap-yellow via-esap-pink to-esap-blue rounded-full mx-auto my-8" />
-
-          <p className="text-lg text-foreground/80">{t("hero.welcome")}</p>
-
-          <div className="max-w-2xl mx-auto">
-            <p className="text-foreground/70 mb-4">{t("sections.seeking")}</p>
-            <ul className="space-y-2">
-              {heroSeeking.map((item: string, i: number) => (
-                <li
-                  key={i}
-                  className="text-foreground/70 flex items-center justify-center gap-2"
-                >
-                  <span className="text-esap-pink">•</span>
-                  {item}
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <p className="text-xl font-semibold text-foreground mt-8">
-            {t("hero.callToAction")}
-          </p>
-        </div>
-      </section>
+      {/* Hero 区域 - 带动画 */}
+      <JoinHero />
 
       {/* 谁适合加入？ */}
       <section className="py-16 px-4 sm:px-6 lg:px-8">
@@ -205,13 +172,13 @@ export default async function JoinPage() {
             {participationMethods.map((method: ParticipationMethod) => (
               <div
                 key={method.title}
-                className="bg-background rounded-xl p-6 border border-border"
+                className="group bg-background rounded-xl p-6 border border-border hover:border-esap-blue/50 hover:shadow-lg hover:scale-[1.02] transition-all duration-300"
               >
                 <div className="flex items-center gap-3 mb-4">
                   <Icon
                     name={method.icon as IconName}
                     size={32}
-                    className="text-esap-blue"
+                    className="text-esap-blue group-hover:scale-110 transition-transform"
                   />
                   <h3 className="text-xl font-bold text-foreground">
                     {method.title}
@@ -276,7 +243,7 @@ export default async function JoinPage() {
               {guidelinesPrinciples.map((principle: Principle) => (
                 <div
                   key={principle.title}
-                  className="bg-background rounded-xl p-6 border border-border"
+                  className="bg-background rounded-xl p-6 border border-border hover:border-esap-yellow/50 hover:shadow-md transition-all duration-300"
                 >
                   <h4 className="text-lg font-bold text-foreground mb-2">
                     {principle.title}
@@ -301,7 +268,7 @@ export default async function JoinPage() {
                 {t("sections.technicalGuidelines")}
               </h3>
               <div className="space-y-4">
-                <div className="bg-green-500/5 rounded-lg p-4 border border-green-500/20">
+                <div className="bg-green-500/5 hover:bg-green-500/10 rounded-lg p-4 border border-green-500/20 transition-colors duration-300">
                   <h4 className="font-semibold text-foreground mb-2 flex items-center gap-2">
                     <Icon
                       name="CheckCircle"
@@ -322,7 +289,7 @@ export default async function JoinPage() {
                     ))}
                   </ul>
                 </div>
-                <div className="bg-red-500/5 rounded-lg p-4 border border-red-500/20">
+                <div className="bg-red-500/5 hover:bg-red-500/10 rounded-lg p-4 border border-red-500/20 transition-colors duration-300">
                   <h4 className="font-semibold text-foreground mb-2 flex items-center gap-2">
                     <Icon name="XCircle" size={18} className="text-red-500" />
                     {t("sections.shouldNotDo")}
@@ -347,7 +314,7 @@ export default async function JoinPage() {
                 {t("sections.characterGuidelines")}
               </h3>
               <div className="space-y-4">
-                <div className="bg-green-500/5 rounded-lg p-4 border border-green-500/20">
+                <div className="bg-green-500/5 hover:bg-green-500/10 rounded-lg p-4 border border-green-500/20 transition-colors duration-300">
                   <h4 className="font-semibold text-foreground mb-2 flex items-center gap-2">
                     <Icon
                       name="CheckCircle"
@@ -368,7 +335,7 @@ export default async function JoinPage() {
                     ))}
                   </ul>
                 </div>
-                <div className="bg-red-500/5 rounded-lg p-4 border border-red-500/20">
+                <div className="bg-red-500/5 hover:bg-red-500/10 rounded-lg p-4 border border-red-500/20 transition-colors duration-300">
                   <h4 className="font-semibold text-foreground mb-2 flex items-center gap-2">
                     <Icon name="XCircle" size={18} className="text-red-500" />
                     {t("sections.avoid")}
@@ -403,13 +370,13 @@ export default async function JoinPage() {
             {communityValues.map((value: CommunityValue) => (
               <div
                 key={value.title}
-                className="bg-muted rounded-xl p-6 border border-border"
+                className="group bg-muted rounded-xl p-6 border border-border hover:border-esap-yellow/50 hover:shadow-lg hover:scale-[1.02] transition-all duration-300"
               >
                 <div className="flex items-center gap-3 mb-3">
                   <Icon
                     name={value.icon as IconName}
                     size={28}
-                    className="text-esap-yellow"
+                    className="text-esap-yellow group-hover:rotate-6 transition-transform"
                   />
                   <h3 className="text-xl font-bold text-foreground">
                     {value.title}
@@ -440,13 +407,13 @@ export default async function JoinPage() {
             {contributions.map((contribution: Contribution) => (
               <div
                 key={contribution.category}
-                className="bg-background rounded-xl p-6 border border-border"
+                className="group bg-background rounded-xl p-6 border border-border hover:border-esap-pink/50 hover:shadow-lg hover:scale-[1.02] transition-all duration-300"
               >
                 <div className="flex items-center gap-3 mb-4">
                   <Icon
                     name={contribution.icon as IconName}
                     size={32}
-                    className="text-esap-pink"
+                    className="text-esap-pink group-hover:scale-110 transition-transform"
                   />
                   <h3 className="text-lg font-bold text-foreground">
                     {contribution.category}

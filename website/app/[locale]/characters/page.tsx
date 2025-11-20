@@ -15,6 +15,7 @@ import { unstable_cache } from "next/cache";
 import { Metadata } from "next";
 import { CharacterCardData } from "@/types/character";
 import { CharactersClient } from "./CharactersClient";
+import { CharactersHero } from "./CharactersHero";
 import { getTranslations, getLocale } from "next-intl/server";
 import { loadJsonFiles } from "@/lib/data-loader";
 import { DEFAULT_IMAGES, SITE_CONFIG } from "@/lib/constants";
@@ -90,16 +91,8 @@ export default async function CharactersPage() {
 
   return (
     <main className="min-h-screen">
-      {/* 页面标题 */}
-      <section className="py-12 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto text-center">
-          <h1 className="text-4xl sm:text-5xl font-bold mb-4 text-foreground">
-            {t("hero.title")}
-          </h1>
-          <p className="text-lg text-muted-foreground">{t("hero.subtitle")}</p>
-          <div className="w-24 h-1 bg-linear-to-r from-esap-yellow via-esap-pink to-esap-blue rounded-full mx-auto mt-6" />
-        </div>
-      </section>
+      {/* 页面标题 - 带动画 */}
+      <CharactersHero />
 
       {/* 角色展示（响应式） */}
       <CharactersClient

@@ -15,6 +15,7 @@ import { Suspense } from "react";
 import dynamic from "next/dynamic";
 import { TechModule } from "@/types/tech";
 import { LoadingSpinner } from "@/components/loading";
+import { TechHero } from "./TechHero";
 import { getTranslations, getLocale } from "next-intl/server";
 import type { Metadata } from "next";
 import { loadJsonFiles } from "@/lib/data-loader";
@@ -75,16 +76,8 @@ export default async function TechPage() {
 
   return (
     <main className="relative min-h-screen bg-background">
-      {/* Hero 区域 */}
-      <section className="relative py-16 px-4 sm:px-6 lg:px-8 bg-muted/30">
-        <div className="max-w-7xl mx-auto text-center">
-          <h1 className="text-4xl sm:text-5xl font-bold mb-4 text-foreground">
-            {t("hero.title")}
-          </h1>
-          <p className="text-lg text-muted-foreground">{t("hero.subtitle")}</p>
-          <div className="w-24 h-1 bg-linear-to-r from-esap-yellow via-esap-pink to-esap-blue rounded-full mx-auto mt-6" />
-        </div>
-      </section>
+      {/* Hero 区域 - 带动画 */}
+      <TechHero />
 
       {/* 技术模块内容 */}
       <Suspense

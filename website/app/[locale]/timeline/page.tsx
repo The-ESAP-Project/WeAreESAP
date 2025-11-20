@@ -15,6 +15,8 @@ import { Suspense } from "react";
 import dynamic from "next/dynamic";
 import { TimelineYear } from "@/types/timeline";
 import { LoadingSpinner } from "@/components/loading";
+import { TimelineHero } from "./TimelineHero";
+import { AnimatedSection } from "@/components/ui";
 import { getTranslations } from "next-intl/server";
 import { getLocale } from "next-intl/server";
 import type { Metadata } from "next";
@@ -81,21 +83,8 @@ export default async function TimelinePage() {
 
   return (
     <main className="relative min-h-screen bg-background">
-      {/* Hero 区域 */}
-      <section className="relative py-16 md:py-20 px-4 sm:px-6 lg:px-8 bg-muted/30">
-        <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 text-foreground">
-            {t("hero.title")}
-          </h1>
-          <p className="text-lg md:text-xl text-muted-foreground italic mb-4">
-            "{t("hero.quote")}"
-          </p>
-          <p className="text-base md:text-lg text-foreground/80">
-            {t("hero.subtitle")}
-          </p>
-          <div className="w-24 md:w-32 h-1 bg-linear-to-r from-esap-yellow via-esap-pink to-esap-blue rounded-full mx-auto mt-6 md:mt-8" />
-        </div>
-      </section>
+      {/* Hero 区域 - 带动画 */}
+      <TimelineHero />
 
       {/* 时间线内容 */}
       <Suspense
@@ -123,12 +112,14 @@ export default async function TimelinePage() {
       {/* 结尾引用 */}
       <section className="py-12 md:py-16 px-4 sm:px-6 lg:px-8 bg-muted/30">
         <div className="max-w-2xl mx-auto text-center">
-          <p className="text-lg md:text-xl text-foreground/80 italic mb-4">
-            "{t("ending.quote")}"
-          </p>
-          <p className="text-xl md:text-2xl font-bold text-foreground">
-            {t("ending.conclusion")}
-          </p>
+          <AnimatedSection>
+            <p className="text-lg md:text-xl text-foreground/80 italic mb-4">
+              "{t("ending.quote")}"
+            </p>
+            <p className="text-xl md:text-2xl font-bold text-foreground">
+              {t("ending.conclusion")}
+            </p>
+          </AnimatedSection>
         </div>
       </section>
     </main>

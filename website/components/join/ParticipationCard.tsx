@@ -36,11 +36,17 @@ export function ParticipationCard({
       initial={
         shouldReduceMotion ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }
       }
-      whileInView={
-        shouldReduceMotion ? { opacity: 1, y: 0 } : { opacity: 1, y: 0 }
-      }
+      whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
-      transition={shouldReduceMotion ? { duration: 0 } : { delay: index * 0.1 }}
+      transition={
+        shouldReduceMotion
+          ? { duration: 0 }
+          : {
+              delay: index * 0.1,
+              duration: 0.4,
+              ease: [0.16, 1, 0.3, 1] as const,
+            }
+      }
     >
       {/* 角色标题 */}
       <h3 className="text-lg font-bold text-foreground mb-4 flex items-center gap-2">

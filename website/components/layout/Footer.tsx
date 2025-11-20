@@ -109,7 +109,7 @@ export function Footer() {
                     href={link.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="hover:opacity-80 transition-opacity"
+                    className="hover:scale-110 hover:rotate-6 transition-all duration-300"
                     aria-label={link.name}
                   >
                     <Icon
@@ -183,12 +183,12 @@ export function Footer() {
                         href={link.href}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center gap-2 text-sm text-muted-foreground hover:text-esap-blue transition-colors group"
+                        className="flex items-center gap-2 text-sm text-muted-foreground hover:text-esap-blue hover:translate-x-1 transition-all duration-300 group"
                       >
                         <Icon
                           name={link.icon}
                           size={16}
-                          className="text-foreground group-hover:text-esap-blue transition-colors"
+                          className="text-foreground group-hover:text-esap-blue group-hover:scale-110 group-hover:rotate-3 transition-all"
                         />
                         <span className="text-xs">{link.name}</span>
                       </a>

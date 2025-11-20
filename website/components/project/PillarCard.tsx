@@ -40,14 +40,18 @@ export function PillarCard({ pillar, index }: PillarCardProps) {
     <motion.div
       className="relative group"
       initial={
-        shouldReduceMotion ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }
+        shouldReduceMotion ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }
       }
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={
         shouldReduceMotion
           ? { duration: 0 }
-          : { delay: index * 0.15, duration: 0.5 }
+          : {
+              delay: index * 0.15,
+              duration: 0.4,
+              ease: [0.16, 1, 0.3, 1] as const,
+            }
       }
     >
       {/* 卡片主体 */}
@@ -106,7 +110,11 @@ export function PillarCard({ pillar, index }: PillarCardProps) {
                 transition={
                   shouldReduceMotion
                     ? { duration: 0 }
-                    : { delay: index * 0.15 + i * 0.1 }
+                    : {
+                        delay: index * 0.15 + i * 0.1,
+                        duration: 0.3,
+                        ease: [0.16, 1, 0.3, 1] as const,
+                      }
                 }
               >
                 <span
