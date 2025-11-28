@@ -52,12 +52,14 @@ export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations("join.metadata");
   const title = `${t("title")} - ${t("subtitle")}`;
   const description = t("description");
+  const keywords = t.raw("keywords") as string[];
   const ogImage = DEFAULT_IMAGES.homepage;
   const localizedUrl = `${SITE_CONFIG.baseUrl}/${locale}/join`;
 
   return {
     title,
     description,
+    keywords,
     openGraph: {
       title,
       description,

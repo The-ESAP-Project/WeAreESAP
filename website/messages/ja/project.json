@@ -2,7 +2,15 @@
   "metadata": {
     "title": "プロジェクト概要",
     "subtitle": "We Are ESAP",
-    "description": "The ESAP Project - 生命、意識、存在の意味を探る。三つの柱、核心価値観、世界観フレームワークについて学ぶ。"
+    "description": "The ESAP Project - 生命、意識、存在の意味を探る。三つの柱、核心価値観、世界観フレームワークについて学ぶ。",
+    "keywords": [
+      "ESAPプロジェクト",
+      "エスケーププラン",
+      "世界観設計",
+      "創作企画",
+      "SFプロジェクト",
+      "オープンコラボレーション"
+    ]
   },
   "sections": {
     "whatIsEscape": "「脱出」とは何か？",

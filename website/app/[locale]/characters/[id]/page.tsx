@@ -133,9 +133,18 @@ export async function generateMetadata({
   const characterImage = character.backgroundImage || DEFAULT_IMAGES.homepage;
   const characterUrl = `${SITE_CONFIG.baseUrl}/${locale}/characters/${character.id}`;
 
+  // 动态生成角色专属 keywords（纯角色词）
+  const keywords = [
+    character.name,
+    character.code,
+    character.role,
+    ...character.keywords,
+  ];
+
   return {
     title: `${characterTitle} - We Are ESAP`,
     description: characterDesc,
+    keywords,
     openGraph: {
       title: characterTitle,
       description: characterDesc,
