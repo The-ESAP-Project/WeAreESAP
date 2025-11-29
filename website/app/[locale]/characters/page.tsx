@@ -16,12 +16,17 @@ import { Metadata } from "next";
 import { CharacterCardData } from "@/types/character";
 import { CharactersClient } from "./CharactersClient";
 import { CharactersHero } from "./CharactersHero";
-import { getTranslations, getLocale } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import { loadJsonFiles } from "@/lib/data-loader";
 import { DEFAULT_IMAGES, SITE_CONFIG } from "@/lib/constants";
 
-export async function generateMetadata(): Promise<Metadata> {
-  const locale = await getLocale();
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  setRequestLocale(locale);
   const t = await getTranslations("characters.metadata");
   const title = `${t("title")} - ${t("subtitle")}`;
   const description = t("description");
@@ -81,8 +86,13 @@ const getCharacters = unstable_cache(
   }
 );
 
-export default async function CharactersPage() {
-  const locale = await getLocale();
+export default async function CharactersPage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  setRequestLocale(locale);
   const characters = await getCharacters(locale);
   const t = await getTranslations("characters");
 

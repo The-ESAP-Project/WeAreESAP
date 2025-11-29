@@ -17,8 +17,7 @@ import { TimelineYear } from "@/types/timeline";
 import { LoadingSpinner } from "@/components/loading";
 import { TimelineHero } from "./TimelineHero";
 import { AnimatedSection } from "@/components/ui";
-import { getTranslations } from "next-intl/server";
-import { getLocale } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import type { Metadata } from "next";
 import { loadJsonFiles } from "@/lib/data-loader";
 import { DEFAULT_IMAGES, SITE_CONFIG } from "@/lib/constants";
@@ -28,8 +27,13 @@ const TimelineClient = dynamic(() =>
   import("./TimelineClient").then((mod) => ({ default: mod.TimelineClient }))
 );
 
-export async function generateMetadata(): Promise<Metadata> {
-  const locale = await getLocale();
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  setRequestLocale(locale);
   const t = await getTranslations("timeline.metadata");
   const title = `${t("title")} - ${t("subtitle")}`;
   const description = t("description");
@@ -79,8 +83,13 @@ async function getTimelineData(locale: string): Promise<TimelineYear[]> {
   return years;
 }
 
-export default async function TimelinePage() {
-  const locale = await getLocale();
+export default async function TimelinePage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  setRequestLocale(locale);
   const t = await getTranslations("timeline");
   const years = await getTimelineData(locale);
 

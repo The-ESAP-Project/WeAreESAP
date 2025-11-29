@@ -16,7 +16,7 @@ import dynamic from "next/dynamic";
 import { TechModule } from "@/types/tech";
 import { LoadingSpinner } from "@/components/loading";
 import { TechHero } from "./TechHero";
-import { getTranslations, getLocale } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import type { Metadata } from "next";
 import { loadJsonFiles } from "@/lib/data-loader";
 import { DEFAULT_IMAGES, SITE_CONFIG } from "@/lib/constants";
@@ -26,8 +26,13 @@ const TechPageClient = dynamic(() =>
   import("./TechPageClient").then((mod) => ({ default: mod.TechPageClient }))
 );
 
-export async function generateMetadata(): Promise<Metadata> {
-  const locale = await getLocale();
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  setRequestLocale(locale);
   const t = await getTranslations("tech.metadata");
   const title = `${t("title")} - ${t("subtitle")}`;
   const description = t("description");
@@ -72,8 +77,13 @@ async function getTechModules(locale: string): Promise<TechModule[]> {
   return loadJsonFiles<TechModule>(["data", "tech"], locale);
 }
 
-export default async function TechPage() {
-  const locale = await getLocale();
+export default async function TechPage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  setRequestLocale(locale);
   const modules = await getTechModules(locale);
   const t = await getTranslations("tech");
 

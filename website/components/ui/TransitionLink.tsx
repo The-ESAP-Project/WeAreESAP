@@ -24,8 +24,10 @@ import {
 import { useTransition } from "./TransitionContext";
 import { logger } from "@/lib/logger";
 
-interface TransitionLinkProps
-  extends Omit<AnchorHTMLAttributes<HTMLAnchorElement>, "href"> {
+interface TransitionLinkProps extends Omit<
+  AnchorHTMLAttributes<HTMLAnchorElement>,
+  "href"
+> {
   href: string;
   children: ReactNode;
   prefetch?: boolean; // 是否预加载链接（默认 false，按需加载）

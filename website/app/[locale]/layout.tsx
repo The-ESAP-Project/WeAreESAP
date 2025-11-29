@@ -26,7 +26,11 @@ import {
 } from "@/components";
 import { WebVitals } from "@/components/analytics";
 import { NextIntlClientProvider } from "next-intl";
-import { getMessages, getTranslations } from "next-intl/server";
+import {
+  getMessages,
+  getTranslations,
+  setRequestLocale,
+} from "next-intl/server";
 import { locales } from "@/i18n/request";
 import { SITE_CONFIG, DEFAULT_IMAGES } from "@/lib/constants";
 
@@ -44,7 +48,13 @@ const geistMono = Geist_Mono({
   preload: true,
 });
 
-export async function generateMetadata(): Promise<Metadata> {
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  setRequestLocale(locale);
   const t = await getTranslations("common.metadata");
   const ogImage = DEFAULT_IMAGES.homepage;
   const title = `${t("title")} - ${t("subtitle")}`;
@@ -94,6 +104,7 @@ export default async function RootLayout({
   params: Promise<{ locale: string }>;
 }>) {
   const { locale } = await params;
+  setRequestLocale(locale);
   const messages = await getMessages();
 
   return (
