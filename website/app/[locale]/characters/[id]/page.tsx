@@ -134,12 +134,12 @@ export async function generateMetadata({
   const characterUrl = `${SITE_CONFIG.baseUrl}/${locale}/characters/${character.id}`;
 
   // 动态生成角色专属 keywords（纯角色词）
-  const keywords = [
+  const keywords = [...new Set([
     character.name,
     character.code,
     character.role,
     ...(character.keywords || []),
-  ];
+  ].filter(Boolean))];
 
   return {
     title: `${characterTitle} - We Are ESAP`,
