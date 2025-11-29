@@ -1,4 +1,4 @@
-// Copyright 2025 AptS:1547, AptS:1548
+// Copyright 2025 The ESAP Project
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
 // You may obtain a copy of the License at
@@ -52,12 +52,15 @@ export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations("join.metadata");
   const title = `${t("title")} - ${t("subtitle")}`;
   const description = t("description");
+  const rawKeywords = t.raw("keywords");
+  const keywords = Array.isArray(rawKeywords) ? (rawKeywords as string[]) : [];
   const ogImage = DEFAULT_IMAGES.homepage;
   const localizedUrl = `${SITE_CONFIG.baseUrl}/${locale}/join`;
 
   return {
     title,
     description,
+    keywords,
     openGraph: {
       title,
       description,

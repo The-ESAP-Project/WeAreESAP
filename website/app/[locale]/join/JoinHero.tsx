@@ -1,4 +1,4 @@
-// Copyright 2025 AptS:1547, AptS:1548
+// Copyright 2025 The ESAP Project
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
 // You may obtain a copy of the License at
@@ -19,8 +19,10 @@ import { motion, useReducedMotion } from "framer-motion";
 export function JoinHero() {
   const t = useTranslations("join");
   const shouldReduceMotion = useReducedMotion();
-const heroSeekingRaw = t.raw("hero.seeking");
-const heroSeeking = Array.isArray(heroSeekingRaw) ? (heroSeekingRaw as string[]) : [];
+  const heroSeekingRaw = t.raw("hero.seeking");
+  const heroSeeking = Array.isArray(heroSeekingRaw)
+    ? (heroSeekingRaw as string[])
+    : [];
 
   // 动画配置：克制优雅
   const animationConfig = {

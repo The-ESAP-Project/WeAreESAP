@@ -1,4 +1,15 @@
-#!/usr/bin/env node
+// Copyright 2025 The ESAP Project
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
 
 /**
  * 自动给源代码文件添加 SPDX 许可证头部
@@ -16,7 +27,7 @@ const path = require("path");
 // 许可证头部模板
 const LICENSE_HEADERS = {
   // TypeScript/JavaScript 文件
-  ts: `// Copyright 2025 AptS:1547, AptS:1548
+  ts: `// Copyright 2025 The ESAP Project
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
 // You may obtain a copy of the License at
@@ -33,8 +44,18 @@ const LICENSE_HEADERS = {
 
   // CSS 文件
   css: `/**
- * Copyright 2025 AptS:1547, AptS:1548
- * SPDX-License-Identifier: Apache-2.0
+ * Copyright 2025 The ESAP Project
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ * 
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
  */
 
 `,

@@ -1,4 +1,4 @@
-// Copyright 2025 AptS:1547, AptS:1548
+// Copyright 2025 The ESAP Project
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
 // You may obtain a copy of the License at
@@ -133,9 +133,18 @@ export async function generateMetadata({
   const characterImage = character.backgroundImage || DEFAULT_IMAGES.homepage;
   const characterUrl = `${SITE_CONFIG.baseUrl}/${locale}/characters/${character.id}`;
 
+  // 动态生成角色专属 keywords（纯角色词）
+  const keywords = [...new Set([
+    character.name,
+    character.code,
+    character.role,
+    ...(character.keywords || []),
+  ].filter(Boolean))];
+
   return {
     title: `${characterTitle} - We Are ESAP`,
     description: characterDesc,
+    keywords,
     openGraph: {
       title: characterTitle,
       description: characterDesc,
