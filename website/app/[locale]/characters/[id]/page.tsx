@@ -11,6 +11,8 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+import fs from "fs/promises";
+import path from "path";
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import dynamic from "next/dynamic";
@@ -22,7 +24,8 @@ import {
   CharacterInfo,
   PullToReveal,
 } from "@/components/character/detail";
-import { getTranslations } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
+import { locales } from "@/i18n/request";
 import { getCharacterRelationships } from "@/lib/relationship-parser";
 import { loadJsonFile } from "@/lib/data-loader";
 import { DEFAULT_IMAGES, SITE_CONFIG } from "@/lib/constants";
@@ -84,6 +87,19 @@ const CharacterRelationships = dynamic(
   { loading: () => <div className="h-64 animate-pulse bg-muted rounded-xl" /> }
 );
 
+// 生成静态参数
+export async function generateStaticParams() {
+  const charactersDir = path.join(process.cwd(), "data", "characters", "zh-CN");
+  const files = await fs.readdir(charactersDir);
+  const characterIds = files
+    .filter((file) => file.endsWith(".json"))
+    .map((file) => file.replace(".json", ""));
+
+  return locales.flatMap((locale) =>
+    characterIds.map((id) => ({ locale, id }))
+  );
+}
+
 // 生成元数据
 export async function generateMetadata({
   params,
@@ -91,6 +107,7 @@ export async function generateMetadata({
   params: Promise<{ id: string; locale: string }>;
 }): Promise<Metadata> {
   const { id, locale } = await params;
+  setRequestLocale(locale);
   const t = await getTranslations("characters");
   const character = await getCharacter(id, locale);
 
@@ -134,12 +151,16 @@ export async function generateMetadata({
   const characterUrl = `${SITE_CONFIG.baseUrl}/${locale}/characters/${character.id}`;
 
   // 动态生成角色专属 keywords（纯角色词）
-  const keywords = [...new Set([
-    character.name,
-    character.code,
-    character.role,
-    ...(character.keywords || []),
-  ].filter(Boolean))];
+  const keywords = [
+    ...new Set(
+      [
+        character.name,
+        character.code,
+        character.role,
+        ...(character.keywords || []),
+      ].filter(Boolean)
+    ),
+  ];
 
   return {
     title: `${characterTitle} - We Are ESAP`,
@@ -215,6 +236,7 @@ export default async function CharacterDetailPage({
   params: Promise<{ id: string; locale: string }>;
 }) {
   const { id, locale } = await params;
+  setRequestLocale(locale);
   const character = await getCharacter(id, locale);
 
   if (!character) {

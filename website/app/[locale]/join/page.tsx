@@ -15,7 +15,7 @@ import dynamic from "next/dynamic";
 import { ChecklistItem } from "@/components";
 import { Icon, type IconName, AnimatedSection } from "@/components/ui";
 import { JoinHero } from "./JoinHero";
-import { getTranslations, getLocale } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import type { Metadata } from "next";
 import type {
   RoleType,
@@ -47,8 +47,13 @@ const ContactPlaceholder = dynamic(
   { loading: () => <div className="h-48 animate-pulse bg-muted rounded-xl" /> }
 );
 
-export async function generateMetadata(): Promise<Metadata> {
-  const locale = await getLocale();
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  setRequestLocale(locale);
   const t = await getTranslations("join.metadata");
   const title = `${t("title")} - ${t("subtitle")}`;
   const description = t("description");
@@ -88,7 +93,13 @@ export async function generateMetadata(): Promise<Metadata> {
   };
 }
 
-export default async function JoinPage() {
+export default async function JoinPage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  setRequestLocale(locale);
   const t = await getTranslations("join");
 
   const roleTypes = t.raw("roleTypes");

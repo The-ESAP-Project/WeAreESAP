@@ -13,7 +13,7 @@
 
 import dynamic from "next/dynamic";
 import type { Metadata } from "next";
-import { getTranslations, getLocale } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import { loadJsonFile } from "@/lib/data-loader";
 import type {
   ProjectData,
@@ -41,8 +41,13 @@ const ParticipationCard = dynamic(() =>
   import("@/components").then((mod) => ({ default: mod.ParticipationCard }))
 );
 
-export async function generateMetadata(): Promise<Metadata> {
-  const locale = await getLocale();
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  setRequestLocale(locale);
   const t = await getTranslations("project.metadata");
   const title = `${t("title")} - ${t("subtitle")}`;
   const description = t("description");
@@ -91,8 +96,13 @@ async function getProjectData(locale: string): Promise<ProjectData | null> {
   );
 }
 
-export default async function ProjectPage() {
-  const locale = await getLocale();
+export default async function ProjectPage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  setRequestLocale(locale);
   const t = await getTranslations("project");
   const data = await getProjectData(locale);
 

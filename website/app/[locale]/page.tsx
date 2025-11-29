@@ -16,7 +16,7 @@ import { HomeCharacters } from "./HomeCharacters";
 import { HomeHero } from "./HomeHero";
 import { StorySection } from "./StorySection";
 import { AnimatedSection } from "@/components/ui";
-import { getLocale, getTranslations } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import type { Metadata } from "next";
 import { loadJsonFiles } from "@/lib/data-loader";
 import { SITE_CONFIG, DEFAULT_IMAGES } from "@/lib/constants";
@@ -24,8 +24,13 @@ import { SITE_CONFIG, DEFAULT_IMAGES } from "@/lib/constants";
 // 启用 ISR - 1小时重新验证一次
 export const revalidate = 3600;
 
-export async function generateMetadata(): Promise<Metadata> {
-  const locale = await getLocale();
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  setRequestLocale(locale);
   const t = await getTranslations("home.metadata");
   const title = `${t("title")} - ${t("subtitle")}`;
   const description = t("description");
@@ -79,8 +84,13 @@ async function getCharacters(locale: string): Promise<CharacterCardData[]> {
   return characters;
 }
 
-export default async function Home() {
-  const locale = await getLocale();
+export default async function Home({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  setRequestLocale(locale);
   const characters = await getCharacters(locale);
   const t = await getTranslations("home");
 
