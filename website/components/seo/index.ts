@@ -11,9 +11,5 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-export { LoadingSpinner } from "./LoadingSpinner";
-export { LoadingOverlay } from "./LoadingOverlay";
-export { LoadingContainer } from "./LoadingContainer";
-export { LoadingWrapper } from "./LoadingWrapper";
-export { CharacterSkeleton } from "./CharacterSkeleton";
-export { GraphSkeleton } from "./GraphSkeleton";
+export { PersonJsonLd } from "./PersonJsonLd";
+export { WebsiteJsonLd } from "./WebsiteJsonLd";

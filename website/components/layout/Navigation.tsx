@@ -23,6 +23,7 @@ import {
   Icon,
   LanguageSwitcher,
 } from "@/components/ui";
+import { useSearch } from "@/components/search";
 import { useTranslations } from "next-intl";
 import { DEFAULT_IMAGES } from "@/lib/constants";
 
@@ -39,6 +40,8 @@ export const Navigation = memo(function Navigation() {
   const pathname = usePathname();
   const tNavigation = useTranslations("common.navigation");
   const tHeader = useTranslations("common.header");
+  const tSearch = useTranslations("search");
+  const { openSearch } = useSearch();
 
   const closeMobileMenu = useCallback(() => {
     setIsMobileMenuOpen(false);
@@ -121,6 +124,28 @@ export const Navigation = memo(function Navigation() {
 
             {/* 右侧按钮组 */}
             <div className="flex items-center gap-3">
+              {/* 搜索按钮 */}
+              <button
+                onClick={openSearch}
+                className="hidden sm:flex items-center gap-2 px-3 py-1.5 rounded-lg bg-muted hover:bg-border transition-colors text-sm text-muted-foreground"
+                aria-label={tSearch("button")}
+              >
+                <Icon name="Search" size={16} />
+                <span className="hidden lg:inline">{tSearch("button")}</span>
+                <kbd className="hidden lg:inline-flex px-1.5 py-0.5 text-xs bg-background rounded border border-border">
+                  {tSearch("shortcut")}
+                </kbd>
+              </button>
+
+              {/* 移动端搜索按钮 */}
+              <button
+                onClick={openSearch}
+                className="sm:hidden w-10 h-10 rounded-lg bg-muted hover:bg-border transition-colors flex items-center justify-center"
+                aria-label={tSearch("button")}
+              >
+                <Icon name="Search" size={20} />
+              </button>
+
               {/* 语言切换器 */}
               <LanguageSwitcher />
 

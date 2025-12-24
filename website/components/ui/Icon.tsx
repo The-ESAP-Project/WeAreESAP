@@ -45,6 +45,7 @@ import {
   LuDroplet,
   LuMenu,
   LuX,
+  LuSearch,
 } from "react-icons/lu";
 
 import {
@@ -104,7 +105,9 @@ export type IconName =
   | "Droplet"
   // 导航图标
   | "Menu"
-  | "X";
+  | "X"
+  // 搜索图标
+  | "Search";
 
 // 图标映射表
 const iconMap: Record<IconName, ComponentType<{ className?: string }>> = {
@@ -155,6 +158,9 @@ const iconMap: Record<IconName, ComponentType<{ className?: string }>> = {
   // 导航图标 (Lucide)
   Menu: LuMenu,
   X: LuX,
+
+  // 搜索图标 (Lucide)
+  Search: LuSearch,
 };
 
 export interface IconProps {

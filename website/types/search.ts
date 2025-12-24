@@ -11,9 +11,27 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-export { LoadingSpinner } from "./LoadingSpinner";
-export { LoadingOverlay } from "./LoadingOverlay";
-export { LoadingContainer } from "./LoadingContainer";
-export { LoadingWrapper } from "./LoadingWrapper";
-export { CharacterSkeleton } from "./CharacterSkeleton";
-export { GraphSkeleton } from "./GraphSkeleton";
+/**
+ * 搜索相关类型定义
+ */
+
+export type SearchResultType = "character" | "tech" | "timeline";
+
+export interface SearchItem {
+  /** 唯一标识 */
+  id: string;
+  /** 结果类型 */
+  type: SearchResultType;
+  /** 标题 (角色名/技术名/事件标题) */
+  title: string;
+  /** 副标题 (角色代号/描述/日期) */
+  subtitle?: string;
+  /** 搜索内容 */
+  description: string;
+  /** 跳转链接 */
+  url: string;
+  /** 关键词 */
+  keywords?: string[];
+  /** 主题色 */
+  color?: string;
+}

@@ -69,6 +69,7 @@
       "visualizationPlaceholder": "関係図の可視化機能は開発中...",
       "graphTitle": "関係図",
       "graphHint": "ノードをクリックして詳細を表示、スクロールでズーム",
+      "mobileHint": "ピンチでズーム、ドラッグで移動",
       "loading": "読み込み中...",
       "noData": "関係データがありません"
     },

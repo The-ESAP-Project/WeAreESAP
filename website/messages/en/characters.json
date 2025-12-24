@@ -69,6 +69,7 @@
       "visualizationPlaceholder": "Relationship visualization feature in development...",
       "graphTitle": "Relationship Graph",
       "graphHint": "Click nodes to view details, scroll to zoom",
+      "mobileHint": "Pinch to zoom, drag to pan",
       "loading": "Loading...",
       "noData": "No relationship data available"
     },

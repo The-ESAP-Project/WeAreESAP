@@ -1,0 +1,12 @@
+{
+  "placeholder": "キャラクター、技術、タイムラインを検索...",
+  "noResults": "結果が見つかりません",
+  "hint": "検索を開始するには入力してください",
+  "button": "検索",
+  "shortcut": "⌘K",
+  "types": {
+    "character": "キャラクター",
+    "tech": "技術",
+    "timeline": "タイムライン"
+  }
+}

@@ -11,6 +11,23 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+const fs = require("fs");
+const path = require("path");
+
+// 动态获取所有角色 ID
+function getCharacterIds() {
+  const charactersDir = path.join(process.cwd(), "data", "characters", "zh-CN");
+  try {
+    const files = fs.readdirSync(charactersDir);
+    return files
+      .filter((file) => file.endsWith(".json"))
+      .map((file) => file.replace(".json", ""));
+  } catch (error) {
+    console.error("Failed to read characters directory:", error);
+    return [];
+  }
+}
+
 // 国际化配置 - 需要与 i18n/routing.ts 保持一致
 const I18N_CONFIG = {
   locales: ["zh-CN", "en", "ja"],
@@ -76,6 +93,29 @@ module.exports = {
           loc: localePath,
           changefreq: route.changefreq,
           priority: route.priority,
+          lastmod: new Date().toISOString(),
+          alternateRefs,
+        });
+      }
+    }
+
+    // 生成角色详情页路由
+    const characterIds = getCharacterIds();
+    for (const characterId of characterIds) {
+      for (const locale of locales) {
+        const localePrefix = locale === defaultLocale ? "" : `/${locale}`;
+        const characterPath = `/characters/${characterId}`;
+        const localePath = `${localePrefix}${characterPath}`;
+
+        const alternateRefs = locales.map((l) => ({
+          href: `${config.siteUrl}${l === defaultLocale ? "" : `/${l}`}${characterPath}`,
+          hreflang: l,
+        }));
+
+        paths.push({
+          loc: localePath,
+          changefreq: "weekly",
+          priority: 0.8,
           lastmod: new Date().toISOString(),
           alternateRefs,
         });

@@ -1,0 +1,12 @@
+{
+  "placeholder": "Search characters, tech, timeline...",
+  "noResults": "No results found",
+  "hint": "Type to start searching",
+  "button": "Search",
+  "shortcut": "⌘K",
+  "types": {
+    "character": "Character",
+    "tech": "Tech",
+    "timeline": "Timeline"
+  }
+}

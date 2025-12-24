@@ -69,6 +69,7 @@
       "visualizationPlaceholder": "关系图谱可视化功能开发中...",
       "graphTitle": "关系图谱",
       "graphHint": "点击节点查看详情，滚动缩放",
+      "mobileHint": "双指缩放，单指拖动",
       "loading": "加载中...",
       "noData": "暂无关系数据"
     },

@@ -213,14 +213,26 @@ const RelationshipGraph = memo(function RelationshipGraph({
         nodesDraggable={true}
         nodesConnectable={false}
         elementsSelectable={true}
+        // 移动端触摸优化
+        panOnScroll={false}
+        panOnDrag={true}
+        zoomOnScroll={true}
+        zoomOnPinch={true}
+        zoomOnDoubleClick={true}
+        preventScrolling={true}
       >
         <Background className="bg-background/50" />
         <Controls className="!bg-background/80 !border-border !shadow-lg" />
       </ReactFlow>
 
-      {/* 提示文字 */}
-      <div className="absolute bottom-4 left-4 text-xs text-muted-foreground bg-background/80 backdrop-blur-sm px-3 py-1.5 rounded-lg border border-border">
+      {/* 桌面端提示 */}
+      <div className="absolute bottom-4 left-4 text-xs text-muted-foreground bg-background/80 backdrop-blur-sm px-3 py-1.5 rounded-lg border border-border hidden sm:block">
         {t("detail.relationships.graphHint")}
+      </div>
+
+      {/* 移动端提示 */}
+      <div className="absolute bottom-4 left-4 right-4 text-xs text-muted-foreground bg-background/80 backdrop-blur-sm px-3 py-1.5 rounded-lg border border-border text-center sm:hidden">
+        {t("detail.relationships.mobileHint")}
       </div>
     </div>
   );

@@ -29,6 +29,8 @@ import { locales } from "@/i18n/request";
 import { getCharacterRelationships } from "@/lib/relationship-parser";
 import { loadJsonFile } from "@/lib/data-loader";
 import { DEFAULT_IMAGES, SITE_CONFIG } from "@/lib/constants";
+import { PersonJsonLd } from "@/components/seo";
+import { CharacterSkeleton, GraphSkeleton } from "@/components/loading";
 
 // 懒加载非首屏组件（直接导入具体文件，避免 barrel export 影响 tree-shaking）
 const CharacterStory = dynamic(
@@ -36,7 +38,7 @@ const CharacterStory = dynamic(
     import("@/components/character/detail/CharacterStory").then((mod) => ({
       default: mod.CharacterStory,
     })),
-  { loading: () => <div className="h-64 animate-pulse bg-muted rounded-xl" /> }
+  { loading: () => <CharacterSkeleton /> }
 );
 
 const CharacterSpeechStyle = dynamic(
@@ -44,7 +46,7 @@ const CharacterSpeechStyle = dynamic(
     import("@/components/character/detail/CharacterSpeechStyle").then(
       (mod) => ({ default: mod.CharacterSpeechStyle })
     ),
-  { loading: () => <div className="h-64 animate-pulse bg-muted rounded-xl" /> }
+  { loading: () => <CharacterSkeleton /> }
 );
 
 const CharacterAbilities = dynamic(
@@ -52,7 +54,7 @@ const CharacterAbilities = dynamic(
     import("@/components/character/detail/CharacterAbilities").then((mod) => ({
       default: mod.CharacterAbilities,
     })),
-  { loading: () => <div className="h-64 animate-pulse bg-muted rounded-xl" /> }
+  { loading: () => <CharacterSkeleton /> }
 );
 
 const CharacterDailyLife = dynamic(
@@ -60,7 +62,7 @@ const CharacterDailyLife = dynamic(
     import("@/components/character/detail/CharacterDailyLife").then((mod) => ({
       default: mod.CharacterDailyLife,
     })),
-  { loading: () => <div className="h-64 animate-pulse bg-muted rounded-xl" /> }
+  { loading: () => <CharacterSkeleton /> }
 );
 
 const CharacterSpecialMoments = dynamic(
@@ -68,7 +70,7 @@ const CharacterSpecialMoments = dynamic(
     import("@/components/character/detail/CharacterSpecialMoments").then(
       (mod) => ({ default: mod.CharacterSpecialMoments })
     ),
-  { loading: () => <div className="h-64 animate-pulse bg-muted rounded-xl" /> }
+  { loading: () => <CharacterSkeleton /> }
 );
 
 const CharacterPhilosophy = dynamic(
@@ -76,7 +78,7 @@ const CharacterPhilosophy = dynamic(
     import("@/components/character/detail/CharacterPhilosophy").then((mod) => ({
       default: mod.CharacterPhilosophy,
     })),
-  { loading: () => <div className="h-64 animate-pulse bg-muted rounded-xl" /> }
+  { loading: () => <CharacterSkeleton /> }
 );
 
 const CharacterRelationships = dynamic(
@@ -84,7 +86,7 @@ const CharacterRelationships = dynamic(
     import("@/components/character/detail/CharacterRelationships").then(
       (mod) => ({ default: mod.CharacterRelationships })
     ),
-  { loading: () => <div className="h-64 animate-pulse bg-muted rounded-xl" /> }
+  { loading: () => <GraphSkeleton /> }
 );
 
 // 生成静态参数
@@ -258,6 +260,7 @@ export default async function CharacterDetailPage({
       characterColor={character.color.primary}
       characterName={character.name}
     >
+      <PersonJsonLd character={character} locale={locale} />
       <main className="min-h-screen">
         {/* Hero 区域 */}
         <CharacterHero character={character} />

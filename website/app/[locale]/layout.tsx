@@ -33,6 +33,9 @@ import {
 } from "next-intl/server";
 import { locales } from "@/i18n/request";
 import { SITE_CONFIG, DEFAULT_IMAGES } from "@/lib/constants";
+import { WebsiteJsonLd } from "@/components/seo";
+import { SearchProvider, SearchCommand } from "@/components/search";
+import { buildSearchIndex } from "@/lib/search-index";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -106,21 +109,26 @@ export default async function RootLayout({
   const { locale } = await params;
   setRequestLocale(locale);
   const messages = await getMessages();
+  const searchIndex = await buildSearchIndex(locale);
 
   return (
     <html lang={locale} suppressHydrationWarning data-scroll-behavior="smooth">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <WebsiteJsonLd locale={locale} />
         <NextIntlClientProvider messages={messages}>
           <ThemeProvider>
             <TransitionProvider>
-              <PanguProvider />
-              <Navigation />
-              <PageTransition>{children}</PageTransition>
-              <Footer />
-              <ScrollToTop />
-              <TransitionOverlay />
+              <SearchProvider searchIndex={searchIndex}>
+                <PanguProvider />
+                <Navigation />
+                <SearchCommand />
+                <PageTransition>{children}</PageTransition>
+                <Footer />
+                <ScrollToTop />
+                <TransitionOverlay />
+              </SearchProvider>
             </TransitionProvider>
           </ThemeProvider>
         </NextIntlClientProvider>

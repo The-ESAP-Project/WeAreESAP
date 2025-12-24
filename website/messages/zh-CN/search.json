@@ -1,0 +1,12 @@
+{
+  "placeholder": "搜索角色、技术、时间线...",
+  "noResults": "没有找到相关结果",
+  "hint": "输入关键词开始搜索",
+  "button": "搜索",
+  "shortcut": "⌘K",
+  "types": {
+    "character": "角色",
+    "tech": "技术",
+    "timeline": "时间线"
+  }
+}
