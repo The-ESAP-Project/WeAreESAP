@@ -16,7 +16,7 @@
 import { useState, useCallback, memo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
-import { usePathname } from "@/i18n/navigation";
+import { usePathname, useRouter } from "@/i18n/navigation";
 import {
   ThemeToggle,
   TransitionLink,
@@ -24,8 +24,16 @@ import {
   LanguageSwitcher,
 } from "@/components/ui";
 import { useSearch } from "@/components/search";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
+import { useTheme } from "next-themes";
+import { locales } from "@/i18n/request";
 import { DEFAULT_IMAGES } from "@/lib/constants";
+
+const localeNames: Record<string, string> = {
+  "zh-CN": "中",
+  en: "EN",
+  ja: "日",
+};
 
 const navLinks = [
   { href: "/project", key: "project" },
@@ -38,8 +46,12 @@ const navLinks = [
 export const Navigation = memo(function Navigation() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const pathname = usePathname();
+  const router = useRouter();
+  const locale = useLocale();
+  const { resolvedTheme, setTheme } = useTheme();
   const tNavigation = useTranslations("common.navigation");
   const tHeader = useTranslations("common.header");
+  const tMobileMenu = useTranslations("common.mobileMenu");
   const tSearch = useTranslations("search");
   const { openSearch } = useSearch();
 
@@ -127,7 +139,7 @@ export const Navigation = memo(function Navigation() {
               {/* 搜索按钮 */}
               <button
                 onClick={openSearch}
-                className="hidden sm:flex items-center gap-2 px-3 py-1.5 rounded-lg bg-muted hover:bg-border transition-colors text-sm text-muted-foreground"
+                className="hidden md:flex items-center gap-2 px-3 py-1.5 rounded-lg bg-muted hover:bg-border transition-colors text-sm text-muted-foreground"
                 aria-label={tSearch("button")}
               >
                 <Icon name="Search" size={16} />
@@ -140,17 +152,21 @@ export const Navigation = memo(function Navigation() {
               {/* 移动端搜索按钮 */}
               <button
                 onClick={openSearch}
-                className="sm:hidden w-10 h-10 rounded-lg bg-muted hover:bg-border transition-colors flex items-center justify-center"
+                className="md:hidden w-10 h-10 rounded-lg bg-muted hover:bg-border transition-colors flex items-center justify-center"
                 aria-label={tSearch("button")}
               >
                 <Icon name="Search" size={20} />
               </button>
 
-              {/* 语言切换器 */}
-              <LanguageSwitcher />
+              {/* 语言切换器 - 桌面端 */}
+              <div className="hidden md:block">
+                <LanguageSwitcher />
+              </div>
 
-              {/* 主题切换按钮 */}
-              <ThemeToggle />
+              {/* 主题切换按钮 - 桌面端 */}
+              <div className="hidden md:block">
+                <ThemeToggle />
+              </div>
 
               {/* 移动端汉堡菜单按钮 */}
               <button
@@ -226,6 +242,64 @@ export const Navigation = memo(function Navigation() {
                     </TransitionLink>
                   );
                 })}
+
+                {/* 功能区 */}
+                <div className="pt-4 mt-2 space-y-4">
+                  {/* 主题切换 */}
+                  <div className="flex items-center justify-between">
+                    <span className="text-sm text-muted-foreground">
+                      {tMobileMenu("theme")}
+                    </span>
+                    <button
+                      type="button"
+                      onClick={() =>
+                        setTheme(resolvedTheme === "dark" ? "light" : "dark")
+                      }
+                      className="w-10 h-10 rounded-lg bg-muted hover:bg-border transition-colors flex items-center justify-center"
+                      aria-label="切换主题"
+                    >
+                      {resolvedTheme === "dark" ? (
+                        <Icon
+                          name="Sun"
+                          size={18}
+                          className="text-esap-yellow"
+                        />
+                      ) : (
+                        <Icon
+                          name="Moon"
+                          size={18}
+                          className="text-esap-blue"
+                        />
+                      )}
+                    </button>
+                  </div>
+
+                  {/* 语言切换 */}
+                  <div className="flex items-center justify-between">
+                    <span className="text-sm text-muted-foreground">
+                      {tMobileMenu("language")}
+                    </span>
+                    <div className="flex gap-1">
+                      {locales.map((loc) => (
+                        <button
+                          key={loc}
+                          type="button"
+                          onClick={() => {
+                            router.push(pathname, { locale: loc });
+                            closeMobileMenu();
+                          }}
+                          className={`px-2.5 py-1.5 text-sm rounded-md transition-colors ${
+                            locale === loc
+                              ? "bg-esap-blue text-white dark:bg-esap-blue/30 font-medium"
+                              : "bg-muted text-muted-foreground hover:bg-border"
+                          }`}
+                        >
+                          {localeNames[loc]}
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+                </div>
               </div>
 
               {/* 底部装饰 */}

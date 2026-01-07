@@ -25,6 +25,10 @@
     "siteName": "We Are ESAP",
     "tagline": "Wish Upon a Satellite"
   },
+  "mobileMenu": {
+    "theme": "Theme",
+    "language": "Language"
+  },
   "footer": {
     "quote": "There were no stars in the sky, so we made one",
     "projectName": "The ESAP Project",

@@ -49,12 +49,12 @@
     "sitemap:generate": "next-sitemap --config ./scripts/next-sitemap.config.js"
   },
   "dependencies": {
-    "@tanstack/react-virtual": "^3.13.13",
+    "@tanstack/react-virtual": "^3.13.17",
     "elkjs": "^0.11.0",
-    "framer-motion": "^12.23.26",
+    "framer-motion": "12.24.8",
     "fuse.js": "^7.1.0",
     "next": "16.1.1",
-    "next-intl": "^4.6.1",
+    "next-intl": "^4.7.0",
     "next-themes": "^0.4.6",
     "pangu": "^7.2.0",
     "react": "19.2.3",
@@ -79,7 +79,7 @@
     "eslint": "^9",
     "eslint-config-next": "16.1.1",
     "eslint-config-prettier": "^10.1.8",
-    "jsdom": "^27.3.0",
+    "jsdom": "^27.4.0",
     "next-sitemap": "^4.2.3",
     "plaiceholder": "^3.0.0",
     "prettier": "^3.7.4",
@@ -88,5 +88,5 @@
     "typescript": "^5",
     "vitest": "^4.0.16"
   },
-  "packageManager": "pnpm@10.26.2"
+  "packageManager": "pnpm@10.27.0"
 }

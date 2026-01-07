@@ -6,6 +6,11 @@ const withNextIntl = createNextIntlPlugin();
 const nextConfig: NextConfig = {
   output: "standalone",
 
+  // 指定 Turbopack 根目录，避免检测到主目录的 package-lock.json
+  turbopack: {
+    root: __dirname,
+  },
+
   // 图片优化配置
   images: {
     formats: ["image/avif", "image/webp"],

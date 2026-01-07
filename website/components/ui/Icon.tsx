@@ -46,6 +46,8 @@ import {
   LuMenu,
   LuX,
   LuSearch,
+  LuSun,
+  LuMoon,
 } from "react-icons/lu";
 
 import {
@@ -107,7 +109,10 @@ export type IconName =
   | "Menu"
   | "X"
   // 搜索图标
-  | "Search";
+  | "Search"
+  // 主题图标
+  | "Sun"
+  | "Moon";
 
 // 图标映射表
 const iconMap: Record<IconName, ComponentType<{ className?: string }>> = {
@@ -161,6 +166,10 @@ const iconMap: Record<IconName, ComponentType<{ className?: string }>> = {
 
   // 搜索图标 (Lucide)
   Search: LuSearch,
+
+  // 主题图标 (Lucide)
+  Sun: LuSun,
+  Moon: LuMoon,
 };
 
 export interface IconProps {

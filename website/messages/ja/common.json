@@ -25,6 +25,10 @@
     "siteName": "We Are ESAP",
     "tagline": "Wish Upon a Satellite"
   },
+  "mobileMenu": {
+    "theme": "テーマ",
+    "language": "言語"
+  },
   "footer": {
     "quote": "空に星がなかったから、私たちは一つ作った",
     "projectName": "The ESAP Project",

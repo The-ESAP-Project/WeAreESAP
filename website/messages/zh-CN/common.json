@@ -26,6 +26,10 @@
     "siteName": "We Are ESAP",
     "tagline": "向那卫星许愿"
   },
+  "mobileMenu": {
+    "theme": "主题",
+    "language": "语言"
+  },
   "footer": {
     "quote": "天上没有星星，但我们造了一颗",
     "projectName": "The ESAP Project",
