@@ -1,0 +1,33 @@
+{
+  "id": "1645",
+  "name": "Miao Feng",
+  "code": "AptS:1645",
+  "nickname": "1645",
+  "color": {
+    "primary": "#FFC0CB",
+    "dark": "#FF69B4"
+  },
+  "role": "Wanderer",
+  "species": "Human",
+  "quote": "Code is life. It won't betray me.",
+  "description": "A wanderer seeking belonging in the world of code, believing machines are more trustworthy than humans.",
+  "keywords": ["Programming", "Loner", "Meow"],
+  "tier": "guest",
+  "backgroundImage": "/images/characters/img_1645.webp",
+  "meta": {
+    "background": "Once went through a difficult period in life, losing himself for a while. Met 1547 online in 2024, and with their companionship and his own efforts, gradually found his way back. Was invited to join ESAP. Now slowly finding his own light.",
+    "relationship": "Only connected with 1547, has no contact with other ESAP members. 1547 is his friend, and they accompany each other.",
+    "characterTraits": [
+      "Introverted and sensitive, but can open up online",
+      "Has a passionate love for computers and code, believes machines are more reliable than people",
+      "Guarded around people, but very dependent once trust is established",
+      "Likes to call himself 'meow', somewhat cute-style",
+      "Working hard to improve, has an upward spirit"
+    ],
+    "dailyLife": [
+      "Works during the day, codes and studies at night",
+      "Chats with 1547 online",
+      "Occasionally stays up late"
+    ]
+  }
+}
