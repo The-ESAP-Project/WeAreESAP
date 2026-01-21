@@ -12,6 +12,7 @@ This product includes software developed by:
 - AptS:1691 (Frozensky-palace)
 - AptS:2077 (AptS-2077)
 - AptS:5473 (YewFence)
+- AptS:1645
 
 ================================================================================
 
@@ -19,17 +20,26 @@ The ESAP Project - 向那卫星许愿
 一个科幻世界观创作企划，讲述仿生人与人类共存的未来故事
 
 Website: https://weare.esaps.net
-GitHub: https://github.com/AptS-1547/WeAreESAP
+GitHub: https://github.com/The-ESAP-Project/WeAreESAP
 
 ================================================================================
 
 Third-party software used in this project:
 
 Next.js (MIT License)
-  Copyright (c) 2024 Vercel, Inc.
+  Copyright (c) 2025 Vercel, Inc.
   https://github.com/vercel/next.js
 
+@next/bundle-analyzer (MIT License)
+  Copyright (c) 2025 Vercel, Inc.
+  https://github.com/vercel/next.js
+  Bundle analyzer plugin for Next.js
+
 React (MIT License)
+  Copyright (c) Meta Platforms, Inc. and affiliates.
+  https://github.com/facebook/react
+
+React DOM (MIT License)
   Copyright (c) Meta Platforms, Inc. and affiliates.
   https://github.com/facebook/react
 
@@ -37,9 +47,19 @@ Framer Motion (MIT License)
   Copyright (c) 2018 Framer B.V.
   https://github.com/framer/motion
 
+Fuse.js (Apache License 2.0)
+  Copyright (c) 2025 Kiro Risk
+  https://github.com/krisk/Fuse
+  Lightweight fuzzy-search library
+
 Tailwind CSS (MIT License)
   Copyright (c) Tailwind Labs, Inc.
   https://github.com/tailwindlabs/tailwindcss
+
+@tailwindcss/postcss (MIT License)
+  Copyright (c) Tailwind Labs, Inc.
+  https://github.com/tailwindlabs/tailwindcss
+  Official PostCSS plugin for Tailwind CSS
 
 next-intl (MIT License)
   Copyright (c) 2024 Jan Amann
@@ -90,9 +110,24 @@ ReactFlow (MIT License)
   Virtual scrolling library for React
 
 Vitest (MIT License)
-  Copyright (c) 2021-2024 Anthony Fu and contributors
+  Copyright (c) 2021-Present VoidZero Inc. and Vitest contributors
   https://github.com/vitest-dev/vitest
   A blazing fast unit test framework powered by Vite
+
+@vitest/ui (MIT License)
+  Copyright (c) 2021-Present VoidZero Inc. and Vitest contributors
+  https://github.com/vitest-dev/vitest
+  UI for Vitest
+
+@vitest/coverage-v8 (MIT License)
+  Copyright (c) 2021-Present VoidZero Inc. and Vitest contributors
+  https://github.com/vitest-dev/vitest
+  V8 coverage provider for Vitest
+
+@vitejs/plugin-react (MIT License)
+  Copyright (c) 2019-present, Yuxi (Evan) You and Vite contributors
+  https://github.com/vitejs/vite-plugin-react
+  Official Vite plugin for React
 
 Playwright (Apache License 2.0)
   Copyright (c) Microsoft Corporation
@@ -114,6 +149,21 @@ TypeScript (Apache License 2.0)
   https://github.com/microsoft/TypeScript
   TypeScript is a superset of JavaScript that compiles to clean JavaScript output
 
+@types/node (MIT License)
+  Copyright (c) Microsoft Corporation.
+  https://github.com/DefinitelyTyped/DefinitelyTyped
+  Type definitions for Node.js
+
+@types/react (MIT License)
+  Copyright (c) Microsoft Corporation.
+  https://github.com/DefinitelyTyped/DefinitelyTyped
+  Type definitions for React
+
+@types/react-dom (MIT License)
+  Copyright (c) Microsoft Corporation.
+  https://github.com/DefinitelyTyped/DefinitelyTyped
+  Type definitions for React DOM
+
 Sharp (Apache License 2.0)
   Copyright (c) 2013-2024 Lovell Fuller and contributors
   https://github.com/lovell/sharp
@@ -124,10 +174,25 @@ ESLint (MIT License)
   https://github.com/eslint/eslint
   A fully pluggable tool for identifying and reporting on patterns in JavaScript
 
+eslint-config-next (MIT License)
+  Copyright (c) 2025 Vercel, Inc.
+  https://github.com/vercel/next.js
+  Official ESLint rules preset for Next.js
+
+eslint-config-prettier (MIT License)
+  Copyright (c) 2017-2023 Simon Lydell and contributors
+  https://github.com/prettier/eslint-config-prettier
+  Turns off ESLint rules that conflict with Prettier
+
 Prettier (MIT License)
   Copyright (c) 2017-2024 James Long and contributors
   https://github.com/prettier/prettier
   An opinionated code formatter
+
+baseline-browser-mapping (Apache License 2.0)
+  By the W3C WebDX Community Group and contributors.
+  https://github.com/web-platform-dx/baseline-browser-mapping
+  Browser version mapping for Baseline feature sets
 
 next-sitemap (MIT License)
   Copyright (c) 2020-2024 Vishnu Prasad
