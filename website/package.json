@@ -50,11 +50,11 @@
     "sitemap:generate": "next-sitemap --config ./scripts/next-sitemap.config.js"
   },
   "dependencies": {
-    "@tanstack/react-virtual": "^3.13.17",
+    "@tanstack/react-virtual": "^3.13.18",
     "elkjs": "^0.11.0",
-    "framer-motion": "12.24.8",
+    "framer-motion": "12.29.0",
     "fuse.js": "^7.1.0",
-    "next": "16.1.1",
+    "next": "16.1.4",
     "next-intl": "^4.7.0",
     "next-themes": "^0.4.6",
     "pangu": "^7.2.0",
@@ -65,29 +65,28 @@
     "styled-jsx": "^5.1.7"
   },
   "devDependencies": {
-    "@next/bundle-analyzer": "^16.1.1",
-    "@playwright/test": "^1.57.0",
+    "@next/bundle-analyzer": "^16.1.4",
+    "@playwright/test": "^1.58.0",
     "@tailwindcss/postcss": "^4",
     "@testing-library/jest-dom": "^6.9.1",
-    "@testing-library/react": "^16.3.1",
+    "@testing-library/react": "^16.3.2",
     "@types/node": "^25",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "@vitejs/plugin-react": "^5.1.2",
-    "@vitest/coverage-v8": "^4.0.16",
-    "@vitest/ui": "^4.0.16",
-    "baseline-browser-mapping": "^2.9.11",
+    "@vitest/coverage-v8": "^4.0.18",
+    "@vitest/ui": "^4.0.18",
+    "baseline-browser-mapping": "^2.9.18",
     "eslint": "^9",
-    "eslint-config-next": "16.1.1",
+    "eslint-config-next": "16.1.4",
     "eslint-config-prettier": "^10.1.8",
     "jsdom": "^27.4.0",
     "next-sitemap": "^4.2.3",
     "plaiceholder": "^3.0.0",
-    "prettier": "^3.7.4",
+    "prettier": "^3.8.1",
     "sharp": "^0.34.5",
     "tailwindcss": "^4",
     "typescript": "^5",
-    "vitest": "^4.0.16"
-  },
-  "packageManager": "pnpm@10.27.0"
+    "vitest": "^4.0.18"
+  }
 }
