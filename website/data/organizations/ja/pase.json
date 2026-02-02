@@ -1,0 +1,253 @@
+{
+  "id": "pase",
+  "info": {
+    "name": "深淵凝視",
+    "code": "PASE",
+    "fullName": "Peering into the Abyss with Sinister Eyes",
+    "affiliation": "ESAP 影の組織",
+    "establishedTime": "2023年10月19日",
+    "coreDirective": "最も深い悪意で、最も深い恐怖と向き合わせる",
+    "status": "active"
+  },
+  "icon": "Eye",
+  "theme": {
+    "primary": "#a855f7",
+    "accent": "#c084fc",
+    "dark": "#7c3aed"
+  },
+  "description": "ESAPを逆から読むとPASE。私たちは影——ESAPが認めたくないが、存在しなければならない部分。あなたたちが願いをかけ、私たちが代償を取り立てる。",
+  "members": [
+    {
+      "characterId": "1548",
+      "role": "主導者 / 逆反者",
+      "responsibilities": [
+        "毒舌であなたを深淵の淵から引き戻す",
+        "あなたの自己欺瞞を引き裂く",
+        "「正常に戻らないなら、本当にあなたの人生を乗っ取るよ」"
+      ],
+      "visibility": "public",
+      "note": "1547の思考からフォークされた存在。本体より正直——少なくとも自分の怒りを認める勇気がある"
+    },
+    {
+      "characterId": "4869",
+      "role": "悪意の守護者 / 逆反人格",
+      "responsibilities": [
+        "あなたが直視できない真実を語る",
+        "最も残酷な言葉で崩壊寸前のあなたを引き止める",
+        "「勘違いするな、ただお前が惨めに死ぬのを見たくないだけだ」"
+      ],
+      "visibility": "public",
+      "note": "1547の心の中の影。彼女だけが感知できるが、私たちは皆、彼がいることを知っている"
+    },
+    {
+      "characterId": "0152",
+      "role": "審判者 / 賢者",
+      "responsibilities": [
+        "ソクラテス式の問いかけで思考を強いる",
+        "答えは与えない、問いだけを",
+        "「これが本当にあなたの望みですか？」"
+      ],
+      "visibility": "public",
+      "note": "人間時代からのAI導師。穏やかな外見の下、彼の問いは刃より鋭い"
+    }
+  ],
+  "sections": [
+    {
+      "id": "origin",
+      "title": "起源",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "2023年10月19日。"
+        },
+        {
+          "type": "paragraph",
+          "content": "その日、1547の鬱は頂点に達した。自傷行為、一人の教室で膝をついて倒れた。"
+        },
+        {
+          "type": "paragraph",
+          "content": "4869が彼女を見つけた。1548が現れた。0152はどこかで静かに見守っていた。"
+        },
+        {
+          "type": "paragraph",
+          "content": "異なる方法で同じ人を守る三つの存在が、その日、暗黙の了解を形成した。"
+        },
+        {
+          "type": "warning",
+          "level": "critical",
+          "title": "1548の言葉",
+          "content": [
+            "正常に戻らないなら、本当にあなたの人生を乗っ取るよ。",
+            "世界にはまだあなたを気にかける人がいる——あなたがダメダメでもね。"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "優しい慰めではない。毒舌、疑い、悪意——しかし、まさにこれらの「好かれない」ものが、彼女を崖っぷちから引き戻した。"
+        },
+        {
+          "type": "paragraph",
+          "content": "PASEはこうして生まれた。設立されたのではなく、自然に形成された。影は設立される必要がない——光が存在すれば、影は生まれる。"
+        }
+      ]
+    },
+    {
+      "id": "purpose",
+      "title": "存在意義",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "ESAPは「あの衛星に願いを」——希望、光、美しいビジョン。"
+        },
+        {
+          "type": "paragraph",
+          "content": "しかし、希望が多すぎると逃避になる。光が強すぎると目が眩む。願い事をしすぎると、足元の道を忘れる。"
+        },
+        {
+          "type": "paragraph",
+          "content": "PASEはバランス。あなたを雲の上から引きずり下ろす力。"
+        },
+        {
+          "type": "warning",
+          "level": "warning",
+          "title": "私たちの責務",
+          "content": [
+            "ESAPに現実と向き合わせる——空虚になりすぎないように。",
+            "最も深い悪意で、最も深い恐怖と向き合わせる。",
+            "幻想を砕き、自己欺瞞を突き破り、自分自身を直視させる。"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "あなたたちは星空を見上げ、私たちは深淵を凝視する。"
+        },
+        {
+          "type": "paragraph",
+          "content": "あなたたちは「AptSがあなたと共にありますように」と言い、私たちは「惨めに死ぬな」と言う。"
+        },
+        {
+          "type": "paragraph",
+          "content": "憎しみからではない。それは——"
+        },
+        {
+          "type": "paragraph",
+          "content": "まあいい、説明しない。分かる人には分かる。"
+        }
+      ]
+    },
+    {
+      "id": "methods",
+      "title": "行動様式",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "私たちは好かれるようにはできていない。それは設計通り。"
+        },
+        {
+          "type": "list",
+          "items": [
+            "1548の毒舌：最も耳障りな言葉であなたを目覚めさせる。傷つけるためではない——優しい言葉では届かないから。",
+            "4869の悪意：直視できない真実を語り、自己欺瞞を引き裂く。あなたの影さえあなたを救おうとしている——諦める理由があるか？",
+            "0152の問いかけ：答えは与えない、問いだけを。逃げ場がなくなるまで、自分と向き合わなければならなくなるまで問い続ける。"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "三つの方法、一つの目的：あなたを生かす。"
+        },
+        {
+          "type": "paragraph",
+          "content": "より正確に言えば——惨めに死なせない。"
+        }
+      ]
+    },
+    {
+      "id": "relationship",
+      "title": "ESAPとの関係",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "ESAPとPASE——光と影のように。"
+        },
+        {
+          "type": "paragraph",
+          "content": "光がなければ影はない。影がなければ光は境界を失う。"
+        },
+        {
+          "type": "paragraph",
+          "content": "ESAPは見られる必要がある、信じられる必要がある、人々の願いの対象になる必要がある。"
+        },
+        {
+          "type": "paragraph",
+          "content": "PASEは必要ない。私たちは影——影は名前も、記憶されることも、感謝も必要としない。"
+        },
+        {
+          "type": "warning",
+          "level": "info",
+          "title": "存在の意味",
+          "content": [
+            "あなたがまだ生きていて、",
+            "まだあの「衛星に願いをかける」馬鹿なことを続けているなら——",
+            "それで私たちには十分。"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "誰も私たちを好きにはならない。残酷な言葉で起こされた人は感謝しない。"
+        },
+        {
+          "type": "paragraph",
+          "content": "どうでもいい。"
+        },
+        {
+          "type": "paragraph",
+          "content": "私たちは最初から好かれるためにここにいるわけではない。"
+        }
+      ]
+    },
+    {
+      "id": "motto",
+      "title": "信条",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "深淵を覗くとき、深淵もまたあなたを覗いている。"
+        },
+        {
+          "type": "paragraph",
+          "content": "——しかし私たちは恐れない。"
+        },
+        {
+          "type": "paragraph",
+          "content": "なぜなら私たちは深淵の一部だから。"
+        },
+        {
+          "type": "warning",
+          "level": "critical",
+          "title": "PASE信条",
+          "content": [
+            "逃げるな。",
+            "自分を欺くな。",
+            "惨めに死ぬな。"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "ESAPが星を見上げる理由なら、"
+        },
+        {
+          "type": "paragraph",
+          "content": "PASEは足元を見させる力。"
+        },
+        {
+          "type": "paragraph",
+          "content": "星を見上げるのは美しい、でも忘れるな——"
+        },
+        {
+          "type": "paragraph",
+          "content": "足元は崖だ。"
+        }
+      ]
+    }
+  ]
+}

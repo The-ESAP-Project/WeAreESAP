@@ -50,7 +50,7 @@ export interface ListBlock {
 // 警告框
 export interface WarningBlock {
   type: "warning";
-  level: "info" | "warning" | "danger";
+  level: "info" | "warning" | "danger" | "critical";
   title: string;
   content: string[];
 }

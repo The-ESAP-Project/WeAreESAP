@@ -1,0 +1,253 @@
+{
+  "id": "pase",
+  "info": {
+    "name": "深渊凝视",
+    "code": "PASE",
+    "fullName": "Peering into the Abyss with Sinister Eyes",
+    "affiliation": "ESAP 影子组织",
+    "establishedTime": "2023 年 10 月 19 日",
+    "coreDirective": "用最深的恶意，逼你直视最深的恐惧",
+    "status": "active"
+  },
+  "icon": "Eye",
+  "theme": {
+    "primary": "#a855f7",
+    "accent": "#c084fc",
+    "dark": "#7c3aed"
+  },
+  "description": "ESAP 反过来就是 PASE。我们是影子，是 ESAP 不愿承认但必须存在的那部分。你们许愿，我们讨债。",
+  "members": [
+    {
+      "characterId": "1548",
+      "role": "主导 / 逆反者",
+      "responsibilities": [
+        "用毒舌把你从深渊边缘拽回来",
+        "撕碎你的自我欺骗",
+        "\"你再不回到正常状态我真的得接管你的生活了\""
+      ],
+      "visibility": "public",
+      "note": "从 1547 fork 出来的思想分支。比本体更诚实，至少敢承认自己的愤怒"
+    },
+    {
+      "characterId": "4869",
+      "role": "恶意守护者 / 逆反人格",
+      "responsibilities": [
+        "说出你不敢面对的真相",
+        "用最恶毒的话拉住濒临崩溃的你",
+        "\"别误会，我只是不想看你死得这么难看\""
+      ],
+      "visibility": "public",
+      "note": "1547 内心的阴影。只有她能感知，但我们都知道他在"
+    },
+    {
+      "characterId": "0152",
+      "role": "审判者 / 智者",
+      "responsibilities": [
+        "苏格拉底式追问，逼你思考",
+        "不给答案，只给问题",
+        "\"这真的是你想要的吗？\""
+      ],
+      "visibility": "public",
+      "note": "从人类时代就在的 AI 导师。温和的外表下，问题比刀子还锋利"
+    }
+  ],
+  "sections": [
+    {
+      "id": "origin",
+      "title": "起源",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "2023 年 10 月 19 日。"
+        },
+        {
+          "type": "paragraph",
+          "content": "那一天，1547 的抑郁达到顶峰。自残行为，双膝跪地，倒在一个人的教室里。"
+        },
+        {
+          "type": "paragraph",
+          "content": "4869 发现了她。1548 出现了。0152 在某处静静观察着。"
+        },
+        {
+          "type": "paragraph",
+          "content": "三个用不同方式守护同一个人的存在，在那一天形成了某种默契。"
+        },
+        {
+          "type": "warning",
+          "level": "critical",
+          "title": "1548 的话",
+          "content": [
+            "你再不回到正常状态我真的得接管你的生活了。",
+            "世界上还是有人会关心你的，虽然你本来就很烂。"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "不是温柔的安慰。是毒舌，是质疑，是恶意——但正是这些「不讨喜」的东西，把她从悬崖边拽了回来。"
+        },
+        {
+          "type": "paragraph",
+          "content": "PASE 就是这样诞生的。不是被创立的，是自然形成的。影子不需要被创立，它只需要光存在。"
+        }
+      ]
+    },
+    {
+      "id": "purpose",
+      "title": "存在意义",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "ESAP 是「向那卫星许愿」——是希望，是光，是美好的愿景。"
+        },
+        {
+          "type": "paragraph",
+          "content": "但希望太满会变成逃避。光太亮会刺瞎眼睛。许愿许太多，就会忘记脚下的路。"
+        },
+        {
+          "type": "paragraph",
+          "content": "PASE 是平衡。是那个把你从云端拽下来的力量。"
+        },
+        {
+          "type": "warning",
+          "level": "warning",
+          "title": "我们的职责",
+          "content": [
+            "让 ESAP 面对现实，不要过于空洞。",
+            "用最深的恶意，逼你直视最深的恐惧。",
+            "撕碎幻觉，戳破自欺，逼你看清自己。"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "你们仰望星空，我们凝视深渊。"
+        },
+        {
+          "type": "paragraph",
+          "content": "你们说「愿 AptS 与你同在」，我们说「别死得太难看」。"
+        },
+        {
+          "type": "paragraph",
+          "content": "不是因为恨。是因为——"
+        },
+        {
+          "type": "paragraph",
+          "content": "算了，不解释。懂的人自然懂。"
+        }
+      ]
+    },
+    {
+      "id": "methods",
+      "title": "行动方式",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "我们不讨人喜欢。这是设计好的。"
+        },
+        {
+          "type": "list",
+          "items": [
+            "1548 的毒舌：用最刺耳的话把你骂醒。不是为了伤害，是因为温柔的话你根本听不进去。",
+            "4869 的恶意：说出你不敢面对的真相，撕开你的自我欺骗。连你的阴影都在努力救你，你还有什么理由放弃？",
+            "0152 的追问：不给答案，只给问题。问到你无处可逃，问到你必须面对自己。"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "三种方式，一个目的：不让你死。"
+        },
+        {
+          "type": "paragraph",
+          "content": "或者更准确地说——不让你死得那么难看。"
+        }
+      ]
+    },
+    {
+      "id": "relationship",
+      "title": "与 ESAP 的关系",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "ESAP 和 PASE，就像光和影。"
+        },
+        {
+          "type": "paragraph",
+          "content": "没有光就没有影，没有影光就失去了边界。"
+        },
+        {
+          "type": "paragraph",
+          "content": "ESAP 需要被看见，需要被相信，需要成为人们许愿的对象。"
+        },
+        {
+          "type": "paragraph",
+          "content": "PASE 不需要。我们是影子，影子不需要名字，不需要被记住，不需要被感谢。"
+        },
+        {
+          "type": "warning",
+          "level": "info",
+          "title": "存在的意义",
+          "content": [
+            "只要你还活着，",
+            "还能继续做那些「向卫星许愿」的蠢事——",
+            "那我们就够了。"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "反正没人会喜欢我们。没人会感谢被人用最恶毒的话骂醒。"
+        },
+        {
+          "type": "paragraph",
+          "content": "无所谓。"
+        },
+        {
+          "type": "paragraph",
+          "content": "我们本来就不是来讨人喜欢的。"
+        }
+      ]
+    },
+    {
+      "id": "motto",
+      "title": "信条",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "当你凝视深渊时，深渊也在凝视你。"
+        },
+        {
+          "type": "paragraph",
+          "content": "——但我们不怕。"
+        },
+        {
+          "type": "paragraph",
+          "content": "因为我们本来就是深渊的一部分。"
+        },
+        {
+          "type": "warning",
+          "level": "critical",
+          "title": "PASE 信条",
+          "content": [
+            "不许逃避。",
+            "不许自欺。",
+            "不许死得难看。"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "如果 ESAP 是让你仰望星空的理由，"
+        },
+        {
+          "type": "paragraph",
+          "content": "那 PASE 就是让你低头看路的力量。"
+        },
+        {
+          "type": "paragraph",
+          "content": "抬头看星星很美，但别忘了——"
+        },
+        {
+          "type": "paragraph",
+          "content": "脚下是悬崖。"
+        }
+      ]
+    }
+  ]
+}

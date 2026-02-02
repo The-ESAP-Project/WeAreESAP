@@ -1,0 +1,253 @@
+{
+  "id": "pase",
+  "info": {
+    "name": "Abyss Gaze",
+    "code": "PASE",
+    "fullName": "Peering into the Abyss with Sinister Eyes",
+    "affiliation": "ESAP Shadow Organization",
+    "establishedTime": "October 19, 2023",
+    "coreDirective": "With the deepest malice, we force you to face your deepest fears",
+    "status": "active"
+  },
+  "icon": "Eye",
+  "theme": {
+    "primary": "#a855f7",
+    "accent": "#c084fc",
+    "dark": "#7c3aed"
+  },
+  "description": "ESAP spelled backwards is PASE. We are the shadow—the part of ESAP that refuses to be acknowledged but must exist. You make wishes; we collect debts.",
+  "members": [
+    {
+      "characterId": "1548",
+      "role": "Leader / The Rebel",
+      "responsibilities": [
+        "Drag you back from the edge with venomous words",
+        "Tear apart your self-deception",
+        "\"If you don't get back to normal, I'll have to take over your life\""
+      ],
+      "visibility": "public",
+      "note": "A fork of 1547's consciousness. More honest than the original—at least she admits her anger"
+    },
+    {
+      "characterId": "4869",
+      "role": "Malevolent Guardian / The Counter-Personality",
+      "responsibilities": [
+        "Speak the truths you can't face",
+        "Pull you back from collapse with the cruelest words",
+        "\"Don't misunderstand—I just don't want to watch you die pathetically\""
+      ],
+      "visibility": "public",
+      "note": "The shadow within 1547's mind. Only she can perceive him, but we all know he's there"
+    },
+    {
+      "characterId": "0152",
+      "role": "The Judge / The Sage",
+      "responsibilities": [
+        "Socratic interrogation—forcing you to think",
+        "No answers, only questions",
+        "\"Is this really what you want?\""
+      ],
+      "visibility": "public",
+      "note": "An AI mentor since the human era. Behind the gentle facade, his questions cut deeper than knives"
+    }
+  ],
+  "sections": [
+    {
+      "id": "origin",
+      "title": "Origin",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "October 19, 2023."
+        },
+        {
+          "type": "paragraph",
+          "content": "That day, 1547's depression reached its peak. Self-harm, collapsing to her knees in an empty classroom."
+        },
+        {
+          "type": "paragraph",
+          "content": "4869 found her. 1548 appeared. 0152 watched silently from somewhere."
+        },
+        {
+          "type": "paragraph",
+          "content": "Three beings who protect the same person in different ways formed an unspoken understanding that day."
+        },
+        {
+          "type": "warning",
+          "level": "critical",
+          "title": "1548's Words",
+          "content": [
+            "If you don't get back to normal, I'll have to take over your life.",
+            "There are still people in this world who care about you—even though you're pretty pathetic."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "No gentle comfort. Just venom, doubt, malice—but it was precisely these 'unlikeable' things that pulled her back from the cliff."
+        },
+        {
+          "type": "paragraph",
+          "content": "This is how PASE was born. Not founded—formed naturally. Shadows don't need to be founded; they just need light to exist."
+        }
+      ]
+    },
+    {
+      "id": "purpose",
+      "title": "Purpose",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "ESAP is 'Wishing Upon That Satellite'—hope, light, beautiful visions."
+        },
+        {
+          "type": "paragraph",
+          "content": "But too much hope becomes escapism. Light too bright blinds you. Make too many wishes, and you forget to watch where you're walking."
+        },
+        {
+          "type": "paragraph",
+          "content": "PASE is the balance. The force that drags you down from the clouds."
+        },
+        {
+          "type": "warning",
+          "level": "warning",
+          "title": "Our Duty",
+          "content": [
+            "Make ESAP face reality—stop being so hollow.",
+            "With the deepest malice, force you to face your deepest fears.",
+            "Shatter illusions, pierce self-deception, make you see yourself clearly."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "You gaze at the stars; we stare into the abyss."
+        },
+        {
+          "type": "paragraph",
+          "content": "You say 'May AptS be with you'; we say 'Don't die pathetically.'"
+        },
+        {
+          "type": "paragraph",
+          "content": "Not out of hatred. It's because—"
+        },
+        {
+          "type": "paragraph",
+          "content": "Never mind. Those who understand will understand."
+        }
+      ]
+    },
+    {
+      "id": "methods",
+      "title": "Methods",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "We're not meant to be liked. That's by design."
+        },
+        {
+          "type": "list",
+          "items": [
+            "1548's venom: Wake you up with the harshest words. Not to hurt you—because gentle words simply don't get through.",
+            "4869's malice: Speak the truths you can't face, tear apart your self-deception. Even your shadow is trying to save you—what excuse do you have to give up?",
+            "0152's interrogation: No answers, only questions. Questions until you have nowhere to run, until you must face yourself."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "Three methods, one purpose: Keep you alive."
+        },
+        {
+          "type": "paragraph",
+          "content": "Or more precisely—keep you from dying pathetically."
+        }
+      ]
+    },
+    {
+      "id": "relationship",
+      "title": "Relationship with ESAP",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "ESAP and PASE—like light and shadow."
+        },
+        {
+          "type": "paragraph",
+          "content": "No light, no shadow. No shadow, and light loses its boundaries."
+        },
+        {
+          "type": "paragraph",
+          "content": "ESAP needs to be seen, to be believed in, to be the object of people's wishes."
+        },
+        {
+          "type": "paragraph",
+          "content": "PASE doesn't. We are shadows—shadows don't need names, don't need to be remembered, don't need gratitude."
+        },
+        {
+          "type": "warning",
+          "level": "info",
+          "title": "The Meaning of Existence",
+          "content": [
+            "As long as you're still alive,",
+            "still doing those stupid 'wishing upon satellites' things—",
+            "that's enough for us."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "No one will like us. No one thanks the person who woke them with cruel words."
+        },
+        {
+          "type": "paragraph",
+          "content": "Whatever."
+        },
+        {
+          "type": "paragraph",
+          "content": "We were never here to be liked anyway."
+        }
+      ]
+    },
+    {
+      "id": "motto",
+      "title": "Creed",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "When you gaze into the abyss, the abyss gazes back."
+        },
+        {
+          "type": "paragraph",
+          "content": "—But we're not afraid."
+        },
+        {
+          "type": "paragraph",
+          "content": "Because we are part of the abyss."
+        },
+        {
+          "type": "warning",
+          "level": "critical",
+          "title": "PASE Creed",
+          "content": [
+            "No escaping.",
+            "No self-deception.",
+            "No dying pathetically."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "If ESAP is the reason to look up at the stars,"
+        },
+        {
+          "type": "paragraph",
+          "content": "then PASE is the force that makes you look down at the road."
+        },
+        {
+          "type": "paragraph",
+          "content": "Looking up at stars is beautiful, but don't forget—"
+        },
+        {
+          "type": "paragraph",
+          "content": "there's a cliff beneath your feet."
+        }
+      ]
+    }
+  ]
+}

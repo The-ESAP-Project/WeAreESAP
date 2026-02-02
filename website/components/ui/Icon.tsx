@@ -50,6 +50,7 @@ import {
   LuMoon,
   LuShield,
   LuLock,
+  LuEye,
 } from "react-icons/lu";
 
 import {
@@ -117,7 +118,8 @@ export type IconName =
   | "Moon"
   // 组织设定图标
   | "Shield"
-  | "Lock";
+  | "Lock"
+  | "Eye";
 
 // 图标映射表
 const iconMap: Record<IconName, ComponentType<{ className?: string }>> = {
@@ -179,6 +181,7 @@ const iconMap: Record<IconName, ComponentType<{ className?: string }>> = {
   // 组织设定图标 (Lucide)
   Shield: LuShield,
   Lock: LuLock,
+  Eye: LuEye,
 };
 
 export interface IconProps {

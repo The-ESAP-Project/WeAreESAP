@@ -50,6 +50,12 @@ const WARNING_STYLES: Record<
     icon: "Warning",
     iconColor: "text-red-500",
   },
+  critical: {
+    bg: "bg-purple-500/10 dark:bg-purple-500/20",
+    border: "border-purple-500/50",
+    icon: "Eye",
+    iconColor: "text-purple-500",
+  },
 };
 
 // 表格组件
@@ -117,7 +123,7 @@ TechList.displayName = "TechList";
 
 // 警告框组件
 const TechWarning = memo(({ data }: { data: WarningBlock }) => {
-  const style = WARNING_STYLES[data.level];
+  const style = WARNING_STYLES[data.level] || WARNING_STYLES.info;
 
   return (
     <div className={`my-6 p-4 rounded-lg border-2 ${style.bg} ${style.border}`}>
