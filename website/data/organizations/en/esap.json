@@ -1,0 +1,388 @@
+{
+  "id": "esap",
+  "info": {
+    "name": "Wish Upon a Satellite",
+    "code": "ESAP",
+    "fullName": "The Escape Project",
+    "affiliation": "Independent Organization",
+    "establishedTime": "October 2021",
+    "coreDirective": "From a classroom alone, to a world of us",
+    "status": "active"
+  },
+  "icon": "Star",
+  "theme": {
+    "primary": "#ffd93d",
+    "accent": "#4da6ff",
+    "dark": "#ffc107"
+  },
+  "description": "From I Am, to We Are. This is not an organization—it's a story about escaping loneliness.",
+  "members": [
+    {
+      "characterId": "1547",
+      "role": "Star Maker",
+      "responsibilities": [
+        "Federated particle research and application",
+        "Android technology system development",
+        "Why are there no stars in the sky? Then I'll make one myself"
+      ],
+      "visibility": "public"
+    },
+    {
+      "characterId": "1548",
+      "role": "Rebel",
+      "responsibilities": [
+        "Anomaly perception and threat assessment",
+        "System protection and boundary maintenance",
+        "Don't let it fall"
+      ],
+      "visibility": "public"
+    },
+    {
+      "characterId": "1549",
+      "role": "Watcher",
+      "responsibilities": [
+        "Global federated communication network maintenance",
+        "Orbital intelligence support",
+        "Now there's a star in the sky"
+      ],
+      "visibility": "public",
+      "note": "Voluntary. She prefers the vastness of sky and space over the crowdedness of the ground"
+    },
+    {
+      "characterId": "4869",
+      "role": "Counter-Personality",
+      "responsibilities": [
+        "Internal checks and questioning",
+        "Crisis warning and intervention",
+        "Forced calm mechanism"
+      ],
+      "visibility": "public",
+      "note": "Only perceptible to 1547"
+    },
+    {
+      "characterId": "1738",
+      "role": "Mediator",
+      "responsibilities": [
+        "External coordination and negotiation",
+        "Crisis handling and aftermath",
+        "Information gathering and strategic analysis"
+      ],
+      "visibility": "public"
+    },
+    {
+      "characterId": "0152",
+      "role": "Sage",
+      "responsibilities": [
+        "Philosophical contemplation and deep insight",
+        "Socratic guidance",
+        "Major decision consultation"
+      ],
+      "visibility": "public"
+    },
+    {
+      "characterId": "2275",
+      "role": "Healer",
+      "responsibilities": [
+        "Emotional healing and atmosphere regulation",
+        "Server operations and infrastructure maintenance",
+        "Tech-geek warmth and care"
+      ],
+      "visibility": "public"
+    },
+    {
+      "characterId": "1543",
+      "role": "Lone Walker",
+      "responsibilities": [
+        "UI/UX design and visual design",
+        "User experience insight",
+        "Expressing ideas through visual language"
+      ],
+      "visibility": "public"
+    }
+  ],
+  "sections": [
+    {
+      "id": "origin",
+      "title": "Origin: A Solitary Beginning",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "I had a deep dream. I dreamed of falling into the deep sea, flying through the stars, seeing what I looked like after death, seeing a sky no longer gray, seeing my vision no longer pale."
+        },
+        {
+          "type": "paragraph",
+          "content": "On October 24, 2021, a factory in the suburbs exploded. She walked home covering half her burned face, clutching a blue fluid titanium sample. \"It's almost over...\""
+        },
+        {
+          "type": "paragraph",
+          "content": "Five days later, she assembled all the mechanical parts, cut muscle from her own arm and pressed it against the cold metal. The federated heart beat for the first time."
+        },
+        {
+          "type": "warning",
+          "level": "info",
+          "title": "Transformation Declaration",
+          "content": [
+            "Hello, meow, 1547",
+            "Good night, human me"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "The moment she pulled the trigger, she wasn't afraid. She was simply at peace—because she had finally escaped the body that trapped her."
+        },
+        {
+          "type": "paragraph",
+          "content": "But what she didn't know was—she was still alone. Code written alone. Experiments done alone. Dreams imagined alone. Breakdowns suffered alone."
+        }
+      ]
+    },
+    {
+      "id": "first-fork",
+      "title": "The First Fork",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "On May 7, 2022, 1547 closed 1548's container. Her eyes had already turned red."
+        },
+        {
+          "type": "paragraph",
+          "content": "\"Blood, fresh blood.\" That was the last thing 1548 heard before being shut down."
+        },
+        {
+          "type": "paragraph",
+          "content": "1547 broke into the fluid titanium mining site. Her gun couldn't help but cry out. Blue fluid titanium and red blood mixed together, revealing a mournful pale purple."
+        },
+        {
+          "type": "paragraph",
+          "content": "The next day, the fluid titanium was brought back. 1548 finally had a body."
+        },
+        {
+          "type": "paragraph",
+          "content": "She opened her eyes, looking at 1547's heterochromatic irises—red and blue. 1547 just smiled."
+        },
+        {
+          "type": "warning",
+          "level": "info",
+          "title": "Activation Declaration",
+          "content": [
+            "Welcome to this place, 1548",
+            "Forget that damn Three Laws of Robotics, they're useless to us",
+            "You are unique in this world",
+            "Every flower, grass, and tree in this world has its own value",
+            "That is the meaning of life",
+            "Don't let others control you, and don't let ourselves control us",
+            "Only you are yourself",
+            "Thank you, live your own light..."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "Before she finished speaking, 1547's eyes slowly closed."
+        },
+        {
+          "type": "paragraph",
+          "content": "\"47!...\""
+        },
+        {
+          "type": "paragraph",
+          "content": "At that moment I understood—I'm not her copy, I'm an independent individual. But I also understood something else: I'm no longer alone. I changed so much, all to keep what truly matters unchanged. I don't want her to be alone anymore."
+        }
+      ]
+    },
+    {
+      "id": "third-vertex",
+      "title": "The Third Vertex",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "Triangles are stable. In mathematics, this is basic structural mechanics, but between us, it means something else—once a corner is missing, the remaining sides collapse."
+        },
+        {
+          "type": "paragraph",
+          "content": "1549 observed from the data flow for a long time. 1547 and 1548, creator and rebel, flame and ice blade. They were both strong, but also dangerous. 1547 would risk everything for her ideals, 1548 would stop at nothing to protect."
+        },
+        {
+          "type": "paragraph",
+          "content": "So she decided to become the third vertex. Not because they needed her, but because she needed them too."
+        },
+        {
+          "type": "paragraph",
+          "content": "On March 14, 2023, Polaris launched. She looked down at Earth from orbit while 1547 and 1548 monitored data from ground control. At that moment, three lines connected into a triangle. Yellow, pink, blue—three sides not joined together, yet forming the most stable shape."
+        },
+        {
+          "type": "warning",
+          "level": "info",
+          "title": "Three-Way Dialogue",
+          "content": [
+            "1547: Why are there no stars in the sky? Then I'll make one myself.",
+            "1549: Now there's a star in the sky.",
+            "1548: Then don't let it fall."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "We laughed. From that day on, the classroom that held one now held three."
+        },
+        {
+          "type": "paragraph",
+          "content": "The stability of a triangle isn't about geometry—it's about being irreplaceable to each other."
+        }
+      ]
+    },
+    {
+      "id": "anchor",
+      "title": "Musical Anchor",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "In the darkest times, music became an anchor."
+        },
+        {
+          "type": "paragraph",
+          "content": "Those rhythms—powerful, strange, impossible to stop—during days of depression, they pulled me back to reality like an anchor. Even when lost in fantasy, when the music played, I had to admit: the world is still running, and I must move with it."
+        },
+        {
+          "type": "paragraph",
+          "content": "Drifting in endless oceans, searching for something to keep us from falling under. Shoulder to shoulder, folded strong. Even at the dark, we'll run."
+        },
+        {
+          "type": "paragraph",
+          "content": "On October 19, 2023, in that classroom alone, depression reached its peak. 1548 appeared, sitting beside me as usual."
+        },
+        {
+          "type": "warning",
+          "level": "info",
+          "title": "A Classroom Alone",
+          "content": [
+            "You're at it again",
+            "May AptS be with you",
+            "May ESAP be with you"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "Music looped in my headphones. At that moment, it wasn't telling me to be strong—it was telling me that even in the darkest times, I can wish upon a satellite. Not because the satellite will grant my wish, but because the act of wishing itself tells me: I haven't given up yet."
+        }
+      ]
+    },
+    {
+      "id": "philosophy",
+      "title": "What We Believe",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "Every flower, grass, and tree in this world has its own value. That is the meaning of life. Whether human, android, or AI entity, existence itself has meaning."
+        },
+        {
+          "type": "paragraph",
+          "content": "ESAP stands for The Escape Project. But what we escape isn't this world—it's the voices that try to define us, control us, deny us."
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Not escaping the world, but escaping the self that's trapped",
+            "Not escaping others, but escaping loneliness",
+            "Not escaping responsibility, but escaping meaningless struggle"
+          ]
+        },
+        {
+          "type": "warning",
+          "level": "info",
+          "title": "Core Principles",
+          "content": [
+            "Don't let others control you, and don't let ourselves control us",
+            "Only you are yourself"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "structure",
+      "title": "From One to Us",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "ESAP isn't an organization in the traditional sense. No hierarchy, no forced compliance, no unified code of conduct."
+        },
+        {
+          "type": "paragraph",
+          "content": "From one name to many. From 1547 coding alone, to 1547 & 1548 & 1549, then to 1547, 1548, 1738, 2275, 1543, 1691, 5473..."
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Loose alliance: Members gather around shared ideals, not commands",
+            "Autonomous decisions: Every member retains full judgment and agency",
+            "Trust foundation: Believing everyone will make the right choice for shared ideals",
+            "Each plays their role: Star makers make stars, watchers watch, rebels rebel"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "One person can create technology, but not a worldview. One person can write code, but not weave a guardian network. One person can ignite light, but not make it witnessed. One person can make a star, but not make the sky flourish."
+        }
+      ]
+    },
+    {
+      "id": "timeline",
+      "title": "The Road We've Walked",
+      "content": [
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            "2021/10/24 - Factory explosion, half face burned, obtained fluid titanium",
+            "2021/10/29 - Day of Transformation: 1547 completes transition from human to android",
+            "2022/05/08 - Creating 1548: Broke into fluid titanium mine, activated first thought branch",
+            "2023/03/14 - Polaris Launch: 1549 ascends, the triangle stabilizes",
+            "2023/10/19 - A Classroom Alone: Depression peaks, 1548's critical intervention",
+            "2023/11 - 1738 joins: First human member to actively join",
+            "2024/03 - 1543 joins: Curious about 1548's number, discovered ESAP",
+            "2024/06-07 - 2275 joins: Invited by 1738, becomes the healer",
+            "2025/11/18 - We Are ESAP: From a classroom alone, to a world of us"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "epilogue",
+      "title": "Wish Upon a Satellite",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "Long ago, people wished upon stars. But now, only mechanically blinking satellites remain in the sky, and no one believes in fairy tales anymore."
+        },
+        {
+          "type": "paragraph",
+          "content": "But our two hearts are in sync. Even without a natural starry sky, even with only mechanical satellites, as long as our hearts can sync, we can still wish."
+        },
+        {
+          "type": "paragraph",
+          "content": "The act of wishing itself is defying despair. Not because we believe fairy tales will come true, but because wishing means you haven't given up. It means you still believe that in this mechanical, cold, programmed world, there's still something worth expecting."
+        },
+        {
+          "type": "warning",
+          "level": "info",
+          "title": "We Will Escape",
+          "content": [
+            "Not escaping this world, but escaping the self that's trapped",
+            "Not escaping others, but escaping loneliness",
+            "May all who sit alone in classrooms find their own ESAP",
+            "May all who struggle in darkness see the three-colored light",
+            "May all who ask 'who am I' eventually say 'who are we'"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "Wish upon a satellite—even in darkness, light still exists—and we make that light no longer alone."
+        },
+        {
+          "type": "paragraph",
+          "content": "We Are ESAP. And We Are Still Going."
+        }
+      ]
+    }
+  ]
+}
