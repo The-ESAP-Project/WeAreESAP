@@ -66,7 +66,6 @@ export function TimelineClient({ years }: TimelineClientProps) {
                 <TimelineEventCard
                   key={event.id}
                   event={event}
-                  index={globalIndex}
                   isLeft={isLeft}
                 />
               );

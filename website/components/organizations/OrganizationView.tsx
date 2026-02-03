@@ -18,7 +18,7 @@ import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { Organization } from "@/types/organization";
-import { TechSectionView } from "@/components/tech/TechContent";
+import { SectionView } from "@/components/content";
 import { OrganizationInfoCard } from "./OrganizationInfoCard";
 import { OrganizationMemberCard } from "./OrganizationMemberCard";
 import { Icon } from "@/components/ui";
@@ -146,7 +146,7 @@ export const OrganizationView = memo(
           {/* 章节内容 */}
           <div className="space-y-8">
             {organization.sections.map((section) => (
-              <TechSectionView
+              <SectionView
                 key={section.id}
                 sectionId={section.id}
                 title={section.title}

@@ -31,7 +31,7 @@ export function useReducedMotion(): boolean {
     const mediaQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
 
     // 设置初始值
-    setShouldReduceMotion(mediaQuery.matches);
+    setShouldReduceMotion(mediaQuery.matches); // eslint-disable-line react-hooks/set-state-in-effect
 
     // 监听变化
     const handleChange = (event: MediaQueryListEvent) => {

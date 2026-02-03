@@ -16,7 +16,7 @@
 import { memo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { TechModule } from "@/types/tech";
-import { TechSectionView } from "./TechContent";
+import { SectionView } from "@/components/content";
 import { Icon } from "@/components/ui";
 import { useReducedMotion } from "@/hooks/useReducedMotion";
 
@@ -70,7 +70,7 @@ export const TechModuleView = memo(
           {/* 章节内容 */}
           <div className="space-y-8">
             {module.sections.map((section) => (
-              <TechSectionView
+              <SectionView
                 key={section.id}
                 sectionId={section.id}
                 title={section.title}

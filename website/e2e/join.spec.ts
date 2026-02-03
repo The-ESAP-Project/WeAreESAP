@@ -77,7 +77,7 @@ test.describe("加入我们页面", () => {
 
     // 验证有 CheckCircle 图标
     const checkCircle = page.locator("[class*='CheckCircle']");
-    const checkExists = await checkCircle.count();
+    await checkCircle.count();
     // 图标可能以不同方式渲染，所以不强制要求
 
     // 验证有列表项

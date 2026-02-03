@@ -26,6 +26,9 @@ export * from "./tech";
 // 组织设定组件
 export * from "./organizations";
 
+// 通用内容组件
+export * from "./content";
+
 // 时间线组件
 export * from "./timeline";
 

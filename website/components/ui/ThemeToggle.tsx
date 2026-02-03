@@ -21,7 +21,7 @@ export function ThemeToggle() {
   const { resolvedTheme, setTheme } = useTheme();
 
   useEffect(() => {
-    setMounted(true);
+    setMounted(true); // eslint-disable-line react-hooks/set-state-in-effect
   }, []);
 
   if (!mounted) {

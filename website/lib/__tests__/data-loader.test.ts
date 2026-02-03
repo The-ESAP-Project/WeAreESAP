@@ -11,7 +11,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-import { describe, it, expect, vi, beforeEach, afterEach } from "vitest";
+import { describe, it, expect, vi, afterEach } from "vitest";
 import {
   loadJsonFile,
   loadJsonFiles,
@@ -19,7 +19,6 @@ import {
 } from "../data-loader";
 import * as logger from "../logger";
 import fs from "fs/promises";
-import path from "path";
 
 describe("data-loader", () => {
   describe("loadJsonFile", () => {
@@ -150,7 +149,7 @@ describe("data-loader", () => {
         return originalReadFile.call(fs, filePath, "utf-8");
       });
 
-      const data = await loadJsonFiles(["data", "characters"], "zh-CN");
+      await loadJsonFiles(["data", "characters"], "zh-CN");
 
       // 验证 logger.error 被调用（因为 invalid.json 解析失败）
       expect(errorSpy).toHaveBeenCalled();

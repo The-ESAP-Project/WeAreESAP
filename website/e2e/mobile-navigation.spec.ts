@@ -222,7 +222,7 @@ test.describe("移动端导航测试", () => {
         await page.mouse.up();
         await waitForAnimation(page, 500);
       }
-    } catch (e) {
+    } catch {
       // 如果不支持滑动，用按钮关闭即可
       await menuButton.click();
     }

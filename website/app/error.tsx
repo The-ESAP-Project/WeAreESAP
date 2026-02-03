@@ -123,16 +123,14 @@ const translations = {
 };
 
 export default function ErrorPage({ error, reset }: ErrorPageProps) {
-  const [locale, setLocale] = useState<Locale>(defaultLocale);
-  const [theme, setTheme] = useState<"light" | "dark">("light");
+  const [locale] = useState<Locale>(() => detectLocale());
+  const [theme] = useState<"light" | "dark">(() => detectTheme());
   const [isRecovering, setIsRecovering] = useState(false);
   const [errorId] = useState(() => {
     return Math.random().toString(36).substring(2, 10).toUpperCase();
   });
 
   useEffect(() => {
-    setLocale(detectLocale());
-    setTheme(detectTheme());
     logger.error("Error details:", error);
   }, [error]);
 

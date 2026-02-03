@@ -21,7 +21,7 @@ interface TimelineLineProps {
   totalEvents: number;
 }
 
-export function TimelineLine({ totalEvents }: TimelineLineProps) {
+export function TimelineLine({ totalEvents: _totalEvents }: TimelineLineProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const shouldReduceMotion = useReducedMotion();
 

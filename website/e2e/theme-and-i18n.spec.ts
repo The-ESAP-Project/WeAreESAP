@@ -23,9 +23,7 @@ import {
 } from "./utils/helpers";
 import {
   ROUTES,
-  SELECTORS,
   TIMEOUTS,
-  THEMES,
   LOCALES,
 } from "./fixtures/test-data";
 
@@ -191,7 +189,7 @@ test.describe("主题切换和国际化", () => {
 
     test("切换语言后 URL 应该正确更新", async ({ page }) => {
       // 初始状态（中文，默认无前缀或 /zh）
-      const initialUrl = page.url();
+      page.url();
 
       // 切换到英文
       await switchLanguage(page, LOCALES.ENGLISH);

@@ -300,6 +300,7 @@ export function usePullToReveal(
   // 当功能被禁用时，强制重置所有状态
   useEffect(() => {
     if (!enabled) {
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setIsPulling(false);
       setRawPullDistance(0);
       setPullDistance(0);

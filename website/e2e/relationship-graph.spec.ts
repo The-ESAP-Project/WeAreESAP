@@ -17,7 +17,6 @@ import {
   waitForAnimation,
   waitForPageStable,
   scrollToElement,
-  elementExists,
 } from "./utils/helpers";
 import { TEST_CHARACTERS, SELECTORS, TIMEOUTS } from "./fixtures/test-data";
 
@@ -28,7 +27,7 @@ test.describe("关系图谱交互", () => {
     detailPage = new CharacterDetailPage(page);
   });
 
-  test("应该正确渲染关系图谱的所有节点", async ({ page }) => {
+  test("应该正确渲染关系图谱的所有节点", async () => {
     // 导航到有关系数据的角色详情页
     await detailPage.navigateToCharacter(TEST_CHARACTERS.APTS_1547.id);
     await detailPage.waitForPageLoad();
@@ -59,7 +58,7 @@ test.describe("关系图谱交互", () => {
     }
   });
 
-  test("应该正确渲染关系图谱的连接线", async ({ page }) => {
+  test("应该正确渲染关系图谱的连接线", async () => {
     await detailPage.navigateToCharacter(TEST_CHARACTERS.APTS_1547.id);
     await detailPage.waitForPageLoad();
 
@@ -83,7 +82,7 @@ test.describe("关系图谱交互", () => {
     }
   });
 
-  test("节点位置布局应该合理且无重叠", async ({ page }) => {
+  test("节点位置布局应该合理且无重叠", async () => {
     await detailPage.navigateToCharacter(TEST_CHARACTERS.APTS_1547.id);
     await detailPage.waitForPageLoad();
 
@@ -414,7 +413,7 @@ test.describe("关系图谱交互", () => {
     }
   });
 
-  test("不同角色的图谱内容应该不同", async ({ page }) => {
+  test("不同角色的图谱内容应该不同", async () => {
     // 访问第一个角色
     await detailPage.navigateToCharacter(TEST_CHARACTERS.APTS_1547.id);
     await detailPage.waitForPageLoad();
@@ -453,11 +452,9 @@ test.describe("关系图谱交互", () => {
 
     // 验证两个角色的图谱数据不完全相同
     // 至少节点数量或边数量应该有差异
-    const isDifferent =
-      nodes1Count !== nodes2Count || edges1Count !== edges2Count;
-
     // 如果数量相同，可能关系数据也相同，这是正常的
     // 但至少应该验证图谱存在
+    void (nodes1Count !== nodes2Count || edges1Count !== edges2Count);
     expect(nodes2Count).toBeGreaterThan(0);
   });
 
@@ -471,7 +468,7 @@ test.describe("关系图谱交互", () => {
     await detailPage.navigateToCharacter(TEST_CHARACTERS.APTS_1547.id);
 
     // 在页面加载过程中，可能会看到加载指示器
-    const hasLoadingIndicator = await page
+    await page
       .locator("text=/加载中|loading/i, .animate-spin")
       .first()
       .isVisible()

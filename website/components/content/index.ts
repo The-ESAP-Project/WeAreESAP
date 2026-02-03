@@ -11,4 +11,9 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-export { TechModuleView } from "./TechModuleView";
+export { ContentBlockRenderer, SectionView } from "./ContentBlocks";
+export {
+  ScrollableTabs,
+  type TabItem,
+  type ScrollableTabsProps,
+} from "./ScrollableTabs";

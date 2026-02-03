@@ -14,42 +14,72 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { useRef, useEffect, useState, memo, useCallback, useMemo } from "react";
-import { Organization } from "@/types/organization";
-import { Icon } from "@/components/ui";
+import {
+  useRef,
+  useEffect,
+  useState,
+  memo,
+  useCallback,
+  useMemo,
+  CSSProperties,
+} from "react";
+import { Icon, type IconName } from "@/components/ui";
 import { useReducedMotion } from "@/hooks/useReducedMotion";
 
-const FADE_THRESHOLD = 50;
-const OPACITY_EPSILON = 0.01;
+const FADE_THRESHOLD = 50; // 淡出区域阈值（像素）
+const OPACITY_EPSILON = 0.01; // 透明度变化阈值，小于此值不触发更新
 
-interface OrganizationTabsProps {
-  organizations: Organization[];
-  activeId: string;
-  onTabChange: (id: string) => void;
+// 泛型 Tab 项目接口
+export interface TabItem {
+  id: string;
 }
 
-export const OrganizationTabs = memo(function OrganizationTabs({
-  organizations,
+export interface ScrollableTabsProps<T extends TabItem> {
+  items: T[];
+  activeId: string;
+  onTabChange: (id: string) => void;
+  /** 获取显示名称 */
+  getItemName: (item: T) => string;
+  /** 获取图标名称（可选） */
+  getItemIcon?: (item: T) => IconName | undefined;
+  /** 获取激活时图标颜色 */
+  getItemIconColor?: (item: T) => string | undefined;
+  /** 获取下划线样式，可以是 CSS 类名（字符串）或 CSSProperties */
+  getUnderlineStyle?: (item: T) => string | CSSProperties;
+  /** Framer Motion layoutId，用于区分不同的 Tabs 实例 */
+  layoutId: string;
+}
+
+function ScrollableTabsInner<T extends TabItem>({
+  items,
   activeId,
   onTabChange,
-}: OrganizationTabsProps) {
+  getItemName,
+  getItemIcon,
+  getItemIconColor,
+  getUnderlineStyle,
+  layoutId,
+}: ScrollableTabsProps<T>) {
   const shouldReduceMotion = useReducedMotion();
   const containerRef = useRef<HTMLDivElement>(null);
   const tabRefs = useRef<(HTMLButtonElement | null)[]>([]);
   const [leftGradientOpacity, setLeftGradientOpacity] = useState(0);
   const [rightGradientOpacity, setRightGradientOpacity] = useState(0);
 
+  // 使用 useMemo 缓存 activeIndex 计算
   const activeIndex = useMemo(
-    () => organizations.findIndex((o) => o.id === activeId),
-    [organizations, activeId]
+    () => items.findIndex((item) => item.id === activeId),
+    [items, activeId]
   );
 
+  // 使用 useCallback 优化滚动检测函数
   const checkScroll = useCallback(() => {
     const container = containerRef.current;
     if (!container) return;
 
     const { scrollLeft, scrollWidth, clientWidth } = container;
 
+    // 计算左侧渐变透明度
     let newLeftOpacity = 0;
     if (scrollLeft <= 0) {
       newLeftOpacity = 0;
@@ -59,6 +89,7 @@ export const OrganizationTabs = memo(function OrganizationTabs({
       newLeftOpacity = 1;
     }
 
+    // 计算右侧渐变透明度
     const scrollRight = scrollWidth - clientWidth - scrollLeft;
     let newRightOpacity = 0;
     if (scrollRight <= 1) {
@@ -69,6 +100,7 @@ export const OrganizationTabs = memo(function OrganizationTabs({
       newRightOpacity = 1;
     }
 
+    // 只在变化超过阈值时才更新状态
     setLeftGradientOpacity((prev) =>
       Math.abs(prev - newLeftOpacity) > OPACITY_EPSILON ? newLeftOpacity : prev
     );
@@ -79,6 +111,7 @@ export const OrganizationTabs = memo(function OrganizationTabs({
     );
   }, []);
 
+  // 自动滚动到激活的 tab
   useEffect(() => {
     const activeTab = tabRefs.current[activeIndex];
     if (activeTab && containerRef.current) {
@@ -90,6 +123,7 @@ export const OrganizationTabs = memo(function OrganizationTabs({
     }
   }, [activeIndex, shouldReduceMotion]);
 
+  // 缓存 transition 配置
   const gradientTransition = useMemo(
     () => ({
       duration: shouldReduceMotion ? 0.01 : 0.15,
@@ -110,6 +144,7 @@ export const OrganizationTabs = memo(function OrganizationTabs({
     [shouldReduceMotion]
   );
 
+  // 检测滚动位置以显示/隐藏渐变
   useEffect(() => {
     const container = containerRef.current;
     if (!container) return;
@@ -126,14 +161,16 @@ export const OrganizationTabs = memo(function OrganizationTabs({
 
   return (
     <>
+      {/* 隐藏 Webkit 浏览器的滚动条 */}
       <style jsx>{`
-        .org-tabs-container::-webkit-scrollbar {
+        .scrollable-tabs-container::-webkit-scrollbar {
           display: none;
         }
       `}</style>
       <div className="border-b border-border bg-background sticky top-16 z-40">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="relative">
+            {/* 左侧渐变遮罩 */}
             <motion.div
               animate={{ opacity: leftGradientOpacity }}
               transition={gradientTransition}
@@ -141,6 +178,7 @@ export const OrganizationTabs = memo(function OrganizationTabs({
               style={{ display: leftGradientOpacity === 0 ? "none" : "block" }}
             />
 
+            {/* 右侧渐变遮罩 */}
             <motion.div
               animate={{ opacity: rightGradientOpacity }}
               transition={gradientTransition}
@@ -150,22 +188,37 @@ export const OrganizationTabs = memo(function OrganizationTabs({
 
             <div
               ref={containerRef}
-              className="org-tabs-container flex gap-1 overflow-x-auto"
+              className="scrollable-tabs-container flex gap-1 overflow-x-auto"
               style={{
-                scrollbarWidth: "none",
-                msOverflowStyle: "none",
+                scrollbarWidth: "none", // Firefox
+                msOverflowStyle: "none", // IE and Edge
               }}
             >
-              {organizations.map((org, index) => {
-                const isActive = org.id === activeId;
+              {items.map((item, index) => {
+                const isActive = item.id === activeId;
+                const icon = getItemIcon?.(item);
+                const iconColor = isActive ? getItemIconColor?.(item) : undefined;
+                const underlineStyleValue = getUnderlineStyle?.(item);
+
+                // 解析下划线样式
+                const isStyleObject =
+                  underlineStyleValue &&
+                  typeof underlineStyleValue === "object";
+                const underlineClassName =
+                  typeof underlineStyleValue === "string"
+                    ? underlineStyleValue
+                    : "";
+                const underlineStyle = isStyleObject
+                  ? (underlineStyleValue as CSSProperties)
+                  : undefined;
 
                 return (
                   <button
-                    key={org.id}
+                    key={item.id}
                     ref={(el) => {
                       tabRefs.current[index] = el;
                     }}
-                    onClick={() => onTabChange(org.id)}
+                    onClick={() => onTabChange(item.id)}
                     className={`relative px-6 py-4 text-sm font-medium transition-colors whitespace-nowrap ${
                       isActive
                         ? "text-foreground"
@@ -173,24 +226,23 @@ export const OrganizationTabs = memo(function OrganizationTabs({
                     }`}
                   >
                     <span className="flex items-center gap-2">
-                      {org.icon && (
+                      {icon && (
                         <Icon
-                          name={org.icon}
+                          name={icon}
                           size={20}
-                          color={isActive ? org.theme.accent : undefined}
+                          color={iconColor}
                           className={!isActive ? "text-current" : ""}
                         />
                       )}
-                      {org.info.name}
+                      {getItemName(item)}
                     </span>
 
+                    {/* 活动标签的下划线 */}
                     {isActive && (
                       <motion.div
-                        layoutId="activeOrgTab"
-                        className="absolute bottom-0 left-0 right-0 h-0.5"
-                        style={{
-                          background: `linear-gradient(90deg, ${org.theme.primary}, ${org.theme.accent})`,
-                        }}
+                        layoutId={layoutId}
+                        className={`absolute bottom-0 left-0 right-0 h-0.5 ${underlineClassName}`}
+                        style={underlineStyle}
                         transition={underlineTransition}
                       />
                     )}
@@ -203,4 +255,7 @@ export const OrganizationTabs = memo(function OrganizationTabs({
       </div>
     </>
   );
-});
+}
+
+// 使用 memo 包装，但需要类型断言来保持泛型
+export const ScrollableTabs = memo(ScrollableTabsInner) as typeof ScrollableTabsInner;

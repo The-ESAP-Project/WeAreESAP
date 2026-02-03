@@ -16,7 +16,8 @@
 import { useState, useEffect, useMemo, useCallback } from "react";
 import { useSearchParams } from "next/navigation";
 import { Organization } from "@/types/organization";
-import { OrganizationTabs, OrganizationView } from "@/components/organizations";
+import { ScrollableTabs } from "@/components/content";
+import { OrganizationView } from "@/components/organizations";
 
 interface OrganizationsPageClientProps {
   organizations: Organization[];
@@ -62,10 +63,17 @@ export function OrganizationsPageClient({
 
   return (
     <div className="min-h-screen">
-      <OrganizationTabs
-        organizations={organizations}
+      <ScrollableTabs
+        items={organizations}
         activeId={activeOrgId}
         onTabChange={handleTabChange}
+        getItemName={(o) => o.info.name}
+        getItemIcon={(o) => o.icon}
+        getItemIconColor={(o) => o.theme.accent}
+        getUnderlineStyle={(o) => ({
+          background: `linear-gradient(90deg, ${o.theme.primary}, ${o.theme.accent})`,
+        })}
+        layoutId="activeOrgTab"
       />
 
       {activeOrg && <OrganizationView organization={activeOrg} />}

@@ -17,7 +17,7 @@ import {
   waitForPageStable,
   getCurrentLocale,
 } from "./utils/helpers";
-import { ROUTES, TEST_CHARACTERS, LOCALES } from "./fixtures/test-data";
+import { ROUTES, TEST_CHARACTERS } from "./fixtures/test-data";
 
 test.describe("导航和 SEO", () => {
   test.describe("浏览器导航功能", () => {
@@ -61,7 +61,7 @@ test.describe("导航和 SEO", () => {
       await page.evaluate(() => window.scrollTo(0, 500));
       await page.waitForTimeout(300);
 
-      const scrollPosition = await page.evaluate(() => window.scrollY);
+      await page.evaluate(() => window.scrollY);
 
       // 导航到另一个页面
       await navigateAndWait(page, ROUTES.TIMELINE);
@@ -195,7 +195,7 @@ test.describe("导航和 SEO", () => {
       await navigateAndWait(page, ROUTES.HOME);
 
       // 记录初始状态
-      const initialUrl = page.url();
+      page.url();
       const initialTitle = await page.title();
 
       // 刷新页面

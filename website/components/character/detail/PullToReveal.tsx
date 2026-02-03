@@ -211,7 +211,7 @@ export function PullToReveal({
 
   // 等待组件挂载后再检测主题（避免 hydration 错误）
   useEffect(() => {
-    setMounted(true);
+    setMounted(true); // eslint-disable-line react-hooks/set-state-in-effect
   }, []);
 
   // 判断当前是否为深色模式

@@ -94,7 +94,6 @@ export default async function CharactersPage({
   const { locale } = await params;
   setRequestLocale(locale);
   const characters = await getCharacters(locale);
-  const t = await getTranslations("characters");
 
   // 按 tier 分组：core + member 放到手风琴，其他 tier 放到卡片网格
   const accordionCharacters =

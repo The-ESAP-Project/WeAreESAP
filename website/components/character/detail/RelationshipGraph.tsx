@@ -67,7 +67,7 @@ const RelationshipGraph = memo(function RelationshipGraph({
   // 构建图谱数据并应用自动布局
   useEffect(() => {
     if (relationships.length === 0) {
-      setIsLayouting(false);
+      setIsLayouting(false); // eslint-disable-line react-hooks/set-state-in-effect
       return;
     }
 

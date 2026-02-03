@@ -258,9 +258,6 @@ test.describe("角色页面", () => {
 
       await detailPage.navigateToCharacter(TEST_CHARACTERS.APTS_1549.id);
 
-      // 获取初始角色名称
-      const nameBefore = await detailPage.getCharacterName();
-
       // 刷新页面
       await detailPage.refresh();
 
@@ -376,7 +373,6 @@ test.describe("角色页面", () => {
   test.describe("角色卡片交互", () => {
     test("角色卡片应该支持悬停效果", async ({
       page,
-      browserName,
     }, testInfo) => {
       // 跳过移动端测试（移动设备不支持悬停）
       test.skip(
@@ -410,7 +406,6 @@ test.describe("角色页面", () => {
 
     test("应该能够悬停在多个角色卡片上", async ({
       page,
-      browserName,
     }, testInfo) => {
       // 跳过移动端测试（移动设备不支持悬停）
       test.skip(
@@ -443,7 +438,6 @@ test.describe("角色页面", () => {
 
     test("角色卡片悬停应该不影响其他卡片", async ({
       page,
-      browserName,
     }, testInfo) => {
       // 跳过移动端测试（移动设备不支持悬停）
       test.skip(
@@ -475,7 +469,6 @@ test.describe("角色页面", () => {
 
     test("应该能够在角色卡片之间平滑切换焦点", async ({
       page,
-      browserName,
     }, testInfo) => {
       // 跳过移动端测试（移动设备不支持悬停）
       test.skip(

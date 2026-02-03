@@ -59,7 +59,7 @@ const WARNING_STYLES: Record<
 };
 
 // 表格组件
-const TechTable = memo(({ data }: { data: TableBlock }) => {
+const ContentTable = memo(({ data }: { data: TableBlock }) => {
   return (
     <div className="overflow-x-auto my-6">
       {data.caption && (
@@ -99,10 +99,10 @@ const TechTable = memo(({ data }: { data: TableBlock }) => {
     </div>
   );
 });
-TechTable.displayName = "TechTable";
+ContentTable.displayName = "ContentTable";
 
 // 列表组件
-const TechList = memo(({ data }: { data: ListBlock }) => {
+const ContentList = memo(({ data }: { data: ListBlock }) => {
   const ListTag = data.ordered ? "ol" : "ul";
 
   return (
@@ -119,10 +119,10 @@ const TechList = memo(({ data }: { data: ListBlock }) => {
     </ListTag>
   );
 });
-TechList.displayName = "TechList";
+ContentList.displayName = "ContentList";
 
 // 警告框组件
-const TechWarning = memo(({ data }: { data: WarningBlock }) => {
+const ContentWarning = memo(({ data }: { data: WarningBlock }) => {
   const style = WARNING_STYLES[data.level] || WARNING_STYLES.info;
 
   return (
@@ -143,10 +143,10 @@ const TechWarning = memo(({ data }: { data: WarningBlock }) => {
     </div>
   );
 });
-TechWarning.displayName = "TechWarning";
+ContentWarning.displayName = "ContentWarning";
 
 // 代码块组件
-const TechCode = memo(({ data }: { data: CodeBlock }) => {
+const ContentCode = memo(({ data }: { data: CodeBlock }) => {
   return (
     <div className="my-6">
       <pre className="bg-muted p-4 rounded-lg overflow-x-auto border border-border">
@@ -157,18 +157,18 @@ const TechCode = memo(({ data }: { data: CodeBlock }) => {
     </div>
   );
 });
-TechCode.displayName = "TechCode";
+ContentCode.displayName = "ContentCode";
 
 // 段落组件
-const TechParagraph = memo(({ data }: { data: ParagraphBlock }) => {
+const ContentParagraph = memo(({ data }: { data: ParagraphBlock }) => {
   return (
     <p className="my-4 text-foreground/80 leading-relaxed">{data.content}</p>
   );
 });
-TechParagraph.displayName = "TechParagraph";
+ContentParagraph.displayName = "ContentParagraph";
 
 // 子章节组件
-const TechSubsection = memo(({ data }: { data: SubsectionBlock }) => {
+const ContentSubsection = memo(({ data }: { data: SubsectionBlock }) => {
   return (
     <div className="my-6 ml-4 pl-4 border-l-2 border-esap-blue/30">
       <h4 className="text-lg font-semibold text-foreground mb-3">
@@ -180,24 +180,24 @@ const TechSubsection = memo(({ data }: { data: SubsectionBlock }) => {
     </div>
   );
 });
-TechSubsection.displayName = "TechSubsection";
+ContentSubsection.displayName = "ContentSubsection";
 
 // 内容块渲染器
 export const ContentBlockRenderer = memo(
   ({ block }: { block: ContentBlock }) => {
     switch (block.type) {
       case "table":
-        return <TechTable data={block} />;
+        return <ContentTable data={block} />;
       case "list":
-        return <TechList data={block} />;
+        return <ContentList data={block} />;
       case "warning":
-        return <TechWarning data={block} />;
+        return <ContentWarning data={block} />;
       case "code":
-        return <TechCode data={block} />;
+        return <ContentCode data={block} />;
       case "paragraph":
-        return <TechParagraph data={block} />;
+        return <ContentParagraph data={block} />;
       case "subsection":
-        return <TechSubsection data={block} />;
+        return <ContentSubsection data={block} />;
       default:
         return null;
     }
@@ -206,7 +206,7 @@ export const ContentBlockRenderer = memo(
 ContentBlockRenderer.displayName = "ContentBlockRenderer";
 
 // 章节组件
-export const TechSectionView = memo(
+export const SectionView = memo(
   ({
     sectionId,
     title,
@@ -244,4 +244,4 @@ export const TechSectionView = memo(
     );
   }
 );
-TechSectionView.displayName = "TechSectionView";
+SectionView.displayName = "SectionView";

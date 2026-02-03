@@ -204,7 +204,7 @@ export async function waitForPageStable(page: Page): Promise<void> {
       },
       { timeout: 30000 }
     );
-  } catch (e) {
+  } catch {
     // 如果没有 Compiling 状态或超时，继续执行
   }
 

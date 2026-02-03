@@ -59,7 +59,7 @@ export function SearchProvider({ children, searchIndex }: SearchProviderProps) {
       ignoreLocation: true,
       includeScore: true,
     });
-    setFuse(fuseInstance);
+    setFuse(fuseInstance); // eslint-disable-line react-hooks/set-state-in-effect
   }, [searchIndex]);
 
   // 全局快捷键监听

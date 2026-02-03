@@ -16,7 +16,8 @@
 import { useState, useEffect, useMemo, useCallback } from "react";
 import { useSearchParams } from "next/navigation";
 import { TechModule } from "@/types/tech";
-import { TechTabs, TechModuleView } from "@/components";
+import { ScrollableTabs } from "@/components/content";
+import { TechModuleView } from "@/components";
 
 interface TechPageClientProps {
   modules: TechModule[];
@@ -66,10 +67,17 @@ export function TechPageClient({ modules }: TechPageClientProps) {
   return (
     <div className="min-h-screen">
       {/* Tab 导航 */}
-      <TechTabs
-        modules={modules}
+      <ScrollableTabs
+        items={modules}
         activeId={activeModuleId}
         onTabChange={handleTabChange}
+        getItemName={(m) => m.name}
+        getItemIcon={(m) => m.icon}
+        getItemIconColor={(m) => m.color.primary}
+        getUnderlineStyle={() =>
+          "bg-linear-to-r from-esap-yellow via-esap-pink to-esap-blue"
+        }
+        layoutId="activeTechTab"
       />
 
       {/* 模块内容 */}

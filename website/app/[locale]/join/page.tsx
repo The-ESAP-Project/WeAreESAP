@@ -13,7 +13,7 @@
 
 import dynamic from "next/dynamic";
 import { ChecklistItem } from "@/components";
-import { Icon, type IconName, AnimatedSection } from "@/components/ui";
+import { Icon, type IconName } from "@/components/ui";
 import { JoinHero } from "./JoinHero";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import type { Metadata } from "next";

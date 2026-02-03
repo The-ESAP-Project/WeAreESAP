@@ -85,7 +85,7 @@ export function LoadingWrapper({
   // 处理最小加载时间
   useEffect(() => {
     if (isLoading) {
-      setLoadingStartTime(Date.now());
+      setLoadingStartTime(Date.now()); // eslint-disable-line react-hooks/set-state-in-effect
       setShowLoading(true);
     } else if (loadingStartTime !== null) {
       const elapsedTime = Date.now() - loadingStartTime;

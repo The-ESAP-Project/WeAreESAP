@@ -59,7 +59,7 @@ export function WebVitals() {
         };
 
         localStorage.setItem(vitalsKey, JSON.stringify(vitals));
-      } catch (error) {
+      } catch {
         // localStorage 可能不可用，静默失败
       }
     }

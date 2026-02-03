@@ -22,7 +22,6 @@ import { useReducedMotion } from "@/hooks/useReducedMotion";
 
 interface TimelineEventCardProps {
   event: TimelineEvent;
-  index: number;
   isLeft: boolean; // 左右交替
 }
 
@@ -53,7 +52,6 @@ const IMPORTANCE_STYLES: Record<string, { node: string; glow: string }> = {
 
 export function TimelineEventCard({
   event,
-  index,
   isLeft,
 }: TimelineEventCardProps) {
   const shouldReduceMotion = useReducedMotion();

@@ -87,12 +87,10 @@ export default function GlobalError({
   error: Error & { digest?: string };
   reset: () => void;
 }) {
-  const [locale, setLocale] = useState<Locale>(defaultLocale);
-  const [theme, setTheme] = useState<"light" | "dark">("light");
+  const [locale] = useState<Locale>(() => detectLocale());
+  const [theme] = useState<"light" | "dark">(() => detectTheme());
 
   useEffect(() => {
-    setLocale(detectLocale());
-    setTheme(detectTheme());
     logger.error("Global error:", error);
   }, [error]);
 
