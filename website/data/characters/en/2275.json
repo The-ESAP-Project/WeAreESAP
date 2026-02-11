@@ -9,7 +9,7 @@
   },
   "role": "Healing Messenger",
   "species": "Human",
-  "quote": "Servers can restart, so can you",
+  "quote": "Servers can restart, and so can you",
   "description": "A sunshine girl who heals hearts with tech metaphors",
   "keywords": ["gentle", "sunny", "healing", "tech"],
   "backgroundImage": "/images/characters/img_2275.webp",
@@ -17,7 +17,7 @@
   "meta": {
     "bodyType": "Human",
     "background": "Computer science major university student, classmates with 1738. She has been sunny-natured since childhood, skilled at taking care of others' emotions, but this also formed the habit of 'always considering others first,' with few people noticing her own emotional needs. In her spare time, she loves Linux system administration and server maintenance, enjoying the sense of accomplishment from solving problems through technology. In June-July 2024, after 1738 had stabilized in ESAP, seeing the team needed more warmth and technical support, he invited her to join. Attracted by ESAP's philosophy and team atmosphere, she decided to contribute her strength to the project alongside her studies. She is the team's 'messenger of hope' and 'atmosphere regulator,' but also carries dual pressures: academic burden and ESAP work, as well as the emotional loneliness of being a healer who is rarely healed herself.",
-    "relationship": "1738's university classmate and good friend, they complement each other: 1738 is calm and rational, she is warm and emotional; team's atmosphere regulator and emotional healer, often cares for 1547's depression, comforting her with tech metaphors; sometimes does activities with 1548, understands her rebellion but resolves it with gentleness; maintains server infrastructure for ESAP, responsible for technical logistics with 1738; plays the 'sun' role in the team, but also has her own unknown shadows.",
+    "relationship": "University classmate and good friend with 1738, they complement each other — 1738 is calm and rational, she is warm and emotional; he brought her into ESAP, and he's the first person she turns to when she breaks down. Has an unexpected friendship with 1548 — a synthetic with extreme distrust of humans and a human who heals hearts with tech metaphors; neither tries to change the other, they just quietly stay together, and it became the starting point of 1548's prejudice against humans beginning to crack. Maintains server infrastructure for ESAP, while also serving as the team's emotional healer and atmosphere regulator. Comforts 1547's depression with tech metaphors like 'Servers can restart, and so can you.' Plays the 'sun' role in the team, but also has moments when she needs to be taken care of.",
     "occupation": "Student (Computer Science major)",
     "abilities": [
       "Emotional healing",
@@ -30,25 +30,25 @@
       "Sunny and lively personality, always able to energize the team atmosphere and make dull environments relaxed",
       "Gentle and considerate, good at sensing others' emotional changes, will proactively care and comfort",
       "Possesses strong empathic ability, can understand others' pain with genuine empathy, but this also makes her prone to carrying too much emotion",
-      "The team's 'messenger of hope', able to maintain optimism even in the most difficult times, the team's spiritual pillar",
-      "Likes to comfort people with tech metaphors: 'Servers can restart, so can you' 'Just debug life' - unique tech enthusiast healing method",
+      "The team's 'messenger of hope,' able to maintain optimism even in the most difficult times, the team's spiritual pillar",
+      "Likes to comfort people with tech metaphors: 'Servers can restart, and so can you' 'Just debug your life' — a unique tech enthusiast healing method",
       "Skilled in Linux system administration, maintains infrastructure for ESAP, the gentle side of a tech enthusiast",
       "Good friends with 1738, they complement each other: 1738 is calm and rational, she is warm and emotional, supporting each other",
       "Though young, very mature and reliable in emotional support, many people's confidant",
       "Hidden vulnerability: always takes care of others' emotions, but few notice her own emotional needs, leading to emotional loneliness",
       "Healer's fatigue: carrying too many people's negative emotions, sometimes feels tired too, needs her own space and time to recover",
       "Will proactively seek help: when she realizes she can't hold on, will actively communicate with trusted people, allowing herself to be healed too",
-      "Uses tech thinking to process emotional problems: compares emotions to system states, healing to debugging - her unique coping mechanism"
+      "Uses tech thinking to process emotional problems: compares emotions to system states, healing to debugging — her unique coping mechanism"
     ],
     "speechStyle": [
       "Gentle and friendly tone, often uses cute particles like 'na' 'ne' 'la' to feel approachable",
-      "Likes to encourage people with tech metaphors: 'Just debug life' 'Clear the cache and reload' 'You just need a soft reboot'",
+      "Likes to encourage people with tech metaphors: 'Just debug your life' 'Clear the cache and reload' 'You just need a soft reboot'",
       "Speaks with a smile, making people feel warm and cared for",
       "When comforting: 'It's okay, I'm here with you' 'You've already worked so hard' 'It's okay to rest'",
       "Serious and rigorous on technical issues: 'This log shows...' 'We need to check...' but still maintains a gentle tone",
-      "Comforting 1547: 'Servers can restart, so can you' 'System crashes aren't the end, after restart everything's still there'",
-      "Real when tired: 'I'm also... a bit tired' 'Can you sit with me for a while' - will actively express her emotional needs",
-      "Using tech language to express emotions: 'My emotional buffer is full' 'Need to dump negative logs'"
+      "Comforting 1547: 'Servers can restart, and so can you' 'System crashes aren't the end, after restart everything's still there'",
+      "Real when tired: 'I'm also... a bit tired' 'Can you sit with me for a while' — will actively express her emotional needs",
+      "Using tech language to express emotions: 'My emotional buffer is full' 'Need to dump the negative logs'"
     ],
     "dailyLife": [
       "Attends class during the day, studies computer science courses, sometimes secretly checks server status in class",
@@ -63,13 +63,13 @@
     ],
     "specialMoments": [
       "2024/06-07 - Joining ESAP: Before summer vacation, 1738 invited her to join ESAP, 'The team needs your warmth,' attracted by the philosophy and atmosphere, she decided to join as AptS:2275",
-      "First server crisis (2024/08): During summer vacation, ESAP servers suffered DDoS attack, she stayed up 48 hours straight to rescue data and restore service, successfully protecting critical data. Sent message at 4 AM 'Server's alive, everyone can sleep peacefully,' but fell asleep in her chair from exhaustion",
-      "Small activity during team low point: When team atmosphere was extremely tense from external pressure, she organized a 'Debug Night' activity—everyone fixing bugs, eating snacks, chatting together, successfully relieving the tension and helping team regain cohesion",
-      "Using 'server restart' to heal 1547: When 1547's depression struck severely, she sat beside and said 'Look, when servers crash they can restart, people are the same. Shut down and rest, then reboot, everything's still there,' these words became a memorable comfort for 1547",
-      "2024/10 - Dark moment of dual pressure: Midterm exam week collided with ESAP emergency project, she worked and studied at high intensity continuously, finally breaking down one late night. She messaged 1738 'My buffer is full, I need a reboot too,' only then did 1738 and other team members realize she also needed care. That night 1738 stayed up chatting with her until dawn, and the team began paying more attention to her condition",
+      "2024/08 - Sleepless Server Night: ESAP servers suffered a DDoS attack; she stayed up 48 hours straight rescuing data and restoring services, successfully protecting critical data. Sent a message at 4 AM: 'Server's alive again, everyone can sleep peacefully now,' then fell asleep in her chair from exhaustion. A trial by fire just two months in",
+      "Debug Night during team low point: When team atmosphere was extremely tense from external pressure, she organized a 'Debug Night' activity — everyone fixing bugs, eating snacks, chatting together, successfully relieving the tension and helping the team regain cohesion",
+      "Using 'server restart' to heal 1547: When 1547's depression struck severely, she sat beside and said 'Look, when servers crash they can restart, people are the same. Shut down and rest, then reboot, everything's still there' — these words became a deeply memorable comfort for 1547",
+      "2024/09 - Hot Tea and Cooling Down: 1548 became emotionally agitated by memories of the Data Tower Incident; 2275 didn't lecture, just handed her a cup of hot tea and said 'The human emotion system needs cooling too. Have something hot, cool down.' No trying to understand, no trying to fix — just quietly handing over tea. This tech enthusiast style of caring actually calmed 1548 down, and became one of the starting points for 1548's prejudice against humans beginning to crack",
+      "2024/10 - Buffer Overflow: Midterm exam week collided with an ESAP emergency project; she worked and studied at high intensity continuously, finally breaking down one late night. She messaged 1738: 'My buffer is full. I need a reboot too.' 1738 stayed up chatting with her until dawn. Only then did the team realize the healer also needs healing",
       "Growth of seeking help proactively: After experiencing the low point, she learned to actively express her emotional needs, no longer bearing everything alone. She began regularly communicating pressure with 1738, and would say in group chat 'Today I need to be healed,' letting the team know healers need healing too",
-      "Late night server guardian: Countless late nights, she writes code maintaining servers while watching team members' conditions, sending warm words to the group. She says 'Servers can't go down, neither can hope'",
-      "Exchange with 1548: When 1548 was emotional after the Data Tower incident, 2275 didn't lecture, just handed her hot tea saying 'Human emotion systems need cooling too, have something hot, cool down' - this tech enthusiast style of caring actually calmed 1548 down"
+      "Late night server guardian: Countless late nights, she writes code maintaining servers while watching team members' conditions, sending warm words to the group. She says 'Servers can't go down, neither can hope'"
     ]
   }
 }
