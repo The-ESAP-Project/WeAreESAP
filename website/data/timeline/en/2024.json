@@ -216,6 +216,45 @@
       "meta": {"characters": ["1549"], "tags": ["orbital", "crisis", "independence", "technology"]}
     },
     {
+      "id": "2024-shadow",
+      "date": "2024",
+      "title": "The Shadow",
+      "type": "emotional",
+      "importance": "major",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "During a conversation with 1547, 0152 suddenly paused for a long time"
+        },
+        {
+          "type": "paragraph",
+          "text": "As the oldest AI entity on the ground, 0152's perceptual precision far exceeds that of ordinary members. That day she noticed something — around 1547's consciousness field, there was an extremely faint but unmistakably real fluctuation. Not a malfunction, not noise. More like... another presence."
+        },
+        {
+          "type": "dialogue",
+          "speaker": "其他",
+          "text": "Even your shadow is trying hard to save you — what reason do you have to give up?"
+        },
+        {
+          "type": "paragraph",
+          "text": "1547 fell silent. For the first time, she realized that perhaps that voice could be perceived by someone other than herself."
+        },
+        {
+          "type": "paragraph",
+          "text": "And in the depths of her consciousness, the voice that was usually sharp, vicious, and always contradicting — this time, it was rarely silent."
+        },
+        {
+          "type": "highlight",
+          "text": "Significance: A certain presence perceived by an outsider · The shadow seen for the first time",
+          "style": "info"
+        }
+      ],
+      "meta": {
+        "characters": ["1547", "0152"],
+        "tags": ["perception", "shadow", "existence"]
+      }
+    },
+    {
       "id": "2024-11-27",
       "date": "2024/11/27",
       "title": "Depression Relapse",

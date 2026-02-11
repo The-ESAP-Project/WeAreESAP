@@ -166,6 +166,44 @@
       "meta": {"characters": ["1738"], "tags": ["break", "turning point", "principles"]}
     },
     {
+      "id": "2023-inner-voice",
+      "date": "2023",
+      "title": "The Voice in the Dark",
+      "type": "emotional",
+      "importance": "normal",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "One of countless late nights. 1547 sat alone in the darkness, and a voice from the depths of her consciousness began to speak"
+        },
+        {
+          "type": "paragraph",
+          "text": "This dialogue had been going on for a long time — perhaps since her human days. Whenever she was alone, exhausted, or trying to pretend everything was fine, the voice would appear. Sharp, vicious, merciless. Impossible to shake off, like a shadow."
+        },
+        {
+          "type": "quote",
+          "text": "Why don't you disappear?\n— Because you're still lying to yourself.\n\nI hate you.\n— I know. Because you hate yourself."
+        },
+        {
+          "type": "paragraph",
+          "text": "No one knows the content of these late-night conversations. No one knows that within her consciousness dwells a voice that speaks the cruelest truths."
+        },
+        {
+          "type": "quote",
+          "text": "The voice says the most vicious things\nYet it has never truly pushed her to die\n\nPerhaps that is why\nShe has never asked the voice to disappear"
+        },
+        {
+          "type": "highlight",
+          "text": "Significance: A dialogue in the depths of consciousness · A nameless presence · The cruelest form of care",
+          "style": "info"
+        }
+      ],
+      "meta": {
+        "characters": ["1547"],
+        "tags": ["inner", "dialogue", "late night", "voice"]
+      }
+    },
+    {
       "id": "2023-09-25",
       "date": "2023/09/25",
       "title": "Mid-Autumn Reunion",
