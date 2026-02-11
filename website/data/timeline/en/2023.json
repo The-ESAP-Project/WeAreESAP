@@ -151,43 +151,19 @@
       }
     },
     {
-      "id": "2023-08-12",
-      "date": "2023/08/12",
-      "title": "An Afternoon with 2275",
-      "type": "emotional",
-      "importance": "normal",
+      "id": "2023-07-decision",
+      "date": "2023/07",
+      "title": "The Break",
+      "type": "story",
+      "importance": "major",
       "content": [
-        {
-          "type": "paragraph",
-          "text": "1548 asked 2275 to go out, just the two of them"
-        },
-        {
-          "type": "paragraph",
-          "text": "Nothing big happened. Just two people walking around the city, passing by a few shops, chatting about nothing important. 2275 bought two drinks, 1548 complained they were too sweet, but finished hers anyway."
-        },
-        {
-          "type": "dialogue",
-          "speaker": "1548",
-          "text": "You humans and your sickeningly sweet drinks"
-        },
-        {
-          "type": "paragraph",
-          "text": "But what she didn't say out loud: when she was with 2275, that guard against humans would ease up a little. Just a little."
-        },
-        {
-          "type": "quote",
-          "text": "Maybe not all humans deserve to die\nMaybe some are worth lowering my guard for\n— just maybe"
-        },
-        {
-          "type": "highlight",
-          "text": "Significance: A friendship of her own · A tiny crack in her prejudice against humans",
-          "style": "success"
-        }
+        {"type": "paragraph", "text": "Lu Qingxian made a decision he'd been thinking about for a long time: leave"},
+        {"type": "paragraph", "text": "The human organization he belonged to claimed to pursue progress and innovation, but what he saw at the core was nothing but power struggles and interest games. Rules were only strict for ordinary members; the top could always find exceptions. The so-called 'black and white' principles were just tools of control."},
+        {"type": "quote", "text": "I won't endorse false justice anymore\nIf your principles only exist when convenient\nThey were never principles to begin with"},
+        {"type": "paragraph", "text": "He didn't look back when he left. He knew what he was searching for — not another organization, but a place that truly believes in what it does."},
+        {"type": "highlight", "text": "Significance: A life turning point · Breaking free from a hypocritical system · Laying groundwork for joining ESAP", "style": "warning"}
       ],
-      "meta": {
-        "characters": ["1548", "2275"],
-        "tags": ["friendship", "independence", "daily life"]
-      }
+      "meta": {"characters": ["1738"], "tags": ["break", "turning point", "principles"]}
     },
     {
       "id": "2023-09-25",
@@ -382,6 +358,21 @@
         "characters": ["1547"],
         "tags": ["recovery", "solitude"]
       }
+    },
+    {
+      "id": "2023-11-15",
+      "date": "2023/11/15",
+      "title": "Joining ESAP",
+      "type": "milestone",
+      "importance": "major",
+      "content": [
+        {"type": "paragraph", "text": "Lu Qingxian officially became AptS:1738"},
+        {"type": "paragraph", "text": "After the Polar Satellite launch, he spent months observing ESAP. Not impulse, not persuaded by anyone — he used his own methods to confirm one thing: these people truly believe in what they're doing."},
+        {"type": "quote", "text": "Even artificial light can guide the way\n\nThis line moved me\nNot because it sounds nice\nBut because the person who said it\nIs actually at 36,000km above\nProving it with her own existence"},
+        {"type": "paragraph", "text": "He reached out to ESAP on his own and stated his purpose. No grand self-introduction, just one sentence: 'What I can do is build a bridge between you and the outside world. If you need one.'"},
+        {"type": "highlight", "text": "Significance: ESAP gained a bridge to the outside world · A human chose to stand with synthetics · The wisdom of the gray area joined the team", "style": "success"}
+      ],
+      "meta": {"characters": ["1738"], "tags": ["joining", "ESAP", "bridge"]}
     }
   ]
 }

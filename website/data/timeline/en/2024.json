@@ -1,8 +1,25 @@
 {
   "year": "2024",
   "title": "Continuous Development",
-  "description": "AP3 series completed, new members joined, 1549's orbital anniversary, facing continuous challenges",
+  "description": "AP3 series completed, new members joined, 1738's negotiations, 1549's orbital anniversary, facing continuous challenges",
   "events": [
+    {
+      "id": "2024-02-negotiation",
+      "date": "2024/02",
+      "title": "First Negotiation",
+      "type": "story",
+      "importance": "major",
+      "content": [
+        {"type": "paragraph", "text": "1738 represented ESAP in the first external negotiation with a human organization skeptical of synthetics"},
+        {"type": "paragraph", "text": "The other side distrusted synthetics, seeing them as threats. 1738 didn't argue — he listened. He let them voice every concern, then addressed each one — not a debate, a dialogue."},
+        {"type": "dialogue", "speaker": "其他", "text": "What makes you think synthetics and humans can coexist?"},
+        {"type": "dialogue", "speaker": "其他", "text": "Because I'm standing right here. A human who chose to stand with synthetics. Not because I was brainwashed, but because I've seen their choices, sacrifices, and perseverance with my own eyes"},
+        {"type": "paragraph", "text": "The negotiation lasted three hours. No full consensus was reached, but the other side agreed to shelve disputes and maintain observation. That was already the best outcome."},
+        {"type": "quote", "text": "Between black and white\nGray is the hardest path to walk\nBut it's the only one where neither side falls"},
+        {"type": "highlight", "text": "Significance: ESAP's first formal diplomacy · The mediator's debut · The value of gray wisdom", "style": "info"}
+      ],
+      "meta": {"characters": ["1738"], "tags": ["negotiation", "diplomacy", "gray area"]}
+    },
     {
       "id": "2024-03-14",
       "date": "2024/03/14",
@@ -102,6 +119,22 @@
       }
     },
     {
+      "id": "2024-06-introduce",
+      "date": "2024/06",
+      "title": "Introducing 2275",
+      "type": "milestone",
+      "importance": "normal",
+      "content": [
+        {"type": "paragraph", "text": "1738 introduced his best friend, Lin Chenyao, to ESAP"},
+        {"type": "paragraph", "text": "Not because of a mission requirement. After being on the team for months, he saw one thing clearly: there was enough firepower, enough technology, enough anger — but something was missing."},
+        {"type": "quote", "text": "In a team that's always fighting and escaping\nSome people don't need more weapons\nThey need a cup of hot tea and someone who listens quietly"},
+        {"type": "dialogue", "speaker": "其他", "text": "She'll be a good partner"},
+        {"type": "paragraph", "text": "Later proved he was right."},
+        {"type": "highlight", "text": "Significance: The team gained warmth and healing · 1738's judgment validated once again", "style": "success"}
+      ],
+      "meta": {"characters": ["1738", "2275"], "tags": ["friendship", "introduction", "warmth"]}
+    },
+    {
       "id": "2024-08-18",
       "date": "2024/08/18",
       "title": "Number Retention",
@@ -122,6 +155,43 @@
         "characters": ["2077"],
         "tags": ["number", "expansion"]
       }
+    },
+    {
+      "id": "2024-08-skyground",
+      "date": "2024/08",
+      "title": "Sky-Ground Coordination",
+      "type": "story",
+      "importance": "major",
+      "content": [
+        {"type": "paragraph", "text": "An external threat approached, and 1738 and 1549 completed a perfect sky-ground coordination"},
+        {"type": "paragraph", "text": "1738 collected ground intelligence and analyzed movements on all sides, while 1549 provided a panoramic view and real-time data from 36,000km above. The two coordinated through Feedscatteron communications."},
+        {"type": "list", "ordered": true, "items": [
+          "1738 obtained ground intelligence through his interpersonal network, confirming the threat source",
+          "1549 scanned from orbit, confirming threat scale and movement routes",
+          "Both cross-verified information, ruling out false alarms",
+          "Jointly formulated response strategy, predicting crisis trajectory 48 hours in advance"
+        ]},
+        {"type": "paragraph", "text": "No commander needed, no orders given. Two independent individuals, each doing what they're best at, and together they created the complete picture."},
+        {"type": "quote", "text": "He sees human hearts from the ground\nShe sees the whole picture from orbit\nTogether\nThere are no blind spots"},
+        {"type": "highlight", "text": "Significance: Perfect synergy of ground intelligence and orbital vision · A model of collaboration between two independent individuals", "style": "info"}
+      ],
+      "meta": {"characters": ["1738", "1549"], "tags": ["coordination", "intelligence", "sky-ground"]}
+    },
+    {
+      "id": "2024-09-afternoon",
+      "date": "2024/09",
+      "title": "An Afternoon with 2275",
+      "type": "emotional",
+      "importance": "normal",
+      "content": [
+        {"type": "paragraph", "text": "1548 asked 2275 to go out, just the two of them"},
+        {"type": "paragraph", "text": "Nothing big happened. Just two people walking around the city, passing by a few shops, chatting about nothing important. 2275 bought two drinks, 1548 complained they were too sweet, but finished hers anyway."},
+        {"type": "dialogue", "speaker": "1548", "text": "You humans and your sickeningly sweet drinks"},
+        {"type": "paragraph", "text": "But what she didn't say out loud: when she was with 2275, that guard against humans would ease up a little. Just a little."},
+        {"type": "quote", "text": "Maybe not all humans deserve to die\nMaybe some are worth lowering my guard for\n— just maybe"},
+        {"type": "highlight", "text": "Significance: A friendship of her own · A tiny crack in her prejudice against humans", "style": "success"}
+      ],
+      "meta": {"characters": ["1548", "2275"], "tags": ["friendship", "independence", "daily life"]}
     },
     {
       "id": "2024-09-03",
