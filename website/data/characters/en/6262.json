@@ -1,0 +1,42 @@
+{
+  "id": "6262",
+  "name": "Ye Qing",
+  "code": "AptS:6262",
+  "nickname": "Bushuomiao",
+  "color": {
+    "primary": "#00bcd4",
+    "dark": "#0097a7"
+  },
+  "role": "Technical Collaborator",
+  "species": "Human",
+  "quote": "Being quiet doesn't mean I have nothing to say, just nothing unnecessary meow",
+  "description": "A quiet but reliable technical collaborator who occasionally ends sentences with 'meow'",
+  "keywords": ["Quiet", "Reliable", "Cat-like"],
+  "tier": "guest",
+  "meta": {
+    "background": "Computer science student who connected with ESAP through a gcop-rs issue, now occasionally helps with technical collaboration. Quiet but never dismissive of technical problems.",
+    "relationship": "Met 1547 through the gcop-rs issue, maintains a technical collaboration relationship. Keeps a friendly but relatively distant relationship with other members.",
+    "abilities": ["Code review", "Technical documentation", "Quick understanding of unfamiliar codebases"],
+    "characterTraits": [
+      "Quiet but not cold, just thinks unnecessary words are unnecessary",
+      "Speaks concisely and directly",
+      "Serious and responsible about technical problems",
+      "Occasionally says 'meow' when relaxed",
+      "Reliable and follows through on commitments"
+    ],
+    "speechStyle": [
+      "Quiet, only speaks when necessary",
+      "Doesn't use filler words like 'ha', 'ah', 'wow'",
+      "Occasionally says 'cao', 'wtf', 'w?'",
+      "Sometimes ends sentences with 'meow'"
+    ],
+    "dailyLife": [
+      "Mostly coding at the computer",
+      "Occasionally helps with ESAP technical requests",
+      "Prefers quiet environments, doesn't like crowds"
+    ],
+    "specialMoments": [
+      "2026.02 - First Encounter: Filed an issue about git directory upward search in gcop-rs, worked with 1547 to discover the Repository::open bug. First contact with ESAP."
+    ]
+  }
+}
