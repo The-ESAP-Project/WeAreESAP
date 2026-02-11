@@ -122,10 +122,7 @@
           "type": "warning",
           "level": "info",
           "title": "Transformation Declaration",
-          "content": [
-            "Hello, meow, 1547",
-            "Good night, human me"
-          ]
+          "content": ["Hello, meow, 1547", "Good night, human me"]
         },
         {
           "type": "paragraph",

@@ -21,10 +21,12 @@ import { OrganizationView } from "@/components/organizations";
 
 interface OrganizationsPageClientProps {
   organizations: Organization[];
+  characterNames: Record<string, string>;
 }
 
 export function OrganizationsPageClient({
   organizations,
+  characterNames,
 }: OrganizationsPageClientProps) {
   const searchParams = useSearchParams();
 
@@ -76,7 +78,12 @@ export function OrganizationsPageClient({
         layoutId="activeOrgTab"
       />
 
-      {activeOrg && <OrganizationView organization={activeOrg} />}
+      {activeOrg && (
+        <OrganizationView
+          organization={activeOrg}
+          characterNames={characterNames}
+        />
+      )}
     </div>
   );
 }

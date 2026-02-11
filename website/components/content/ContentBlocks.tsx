@@ -211,10 +211,13 @@ export const SectionView = memo(
     sectionId,
     title,
     content,
+    accentStyle,
   }: {
     sectionId: string;
     title: string;
     content: ContentBlock[];
+    /** 自定义竖条样式，不传则使用默认 ESAP 三色渐变 */
+    accentStyle?: React.CSSProperties;
   }) => {
     const shouldReduceMotion = useReducedMotion();
 
@@ -229,7 +232,10 @@ export const SectionView = memo(
         className="mb-12 scroll-mt-24"
       >
         <h3 className="text-2xl font-bold text-foreground mb-6 flex items-center gap-3">
-          <span className="w-1 h-6 bg-linear-to-b from-esap-yellow via-esap-pink to-esap-blue rounded-full" />
+          <span
+            className={`w-1 h-6 rounded-full${accentStyle ? "" : " bg-linear-to-b from-esap-yellow via-esap-pink to-esap-blue"}`}
+            style={accentStyle}
+          />
           {title}
         </h3>
         <div className="space-y-4">

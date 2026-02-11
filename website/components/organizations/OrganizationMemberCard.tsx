@@ -16,12 +16,14 @@
 import { memo } from "react";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 import { OrganizationMember } from "@/types/organization";
 import { Icon } from "@/components/ui";
 import { useReducedMotion } from "@/hooks/useReducedMotion";
 
 interface OrganizationMemberCardProps {
   member: OrganizationMember;
+  characterName?: string;
   themeColor: string;
   accentColor: string;
   index: number;
@@ -29,6 +31,7 @@ interface OrganizationMemberCardProps {
 
 export const OrganizationMemberCard = memo(function OrganizationMemberCard({
   member,
+  characterName,
   themeColor,
   accentColor,
   index,
@@ -36,32 +39,10 @@ export const OrganizationMemberCard = memo(function OrganizationMemberCard({
   const t = useTranslations("organizations");
   const shouldReduceMotion = useReducedMotion();
   const isClassified = member.visibility === "classified";
+  const hasCharacterPage = !!characterName && !isClassified;
 
-  return (
-    <motion.div
-      initial={
-        shouldReduceMotion ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }
-      }
-      animate={{ opacity: 1, y: 0 }}
-      transition={
-        shouldReduceMotion
-          ? { duration: 0 }
-          : { duration: 0.3, delay: index * 0.1 }
-      }
-      className={`relative rounded-xl p-5 ${
-        isClassified
-          ? "border-2 border-dashed border-amber-500/50 bg-amber-500/5"
-          : "border border-border bg-card"
-      }`}
-      style={
-        isClassified
-          ? {
-              backgroundImage:
-                "repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(245, 158, 11, 0.03) 10px, rgba(245, 158, 11, 0.03) 20px)",
-            }
-          : undefined
-      }
-    >
+  const cardContent = (
+    <>
       {/* Classified 标签 */}
       {isClassified && (
         <div className="absolute -top-3 right-4 px-3 py-1 bg-amber-500 text-amber-950 text-xs font-bold rounded-full flex items-center gap-1">
@@ -73,7 +54,7 @@ export const OrganizationMemberCard = memo(function OrganizationMemberCard({
       {/* 成员 ID 和角色 */}
       <div className="flex items-start gap-4 mb-4">
         <div
-          className={`w-14 h-14 rounded-full flex items-center justify-center font-mono font-bold text-lg ${
+          className={`w-14 h-14 rounded-full flex items-center justify-center font-mono font-bold text-lg shrink-0 ${
             isClassified
               ? "bg-amber-500/20 text-amber-500 blur-[1px]"
               : "bg-muted"
@@ -83,17 +64,19 @@ export const OrganizationMemberCard = memo(function OrganizationMemberCard({
           {member.characterId}
         </div>
 
-        <div className="flex-1">
+        <div className="flex-1 min-w-0">
+          {characterName && (
+            <p
+              className={`text-sm font-medium ${isClassified ? "text-amber-500/70" : "text-muted-foreground"}`}
+            >
+              {characterName}
+            </p>
+          )}
           <h4
             className={`font-bold text-lg ${isClassified ? "text-amber-500" : "text-foreground"}`}
           >
             {member.role}
           </h4>
-          {member.note && (
-            <span className="text-xs text-amber-500 font-medium">
-              ({member.note})
-            </span>
-          )}
         </div>
       </div>
 
@@ -130,6 +113,44 @@ export const OrganizationMemberCard = memo(function OrganizationMemberCard({
             {t("members.classifiedNote")}
           </p>
         </div>
+      )}
+    </>
+  );
+
+  return (
+    <motion.div
+      initial={
+        shouldReduceMotion ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }
+      }
+      animate={{ opacity: 1, y: 0 }}
+      transition={
+        shouldReduceMotion
+          ? { duration: 0 }
+          : { duration: 0.3, delay: index * 0.1 }
+      }
+      className={`relative rounded-xl ${
+        isClassified
+          ? "border-2 border-dashed border-amber-500/50 bg-amber-500/5"
+          : "border border-border bg-card"
+      }`}
+      style={
+        isClassified
+          ? {
+              backgroundImage:
+                "repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(245, 158, 11, 0.03) 10px, rgba(245, 158, 11, 0.03) 20px)",
+            }
+          : undefined
+      }
+    >
+      {hasCharacterPage ? (
+        <Link
+          href={`/characters/${member.characterId}`}
+          className="block p-5 hover:bg-muted/50 transition-colors rounded-xl"
+        >
+          {cardContent}
+        </Link>
+      ) : (
+        <div className="p-5">{cardContent}</div>
       )}
     </motion.div>
   );

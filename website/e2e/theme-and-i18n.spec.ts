@@ -21,11 +21,7 @@ import {
   waitForPageStable,
   getComputedStyle,
 } from "./utils/helpers";
-import {
-  ROUTES,
-  TIMEOUTS,
-  LOCALES,
-} from "./fixtures/test-data";
+import { ROUTES, TIMEOUTS, LOCALES } from "./fixtures/test-data";
 
 test.describe("主题切换和国际化", () => {
   test.beforeEach(async ({ page }) => {

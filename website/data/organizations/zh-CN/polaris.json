@@ -73,10 +73,7 @@
           "type": "warning",
           "level": "info",
           "title": "1547 的构想",
-          "content": [
-            "为什么天上没有星星？",
-            "那就让我自己造一颗吧。"
-          ]
+          "content": ["为什么天上没有星星？", "那就让我自己造一颗吧。"]
         },
         {
           "type": "paragraph",

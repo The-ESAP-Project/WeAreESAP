@@ -197,7 +197,9 @@ function ScrollableTabsInner<T extends TabItem>({
               {items.map((item, index) => {
                 const isActive = item.id === activeId;
                 const icon = getItemIcon?.(item);
-                const iconColor = isActive ? getItemIconColor?.(item) : undefined;
+                const iconColor = isActive
+                  ? getItemIconColor?.(item)
+                  : undefined;
                 const underlineStyleValue = getUnderlineStyle?.(item);
 
                 // 解析下划线样式
@@ -258,4 +260,6 @@ function ScrollableTabsInner<T extends TabItem>({
 }
 
 // 使用 memo 包装，但需要类型断言来保持泛型
-export const ScrollableTabs = memo(ScrollableTabsInner) as typeof ScrollableTabsInner;
+export const ScrollableTabs = memo(
+  ScrollableTabsInner
+) as typeof ScrollableTabsInner;

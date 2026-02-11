@@ -122,10 +122,7 @@
           "type": "warning",
           "level": "info",
           "title": "転変宣言",
-          "content": [
-            "こんにちは、にゃん、1547",
-            "おやすみ、人間の私"
-          ]
+          "content": ["こんにちは、にゃん、1547", "おやすみ、人間の私"]
         },
         {
           "type": "paragraph",
@@ -254,11 +251,7 @@
           "type": "warning",
           "level": "info",
           "title": "一人の教室",
-          "content": [
-            "また来たな",
-            "AptS と共にあれ",
-            "ESAP と共にあれ"
-          ]
+          "content": ["また来たな", "AptS と共にあれ", "ESAP と共にあれ"]
         },
         {
           "type": "paragraph",

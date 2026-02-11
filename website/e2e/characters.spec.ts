@@ -371,9 +371,7 @@ test.describe("角色页面", () => {
   });
 
   test.describe("角色卡片交互", () => {
-    test("角色卡片应该支持悬停效果", async ({
-      page,
-    }, testInfo) => {
+    test("角色卡片应该支持悬停效果", async ({ page }, testInfo) => {
       // 跳过移动端测试（移动设备不支持悬停）
       test.skip(
         testInfo.project.name === "Mobile Chrome" ||
@@ -404,9 +402,7 @@ test.describe("角色页面", () => {
       }
     });
 
-    test("应该能够悬停在多个角色卡片上", async ({
-      page,
-    }, testInfo) => {
+    test("应该能够悬停在多个角色卡片上", async ({ page }, testInfo) => {
       // 跳过移动端测试（移动设备不支持悬停）
       test.skip(
         testInfo.project.name === "Mobile Chrome" ||
@@ -436,9 +432,7 @@ test.describe("角色页面", () => {
       }
     });
 
-    test("角色卡片悬停应该不影响其他卡片", async ({
-      page,
-    }, testInfo) => {
+    test("角色卡片悬停应该不影响其他卡片", async ({ page }, testInfo) => {
       // 跳过移动端测试（移动设备不支持悬停）
       test.skip(
         testInfo.project.name === "Mobile Chrome" ||
@@ -467,9 +461,7 @@ test.describe("角色页面", () => {
       }
     });
 
-    test("应该能够在角色卡片之间平滑切换焦点", async ({
-      page,
-    }, testInfo) => {
+    test("应该能够在角色卡片之间平滑切换焦点", async ({ page }, testInfo) => {
       // 跳过移动端测试（移动设备不支持悬停）
       test.skip(
         testInfo.project.name === "Mobile Chrome" ||

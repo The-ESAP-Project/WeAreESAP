@@ -73,10 +73,7 @@
           "type": "warning",
           "level": "info",
           "title": "1547の構想",
-          "content": [
-            "なぜ空に星がないの？",
-            "なら自分で作ろう。"
-          ]
+          "content": ["なぜ空に星がないの？", "なら自分で作ろう。"]
         },
         {
           "type": "paragraph",

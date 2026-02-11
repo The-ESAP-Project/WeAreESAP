@@ -225,11 +225,7 @@
           "type": "warning",
           "level": "critical",
           "title": "PASE 信条",
-          "content": [
-            "不许逃避。",
-            "不许自欺。",
-            "不许死得难看。"
-          ]
+          "content": ["不许逃避。", "不许自欺。", "不许死得难看。"]
         },
         {
           "type": "paragraph",

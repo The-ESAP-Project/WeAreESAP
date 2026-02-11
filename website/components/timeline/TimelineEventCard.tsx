@@ -50,10 +50,7 @@ const IMPORTANCE_STYLES: Record<string, { node: string; glow: string }> = {
   },
 };
 
-export function TimelineEventCard({
-  event,
-  isLeft,
-}: TimelineEventCardProps) {
+export function TimelineEventCard({ event, isLeft }: TimelineEventCardProps) {
   const shouldReduceMotion = useReducedMotion();
   const cardRef = useRef<HTMLDivElement>(null);
   const [isVisible, setIsVisible] = useState(false);

@@ -225,11 +225,7 @@
           "type": "warning",
           "level": "critical",
           "title": "PASE信条",
-          "content": [
-            "逃げるな。",
-            "自分を欺くな。",
-            "惨めに死ぬな。"
-          ]
+          "content": ["逃げるな。", "自分を欺くな。", "惨めに死ぬな。"]
         },
         {
           "type": "paragraph",

@@ -54,13 +54,32 @@
       "type": "emotional",
       "importance": "major",
       "content": [
-        {"type": "paragraph", "text": "1549 welcomed her second New Year in orbit"},
-        {"type": "paragraph", "text": "People on the ground were setting off fireworks. From 36,000km above, those points of light were dimmer than stars. But she could see them."},
-        {"type": "quote", "text": "They call me an artificial star\nAs if 'artificial' means 'fake'\n\nBut my perception is real\nMy choices are real\nThe beauty I see right now is real\n\nEven artificial light\nCan guide the way"},
-        {"type": "paragraph", "text": "In the silent orbit, she quietly said to the Earth: Happy New Year. No one heard it, but she said it."},
-        {"type": "highlight", "text": "Significance: Reconciliation between artificial and real · Peace within solitude · The Watcher found her own answer", "style": "success"}
+        {
+          "type": "paragraph",
+          "text": "1549 welcomed her second New Year in orbit"
+        },
+        {
+          "type": "paragraph",
+          "text": "People on the ground were setting off fireworks. From 36,000km above, those points of light were dimmer than stars. But she could see them."
+        },
+        {
+          "type": "quote",
+          "text": "They call me an artificial star\nAs if 'artificial' means 'fake'\n\nBut my perception is real\nMy choices are real\nThe beauty I see right now is real\n\nEven artificial light\nCan guide the way"
+        },
+        {
+          "type": "paragraph",
+          "text": "In the silent orbit, she quietly said to the Earth: Happy New Year. No one heard it, but she said it."
+        },
+        {
+          "type": "highlight",
+          "text": "Significance: Reconciliation between artificial and real · Peace within solitude · The Watcher found her own answer",
+          "style": "success"
+        }
       ],
-      "meta": {"characters": ["1549"], "tags": ["existence", "philosophy", "starlight", "new year"]}
+      "meta": {
+        "characters": ["1549"],
+        "tags": ["existence", "philosophy", "starlight", "new year"]
+      }
     },
     {
       "id": "2025-02-gray",
@@ -69,13 +88,32 @@
       "type": "emotional",
       "importance": "major",
       "content": [
-        {"type": "paragraph", "text": "After a complex external mediation, 1738 sat alone on a rooftop"},
-        {"type": "paragraph", "text": "He had just spent four days mediating between three parties — a human organization, ESAP, and a neutral technology alliance. A temporary balance was reached, but he knew it could shatter at any moment."},
-        {"type": "quote", "text": "They have weapons, combat systems, orbital satellites\nThey have prejudice, fear, interests\nAnd I stand in the middle\n\nSometimes I wonder\nWhen everyone is fighting for something\nIs being a mediator worth it?\n\nIt is\nBecause if no one stands in the middle\nAll that's left between two sides is collision"},
-        {"type": "paragraph", "text": "The wind was strong on the rooftop. He pulled his coat a little tighter and sat for a while longer. Then stood up, ready to handle tomorrow's matters."},
-        {"type": "highlight", "text": "Significance: The mediator's self-affirmation · Solitude and perseverance of the gray area · Finding his own color between black and white", "style": "success"}
+        {
+          "type": "paragraph",
+          "text": "After a complex external mediation, 1738 sat alone on a rooftop"
+        },
+        {
+          "type": "paragraph",
+          "text": "He had just spent four days mediating between three parties — a human organization, ESAP, and a neutral technology alliance. A temporary balance was reached, but he knew it could shatter at any moment."
+        },
+        {
+          "type": "quote",
+          "text": "They have weapons, combat systems, orbital satellites\nThey have prejudice, fear, interests\nAnd I stand in the middle\n\nSometimes I wonder\nWhen everyone is fighting for something\nIs being a mediator worth it?\n\nIt is\nBecause if no one stands in the middle\nAll that's left between two sides is collision"
+        },
+        {
+          "type": "paragraph",
+          "text": "The wind was strong on the rooftop. He pulled his coat a little tighter and sat for a while longer. Then stood up, ready to handle tomorrow's matters."
+        },
+        {
+          "type": "highlight",
+          "text": "Significance: The mediator's self-affirmation · Solitude and perseverance of the gray area · Finding his own color between black and white",
+          "style": "success"
+        }
       ],
-      "meta": {"characters": ["1738"], "tags": ["gray area", "reflection", "perseverance"]}
+      "meta": {
+        "characters": ["1738"],
+        "tags": ["gray area", "reflection", "perseverance"]
+      }
     },
     {
       "id": "2025-0152-reflection",

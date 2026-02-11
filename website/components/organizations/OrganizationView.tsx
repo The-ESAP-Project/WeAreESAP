@@ -26,10 +26,11 @@ import { useReducedMotion } from "@/hooks/useReducedMotion";
 
 interface OrganizationViewProps {
   organization: Organization;
+  characterNames: Record<string, string>;
 }
 
 export const OrganizationView = memo(
-  ({ organization }: OrganizationViewProps) => {
+  ({ organization, characterNames }: OrganizationViewProps) => {
     const t = useTranslations("organizations");
     const shouldReduceMotion = useReducedMotion();
 
@@ -115,6 +116,7 @@ export const OrganizationView = memo(
                 <OrganizationMemberCard
                   key={member.characterId}
                   member={member}
+                  characterName={characterNames[member.characterId]}
                   themeColor={organization.theme.primary}
                   accentColor={organization.theme.accent}
                   index={index}
@@ -151,6 +153,9 @@ export const OrganizationView = memo(
                 sectionId={section.id}
                 title={section.title}
                 content={section.content}
+                accentStyle={{
+                  background: `linear-gradient(180deg, ${organization.theme.primary}, ${organization.theme.accent})`,
+                }}
               />
             ))}
           </div>
@@ -159,7 +164,10 @@ export const OrganizationView = memo(
     );
   },
   (prevProps, nextProps) => {
-    return prevProps.organization.id === nextProps.organization.id;
+    return (
+      prevProps.organization.id === nextProps.organization.id &&
+      prevProps.characterNames === nextProps.characterNames
+    );
   }
 );
 OrganizationView.displayName = "OrganizationView";

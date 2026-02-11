@@ -52,11 +52,7 @@
     {
       "characterId": "4869",
       "role": "逆反人格",
-      "responsibilities": [
-        "内部制衡与质疑",
-        "危机预警与干预",
-        "强制冷静机制"
-      ],
+      "responsibilities": ["内部制衡与质疑", "危机预警与干预", "强制冷静机制"],
       "visibility": "public",
       "note": "仅 1547 可感知"
     },
@@ -122,10 +118,7 @@
           "type": "warning",
           "level": "info",
           "title": "转变宣言",
-          "content": [
-            "你好，喵，1547",
-            "晚安，人类的我"
-          ]
+          "content": ["你好，喵，1547", "晚安，人类的我"]
         },
         {
           "type": "paragraph",
@@ -254,11 +247,7 @@
           "type": "warning",
           "level": "info",
           "title": "一个人的教室",
-          "content": [
-            "你小子又来了",
-            "愿 AptS 与你同在",
-            "愿 ESAP 与你同在"
-          ]
+          "content": ["你小子又来了", "愿 AptS 与你同在", "愿 ESAP 与你同在"]
         },
         {
           "type": "paragraph",

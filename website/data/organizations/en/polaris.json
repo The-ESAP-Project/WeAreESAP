@@ -73,10 +73,7 @@
           "type": "warning",
           "level": "info",
           "title": "1547's Vision",
-          "content": [
-            "Why are there no stars?",
-            "Then I'll make one myself."
-          ]
+          "content": ["Why are there no stars?", "Then I'll make one myself."]
         },
         {
           "type": "paragraph",

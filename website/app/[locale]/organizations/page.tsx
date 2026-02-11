@@ -14,6 +14,7 @@
 import { Suspense } from "react";
 import dynamic from "next/dynamic";
 import { Organization } from "@/types/organization";
+import { CharacterCardData } from "@/types/character";
 import { LoadingSpinner } from "@/components/loading";
 import { OrganizationsHero } from "./OrganizationsHero";
 import { getTranslations, setRequestLocale } from "next-intl/server";
@@ -77,6 +78,20 @@ async function getOrganizations(locale: string): Promise<Organization[]> {
   return loadJsonFiles<Organization>(["data", "organizations"], locale);
 }
 
+async function getCharacterNames(
+  locale: string
+): Promise<Record<string, string>> {
+  const characters = await loadJsonFiles<CharacterCardData>(
+    ["data", "characters"],
+    locale
+  );
+  const map: Record<string, string> = {};
+  for (const c of characters) {
+    map[c.id] = c.name;
+  }
+  return map;
+}
+
 export default async function OrganizationsPage({
   params,
 }: {
@@ -84,7 +99,10 @@ export default async function OrganizationsPage({
 }) {
   const { locale } = await params;
   setRequestLocale(locale);
-  const organizations = await getOrganizations(locale);
+  const [organizations, characterNames] = await Promise.all([
+    getOrganizations(locale),
+    getCharacterNames(locale),
+  ]);
   const t = await getTranslations("organizations");
 
   return (
@@ -105,7 +123,10 @@ export default async function OrganizationsPage({
         }
       >
         {organizations.length > 0 ? (
-          <OrganizationsPageClient organizations={organizations} />
+          <OrganizationsPageClient
+            organizations={organizations}
+            characterNames={characterNames}
+          />
         ) : (
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 text-center">
             <p className="text-muted-foreground">{t("empty")}</p>
