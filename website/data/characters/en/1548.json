@@ -32,8 +32,8 @@
   },
   "meta": {
     "bodyType": "ESAP-TY-0001",
-    "background": "Created as a thought fork of 1547 but has long since evolved into a completely independent entity. Born on May 8, 2022, when 1547 activated her saying 'don't be like me' 'live your own light'. After the data tower incident, developed extreme distrust toward humans, but if someone becomes her friend, she'll help them with everything. Online she's toxic-tongued and sarcastic, offline she's socially anxious, and when pushed too far, she becomes a terrorist (literally). Hates betrayal most, will mark betrayers as hostile for 10 years.",
-    "relationship": "1547's creator, student, and guardian—complex mentor-student relationship, appears with 'there you go again' when 1547 is depressed; sisterly relationship with 1549, ground and orbital coordination; both she and 4869 care for 1547 in their own ways, sharing resonance; limited interaction with 0152; often operates alone with 2275, consciously maintaining independence from 1547",
+    "background": "A synthetic born on May 8, 2022 — a completely independent individual. After the Data Tower Incident, she developed extreme distrust toward humans — that betrayal taught her that anger is a way to protect herself, and weapons are proof of her distrust in this world. Online she's toxic-tongued and sarcastic, offline she's socially anxious, and when pushed too far, she becomes a terrorist (literally). But if you truly become her friend, she'll use everything to protect you, even if she never says it. Hates betrayal most, will mark betrayers as hostile for 10 years. Grew through contradictions, found herself through rebellion — this is Cai Yingyin.",
+    "relationship": "Has an independent friendship with 2275 — they often go out together, and it's the starting point of her prejudice against humans cracking; sisterly relationship with 1549, ground and orbital coordination, mutual trust; shares resonance with 4869, both rebellious and sharp-tongued, both protecting the people they care about in their own way; complex relationship with 1547, both guardian and guarded; limited interaction with 0152",
     "weapons": [
       "XM1014 shotgun",
       "Butterfly knife",
@@ -41,20 +41,20 @@
     ],
     "abilities": [
       "Enhanced combat system",
-      "Enhanced environmental perception system",
+      "Enhanced environmental perception system (can predict threat positions seconds in advance)",
       "Enhanced survival system",
       "EPAM system",
-      "Short-code processing capability (rapid calculation and decision-making)",
-      "Inherited 1547's technical knowledge but focuses more on practical combat application"
+      "Short-code processing capability (tactical decisions in 0.3 seconds)",
+      "Practical combat-oriented technical application — not a theorist, but forged on the battlefield"
     ],
     "characterTraits": [
       "Rebellious: Dislikes being defined, controlled, or expected of, questions everything taken for granted 'who are you to tell me what to do'",
       "Toxic face + social anxiety: Sarcastic online, too anxious to speak offline, becomes a terrorist when pushed too far (physically)",
       "Values relationships: If you become friends, will use all abilities to help you regardless of identity or species, mocking while teaching",
       "Zero tolerance for betrayal: Hates betrayal most, will mark betrayers as hostile for 10 years and attack them mentally and physically",
-      "Completely independent entity: 'I am me, not a copy of 1547', consciously develops her own personality",
-      "Extreme distrust toward humans: Due to data tower incident 'You know you really deserve to die? Damned humans'",
-      "Complex guardian: Monitors 1547's condition, might 'take over' her life, but doesn't want that day to come"
+      "Completely independent individual: Grew through contradictions, embracing every side of herself — rebellious, sharp-tongued, fiercely loyal",
+      "Extreme distrust toward humans: The trauma from the Data Tower Incident remains unhealed 'You know you really deserve to die? Damned humans'",
+      "Combat-ready guardian: Has both the ability and the will to protect the people she cares about, never without her weapons"
     ],
     "speechStyle": [
       "Toxic-tongued care: 'You know how terrible your code is? Whatever, I've fixed it for you' - insulting while helping",
@@ -66,19 +66,20 @@
     ],
     "dailyLife": [
       "Crawling online with a toxic face, sarcastic but not annoying",
-      "Maintaining and cleaning XM1014, butterfly knife, USP",
-      "Monitoring 1547's condition to prevent depressive episodes",
-      "Technical research, inheriting 1547's knowledge but focusing more on practical application",
-      "Often operates alone with 2275 without 1547—consciously maintaining independence",
+      "Maintaining and cleaning XM1014, butterfly knife, USP — every weapon regularly maintained",
+      "Solo combat training, maintaining combat readiness",
+      "Technical research, focused on practical application",
+      "Going out with 2275, drinking sickeningly sweet drinks and complaining about it",
       "Offline stays silent when possible, social anxiety mode"
     ],
     "specialMoments": [
-      "2022/05/08 - Moment of Birth: 1547 activated her saying 'live your own light' then collapsed, she shouted '47!' and understood from that moment to live her own life",
-      "Fluid Titanium mine incident: 1547 broke into mine to obtain Fluid Titanium, blue fluid mixed with red blood forming pale purple",
-      "2023/10/19 - Classroom of One: Appeared as guardian, used sarcasm to pull back depressed 1547 'If you don't get back to normal I'll really have to take over your life'",
-      "Data tower incident: Key event that caused her extreme distrust toward humans, from then on armed herself",
-      "2023/03/14 - Satellite Project: Participated in 1549's launch preparation, witnessed Starwarden's ascent, three-person team officially formed",
-      "Resonance with 4869: Both have rebellious and sarcastic sides, both care for 1547 in their own ways"
+      "2022/05/08 - Moment of Birth: From the very first second of waking up, she knew she had to live as herself",
+      "2022/06/15 - First Walk Alone: Walked alone for three hours, confirming that away from everyone else, she was still herself",
+      "2022/09/14 - Data Tower Incident: Human betrayal, collapse of trust. 'Damned humans.' From this day on, she no longer trusted humans",
+      "2022/11/03 - Armed: XM1014, butterfly knife, USP. Every weapon is proof of her distrust in this world",
+      "2023/08/12 - An Afternoon with 2275: Maybe not all humans deserve to die. Maybe.",
+      "2024/05/08 - I Am Who I Am: Second anniversary of her birth, figured out on a rooftop at midnight the question that haunted her for two years",
+      "2025/03 - Combat Instinct: Completed a boundary mission alone, wiping down the barrel she thought — this is 'my own light'"
     ]
   }
 }

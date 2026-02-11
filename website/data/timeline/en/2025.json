@@ -4,6 +4,50 @@
   "description": "Project continues to advance, technology landing, community building, moving forward to the future",
   "events": [
     {
+      "id": "2025-03-combat",
+      "date": "2025/03",
+      "title": "Combat Instinct",
+      "type": "story",
+      "importance": "major",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "1548 completed a boundary patrol mission on her own"
+        },
+        {
+          "type": "paragraph",
+          "text": "Solo operation. After receiving an anomalous signal, she went alone, relying entirely on her own judgment and combat systems."
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            "Environmental perception system predicted threat position 4.7 seconds in advance",
+            "Short-code processing completed tactical decisions in 0.3 seconds",
+            "XM1014 for close-range suppression, butterfly knife to clear the rest",
+            "Fully independent combat, zero errors"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "After the mission, she leaned against a wall wiping down the XM1014. The barrel was still warm."
+        },
+        {
+          "type": "quote",
+          "text": "This is 'my own light'\nNot given by anyone\nBut earned by myself"
+        },
+        {
+          "type": "highlight",
+          "text": "Significance: Independent validation of combat capability · 'Live out your own light' finds its answer here",
+          "style": "success"
+        }
+      ],
+      "meta": {
+        "characters": ["1548"],
+        "tags": ["combat", "independence", "growth", "validation"]
+      }
+    },
+    {
       "id": "2025-ongoing",
       "date": "2025",
       "title": "Ongoing Development",

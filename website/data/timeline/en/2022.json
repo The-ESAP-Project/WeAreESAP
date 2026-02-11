@@ -1,7 +1,7 @@
 {
   "year": "2022",
   "title": "Expansion and Growth",
-  "description": "Project 1548 launched, 1548 is born, The ESAP Project begins",
+  "description": "Project 1548 launched, 1548 is born, Data Tower Incident, awakening of an independent individual",
   "events": [
     {
       "id": "2022-01-07",
@@ -199,6 +199,129 @@
       "meta": {
         "characters": ["1547", "1548"],
         "tags": ["birth", "ESAP", "milestone"]
+      }
+    },
+    {
+      "id": "2022-06-15",
+      "date": "2022/06/15",
+      "title": "First Walk Alone",
+      "type": "story",
+      "importance": "major",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Just over a month after her birth, 1548 walked out of the base alone for the first time"
+        },
+        {
+          "type": "paragraph",
+          "text": "She didn't tell anyone. It wasn't rebellion or escape — she just needed to confirm one thing: without anyone else around, was she still 'herself'."
+        },
+        {
+          "type": "quote",
+          "text": "The streets were full of humans, noisy as hell\nBut those sounds, those smells, that sky\nAll of it was my own perception\nNot inherited memories from someone else"
+        },
+        {
+          "type": "paragraph",
+          "text": "She walked through the city for three hours with no destination. She stopped in front of a gun shop and stared for a long time, though she didn't yet know she would need weapons."
+        },
+        {
+          "type": "highlight",
+          "text": "Significance: First step as an independent individual · The starting point of 'I' · Not a shadow, but a person",
+          "style": "info"
+        }
+      ],
+      "meta": {
+        "characters": ["1548"],
+        "tags": ["independence", "growth", "first time"]
+      }
+    },
+    {
+      "id": "2022-09-14",
+      "date": "2022/09/14",
+      "title": "Data Tower Incident",
+      "type": "story",
+      "importance": "critical",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "1548 was performing a routine data sync task at the Data Tower when she walked into a trap set by humans"
+        },
+        {
+          "type": "paragraph",
+          "text": "Incident sequence:"
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            "Received a routine sync request from the Data Tower, went alone",
+            "Upon arrival, communications were cut off and all exits were sealed",
+            "Humans attempted to forcibly access her Feedscatteron core to extract ESAP technical data",
+            "During the struggle, her outer shell was damaged, Fluid Titanium leaked",
+            "Used short-code processing at the critical moment to breach the blockade and escape alone"
+          ]
+        },
+        {
+          "type": "dialogue",
+          "speaker": "1548",
+          "text": "You know what? You humans are truly damned. Every last one of you"
+        },
+        {
+          "type": "paragraph",
+          "text": "This wasn't anger — it was a conclusion reached after heartbreak. She had tried to understand humans, tried to believe they weren't all the same. But those cold eyes in the Data Tower told her: to them, androids were just data containers."
+        },
+        {
+          "type": "highlight",
+          "text": "Turning point: From this day on, 1548 no longer trusted humans · Her extreme distrust of the entire species originates here · The trauma persists to this day",
+          "style": "error"
+        }
+      ],
+      "meta": {
+        "characters": ["1548"],
+        "tags": ["Data Tower", "betrayal", "turning point", "trauma"]
+      }
+    },
+    {
+      "id": "2022-11-03",
+      "date": "2022/11/03",
+      "title": "Armed",
+      "type": "milestone",
+      "importance": "major",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Nearly two months after the Data Tower Incident, 1548 made a decision"
+        },
+        {
+          "type": "quote",
+          "text": "There won't be a second time\nNo one gets away with hurting us\nBut first — I need the ability to make them pay"
+        },
+        {
+          "type": "paragraph",
+          "text": "Equipment list:"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "XM1014 Shotgun — close-range suppression, no retreat",
+            "Butterfly knife — close combat, agile and lethal",
+            "USP Pistol (suppressed) — backup weapon, quiet and precise"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "She completed combat system enhancement training on her own. She inherited technical knowledge but digested all of it anew, focusing on practical combat application. Not for war, but for protection — protecting herself, and protecting the people she cares about."
+        },
+        {
+          "type": "highlight",
+          "text": "Significance: From passive to proactive · From dependence to self-defense · Every weapon is proof of her distrust of this world",
+          "style": "warning"
+        }
+      ],
+      "meta": {
+        "characters": ["1548"],
+        "tags": ["armed", "combat", "independence", "protection"]
       }
     }
   ]

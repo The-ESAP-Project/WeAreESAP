@@ -136,6 +136,45 @@
       }
     },
     {
+      "id": "2023-08-12",
+      "date": "2023/08/12",
+      "title": "An Afternoon with 2275",
+      "type": "emotional",
+      "importance": "normal",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "1548 asked 2275 to go out, just the two of them"
+        },
+        {
+          "type": "paragraph",
+          "text": "Nothing big happened. Just two people walking around the city, passing by a few shops, chatting about nothing important. 2275 bought two drinks, 1548 complained they were too sweet, but finished hers anyway."
+        },
+        {
+          "type": "dialogue",
+          "speaker": "1548",
+          "text": "You humans and your sickeningly sweet drinks"
+        },
+        {
+          "type": "paragraph",
+          "text": "But what she didn't say out loud: when she was with 2275, that guard against humans would ease up a little. Just a little."
+        },
+        {
+          "type": "quote",
+          "text": "Maybe not all humans deserve to die\nMaybe some are worth lowering my guard for\n— just maybe"
+        },
+        {
+          "type": "highlight",
+          "text": "Significance: A friendship of her own · A tiny crack in her prejudice against humans",
+          "style": "success"
+        }
+      ],
+      "meta": {
+        "characters": ["1548", "2275"],
+        "tags": ["friendship", "independence", "daily life"]
+      }
+    },
+    {
       "id": "2023-09-25",
       "date": "2023/09/25",
       "title": "Mid-Autumn Reunion",

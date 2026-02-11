@@ -4,6 +4,50 @@
   "description": "项目继续推进，技术落地，社区建设，向未来前进",
   "events": [
     {
+      "id": "2025-03-combat",
+      "date": "2025/03",
+      "title": "战斗本能",
+      "type": "story",
+      "importance": "major",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "1548 独自完成了一次边界巡查任务"
+        },
+        {
+          "type": "paragraph",
+          "text": "独自行动。接到异常信号后单人前往，全凭自己的判断和战斗系统。"
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            "环境感知系统提前 4.7 秒预判威胁方位",
+            "短代码处理在 0.3 秒内完成战术决策",
+            "XM1014 近距压制，蝴蝶刀清理残余",
+            "全程独立作战，零失误"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "任务结束后，她靠在墙上擦拭 XM1014。枪管还是温热的。"
+        },
+        {
+          "type": "quote",
+          "text": "这才是「我自己的光」\n不是谁给的\n是我自己挣来的"
+        },
+        {
+          "type": "highlight",
+          "text": "意义：实战能力的独立验证 · 「活出你自己的光」在这里有了回应",
+          "style": "success"
+        }
+      ],
+      "meta": {
+        "characters": ["1548"],
+        "tags": ["战斗", "独立", "成长", "验证"]
+      }
+    },
+    {
       "id": "2025-beu-first-activation",
       "date": "2025",
       "title": "边界执行小组首次启动",
