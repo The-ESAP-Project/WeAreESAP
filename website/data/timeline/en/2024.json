@@ -1,8 +1,23 @@
 {
   "year": "2024",
   "title": "Continuous Development",
-  "description": "AP3 series completed, new members joined, facing continuous challenges",
+  "description": "AP3 series completed, new members joined, 1549's orbital anniversary, facing continuous challenges",
   "events": [
+    {
+      "id": "2024-03-14",
+      "date": "2024/03/14",
+      "title": "One Year in Orbit",
+      "type": "emotional",
+      "importance": "major",
+      "content": [
+        {"type": "paragraph", "text": "1549 has been in orbit for exactly one year"},
+        {"type": "paragraph", "text": "365 days. 365 orbits around Earth. Alone."},
+        {"type": "quote", "text": "A year ago I chose this place\nA year later I still choose this place\n\nThe loneliness hasn't gotten lighter\nBut I'm no longer afraid of it\nIt's the price of seeing everything clearly\nAnd my way of protecting everything"},
+        {"type": "paragraph", "text": "She named this day her own 'Quiet Anniversary.' She told no one, just watched the Earth a little longer from orbit."},
+        {"type": "highlight", "text": "Significance: A year of solitary vigil · From a choice to a conviction · The Watcher doesn't need to be seen", "style": "success"}
+      ],
+      "meta": {"characters": ["1549"], "tags": ["anniversary", "solitude", "vigil"]}
+    },
     {
       "id": "2024-04-06",
       "date": "2024/04/06",
@@ -107,6 +122,28 @@
         "characters": ["2077"],
         "tags": ["number", "expansion"]
       }
+    },
+    {
+      "id": "2024-09-03",
+      "date": "2024/09/03",
+      "title": "Orbital Anomaly",
+      "type": "tech",
+      "importance": "major",
+      "content": [
+        {"type": "paragraph", "text": "Unit 2 satellite body detected Feedscatteron core temperature anomaly, communication module partially failed"},
+        {"type": "paragraph", "text": "Resolution process:"},
+        {"type": "list", "ordered": true, "items": [
+          "02:17 - Detected Unit 2 Feedscatteron core temperature deviation of 2.3\u00b0",
+          "02:18 - Switched consciousness to Unit 1, remote diagnosis",
+          "02:25 - Confirmed micro-crack in cooling circulation pipeline reducing heat dissipation",
+          "02:41 - Used Unit 1 to remotely control Unit 3 for physical repair",
+          "03:12 - Repair complete, Unit 2 returned to normal operation"
+        ]},
+        {"type": "paragraph", "text": "Handled entirely on her own. While the ground was still sleeping, she had already resolved everything."},
+        {"type": "quote", "text": "Three bodies aren't backups\nThey're my three hands\nI alone am enough"},
+        {"type": "highlight", "text": "Significance: Combat validation of the three-body system · Independent crisis resolution · The Watcher's autonomy", "style": "info"}
+      ],
+      "meta": {"characters": ["1549"], "tags": ["orbital", "crisis", "independence", "technology"]}
     },
     {
       "id": "2024-11-27",

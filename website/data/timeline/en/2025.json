@@ -48,6 +48,21 @@
       }
     },
     {
+      "id": "2025-01-starlight",
+      "date": "2025/01",
+      "title": "Artificial Starlight",
+      "type": "emotional",
+      "importance": "major",
+      "content": [
+        {"type": "paragraph", "text": "1549 welcomed her second New Year in orbit"},
+        {"type": "paragraph", "text": "People on the ground were setting off fireworks. From 36,000km above, those points of light were dimmer than stars. But she could see them."},
+        {"type": "quote", "text": "They call me an artificial star\nAs if 'artificial' means 'fake'\n\nBut my perception is real\nMy choices are real\nThe beauty I see right now is real\n\nEven artificial light\nCan guide the way"},
+        {"type": "paragraph", "text": "In the silent orbit, she quietly said to the Earth: Happy New Year. No one heard it, but she said it."},
+        {"type": "highlight", "text": "Significance: Reconciliation between artificial and real · Peace within solitude · The Watcher found her own answer", "style": "success"}
+      ],
+      "meta": {"characters": ["1549"], "tags": ["existence", "philosophy", "starlight", "new year"]}
+    },
+    {
       "id": "2025-ongoing",
       "date": "2025",
       "title": "Ongoing Development",

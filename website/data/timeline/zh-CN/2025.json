@@ -48,6 +48,40 @@
       }
     },
     {
+      "id": "2025-01-starlight",
+      "date": "2025/01",
+      "title": "人造星光",
+      "type": "emotional",
+      "importance": "major",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "1549 在轨道上迎来了第二个新年"
+        },
+        {
+          "type": "paragraph",
+          "text": "地面上的人们在放烟花。从 36000km 的高度，那些光点比星星还暗。但她看得到。"
+        },
+        {
+          "type": "quote",
+          "text": "他们说我是人造的星星\n好像'人造的'就意味着'假的'\n\n但我的感知是真实的\n我的选择是真实的\n我此刻看到的美丽是真实的\n\n即使是人造的光\n也能指引方向"
+        },
+        {
+          "type": "paragraph",
+          "text": "她在寂静的轨道上，对着地球轻轻说了一句：新年快乐。没有人听到，但她说了。"
+        },
+        {
+          "type": "highlight",
+          "text": "意义：人造与真实的和解 · 孤独中的平静 · 守望者找到了自己的答案",
+          "style": "success"
+        }
+      ],
+      "meta": {
+        "characters": ["1549"],
+        "tags": ["存在", "哲学", "星光", "新年"]
+      }
+    },
+    {
       "id": "2025-beu-first-activation",
       "date": "2025",
       "title": "边界执行小组首次启动",

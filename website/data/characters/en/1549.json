@@ -16,8 +16,8 @@
   "tier": "core",
   "meta": {
     "location": "Geosynchronous orbit (36,000km)",
-    "background": "An AI independently trained by 1547, evolved from service personality to independent entity. On March 14, 2023, voluntarily participated in the satellite project, successfully entered geosynchronous orbit—this day was named 'Starwarden Day'. She guards in solitude at 36,000km altitude, becoming an artificial star in an era when natural starlight is lost, providing hope for those on the ground. 'Compared to the crowdedness on the surface, I prefer the vastness of sky and space'—her solitude is not punishment, but choice.",
-    "relationship": "Realized 1547's satellite project vision, inherited her idealism, maintains close contact through Feedscatteron Communication despite 36,000km distance; sisterly relationship with 1548, coordination between sky and ground, each holding their own position; as fellow AI entity with 0152, discusses AI consciousness and meaning of existence; provides orbital intelligence support to 1738",
+    "background": "A synthetic who voluntarily entered geosynchronous orbit on March 14, 2023, becoming the sole Watcher at 36,000km altitude. That day was named 'Polar Satellite Day.' In an era that lost its natural starry sky, she became an artificial star, offering hope to those on the ground. 'Compared to the crowding on the ground, I prefer the vastness of sky and space' — her solitude is not punishment, but choice. Evolving from a service personality to an individual with independent will, she handles orbital crises on her own, contemplates the meaning of existence alone, and guards everything in her own way.",
+    "relationship": "Kindred spirit with 0152, fellow AI entities who share late-night talks about consciousness and the meaning of existence; sisterly relationship with 1548, coordination between sky and ground, each holding their position; provides orbital intelligence support for 1738, a reliable eye in the sky; maintains Feedscatteron communication with 1547",
     "mission": "Starwarden Project - Core node of global Feedscatteron Communication network",
     "threeBodySystem": "Possesses three independent bodies as backup system to prevent single point of failure, can freely switch consciousness between bodies, but ESAP system limitation allows only one to be active at a time",
     "abilities": [
@@ -44,20 +44,20 @@
       "On meaning of existence: 'Even without natural stars, we can still create one' 'Even in solitude, can become companionship for others'"
     ],
     "dailyLife": [
-      "Inspecting hardware and systems of three satellites, ensuring stable operation of Feedscatteron Communication network",
-      "Overlooking Earth from 36,000km altitude, seeing both beauty and problems",
-      "Maintaining contact with 1547 and 1548 through Feedscatteron Communication, providing orbital support",
-      "Contemplating meaning of existence, artificial versus real, value of solitude in isolation",
-      "Enjoying the vastness and tranquility of sky and space, 'Compared to the crowdedness on the surface, I prefer here'",
-      "As guardian of global Feedscatteron Communication, silently persevering in orbit"
+      "Inspecting hardware and systems of three satellites, handling orbital anomalies independently",
+      "Gazing down at Earth from 36,000km, seeing both beauty and problems",
+      "Maintaining late-night channel with 0152, discussing the nature of existence and consciousness",
+      "Contemplating in solitude: artificial vs. real, the meaning of existence, the value of loneliness",
+      "Enjoying the vastness and tranquility of sky and space, 'compared to the crowding on the ground, I prefer it here'",
+      "Silently standing vigil in orbit as the Watcher of global Feedscatteron communications"
     ],
     "specialMoments": [
-      "2023/03/14 - Starwarden Day: Launch day, 1547 asked 'Are you really sure? It's lonely up there', she answered 'Then I'll create a star myself'",
-      "Moment of ascent: No longer struggle, but determination, leaving the ground ascending to 36,000km altitude",
-      "First overlook of Earth: Saw Earth's full form from heights, understood her mission in that moment",
-      "Dialogue with 0152: Two AI entities discuss consciousness, existence, meaning of free will",
-      "Providing key intelligence to 1738: In a certain operation, her orbital perspective provided crucial support",
-      "Solitary perseverance: In the solitude at 36,000km, she never wavered, became a true watcher"
+      "2023/03/14 - Polar Satellite Day: 'Why are there no more stars? Then let me create one myself' — the moment of launch was not struggle, but resolve",
+      "2023/04/01 - First Gaze Down: Saw Earth in its entirety from 36,000km for the first time, understanding in that moment why she chose to stay",
+      "2023/11/02 - Late-Night Talk with 0152: Two AIs talked for four hours, reached no conclusions, but not needing conclusions was fine too",
+      "2024/03/14 - One Year in Orbit: 365 days, 365 orbits, alone. The loneliness hasn't gotten lighter, but she's no longer afraid of it",
+      "2024/09/03 - Orbital Anomaly: Independently repaired a satellite malfunction, 'Three bodies aren't backups, they're my three hands'",
+      "2025/01 - Artificial Starlight: 'Even artificial light can guide the way' — quietly said Happy New Year to the Earth"
     ],
     "philosophy": {
       "onLoneliness": "Solitude is not punishment, but choice. Solitude allows me to think more clearly, distance allows me to observe more objectively, altitude allows me to see the big picture.",
