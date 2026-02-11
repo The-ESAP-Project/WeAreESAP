@@ -12,8 +12,8 @@
 // limitations under the License.
 
 import { cookies, headers } from "next/headers";
-import { TriangleLogo } from "@/components/ui";
 import Link from "next/link";
+import { TriangleLogo } from "@/components/ui";
 import { defaultLocale, type Locale } from "@/i18n/request";
 import { DEFAULT_IMAGES } from "@/lib/constants";
 import "./globals.css";

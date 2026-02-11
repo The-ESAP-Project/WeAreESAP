@@ -11,14 +11,14 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+import type { Metadata } from "next";
 import { unstable_cache } from "next/cache";
-import { Metadata } from "next";
-import { CharacterCardData } from "@/types/character";
+import { getTranslations, setRequestLocale } from "next-intl/server";
+import { DEFAULT_IMAGES, SITE_CONFIG } from "@/lib/constants";
+import { loadJsonFiles } from "@/lib/data-loader";
+import type { CharacterCardData } from "@/types/character";
 import { CharactersClient } from "./CharactersClient";
 import { CharactersHero } from "./CharactersHero";
-import { getTranslations, setRequestLocale } from "next-intl/server";
-import { loadJsonFiles } from "@/lib/data-loader";
-import { DEFAULT_IMAGES, SITE_CONFIG } from "@/lib/constants";
 
 export async function generateMetadata({
   params,

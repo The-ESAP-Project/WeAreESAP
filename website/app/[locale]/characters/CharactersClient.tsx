@@ -13,16 +13,16 @@
 
 "use client";
 
-import { useCallback } from "react";
 import { useRouter } from "next/navigation";
-import { useTransition } from "@/components/ui";
+import { useLocale, useTranslations } from "next-intl";
+import { useCallback } from "react";
 import {
   CharacterAccordion,
-  CharacterMobileView,
   CharacterCard,
+  CharacterMobileView,
 } from "@/components/character";
-import { CharacterCardData } from "@/types/character";
-import { useTranslations, useLocale } from "next-intl";
+import { useTransition } from "@/components/ui";
+import type { CharacterCardData } from "@/types/character";
 
 interface CharactersClientProps {
   accordionCharacters: CharacterCardData[];

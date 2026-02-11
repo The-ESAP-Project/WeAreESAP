@@ -11,16 +11,16 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-import { Suspense } from "react";
-import dynamic from "next/dynamic";
-import { TimelineYear } from "@/types/timeline";
-import { LoadingSpinner } from "@/components/loading";
-import { TimelineHero } from "./TimelineHero";
-import { AnimatedSection } from "@/components/ui";
-import { getTranslations, setRequestLocale } from "next-intl/server";
 import type { Metadata } from "next";
-import { loadJsonFiles } from "@/lib/data-loader";
+import dynamic from "next/dynamic";
+import { getTranslations, setRequestLocale } from "next-intl/server";
+import { Suspense } from "react";
+import { LoadingSpinner } from "@/components/loading";
+import { AnimatedSection } from "@/components/ui";
 import { DEFAULT_IMAGES, SITE_CONFIG } from "@/lib/constants";
+import { loadJsonFiles } from "@/lib/data-loader";
+import type { TimelineYear } from "@/types/timeline";
+import { TimelineHero } from "./TimelineHero";
 
 // 动态导入 TimelineClient，减少首屏 JavaScript 包大小
 const TimelineClient = dynamic(() =>

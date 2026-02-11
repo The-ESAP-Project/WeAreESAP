@@ -11,6 +11,6 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-export { SearchProvider, useSearch } from "./SearchProvider";
 export { SearchCommand } from "./SearchCommand";
+export { SearchProvider, useSearch } from "./SearchProvider";
 export { SearchResult } from "./SearchResult";

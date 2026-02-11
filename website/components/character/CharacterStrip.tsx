@@ -13,14 +13,14 @@
 
 "use client";
 
-import { memo } from "react";
 import { motion } from "framer-motion";
-import { CharacterCardData } from "@/types/character";
 import Image from "next/image";
-import { getBlurDataURL } from "@/lib/blur-placeholder";
 import { useTranslations } from "next-intl";
-import { getContrastTextColor, getContrastTextColorDark } from "@/lib/utils";
+import { memo } from "react";
 import { useReducedMotion } from "@/hooks/useReducedMotion";
+import { getBlurDataURL } from "@/lib/blur-placeholder";
+import { getContrastTextColor, getContrastTextColorDark } from "@/lib/utils";
+import type { CharacterCardData } from "@/types/character";
 
 interface CharacterStripProps {
   character: CharacterCardData;

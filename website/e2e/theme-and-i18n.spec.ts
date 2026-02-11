@@ -11,17 +11,17 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-import { test, expect } from "@playwright/test";
+import { expect, test } from "@playwright/test";
+import { LOCALES, ROUTES, TIMEOUTS } from "./fixtures/test-data";
 import {
-  toggleTheme,
-  switchLanguage,
-  isDarkTheme,
+  getComputedStyle,
   getCurrentLocale,
+  isDarkTheme,
+  switchLanguage,
+  toggleTheme,
   waitForAnimation,
   waitForPageStable,
-  getComputedStyle,
 } from "./utils/helpers";
-import { ROUTES, TIMEOUTS, LOCALES } from "./fixtures/test-data";
 
 test.describe("主题切换和国际化", () => {
   test.beforeEach(async ({ page }) => {

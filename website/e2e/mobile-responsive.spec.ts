@@ -11,15 +11,15 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-import { test, expect } from "@playwright/test";
-import { CharacterListPage } from "./pages/CharacterListPage";
-import { CharacterDetailPage } from "./pages/CharacterDetailPage";
-import {
-  waitForPageStable,
-  scrollToElement,
-  isInViewport,
-} from "./utils/helpers";
+import { expect, test } from "@playwright/test";
 import { ROUTES, TEST_CHARACTERS } from "./fixtures/test-data";
+import { CharacterDetailPage } from "./pages/CharacterDetailPage";
+import { CharacterListPage } from "./pages/CharacterListPage";
+import {
+  isInViewport,
+  scrollToElement,
+  waitForPageStable,
+} from "./utils/helpers";
 
 test.describe("移动端响应式测试", () => {
   test.use({

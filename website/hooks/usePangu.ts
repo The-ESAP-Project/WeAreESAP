@@ -13,8 +13,8 @@
 
 "use client";
 
-import { useEffect, useCallback } from "react";
 import { pangu } from "pangu/browser";
+import { useCallback, useEffect } from "react";
 
 // 全局标志位，确保 autoSpacingPage 只启动一次
 let autoSpacingStarted = false;

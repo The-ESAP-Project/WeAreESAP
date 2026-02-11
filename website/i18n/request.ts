@@ -11,8 +11,8 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-import { getRequestConfig } from "next-intl/server";
 import { hasLocale } from "next-intl";
+import { getRequestConfig } from "next-intl/server";
 import { routing } from "./routing";
 
 // 支持的语言列表

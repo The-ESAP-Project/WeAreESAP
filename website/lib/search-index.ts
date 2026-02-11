@@ -16,11 +16,11 @@
  * 服务端函数，用于构建搜索索引数据
  */
 
-import { loadJsonFiles } from "./data-loader";
 import type { Character } from "@/types/character";
+import type { SearchItem } from "@/types/search";
 import type { TechModule } from "@/types/tech";
 import type { TimelineYear } from "@/types/timeline";
-import type { SearchItem } from "@/types/search";
+import { loadJsonFiles } from "./data-loader";
 
 /**
  * 构建搜索索引数据

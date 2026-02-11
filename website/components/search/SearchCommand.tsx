@@ -13,12 +13,12 @@
 
 "use client";
 
-import { memo, useRef, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
+import { useTranslations } from "next-intl";
+import { memo, useEffect, useRef } from "react";
 import { useRouter } from "@/i18n/navigation";
 import { useSearch } from "./SearchProvider";
 import { SearchResult } from "./SearchResult";
-import { useTranslations } from "next-intl";
 
 export const SearchCommand = memo(function SearchCommand() {
   const t = useTranslations("search");

@@ -17,7 +17,7 @@
  */
 
 import ELK from "elkjs/lib/elk.bundled.js";
-import { Node, Edge } from "reactflow";
+import type { Edge, Node } from "reactflow";
 import { logger } from "./logger";
 
 // ELK 布局选项

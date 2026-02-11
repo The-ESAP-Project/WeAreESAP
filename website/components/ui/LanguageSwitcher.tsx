@@ -13,13 +13,13 @@
 
 "use client";
 
-import { usePathname, useRouter } from "@/i18n/navigation";
+import { AnimatePresence, motion } from "framer-motion";
 import { useLocale } from "next-intl";
-import { locales } from "@/i18n/request";
-import { useState, useRef, useEffect, useCallback, useMemo } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { Icon } from "@/components/ui";
 import { useReducedMotion } from "@/hooks/useReducedMotion";
+import { usePathname, useRouter } from "@/i18n/navigation";
+import { locales } from "@/i18n/request";
 
 const localeNames: Record<string, string> = {
   "zh-CN": "简体中文",

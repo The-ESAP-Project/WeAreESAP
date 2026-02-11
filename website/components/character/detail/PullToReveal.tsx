@@ -13,24 +13,24 @@
 
 "use client";
 
-import { useState, useEffect, useCallback, ReactNode } from "react";
-import { createPortal } from "react-dom";
 import {
-  motion,
   AnimatePresence,
+  motion,
   useMotionValue,
+  useMotionValueEvent,
   useSpring,
   useTransform,
-  useMotionValueEvent,
 } from "framer-motion";
-import { useTheme } from "next-themes";
 import { useTranslations } from "next-intl";
+import { useTheme } from "next-themes";
+import { type ReactNode, useCallback, useEffect, useState } from "react";
+import { createPortal } from "react-dom";
+import { Icon } from "@/components/ui";
 import { usePullToReveal } from "@/hooks/usePullToReveal";
-import { HiddenContent } from "./HiddenContent";
-import { HiddenProfile } from "@/types/hidden-profile";
 import { useReducedMotion } from "@/hooks/useReducedMotion";
 import { DEBUG_MODE } from "@/lib/debug";
-import { Icon } from "@/components/ui";
+import type { HiddenProfile } from "@/types/hidden-profile";
+import { HiddenContent } from "./HiddenContent";
 
 interface PullToRevealProps {
   /** 子组件 */
@@ -315,7 +315,7 @@ export function PullToReveal({
     }, 100);
 
     return () => clearTimeout(timer);
-  }, [isModalOpen, shouldReduceMotion]);
+  }, [shouldReduceMotion]);
 
   // 同步实时进度到动画值
   useEffect(() => {

@@ -13,14 +13,14 @@
 
 "use client";
 
-import { useRef } from "react";
-import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { Character } from "@/types/character";
-import { Link } from "@/i18n/navigation";
+import Image from "next/image";
 import { useTranslations } from "next-intl";
-import { getContrastTextColor, getContrastTextColorDark } from "@/lib/utils";
+import { useRef } from "react";
 import { useReducedMotion } from "@/hooks/useReducedMotion";
+import { Link } from "@/i18n/navigation";
+import { getContrastTextColor, getContrastTextColorDark } from "@/lib/utils";
+import type { Character } from "@/types/character";
 
 interface CharacterHeroProps {
   character: Character;

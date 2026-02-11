@@ -11,26 +11,26 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-import fs from "fs/promises";
-import path from "path";
-import { Metadata } from "next";
-import { notFound } from "next/navigation";
+import fs from "node:fs/promises";
+import path from "node:path";
+import type { Metadata } from "next";
 import dynamic from "next/dynamic";
-import { Character } from "@/types/character";
-import { Relationship } from "@/types/relationship";
-import { RelationshipNodeData } from "@/types/relationship-node";
+import { notFound } from "next/navigation";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import {
   CharacterHero,
   CharacterInfo,
   PullToReveal,
 } from "@/components/character/detail";
-import { getTranslations, setRequestLocale } from "next-intl/server";
-import { locales } from "@/i18n/request";
-import { getCharacterRelationships } from "@/lib/relationship-parser";
-import { loadJsonFile } from "@/lib/data-loader";
-import { DEFAULT_IMAGES, SITE_CONFIG } from "@/lib/constants";
-import { PersonJsonLd } from "@/components/seo";
 import { CharacterSkeleton, GraphSkeleton } from "@/components/loading";
+import { PersonJsonLd } from "@/components/seo";
+import { locales } from "@/i18n/request";
+import { DEFAULT_IMAGES, SITE_CONFIG } from "@/lib/constants";
+import { loadJsonFile } from "@/lib/data-loader";
+import { getCharacterRelationships } from "@/lib/relationship-parser";
+import type { Character } from "@/types/character";
+import type { Relationship } from "@/types/relationship";
+import type { RelationshipNodeData } from "@/types/relationship-node";
 
 // 懒加载非首屏组件（直接导入具体文件，避免 barrel export 影响 tree-shaking）
 const CharacterStory = dynamic(

@@ -15,7 +15,7 @@
 
 import { motion } from "framer-motion";
 import { useReducedMotion } from "@/hooks/useReducedMotion";
-import { generateTrianglePaths, ESAP_COLOR_ARRAY } from "@/lib/svg-utils";
+import { ESAP_COLOR_ARRAY, generateTrianglePaths } from "@/lib/svg-utils";
 
 interface TriangleLogoProps {
   size?: number;

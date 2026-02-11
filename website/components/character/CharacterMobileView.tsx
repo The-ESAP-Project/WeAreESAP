@@ -13,14 +13,14 @@
 
 "use client";
 
-import { useState, useMemo, memo } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import { CharacterCardData } from "@/types/character";
+import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
-import { getBlurDataURL } from "@/lib/blur-placeholder";
 import { useTranslations } from "next-intl";
-import { getContrastTextColor, getContrastTextColorDark } from "@/lib/utils";
+import { memo, useMemo, useState } from "react";
 import { useReducedMotion } from "@/hooks/useReducedMotion";
+import { getBlurDataURL } from "@/lib/blur-placeholder";
+import { getContrastTextColor, getContrastTextColorDark } from "@/lib/utils";
+import type { CharacterCardData } from "@/types/character";
 
 interface CharacterMobileViewProps {
   characters: CharacterCardData[];

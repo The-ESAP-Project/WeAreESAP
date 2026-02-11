@@ -11,14 +11,14 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-import { test, expect } from "@playwright/test";
+import { expect, test } from "@playwright/test";
+import { ROUTES, SELECTORS } from "./fixtures/test-data";
 import {
+  isDarkTheme,
+  toggleTheme,
   waitForAnimation,
   waitForPageStable,
-  toggleTheme,
-  isDarkTheme,
 } from "./utils/helpers";
-import { ROUTES, SELECTORS } from "./fixtures/test-data";
 
 test.describe("移动端导航测试", () => {
   test.use({

@@ -13,7 +13,7 @@
 
 "use client";
 
-import { Component, ReactNode } from "react";
+import { Component, type ReactNode } from "react";
 import { Icon } from "@/components/ui";
 import { logger } from "@/lib/logger";
 

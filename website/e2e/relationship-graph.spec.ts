@@ -11,14 +11,14 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-import { test, expect } from "@playwright/test";
+import { expect, test } from "@playwright/test";
+import { SELECTORS, TEST_CHARACTERS, TIMEOUTS } from "./fixtures/test-data";
 import { CharacterDetailPage } from "./pages/CharacterDetailPage";
 import {
+  scrollToElement,
   waitForAnimation,
   waitForPageStable,
-  scrollToElement,
 } from "./utils/helpers";
-import { TEST_CHARACTERS, SELECTORS, TIMEOUTS } from "./fixtures/test-data";
 
 test.describe("关系图谱交互", () => {
   let detailPage: CharacterDetailPage;
@@ -126,7 +126,7 @@ test.describe("关系图谱交互", () => {
         const centerY2 = pos2.y + pos2.height / 2;
 
         const distance = Math.sqrt(
-          Math.pow(centerX2 - centerX1, 2) + Math.pow(centerY2 - centerY1, 2)
+          (centerX2 - centerX1) ** 2 + (centerY2 - centerY1) ** 2
         );
 
         // 如果距离小于节点尺寸总和的一半，说明可能有重叠

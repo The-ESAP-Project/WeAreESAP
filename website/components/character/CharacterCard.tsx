@@ -13,13 +13,13 @@
 
 "use client";
 
-import { memo } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { CharacterCardData } from "@/types/character";
+import { memo } from "react";
+import { useReducedMotion } from "@/hooks/useReducedMotion";
 import { getBlurDataURL } from "@/lib/blur-placeholder";
 import { getContrastTextColor, getContrastTextColorDark } from "@/lib/utils";
-import { useReducedMotion } from "@/hooks/useReducedMotion";
+import type { CharacterCardData } from "@/types/character";
 
 interface CharacterCardProps {
   character: CharacterCardData;

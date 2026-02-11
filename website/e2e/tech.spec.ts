@@ -11,7 +11,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-import { test, expect } from "@playwright/test";
+import { expect, test } from "@playwright/test";
 import { ROUTES, TIMEOUTS, VIEWPORTS } from "./fixtures/test-data";
 import { navigateAndWait, waitForAnimation } from "./utils/helpers";
 

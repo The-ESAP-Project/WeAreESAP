@@ -11,16 +11,16 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-import { Suspense } from "react";
-import dynamic from "next/dynamic";
-import { Organization } from "@/types/organization";
-import { CharacterCardData } from "@/types/character";
-import { LoadingSpinner } from "@/components/loading";
-import { OrganizationsHero } from "./OrganizationsHero";
-import { getTranslations, setRequestLocale } from "next-intl/server";
 import type { Metadata } from "next";
-import { loadJsonFiles } from "@/lib/data-loader";
+import dynamic from "next/dynamic";
+import { getTranslations, setRequestLocale } from "next-intl/server";
+import { Suspense } from "react";
+import { LoadingSpinner } from "@/components/loading";
 import { DEFAULT_IMAGES, SITE_CONFIG } from "@/lib/constants";
+import { loadJsonFiles } from "@/lib/data-loader";
+import type { CharacterCardData } from "@/types/character";
+import type { Organization } from "@/types/organization";
+import { OrganizationsHero } from "./OrganizationsHero";
 
 const OrganizationsPageClient = dynamic(() =>
   import("./OrganizationsPageClient").then((mod) => ({

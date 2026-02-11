@@ -13,13 +13,13 @@
 
 "use client";
 
-import { memo } from "react";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
-import { Link } from "@/i18n/navigation";
-import { OrganizationMember } from "@/types/organization";
+import { memo } from "react";
 import { Icon } from "@/components/ui";
 import { useReducedMotion } from "@/hooks/useReducedMotion";
+import { Link } from "@/i18n/navigation";
+import type { OrganizationMember } from "@/types/organization";
 
 interface OrganizationMemberCardProps {
   member: OrganizationMember;

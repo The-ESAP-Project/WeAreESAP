@@ -11,10 +11,10 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-import { describe, it, expect, vi, beforeEach, afterEach } from "vitest";
-import { getCharacterRelationships } from "../relationship-parser";
+import fs from "node:fs/promises";
+import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import * as logger from "../logger";
-import fs from "fs/promises";
+import { getCharacterRelationships } from "../relationship-parser";
 
 describe("relationship-parser", () => {
   describe("getCharacterRelationships", () => {

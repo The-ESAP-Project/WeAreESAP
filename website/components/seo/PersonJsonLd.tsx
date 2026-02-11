@@ -11,8 +11,8 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-import type { Character } from "@/types/character";
 import { SITE_CONFIG } from "@/lib/constants";
+import type { Character } from "@/types/character";
 
 interface PersonJsonLdProps {
   character: Character;

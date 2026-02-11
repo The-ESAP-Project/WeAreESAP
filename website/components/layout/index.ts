@@ -11,6 +11,6 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-export { Navigation } from "./Navigation";
 export { Footer } from "./Footer";
+export { Navigation } from "./Navigation";
 export { ScrollToTop } from "./ScrollToTop";

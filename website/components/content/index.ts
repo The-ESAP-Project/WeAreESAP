@@ -14,6 +14,6 @@
 export { ContentBlockRenderer, SectionView } from "./ContentBlocks";
 export {
   ScrollableTabs,
-  type TabItem,
   type ScrollableTabsProps,
+  type TabItem,
 } from "./ScrollableTabs";

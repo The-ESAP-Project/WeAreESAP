@@ -13,19 +13,19 @@
 
 "use client";
 
-import { memo } from "react";
 import { motion } from "framer-motion";
-import {
-  ContentBlock,
-  TableBlock,
-  ListBlock,
-  WarningBlock,
-  CodeBlock,
-  SubsectionBlock,
-  ParagraphBlock,
-} from "@/types/tech";
+import { memo } from "react";
 import { Icon, type IconName } from "@/components/ui";
 import { useReducedMotion } from "@/hooks/useReducedMotion";
+import type {
+  CodeBlock,
+  ContentBlock,
+  ListBlock,
+  ParagraphBlock,
+  SubsectionBlock,
+  TableBlock,
+  WarningBlock,
+} from "@/types/tech";
 
 // 警告框样式配置 - 提取到组件外部避免重复创建
 const WARNING_STYLES: Record<

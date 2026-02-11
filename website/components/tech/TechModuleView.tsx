@@ -13,12 +13,12 @@
 
 "use client";
 
+import { AnimatePresence, motion } from "framer-motion";
 import { memo } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import { TechModule } from "@/types/tech";
 import { SectionView } from "@/components/content";
 import { Icon } from "@/components/ui";
 import { useReducedMotion } from "@/hooks/useReducedMotion";
+import type { TechModule } from "@/types/tech";
 
 interface TechModuleViewProps {
   module: TechModule;

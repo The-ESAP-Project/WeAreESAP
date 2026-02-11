@@ -11,21 +11,21 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+import type { Metadata } from "next";
 import dynamic from "next/dynamic";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import { ChecklistItem } from "@/components";
 import { Icon, type IconName } from "@/components/ui";
-import { JoinHero } from "./JoinHero";
-import { getTranslations, setRequestLocale } from "next-intl/server";
-import type { Metadata } from "next";
+import { DEFAULT_IMAGES, SITE_CONFIG } from "@/lib/constants";
 import type {
-  RoleType,
-  ParticipationMethod,
-  Step,
-  Principle,
   CommunityValue,
   Contribution,
+  ParticipationMethod,
+  Principle,
+  RoleType,
+  Step,
 } from "@/types/join";
-import { DEFAULT_IMAGES, SITE_CONFIG } from "@/lib/constants";
+import { JoinHero } from "./JoinHero";
 
 // 懒加载非首屏组件（减少首屏 JavaScript 包大小）
 const RoleTypeCard = dynamic(() =>

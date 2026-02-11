@@ -13,9 +13,9 @@
 
 "use client";
 
-import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
-import { Icon, IconName } from "@/components/ui";
+import { useTranslations } from "next-intl";
+import { Icon, type IconName } from "@/components/ui";
 import { ESAP_COLORS } from "@/lib/constants";
 
 type SectionKey = "beginning" | "world" | "theme" | "join";

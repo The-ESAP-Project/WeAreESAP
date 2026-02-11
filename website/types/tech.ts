@@ -11,7 +11,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-import { IconName } from "@/components/ui";
+import type { IconName } from "@/components/ui";
 
 /**
  * 技术设定数据类型定义

@@ -13,27 +13,27 @@
 
 "use client";
 
-import { useEffect, useMemo, useState, memo } from "react";
+import { memo, useEffect, useMemo, useState } from "react";
 import ReactFlow, {
-  Node,
-  Edge,
-  Controls,
   Background,
-  useNodesState,
+  Controls,
+  type Edge,
+  type EdgeTypes,
+  type Node,
+  type NodeTypes,
   useEdgesState,
-  NodeTypes,
-  EdgeTypes,
+  useNodesState,
 } from "reactflow";
 import "reactflow/dist/style.css";
-import { Character } from "@/types/character";
-import { Relationship } from "@/types/relationship";
-import { RelationshipNodeData } from "@/types/relationship-node";
-import CharacterNode, { CharacterNodeData } from "./graph/CharacterNode";
-import RelationshipEdge, {
-  RelationshipEdgeData,
-} from "./graph/RelationshipEdge";
 import { useTranslations } from "next-intl";
 import { getLayoutedElements } from "@/lib/graph-layout";
+import type { Character } from "@/types/character";
+import type { Relationship } from "@/types/relationship";
+import type { RelationshipNodeData } from "@/types/relationship-node";
+import CharacterNode, { type CharacterNodeData } from "./graph/CharacterNode";
+import RelationshipEdge, {
+  type RelationshipEdgeData,
+} from "./graph/RelationshipEdge";
 
 interface RelationshipGraphProps {
   character: Character;

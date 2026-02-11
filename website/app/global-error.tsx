@@ -14,7 +14,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { type Locale, defaultLocale } from "@/i18n/request";
+import { defaultLocale, type Locale } from "@/i18n/request";
 import { logger } from "@/lib/logger";
 
 // 客户端检测语言

@@ -13,10 +13,10 @@
 
 "use client";
 
-import { ReactNode } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import { LoadingSpinner } from "./LoadingSpinner";
+import { AnimatePresence, motion } from "framer-motion";
+import type { ReactNode } from "react";
 import { useReducedMotion } from "@/hooks/useReducedMotion";
+import { LoadingSpinner } from "./LoadingSpinner";
 
 interface LoadingContainerProps {
   /** 是否正在加载 */

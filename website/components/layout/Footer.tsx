@@ -13,9 +13,9 @@
 
 "use client";
 
-import { useTranslations, useLocale } from "next-intl";
-import { useMemo } from "react";
 import Image from "next/image";
+import { useLocale, useTranslations } from "next-intl";
+import { useMemo } from "react";
 import { Icon } from "@/components/ui/Icon";
 import buildInfo from "@/data/build-info.json";
 import { DEFAULT_IMAGES } from "@/lib/constants";

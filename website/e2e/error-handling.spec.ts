@@ -11,9 +11,9 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-import { test, expect } from "@playwright/test";
-import { navigateAndWait, waitForPageStable } from "./utils/helpers";
+import { expect, test } from "@playwright/test";
 import { ROUTES, SELECTORS, TEST_CHARACTERS } from "./fixtures/test-data";
+import { navigateAndWait, waitForPageStable } from "./utils/helpers";
 
 test.describe("错误处理", () => {
   test.describe("404 页面处理", () => {

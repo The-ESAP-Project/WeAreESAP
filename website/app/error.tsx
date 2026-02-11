@@ -13,10 +13,10 @@
 
 "use client";
 
-import { useEffect, useState } from "react";
-import { TriangleLogo, Icon } from "@/components/ui";
 import Link from "next/link";
-import { type Locale, defaultLocale } from "@/i18n/request";
+import { useEffect, useState } from "react";
+import { Icon, TriangleLogo } from "@/components/ui";
+import { defaultLocale, type Locale } from "@/i18n/request";
 import { logger } from "@/lib/logger";
 
 interface ErrorPageProps {

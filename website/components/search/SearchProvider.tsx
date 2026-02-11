@@ -13,15 +13,15 @@
 
 "use client";
 
+import Fuse from "fuse.js";
 import {
   createContext,
-  useContext,
-  useState,
-  useCallback,
-  useEffect,
   type ReactNode,
+  useCallback,
+  useContext,
+  useEffect,
+  useState,
 } from "react";
-import Fuse from "fuse.js";
 import type { SearchItem } from "@/types/search";
 
 interface SearchContextValue {

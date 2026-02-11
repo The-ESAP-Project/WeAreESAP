@@ -13,11 +13,11 @@
 
 "use client";
 
-import { useState, useEffect, useMemo, useCallback } from "react";
 import { useSearchParams } from "next/navigation";
-import { Organization } from "@/types/organization";
+import { useCallback, useEffect, useMemo, useState } from "react";
 import { ScrollableTabs } from "@/components/content";
 import { OrganizationView } from "@/components/organizations";
+import type { Organization } from "@/types/organization";
 
 interface OrganizationsPageClientProps {
   organizations: Organization[];
@@ -61,7 +61,7 @@ export function OrganizationsPageClient({
         });
       });
     }
-  }, [activeOrgId]);
+  }, []);
 
   return (
     <div className="min-h-screen">

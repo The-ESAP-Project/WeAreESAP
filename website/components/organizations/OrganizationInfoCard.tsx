@@ -13,10 +13,10 @@
 
 "use client";
 
-import { memo } from "react";
 import { useTranslations } from "next-intl";
-import { Organization } from "@/types/organization";
+import { memo } from "react";
 import { Icon } from "@/components/ui";
+import type { Organization } from "@/types/organization";
 
 interface OrganizationInfoCardProps {
   organization: Organization;

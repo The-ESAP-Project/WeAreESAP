@@ -13,8 +13,8 @@
 
 "use client";
 
-import { Character } from "@/types/character";
 import { useTranslations } from "next-intl";
+import type { Character } from "@/types/character";
 
 interface CharacterDailyLifeProps {
   character: Character;

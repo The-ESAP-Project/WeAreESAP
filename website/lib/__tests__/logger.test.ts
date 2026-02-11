@@ -12,7 +12,7 @@
 // limitations under the License.
 
 /* eslint-disable no-console */
-import { describe, it, expect, vi, beforeEach, afterEach } from "vitest";
+import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 
 describe("logger", () => {
   let originalNodeEnv: string | undefined;

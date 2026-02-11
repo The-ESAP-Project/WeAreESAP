@@ -13,11 +13,11 @@
 
 "use client";
 
-import { useState, useRef, useEffect, useCallback, useMemo } from "react";
 import { motion } from "framer-motion";
-import { CharacterCardData } from "@/types/character";
-import { CharacterStrip } from "./CharacterStrip";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { useReducedMotion } from "@/hooks/useReducedMotion";
+import type { CharacterCardData } from "@/types/character";
+import { CharacterStrip } from "./CharacterStrip";
 
 interface CharacterAccordionProps {
   characters: CharacterCardData[];

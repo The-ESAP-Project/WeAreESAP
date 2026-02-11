@@ -11,9 +11,9 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-import { describe, it, expect, vi, beforeEach } from "vitest";
+import type { Edge, Node } from "reactflow";
+import { beforeEach, describe, expect, it, vi } from "vitest";
 import { getLayoutedElements } from "../graph-layout";
-import { Node, Edge } from "reactflow";
 import * as logger from "../logger";
 
 describe("graph-layout", () => {
@@ -213,8 +213,7 @@ describe("graph-layout", () => {
       otherNodes.forEach((node) => {
         // 验证节点到中心的距离约等于半径 200
         const distance = Math.sqrt(
-          Math.pow(node.position.x - 400, 2) +
-            Math.pow(node.position.y - 300, 2)
+          (node.position.x - 400) ** 2 + (node.position.y - 300) ** 2
         );
         expect(distance).toBeCloseTo(200, 0);
       });
@@ -290,8 +289,7 @@ describe("graph-layout", () => {
       // 验证所有节点都在圆周上
       layoutedNodes.forEach((node) => {
         const distance = Math.sqrt(
-          Math.pow(node.position.x - 400, 2) +
-            Math.pow(node.position.y - 300, 2)
+          (node.position.x - 400) ** 2 + (node.position.y - 300) ** 2
         );
         expect(distance).toBeCloseTo(200, 0);
       });
@@ -357,8 +355,7 @@ describe("graph-layout", () => {
       const normalNodes = layoutedNodes.filter((n) => !n.data.isCenter);
       normalNodes.forEach((node) => {
         const distance = Math.sqrt(
-          Math.pow(node.position.x - 400, 2) +
-            Math.pow(node.position.y - 300, 2)
+          (node.position.x - 400) ** 2 + (node.position.y - 300) ** 2
         );
         expect(distance).toBeCloseTo(200, 0);
       });

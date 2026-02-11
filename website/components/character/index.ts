@@ -11,7 +11,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-export { CharacterCard } from "./CharacterCard";
 export { CharacterAccordion } from "./CharacterAccordion";
+export { CharacterCard } from "./CharacterCard";
 export { CharacterMobileView } from "./CharacterMobileView";
 export { CharacterStrip } from "./CharacterStrip";

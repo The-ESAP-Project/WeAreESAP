@@ -16,7 +16,7 @@
  * 可扩展的数据结构，支持未来添加新字段
  */
 
-import { HiddenProfile } from "./hidden-profile";
+import type { HiddenProfile } from "./hidden-profile";
 
 export interface Character {
   /** 角色 ID */

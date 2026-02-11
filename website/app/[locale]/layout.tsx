@@ -14,27 +14,27 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "../globals.css";
-import {
-  ThemeProvider,
-  TransitionProvider,
-  PageTransition,
-  TransitionOverlay,
-  Navigation,
-  Footer,
-  ScrollToTop,
-  PanguProvider,
-} from "@/components";
-import { WebVitals } from "@/components/analytics";
 import { NextIntlClientProvider } from "next-intl";
 import {
   getMessages,
   getTranslations,
   setRequestLocale,
 } from "next-intl/server";
-import { locales } from "@/i18n/request";
-import { SITE_CONFIG, DEFAULT_IMAGES } from "@/lib/constants";
+import {
+  Footer,
+  Navigation,
+  PageTransition,
+  PanguProvider,
+  ScrollToTop,
+  ThemeProvider,
+  TransitionOverlay,
+  TransitionProvider,
+} from "@/components";
+import { WebVitals } from "@/components/analytics";
+import { SearchCommand, SearchProvider } from "@/components/search";
 import { WebsiteJsonLd } from "@/components/seo";
-import { SearchProvider, SearchCommand } from "@/components/search";
+import { locales } from "@/i18n/request";
+import { DEFAULT_IMAGES, SITE_CONFIG } from "@/lib/constants";
 import { buildSearchIndex } from "@/lib/search-index";
 
 const geistSans = Geist({

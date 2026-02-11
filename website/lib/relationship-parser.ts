@@ -16,9 +16,12 @@
  * 包含文件系统操作，不能在客户端导入
  */
 
-import fs from "fs/promises";
-import path from "path";
-import { Relationship, CharacterRelationshipData } from "@/types/relationship";
+import fs from "node:fs/promises";
+import path from "node:path";
+import type {
+  CharacterRelationshipData,
+  Relationship,
+} from "@/types/relationship";
 import { logger } from "./logger";
 
 /**

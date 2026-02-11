@@ -13,9 +13,9 @@
 
 "use client";
 
-import { Character } from "@/types/character";
 import { useTranslations } from "next-intl";
 import { getContrastTextColor, getContrastTextColorDark } from "@/lib/utils";
+import type { Character } from "@/types/character";
 
 interface CharacterSpeechStyleProps {
   character: Character;

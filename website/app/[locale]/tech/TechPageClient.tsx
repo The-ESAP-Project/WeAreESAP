@@ -13,11 +13,11 @@
 
 "use client";
 
-import { useState, useEffect, useMemo, useCallback } from "react";
 import { useSearchParams } from "next/navigation";
-import { TechModule } from "@/types/tech";
-import { ScrollableTabs } from "@/components/content";
+import { useCallback, useEffect, useMemo, useState } from "react";
 import { TechModuleView } from "@/components";
+import { ScrollableTabs } from "@/components/content";
+import type { TechModule } from "@/types/tech";
 
 interface TechPageClientProps {
   modules: TechModule[];
@@ -62,7 +62,7 @@ export function TechPageClient({ modules }: TechPageClientProps) {
         });
       });
     }
-  }, [activeModuleId]);
+  }, []);
 
   return (
     <div className="min-h-screen">

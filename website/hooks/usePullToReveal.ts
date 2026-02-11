@@ -13,10 +13,10 @@
 
 "use client";
 
-import { useState, useEffect, useCallback, useRef } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import {
-  PullToRevealConfig,
   DEFAULT_PULL_CONFIG,
+  type PullToRevealConfig,
 } from "@/types/hidden-profile";
 
 interface UsePullToRevealReturn {

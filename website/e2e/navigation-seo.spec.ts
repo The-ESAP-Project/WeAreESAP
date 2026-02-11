@@ -11,13 +11,13 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-import { test, expect } from "@playwright/test";
+import { expect, test } from "@playwright/test";
+import { ROUTES, TEST_CHARACTERS } from "./fixtures/test-data";
 import {
+  getCurrentLocale,
   navigateAndWait,
   waitForPageStable,
-  getCurrentLocale,
 } from "./utils/helpers";
-import { ROUTES, TEST_CHARACTERS } from "./fixtures/test-data";
 
 test.describe("导航和 SEO", () => {
   test.describe("浏览器导航功能", () => {

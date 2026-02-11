@@ -11,15 +11,15 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-import { CharacterCardData } from "@/types/character";
+import type { Metadata } from "next";
+import { getTranslations, setRequestLocale } from "next-intl/server";
+import { AnimatedSection } from "@/components/ui";
+import { DEFAULT_IMAGES, SITE_CONFIG } from "@/lib/constants";
+import { loadJsonFiles } from "@/lib/data-loader";
+import type { CharacterCardData } from "@/types/character";
 import { HomeCharacters } from "./HomeCharacters";
 import { HomeHero } from "./HomeHero";
 import { StorySection } from "./StorySection";
-import { AnimatedSection } from "@/components/ui";
-import { getTranslations, setRequestLocale } from "next-intl/server";
-import type { Metadata } from "next";
-import { loadJsonFiles } from "@/lib/data-loader";
-import { SITE_CONFIG, DEFAULT_IMAGES } from "@/lib/constants";
 
 // 启用 ISR - 1小时重新验证一次
 export const revalidate = 3600;

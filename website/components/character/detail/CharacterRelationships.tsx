@@ -14,11 +14,11 @@
 "use client";
 
 import dynamic from "next/dynamic";
-import { Character } from "@/types/character";
-import { Relationship } from "@/types/relationship";
-import { RelationshipNodeData } from "@/types/relationship-node";
-import { Icon } from "@/components/ui";
 import { useTranslations } from "next-intl";
+import { Icon } from "@/components/ui";
+import type { Character } from "@/types/character";
+import type { Relationship } from "@/types/relationship";
+import type { RelationshipNodeData } from "@/types/relationship-node";
 import { RelationshipGraphErrorBoundary } from "./RelationshipGraphErrorBoundary";
 
 // 懒加载关系图谱组件

@@ -76,7 +76,7 @@ export function debounce<T extends (...args: unknown[]) => unknown>(
   delay: number
 ): (...args: Parameters<T>) => void {
   let timeoutId: NodeJS.Timeout;
-  return function (...args: Parameters<T>) {
+  return (...args: Parameters<T>) => {
     clearTimeout(timeoutId);
     timeoutId = setTimeout(() => fn(...args), delay);
   };
@@ -92,7 +92,7 @@ export function throttle<T extends (...args: unknown[]) => unknown>(
   limit: number
 ): (...args: Parameters<T>) => void {
   let inThrottle: boolean;
-  return function (...args: Parameters<T>) {
+  return (...args: Parameters<T>) => {
     if (!inThrottle) {
       fn(...args);
       inThrottle = true;
@@ -161,11 +161,11 @@ export function getColorLuminance(color: string): number {
 
   // 应用 sRGB 伽马校正
   const rsRGB =
-    rNorm <= 0.03928 ? rNorm / 12.92 : Math.pow((rNorm + 0.055) / 1.055, 2.4);
+    rNorm <= 0.03928 ? rNorm / 12.92 : ((rNorm + 0.055) / 1.055) ** 2.4;
   const gsRGB =
-    gNorm <= 0.03928 ? gNorm / 12.92 : Math.pow((gNorm + 0.055) / 1.055, 2.4);
+    gNorm <= 0.03928 ? gNorm / 12.92 : ((gNorm + 0.055) / 1.055) ** 2.4;
   const bsRGB =
-    bNorm <= 0.03928 ? bNorm / 12.92 : Math.pow((bNorm + 0.055) / 1.055, 2.4);
+    bNorm <= 0.03928 ? bNorm / 12.92 : ((bNorm + 0.055) / 1.055) ** 2.4;
 
   // 计算相对亮度
   return 0.2126 * rsRGB + 0.7152 * gsRGB + 0.0722 * bsRGB;

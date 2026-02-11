@@ -11,8 +11,8 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-import { IconName } from "@/components/ui";
-import { ContentBlock } from "./tech";
+import type { IconName } from "@/components/ui";
+import type { ContentBlock } from "./tech";
 
 /**
  * 组织设定数据类型定义

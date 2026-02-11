@@ -15,11 +15,12 @@
 
 import {
   createContext,
+  type ReactNode,
+  useCallback,
   useContext,
-  useState,
   useEffect,
   useRef,
-  ReactNode,
+  useState,
 } from "react";
 
 interface TransitionContextType {
@@ -48,15 +49,17 @@ export function TransitionProvider({ children }: { children: ReactNode }) {
   const timersRef = useRef<Set<NodeJS.Timeout>>(new Set());
 
   // 清理所有 timers
-  const clearAllTimers = () => {
-    timersRef.current.forEach((timer) => clearTimeout(timer));
+  const clearAllTimers = useCallback(() => {
+    for (const timer of timersRef.current) {
+      clearTimeout(timer);
+    }
     timersRef.current.clear();
-  };
+  }, []);
 
   // 组件卸载时清理所有 timers
   useEffect(() => {
     return clearAllTimers;
-  }, []);
+  }, [clearAllTimers]);
 
   // 处理首次加载
   useEffect(() => {

@@ -11,14 +11,14 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-import { describe, it, expect, vi, afterEach } from "vitest";
+import fs from "node:fs/promises";
+import { afterEach, describe, expect, it, vi } from "vitest";
 import {
   loadJsonFile,
-  loadJsonFiles,
   loadJsonFileDirect,
+  loadJsonFiles,
 } from "../data-loader";
 import * as logger from "../logger";
-import fs from "fs/promises";
 
 describe("data-loader", () => {
   describe("loadJsonFile", () => {

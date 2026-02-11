@@ -11,13 +11,13 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-import { Page, Locator } from "@playwright/test";
+import type { Locator, Page } from "@playwright/test";
+import { ROUTES, SELECTORS, TIMEOUTS } from "../fixtures/test-data";
 import {
   navigateAndWait,
-  waitForPageStable,
   waitForAnimation,
+  waitForPageStable,
 } from "../utils/helpers";
-import { ROUTES, SELECTORS, TIMEOUTS } from "../fixtures/test-data";
 
 /**
  * 角色列表页面对象模型

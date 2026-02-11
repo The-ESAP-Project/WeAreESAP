@@ -14,9 +14,9 @@
 "use client";
 
 import { memo } from "react";
-import { EdgeProps, getBezierPath, EdgeLabelRenderer } from "reactflow";
-import { RelationshipType } from "@/types/relationship";
+import { EdgeLabelRenderer, type EdgeProps, getBezierPath } from "reactflow";
 import { getRelationshipColor } from "@/lib/relationship-utils";
+import type { RelationshipType } from "@/types/relationship";
 
 export interface RelationshipEdgeData {
   label: string; // 关系简短标签

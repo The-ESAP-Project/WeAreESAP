@@ -13,16 +13,16 @@
 
 "use client";
 
-import { memo } from "react";
+import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
-import { motion, AnimatePresence } from "framer-motion";
 import { useTranslations } from "next-intl";
-import { Organization } from "@/types/organization";
+import { memo } from "react";
 import { SectionView } from "@/components/content";
-import { OrganizationInfoCard } from "./OrganizationInfoCard";
-import { OrganizationMemberCard } from "./OrganizationMemberCard";
 import { Icon } from "@/components/ui";
 import { useReducedMotion } from "@/hooks/useReducedMotion";
+import type { Organization } from "@/types/organization";
+import { OrganizationInfoCard } from "./OrganizationInfoCard";
+import { OrganizationMemberCard } from "./OrganizationMemberCard";
 
 interface OrganizationViewProps {
   organization: Organization;

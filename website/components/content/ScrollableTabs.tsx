@@ -15,13 +15,13 @@
 
 import { motion } from "framer-motion";
 import {
-  useRef,
-  useEffect,
-  useState,
+  type CSSProperties,
   memo,
   useCallback,
+  useEffect,
   useMemo,
-  CSSProperties,
+  useRef,
+  useState,
 } from "react";
 import { Icon, type IconName } from "@/components/ui";
 import { useReducedMotion } from "@/hooks/useReducedMotion";

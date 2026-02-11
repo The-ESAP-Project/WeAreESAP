@@ -30,11 +30,9 @@ const isDevelopment = process.env.NODE_ENV === "development";
  * @param level 日志级别
  * @returns 日志函数
  */
-function createLogger(level: LogLevel) {
-  return (...args: unknown[]): void => {
+function createLogger(_level: LogLevel) {
+  return (..._args: unknown[]): void => {
     if (isDevelopment) {
-      // eslint-disable-next-line no-console
-      console[level](...args);
     }
     // 生产环境下静默处理
   };

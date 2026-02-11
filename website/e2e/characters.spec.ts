@@ -11,11 +11,11 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-import { test, expect } from "@playwright/test";
-import { CharacterListPage } from "./pages/CharacterListPage";
-import { CharacterDetailPage } from "./pages/CharacterDetailPage";
-import { waitForAnimation, waitForPageStable } from "./utils/helpers";
+import { expect, test } from "@playwright/test";
 import { TEST_CHARACTERS } from "./fixtures/test-data";
+import { CharacterDetailPage } from "./pages/CharacterDetailPage";
+import { CharacterListPage } from "./pages/CharacterListPage";
+import { waitForAnimation, waitForPageStable } from "./utils/helpers";
 
 test.describe("角色页面", () => {
   test("应该成功加载角色列表页", async ({ page }) => {

@@ -13,12 +13,12 @@
 
 "use client";
 
-import { useRef, useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { TimelineEvent } from "@/types/timeline";
-import { TimelineContentRenderer } from "./TimelineContent";
+import { useEffect, useRef, useState } from "react";
 import { Icon, type IconName } from "@/components/ui";
 import { useReducedMotion } from "@/hooks/useReducedMotion";
+import type { TimelineEvent } from "@/types/timeline";
+import { TimelineContentRenderer } from "./TimelineContent";
 
 interface TimelineEventCardProps {
   event: TimelineEvent;

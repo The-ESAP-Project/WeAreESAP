@@ -13,9 +13,9 @@
 
 "use client";
 
-import { motion, AnimatePresence } from "framer-motion";
-import { LoadingSpinner } from "./LoadingSpinner";
+import { AnimatePresence, motion } from "framer-motion";
 import { useReducedMotion } from "@/hooks/useReducedMotion";
+import { LoadingSpinner } from "./LoadingSpinner";
 
 interface LoadingOverlayProps {
   /** 是否显示加载遮罩 */

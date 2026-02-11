@@ -13,11 +13,11 @@
 
 "use client";
 
-import { memo, useCallback } from "react";
-import { Handle, Position, NodeProps } from "reactflow";
-import { Icon } from "@/components/ui";
 import { useRouter } from "next/navigation";
 import { useLocale } from "next-intl";
+import { memo, useCallback } from "react";
+import { Handle, type NodeProps, Position } from "reactflow";
+import { Icon } from "@/components/ui";
 
 export interface CharacterNodeData {
   characterId: string;

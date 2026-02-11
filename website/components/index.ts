@@ -13,30 +13,22 @@
 
 // 角色相关组件
 export * from "./character";
-
-// 项目企划组件
-export * from "./project";
-
-// 加入我们组件
-export * from "./join";
-
-// 技术设定组件
-export * from "./tech";
-
-// 组织设定组件
-export * from "./organizations";
-
 // 通用内容组件
 export * from "./content";
 
-// 时间线组件
-export * from "./timeline";
-
+// 加入我们组件
+export * from "./join";
 // 布局组件
 export * from "./layout";
-
-// 基础 UI 组件
-export * from "./ui";
-
 // 加载组件
 export * from "./loading";
+// 组织设定组件
+export * from "./organizations";
+// 项目企划组件
+export * from "./project";
+// 技术设定组件
+export * from "./tech";
+// 时间线组件
+export * from "./timeline";
+// 基础 UI 组件
+export * from "./ui";

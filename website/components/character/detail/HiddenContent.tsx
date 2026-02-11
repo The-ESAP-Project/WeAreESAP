@@ -16,8 +16,8 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
-import { HiddenProfile } from "@/types/hidden-profile";
 import { useReducedMotion } from "@/hooks/useReducedMotion";
+import type { HiddenProfile } from "@/types/hidden-profile";
 
 interface HiddenContentProps {
   profile: HiddenProfile;

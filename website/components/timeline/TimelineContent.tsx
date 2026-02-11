@@ -11,16 +11,16 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-import {
-  TimelineContentBlock,
-  ParagraphBlock,
-  QuoteBlock,
+import { Icon, type IconName } from "@/components/ui";
+import type {
   DialogueBlock,
-  ListBlock,
   HighlightBlock,
   LinkBlock,
+  ListBlock,
+  ParagraphBlock,
+  QuoteBlock,
+  TimelineContentBlock,
 } from "@/types/timeline";
-import { Icon, type IconName } from "@/components/ui";
 
 // 角色颜色映射
 const CHARACTER_COLORS: Record<

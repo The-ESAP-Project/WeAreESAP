@@ -13,10 +13,10 @@
 
 "use client";
 
-import { useRouter } from "@/i18n/navigation";
-import { useTransition } from "@/components/ui";
 import { CharacterAccordion, CharacterMobileView } from "@/components";
-import { CharacterCardData } from "@/types/character";
+import { useTransition } from "@/components/ui";
+import { useRouter } from "@/i18n/navigation";
+import type { CharacterCardData } from "@/types/character";
 
 interface HomeCharactersProps {
   characters: CharacterCardData[];

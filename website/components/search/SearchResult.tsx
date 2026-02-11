@@ -13,9 +13,9 @@
 
 "use client";
 
+import { useTranslations } from "next-intl";
 import { memo } from "react";
 import type { SearchItem, SearchResultType } from "@/types/search";
-import { useTranslations } from "next-intl";
 
 interface SearchResultProps {
   item: SearchItem;

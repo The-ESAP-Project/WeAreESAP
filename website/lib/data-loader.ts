@@ -16,8 +16,8 @@
  * 提供带 locale 回退的 JSON 文件读取功能
  */
 
-import fs from "fs/promises";
-import path from "path";
+import fs from "node:fs/promises";
+import path from "node:path";
 import { logger } from "./logger";
 
 /**

@@ -15,9 +15,9 @@
 
 import { motion } from "framer-motion";
 import { usePathname } from "next/navigation";
-import { ReactNode } from "react";
-import { useTransition } from "./TransitionContext";
+import type { ReactNode } from "react";
 import { useReducedMotion } from "@/hooks/useReducedMotion";
+import { useTransition } from "./TransitionContext";
 
 interface PageTransitionProps {
   children: ReactNode;

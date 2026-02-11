@@ -13,21 +13,18 @@
 
 "use client";
 
-import { Link } from "@/i18n/navigation";
-import { useRouter, usePathname } from "@/i18n/navigation";
 import {
-  MouseEvent,
-  ReactNode,
-  AnchorHTMLAttributes,
+  type AnchorHTMLAttributes,
+  type MouseEvent,
+  type ReactNode,
   useCallback,
 } from "react";
-import { useTransition } from "./TransitionContext";
+import { Link, usePathname, useRouter } from "@/i18n/navigation";
 import { logger } from "@/lib/logger";
+import { useTransition } from "./TransitionContext";
 
-interface TransitionLinkProps extends Omit<
-  AnchorHTMLAttributes<HTMLAnchorElement>,
-  "href"
-> {
+interface TransitionLinkProps
+  extends Omit<AnchorHTMLAttributes<HTMLAnchorElement>, "href"> {
   href: string;
   children: ReactNode;
   prefetch?: boolean; // 是否预加载链接（默认 false，按需加载）

@@ -13,19 +13,19 @@
 
 "use client";
 
-import { useState, useCallback, memo } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
-import { usePathname, useRouter } from "@/i18n/navigation";
+import { useLocale, useTranslations } from "next-intl";
+import { useTheme } from "next-themes";
+import { memo, useCallback, useState } from "react";
+import { useSearch } from "@/components/search";
 import {
-  ThemeToggle,
-  TransitionLink,
   Icon,
   LanguageSwitcher,
+  ThemeToggle,
+  TransitionLink,
 } from "@/components/ui";
-import { useSearch } from "@/components/search";
-import { useTranslations, useLocale } from "next-intl";
-import { useTheme } from "next-themes";
+import { usePathname, useRouter } from "@/i18n/navigation";
 import { locales } from "@/i18n/request";
 import { DEFAULT_IMAGES } from "@/lib/constants";
 
@@ -66,7 +66,7 @@ export const Navigation = memo(function Navigation() {
       if (href === "/") {
         return pathname === "/";
       }
-      return pathname === href || pathname.startsWith(href + "/");
+      return pathname === href || pathname.startsWith(`${href}/`);
     },
     [pathname]
   );

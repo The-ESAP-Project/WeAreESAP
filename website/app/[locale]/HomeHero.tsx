@@ -13,8 +13,8 @@
 
 "use client";
 
-import { useTranslations } from "next-intl";
 import { motion, useReducedMotion } from "framer-motion";
+import { useTranslations } from "next-intl";
 import { TriangleLogo } from "@/components";
 
 export function HomeHero() {

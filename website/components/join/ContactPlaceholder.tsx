@@ -14,8 +14,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Icon, type IconName } from "@/components/ui";
 import { useTranslations } from "next-intl";
+import { Icon, type IconName } from "@/components/ui";
 import { useReducedMotion } from "@/hooks/useReducedMotion";
 
 export function ContactPlaceholder() {

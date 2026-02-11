@@ -11,14 +11,14 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-export { CharacterHero } from "./CharacterHero";
-export { CharacterInfo } from "./CharacterInfo";
-export { CharacterStory } from "./CharacterStory";
-export { CharacterSpeechStyle } from "./CharacterSpeechStyle";
 export { CharacterAbilities } from "./CharacterAbilities";
 export { CharacterDailyLife } from "./CharacterDailyLife";
-export { CharacterSpecialMoments } from "./CharacterSpecialMoments";
+export { CharacterHero } from "./CharacterHero";
+export { CharacterInfo } from "./CharacterInfo";
 export { CharacterPhilosophy } from "./CharacterPhilosophy";
 export { CharacterRelationships } from "./CharacterRelationships";
-export { PullToReveal } from "./PullToReveal";
+export { CharacterSpecialMoments } from "./CharacterSpecialMoments";
+export { CharacterSpeechStyle } from "./CharacterSpeechStyle";
+export { CharacterStory } from "./CharacterStory";
 export { HiddenContent } from "./HiddenContent";
+export { PullToReveal } from "./PullToReveal";

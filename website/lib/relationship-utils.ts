@@ -16,7 +16,7 @@
  * 只包含类型定义和颜色映射，不涉及文件系统操作
  */
 
-import { RelationshipType } from "@/types/relationship";
+import type { RelationshipType } from "@/types/relationship";
 
 /**
  * 关系类型关键词和颜色映射

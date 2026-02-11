@@ -13,13 +13,13 @@
 
 "use client";
 
-import { useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import { useTranslations } from "next-intl";
-import { HiddenProfile } from "@/types/hidden-profile";
-import { HiddenContent } from "./HiddenContent";
+import { useEffect } from "react";
 import { Icon } from "@/components/ui";
 import { useReducedMotion } from "@/hooks/useReducedMotion";
+import type { HiddenProfile } from "@/types/hidden-profile";
+import { HiddenContent } from "./HiddenContent";
 
 interface HiddenProfileModalProps {
   isOpen: boolean;

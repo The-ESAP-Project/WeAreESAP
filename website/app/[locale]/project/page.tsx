@@ -11,22 +11,22 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-import dynamic from "next/dynamic";
 import type { Metadata } from "next";
+import dynamic from "next/dynamic";
 import { getTranslations, setRequestLocale } from "next-intl/server";
+import { AnimatedSection } from "@/components/ui";
+import { DEFAULT_IMAGES, SITE_CONFIG } from "@/lib/constants";
 import { loadJsonFile } from "@/lib/data-loader";
 import type {
-  ProjectData,
+  MeaningSection,
+  Participation,
   Pillar,
-  Value,
+  ProjectData,
   Technology,
   TimelineItem,
-  Participation,
-  MeaningSection,
+  Value,
 } from "@/types/project";
-import { DEFAULT_IMAGES, SITE_CONFIG } from "@/lib/constants";
 import { ProjectHero } from "./ProjectHero";
-import { AnimatedSection } from "@/components/ui";
 
 // 动态导入卡片组件，减少首屏 JavaScript 包大小（这些组件在下方区域，非首屏关键）
 const PillarCard = dynamic(() =>

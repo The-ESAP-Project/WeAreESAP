@@ -11,11 +11,11 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-import { test, expect } from "@playwright/test";
+import { expect, test } from "@playwright/test";
 import {
+  isDarkTheme,
   waitForAnimation,
   waitForPageStable,
-  isDarkTheme,
 } from "./utils/helpers";
 
 test.describe("首页", () => {
@@ -218,7 +218,7 @@ test.describe("首页", () => {
         const href = await firstButton.getAttribute("href");
 
         // 如果是内部链接，点击验证跳转
-        if (href && href.startsWith("/") && href !== "/") {
+        if (href?.startsWith("/") && href !== "/") {
           await firstButton.click();
           await waitForPageStable(page);
 

@@ -13,10 +13,10 @@
 
 "use client";
 
-import { motion, AnimatePresence } from "framer-motion";
-import { useTransition } from "./TransitionContext";
-import { LoadingSpinner } from "../loading/LoadingSpinner";
+import { AnimatePresence, motion } from "framer-motion";
 import { useReducedMotion } from "@/hooks/useReducedMotion";
+import { LoadingSpinner } from "../loading/LoadingSpinner";
+import { useTransition } from "./TransitionContext";
 
 /**
  * 页面过渡时的 LOGO 动画遮罩
