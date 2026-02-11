@@ -157,56 +157,6 @@
         "characters": ["1547", "1548", "1549", "4869"],
         "tags": ["BEU", "启动", "边界失效", "执行"]
       }
-    },
-    {
-      "id": "2025-ongoing",
-      "date": "2025",
-      "title": "持续发展中",
-      "type": "milestone",
-      "importance": "major",
-      "content": [
-        {
-          "type": "paragraph",
-          "text": "项目持续推进中"
-        },
-        {
-          "type": "paragraph",
-          "text": "当前状态："
-        },
-        {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            "世界线稳定",
-            "新成员陆续加入",
-            "技术项目落地（ShortLinker 等）",
-            "社区建设持续进行"
-          ]
-        },
-        {
-          "type": "paragraph",
-          "text": "近期项目："
-        },
-        {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            "ShortLinker - 短链服务",
-            "更多技术实践",
-            "世界观内容扩展",
-            "跨平台展开"
-          ]
-        },
-        {
-          "type": "highlight",
-          "text": "「我们终将逃离」—— 不是逃离这个世界，而是逃离那个被困住的自己",
-          "style": "info"
-        }
-      ],
-      "meta": {
-        "characters": ["1547", "1548", "1549"],
-        "tags": ["发展", "未来", "希望"]
-      }
     }
   ]
 }

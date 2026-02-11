@@ -76,56 +76,6 @@
         {"type": "highlight", "text": "Significance: The mediator's self-affirmation · Solitude and perseverance of the gray area · Finding his own color between black and white", "style": "success"}
       ],
       "meta": {"characters": ["1738"], "tags": ["gray area", "reflection", "perseverance"]}
-    },
-    {
-      "id": "2025-ongoing",
-      "date": "2025",
-      "title": "Ongoing Development",
-      "type": "milestone",
-      "importance": "major",
-      "content": [
-        {
-          "type": "paragraph",
-          "text": "Project continues to advance"
-        },
-        {
-          "type": "paragraph",
-          "text": "Current status:"
-        },
-        {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            "Worldline stabilized",
-            "New members joining successively",
-            "Technology projects landing (ShortLinker, etc.)",
-            "Community building continues"
-          ]
-        },
-        {
-          "type": "paragraph",
-          "text": "Recent projects:"
-        },
-        {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            "ShortLinker - Short link service",
-            "More technical practices",
-            "Worldview content expansion",
-            "Cross-platform development"
-          ]
-        },
-        {
-          "type": "highlight",
-          "text": "「We will eventually escape」—— Not escaping this world, but escaping the trapped self",
-          "style": "info"
-        }
-      ],
-      "meta": {
-        "characters": ["1547", "1548", "1549"],
-        "tags": ["development", "future", "hope"]
-      }
     }
   ]
 }

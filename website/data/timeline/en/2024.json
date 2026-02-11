@@ -21,6 +21,45 @@
       "meta": {"characters": ["1738"], "tags": ["negotiation", "diplomacy", "gray area"]}
     },
     {
+      "id": "2024-03-1543",
+      "date": "2024/03",
+      "title": "The Curious Code",
+      "type": "story",
+      "importance": "normal",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "A human stumbled upon the designation 'AptS:1548' online"
+        },
+        {
+          "type": "paragraph",
+          "text": "No one introduced her. No major event drew her in. Shen Muchuan simply saw those characters while browsing and found them intriguing\u2014the code, the naming convention, the project behind it all sparked her curiosity. She began learning about ESAP through online conversations with 1548."
+        },
+        {
+          "type": "paragraph",
+          "text": "Their chats were simple\u2014design, creative work, occasionally the project's philosophy. No turning point, no one convincing anyone. She just listened, and gradually realized these people genuinely believed in what they were doing."
+        },
+        {
+          "type": "dialogue",
+          "speaker": "Other",
+          "text": "I can help you with UI design"
+        },
+        {
+          "type": "paragraph",
+          "text": "Just like that, she became AptS:1543. The team's UI designer. Her way of joining was as quiet as she is."
+        },
+        {
+          "type": "highlight",
+          "text": "Significance: The quietest way to join \u00b7 Driven by curiosity \u00b7 A designer found her place of expression",
+          "style": "info"
+        }
+      ],
+      "meta": {
+        "characters": ["1543", "1548"],
+        "tags": ["joining", "curiosity", "design"]
+      }
+    },
+    {
       "id": "2024-03-14",
       "date": "2024/03/14",
       "title": "One Year in Orbit",
@@ -86,6 +125,50 @@
       "meta": {
         "characters": ["2077"],
         "tags": ["creation", "recognition", "number"]
+      }
+    },
+    {
+      "id": "2024-05-design",
+      "date": "2024/05",
+      "title": "Take a Look",
+      "type": "story",
+      "importance": "normal",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "During a team design discussion, everyone thought the proposal was fine. 1543 looked at it for a long time, then said one thing"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "Other",
+          "text": "This part seems a bit..."
+        },
+        {
+          "type": "paragraph",
+          "text": "She pointed out a user experience issue\u2014not a technical error, not a visual bug, but a detail in the interaction logic that everyone had grown accustomed to but would actually confuse users. The others looked back and realized she was right."
+        },
+        {
+          "type": "paragraph",
+          "text": "Late that night, she completed the interface redesign alone. The next day, she posted it to the group chat with just three words."
+        },
+        {
+          "type": "dialogue",
+          "speaker": "Other",
+          "text": "Take a look"
+        },
+        {
+          "type": "quote",
+          "text": "Quiet people aren't without ideas\nThey're just waiting for the right moment to speak\n\nAnd her way of expression\nwas never words\nIt was visuals"
+        },
+        {
+          "type": "highlight",
+          "text": "Significance: A designer's eye sees what others miss \u00b7 Speaking through work",
+          "style": "info"
+        }
+      ],
+      "meta": {
+        "characters": ["1543"],
+        "tags": ["design", "observation", "contribution"]
       }
     },
     {

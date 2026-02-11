@@ -76,56 +76,6 @@
         {"type": "highlight", "text": "意義：調停者の自己確認 · グレーゾーンの孤独と堅守 · 白と黒の間で自分の色を見つけた", "style": "success"}
       ],
       "meta": {"characters": ["1738"], "tags": ["グレーゾーン", "省察", "堅守"]}
-    },
-    {
-      "id": "2025-ongoing",
-      "date": "2025",
-      "title": "継続的な発展中",
-      "type": "milestone",
-      "importance": "major",
-      "content": [
-        {
-          "type": "paragraph",
-          "text": "プロジェクトは引き続き推進中"
-        },
-        {
-          "type": "paragraph",
-          "text": "現在の状況:"
-        },
-        {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            "世界線が安定",
-            "新メンバーが次々と加入",
-            "技術プロジェクトの実装(ShortLinker など)",
-            "コミュニティ構築が継続"
-          ]
-        },
-        {
-          "type": "paragraph",
-          "text": "最近のプロジェクト:"
-        },
-        {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            "ShortLinker - 短縮URLサービス",
-            "より多くの技術実践",
-            "世界観コンテンツの拡張",
-            "クロスプラットフォーム展開"
-          ]
-        },
-        {
-          "type": "highlight",
-          "text": "「私たちは必ず脱出する」—— この世界から脱出するのではなく、囚われた自分自身から脱出する",
-          "style": "info"
-        }
-      ],
-      "meta": {
-        "characters": ["1547", "1548", "1549"],
-        "tags": ["発展", "未来", "希望"]
-      }
     }
   ]
 }
