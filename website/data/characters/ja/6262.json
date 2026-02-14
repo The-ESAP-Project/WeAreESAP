@@ -12,6 +12,7 @@
   "quote": "静かなのは言うことがないからじゃなく、必要ないからだにゃん",
   "description": "口数は少ないが頼りになる技術協力者。時々語尾に「にゃん」をつける",
   "keywords": ["静か", "頼れる", "猫系"],
+  "backgroundImage": "/images/characters/img_6262.webp",
   "tier": "guest",
   "meta": {
     "background": "コンピュータサイエンス専攻の学生。gcop-rsにissueを出したことでESAPと繋がり、技術協力として時々手伝っている。口数は少ないが技術的な問題は決して適当に扱わない。",

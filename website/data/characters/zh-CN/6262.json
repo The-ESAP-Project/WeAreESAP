@@ -12,6 +12,7 @@
   "quote": "话少不代表没话说，只是觉得没必要喵",
   "description": "一位话少但可靠的技术协作者，偶尔会在句尾加个「喵」",
   "keywords": ["话少", "可靠", "猫系"],
+  "backgroundImage": "/images/characters/img_6262.webp",
   "tier": "guest",
   "meta": {
     "background": "计算机专业大学生，通过给 gcop-rs 提 issue 与 ESAP 产生交集，后以技术协作身份偶尔帮忙。话少但从不敷衍技术问题。",

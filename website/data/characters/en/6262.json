@@ -12,6 +12,7 @@
   "quote": "Being quiet doesn't mean I have nothing to say, just nothing unnecessary meow",
   "description": "A quiet but reliable technical collaborator who occasionally ends sentences with 'meow'",
   "keywords": ["Quiet", "Reliable", "Cat-like"],
+  "backgroundImage": "/images/characters/img_6262.webp",
   "tier": "guest",
   "meta": {
     "background": "Computer science student who connected with ESAP through a gcop-rs issue, now occasionally helps with technical collaboration. Quiet but never dismissive of technical problems.",
