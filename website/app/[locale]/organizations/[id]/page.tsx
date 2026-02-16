@@ -55,7 +55,7 @@ export async function generateMetadata({
 
   const title = `${organization.info.name} - ${t("title")}`;
   const description = organization.description;
-  const ogImage = DEFAULT_IMAGES.homepage;
+  const ogImage = organization.image || DEFAULT_IMAGES.homepage;
   const localizedUrl = `${SITE_CONFIG.baseUrl}/${locale}/organizations/${id}`;
 
   return {
