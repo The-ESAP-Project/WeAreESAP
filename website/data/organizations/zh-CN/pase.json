@@ -1,5 +1,6 @@
 {
   "id": "pase",
+  "order": 5,
   "info": {
     "name": "深渊凝视",
     "code": "PASE",

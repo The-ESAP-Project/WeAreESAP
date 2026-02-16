@@ -1,5 +1,6 @@
 {
   "id": "synthetic-technology",
+  "order": 1,
   "name": "Synthetic Technology",
   "icon": "Cpu",
   "color": {

@@ -1,5 +1,6 @@
 {
   "id": "fluid-titanium",
+  "order": 2,
   "name": "Fluid Titanium",
   "icon": "Droplet",
   "color": {

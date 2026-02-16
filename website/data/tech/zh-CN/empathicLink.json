@@ -1,5 +1,6 @@
 {
   "id": "empathic-link",
+  "order": 6,
   "name": "意识链接",
   "icon": "HeartHandshake",
   "color": {

@@ -1,5 +1,6 @@
 {
   "id": "pase",
+  "order": 5,
   "info": {
     "name": "Abyss Gaze",
     "code": "PASE",

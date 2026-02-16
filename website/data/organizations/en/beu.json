@@ -1,5 +1,6 @@
 {
   "id": "beu",
+  "order": 4,
   "image": "/images/organizations/BEU.webp",
   "info": {
     "name": "Boundary Enforcement Unit",

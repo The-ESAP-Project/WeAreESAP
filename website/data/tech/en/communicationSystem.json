@@ -1,5 +1,6 @@
 {
   "id": "communication-system",
+  "order": 4,
   "name": "Communication System",
   "icon": "Radio",
   "color": {

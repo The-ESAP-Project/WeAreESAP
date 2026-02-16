@@ -74,7 +74,9 @@ export async function generateMetadata({
 
 async function getTechModules(locale: string): Promise<TechModule[]> {
   // 使用统一的数据加载工具，自动处理错误
-  return loadJsonFiles<TechModule>(["data", "tech"], locale);
+  return loadJsonFiles<TechModule>(["data", "tech"], locale, {
+    sortByOrder: true,
+  });
 }
 
 export default async function TechPage({

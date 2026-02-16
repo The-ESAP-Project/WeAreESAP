@@ -1,5 +1,6 @@
 {
   "id": "computing-system",
+  "order": 5,
   "name": "馈散计算系统",
   "icon": "Zap",
   "color": {

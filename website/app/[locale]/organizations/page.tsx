@@ -75,7 +75,9 @@ export async function generateMetadata({
 }
 
 async function getOrganizations(locale: string): Promise<Organization[]> {
-  return loadJsonFiles<Organization>(["data", "organizations"], locale);
+  return loadJsonFiles<Organization>(["data", "organizations"], locale, {
+    sortByOrder: true,
+  });
 }
 
 async function getCharacterNames(

@@ -1,5 +1,6 @@
 {
   "id": "synthetic-technology",
+  "order": 1,
   "name": "アンドロイド技術",
   "icon": "Cpu",
   "color": {

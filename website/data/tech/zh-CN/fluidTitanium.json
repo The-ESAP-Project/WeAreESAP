@@ -1,5 +1,6 @@
 {
   "id": "fluid-titanium",
+  "order": 2,
   "name": "流体钛",
   "icon": "Droplet",
   "color": {

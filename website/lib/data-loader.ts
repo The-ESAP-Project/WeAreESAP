@@ -111,9 +111,10 @@ export async function loadJsonFiles<T>(
   options: {
     fallbackLocale?: string;
     filter?: (item: T) => boolean;
+    sortByOrder?: boolean;
   } = {}
 ): Promise<T[]> {
-  const { fallbackLocale = "zh-CN", filter } = options;
+  const { fallbackLocale = "zh-CN", filter, sortByOrder } = options;
 
   try {
     // 尝试当前 locale 的目录
@@ -146,7 +147,21 @@ export async function loadJsonFiles<T>(
     const items = allItems.filter((item): item is T => item !== null);
 
     // 如果提供了过滤函数，应用过滤
-    return filter ? items.filter(filter) : items;
+    const filtered = filter ? items.filter(filter) : items;
+
+    // 如果启用按 order 字段排序，没有 order 的排到最后
+    if (sortByOrder) {
+      filtered.sort((a, b) => {
+        const orderA = (a as Record<string, unknown>).order;
+        const orderB = (b as Record<string, unknown>).order;
+        return (
+          (typeof orderA === "number" ? orderA : Infinity) -
+          (typeof orderB === "number" ? orderB : Infinity)
+        );
+      });
+    }
+
+    return filtered;
   } catch (error) {
     logger.error(`加载目录文件失败 ${basePath.join("/")}:`, error);
     return [];

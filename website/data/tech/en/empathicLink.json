@@ -1,5 +1,6 @@
 {
   "id": "empathic-link",
+  "order": 6,
   "name": "Empathic Link",
   "icon": "HeartHandshake",
   "color": {

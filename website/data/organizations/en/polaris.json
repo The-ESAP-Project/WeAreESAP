@@ -1,5 +1,6 @@
 {
   "id": "polaris",
+  "order": 2,
   "image": "/images/organizations/PSP.webp",
   "info": {
     "name": "Project Polaris",

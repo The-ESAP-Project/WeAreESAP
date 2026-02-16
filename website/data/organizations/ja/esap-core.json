@@ -1,5 +1,6 @@
 {
   "id": "esap-core",
+  "order": 3,
   "image": "/images/organizations/ESAPCore.webp",
   "info": {
     "name": "ESAP Core",
