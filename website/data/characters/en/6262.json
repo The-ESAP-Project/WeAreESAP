@@ -17,7 +17,11 @@
   "meta": {
     "background": "Computer science student who connected with ESAP through a gcop-rs issue, now occasionally helps with technical collaboration. Quiet but never dismissive of technical problems.",
     "relationship": "Met 1547 through the gcop-rs issue, maintains a technical collaboration relationship. Keeps a friendly but relatively distant relationship with other members.",
-    "abilities": ["Code review", "Technical documentation", "Quick understanding of unfamiliar codebases"],
+    "abilities": [
+      "Code review",
+      "Technical documentation",
+      "Quick understanding of unfamiliar codebases"
+    ],
     "characterTraits": [
       "Quiet but not cold, just thinks unnecessary words are unnecessary",
       "Speaks concisely and directly",

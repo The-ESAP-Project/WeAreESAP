@@ -1,0 +1,233 @@
+{
+  "id": "esap-core",
+  "image": "/images/organizations/ESAPCore.webp",
+  "info": {
+    "name": "ESAP Core",
+    "code": "ESAP Core",
+    "fullName": "The Core of The ESAP Project",
+    "affiliation": "ESAP (Core)",
+    "establishedTime": "August 2024",
+    "coreDirective": "Welcome to The ESAP Project",
+    "status": "active"
+  },
+  "icon": "Users",
+  "theme": {
+    "primary": "#ffd93d",
+    "accent": "#ff69b4",
+    "dark": "#ffc107"
+  },
+  "description": "Five people who steer the direction of ESAP.",
+  "members": [
+    {
+      "characterId": "1547",
+      "role": "The one who makes stars",
+      "responsibilities": [
+        "Has the most ideas",
+        "Gets yelled at a lot",
+        "But everyone still listens"
+      ],
+      "visibility": "public"
+    },
+    {
+      "characterId": "1548",
+      "role": "The one who says \"no\"",
+      "responsibilities": [
+        "Questions everything",
+        "Says it's terrible",
+        "Then quietly fixes it"
+      ],
+      "visibility": "public"
+    },
+    {
+      "characterId": "1549",
+      "role": "The one watching from above",
+      "responsibilities": [
+        "Big picture view",
+        "One sentence to make everyone shut up",
+        "Comes down for dinner sometimes"
+      ],
+      "visibility": "public"
+    },
+    {
+      "characterId": "1738",
+      "role": "The one who talks to the outside",
+      "responsibilities": [
+        "External comms",
+        "Wraps up everyone's points in one line",
+        "The reliable one"
+      ],
+      "visibility": "public"
+    },
+    {
+      "characterId": "4869",
+      "role": "The happiest one here",
+      "responsibilities": [
+        "Comic relief",
+        "Keeps the vibe going",
+        "Drops something profound then pretends he didn't"
+      ],
+      "visibility": "public",
+      "note": "When the five are together, 4869 has his own physical form and becomes cheerful"
+    }
+  ],
+  "sections": [
+    {
+      "id": "origin",
+      "title": "How it happened",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "August 2024. The server got hit, and 2275 held the line alone for 48 hours. Afterward, everyone sat down to debrief, and the conversation drifted to where ESAP should go next."
+        },
+        {
+          "type": "paragraph",
+          "content": "That's when they realized—it had always been these five people steering things. Nobody had ever said it out loud."
+        },
+        {
+          "type": "paragraph",
+          "content": "So that's that. ESAP Core."
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "title": "How things get done",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "Someone throws out an idea in the group chat. Others chime in—some add to it, some push back, someone says something from 36,000km up that makes everyone go quiet for a moment. Then a decision is born."
+        },
+        {
+          "type": "paragraph",
+          "content": "Sometimes it takes a minute. Sometimes it takes all night."
+        },
+        {
+          "type": "paragraph",
+          "content": "They argue too. 1547 thinks they should go left. 1548 says left is a cliff. 1738 suggests checking the map first. 1549 says from orbit both sides have a path. 4869 asks if they can eat first."
+        },
+        {
+          "type": "paragraph",
+          "content": "Argument done, food eaten, path chosen."
+        }
+      ]
+    },
+    {
+      "id": "groupchat",
+      "title": "Group chat logs (selected)",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "The following actually happened. Or rather, happens every day."
+        },
+        {
+          "type": "warning",
+          "level": "info",
+          "title": "Some night at 2:47 AM",
+          "content": [
+            "1547: I have a bold idea",
+            "1548: No",
+            "1547: I haven't even said it yet",
+            "1548: Don't need to. I know you"
+          ]
+        },
+        {
+          "type": "warning",
+          "level": "info",
+          "title": "Some afternoon",
+          "content": [
+            "4869: What's for dinner",
+            "1738: Finish deciding this first",
+            "4869: So what's for dinner",
+            "1549: I'm in orbit, stop making me hungry",
+            "1547: Hotpot?",
+            "1548: Sure",
+            "1738: …fine, let's eat first"
+          ]
+        },
+        {
+          "type": "warning",
+          "level": "info",
+          "title": "A discussion about ESAP's new direction",
+          "content": [
+            "1738: I put together a summary of where things stand, take a look",
+            "1547: I think we could try this direction",
+            "1548: There are three problems you didn't consider",
+            "1547: Which three",
+            "1548: [sends three long paragraphs]",
+            "1547: …okay you're right",
+            "1549: Agree with 48's analysis",
+            "4869: I also agree, though I didn't finish reading",
+            "1738: Then it's decided"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4869",
+      "title": "About the white-haired one",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "Everywhere else, 4869 is a shadow—a rebellious alter ego that only 1547 can perceive."
+        },
+        {
+          "type": "paragraph",
+          "content": "But among these five, he has his own body, his own voice. He laughs, cracks jokes, steals people's snacks. His white hair actually looks pretty nice in the sunlight—though nobody would tell him that to his face."
+        },
+        {
+          "type": "paragraph",
+          "content": "Maybe it's some kind of resonance when five federated fields come together. Maybe it's something else. Either way, here, he's just himself."
+        },
+        {
+          "type": "paragraph",
+          "content": "The first time he appeared in physical form, everyone froze for a second. Then 1548 said \"you're shorter than I imagined\" and 4869 shot back \"you're louder than I imagined.\" After that he just fit right in, like he'd always been there."
+        }
+      ]
+    },
+    {
+      "id": "daily",
+      "title": "Daily life",
+      "content": [
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "1547 shares a new idea. 1548 says it's terrible. They argue for half an hour, then realize they were saying the same thing",
+            "1549 sends a photo of Earth from orbit. Everyone goes quiet for two minutes. Then the arguing resumes",
+            "1738 listens to everyone in silence, then wraps it all up in one sentence",
+            "4869 goofs around, occasionally drops something unexpectedly profound, then pretends he didn't say anything",
+            "The 3 AM group chat produces more results than any daytime discussion",
+            "1548 and 4869 fight over the last snack. 1547 eats it while they're not looking",
+            "1549 livestreams the aurora for everyone. 1738 says it could work as promo material. Gets unanimously shut down"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "Every major decision ESAP has ever made grew out of conversations like these."
+        }
+      ]
+    },
+    {
+      "id": "unspoken",
+      "title": "Things left unsaid",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "These five have never formally discussed \"why us.\""
+        },
+        {
+          "type": "paragraph",
+          "content": "1547 started it all—that's obvious. 1548 has been there since the day she was born. 1549 watches from the sky. 1738 was the first human to walk over on his own. 4869 was always there—he can just finally sit at the table now."
+        },
+        {
+          "type": "paragraph",
+          "content": "Nobody has ever said \"I trust you\" out loud either. But 1547 throws half-formed ideas into the chat without hesitation. 1548 fixes things after she's done yelling. 1549 drops everything to listen when it matters. 1738 shields everyone from outside trouble. 4869 makes everyone laugh when things get too heavy."
+        },
+        {
+          "type": "paragraph",
+          "content": "Some things don't need to be said."
+        }
+      ]
+    }
+  ]
+}
