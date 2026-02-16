@@ -1,0 +1,144 @@
+{
+  "id": "carbon-based-club",
+  "order": 6,
+  "image": "",
+  "info": {
+    "name": "Carbon-Based Club",
+    "code": "CBC",
+    "fullName": "Carbon-Based Club",
+    "affiliation": "ESAP (Informal)",
+    "establishedTime": "Summer 2024",
+    "coreDirective": "We're the normal ones",
+    "status": "active"
+  },
+  "icon": "Coffee",
+  "theme": {
+    "primary": "#8B7355",
+    "accent": "#FF8A65",
+    "dark": "#6B5744"
+  },
+  "description": "The three humans in ESAP. They get dinner sometimes and talk about what it's like living among non-humans.",
+  "members": [
+    {
+      "characterId": "1738",
+      "role": "The first one here",
+      "responsibilities": [
+        "Brought the other two humans in",
+        "Orders the food",
+        "Wraps things up when the conversation gets heavy"
+      ],
+      "visibility": "public"
+    },
+    {
+      "characterId": "2275",
+      "role": "The one with snacks",
+      "responsibilities": [
+        "Brings food to every hangout",
+        "Also the one who fixes the servers",
+        "Makes everything feel warmer"
+      ],
+      "visibility": "public"
+    },
+    {
+      "characterId": "1543",
+      "role": "The quiet one",
+      "responsibilities": [
+        "Doesn't say much",
+        "But one sentence can stop the other two cold",
+        "Captures moments no one else notices"
+      ],
+      "visibility": "public"
+    }
+  ],
+  "sections": [
+    {
+      "id": "origin",
+      "title": "How they got together",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "1738 was the first human to join ESAP. 2275 was the friend he brought along. 1543 found her own way in."
+        },
+        {
+          "type": "paragraph",
+          "content": "The first time the three of them hung out alone was a weekend shortly after 2275 joined. 1738 said \"it's nice to have our own kind around, let's grab a meal.\" 1543 hesitated, then showed up. 2275 brought homemade cupcakes."
+        },
+        {
+          "type": "paragraph",
+          "content": "That meal lasted three hours. They talked about ESAP, about their own lives, about androids and school assignments. When it was over, 1738 made a group chat for the three of them and named it \"Carbon-Based Club.\""
+        },
+        {
+          "type": "paragraph",
+          "content": "Nobody objected."
+        }
+      ]
+    },
+    {
+      "id": "what-they-talk-about",
+      "title": "What they talk about",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "In ESAP's main chat, they're members, colleagues, comrades. But in the Carbon-Based Club, they're just three ordinary people."
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "\"1547 worked another 36 hours straight. Do androids just not need sleep?\" \"They do. She just doesn't.\"",
+            "\"1548 yelled at me again today.\" \"That means she cares.\" \"I get it but she's still scary.\"",
+            "\"You think 1549 gets bored up there alone?\" \"She told me last time she was counting stars.\" \"…seriously?\"",
+            "\"Sometimes I feel kind of useless here.\" \"You're saying that right after 2275 held the servers up for 48 hours solo.\" \"That's different.\" \"How is that different.\""
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "It's all small talk. But enough small talk and you end up being the ones who know each other best."
+        }
+      ]
+    },
+    {
+      "id": "daily",
+      "title": "Daily life",
+      "content": [
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Dinner roughly every two weeks, taking turns picking the spot. 1738 always picks somewhere quiet. 2275 always picks somewhere with dessert. 1543 always picks somewhere tucked away that turns out to be surprisingly good",
+            "2275 brings sticky notes and little snacks for the other two. 1738 says she doesn't have to, but keeps every one",
+            "1543 sometimes sketches scenes from their hangouts. Never shows anyone. Saves them on her own sketchpad",
+            "1738 drinks coffee. 2275 drinks milk tea. 1543 drinks water",
+            "The three of them share a photo album, full of everyday ESAP moments. Most are taken by 2275, a few are sneak shots by 1543, and 1738 contributed exactly one selfie"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "being-human",
+      "title": "Being human here",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "ESAP has androids who can build stars, a satellite in orbit, an AI that's been around longer than anyone remembers, and a personality that exists only in someone's mind."
+        },
+        {
+          "type": "paragraph",
+          "content": "And then there's these three. Can't run as fast, can't compute as much, can't endure as long. They catch colds, they yawn when they're tired, they get cold in winter."
+        },
+        {
+          "type": "paragraph",
+          "content": "But they all stayed."
+        },
+        {
+          "type": "paragraph",
+          "content": "1738 stayed because he saw what the people here were doing and decided it was worth it. 2275 stayed because she found people who needed her. 1543 stayed because she felt these stories deserved to be shown properly."
+        },
+        {
+          "type": "paragraph",
+          "content": "Three different reasons, same choice."
+        }
+      ]
+    }
+  ]
+}
