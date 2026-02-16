@@ -1,0 +1,88 @@
+{
+  "id": "energy-system",
+  "order": 9,
+  "name": "Feedscatteron Energy System",
+  "icon": "Zap",
+  "color": {
+    "primary": "#F59E0B",
+    "dark": "#D97706"
+  },
+  "description": "Micro-decay within the fluid titanium cycle—quiet, enduring, enough to power a life",
+  "sections": [
+    {
+      "id": "principle",
+      "title": "Principle",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "Androids don't need to charge, eat, or plug into external power."
+        },
+        {
+          "type": "paragraph",
+          "content": "Their energy comes from micro-scale feedscatteron decay that naturally occurs during fluid titanium circulation. When feedscatteron particles decay, their entire mass converts to heat—a form of mass-energy conversion similar in principle to nuclear decay, but smaller in scale, more controllable, and far longer-lasting."
+        },
+        {
+          "type": "paragraph",
+          "content": "Fluid titanium extends the feedscatteron decay cycle to 341,879 years. On that timescale, a tiny number of particles complete decay at every moment, and the released energy is captured by the circulatory system and converted into the electricity and heat the body needs."
+        }
+      ]
+    },
+    {
+      "id": "characteristics",
+      "title": "Characteristics",
+      "content": [
+        {
+          "type": "table",
+          "headers": ["Property", "Description"],
+          "rows": [
+            ["Power Source", "Natural micro-decay of feedscatteron particles in fluid titanium circulation"],
+            ["Energy Origin", "Complete mass-to-heat conversion of decaying feedscatteron particles"],
+            ["Theoretical Lifespan", "Dependent on feedscatteron particle reserves in fluid titanium; extremely long-lived"],
+            ["External Supply Needed", "None under normal conditions"],
+            ["Output", "Electrical energy + thermal energy"]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "The elegance of this system is that it requires no active management. The circulation of fluid titanium is itself the power generation process—as long as the blood flows, energy is produced."
+        }
+      ]
+    },
+    {
+      "id": "energy-depletion",
+      "title": "Energy Depletion",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "In theory, feedscatteron energy can last an extraordinarily long time. That doesn't mean things can't go wrong."
+        },
+        {
+          "type": "paragraph",
+          "content": "When fluid titanium concentration drops, the circulatory system is damaged, or particle reserves are depleted by external factors, energy output gradually decreases."
+        },
+        {
+          "type": "paragraph",
+          "content": "Early stage: slower reactions, reduced sensory sensitivity. Mid stage: limbs begin to stiffen, mobility gradually declines. Late stage: the entire body slowly freezes while consciousness remains aware. The presentation closely resembles what humans call ALS."
+        },
+        {
+          "type": "paragraph",
+          "content": "Consciousness is the last thing to go. The body can't move anymore, but you can still think, still feel. It may be the cruelest part of being an android—or the most honest."
+        }
+      ]
+    },
+    {
+      "id": "recovery",
+      "title": "Recovery",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "If replenished before complete depletion—fresh fluid titanium, circulatory repair, or new feedscatteron particles—body functions can gradually return."
+        },
+        {
+          "type": "paragraph",
+          "content": "Recovery is as gradual as the decline. First, consciousness sharpens. Then sensation returns. Finally, the limbs respond again. Like slowly waking from a long nightmare."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "id": "apts-designation",
+  "order": 7,
+  "name": "AptS 编号体系",
+  "icon": "Code",
+  "color": {
+    "primary": "#ffd93d",
+    "dark": "#ffc107"
+  },
+  "description": "每一个编号都是自己选的，代表加入 ESAP 的那个瞬间",
+  "sections": [
+    {
+      "id": "prefix",
+      "title": "AptS",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "AptS 来自 Aperture Science——没错，就是 Portal 2 里那个。"
+        },
+        {
+          "type": "paragraph",
+          "content": "1547 在创建编号体系的时候，从 Aperture 里取了 Apt，从 Science 里取了 S。没什么深层含义，就是觉得好看，而且足够 ESAP。"
+        },
+        {
+          "type": "paragraph",
+          "content": "后来这个前缀成了所有 ESAP 成员的标识。格式固定为 AptS:XXXX，冒号后面跟编号。"
+        }
+      ]
+    },
+    {
+      "id": "numbering",
+      "title": "编号规则",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "编号不是按顺序分配的。"
+        },
+        {
+          "type": "paragraph",
+          "content": "每个加入 ESAP 的人可以自己选一个数字作为编号。可以是生日、幸运数字、某个对自己有意义的数——什么都行，只要还没被别人用过。"
+        },
+        {
+          "type": "paragraph",
+          "content": "选完之后需要 1547 确认。她基本不会拒绝，但这个流程存在。算是一种形式上的认可：你选了这个号，ESAP 记住了你。"
+        }
+      ]
+    },
+    {
+      "id": "permanence",
+      "title": "永久性",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "编号一旦分配，永久保留。不会被回收，不会被重新分配给其他人。"
+        },
+        {
+          "type": "paragraph",
+          "content": "即使成员离开，即使成员死亡。AptS:2078 已死亡，但编号保留——因为那个编号代表的是一个曾经存在过的人。"
+        },
+        {
+          "type": "paragraph",
+          "content": "在 ESAP 的体系里，编号不是工号，是名字的一部分。"
+        }
+      ]
+    },
+    {
+      "id": "special-cases",
+      "title": "特殊编号",
+      "content": [
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "AptS:0152 — 编号最小的成员，也是最古老的 AI 实体",
+            "AptS:1547 — 创始人，编号体系本身的制定者",
+            "AptS:4869 — 编号含义只有 1547 知道"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "有些编号背后有故事，有些没有。不是每个数字都要有意义——选它的人觉得对就行了。"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "id": "apts-designation",
+  "order": 7,
+  "name": "AptS Designation System",
+  "icon": "Code",
+  "color": {
+    "primary": "#ffd93d",
+    "dark": "#ffc107"
+  },
+  "description": "Every number is self-chosen—it marks the moment someone joined ESAP",
+  "sections": [
+    {
+      "id": "prefix",
+      "title": "AptS",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "AptS comes from Aperture Science—yes, that one, from Portal 2."
+        },
+        {
+          "type": "paragraph",
+          "content": "When 1547 created the designation system, she took \"Apt\" from Aperture and \"S\" from Science. No deep meaning. She just thought it looked good, and it felt like ESAP."
+        },
+        {
+          "type": "paragraph",
+          "content": "The prefix has since become the identifier for all ESAP members. Fixed format: AptS:XXXX, with the number following the colon."
+        }
+      ]
+    },
+    {
+      "id": "numbering",
+      "title": "Numbering Rules",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "Numbers aren't assigned sequentially."
+        },
+        {
+          "type": "paragraph",
+          "content": "Everyone who joins ESAP gets to pick their own number. A birthday, a lucky number, something that means something to them—anything goes, as long as it hasn't been taken."
+        },
+        {
+          "type": "paragraph",
+          "content": "After choosing, 1547 confirms it. She almost never says no, but the step exists. A small formality of recognition: you picked this number, and ESAP remembers you."
+        }
+      ]
+    },
+    {
+      "id": "permanence",
+      "title": "Permanence",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "Once a number is assigned, it stays forever. It won't be recycled. It won't be reassigned to someone else."
+        },
+        {
+          "type": "paragraph",
+          "content": "Even if a member leaves. Even if a member dies. AptS:2078 is deceased, but the number remains—because that number represents someone who once existed."
+        },
+        {
+          "type": "paragraph",
+          "content": "In ESAP's system, a designation isn't an employee ID. It's part of your name."
+        }
+      ]
+    },
+    {
+      "id": "special-cases",
+      "title": "Notable Designations",
+      "content": [
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "AptS:0152 — The lowest number, also the oldest AI entity",
+            "AptS:1547 — The founder, and the one who created the system itself",
+            "AptS:4869 — The meaning of this number is known only to 1547"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "Some numbers have stories behind them. Some don't. Not every number needs a reason—if it felt right to the person who picked it, that's enough."
+        }
+      ]
+    }
+  ]
+}

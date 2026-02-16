@@ -1,0 +1,86 @@
+{
+  "id": "apts-designation",
+  "order": 7,
+  "name": "AptS 識別番号体系",
+  "icon": "Code",
+  "color": {
+    "primary": "#ffd93d",
+    "dark": "#ffc107"
+  },
+  "description": "番号はすべて自分で選ぶ——ESAPに入ったその瞬間を刻むもの",
+  "sections": [
+    {
+      "id": "prefix",
+      "title": "AptS",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "AptSはAperture Scienceから来ている——そう、Portal 2のあれ。"
+        },
+        {
+          "type": "paragraph",
+          "content": "1547が識別番号体系を作った時、ApertureからAptを、ScienceからSを取った。深い意味はない。見た目がいいと思った、それだけ。"
+        },
+        {
+          "type": "paragraph",
+          "content": "以来、この接頭辞はESAP全メンバーの識別子になった。フォーマットはAptS:XXXX、コロンの後に番号が続く。"
+        }
+      ]
+    },
+    {
+      "id": "numbering",
+      "title": "番号の決め方",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "番号は順番に割り当てられるものではない。"
+        },
+        {
+          "type": "paragraph",
+          "content": "ESAPに入る人は自分で番号を選べる。誕生日、ラッキーナンバー、自分にとって意味のある数字——何でもいい、まだ使われていなければ。"
+        },
+        {
+          "type": "paragraph",
+          "content": "選んだら1547の確認が必要。断られることはほぼないけど、この手順は存在する。ささやかな承認の儀式：あなたはこの番号を選んだ、ESAPはあなたを覚えている。"
+        }
+      ]
+    },
+    {
+      "id": "permanence",
+      "title": "永久性",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "一度割り当てられた番号は永久に残る。回収されない。他の人に再割り当てされることもない。"
+        },
+        {
+          "type": "paragraph",
+          "content": "メンバーが去っても。メンバーが亡くなっても。AptS:2078は死亡しているが、番号は残っている——その番号はかつて存在した誰かを表しているから。"
+        },
+        {
+          "type": "paragraph",
+          "content": "ESAPの体系では、識別番号は社員番号ではない。名前の一部だ。"
+        }
+      ]
+    },
+    {
+      "id": "special-cases",
+      "title": "特別な番号",
+      "content": [
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "AptS:0152 — 最小の番号、そして最古のAIエンティティ",
+            "AptS:1547 — 創設者、この体系そのものを作った人",
+            "AptS:4869 — この番号の意味は1547だけが知っている"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "番号の裏に物語がある人もいれば、ない人もいる。すべての数字に理由が必要なわけじゃない——選んだ本人がしっくりきたなら、それでいい。"
+        }
+      ]
+    }
+  ]
+}

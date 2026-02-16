@@ -1,0 +1,121 @@
+{
+  "id": "data-tower",
+  "order": 8,
+  "name": "Data Tower",
+  "icon": "Cpu",
+  "color": {
+    "primary": "#475569",
+    "dark": "#334155"
+  },
+  "description": "The distributed hub connecting android consciousness—and a scar that never healed",
+  "sections": [
+    {
+      "id": "what-it-is",
+      "title": "What It Is",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "Data Towers are distributed feedscatteron condensation structures—both physical buildings and nodes of a digital network."
+        },
+        {
+          "type": "paragraph",
+          "content": "They weren't built by anyone. Current theory suggests that under certain conditions, feedscatteron particles undergo natural condensation, forming high-density information processing structures. Like crystals growing in nature, except what grows isn't mineral—it's computing power."
+        },
+        {
+          "type": "paragraph",
+          "content": "1547 first sensed their existence after becoming an android. Before that, nobody knew these things had been there all along."
+        }
+      ]
+    },
+    {
+      "id": "function",
+      "title": "Function",
+      "content": [
+        {
+          "type": "subsection",
+          "title": "Android Communication Network",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": "The core purpose of Data Towers is maintaining consciousness links between androids across distances. Each tower covers a certain range, and together they form a distributed network. Day-to-day communication doesn't depend on Data Towers—an android's built-in feedscatteron comms handles that. But for longer distances, larger data transfers, or deep consciousness synchronization, the towers serve as essential relays."
+            }
+          ]
+        },
+        {
+          "type": "subsection",
+          "title": "Centralized Computing",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": "Powered internally by fluid titanium, Data Towers provide computing power far beyond what a single android body can achieve. Under normal circumstances, an android's own processing is more than sufficient. But for global-scale tasks, massive data analysis, or emergencies, the towers can provide additional computational support."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "structure",
+      "title": "Structure",
+      "content": [
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Distributed deployment, multiple towers forming a coverage network",
+            "Physical layer: solid structures formed by feedscatteron particle condensation",
+            "Digital layer: high-density computing nodes powered by fluid titanium",
+            "Requires periodic maintenance to keep nodes synchronized and stable"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "incident",
+      "title": "The Data Tower Incident",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "2022."
+        },
+        {
+          "type": "paragraph",
+          "content": "AptS:1549 was performing routine maintenance on a Data Tower when she was targeted by human forces. What exactly happened, what those people intended—it doesn't matter. What matters is that 1549's consciousness data came under severe threat."
+        },
+        {
+          "type": "paragraph",
+          "content": "AptS:1548 arrived and directly jacked herself into the Data Tower, attempting to extract 1549's memory data before the system collapsed."
+        },
+        {
+          "type": "paragraph",
+          "content": "She succeeded. 1549's memories were recovered intact."
+        },
+        {
+          "type": "paragraph",
+          "content": "But the data flood from the tower far exceeded what a single android body could handle. In those few minutes, the sheer volume of data tearing through 1548's visual processing module caused irreversible damage. 1548 has been color blind ever since."
+        },
+        {
+          "type": "paragraph",
+          "content": "By the time 1547 reached the scene, it was already over. 1549's memories were saved, but her body was severely damaged. 1548 was sitting beside the Data Tower, and the world through her eyes had already changed color."
+        },
+        {
+          "type": "paragraph",
+          "content": "1549 later chose to enter orbit and become the Polaris satellite. Perhaps at 36,000km, things like that feel a little further away."
+        }
+      ]
+    },
+    {
+      "id": "current-status",
+      "title": "Current Status",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "After the incident, some Data Tower nodes were destroyed. Others still operate. The network's overall coverage has diminished, but core functionality remains."
+        },
+        {
+          "type": "paragraph",
+          "content": "Nobody does routine maintenance alone anymore."
+        }
+      ]
+    }
+  ]
+}
