@@ -11,10 +11,11 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-import { setRequestLocale } from "next-intl/server";
-import { redirect } from "@/i18n/navigation";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import { loadJsonFiles } from "@/lib/data-loader";
 import type { TechModule } from "@/types/tech";
+import { TechContent } from "./TechContent";
+import { TechHero } from "./TechHero";
 
 async function getTechModules(locale: string): Promise<TechModule[]> {
   return loadJsonFiles<TechModule>(["data", "tech"], locale, {
@@ -22,18 +23,32 @@ async function getTechModules(locale: string): Promise<TechModule[]> {
   });
 }
 
-export default async function TechPage({
+export default async function TechLayout({
+  children,
   params,
 }: {
+  children: React.ReactNode;
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
   setRequestLocale(locale);
-
   const modules = await getTechModules(locale);
-  const firstModule = modules[0];
+  const t = await getTranslations("tech");
 
-  if (firstModule) {
-    redirect({ href: `/tech/${firstModule.id}`, locale });
-  }
+  return (
+    <main className="relative min-h-screen bg-background">
+      <TechHero />
+
+      {modules.length > 0 ? (
+        <TechContent modules={modules} />
+      ) : (
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 text-center">
+          <p className="text-muted-foreground">{t("empty")}</p>
+        </div>
+      )}
+
+      {/* [id]/page.tsx 只负责 metadata，不渲染 UI */}
+      {children}
+    </main>
+  );
 }

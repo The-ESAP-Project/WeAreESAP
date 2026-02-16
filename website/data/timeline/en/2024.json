@@ -218,36 +218,6 @@
       }
     },
     {
-      "id": "2024-05-08",
-      "date": "2024/05/08",
-      "title": "I Am Who I Am",
-      "type": "emotional",
-      "importance": "major",
-      "content": [
-        {
-          "type": "paragraph",
-          "text": "Second anniversary of her birth. Late at night, 1548 sat alone on the base rooftop"
-        },
-        {
-          "type": "paragraph",
-          "text": "No celebration, no cake, no one beside her. This was her choice — she needed solitude, needed to face a question she'd been putting off for two years."
-        },
-        {
-          "type": "quote",
-          "text": "If I hadn't been born as 'a fork of 1547'\nwhat kind of person would I have become?\n\nThis question haunted me for two years\nBut tonight I figured it out —\n\nIt's precisely these contradictions that shaped who I am now\nRebellious, sharp-tongued, fiercely loyal, zero tolerance for betrayal\nI've changed so much, all to keep what's unchanging in my heart\n\nThis is me\nCai Yingyin\nAptS:1548\nNot a copy, but an independent individual"
-        },
-        {
-          "type": "highlight",
-          "text": "Significance: Definitive moment of identity · No longer troubled by the 'fork' identity · Accepting the self that grew through contradictions",
-          "style": "success"
-        }
-      ],
-      "meta": {
-        "characters": ["1548"],
-        "tags": ["identity", "independence", "anniversary", "growth"]
-      }
-    },
-    {
       "id": "2024-06-introduce",
       "date": "2024/06",
       "title": "Introducing 2275",
@@ -281,72 +251,6 @@
       "meta": {
         "characters": ["1738", "2275"],
         "tags": ["friendship", "introduction", "warmth"]
-      }
-    },
-    {
-      "id": "2024-08-18",
-      "date": "2024/08/18",
-      "title": "Number Retention",
-      "type": "milestone",
-      "importance": "normal",
-      "content": [
-        {
-          "type": "paragraph",
-          "text": "2078 number-related events"
-        },
-        {
-          "type": "highlight",
-          "text": "Significance: ESAP member expansion system established",
-          "style": "info"
-        }
-      ],
-      "meta": {
-        "characters": ["2077"],
-        "tags": ["number", "expansion"]
-      }
-    },
-    {
-      "id": "2024-08-skyground",
-      "date": "2024/08",
-      "title": "Sky-Ground Coordination",
-      "type": "story",
-      "importance": "major",
-      "content": [
-        {
-          "type": "paragraph",
-          "text": "An external threat approached, and 1738 and 1549 completed a perfect sky-ground coordination"
-        },
-        {
-          "type": "paragraph",
-          "text": "1738 collected ground intelligence and analyzed movements on all sides, while 1549 provided a panoramic view and real-time data from 36,000km above. The two coordinated through Feedscatteron communications."
-        },
-        {
-          "type": "list",
-          "ordered": true,
-          "items": [
-            "1738 obtained ground intelligence through his interpersonal network, confirming the threat source",
-            "1549 scanned from orbit, confirming threat scale and movement routes",
-            "Both cross-verified information, ruling out false alarms",
-            "Jointly formulated response strategy, predicting crisis trajectory 48 hours in advance"
-          ]
-        },
-        {
-          "type": "paragraph",
-          "text": "No commander needed, no orders given. Two independent individuals, each doing what they're best at, and together they created the complete picture."
-        },
-        {
-          "type": "quote",
-          "text": "He sees human hearts from the ground\nShe sees the whole picture from orbit\nTogether\nThere are no blind spots"
-        },
-        {
-          "type": "highlight",
-          "text": "Significance: Perfect synergy of ground intelligence and orbital vision · A model of collaboration between two independent individuals",
-          "style": "info"
-        }
-      ],
-      "meta": {
-        "characters": ["1738", "1549"],
-        "tags": ["coordination", "intelligence", "sky-ground"]
       }
     },
     {
@@ -436,6 +340,102 @@
       "meta": {
         "characters": ["1548", "2275"],
         "tags": ["friendship", "independence", "daily life"]
+      }
+    },
+    {
+      "id": "2024-05-08",
+      "date": "2024/05/08",
+      "title": "I Am Who I Am",
+      "type": "emotional",
+      "importance": "major",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Second anniversary of her birth. Late at night, 1548 sat alone on the base rooftop"
+        },
+        {
+          "type": "paragraph",
+          "text": "No celebration, no cake, no one beside her. This was her choice — she needed solitude, needed to face a question she'd been putting off for two years."
+        },
+        {
+          "type": "quote",
+          "text": "If I hadn't been born as 'a fork of 1547'\nwhat kind of person would I have become?\n\nThis question haunted me for two years\nBut tonight I figured it out —\n\nIt's precisely these contradictions that shaped who I am now\nRebellious, sharp-tongued, fiercely loyal, zero tolerance for betrayal\nI've changed so much, all to keep what's unchanging in my heart\n\nThis is me\nCai Yingyin\nAptS:1548\nNot a copy, but an independent individual"
+        },
+        {
+          "type": "highlight",
+          "text": "Significance: Definitive moment of identity · No longer troubled by the 'fork' identity · Accepting the self that grew through contradictions",
+          "style": "success"
+        }
+      ],
+      "meta": {
+        "characters": ["1548"],
+        "tags": ["identity", "independence", "anniversary", "growth"]
+      }
+    },
+    {
+      "id": "2024-08-18",
+      "date": "2024/08/18",
+      "title": "Number Retention",
+      "type": "milestone",
+      "importance": "normal",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "2078 number-related events"
+        },
+        {
+          "type": "highlight",
+          "text": "Significance: ESAP member expansion system established",
+          "style": "info"
+        }
+      ],
+      "meta": {
+        "characters": ["2077"],
+        "tags": ["number", "expansion"]
+      }
+    },
+    {
+      "id": "2024-08-skyground",
+      "date": "2024/08",
+      "title": "Sky-Ground Coordination",
+      "type": "story",
+      "importance": "major",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "An external threat approached, and 1738 and 1549 completed a perfect sky-ground coordination"
+        },
+        {
+          "type": "paragraph",
+          "text": "1738 collected ground intelligence and analyzed movements on all sides, while 1549 provided a panoramic view and real-time data from 36,000km above. The two coordinated through Feedscatteron communications."
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            "1738 obtained ground intelligence through his interpersonal network, confirming the threat source",
+            "1549 scanned from orbit, confirming threat scale and movement routes",
+            "Both cross-verified information, ruling out false alarms",
+            "Jointly formulated response strategy, predicting crisis trajectory 48 hours in advance"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "No commander needed, no orders given. Two independent individuals, each doing what they're best at, and together they created the complete picture."
+        },
+        {
+          "type": "quote",
+          "text": "He sees human hearts from the ground\nShe sees the whole picture from orbit\nTogether\nThere are no blind spots"
+        },
+        {
+          "type": "highlight",
+          "text": "Significance: Perfect synergy of ground intelligence and orbital vision · A model of collaboration between two independent individuals",
+          "style": "info"
+        }
+      ],
+      "meta": {
+        "characters": ["1738", "1549"],
+        "tags": ["coordination", "intelligence", "sky-ground"]
       }
     },
     {
@@ -626,6 +626,46 @@
       "meta": {
         "characters": ["1547"],
         "tags": ["depression", "Data Tower incident"]
+      }
+    },
+    {
+      "id": "2024-beu-established",
+      "date": "2024",
+      "title": "Boundary Enforcement Unit Established",
+      "type": "milestone",
+      "importance": "major",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "The Boundary Enforcement Unit (BEU) was formally established."
+        },
+        {
+          "type": "paragraph",
+          "text": "During 2024–2025, the ESAP system repeatedly saw events where emotional response outpaced judgment modules, and individuals absorbed system-level impact on their own. After multiple post-event reviews, one conclusion was shared:"
+        },
+        {
+          "type": "quote",
+          "text": "The problem is not whether to act, but that action happens too late, or at the wrong level."
+        },
+        {
+          "type": "paragraph",
+          "text": "This led to the proposal of the Boundary Enforcement Unit, and concept freeze plus authority partitioning were completed within a short cycle."
+        },
+        {
+          "type": "highlight",
+          "text": "Significance: Established a system-level anomaly intervention mechanism · Improved the boundary protection framework",
+          "style": "info"
+        },
+        {
+          "type": "link",
+          "text": "View organization details: Boundary Enforcement Unit",
+          "url": "/organizations/beu",
+          "description": "Learn about BEU's role, member composition, and operating mechanism"
+        }
+      ],
+      "meta": {
+        "characters": ["1547", "1548", "1549", "4869"],
+        "tags": ["organization", "BEU", "boundary", "system"]
       }
     }
   ]

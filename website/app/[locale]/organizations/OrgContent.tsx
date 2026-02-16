@@ -13,30 +13,35 @@
 
 "use client";
 
-import { useSearchParams } from "next/navigation";
+import { AnimatePresence, motion } from "framer-motion";
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { ScrollableTabs } from "@/components/content";
 import { OrganizationView } from "@/components/organizations";
+import { useReducedMotion } from "@/hooks/useReducedMotion";
 import type { Organization } from "@/types/organization";
 
-interface OrganizationsPageClientProps {
+interface OrgContentProps {
   organizations: Organization[];
   characterNames: Record<string, string>;
+  initialOrgId?: string;
 }
 
-export function OrganizationsPageClient({
+function getOrgIdFromLocation(): string | undefined {
+  if (typeof window === "undefined") return undefined;
+  const segments = window.location.pathname.split("/");
+  const idx = segments.indexOf("organizations");
+  return idx !== -1 ? segments[idx + 1] : undefined;
+}
+
+export function OrgContent({
   organizations,
   characterNames,
-}: OrganizationsPageClientProps) {
-  const searchParams = useSearchParams();
-
-  const orgFromUrl = searchParams.get("org");
-  const initialOrg =
-    orgFromUrl && organizations.some((o) => o.id === orgFromUrl)
-      ? orgFromUrl
-      : organizations[0]?.id || "";
-
-  const [activeOrgId, setActiveOrgId] = useState(initialOrg);
+  initialOrgId,
+}: OrgContentProps) {
+  const shouldReduceMotion = useReducedMotion();
+  const [activeOrgId, setActiveOrgId] = useState(
+    () => initialOrgId || getOrgIdFromLocation() || organizations[0]?.id || ""
+  );
 
   const activeOrg = useMemo(
     () => organizations.find((o) => o.id === activeOrgId),
@@ -45,10 +50,27 @@ export function OrganizationsPageClient({
 
   const handleTabChange = useCallback((orgId: string) => {
     setActiveOrgId(orgId);
-    const newUrl = `${window.location.pathname}?org=${orgId}`;
-    window.history.replaceState(null, "", newUrl);
+    const segments = window.location.pathname.split("/");
+    const idx = segments.indexOf("organizations");
+    if (idx !== -1) {
+      segments[idx + 1] = orgId;
+      window.history.pushState(null, "", segments.join("/"));
+    }
   }, []);
 
+  // 浏览器前进/后退时同步状态
+  useEffect(() => {
+    const handlePopState = () => {
+      const id = getOrgIdFromLocation();
+      if (id) {
+        setActiveOrgId(id);
+      }
+    };
+    window.addEventListener("popstate", handlePopState);
+    return () => window.removeEventListener("popstate", handlePopState);
+  }, []);
+
+  // 页面加载时的 hash 滚动
   useEffect(() => {
     const hash = window.location.hash;
     if (hash) {
@@ -78,12 +100,28 @@ export function OrganizationsPageClient({
         layoutId="activeOrgTab"
       />
 
-      {activeOrg && (
-        <OrganizationView
-          organization={activeOrg}
-          characterNames={characterNames}
-        />
-      )}
+      <AnimatePresence mode="wait">
+        {activeOrg && (
+          <motion.div
+            key={activeOrg.id}
+            initial={
+              shouldReduceMotion ? { opacity: 1, x: 0 } : { opacity: 0, x: 20 }
+            }
+            animate={{ opacity: 1, x: 0 }}
+            exit={
+              shouldReduceMotion ? { opacity: 1, x: 0 } : { opacity: 0, x: -20 }
+            }
+            transition={
+              shouldReduceMotion ? { duration: 0 } : { duration: 0.3 }
+            }
+          >
+            <OrganizationView
+              organization={activeOrg}
+              characterNames={characterNames}
+            />
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 }

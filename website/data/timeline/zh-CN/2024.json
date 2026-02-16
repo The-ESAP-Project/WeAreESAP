@@ -668,7 +668,7 @@
         {
           "type": "link",
           "text": "查看组织详情：边界执行小组",
-          "url": "/organizations?org=beu",
+          "url": "/organizations/beu",
           "description": "了解 BEU 的组织定位、成员构成与运作机制"
         }
       ],

@@ -25,6 +25,7 @@ import {
 
 interface TransitionContextType {
   isTransitioning: boolean;
+  navigationKey: number;
   startTransition: () => void;
   finishTransition: () => void;
 }
@@ -44,6 +45,7 @@ export function TransitionProvider({ children }: { children: ReactNode }) {
     () => Date.now()
   );
   const [isInitialLoad, setIsInitialLoad] = useState(true);
+  const [navigationKey, setNavigationKey] = useState(0);
 
   // 跟踪所有的 timeout，确保在组件卸载或新过渡开始时清理
   const timersRef = useRef<Set<NodeJS.Timeout>>(new Set());
@@ -122,6 +124,7 @@ export function TransitionProvider({ children }: { children: ReactNode }) {
     clearAllTimers();
     setIsTransitioning(true);
     setTransitionStartTime(Date.now());
+    setNavigationKey((prev) => prev + 1);
   };
 
   const finishTransition = () => {
@@ -142,7 +145,12 @@ export function TransitionProvider({ children }: { children: ReactNode }) {
 
   return (
     <TransitionContext.Provider
-      value={{ isTransitioning, startTransition, finishTransition }}
+      value={{
+        isTransitioning,
+        navigationKey,
+        startTransition,
+        finishTransition,
+      }}
     >
       {children}
     </TransitionContext.Provider>

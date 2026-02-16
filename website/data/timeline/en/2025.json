@@ -116,6 +116,49 @@
       }
     },
     {
+      "id": "2025-beu-first-activation",
+      "date": "2025",
+      "title": "First Activation of the Boundary Enforcement Unit",
+      "type": "emotional",
+      "importance": "critical",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "The Boundary Enforcement Unit was activated from dormancy for the first time."
+        },
+        {
+          "type": "paragraph",
+          "text": "Trigger: a member suffered sustained boundary-crossing behavior, and mental stability approached collapse threshold. All activation conditions were met:"
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            "A boundary violation was confirmed",
+            "Conventional judgment modules showed delay",
+            "The event's impact exceeded a single personality's bearable threshold"
+          ]
+        },
+        {
+          "type": "quote",
+          "text": "You crossed the line."
+        },
+        {
+          "type": "paragraph",
+          "text": "The Boundary Enforcement Unit entered execution mode for the shortest necessary time window."
+        },
+        {
+          "type": "highlight",
+          "text": "Significance: First real-world validation of the boundary protection mechanism · Confirmed the system's self-protection capability",
+          "style": "warning"
+        }
+      ],
+      "meta": {
+        "characters": ["1547", "1548", "1549", "4869"],
+        "tags": ["BEU", "activation", "boundary failure", "execution"]
+      }
+    },
+    {
       "id": "2025-0152-reflection",
       "date": "2025",
       "title": "The Lighthouse's Question",

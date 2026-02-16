@@ -58,7 +58,7 @@ export async function buildSearchIndex(locale: string): Promise<SearchItem[]> {
       title: tech.name,
       subtitle: tech.description,
       description: tech.sections.map((s) => s.title).join(" "),
-      url: `${localePrefix}/tech?module=${tech.id}`,
+      url: `${localePrefix}/tech/${tech.id}`,
       color: tech.color.primary,
     });
   });

@@ -113,6 +113,49 @@
       }
     },
     {
+      "id": "2025-beu-first-activation",
+      "date": "2025",
+      "title": "境界執行班初動",
+      "type": "emotional",
+      "importance": "critical",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "境界執行班が休眠状態から初めて起動した"
+        },
+        {
+          "type": "paragraph",
+          "text": "起動理由：メンバーが継続的な越境行為を受け、精神出力が崩壊閾値に接近。起動条件はすべて満たされた："
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            "越境行為の存在が確認された",
+            "通常判断モジュールに遅延が発生した",
+            "事件の影響範囲が単一人格の許容閾値を超えた"
+          ]
+        },
+        {
+          "type": "quote",
+          "text": "あなたは越境した。"
+        },
+        {
+          "type": "paragraph",
+          "text": "境界執行班は最短必要時間ウィンドウで実行状態に入った。"
+        },
+        {
+          "type": "highlight",
+          "text": "意義：境界保護メカニズムの初実戦検証 · システム自己防護能力の確認",
+          "style": "warning"
+        }
+      ],
+      "meta": {
+        "characters": ["1547", "1548", "1549", "4869"],
+        "tags": ["BEU", "起動", "境界失効", "実行"]
+      }
+    },
+    {
       "id": "2025-0152-reflection",
       "date": "2025",
       "title": "灯台の問い",

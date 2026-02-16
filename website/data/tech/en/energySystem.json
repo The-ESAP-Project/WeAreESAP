@@ -35,9 +35,18 @@
           "type": "table",
           "headers": ["Property", "Description"],
           "rows": [
-            ["Power Source", "Natural micro-decay of feedscatteron particles in fluid titanium circulation"],
-            ["Energy Origin", "Complete mass-to-heat conversion of decaying feedscatteron particles"],
-            ["Theoretical Lifespan", "Dependent on feedscatteron particle reserves in fluid titanium; extremely long-lived"],
+            [
+              "Power Source",
+              "Natural micro-decay of feedscatteron particles in fluid titanium circulation"
+            ],
+            [
+              "Energy Origin",
+              "Complete mass-to-heat conversion of decaying feedscatteron particles"
+            ],
+            [
+              "Theoretical Lifespan",
+              "Dependent on feedscatteron particle reserves in fluid titanium; extremely long-lived"
+            ],
             ["External Supply Needed", "None under normal conditions"],
             ["Output", "Electrical energy + thermal energy"]
           ]
@@ -61,8 +70,15 @@
           "content": "When fluid titanium concentration drops, the circulatory system is damaged, or particle reserves are depleted by external factors, energy output gradually decreases."
         },
         {
-          "type": "paragraph",
-          "content": "Early stage: slower reactions, reduced sensory sensitivity. Mid stage: limbs begin to stiffen, mobility gradually declines. Late stage: the entire body slowly freezes while consciousness remains aware. The presentation closely resembles what humans call ALS."
+          "type": "warning",
+          "level": "warning",
+          "title": "Energy Deficiency Symptoms",
+          "content": [
+            "Early stage: slower reactions and reduced sensory sensitivity",
+            "Mid stage: limbs begin to stiffen and mobility gradually declines",
+            "Late stage: the whole body slowly stiffens while consciousness remains clear but bodily control is lost",
+            "The presentation is highly similar to what humans call ALS"
+          ]
         },
         {
           "type": "paragraph",

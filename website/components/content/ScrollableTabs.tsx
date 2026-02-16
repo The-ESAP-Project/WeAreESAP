@@ -25,6 +25,7 @@ import {
 } from "react";
 import { Icon, type IconName } from "@/components/ui";
 import { useReducedMotion } from "@/hooks/useReducedMotion";
+import { Link } from "@/i18n/navigation";
 
 const FADE_THRESHOLD = 50; // 淡出区域阈值（像素）
 const OPACITY_EPSILON = 0.01; // 透明度变化阈值，小于此值不触发更新
@@ -37,7 +38,7 @@ export interface TabItem {
 export interface ScrollableTabsProps<T extends TabItem> {
   items: T[];
   activeId: string;
-  onTabChange: (id: string) => void;
+  onTabChange?: (id: string) => void;
   /** 获取显示名称 */
   getItemName: (item: T) => string;
   /** 获取图标名称（可选） */
@@ -48,6 +49,8 @@ export interface ScrollableTabsProps<T extends TabItem> {
   getUnderlineStyle?: (item: T) => string | CSSProperties;
   /** Framer Motion layoutId，用于区分不同的 Tabs 实例 */
   layoutId: string;
+  /** 获取链接地址（提供时 tab 渲染为 Link 而非 button） */
+  getItemHref?: (item: T) => string;
 }
 
 function ScrollableTabsInner<T extends TabItem>({
@@ -59,10 +62,11 @@ function ScrollableTabsInner<T extends TabItem>({
   getItemIconColor,
   getUnderlineStyle,
   layoutId,
+  getItemHref,
 }: ScrollableTabsProps<T>) {
   const shouldReduceMotion = useReducedMotion();
   const containerRef = useRef<HTMLDivElement>(null);
-  const tabRefs = useRef<(HTMLButtonElement | null)[]>([]);
+  const tabRefs = useRef<(HTMLElement | null)[]>([]);
   const [leftGradientOpacity, setLeftGradientOpacity] = useState(0);
   const [rightGradientOpacity, setRightGradientOpacity] = useState(0);
 
@@ -214,19 +218,14 @@ function ScrollableTabsInner<T extends TabItem>({
                   ? (underlineStyleValue as CSSProperties)
                   : undefined;
 
-                return (
-                  <button
-                    key={item.id}
-                    ref={(el) => {
-                      tabRefs.current[index] = el;
-                    }}
-                    onClick={() => onTabChange(item.id)}
-                    className={`relative px-6 py-4 text-sm font-medium transition-colors whitespace-nowrap ${
-                      isActive
-                        ? "text-foreground"
-                        : "text-muted-foreground hover:text-foreground"
-                    }`}
-                  >
+                const tabClassName = `relative px-6 py-4 text-sm font-medium transition-colors whitespace-nowrap ${
+                  isActive
+                    ? "text-foreground"
+                    : "text-muted-foreground hover:text-foreground"
+                }`;
+
+                const tabContent = (
+                  <>
                     <span className="flex items-center gap-2">
                       {icon && (
                         <Icon
@@ -248,6 +247,36 @@ function ScrollableTabsInner<T extends TabItem>({
                         transition={underlineTransition}
                       />
                     )}
+                  </>
+                );
+
+                const href = getItemHref?.(item);
+
+                if (href) {
+                  return (
+                    <Link
+                      key={item.id}
+                      ref={(el) => {
+                        tabRefs.current[index] = el;
+                      }}
+                      href={href}
+                      className={tabClassName}
+                    >
+                      {tabContent}
+                    </Link>
+                  );
+                }
+
+                return (
+                  <button
+                    key={item.id}
+                    ref={(el) => {
+                      tabRefs.current[index] = el;
+                    }}
+                    onClick={() => onTabChange?.(item.id)}
+                    className={tabClassName}
+                  >
+                    {tabContent}
                   </button>
                 );
               })}
