@@ -18,6 +18,7 @@ import { useTranslations } from "next-intl";
 import { memo } from "react";
 import { SectionView } from "@/components/content";
 import { Icon } from "@/components/ui";
+import { getBlurDataURL } from "@/lib/blur-placeholder";
 import type { Organization } from "@/types/organization";
 import { OrganizationInfoCard } from "./OrganizationInfoCard";
 import { OrganizationMemberCard } from "./OrganizationMemberCard";
@@ -74,7 +75,10 @@ export const OrganizationView = memo(
                 width={1200}
                 height={400}
                 className="w-full h-auto object-cover"
-                priority
+                placeholder={
+                  getBlurDataURL(organization.image) ? "blur" : undefined
+                }
+                blurDataURL={getBlurDataURL(organization.image)}
               />
             </div>
           )}

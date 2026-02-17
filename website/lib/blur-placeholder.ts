@@ -23,12 +23,12 @@ import blurData from "@/data/blur-placeholders.json";
  * @returns blur data URL 或 undefined
  */
 export function getBlurDataURL(imagePath: string): string | undefined {
-  // 提取文件名
-  const filename = imagePath.split("/").pop();
-  if (!filename) return undefined;
+  // 去掉开头的 / 得到相对路径作为 key（例如 "images/characters/img_1549.webp"）
+  const relativePath = imagePath.startsWith("/")
+    ? imagePath.slice(1)
+    : imagePath;
 
-  // 从 JSON 中获取对应的 blur data
-  return blurData[filename as keyof typeof blurData];
+  return blurData[relativePath as keyof typeof blurData];
 }
 
 /**

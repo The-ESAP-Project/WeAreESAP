@@ -19,6 +19,7 @@ import { useTranslations } from "next-intl";
 import { memo, useState } from "react";
 import { Icon, TransitionLink } from "@/components/ui";
 import { useReducedMotion } from "@/hooks/useReducedMotion";
+import { getBlurDataURL } from "@/lib/blur-placeholder";
 import type { OrganizationMember } from "@/types/organization";
 
 interface OrganizationMemberCardProps {
@@ -41,6 +42,8 @@ export const OrganizationMemberCard = memo(function OrganizationMemberCard({
   const isClassified = member.visibility === "classified";
   const hasCharacterPage = !!characterName && !isClassified;
   const [avatarError, setAvatarError] = useState(false);
+  const avatarSrc = `/images/avatar/img_${member.characterId}.webp`;
+  const avatarBlur = getBlurDataURL(avatarSrc);
 
   const cardContent = (
     <>
@@ -54,39 +57,40 @@ export const OrganizationMemberCard = memo(function OrganizationMemberCard({
 
       {/* 成员 ID 和角色 */}
       <div className="flex items-start gap-4 mb-4">
-        {avatarError ? (
+        <div
+          className={`relative w-14 h-14 rounded-full shrink-0 overflow-hidden ${
+            isClassified ? "blur-[1px]" : ""
+          }`}
+          style={
+            !isClassified
+              ? { border: `2px solid ${accentColor}` }
+              : { border: "2px solid rgba(245, 158, 11, 0.3)" }
+          }
+        >
+          {/* 底层：始终显示代号作为占位 */}
           <div
-            className={`w-14 h-14 rounded-full flex items-center justify-center font-mono font-bold text-lg shrink-0 ${
-              isClassified
-                ? "bg-amber-500/20 text-amber-500 blur-[1px]"
-                : "bg-muted"
+            className={`absolute inset-0 flex items-center justify-center font-mono font-bold text-lg ${
+              isClassified ? "bg-amber-500/20 text-amber-500" : "bg-muted"
             }`}
             style={!isClassified ? { color: accentColor } : undefined}
           >
             {member.characterId}
           </div>
-        ) : (
-          <div
-            className={`w-14 h-14 rounded-full overflow-hidden shrink-0 ${
-              isClassified ? "blur-[1px]" : ""
-            }`}
-            style={
-              !isClassified
-                ? { border: `2px solid ${accentColor}` }
-                : { border: "2px solid rgba(245, 158, 11, 0.3)" }
-            }
-          >
+          {/* 上层：头像图片加载完后覆盖代号 */}
+          {!avatarError && (
             <Image
-              src={`/images/avatar/img_${member.characterId}.webp`}
+              src={avatarSrc}
               alt={characterName || member.characterId}
               width={56}
               height={56}
-              className="object-cover w-full h-full pointer-events-none select-none"
+              className="absolute inset-0 object-cover w-full h-full pointer-events-none select-none"
               draggable={false}
+              placeholder={avatarBlur ? "blur" : undefined}
+              blurDataURL={avatarBlur}
               onError={() => setAvatarError(true)}
             />
-          </div>
-        )}
+          )}
+        </div>
 
         <div className="flex-1 min-w-0">
           {characterName && (
