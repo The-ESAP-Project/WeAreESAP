@@ -12,15 +12,6 @@
 // limitations under the License.
 
 import { setRequestLocale } from "next-intl/server";
-import { redirect } from "@/i18n/navigation";
-import { loadJsonFiles } from "@/lib/data-loader";
-import type { Organization } from "@/types/organization";
-
-async function getOrganizations(locale: string): Promise<Organization[]> {
-  return loadJsonFiles<Organization>(["data", "organizations"], locale, {
-    sortByOrder: true,
-  });
-}
 
 export default async function OrganizationsPage({
   params,
@@ -29,11 +20,5 @@ export default async function OrganizationsPage({
 }) {
   const { locale } = await params;
   setRequestLocale(locale);
-
-  const organizations = await getOrganizations(locale);
-  const firstOrg = organizations[0];
-
-  if (firstOrg) {
-    redirect({ href: `/organizations/${firstOrg.id}`, locale });
-  }
+  return null;
 }

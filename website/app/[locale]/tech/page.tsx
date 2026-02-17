@@ -12,15 +12,6 @@
 // limitations under the License.
 
 import { setRequestLocale } from "next-intl/server";
-import { redirect } from "@/i18n/navigation";
-import { loadJsonFiles } from "@/lib/data-loader";
-import type { TechModule } from "@/types/tech";
-
-async function getTechModules(locale: string): Promise<TechModule[]> {
-  return loadJsonFiles<TechModule>(["data", "tech"], locale, {
-    sortByOrder: true,
-  });
-}
 
 export default async function TechPage({
   params,
@@ -29,11 +20,5 @@ export default async function TechPage({
 }) {
   const { locale } = await params;
   setRequestLocale(locale);
-
-  const modules = await getTechModules(locale);
-  const firstModule = modules[0];
-
-  if (firstModule) {
-    redirect({ href: `/tech/${firstModule.id}`, locale });
-  }
+  return null;
 }
