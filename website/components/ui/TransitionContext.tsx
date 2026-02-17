@@ -13,6 +13,7 @@
 
 "use client";
 
+import { usePathname } from "next/navigation";
 import {
   createContext,
   type ReactNode,
@@ -46,6 +47,11 @@ export function TransitionProvider({ children }: { children: ReactNode }) {
   );
   const [isInitialLoad, setIsInitialLoad] = useState(true);
   const [navigationKey, setNavigationKey] = useState(0);
+
+  // 标记是否有待处理的 transition（等待 pathname 变化后才递增 key）
+  // 用 ref 而非 state，避免 useEffect 依赖问题
+  const pendingTransitionRef = useRef(false);
+  const pathname = usePathname();
 
   // 跟踪所有的 timeout，确保在组件卸载或新过渡开始时清理
   const timersRef = useRef<Set<NodeJS.Timeout>>(new Set());
@@ -96,12 +102,23 @@ export function TransitionProvider({ children }: { children: ReactNode }) {
   // 注意：不再监听 pathname 自动结束过渡
   // 改为由 PageTransition 组件在页面渲染完成后主动调用 finishTransition()
 
+  // 当 pathname 变化且有待处理的 transition 时，递增 navigationKey
+  // 这样 organizations/tech 的 pushState 切 tab 不会触发 key 变化（因为它们不调用 startTransition）
+  // biome-ignore lint/correctness/useExhaustiveDependencies: pathname 是故意用作触发器，检测路由变化后才递增 key
+  useEffect(() => {
+    if (pendingTransitionRef.current) {
+      pendingTransitionRef.current = false;
+      setNavigationKey((prev) => prev + 1);
+    }
+  }, [pathname]);
+
   // 最大过渡时间保护，避免卡住（仅在非首次加载时）
   useEffect(() => {
     if (!isInitialLoad && isTransitioning && transitionStartTime) {
       const timer = setTimeout(() => {
         setIsTransitioning(false);
         setTransitionStartTime(null);
+        pendingTransitionRef.current = false;
         timersRef.current.delete(timer);
       }, MAX_TRANSITION_TIME);
       timersRef.current.add(timer);
@@ -124,7 +141,7 @@ export function TransitionProvider({ children }: { children: ReactNode }) {
     clearAllTimers();
     setIsTransitioning(true);
     setTransitionStartTime(Date.now());
-    setNavigationKey((prev) => prev + 1);
+    pendingTransitionRef.current = true;
   };
 
   const finishTransition = () => {

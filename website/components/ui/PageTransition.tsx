@@ -25,6 +25,9 @@ interface PageTransitionProps {
 /**
  * 页面过渡动画组件
  * 提供淡入淡出 + 滑动效果
+ *
+ * 使用 navigationKey 作为 key，只在通过 transition 系统的真正导航时才变化。
+ * organizations/tech 的 pushState 切 tab 不会触发 key 变化。
  */
 export function PageTransition({ children }: PageTransitionProps) {
   const { navigationKey, finishTransition } = useTransition();
@@ -35,7 +38,6 @@ export function PageTransition({ children }: PageTransitionProps) {
       key={navigationKey}
       initial={shouldReduceMotion ? undefined : { opacity: 0, y: 20 }}
       animate={shouldReduceMotion ? undefined : { opacity: 1, y: 0 }}
-      exit={shouldReduceMotion ? undefined : { opacity: 0, y: -20 }}
       transition={
         shouldReduceMotion
           ? { duration: 0 }
