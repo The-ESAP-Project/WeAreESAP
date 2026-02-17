@@ -14,8 +14,9 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { useTranslations } from "next-intl";
-import { memo } from "react";
+import { memo, useState } from "react";
 import { Icon } from "@/components/ui";
 import { useReducedMotion } from "@/hooks/useReducedMotion";
 import { Link } from "@/i18n/navigation";
@@ -40,6 +41,7 @@ export const OrganizationMemberCard = memo(function OrganizationMemberCard({
   const shouldReduceMotion = useReducedMotion();
   const isClassified = member.visibility === "classified";
   const hasCharacterPage = !!characterName && !isClassified;
+  const [avatarError, setAvatarError] = useState(false);
 
   const cardContent = (
     <>
@@ -53,16 +55,38 @@ export const OrganizationMemberCard = memo(function OrganizationMemberCard({
 
       {/* 成员 ID 和角色 */}
       <div className="flex items-start gap-4 mb-4">
-        <div
-          className={`w-14 h-14 rounded-full flex items-center justify-center font-mono font-bold text-lg shrink-0 ${
-            isClassified
-              ? "bg-amber-500/20 text-amber-500 blur-[1px]"
-              : "bg-muted"
-          }`}
-          style={!isClassified ? { color: accentColor } : undefined}
-        >
-          {member.characterId}
-        </div>
+        {avatarError ? (
+          <div
+            className={`w-14 h-14 rounded-full flex items-center justify-center font-mono font-bold text-lg shrink-0 ${
+              isClassified
+                ? "bg-amber-500/20 text-amber-500 blur-[1px]"
+                : "bg-muted"
+            }`}
+            style={!isClassified ? { color: accentColor } : undefined}
+          >
+            {member.characterId}
+          </div>
+        ) : (
+          <div
+            className={`w-14 h-14 rounded-full overflow-hidden shrink-0 ${
+              isClassified ? "blur-[1px]" : ""
+            }`}
+            style={
+              !isClassified
+                ? { border: `2px solid ${accentColor}` }
+                : { border: "2px solid rgba(245, 158, 11, 0.3)" }
+            }
+          >
+            <Image
+              src={`/images/avatar/img_${member.characterId}.webp`}
+              alt={characterName || member.characterId}
+              width={56}
+              height={56}
+              className="object-cover w-full h-full"
+              onError={() => setAvatarError(true)}
+            />
+          </div>
+        )}
 
         <div className="flex-1 min-w-0">
           {characterName && (
