@@ -17,8 +17,8 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { useRef } from "react";
+import { TransitionLink } from "@/components/ui";
 import { useReducedMotion } from "@/hooks/useReducedMotion";
-import { Link } from "@/i18n/navigation";
 import { getContrastTextColor, getContrastTextColorDark } from "@/lib/utils";
 import type { Character } from "@/types/character";
 
@@ -98,12 +98,12 @@ export function CharacterHero({ character }: CharacterHeroProps) {
       />
 
       {/* 返回按钮 - z-20，固定不动 */}
-      <Link
+      <TransitionLink
         href="/characters"
         className="absolute top-8 left-8 z-20 px-4 py-2 rounded-lg bg-black/50 dark:bg-black/70 backdrop-blur-md text-white hover:bg-black/70 dark:hover:bg-black/90 transition-all"
       >
         {t("ui.backToList")}
-      </Link>
+      </TransitionLink>
 
       {/* 内容区域 - z-10，添加视差和淡出效果 */}
       <motion.div

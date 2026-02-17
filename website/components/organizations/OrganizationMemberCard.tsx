@@ -17,9 +17,8 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { memo, useState } from "react";
-import { Icon } from "@/components/ui";
+import { Icon, TransitionLink } from "@/components/ui";
 import { useReducedMotion } from "@/hooks/useReducedMotion";
-import { Link } from "@/i18n/navigation";
 import type { OrganizationMember } from "@/types/organization";
 
 interface OrganizationMemberCardProps {
@@ -82,7 +81,8 @@ export const OrganizationMemberCard = memo(function OrganizationMemberCard({
               alt={characterName || member.characterId}
               width={56}
               height={56}
-              className="object-cover w-full h-full"
+              className="object-cover w-full h-full pointer-events-none select-none"
+              draggable={false}
               onError={() => setAvatarError(true)}
             />
           </div>
@@ -167,12 +167,12 @@ export const OrganizationMemberCard = memo(function OrganizationMemberCard({
       }
     >
       {hasCharacterPage ? (
-        <Link
+        <TransitionLink
           href={`/characters/${member.characterId}`}
           className="block p-5 hover:bg-muted/50 transition-colors rounded-xl"
         >
           {cardContent}
-        </Link>
+        </TransitionLink>
       ) : (
         <div className="p-5">{cardContent}</div>
       )}
