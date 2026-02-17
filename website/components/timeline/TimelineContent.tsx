@@ -27,6 +27,16 @@ const CHARACTER_COLORS: Record<
   string,
   { bg: string; border: string; text: string }
 > = {
+  "0152": {
+    bg: "bg-[#1abc9c]/10 dark:bg-[#1abc9c]/20",
+    border: "border-[#1abc9c]/50",
+    text: "text-[#16a085] dark:text-[#1abc9c]",
+  },
+  "1543": {
+    bg: "bg-[#87ceeb]/10 dark:bg-[#87ceeb]/20",
+    border: "border-[#87ceeb]/50",
+    text: "text-[#5f9ea0] dark:text-[#87ceeb]",
+  },
   "1547": {
     bg: "bg-esap-yellow/10 dark:bg-esap-yellow/20",
     border: "border-esap-yellow/50",
@@ -41,6 +51,16 @@ const CHARACTER_COLORS: Record<
     bg: "bg-esap-blue/10 dark:bg-esap-blue/20",
     border: "border-esap-blue/50",
     text: "text-esap-blue-dark dark:text-esap-blue",
+  },
+  "1738": {
+    bg: "bg-[#585858]/10 dark:bg-[#585858]/20",
+    border: "border-[#585858]/50",
+    text: "text-[#3a3a3a] dark:text-[#a0a0a0]",
+  },
+  "2275": {
+    bg: "bg-[#7fcdbb]/10 dark:bg-[#7fcdbb]/20",
+    border: "border-[#7fcdbb]/50",
+    text: "text-[#5bb5a0] dark:text-[#7fcdbb]",
   },
 };
 
@@ -69,6 +89,7 @@ function Quote({ data }: { data: QuoteBlock }) {
 
 // 对话气泡
 function Dialogue({ data }: { data: DialogueBlock }) {
+  const isAptsMember = data.speaker in CHARACTER_COLORS;
   const colors = CHARACTER_COLORS[data.speaker] || {
     bg: "bg-muted",
     border: "border-border",
@@ -79,7 +100,7 @@ function Dialogue({ data }: { data: DialogueBlock }) {
     <div className="my-3 flex flex-col gap-1">
       {/* 说话者标签 */}
       <div className={`text-sm font-semibold ${colors.text} ml-2`}>
-        AptS:{data.speaker}
+        {isAptsMember ? `AptS:${data.speaker}` : data.speaker}
       </div>
       {/* 气泡 */}
       <div

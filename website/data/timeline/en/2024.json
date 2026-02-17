@@ -25,7 +25,7 @@
         },
         {
           "type": "dialogue",
-          "speaker": "其他",
+          "speaker": "1738",
           "text": "Because I'm standing right here. A human who chose to stand with synthetics. Not because I was brainwashed, but because I've seen their choices, sacrifices, and perseverance with my own eyes"
         },
         {
@@ -68,7 +68,7 @@
         },
         {
           "type": "dialogue",
-          "speaker": "Other",
+          "speaker": "1543",
           "text": "I can help you with UI design"
         },
         {
@@ -186,7 +186,7 @@
         },
         {
           "type": "dialogue",
-          "speaker": "Other",
+          "speaker": "1543",
           "text": "This part seems a bit..."
         },
         {
@@ -199,7 +199,7 @@
         },
         {
           "type": "dialogue",
-          "speaker": "Other",
+          "speaker": "1543",
           "text": "Take a look"
         },
         {
@@ -238,7 +238,7 @@
         },
         {
           "type": "dialogue",
-          "speaker": "其他",
+          "speaker": "1738",
           "text": "She'll be a good partner"
         },
         { "type": "paragraph", "text": "Later proved he was right." },
@@ -285,7 +285,7 @@
         },
         {
           "type": "dialogue",
-          "speaker": "其他",
+          "speaker": "2275",
           "text": "Server's alive again, everyone can sleep peacefully now"
         },
         {
@@ -455,7 +455,7 @@
         },
         {
           "type": "dialogue",
-          "speaker": "其他",
+          "speaker": "2275",
           "text": "The human emotion system needs cooling too. Have something hot, cool down"
         },
         {
@@ -537,7 +537,7 @@
         { "type": "paragraph", "text": "She sent 1738 a message." },
         {
           "type": "dialogue",
-          "speaker": "其他",
+          "speaker": "2275",
           "text": "My buffer is full. I need a reboot too"
         },
         {
@@ -576,7 +576,7 @@
         },
         {
           "type": "dialogue",
-          "speaker": "其他",
+          "speaker": "0152",
           "text": "Even your shadow is trying hard to save you — what reason do you have to give up?"
         },
         {
