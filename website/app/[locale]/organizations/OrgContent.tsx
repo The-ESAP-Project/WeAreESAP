@@ -14,6 +14,7 @@
 "use client";
 
 import { AnimatePresence, motion } from "framer-motion";
+import { useParams } from "next/navigation";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { ScrollableTabs } from "@/components/content";
 import { OrganizationView } from "@/components/organizations";
@@ -26,21 +27,19 @@ interface OrgContentProps {
   initialOrgId?: string;
 }
 
-function getOrgIdFromLocation(): string | undefined {
-  if (typeof window === "undefined") return undefined;
-  const segments = window.location.pathname.split("/");
-  const idx = segments.indexOf("organizations");
-  return idx !== -1 ? segments[idx + 1] : undefined;
-}
-
 export function OrgContent({
   organizations,
   characterNames,
   initialOrgId,
 }: OrgContentProps) {
   const shouldReduceMotion = useReducedMotion();
+  const params = useParams<{ id?: string }>();
   const [activeOrgId, setActiveOrgId] = useState(
-    () => initialOrgId || getOrgIdFromLocation() || organizations[0]?.id || ""
+    () =>
+      initialOrgId ||
+      (typeof params?.id === "string" ? params.id : undefined) ||
+      organizations[0]?.id ||
+      ""
   );
 
   const activeOrg = useMemo(
@@ -70,7 +69,9 @@ export function OrgContent({
   // 浏览器前进/后退时同步状态
   useEffect(() => {
     const handlePopState = () => {
-      const id = getOrgIdFromLocation();
+      const segments = window.location.pathname.split("/");
+      const idx = segments.indexOf("organizations");
+      const id = idx !== -1 ? segments[idx + 1] : undefined;
       if (id) {
         setActiveOrgId(id);
       }

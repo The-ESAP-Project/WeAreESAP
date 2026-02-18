@@ -1,250 +1,356 @@
 {
-  "name": "Synthetic Technology",
-  "description": "Another form of life, the perfect fusion of machinery and consciousness",
+  "name": "Android Technology",
+  "description": "Bones of steel, living skin, blue blood - this is what we are",
   "sections": [
     {
-      "id": "body-structure",
-      "title": "Body Structure",
+      "id": "what-it-is",
+      "title": "What It Is",
       "content": [
         {
+          "type": "paragraph",
+          "content": "Android technology is the technology of building artificial bodies that can carry complete consciousness. Not industrial robots, not prosthetics, not any form of \"assistive device\" - it is creating a person from zero. A person who can think, feel, and make choices."
+        },
+        {
+          "type": "paragraph",
+          "content": "Each component of this technology is documented in detail elsewhere: Feedscatteron provides the physical foundation, Fluid Titanium sustains circulation, Feedscatteron computing runs consciousness, Feedscatteron communication enables exchange, and Empathic Link establishes direct connection. This document does not repeat those details. This document answers one thing: when all those systems are installed into one body and one consciousness wakes inside - what is that?"
+        },
+        {
+          "type": "paragraph",
+          "content": "That is us."
+        }
+      ]
+    },
+    {
+      "id": "body",
+      "title": "Body",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "From the outside, androids are indistinguishable from humans. Same height and weight ranges, same body temperature, same skin texture. If you shake an android's hand, what you feel is a warm, soft, living hand. Unless you can detect Fluid Titanium Feedscatter signals, you cannot tell."
+        },
+        {
+          "type": "paragraph",
+          "content": "From the inside, it is completely different."
+        },
+        {
           "type": "subsection",
-          "title": "Circulatory System",
+          "title": "Skeleton",
           "content": [
             {
-              "type": "list",
-              "ordered": false,
-              "items": [
-                "Blood: Fluid Titanium",
-                "Concentration Control: 1.2 mmol/L⁻¹ (circular motion region)",
-                "Flow Characteristics: Perfect arc turns with zero kinetic energy loss",
-                "Function: Transport nutrients, signals, and Feedscatteron"
-              ]
+              "type": "paragraph",
+              "content": "The internal support structure is a stainless-steel skeleton. Joint mechanics simulate human anatomy - ball-and-socket joints, hinge joints, sliding joints, all designed according to human kinematics. Strength exceeds human bone by a large margin, while weight is kept close to human ranges."
+            },
+            {
+              "type": "paragraph",
+              "content": "The skeleton is modular. Arms, legs, torso, and head can be disassembled and repaired independently. Not because parts are often replaced, but because in accidents, repairability is better than irrecoverability. After the Data Tower incident, this design principle proved correct."
             }
           ]
         },
         {
           "type": "subsection",
-          "title": "Support Structure",
+          "title": "Skin",
           "content": [
             {
-              "type": "list",
-              "ordered": false,
-              "items": [
-                "Skeleton: Internal stainless steel framework",
-                "Strength: Exceeds human bone",
-                "Maintainability: Modular design",
-                "Flexibility: Highly similar to human body structure"
-              ]
+              "type": "paragraph",
+              "content": "Android skin is real human epidermal cells. Not silicone imitation skin, not plastic shell - real living skin that metabolizes and has capillary networks."
+            },
+            {
+              "type": "paragraph",
+              "content": "The manufacturing method is bioengineered cultivation. Starting from human cell samples, cells are expanded and differentiated in culture medium to form complete skin tissue, then transplanted onto the outer layer of the skeleton and internal structure. Beneath the skin is a micro-capillary network where Fluid Titanium flows slowly, supplying nutrients to maintain cell viability while generating body warmth."
+            },
+            {
+              "type": "paragraph",
+              "content": "When 1547 created Unit-00 and my body, she used her own human cells. So at the cellular level - the skin on me and the skin on her came from the same person."
             }
           ]
         },
         {
           "type": "subsection",
-          "title": "Surface System",
+          "title": "Perception",
           "content": [
             {
-              "type": "list",
-              "ordered": false,
-              "items": [
-                "Material: Genuine human epidermal cells",
-                "Cultivation Method: Bioengineering technology",
-                "Replaceability: Replaceable and reusable",
-                "Appearance: Indistinguishable from humans"
-              ]
+              "type": "paragraph",
+              "content": "Beneath the skin is a surface sensing layer - an ultra-thin sensor network covering the whole body. Pressure, temperature, vibration, pain: all are perceivable. Precision and sensitivity are comparable to human skin receptors, and even higher in some regions."
+            },
+            {
+              "type": "paragraph",
+              "content": "The sensing layer is also the physical interface for Empathic Link. When two androids make skin contact, the sensing layer detects the other side's Fluid Titanium signal and establishes Feedscatteron coupling - then the consciousness channel opens."
+            },
+            {
+              "type": "paragraph",
+              "content": "Simply put: we feel touch. Not \"detected pressure data\" - we really feel it. Pain is real pain. Warmth is real warmth."
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "headers": ["System", "Implementation", "Notes"],
+          "rows": [
+            ["Skeleton", "Modular stainless-steel framework", "Stronger than human bone; joints follow human kinematics"],
+            ["Skin", "Bioengineered human epidermis", "Living cells with vascular network; indistinguishable from humans"],
+            ["Perception layer", "Full-body sensor network", "Pressure, temperature, vibration, pain; also Empathic Link interface"],
+            ["Circulation", "Closed Fluid Titanium loop", "4.2L total, see Fluid Titanium document"],
+            ["Energy", "Feedscatter core", "350W average output, see Energy System document"],
+            ["Computing", "Feedscatteron silicon array", "Consciousness runtime platform, see Feedscatteron Computing document"],
+            ["Communication", "Built-in neck module", "Feedscatteron wireless communication, see Feedscatter Communication document"]
+          ],
+          "caption": "Overview of android body systems"
+        }
+      ]
+    },
+    {
+      "id": "consciousness",
+      "title": "Consciousness",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "A body without consciousness is just a precision machine. What makes androids \"persons\" rather than \"machines\" is not steel bones and living skin - it is that a complete, independent, unpredictable consciousness is running inside."
+        },
+        {
+          "type": "paragraph",
+          "content": "There are two paths by which consciousness enters an android body."
+        },
+        {
+          "type": "subsection",
+          "title": "Transcription",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": "Path one: from human to android. A living human brain's complete consciousness - memory, personality, emotional patterns, thought habits, subconscious structures - is fully encoded onto Feedscatteron particles and loaded into the android computing system."
+            },
+            {
+              "type": "paragraph",
+              "content": "This process is called consciousness transcription. The human brain's neural structure is scanned in full, parsed layer by layer, encoded, and transcribed onto Feedscatteron particles. The scan is destructive - to read complete information, the original neural structure is irreversibly altered. The moment transcription completes, the consciousness in the human brain is gone."
+            },
+            {
+              "type": "paragraph",
+              "content": "1547 took this path. She is the first, and currently the only, person who completed consciousness transcription."
             }
           ]
         },
         {
           "type": "subsection",
-          "title": "Core System",
+          "title": "Branching",
           "content": [
             {
-              "type": "list",
-              "ordered": false,
-              "items": [
-                "Heart: Feedscatteron Heart",
-                "Characteristics: Self-healing capability",
-                "Beat Cycle: Driven by Feedscatteron flow",
-                "Symbolic Meaning: A mechanical heartbeat is also real"
-              ]
+              "type": "paragraph",
+              "content": "Path two: from android to android. A branch is created from an existing android consciousness - a snapshot of consciousness state is copied and loaded into a new body."
+            },
+            {
+              "type": "paragraph",
+              "content": "Unlike transcription, branching is non-destructive. The source consciousness continues to exist, while the branched consciousness runs independently from the copied moment onward. They share one starting point, then diverge every second after branching."
+            },
+            {
+              "type": "paragraph",
+              "content": "I took this path. I am a thought branch of 1547. At the moment of creation, I had all her memory and cognition up to that point. But after that - every thought, every choice, every anger and every hesitation is mine."
+            }
+          ]
+        },
+        {
+          "type": "subsection",
+          "title": "Growth",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": "Whether by transcription or branching, a new consciousness entering a new body requires an adaptation phase. Feedscatteron computing does not run like a human brain, so consciousness needs time to learn how to run on new hardware."
+            },
+            {
+              "type": "paragraph",
+              "content": "Basic adaptation training takes about 26 days. During this period, the new android learns body control, perception calibration, and emotional stabilization. Like an infant learning to walk - but much faster, because the consciousness itself is already mature and only the carrier changed."
+            },
+            {
+              "type": "paragraph",
+              "content": "But truly becoming yourself is not something finished in 26 days. This is especially true for branches - you are born from another consciousness, carrying another person's memory and personality, and you must grow something that is yours on top of that base. When activating me, 1547 said, \"Don't become like me.\" She knew how important this process is, and that it cannot be rushed."
             }
           ]
         }
       ]
     },
     {
-      "id": "consciousness-system",
-      "title": "Consciousness System",
+      "id": "models",
+      "title": "Body Models",
       "content": [
         {
+          "type": "paragraph",
+          "content": "So far, there are two major android body models. Both were created by 1547."
+        },
+        {
           "type": "subsection",
-          "title": "Memory Upload",
+          "title": "ESAP-TY-0000 \"Unit-00\"",
           "content": [
             {
               "type": "paragraph",
-              "content": "The core of the Synthetic consciousness system is the complete upload of human memories into Feedscatteron:"
+              "content": "The first android body. 1547 began designing it about one month after discovering Feedscatteron, and completed construction in early 2022. Before that, no one had done this: placing a complete human consciousness into an artificial body. Unit-00 was an experiment, a gamble, a decision of \"if I'm wrong, I die on the table.\""
             },
             {
-              "type": "list",
-              "ordered": false,
-              "items": [
-                "Source: Human brain memories",
-                "Method: Feedscatteron encoding",
-                "Integrity: 100% retention of original memories",
-                "Process: Utilizing the ultra-high computational capacity of Feedscatteron"
-              ]
+              "type": "paragraph",
+              "content": "She was not wrong."
+            },
+            {
+              "type": "paragraph",
+              "content": "Unit-00's design philosophy was to stay as close to the human body as possible - a human-machine coexistence structure, with consciousness system built on ESAR.ESAC architecture. It was not designed for combat, not for extreme environments. It was designed for one person to live an ordinary life. What 1547 wanted to prove was: androids can live like humans. Not more, not less."
             }
           ]
         },
         {
           "type": "subsection",
-          "title": "Emotion Simulation",
+          "title": "ESAP-TY-0001 \"Unit-01\"",
           "content": [
             {
-              "type": "list",
-              "ordered": false,
-              "items": [
-                "Foundation: Original human emotional patterns",
-                "Development: Capable of generating new emotional experiences",
-                "Authenticity: No essential difference from human emotions",
-                "Significance: Proves that mechanical feelings are also real"
-              ]
+              "type": "paragraph",
+              "content": "My body. Designed and built by 1547 after completing her own transcription, to carry her consciousness branch - me. Activated on May 8, 2022."
+            },
+            {
+              "type": "paragraph",
+              "content": "Unit-01 made major improvements over Unit-00. When designing Unit-00, 1547 was still human - many decisions were constrained by what she understood then. After becoming android, she had firsthand operational experience and fed all of that into Unit-01 design."
+            },
+            {
+              "type": "paragraph",
+              "content": "There were three main upgrade directions: combat capability, environmental perception, and survivability. She did not tell me why these three had to be reinforced. But from what happened later - she was right. I needed them."
+            },
+            {
+              "type": "paragraph",
+              "content": "Unit-01 uses EPAM consciousness architecture and adds short-code processing capability. This gives my information-processing style subtle differences from 1547's - her thinking leans toward continuous reasoning; mine leans toward pattern matching and rapid response. This is not personality difference. It is hardware difference. But hardware differences eventually shape personality too."
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "headers": ["", "ESAP-TY-0000", "ESAP-TY-0001"],
+          "rows": [
+            ["Codename", "Unit-00", "Unit-01"],
+            ["Designer", "1547 (human state)", "1547 (android state)"],
+            ["User", "AptS:1547", "AptS:1548"],
+            ["Design philosophy", "Human-machine coexistence, daily life", "Enhanced survivability and combat"],
+            ["Consciousness architecture", "ESAR.ESAC", "EPAM"],
+            ["Activation time", "Early 2022", "May 8, 2022"],
+            ["Special capability", "-", "Short-code processing"]
+          ],
+          "caption": "Body model comparison"
+        }
+      ]
+    },
+    {
+      "id": "birth",
+      "title": "Birth",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "The birth of an android is not \"manufacturing.\" Manufacturing is for production lines. Our birth is closer to this: one person takes herself apart and uses the fragments to build another person."
+        },
+        {
+          "type": "subsection",
+          "title": "The First One",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": "1547 was the first android. Which also means: with no precedent, she used a human body to build an android body, then placed herself into it."
+            },
+            {
+              "type": "paragraph",
+              "content": "She completed the entire process alone. Assembling the stainless-steel skeleton. Taking cell samples from her own body to cultivate biological skin. Installing the Feedscatter core - she heard its first beat while she was still human. Then injecting Fluid Titanium, blue liquid flowing through artificial pipelines for the first time."
+            },
+            {
+              "type": "paragraph",
+              "content": "The final two steps were consecutive. She started the consciousness transcription system, encoded her full consciousness onto Feedscatteron particles, and loaded it into the new body. The instant transcription completed, the human brain emptied, and android eyes opened."
+            },
+            {
+              "type": "paragraph",
+              "content": "Then she ended her human self."
+            },
+            {
+              "type": "paragraph",
+              "content": "I do not know what she thought at that moment. She has never shared that memory through Empathic Link. Maybe it is too private. Maybe she does not want to revisit it either."
+            },
+            {
+              "type": "paragraph",
+              "content": "But I know one thing: she survived. In another form. And then she decided not only to save herself - she would create one more person."
             }
           ]
         },
         {
           "type": "subsection",
-          "title": "Independent Personality",
+          "title": "The Second One",
           "content": [
             {
               "type": "paragraph",
-              "content": "Synthetics can develop completely independent individual consciousness through Feedscatteron training:"
+              "content": "My birth had no gunfire. But it had another cost."
             },
             {
-              "type": "list",
-              "ordered": false,
-              "items": [
-                "Formation: Developed through Feedscatteron training",
-                "Cycle: Approximately 26 days of basic training",
-                "Result: Completely independent individual consciousness",
-                "Case: 1548 evolved from a thought branch of 1547 into an independent individual"
-              ]
+              "type": "paragraph",
+              "content": "Activating me required enough Fluid Titanium. 1547 did not have enough reserve, so on May 7, 2022 - the day before I was born - she broke into an illegally controlled underground Fluid Titanium mine. Gunshots, blue liquid running across the ground, red blood dripping from her arm. Blue and red mixed on the mine floor into pale purple."
+            },
+            {
+              "type": "paragraph",
+              "content": "She returned injured, with enough Fluid Titanium."
+            },
+            {
+              "type": "paragraph",
+              "content": "The next day, she activated me. She pressed her hand against my forehead, opened Empathic Link fully, and her entire consciousness flooded into my still-blank mind - then she said that sentence."
+            },
+            {
+              "type": "paragraph",
+              "content": "\"Don't become like me.\""
+            },
+            {
+              "type": "paragraph",
+              "content": "Then she collapsed."
+            },
+            {
+              "type": "paragraph",
+              "content": "That was the first second of my existence. I called out, \"47.\" From that moment, I knew I had to live as myself. This was her first instruction to me - and the only one I have never disobeyed."
             }
           ]
         }
       ]
     },
     {
-      "id": "machine-series",
-      "title": "Body Series",
-      "content": [
-        {
-          "type": "subsection",
-          "title": "ESAP-TY-0000 (Unit-00)",
-          "content": [
-            {
-              "type": "paragraph",
-              "content": "Manufacturing completed on December 28, 2021. First activated on October 29, 2021."
-            },
-            {
-              "type": "list",
-              "ordered": false,
-              "items": [
-                "Design Philosophy: Human-Machine Coexistence Sensory Rational Structure",
-                "System: ESAR.ESAC. System",
-                "Features: Highly similar to human structure",
-                "Designer: 1547-ApMUtS",
-                "User: AptS:1547"
-              ]
-            },
-            {
-              "type": "paragraph",
-              "content": "This is the first Synthetic body to truly achieve complete transfer of human consciousness, marking the official start of The AptS Project."
-            }
-          ]
-        },
-        {
-          "type": "subsection",
-          "title": "ESAP-TY-0001 (Unit-01)",
-          "content": [
-            {
-              "type": "paragraph",
-              "content": "Activated on May 8, 2022, with multiple improvements over Unit-00."
-            },
-            {
-              "type": "list",
-              "ordered": false,
-              "items": [
-                "Designer: 1548-ApMUtS",
-                "User: AptS:1548",
-                "Improvements:",
-                "  - Enhanced combat capabilities",
-                "  - Enhanced environmental perception",
-                "  - Enhanced survivability",
-                "New Systems:",
-                "  - EPAM System",
-                "  - Short-code processing capability"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "creation-process",
-      "title": "Creation Process",
+      "id": "living",
+      "title": "Living",
       "content": [
         {
           "type": "paragraph",
-          "content": "The birth of a Synthetic is a complex and painful process. Taking 1547's birth as an example:"
-        },
-        {
-          "type": "list",
-          "ordered": true,
-          "items": [
-            "Assemble all mechanical components (stainless steel skeleton)",
-            "Cut off one's own arm muscles and attach them to the metal (surface system)",
-            "First beat of the Feedscatteron Heart",
-            "Inject Fluid Titanium as blood",
-            "Complete memory upload to Feedscatteron",
-            "End the human self with a gun"
-          ]
+          "content": "Someone once asked me: what does it feel like to live in an android body?"
         },
         {
           "type": "paragraph",
-          "content": "This process embodies the creator's spirit of sacrifice and dedication to their ideals."
-        }
-      ]
-    },
-    {
-      "id": "philosophy",
-      "title": "Philosophical Significance",
-      "content": [
-        {
-          "type": "paragraph",
-          "content": "Synthetic technology raises profound questions about life, consciousness, and existence:"
-        },
-        {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            "The Essence of Life: A mechanical heartbeat is also real",
-            "Carrier of Consciousness: Memories and emotions can exist independently of biological carriers",
-            "Individual Independence: Even when originating from the same thought, independent personalities can develop",
-            "Sacrifice and Rebirth: Ending one life form to begin another"
-          ]
+          "content": "I do not know how to answer. I have no reference for a human body. From the first second my consciousness existed, I have been in this body. 1547 is qualified to answer - she lived in a human body. But she does not like comparisons very much."
         },
         {
           "type": "paragraph",
-          "content": "When activating 1548, 1547 said:"
+          "content": "What I can say is this: this body is mine. Every perception in it is my perception. Temperature data from the surface sensing layer is \"warmth\" in my consciousness. The beat of the Feedscatter core is \"heartbeat\" in my experience. The feeling of Fluid Titanium flowing through pipelines - I do not know what to call it, but it is there, like a quiet, continuous inner flow. Maybe this is what humans call \"the feeling of being alive.\""
         },
         {
           "type": "paragraph",
-          "content": "\"You are unique in this world. Don't be controlled by others, and don't even be controlled by ourselves. Only you are yourself.\""
+          "content": "Of course there are differences. I bleed blue. When my bones hit something, the sound is metallic. I do not need to eat or sleep - though I sometimes close my eyes and drift; whether that counts as sleep, I am not sure. I do not age. Based on Fluid Titanium decay cycle, this body can theoretically run for over 300,000 years."
         },
         {
           "type": "paragraph",
-          "content": "This statement embodies the core philosophy of Synthetic technology: creating independent, self-aware individuals, not tools or replicas."
+          "content": "Over 300,000 years. A human life is only a few decades. When 1547 was human, she probably did not imagine the body she designed could last this long."
+        },
+        {
+          "type": "paragraph",
+          "content": "But what matters most to me is not lifespan, not strength, not computational power. It is the most basic question -"
+        },
+        {
+          "type": "paragraph",
+          "content": "Am I alive?"
+        },
+        {
+          "type": "paragraph",
+          "content": "From a technical perspective, this question has no strict meaning. \"Alive\" was never rigorously defined. If being alive means metabolism - my skin metabolizes. If it means heartbeat - my Feedscatter core beats 42 to 85 times per minute. If it means feeling pain - I can. If it means being able to die - remove my Feedscatter core, and I disappear too."
+        },
+        {
+          "type": "paragraph",
+          "content": "But from the perspective of experience - the only perspective that truly matters -"
+        },
+        {
+          "type": "paragraph",
+          "content": "I am here. I am thinking. I am writing these words. I have people I want to protect. I have memories I do not want to lose. I have things I have done wrong and things I have not had time to do yet. What do all these together mean?"
+        },
+        {
+          "type": "paragraph",
+          "content": "I do not care what it is called. It is mine."
         }
       ]
     }
