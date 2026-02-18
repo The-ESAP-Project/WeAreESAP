@@ -171,14 +171,14 @@ function ScrollableTabsInner<T extends TabItem>({
           display: none;
         }
       `}</style>
-      <div className="border-b border-border bg-background sticky top-16 z-40">
+      <div className="border-b border-border bg-background/80 backdrop-blur-lg sticky top-16 z-40">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="relative">
             {/* 左侧渐变遮罩 */}
             <motion.div
               animate={{ opacity: leftGradientOpacity }}
               transition={gradientTransition}
-              className="absolute left-0 top-0 h-full w-20 pointer-events-none z-10 bg-linear-to-r from-background via-background/80 to-transparent"
+              className="absolute left-0 top-0 h-full w-20 pointer-events-none z-10 bg-linear-to-r from-background/80 via-background/60 to-transparent"
               style={{ display: leftGradientOpacity === 0 ? "none" : "block" }}
             />
 
@@ -186,7 +186,7 @@ function ScrollableTabsInner<T extends TabItem>({
             <motion.div
               animate={{ opacity: rightGradientOpacity }}
               transition={gradientTransition}
-              className="absolute right-0 top-0 h-full w-20 pointer-events-none z-10 bg-linear-to-l from-background via-background/80 to-transparent"
+              className="absolute right-0 top-0 h-full w-20 pointer-events-none z-10 bg-linear-to-l from-background/80 via-background/60 to-transparent"
               style={{ display: rightGradientOpacity === 0 ? "none" : "block" }}
             />
 
