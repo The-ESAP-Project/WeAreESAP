@@ -14,6 +14,7 @@
 "use client";
 
 import { AnimatePresence, motion } from "framer-motion";
+import { useParams } from "next/navigation";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { TechModuleView } from "@/components";
 import { ScrollableTabs } from "@/components/content";
@@ -25,17 +26,15 @@ interface TechContentProps {
   initialModuleId?: string;
 }
 
-function getTechIdFromLocation(): string | undefined {
-  if (typeof window === "undefined") return undefined;
-  const segments = window.location.pathname.split("/");
-  const idx = segments.indexOf("tech");
-  return idx !== -1 ? segments[idx + 1] : undefined;
-}
-
 export function TechContent({ modules, initialModuleId }: TechContentProps) {
   const shouldReduceMotion = useReducedMotion();
+  const params = useParams<{ id?: string }>();
   const [activeModuleId, setActiveModuleId] = useState(
-    () => initialModuleId || getTechIdFromLocation() || modules[0]?.id || ""
+    () =>
+      initialModuleId ||
+      (typeof params?.id === "string" ? params.id : undefined) ||
+      modules[0]?.id ||
+      ""
   );
 
   const activeModule = useMemo(
@@ -65,7 +64,9 @@ export function TechContent({ modules, initialModuleId }: TechContentProps) {
   // 浏览器前进/后退时同步状态
   useEffect(() => {
     const handlePopState = () => {
-      const id = getTechIdFromLocation();
+      const segments = window.location.pathname.split("/");
+      const idx = segments.indexOf("tech");
+      const id = idx !== -1 ? segments[idx + 1] : undefined;
       if (id) {
         setActiveModuleId(id);
       }
