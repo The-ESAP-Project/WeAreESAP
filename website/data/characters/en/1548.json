@@ -1,19 +1,11 @@
 {
-  "id": "1548",
   "name": "Cai Yingyin",
-  "code": "AptS:1548",
   "nickname": "48",
-  "color": {
-    "primary": "#ff69b4",
-    "dark": "#ff1493"
-  },
   "role": "The Rebel",
   "species": "Synthetic",
   "quote": "No one has ever walked away unscathed after hurting us",
   "description": "Independent entity growing through pain",
   "keywords": ["Rebellion", "Vitality", "Authenticity"],
-  "backgroundImage": "/images/characters/img_1548.webp",
-  "tier": "core",
   "hiddenProfile": {
     "type": "text",
     "title": "Words I've Never Spoken",

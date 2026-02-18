@@ -1,19 +1,11 @@
 {
-  "id": "1543",
   "name": "Shen Muchuan",
-  "code": "AptS:1543",
   "nickname": "Muchuan",
-  "color": {
-    "primary": "#87ceeb",
-    "dark": "#5f9ea0"
-  },
   "role": "Lone Wolf",
   "species": "Human",
   "quote": "I prefer to speak with visuals",
   "description": "A gentle lone wolf who expresses herself through design language",
   "keywords": ["independent", "observant", "creative"],
-  "backgroundImage": "/images/characters/img_1543.webp",
-  "tier": "member",
   "meta": {
     "bodyType": "Human",
     "background": "Came into contact with ESAP in March 2024 out of curiosity about 1548's code and name, gradually learning about the project through online communication with 1548. Currently a freshman, serving as UI designer for the ESAP project. She is a creator who likes to express ideas through visual language. Compared to verbal communication, she is better at conveying her concepts through design works, UI drafts, and illustrations. Cheerful in personality but enjoys solitude more, with her own rhythm and sense of boundaries. She can observe details and issues that others on the team easily overlook, providing unique insights from a designer's perspective. Keeps some distance from 1547 due to first impressions, but still maintains contact, just not daring to meet offline.",

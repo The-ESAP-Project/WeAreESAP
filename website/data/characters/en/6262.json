@@ -1,19 +1,11 @@
 {
-  "id": "6262",
   "name": "Ye Qing",
-  "code": "AptS:6262",
   "nickname": "Bushuomiao",
-  "color": {
-    "primary": "#00bcd4",
-    "dark": "#0097a7"
-  },
   "role": "Technical Collaborator",
   "species": "Human",
   "quote": "Being quiet doesn't mean I have nothing to say, just nothing unnecessary meow",
   "description": "A quiet but reliable technical collaborator who occasionally ends sentences with 'meow'",
   "keywords": ["Quiet", "Reliable", "Cat-like"],
-  "backgroundImage": "/images/characters/img_6262.webp",
-  "tier": "guest",
   "meta": {
     "background": "Computer science student who connected with ESAP through a gcop-rs issue, now occasionally helps with technical collaboration. Quiet but never dismissive of technical problems.",
     "relationship": "Met 1547 through the gcop-rs issue, maintains a technical collaboration relationship. Keeps a friendly but relatively distant relationship with other members.",

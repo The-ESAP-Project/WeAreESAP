@@ -1,19 +1,11 @@
 {
-  "id": "6262",
   "name": "叶轻",
-  "code": "AptS:6262",
   "nickname": "不说喵",
-  "color": {
-    "primary": "#00bcd4",
-    "dark": "#0097a7"
-  },
   "role": "技术协作",
   "species": "人类",
   "quote": "话少不代表没话说，只是觉得没必要喵",
   "description": "一位话少但可靠的技术协作者，偶尔会在句尾加个「喵」",
   "keywords": ["话少", "可靠", "猫系"],
-  "backgroundImage": "/images/characters/img_6262.webp",
-  "tier": "guest",
   "meta": {
     "background": "计算机专业大学生，通过给 gcop-rs 提 issue 与 ESAP 产生交集，后以技术协作身份偶尔帮忙。话少但从不敷衍技术问题。",
     "relationship": "与 1547 通过 gcop-rs issue 结识，保持技术协作关系。对其他成员保持友好但相对疏离的距离。",

@@ -21,20 +21,16 @@
 type LogLevel = "log" | "info" | "warn" | "error" | "debug";
 
 /**
- * 判断是否为开发环境
- */
-const isDevelopment = process.env.NODE_ENV === "development";
-
-/**
  * 创建日志函数
  * @param level 日志级别
  * @returns 日志函数
  */
-function createLogger(_level: LogLevel) {
-  return (..._args: unknown[]): void => {
-    if (isDevelopment) {
+function createLogger(level: LogLevel) {
+  return (...args: unknown[]): void => {
+    if (process.env.NODE_ENV === "development") {
+      // biome-ignore lint/suspicious/noConsole: This utility intentionally routes logs to console in development only.
+      console[level](...args);
     }
-    // 生产环境下静默处理
   };
 }
 

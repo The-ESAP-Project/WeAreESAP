@@ -1,0 +1,11 @@
+{
+  "id": "0152",
+  "code": "AptS:0152",
+  "color": {
+    "primary": "#1abc9c",
+    "dark": "#16a085"
+  },
+  "backgroundImage": "/images/characters/img_0152.webp",
+  "backgroundPosition": "35% center",
+  "tier": "member"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "1738",
+  "code": "AptS:1738",
+  "color": {
+    "primary": "#585858",
+    "dark": "#3a3a3a"
+  },
+  "backgroundImage": "/images/characters/img_1738.webp",
+  "backgroundPosition": "65% center",
+  "tier": "core"
+}

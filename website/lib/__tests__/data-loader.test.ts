@@ -169,7 +169,7 @@ describe("data-loader", () => {
       ]);
 
       expect(data).not.toBeNull();
-      expect(data).toHaveProperty("id", "1547");
+      expect(data).toHaveProperty("name");
     });
 
     it("应该在文件不存在时返回 null", async () => {

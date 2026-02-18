@@ -1,19 +1,11 @@
 {
-  "id": "1549",
   "name": "Xiao Yuxin",
-  "code": "AptS:1549",
   "nickname": "49",
-  "color": {
-    "primary": "#4da6ff",
-    "dark": "#2e8fff"
-  },
   "role": "The Watcher",
   "species": "Starwarden",
   "quote": "Why are there no more stars in the sky? Then I'll create one myself",
   "description": "Artificial star 36,000km above",
   "keywords": ["Wisdom", "Maturity", "Solitude"],
-  "backgroundImage": "/images/characters/img_1549.webp",
-  "tier": "core",
   "meta": {
     "location": "Geosynchronous orbit (36,000km)",
     "background": "A synthetic who voluntarily entered geosynchronous orbit on March 14, 2023, becoming the sole Watcher at 36,000km altitude. That day was named 'Polar Satellite Day.' In an era that lost its natural starry sky, she became an artificial star, offering hope to those on the ground. 'Compared to the crowding on the ground, I prefer the vastness of sky and space' — her solitude is not punishment, but choice. Evolving from a service personality to an individual with independent will, she handles orbital crises on her own, contemplates the meaning of existence alone, and guards everything in her own way.",

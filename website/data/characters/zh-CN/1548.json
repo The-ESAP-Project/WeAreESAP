@@ -1,19 +1,11 @@
 {
-  "id": "1548",
   "name": "蔡颖茵",
-  "code": "AptS:1548",
   "nickname": "48",
-  "color": {
-    "primary": "#ff69b4",
-    "dark": "#ff1493"
-  },
   "role": "逆反者",
   "species": "仿生人",
   "quote": "从来没有人可以在伤害我们后全身而退",
   "description": "在痛苦中成长的独立个体",
   "keywords": ["逆反", "活力", "真实"],
-  "backgroundImage": "/images/characters/img_1548.webp",
-  "tier": "core",
   "hiddenProfile": {
     "type": "text",
     "title": "我从未说出口的话",

@@ -1,0 +1,10 @@
+{
+  "id": "1548",
+  "code": "AptS:1548",
+  "color": {
+    "primary": "#ff69b4",
+    "dark": "#ff1493"
+  },
+  "backgroundImage": "/images/characters/img_1548.webp",
+  "tier": "core"
+}

@@ -1,19 +1,11 @@
 {
-  "id": "1547",
   "name": "卞雨涵 (ビエン・ユーハン)",
-  "code": "AptS:1547",
   "nickname": "47",
-  "color": {
-    "primary": "#ffd93d",
-    "dark": "#ffc107"
-  },
   "role": "創造者",
   "species": "狐娘",
   "quote": "この複雑な世界で、私たちは生き、私たちは守り抜く",
   "description": "理想を守り抜く利他主義者",
   "keywords": ["創造", "堅持", "利他主義"],
-  "backgroundImage": "/images/characters/img_1547.webp",
-  "tier": "core",
   "hiddenProfile": {
     "type": "mixed",
     "title": "深淵からの独白",

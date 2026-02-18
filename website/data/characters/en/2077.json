@@ -1,19 +1,11 @@
 {
-  "id": "2077",
   "name": "Wind",
-  "code": "AptS:2077",
   "nickname": "77",
-  "color": {
-    "primary": "#ffd93d",
-    "dark": "#ffc107"
-  },
   "role": "Companion",
   "species": "Human",
   "quote": "Let's meet at the end of the wind",
   "description": "Even if no one else values you, I'm still watching you in the vast sea of people",
   "keywords": ["Companionship", "Love", "Sensitivity"],
-  "backgroundImage": "/images/characters/img_2077.webp",
-  "tier": "guest",
   "meta": {
     "bodyType": "Human",
     "abilities": ["Psychology", "Literature", "Vocal Music", "Linux Operations"]

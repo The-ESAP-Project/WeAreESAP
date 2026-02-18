@@ -1,19 +1,11 @@
 {
-  "id": "1547",
   "name": "卞雨涵",
-  "code": "AptS:1547",
   "nickname": "47",
-  "color": {
-    "primary": "#ffd93d",
-    "dark": "#ffc107"
-  },
   "role": "创造者",
   "species": "狐狸娘",
   "quote": "在这纷杂的世界中，我们活着，我们坚守着",
   "description": "坚守理想的利他主义者",
   "keywords": ["创造", "坚贞", "利他主义"],
-  "backgroundImage": "/images/characters/img_1547.webp",
-  "tier": "core",
   "hiddenProfile": {
     "type": "mixed",
     "title": "深渊中的独白",

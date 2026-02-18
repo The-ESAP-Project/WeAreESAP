@@ -1,19 +1,11 @@
 {
-  "id": "1547",
   "name": "Bian Yuhan",
-  "code": "AptS:1547",
   "nickname": "47",
-  "color": {
-    "primary": "#ffd93d",
-    "dark": "#ffc107"
-  },
   "role": "The Creator",
   "species": "Fox Girl",
   "quote": "In this chaotic world, we live, we persist",
   "description": "Altruist who holds onto ideals",
   "keywords": ["Creation", "Devotion", "Altruism"],
-  "backgroundImage": "/images/characters/img_1547.webp",
-  "tier": "core",
   "hiddenProfile": {
     "type": "mixed",
     "title": "Monologue from the Abyss",

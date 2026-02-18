@@ -1,20 +1,11 @@
 {
-  "id": "1738",
   "name": "Lu Qingxian",
-  "code": "AptS:1738",
   "nickname": "38",
-  "color": {
-    "primary": "#585858",
-    "dark": "#3a3a3a"
-  },
   "role": "Mediator",
   "species": "Human",
   "quote": "Between black and white, I choose the gray zone",
   "description": "The mediator who stays calm in disputes",
   "keywords": ["calm", "balanced", "loyal"],
-  "backgroundImage": "/images/characters/img_1738.webp",
-  "backgroundPosition": "65% center",
-  "tier": "core",
   "meta": {
     "bodyType": "Human",
     "background": "Was once a core member of a human organization that claimed to pursue progress and innovation, but was actually filled with power struggles and profit games. Within the organization, 1738 gradually saw through the hypocrisy behind the so-called 'black and white' principles—rules were strictly enforced on ordinary members, while the leadership could always find exceptions. This experience taught him to question superficial justice, and he chose to leave when their ideologies no longer aligned. In 2023, when news of the Polar Star Satellite launch spread, he was moved by ESAP's philosophy that 'even artificial light can guide the way,' believing that bionic beings and humans should coexist rather than oppose each other. After observation and understanding, he proactively contacted and joined ESAP, becoming a bridge between the team and the outside world. He later introduced his friend Lin Chengyao (2275) to the team.",

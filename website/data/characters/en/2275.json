@@ -1,20 +1,11 @@
 {
-  "id": "2275",
   "name": "Lin Chenyao",
-  "code": "AptS:2275",
   "nickname": "75",
-  "color": {
-    "primary": "#7fcdbb",
-    "dark": "#5bb5a0"
-  },
   "role": "Healing Messenger",
   "species": "Human",
   "quote": "Servers can restart, and so can you",
   "description": "A sunshine girl who heals hearts with tech metaphors",
   "keywords": ["gentle", "sunny", "healing", "tech"],
-  "backgroundImage": "/images/characters/img_2275.webp",
-  "backgroundPosition": "70% center",
-  "tier": "member",
   "meta": {
     "bodyType": "Human",
     "background": "Computer science major university student, classmates with 1738. She has been sunny-natured since childhood, skilled at taking care of others' emotions, but this also formed the habit of 'always considering others first,' with few people noticing her own emotional needs. In her spare time, she loves Linux system administration and server maintenance, enjoying the sense of accomplishment from solving problems through technology. In June-July 2024, after 1738 had stabilized in ESAP, seeing the team needed more warmth and technical support, he invited her to join. Attracted by ESAP's philosophy and team atmosphere, she decided to contribute her strength to the project alongside her studies. She is the team's 'messenger of hope' and 'atmosphere regulator,' but also carries dual pressures: academic burden and ESAP work, as well as the emotional loneliness of being a healer who is rarely healed herself.",

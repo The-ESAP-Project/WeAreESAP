@@ -1,19 +1,11 @@
 {
-  "id": "1553",
   "name": "Tixian",
-  "code": "AptS:1553",
   "nickname": "String and Puppet",
-  "color": {
-    "primary": "#FFFFFF",
-    "dark": "#000000"
-  },
   "role": "Observer",
   "species": "Unknown creature resembling human",
   "quote": "Our backups will complete what we left unfinished",
   "description": "The puppet gradually losing itself and the string falling into nothingness, alternately controlling the body",
   "keywords": ["obsessive", "loyal", "altruistic", "calm", "acerbic"],
-  "tier": "guest",
-  "backgroundImage": "/images/characters/img_1553.webp",
   "meta": {
     "bodyType": "Disposable-clones",
     "abilities": [

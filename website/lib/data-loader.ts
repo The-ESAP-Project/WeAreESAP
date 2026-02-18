@@ -14,6 +14,7 @@
 /**
  * 统一的数据加载工具
  * 提供带 locale 回退的 JSON 文件读取功能
+ * 支持 shared 目录：非翻译字段放 shared/，locale 目录只放翻译内容，加载时自动合并
  */
 
 import fs from "node:fs/promises";
@@ -30,6 +31,28 @@ async function exists(filePath: string): Promise<boolean> {
   } catch {
     return false;
   }
+}
+
+/**
+ * 加载共享数据文件（如果存在）
+ * @param basePath 基础路径数组
+ * @param filename 文件名
+ * @returns 共享数据对象，不存在则返回空对象
+ */
+async function loadSharedData(
+  basePath: string[],
+  filename: string
+): Promise<Record<string, unknown>> {
+  const sharedPath = path.join(process.cwd(), ...basePath, "shared", filename);
+  if (await exists(sharedPath)) {
+    try {
+      const content = await fs.readFile(sharedPath, "utf-8");
+      return JSON.parse(content) as Record<string, unknown>;
+    } catch (error) {
+      logger.error(`加载共享数据失败 ${filename}:`, error);
+    }
+  }
+  return {};
 }
 
 /**
@@ -73,7 +96,11 @@ export async function loadJsonFile<T>(
     }
 
     const fileContent = await fs.readFile(filePath, "utf-8");
-    return JSON.parse(fileContent) as T;
+    const localeData = JSON.parse(fileContent) as Record<string, unknown>;
+
+    // 尝试加载共享数据并合并
+    const shared = await loadSharedData(basePath, filename);
+    return { ...shared, ...localeData } as T;
   } catch (error) {
     logger.error(`加载或解析文件失败 ${filename}:`, error);
     return null;
@@ -126,6 +153,32 @@ export async function loadJsonFiles<T>(
       dirPath = path.join(process.cwd(), ...basePath, fallbackLocale);
     }
 
+    // 加载共享数据（如果 shared 目录存在）
+    const sharedDir = path.join(process.cwd(), ...basePath, "shared");
+    const sharedMap = new Map<string, Record<string, unknown>>();
+    if (await exists(sharedDir)) {
+      try {
+        const sharedFiles = (await fs.readdir(sharedDir)).filter((f) =>
+          f.endsWith(".json")
+        );
+        await Promise.all(
+          sharedFiles.map(async (file) => {
+            try {
+              const content = await fs.readFile(
+                path.join(sharedDir, file),
+                "utf-8"
+              );
+              sharedMap.set(file, JSON.parse(content));
+            } catch (error) {
+              logger.error(`加载共享数据失败 ${file}:`, error);
+            }
+          })
+        );
+      } catch (error) {
+        logger.error(`读取共享数据目录失败:`, error);
+      }
+    }
+
     const files = await fs.readdir(dirPath);
 
     // 并行读取和解析所有 JSON 文件
@@ -135,7 +188,9 @@ export async function loadJsonFiles<T>(
         const filePath = path.join(dirPath, file);
         try {
           const fileContent = await fs.readFile(filePath, "utf-8");
-          return JSON.parse(fileContent) as T;
+          const localeData = JSON.parse(fileContent) as Record<string, unknown>;
+          const shared = sharedMap.get(file) || {};
+          return { ...shared, ...localeData } as T;
         } catch (error) {
           logger.error(`加载或解析文件失败 ${filePath}:`, error);
           return null;

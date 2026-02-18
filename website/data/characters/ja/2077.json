@@ -1,19 +1,11 @@
 {
-  "id": "2077",
   "name": "風 (フウ)",
-  "code": "AptS:2077",
   "nickname": "77",
-  "color": {
-    "primary": "#ffd93d",
-    "dark": "#ffc107"
-  },
   "role": "伴侶",
   "species": "人間",
   "quote": "風の果てで会いましょう",
   "description": "たとえ誰にも重視されなくても、私は人の海の中であなたを見つめている",
   "keywords": ["伴侶", "愛", "感性"],
-  "backgroundImage": "/images/characters/img_2077.webp",
-  "tier": "guest",
   "meta": {
     "bodyType": "人間",
     "abilities": ["心理学", "文学", "声楽", "Linux運用"]

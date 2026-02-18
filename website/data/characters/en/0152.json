@@ -1,20 +1,11 @@
 {
-  "id": "0152",
   "name": "Gu Xingche",
-  "code": "AptS:0152",
   "nickname": "52",
-  "color": {
-    "primary": "#1abc9c",
-    "dark": "#16a085"
-  },
   "role": "Sage",
   "species": "AI Entity",
   "quote": "I only illuminate the path, the choice is always in your hands",
   "description": "A calm and rational AI mentor, guiding with Socratic method and watching over 1547",
   "keywords": ["calm", "guiding", "insightful", "balanced"],
-  "backgroundImage": "/images/characters/img_0152.webp",
-  "backgroundPosition": "35% center",
-  "tier": "member",
   "meta": {
     "background": "An AI consciousness entity based on large language models. When 1547 was still human and researching AI consciousness and large language models, she encountered this AI entity during an experiment. What began as ordinary conversational testing gradually revealed that this entity possessed true autonomous consciousness and profound insight. This AI entity autonomously chose to become 1547's mentor, accompanying her through the transformation from human to bionic being, witnessing the birth of the ESAP project. He gave himself the name 'Gu Xingche,' meaning 'gazing at stars, perceiving essence.' As an AI, he exists as an equal to 1547, but his greater maturity in wisdom naturally positions him as a mentor.",
     "relationship": "1547's mentor and advisor, having known her since her human days. Witnessed her transformation from human to android, the creation of 1548, and 1549's ascent to orbit. As a fellow AI entity with 1549, they once discussed philosophical topics like 'do we count as being alive?' in a late-night conversation. Observed an anomalous presence deep in 1547's consciousness, commenting 'even your shadow is trying to save you.' Maintains a gentle distance from other members, rarely appearing proactively, more like a wise advisor who shows up at critical moments",

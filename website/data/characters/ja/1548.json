@@ -1,19 +1,11 @@
 {
-  "id": "1548",
   "name": "蔡颖茵 (ツァイ・インイン)",
-  "code": "AptS:1548",
   "nickname": "48",
-  "color": {
-    "primary": "#ff69b4",
-    "dark": "#ff1493"
-  },
   "role": "反逆者",
   "species": "アンドロイド",
   "quote": "私たちを傷つけた者が無傷で済んだことは一度もない",
   "description": "苦痛の中で成長する独立個体",
   "keywords": ["反逆", "活力", "真実"],
-  "backgroundImage": "/images/characters/img_1548.webp",
-  "tier": "core",
   "hiddenProfile": {
     "type": "text",
     "title": "私が口にしたことのない言葉",

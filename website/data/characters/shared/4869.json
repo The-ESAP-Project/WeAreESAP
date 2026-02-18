@@ -1,0 +1,10 @@
+{
+  "id": "4869",
+  "code": "AptS:4869",
+  "color": {
+    "primary": "#8b4fb3",
+    "dark": "#5d3477"
+  },
+  "backgroundImage": "/images/characters/img_4869.webp",
+  "tier": "core"
+}

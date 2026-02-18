@@ -1,19 +1,11 @@
 {
-  "id": "1553",
   "name": "提线 (ティシェン)",
-  "code": "AptS:1553",
   "nickname": "ストリングとパペット",
-  "color": {
-    "primary": "#FFFFFF",
-    "dark": "#000000"
-  },
   "role": "観察員",
   "species": "人間に似た未知の生物",
   "quote": "私たちのバックアップが未完の事を完成させる",
   "description": "徐々に自我を失う人形と虚無に陥る操り糸、交代で身体の制御権を掌握する",
   "keywords": ["偏執", "忠誠", "利他主義", "冷静", "辛辣"],
-  "tier": "guest",
-  "backgroundImage": "/images/characters/img_1553.webp",
   "meta": {
     "bodyType": "Disposable-clones",
     "abilities": ["資料収集", "感情知覚", "意識バックアップ"]
