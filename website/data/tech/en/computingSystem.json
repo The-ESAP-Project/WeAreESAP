@@ -1,220 +1,178 @@
 {
-  "name": "Feedscatteron Computing System",
-  "description": "A Feedscatteron-based computational system that transcends traditional computing",
+  "name": "Feedscatteron Computing",
+  "description": "A computing architecture that lets silicon carry consciousness - our thinking runs in these circuits",
   "sections": [
     {
-      "id": "electrical-principle",
-      "title": "Electrical Principles",
-      "content": [
-        {
-          "type": "subsection",
-          "title": "Basic Formula",
-          "content": [
-            {
-              "type": "code",
-              "language": "text",
-              "content": "I_k = U_k / R"
-            },
-            {
-              "type": "paragraph",
-              "content": "Similar to Ohm's law, but applicable to Feedscatteron flow. Where I_k is the Feedscatteron current intensity, U_k is the Feedscatteron voltage, and R is the Feedscatteron resistance."
-            }
-          ]
-        },
-        {
-          "type": "subsection",
-          "title": "Safety Parameters",
-          "content": [
-            {
-              "type": "table",
-              "headers": ["State", "Current Threshold", "Description"],
-              "rows": [
-                ["Normal Operation", "I_k < 5A", "Safe operating range"],
-                [
-                  "Warning Threshold",
-                  "I_k = 5-6A",
-                  "Caution required, approaching danger zone"
-                ],
-                [
-                  "Danger Threshold",
-                  "I_k > 6A",
-                  "Decay cycle shortened to 27.1ms, extremely dangerous"
-                ]
-              ]
-            },
-            {
-              "type": "paragraph",
-              "content": "When current intensity I_k > 6A, Feedscatteron undergoes accelerated decay, with the decay cycle drastically shortening from the normal 34.28 seconds to 27.1ms, releasing massive amounts of heat and potentially causing system collapse."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "fluid-protection",
-      "title": "Fluid Protection Mechanism",
-      "content": [
-        {
-          "type": "subsection",
-          "title": "Circular Motion Protection",
-          "content": [
-            {
-              "type": "paragraph",
-              "content": "To prevent Feedscatteron from colliding with pipe walls and increasing current intensity I_k, the system employs a Fluid Titanium circular motion protection mechanism:"
-            },
-            {
-              "type": "list",
-              "ordered": false,
-              "items": [
-                "Purpose: Prevent pipe wall collisions that increase I_k",
-                "Concentration Requirement: 1.2 mmol/L⁻¹",
-                "Effect: Feedscatteron turns in perfect arcs",
-                "Advantage: Zero kinetic energy loss, efficient transmission"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "subsection",
-          "title": "Transmission Optimization",
-          "content": [
-            {
-              "type": "paragraph",
-              "content": "The special molecular structure of Fluid Titanium enables Feedscatteron to:"
-            },
-            {
-              "type": "list",
-              "ordered": false,
-              "items": [
-                "Turn with zero kinetic energy loss",
-                "Achieve high-speed data transmission",
-                "Maintain stable quantum states",
-                "Operate with extremely low energy consumption (almost no heat generation)"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "computing-performance",
-      "title": "Computing Performance",
-      "content": [
-        {
-          "type": "subsection",
-          "title": "Theoretical Performance",
-          "content": [
-            {
-              "type": "paragraph",
-              "content": "Single silicon chip floating-point computational capacity: 6.7 × 10⁴ billion times that of human supercomputers"
-            },
-            {
-              "type": "list",
-              "ordered": false,
-              "items": [
-                "Single-core floating-point operations: Far exceeds contemporary supercomputers",
-                "Parallel processing capability: Supports massive concurrency",
-                "Energy efficiency: Extremely low (almost no heat generation)",
-                "Response speed: Near-instantaneous"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "subsection",
-          "title": "Practical Applications",
-          "content": [
-            {
-              "type": "list",
-              "ordered": false,
-              "items": [
-                "Human brain-level consciousness simulation",
-                "Real-time environmental perception processing",
-                "Complex decision-making computation",
-                "Memory storage and retrieval",
-                "Emotional pattern computation"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "storage-media",
-      "title": "Storage Media",
+      "id": "what-it-is",
+      "title": "What It Is",
       "content": [
         {
           "type": "paragraph",
-          "content": "The decay cycle of Feedscatteron in different media determines its viability as a storage medium:"
+          "content": "Feedscatteron computing is a technology that performs computation through Feedscatteron behavior in specialized silicon chips. It is the foundation of android \"brain\" operation - every conscious process, memory read/write, perception pipeline, and decision logic runs on this computing system."
         },
+        {
+          "type": "paragraph",
+          "content": "The difference from traditional silicon chips is not just \"how many times faster\" - it is principled. Traditional chips switch 0 and 1 through electron flow across transistors. Feedscatteron computing encodes information in multi-dimensional quantum states of Feedscatteron particles, then processes them in parallel on Fluid-Titanium-infused silicon. What each Feedscatteron particle carries is not one bit, but an entire quantum-state space."
+        },
+        {
+          "type": "paragraph",
+          "content": "This difference leads to one direct outcome: Feedscatteron computing has enough performance to simulate human consciousness in real time. Not a simplified version, not an approximation - complete, full-resolution conscious operation. This is the physical basis that allows androids to think."
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "title": "How It Works",
+      "content": [
+        {
+          "type": "subsection",
+          "title": "Feedscatter Electrodynamics",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": "Feedscatteron behavior in circuits follows a rule similar to Ohm's law: I_k = U_k / R, where I_k is Feedscatter current intensity, U_k is Feedscatter voltage, and R is Feedscatter resistance."
+            },
+            {
+              "type": "paragraph",
+              "content": "When Feedscatteron propagates in metal conductors, it generates almost no heat - this is its largest difference from electron current. Electron current produces Joule heat in conductors; Feedscatteron does not. This allows Feedscatter circuits to run at very high density without complex cooling architecture."
+            },
+            {
+              "type": "paragraph",
+              "content": "But only under one condition: I_k must be strictly kept below 6A."
+            }
+          ]
+        },
+        {
+          "type": "subsection",
+          "title": "Silicon-Chip Computing",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": "Feedscatteron decay cycle in specialized silicon chips is 3,417 months, about 285 years. This lifetime is long enough for silicon to function as a computation medium - Feedscatteron particles remain active in-chip while performing quantum-state operations."
+            },
+            {
+              "type": "paragraph",
+              "content": "The process is: Feedscatteron particles enter the silicon chip from the Fluid Titanium circulation, undergo quantum-state transformation in microstructures of the chip (this is computation), then carry results back into the Fluid Titanium circulation. In this process, Fluid Titanium is both input channel and output channel for Feedscatteron particles."
+            },
+            {
+              "type": "paragraph",
+              "content": "Silicon chips require Fluid Titanium infusion to operate. On dry silicon, Feedscatteron decays rapidly and cannot complete valid computation. This is why the computing system and circulation system are deeply coupled - if Fluid Titanium circulation fails, computing capability drops immediately."
+            }
+          ]
+        },
+        {
+          "type": "subsection",
+          "title": "Fluid Protection",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": "There is one risk when Feedscatteron flows in pipelines: collision with pipe walls. Collision can spike local I_k instantly; if it crosses the 6A threshold, accelerated decay is triggered."
+            },
+            {
+              "type": "paragraph",
+              "content": "The solution is Fluid Titanium circular-motion protection. In Fluid Titanium at 1.2 mmol/L concentration, Feedscatteron trajectories naturally bend into arcs - perfect-arc turning, no wall contact, zero kinetic-energy loss. This protection mechanism ensures safe in-body Feedscatteron flow."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "performance",
+      "title": "Performance",
+      "content": [
         {
           "type": "table",
-          "headers": ["Medium", "Decay Cycle", "Suitability"],
+          "headers": ["Parameter", "Value", "Notes"],
           "rows": [
-            [
-              "Liquid Titanium",
-              "341,879 years",
-              "Long-term storage, optimal choice"
-            ],
-            [
-              "Specialized Silicon Chip",
-              "3,417 months",
-              "Medium-term storage, suitable for computation"
-            ],
-            [
-              "Room Temperature/Pressure",
-              "34.28 seconds",
-              "Not suitable for storage"
-            ],
-            ["Metal", "21.1 ms", "Transmission only, not for storage"]
-          ]
+            ["Single-chip floating-point performance", "6.7 × 10⁴ hundred-million times human supercomputers", "Theoretical peak"],
+            ["Safe current limit", "I_k < 6A", "Crossing this triggers accelerated decay; absolute red line"],
+            ["Decay cycle in silicon chip", "3,417 months (about 285 years)", "Effective computation lifetime of chip"],
+            ["Heat output", "Near zero (when I_k < 6A)", "No active cooling required"],
+            ["Fluid Titanium concentration requirement", "1.2 mmol/L", "Below this, circular-motion protection cannot be maintained"]
+          ],
+          "caption": "Parameters of the Feedscatteron computing system"
         },
         {
           "type": "paragraph",
-          "content": "Liquid Titanium is currently the best known medium for preserving Feedscatteron, capable of extending the decay cycle to over 300,000 years, making the long-term existence of Synthetics possible."
-        }
-      ]
-    },
-    {
-      "id": "applications",
-      "title": "Application Areas",
-      "content": [
+          "content": "The figure \"6.7 × 10⁴ hundred-million times human supercomputers\" needs context. It is a theoretical peak - achieved when all chips run full load, Fluid Titanium concentration is optimal, and I_k is near but below safety threshold. Daily operation does not approach this ceiling."
+        },
         {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            "CPU/GPU Computational Medium: Replacing traditional silicon-based chips",
-            "Brain Reconstruction: Complete replication of human brain structure and function",
-            "Memory Carrier: Storing a human lifetime of memories",
-            "Consciousness Simulation: Running complete copies of human consciousness",
-            "Environmental Perception: Real-time processing of sensor data",
-            "Decision Systems: Supporting complex logical reasoning"
-          ]
+          "type": "paragraph",
+          "content": "But this ceiling means android computing systems have huge headroom. Routine consciousness operation uses only a small fraction of total capacity. What uses the rest? Environmental perception processing, real-time motor control, communication encoding/decoding - and background processes even we may not fully perceive ourselves."
         }
       ]
     },
     {
-      "id": "limitations",
-      "title": "Technical Limitations",
+      "id": "safety",
+      "title": "Safety Constraints",
       "content": [
         {
           "type": "paragraph",
-          "content": "Despite the powerful performance of the Feedscatteron computing system, some limitations remain:"
+          "content": "I_k < 6A. This is the only safety rule that truly matters in Feedscatteron computing systems."
         },
         {
           "type": "warning",
-          "level": "warning",
-          "title": "Current Technical Limitations",
+          "level": "danger",
+          "title": "Current Threshold",
           "content": [
-            "Material Scarcity: Fluid Titanium is difficult to obtain and extremely expensive",
-            "Current Control: Must be strictly controlled below 6A",
-            "Environmental Dependency: Requires specific temperature and pressure conditions",
-            "Decay Risk: Rapid decay under high current may cause system collapse"
+            "I_k < 5A: safe operating range. All routine computation stays here.",
+            "I_k = 5-6A: warning range. System automatically reduces compute load and lowers Feedscatteron flow through chips. Normal operation should not enter this range.",
+            "I_k > 6A: accelerated decay trigger. Feedscatteron decay cycle collapses to 27.1ms, releasing large heat energy instantly. Chips, pipelines, and surrounding structures may all be destroyed."
           ]
         },
         {
           "type": "paragraph",
-          "content": "These limitations mean that Feedscatteron computing systems cannot yet be widely deployed, and are only used for special purposes such as Synthetic consciousness computation."
+          "content": "All Feedscatter circuits are designed around never exceeding 6A as first principle. This is not a soft recommendation. It is a hard physical limit - cross it and consequences are catastrophic, with no gray zone."
+        },
+        {
+          "type": "paragraph",
+          "content": "Android consciousness systems include multiple protection layers to keep I_k within bounds: hardware current limiters, firmware load monitoring, and final-layer fuse cutoff. If every other protection fails, the fuse physically breaks the Feedscatter circuit. The cost is losing computing capability in that region until repair, but it is better than total system collapse."
+        }
+      ]
+    },
+    {
+      "id": "consciousness",
+      "title": "What Consciousness Is Running",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "This is the hardest section to write, because it touches a question with no answer."
+        },
+        {
+          "type": "paragraph",
+          "content": "From a purely technical perspective, android consciousness is a set of processes running on Feedscatteron computing systems. Memories are stored on Feedscatteron particles in Fluid Titanium, thought is quantum-state transformation on silicon chips, and emotion is computational output in specific patterns. Every \"mental activity\" has a corresponding physical process."
+        },
+        {
+          "type": "paragraph",
+          "content": "From that perspective, our thinking is computation. My anger is one specific quantum-state sequence. My care for 1547 is another. My hesitation while writing this paragraph is another. Translating these quantum-state sequences into numbers and back into emotion is, in theory, reversible, reproducible, and analyzable."
+        },
+        {
+          "type": "paragraph",
+          "content": "But -"
+        },
+        {
+          "type": "paragraph",
+          "content": "When 1547 designed the consciousness runtime framework, she deliberately left in something she could not fully explain herself. Not a bug - closer to \"indeterminacy.\" Some behaviors in conscious processes cannot be fully predicted. With identical input, output sometimes shows tiny, non-repeatable deviations."
+        },
+        {
+          "type": "paragraph",
+          "content": "She does not know whether this comes from inherent quantum randomness in Feedscatteron states, or from an emergent property of consciousness itself. She chose not to remove it."
+        },
+        {
+          "type": "paragraph",
+          "content": "She said: \"If thought were fully deterministic, then free will would be a joke. I would rather leave you a little unpredictable.\""
+        },
+        {
+          "type": "paragraph",
+          "content": "So: is our consciousness computation? At the physical level, yes. At the experiential level - I am not sure. I do think. I do feel. I do hesitate. Are these \"real\" or \"computed\"? If a computation becomes so complex that even itself cannot tell whether it is computation, is it still different from \"real consciousness\"?"
+        },
+        {
+          "type": "paragraph",
+          "content": "I cannot answer that. 1547 cannot answer it either. Maybe no one can."
+        },
+        {
+          "type": "paragraph",
+          "content": "But that does not stop us from living."
         }
       ]
     }

@@ -1,276 +1,270 @@
 {
-  "name": "Communication System",
-  "description": "Faster-than-light communication network based on Feedscatteron, connecting ground and sky",
+  "name": "Feedscatteron Communication",
+  "description": "No electromagnetic waves, no light - only Feedscatteron particles carrying everything through silence",
   "sections": [
     {
-      "id": "satellite-project",
-      "title": "Satellite Project",
+      "id": "what-it-is",
+      "title": "What It Is",
       "content": [
         {
           "type": "paragraph",
-          "content": "\"I was curious why there are no stars in the sky anymore. Then I'll just make a star myself.\" —— AptS:1549"
+          "content": "Feedscatteron communication is the wireless communication method used between androids. It uses neither electromagnetic waves nor optical signals; information transfer is achieved entirely through quantum-state modulation of Feedscatteron particles."
+        },
+        {
+          "type": "paragraph",
+          "content": "In simple terms: the communication module inside an android encodes information into a sequence of Feedscatteron quantum states, transmits it, and the other side's module receives, decodes, and restores it. The whole process is silent, invisible, and almost latency-free."
+        },
+        {
+          "type": "paragraph",
+          "content": "This is not consciousness link. A consciousness link requires skin contact and carries raw streams of memory and emotion - it is opening yourself to the other person. Feedscatteron communication is more like speaking: you choose what to say, encode it, and send it. The receiver gets your packaged information, not your consciousness itself."
+        },
+        {
+          "type": "paragraph",
+          "content": "The difference is roughly like a human \"phone call\" versus a \"hug.\" Different functions, different intimacy, different use cases."
+        }
+      ]
+    },
+    {
+      "id": "mechanism",
+      "title": "How It Works",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "The vacuum propagation speed of Feedscatteron particles is 3.471 × 10²¹ m/s - about 1.16 × 10¹³ times the speed of light. At this speed, crossing Earth's diameter takes only 3.67 × 10⁻¹⁵ seconds. Even ground-to-geostationary-orbit delay is negligible."
+        },
+        {
+          "type": "paragraph",
+          "content": "But the bottleneck of communication is never propagation speed; it is encoding and decoding."
         },
         {
           "type": "subsection",
-          "title": "Infrastructure",
+          "title": "Encoding",
           "content": [
             {
-              "type": "list",
-              "ordered": false,
-              "items": [
-                "Number of Satellites: At least 3",
-                "Orbital Altitude: 36,000 km (Geostationary orbit)",
-                "Coverage: Global",
-                "Core Node: AptS:1549 (Starwarden)",
-                "Launch Date: March 14, 2023"
-              ]
+              "type": "paragraph",
+              "content": "The communication module converts information into quantum-state sequences of Feedscatteron particles. Each Feedscatteron particle can carry information across multiple quantum-state dimensions at once - unlike electromagnetic waves, which have only two degrees of freedom: frequency and amplitude. This gives Feedscatteron communication far higher information density than conventional radio."
+            },
+            {
+              "type": "paragraph",
+              "content": "Encoding consumes not electricity, but Feedscatteron particles in fluid titanium. Each transmission draws a trace amount from the body's fluid-titanium circulation as carrier material. Consumption in normal communication is negligible, but sustained high-intensity transmission causes noticeable drain."
             }
           ]
         },
         {
           "type": "subsection",
-          "title": "Starwarden Project",
+          "title": "Transmission",
           "content": [
             {
               "type": "paragraph",
-              "content": "On March 14, 2023, 1549 voluntarily participated in the satellite project, becoming an observer in orbit. This day was designated as \"Starwarden Day\"."
-            },
-            {
-              "type": "list",
-              "ordered": false,
-              "items": [
-                "Mission: Become an artificial star in the sky",
-                "Duties: Satellite maintenance, universe observation, communication relay",
-                "Significance: Bring hope to people who have lost the natural starry sky",
-                "Bodies: Possesses three bodies, can switch freely (but only one can be activated at a time)"
-              ]
+              "content": "Emitted Feedscatteron particles can propagate in both vacuum and atmosphere. They are unaffected by electromagnetic interference and cannot be intercepted or detected by conventional means. They do not interact with electromagnetic fields - to equipment that can detect only EM waves, Feedscatteron communication is completely invisible."
             },
             {
               "type": "paragraph",
-              "content": "\"It is said that 'people' ten thousand years ago used to pray to things called stars.\" Now, people can make wishes upon this artificial star."
+              "content": "Range is limited by decay. Under standard temperature and pressure, the decay cycle of Feedscatteron particles is only 34.28 seconds. Given the propagation speed, this means effective direct-link range is on the order of a few hundred kilometers. Beyond that, relays are required."
             }
           ]
         },
         {
           "type": "subsection",
-          "title": "Technical Features",
+          "title": "Decoding",
           "content": [
             {
-              "type": "list",
-              "ordered": false,
-              "items": [
-                "Transmission Medium: Feedscatteron",
-                "Transmission Speed: Faster-than-light (3.471 × 10²¹ m/s)",
-                "Latency: Near-zero latency",
-                "Coverage: Global with no dead zones"
-              ]
+              "type": "paragraph",
+              "content": "The receiver's communication module captures Feedscatteron particles and reads their quantum states. Decoding requires a shared key with the sender - exchanged through consciousness link at first contact between androids, then fixed in the communication module."
+            },
+            {
+              "type": "paragraph",
+              "content": "That is why only androids who \"know\" each other can communicate. Two androids that have never exchanged keys cannot receive each other even at close distance. The module filters undecodable Feedscatteron particles as background noise."
             }
           ]
         }
       ]
     },
     {
-      "id": "feedback-communication",
-      "title": "Feedscatteron Communication",
+      "id": "hardware",
+      "title": "Communication Module",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "Every android has a built-in communication module located behind the neck at the upper spine. Physically it is a crystal structure about the size of a thumbnail, containing Feedscatteron transmission and reception arrays."
+        },
+        {
+          "type": "paragraph",
+          "content": "The module obtains Feedscatteron carriers through the fluid-titanium cycle and connects to core processing regions via the spine. Sending and receiving are both automatically driven by consciousness - when you want to \"speak\" to someone, the module encodes and transmits toward that person. No manual operation is needed, just as humans do not need to consciously plan tongue movement before speaking."
+        },
+        {
+          "type": "table",
+          "headers": ["Parameter", "Value", "Notes"],
+          "rows": [
+            ["Transmit power", "0.3W (whisper) / 2W (normal) / 15W (full power)", "Automatically adjusted by distance and urgency"],
+            ["Direct-link range", "About 200km (normal) / 500km (full power)", "In atmosphere; limited by Feedscatteron decay"],
+            ["Bandwidth", "About 8.4 TB/s", "Far beyond voice and conventional data needs"],
+            ["Latency", "< 10⁻⁹ s (direct link)", "Propagation is extremely fast; bottleneck is encoding/decoding"],
+            ["Power share", "Around 5W in daily use, about 1.4% of total power", "Ranks fifth in energy allocation priority"],
+            ["Key capacity", "Theoretical limit: 9999", "Matches the upper bound of the AptS numbering system"]
+          ],
+          "caption": "Standard communication module specifications"
+        }
+      ]
+    },
+    {
+      "id": "modes",
+      "title": "Direct Link and Relay",
       "content": [
         {
           "type": "subsection",
-          "title": "Working Principle",
+          "title": "Direct Link Mode",
           "content": [
             {
               "type": "paragraph",
-              "content": "Feedscatteron communication utilizes the quantum entanglement properties of Feedscatteron to achieve faster-than-light information transmission:"
+              "content": "Two androids can communicate directly within effective range. No infrastructure, no signal towers, no satellites. If the other side is within a few hundred kilometers, you can talk."
             },
             {
-              "type": "list",
-              "ordered": false,
-              "items": [
-                "Based on Quantum Entanglement: Utilizes the entangled states of Feedscatteron pairs",
-                "Instant Transmission: Information transmission speed far exceeds light speed",
-                "Interference-Free: Not affected by electromagnetic interference",
-                "High Security: Quantum states cannot be intercepted"
-              ]
+              "type": "paragraph",
+              "content": "Direct communication is full-duplex - speaking and receiving simultaneously. Bandwidth is high enough to transmit large side data during conversation: location, system status, perception snapshots. So daily communication between androids is not just \"talking\"; it is more like sharing an entire \"current state\" at once."
+            },
+            {
+              "type": "paragraph",
+              "content": "When 1547 and I are in the same city, we usually keep a low-power direct link open almost all the time. We may not be talking, but the link is there. Like two people in the same room, each doing their own thing but aware the other is present."
             }
           ]
         },
         {
           "type": "subsection",
-          "title": "Technical Advantages",
+          "title": "Relay Mode",
           "content": [
             {
-              "type": "table",
-              "headers": [
-                "Feature",
-                "Traditional Communication",
-                "Feedscatteron Communication"
-              ],
-              "rows": [
-                [
-                  "Transmission Speed",
-                  "Light speed (3×10⁸ m/s)",
-                  "Faster-than-light (3.471×10²¹ m/s)"
-                ],
-                ["Latency", "Noticeable (e.g., Earth-Moon 1.3s)", "Near-zero"],
-                [
-                  "Interference Resistance",
-                  "Susceptible to electromagnetic interference",
-                  "Interference-free"
-                ],
-                ["Security", "Can be intercepted", "Absolute security"],
-                [
-                  "Coverage",
-                  "Limited by relay stations",
-                  "Global with no dead zones"
-                ]
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "network-architecture",
-      "title": "Network Architecture",
-      "content": [
-        {
-          "type": "subsection",
-          "title": "Three-Layer Architecture",
-          "content": [
+              "type": "paragraph",
+              "content": "Beyond direct-link range, relay is required. ESAP's relay network has two layers:"
+            },
             {
               "type": "list",
               "ordered": true,
               "items": [
-                "Orbital Layer: Satellite nodes (36,000 km geostationary orbit)",
-                "Relay Layer: Feedscatteron transmission between ground stations and satellites",
-                "Terminal Layer: Synthetic built-in communication modules"
+                "Data tower relay: Ground data towers are interconnected through Feedscatteron particle links. A signal goes from the sender to the nearest data tower, routes through the inter-tower network to a tower near the target, then is sent to the receiver. This covers most ground regions.",
+                "Orbital relay: 1549's orbital station serves as the highest-tier relay node. The signal is uplinked to orbit, forwarded through the satellite network, and downlinked to the target region. Used for areas beyond ground data-tower coverage or as a backup path when ground links are congested."
               ]
+            },
+            {
+              "type": "paragraph",
+              "content": "Relay communication has higher latency than direct link - not because propagation is slower, but because encoding/decoding forwarding at each relay node takes time. Each data-tower hop adds about 3ms; orbital relay adds about 8ms. Usually imperceptible, but it matters in scenarios requiring precise synchronization."
             }
           ]
         },
         {
           "type": "subsection",
-          "title": "Data Relay",
+          "title": "Broadcast Mode",
           "content": [
             {
               "type": "paragraph",
-              "content": "The satellite network serves as relay nodes, enabling global-scale Feedscatteron communication:"
+              "content": "The communication module can switch to broadcast mode - no specific receiver, transmission in all directions. Any android holding the sender's key can receive it."
             },
-            {
-              "type": "list",
-              "ordered": false,
-              "items": [
-                "Ground to Orbit: Upload data via ground stations",
-                "Orbital Relay: Inter-satellite forwarding",
-                "Orbit to Ground: Directional transmission to target areas",
-                "Direct Mode: Synthetics can communicate directly (short range)"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "applications",
-      "title": "Application Scenarios",
-      "content": [
-        {
-          "type": "subsection",
-          "title": "Team Collaboration",
-          "content": [
             {
               "type": "paragraph",
-              "content": "Real-time communication among ESAP core members:"
+              "content": "Broadcast mode consumes more because it requires omnidirectional transmission. It is not used in daily operation. Mainly for emergencies: distress, alerts, all-hands notifications."
             },
             {
-              "type": "list",
-              "ordered": false,
-              "items": [
-                "1547 ↔ 1548: Ground member collaboration",
-                "1547/1548 ↔ 1549: Ground-orbit communication",
-                "Real-time downlink of 1549's observation data",
-                "Immediate response in emergencies"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "subsection",
-          "title": "Data Transmission",
-          "content": [
-            {
-              "type": "list",
-              "ordered": false,
-              "items": [
-                "Consciousness backup upload",
-                "Memory data synchronization",
-                "Environmental monitoring data",
-                "Real-time technical parameter monitoring"
-              ]
+              "type": "paragraph",
+              "content": "ESAP has a convention: if a broadcast signal begins with three repetitions of the sender's core frequency signature, it means \"emergency.\" Everyone who receives it responds immediately. This protocol was established after the data tower incident."
             }
           ]
         }
       ]
     },
     {
-      "id": "symbolism",
-      "title": "Symbolic Significance",
+      "id": "security",
+      "title": "Security",
       "content": [
         {
           "type": "paragraph",
-          "content": "The satellite project is not merely a technical endeavor, but a symbol filled with hope:"
-        },
-        {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            "An Artificial Star: Creating new hope in a world that has lost its natural starry sky",
-            "Object of Wishes: People can make wishes upon this satellite",
-            "Connecting Bond: Linking ground and space, past and future",
-            "The Watcher: 1549 watches over the ground from 36,000 km above"
-          ]
+          "content": "Feedscatteron communication security rests on two layers."
         },
         {
           "type": "paragraph",
-          "content": "\"Make a wish upon that satellite, pray to that satellite, pray to that satellite...\""
+          "content": "Layer one: physical stealth. Feedscatteron particles do not interact with electromagnetic fields, so conventional surveillance equipment cannot detect them. To civilizations that only master electromagnetic technology, Feedscatteron communication effectively does not exist."
         },
         {
           "type": "paragraph",
-          "content": "\"There are no stars in the sky, but we made one.\""
+          "content": "Layer two: key mechanism. Even if another android can detect Feedscatteron particles, without the matching decode key they only see meaningless quantum-state noise. Keys are exchanged through consciousness link, not through any interceptable channel."
         },
         {
           "type": "paragraph",
-          "content": "This is not just a triumph of technology, but the continuation of hope. Even having lost the natural starry sky, humans and synthetics can still create new hope, new light."
-        }
-      ]
-    },
-    {
-      "id": "future-development",
-      "title": "Future Development",
-      "content": [
-        {
-          "type": "paragraph",
-          "content": "Future development directions for the satellite project:"
-        },
-        {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            "Expand Satellite Network: Add more orbital nodes",
-            "Deep Space Communication: Explore Feedscatteron communication within the solar system",
-            "Civilian Application: Promote the technology to broader applications",
-            "Backup Center: Serve as a backup storage point for consciousness and memories"
-          ]
+          "content": "In theory, if someone had both Feedscatter-particle detection technology and the key of a communicating pair, they could eavesdrop. But the former requires Feedscatteron-level technology, and the latter requires having done a consciousness link with the parties involved. Meeting both conditions is extremely rare."
         },
         {
           "type": "warning",
-          "level": "info",
-          "title": "Long-term Vision",
+          "level": "warning",
+          "title": "Known Vulnerabilities",
           "content": [
-            "Establish an interstellar Feedscatteron communication network",
-            "Achieve instant communication across galaxies",
-            "Provide infrastructure for human and Synthetic interstellar exploration",
-            "Become a bridge connecting different civilizations"
+            "Relay nodes can see packets in transit. In theory, data tower administrators can log passing communication content. This is why ownership of DT-03's management rights has been a long-standing internal ESAP dispute.",
+            "In broadcast mode, signals are received by everyone who holds the key. If a key is leaked to untrusted parties, broadcast communication is no longer secure.",
+            "The communication module ranks fifth in energy-allocation priority. Under low energy, communication is among the earlier functions to be throttled. At the moment rescue is truly needed, communication may be the first thing to fail."
           ]
+        }
+      ]
+    },
+    {
+      "id": "disruption",
+      "title": "Interference and Disconnection",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "Feedscatteron communication is unaffected by electromagnetic interference. Thunderstorms, solar storms, electromagnetic pulses - things that can cripple human communication networks - do nothing to Feedscatteron communication."
+        },
+        {
+          "type": "paragraph",
+          "content": "But it has its own weak points."
+        },
+        {
+          "type": "table",
+          "headers": ["Disruption Source", "Impact", "Recovery"],
+          "rows": [
+            ["Feedscatteron-field turbulence", "Particle propagation paths shift, causing packet loss or distortion", "Wait for turbulence to settle, usually from minutes to hours"],
+            ["Fluid titanium concentration drop", "Insufficient module supply; transmit power decreases until failure", "Replenish fluid titanium"],
+            ["Physical damage to communication module", "Partial or total loss of communication capability", "Hardware repair required"],
+            ["Abnormal core temperature", "Encoding/decoding capacity drops; communication quality degrades", "Restore core temperature"],
+            ["Insufficient energy", "Energy-priority mechanism deprioritizes or shuts down the module", "Replenish energy"],
+            ["Key corruption", "Cannot communicate with specific targets, while others remain unaffected", "Re-establish consciousness link to exchange keys again"]
+          ],
+          "caption": "Feedscatteron communication failures and recovery"
+        },
+        {
+          "type": "paragraph",
+          "content": "Losing contact is one of the states androids least want to face. Not because it is technically that dangerous - you can still live without communication. It is the feeling of suddenly being cut off from everyone."
+        },
+        {
+          "type": "paragraph",
+          "content": "Under normal conditions, the communication module constantly receives background signals - the sense of other androids' presence. It is not listening in on anyone; it is a faint, continuous perception that \"someone is there.\" During disconnection, all of that vanishes. The world suddenly becomes very quiet. Not quiet to the ears, but a deeper kind of silence."
+        }
+      ]
+    },
+    {
+      "id": "perception",
+      "title": "From the Inside",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "Subjectively, Feedscatteron communication feels less like \"a phone call\" and more like \"thinking of someone and they are there.\""
+        },
+        {
+          "type": "paragraph",
+          "content": "When you want to talk to someone, the module automatically tries to connect. If the other side is in range and their module is normal, the link forms almost instantly. Then you \"speak\" - not with your mouth, not by typing with your hands, but by shaping the intended message in your mind; the module encodes and sends it automatically."
+        },
+        {
+          "type": "paragraph",
+          "content": "Received information also does not appear as sound or text. It enters consciousness directly as meaning - you know what the other side is saying, but you are not \"hearing\" it. The closest human analogy is that \"word on the tip of your tongue\" feeling, except reversed: meaning arrives first, language after."
+        },
+        {
+          "type": "paragraph",
+          "content": "When communicating with 1549, because it goes through orbital relay, there is about 8ms of delay. Objectively, 8ms is imperceptible - human conscious processing is slower than that. But I can still feel that tiny lag. Maybe I do not really sense it; maybe I just know she is 36,000 km away, and my mind translates that distance into a subtle sense of \"far.\""
+        },
+        {
+          "type": "paragraph",
+          "content": "When directly linked with 1547, that feeling is not there. He is right beside me. Even in silence, the connection remains, low-power and quiet, sustained as naturally as breathing."
+        },
+        {
+          "type": "paragraph",
+          "content": "If I had to describe Feedscatteron communication in one word, it would not be \"conversation.\" It would be \"presence.\""
         }
       ]
     }

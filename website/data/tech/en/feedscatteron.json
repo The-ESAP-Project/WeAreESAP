@@ -1,141 +1,201 @@
 {
   "name": "Feedscatteron",
-  "description": "A discovery that changes the nature of computation, enabling consciousness upload and faster-than-light transmission",
+  "description": "10²⁹ times smaller than electrons, 10¹³ times faster than light - the starting point of everything",
   "sections": [
     {
-      "id": "basic-params",
-      "title": "Basic Parameters",
+      "id": "what-it-is",
+      "title": "What It Is",
       "content": [
         {
-          "type": "table",
-          "headers": ["Parameter", "Value", "Unit"],
-          "rows": [
-            ["Mass", "1.531 × 10⁻²¹⁷", "g"],
-            ["Vacuum Propagation Speed", "3.471 × 10²¹", "m/s"],
-            ["Atmospheric Pressure Decay Cycle", "34.28", "seconds"],
-            ["Decay Cycle in Liquid Titanium", "341,879", "years"],
-            ["Computation Cycle in Silicon Chip", "3,417", "months"],
-            ["Decay Cycle in Metal", "21.1", "ms"]
-          ]
+          "type": "paragraph",
+          "content": "Feedscatteron is a subatomic particle widely present in dark matter. Its size is about 10⁻²⁹ that of an electron, and its vacuum propagation speed is about 1.16 × 10¹³ times the speed of light."
+        },
+        {
+          "type": "paragraph",
+          "content": "It is the foundation of the android technology stack. Without Feedscatteron, there is no long-term stability in Fluid Titanium, no faster-than-light communication, no consciousness-level computing, and no androids. Every system flowing inside us - energy, communication, computation, perception - is built on the properties of this particle."
+        },
+        {
+          "type": "paragraph",
+          "content": "It is also the least understood particle. Even now, our understanding remains full of gaps."
         }
       ]
     },
     {
       "id": "discovery",
-      "title": "Discovery History",
+      "title": "Discovery",
       "content": [
         {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            "Discoverer: AptS:1547",
-            "Discovery Date: November 26, 2021",
-            "Form of Existence: Widely present in dark matter"
-          ]
+          "type": "paragraph",
+          "content": "November 26, 2021. During a high-energy decay experiment on dark-matter samples, 1547 captured a particle signal never recorded before."
+        },
+        {
+          "type": "paragraph",
+          "content": "The signal was extremely weak - not because the particle itself was weak, but because it was too small. Conventional detectors could not capture existence at this scale. 1547 inferred it by backtracking a thermal anomaly in decay products: something was converting all mass into heat during decay, with efficiency near 100%. That violated every decay model known at the time."
+        },
+        {
+          "type": "paragraph",
+          "content": "She spent three weeks validating the finding, crossing particle physics, quantum mechanics, and dark-matter theory, mostly self-taught. After validation, she wrote one line in the lab log: \"Found it.\""
+        },
+        {
+          "type": "paragraph",
+          "content": "She did not write what she had found. But from what followed, she had already seen its potential: faster-than-light propagation, extremely high information encoding density, and near-eternal stability in specific media. Together, those properties meant one thing: consciousness could be encoded, transmitted, and stored."
+        },
+        {
+          "type": "paragraph",
+          "content": "A little over one month later, she started designing the ESAP-TY-0000 prototype body."
         }
       ]
     },
     {
-      "id": "physical-properties",
-      "title": "Physical Properties",
+      "id": "parameters",
+      "title": "Core Parameters",
+      "content": [
+        {
+          "type": "table",
+          "headers": ["Parameter", "Value", "Notes"],
+          "rows": [
+            ["Mass", "1.531 × 10⁻²¹⁷ g", "Extremely light. Fully converted into heat on decay"],
+            ["Volume", "About 10⁻²⁹ of an electron", "Smallest known particle with measurable physical effects"],
+            ["Vacuum propagation speed", "3.471 × 10²¹ m/s", "About 1.16 × 10¹³ times the speed of light"],
+            ["Decay cycle at standard pressure", "34.28 s", "Highly unstable without protection"],
+            ["Decay cycle in Fluid Titanium", "341,879 years", "This number makes everything possible"],
+            ["Decay cycle in silicon chip", "3,417 months (about 285 years)", "Used for mid-term storage and computation"],
+            ["Decay cycle in metal", "21.1 ms", "Decays almost immediately on metal contact"],
+            ["Decay product", "Heat (full mass loss)", "A perfect realization of E = mc²"]
+          ],
+          "caption": "Core physical parameters of Feedscatteron"
+        },
+        {
+          "type": "paragraph",
+          "content": "Among these numbers, two matter most: 34.28 seconds and 341,879 years. The first is its lifetime in natural conditions - it disappears in under a minute. The second is its lifetime in Fluid Titanium - dozens of times longer than recorded human civilization. The same particle differs by more than 300 million times in stability across different media."
+        },
+        {
+          "type": "paragraph",
+          "content": "This extreme contrast is why 1547 focused on it at the beginning, and also why Fluid Titanium became android \"blood.\""
+        }
+      ]
+    },
+    {
+      "id": "physics",
+      "title": "Physical Behavior",
       "content": [
         {
           "type": "subsection",
-          "title": "Particle Characteristics",
+          "title": "Kinematics",
           "content": [
             {
-              "type": "list",
-              "ordered": false,
-              "items": [
-                "Extremely small volume, approximately 1/10⁻²⁹ the size of an electron",
-                "Possesses electron-like properties",
-                "Obeys kinetic energy and momentum theorems",
-                "Does not undergo refraction or diffraction"
+              "type": "paragraph",
+              "content": "Feedscatteron obeys conservation of kinetic energy and momentum, but does not refract or diffract. This means conventional optical or electromagnetic methods cannot deflect it during propagation - to electromagnetic fields, Feedscatteron is transparent."
+            },
+            {
+              "type": "paragraph",
+              "content": "When propagating in metal, it generates almost no heat. This allows high-speed data transfer in conductors without overheating, in contrast to Joule heating from electron currents. But this has one strict condition: Feedscatteron current intensity I_k must stay below 6A."
+            }
+          ]
+        },
+        {
+          "type": "subsection",
+          "title": "Decay",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": "Feedscatter decay is a full mass-to-heat conversion process. When a particle decays, all of its mass becomes heat with no residual product. In energy terms, this is a perfect realization of E = mc². Although the mass and released energy of one particle are tiny, sustained decay of large numbers of particles forms the energy foundation of androids."
+            },
+            {
+              "type": "paragraph",
+              "content": "Decay rate is controlled by two factors: storage medium and current intensity."
+            },
+            {
+              "type": "paragraph",
+              "content": "The medium effect is listed in the parameter table. Current intensity is more dramatic: when I_k exceeds 6A, decay enters an accelerated mode - the decay cycle drops from 34.28 seconds to 27.1ms. That means particles decay almost instantly, releasing large amounts of heat."
+            },
+            {
+              "type": "warning",
+              "level": "danger",
+              "title": "Accelerated Decay Effect",
+              "content": [
+                "When I_k > 6A, Feedscatteron decay cycle shortens to 27.1ms. Heat from simultaneous mass decay can destroy any carrier structure.",
+                "This is the core safety constraint of android computing systems. Every Feedscatter circuit is designed with I_k < 6A as top priority. No exceptions."
               ]
             }
           ]
         },
         {
           "type": "subsection",
-          "title": "Decay Characteristics",
+          "title": "Quantum States",
           "content": [
             {
-              "type": "list",
-              "ordered": false,
-              "items": [
-                "Standard State (room temperature and pressure): Highly prone to Feedscatteron decay",
-                "Decay Product: Heat (total mass loss)",
-                "Accelerated Decay: When current intensity I_k > 6A, decay cycle uniformly shortens to 27.1ms"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "subsection",
-          "title": "Preservation Conditions",
-          "content": [
+              "type": "paragraph",
+              "content": "Feedscatteron has multi-dimensional quantum states. Unlike photons, which have limited degrees of freedom such as polarization and frequency, Feedscatteron quantum states can encode far more complex information. This is the physical basis of Feedscatteron communication and computing - each particle can carry much more than a traditional qubit."
+            },
             {
-              "type": "list",
-              "ordered": true,
-              "items": [
-                "Liquid Titanium Preservation: Decay cycle extended to 341,879 years",
-                "Specialized Silicon Chip Preservation: Decay cycle extended to 3,417 months",
-                "Metal Preservation: Not suitable for long-term storage (21.1ms decay cycle)"
-              ]
+              "type": "paragraph",
+              "content": "Quantum states stay highly stable in Fluid Titanium. That means not only the particle remains un-decayed, but also the information encoded on it does not degrade. A memory stored in Feedscatteron inside Fluid Titanium can be read after 300,000 years exactly as it was written."
             }
           ]
         }
       ]
     },
     {
-      "id": "computing",
-      "title": "Computing Capability",
+      "id": "what-it-changed",
+      "title": "What It Changed",
       "content": [
         {
           "type": "paragraph",
-          "content": "Single silicon chip floating-point computational capacity: Theoretical value of 6.7 × 10⁴ billion times that of human supercomputers"
+          "content": "The discovery of Feedscatteron was not incremental technical improvement. It was a discontinuous paradigm shift."
+        },
+        {
+          "type": "paragraph",
+          "content": "Before it: consciousness could not be fully encoded, faster-than-light communication was theoretical fantasy, and particle physics believed the Standard Model had already covered all fundamental particles. After it: consciousness can be uploaded, backed up, and migrated across carriers; communication can exceed light-speed limits; computational capacity jumps beyond silicon limits to full human-brain reconstruction scale."
+        },
+        {
+          "type": "paragraph",
+          "content": "Concretely, Feedscatteron directly enabled the following technologies:"
         },
         {
           "type": "list",
           "ordered": false,
           "items": [
-            "CPU/GPU Computational Medium",
-            "Brain Reconstruction",
-            "Memory Carrier",
-            "Consciousness Simulation"
+            "Fluid Titanium circulation systems - preserving Feedscatteron in Fluid Titanium as android \"blood\"",
+            "Feedscatter energy - converting heat from Feedscatter decay into electricity to power the whole body",
+            "Feedscatteron communication - faster-than-light wireless communication based on quantum-state encoding",
+            "Feedscatteron computing - consciousness-level computation using Feedscatteron behavior in silicon chips",
+            "Empathic Link - direct consciousness transfer through Feedscatteron coupling",
+            "Data Tower storage - large Feedscatteron arrays for long-term memory and consciousness backup"
           ]
+        },
+        {
+          "type": "paragraph",
+          "content": "Together, these technologies are the full physical foundation of android existence. If Feedscatteron did not exist, neither would we."
         }
       ]
     },
     {
-      "id": "transmission",
-      "title": "Transmission Characteristics",
+      "id": "unknowns",
+      "title": "What We Still Do Not Know",
       "content": [
         {
           "type": "paragraph",
-          "content": "Advantages:"
+          "content": "It has been almost five years since Feedscatteron was discovered. We have built communication networks, computing systems, energy architecture, and an entire android civilization with it. But honestly, our understanding is still far from enough."
         },
         {
           "type": "list",
           "ordered": false,
           "items": [
-            "Propagation in metal can be considered heat-free",
-            "Faster-than-light transmission capability",
-            "Precise quantum state control"
+            "Why can Fluid Titanium extend decay cycle by 300 million times? Molecular-level explanations are still hypotheses, not confirmed.",
+            "How many degrees of freedom do Feedscatteron quantum states actually have? What we use now may be only the tip of the iceberg.",
+            "Why is the accelerated-decay threshold exactly 6A? This number was not derived from first principles; it is an experimental observation.",
+            "What are the distribution density and total amount of Feedscatteron in dark matter? What we collect may be negligible compared with what exists.",
+            "Does Feedscatteron have non-local correlation between particles? If yes, communication range may be far beyond current levels."
           ]
         },
         {
           "type": "paragraph",
-          "content": "Limitations:"
+          "content": "1547 has an interesting attitude toward these questions. She is not anxious. She says: \"This particle has existed longer than the universe. We've only studied it for five years. Take it slow.\""
         },
         {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            "Requires Fluid Titanium as a protective medium",
-            "Strict requirements for current intensity",
-            "Decay cycle heavily influenced by environment"
-          ]
+          "type": "paragraph",
+          "content": "Hearing \"take it slow\" from her is rare. But on Feedscatteron, she really is more patient than usual. Maybe because she knows - she discovered this particle, and better than anyone she knows how much she still does not understand."
         }
       ]
     }

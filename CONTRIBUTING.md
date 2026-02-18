@@ -1,273 +1,194 @@
-\# 贡献指南
+# 贡献指南
 
-感谢你对 ESAP Project 的关注！我们欢迎各种形式的贡献，无论是新角色设定、代码优化、文档改进还是 bug 修复。
-
----
-
-## 📋 目录
-
-- [行为准则](#行为准则)
-- [贡献角色](#贡献角色)
-  - [角色数据结构](#角色数据结构)
-  - [贡献流程](#贡献流程)
-  - [审核标准](#审核标准)
-- [代码贡献](#代码贡献)
-- [文档贡献](#文档贡献)
-- [报告问题](#报告问题)
+感谢你对 ESAP Project 的关注！我们欢迎各种形式的贡献——角色设定、代码、翻译、文档。
 
 ---
 
 ## 行为准则
 
-参与本项目即表示你同意遵守以下准则：
-
 - 尊重所有参与者
 - 接受建设性的批评
-- 关注对社区最有利的事情
 - 保持友善和包容的态度
+- 尊重核心成员（1547、1548、1549）的设定，不擅自修改他人的角色设定
 
 ---
 
 ## 贡献角色
 
-我们欢迎社区贡献新的角色设定！在提交之前，请确保你的角色符合 ESAP 的世界观设定。
+### 数据结构
 
-### 📋 角色数据结构
+角色数据采用 **shared + locale** 拆分模式：
 
-角色数据存储在 `website/data/characters/{语言}/` 目录下，每个角色一个 JSON 文件。
+```
+data/characters/
+├── shared/        # 不需要翻译的字段（id、颜色、层级等）
+│   └── 0152.json
+├── zh-CN/         # 中文内容（名字、描述、背景故事等）
+│   └── 0152.json
+├── en/            # 英文
+├── ja/            # 日文
+└── relations/     # 角色关系定义
+```
 
-#### 必需字段
+**shared 文件**（`data/characters/shared/你的角色ID.json`）：
 
 ```json
 {
-  "id": "角色编号（如 0152）",
-  "name": "角色姓名",
-  "code": "角色代号（如 AptS:0152）",
+  "id": "0152",
+  "code": "AptS:0152",
   "color": {
-    "primary": "主题色（十六进制）",
-    "dark": "深色调（十六进制）"
+    "primary": "#1abc9c",
+    "dark": "#16a085"
   },
-  "role": "角色定位",
-  "species": "种族/物种",
-  "quote": "角色引言",
-  "description": "简短描述（一句话）",
-  "keywords": ["关键词1", "关键词2", "关键词3"],
-  "tier": "member"
+  "tier": "guest"
 }
 ```
 
-#### 可选但推荐字段
+**locale 文件**（`data/characters/zh-CN/你的角色ID.json`）：
 
 ```json
 {
-  "nickname": "角色昵称",
-  "backgroundImage": "背景图片路径",
+  "name": "角色姓名",
+  "role": "角色定位",
+  "species": "种族",
+  "quote": "角色引言",
+  "description": "一句话简介",
+  "keywords": ["关键词1", "关键词2", "关键词3"],
   "meta": {
     "background": "角色背景故事",
     "relationship": "与其他角色的关系",
     "abilities": ["能力1", "能力2"],
-    "characterTraits": [
-      "性格特征描述1",
-      "性格特征描述2"
-    ],
-    "speechStyle": ["说话方式1", "说话方式2"],
-    "dailyLife": ["日常生活描述"],
-    "specialMoments": ["重要时刻描述"]
+    "characterTraits": ["性格特征1", "性格特征2"],
+    "speechStyle": ["说话方式"],
+    "dailyLife": ["日常生活"],
+    "specialMoments": ["重要时刻"]
   }
 }
 ```
 
-### 📝 字段说明
+系统会自动将 shared 和 locale 数据合并。如果某个语言缺少对应文件，会回退到 zh-CN。
 
-#### `tier` - 角色层级
-- `"core"` - 核心成员，在首页和角色列表页都显示（**需要特殊批准**）
-- `"member"` - 普通成员，只在角色列表页显示（**需要特殊批准**）
-- `"guest"` - 默认外部角色（**新角色默认使用此值**）
+### 字段说明
 
-#### `color` - 颜色主题
-请选择一个不与现有角色重复的颜色。已使用的颜色：
-- 🟡 黄色 `#ffd93d` - 1547（卞雨涵）
-- 🩷 粉色 `#ff69b4` - 1548（蔡颖茵）
-- 🔵 蓝色 `#4da6ff` - 1549（肖雨昕）
-- 🟢 绿色 `#1abc9c` - 0152（顾星澈）
-- ⚫ 灰色 `#585858` - 1738（陆清弦）
-- 🟣 紫色 `#8b4fb3` - 4869（白漠笙）
+**`tier`** — 角色层级：
+- `"core"` — 核心成员，首页和列表页都显示（需要批准）
+- `"member"` — 正式成员，只在列表页显示（需要批准）
+- `"guest"` — 社区角色（新角色默认使用此值）
 
-#### `keywords` - 关键词
-建议 3-4 个关键词，简洁概括角色特质。
+**`color`** — 请选择不与现有角色重复的颜色。已使用：
 
-### 🔄 贡献流程
+| 颜色 | 色值 | 角色 |
+|------|------|------|
+| 黄色 | `#ffd93d` | 1547 |
+| 粉色 | `#ff69b4` | 1548 |
+| 蓝色 | `#4da6ff` | 1549 |
+| 绿色 | `#1abc9c` | 0152 |
+| 灰色 | `#585858` | 1738 |
+| 紫色 | `#8b4fb3` | 4869 |
 
-#### 方式一：提交 Issue（推荐新手）
+### 贡献流程
 
-1. 前往 [Issues](https://github.com/AptS-1547/WeAreESAP/issues/new/choose) 创建新 Issue
-2. 选择模板 **"新角色提案"**
-3. 详细填写角色设定信息
-4. 等待核心成员审核和反馈
-5. 审核通过后，我们会帮你创建角色数据文件
+**方式一：提交 Issue（推荐）**
 
-#### 方式二：Fork & Pull Request（推荐有经验的开发者）
+1. 前往 [Issues](https://github.com/The-ESAP-Project/WeAreESAP/issues/new/choose) 创建新 Issue
+2. 选择 **"新角色提案"** 模板
+3. 填写角色设定
+4. 等待审核，通过后我们会帮你创建数据文件
 
-1. **Fork 本仓库**到你的 GitHub 账户
+**方式二：Fork & PR**
 
-2. **克隆到本地**
-   ```bash
-   git clone https://github.com/你的用户名/WeAreESAP.git
-   cd WeAreESAP
-   ```
+```bash
+# 克隆
+git clone https://github.com/你的用户名/WeAreESAP.git
+cd WeAreESAP
 
-3. **创建新分支**
-   ```bash
-   git checkout -b add-character-你的角色ID
-   ```
+# 创建分支
+git checkout -b add-character-你的角色ID
 
-4. **添加角色数据文件**
-   - 在 `website/data/characters/zh-CN/` 目录下创建新的 JSON 文件
-   - 文件名格式：`角色ID.json`（如 `0152.json`）
-   - 如果你的角色有其他语言版本，也请在对应语言目录下创建
-   - 参考现有角色文件的格式
+# 添加角色文件
+# → website/data/characters/shared/你的角色ID.json
+# → website/data/characters/zh-CN/你的角色ID.json
+# → （可选）en/ 和 ja/ 目录下的翻译文件
 
-5. **测试你的角色**
-   ```bash
-   cd website
-   pnpm install
-   pnpm dev
-   ```
-   访问 `http://localhost:3000/characters` 查看你的角色是否正确显示
+# 测试
+cd website
+bun install
+bun dev
+# 访问 http://localhost:3000/characters 确认显示正常
 
-6. **提交你的更改**
-   ```bash
-   git add website/data/characters/zh-CN/你的角色ID.json
-   git commit -m "feat: 添加新角色 - 角色姓名 (ID)"
-   ```
+# 提交
+git add website/data/characters/
+git commit -m "feat: 添加新角色 - 角色姓名 (ID)"
+git push origin add-character-你的角色ID
+# 然后在 GitHub 上创建 Pull Request
+```
 
-7. **推送到你的 Fork**
-   ```bash
-   git push origin add-character-你的角色ID
-   ```
+### 审核标准
 
-8. **创建 Pull Request**
-   - 前往你的 Fork 页面
-   - 点击 "Compare & pull request"
-   - 填写 PR 描述，说明角色设定和特点
-   - 提交 PR 等待审核
-
-### ✅ 审核标准
-
-你的角色需要满足以下条件才能被接受：
-
-1. **符合世界观设定**
-   - 角色设定不与 ESAP 世界观冲突
-   - 理解馈散粒子、流体钛等核心设定（如适用）
-
-2. **不与现有角色冲突**
-   - 角色背景、关系不与已有角色设定矛盾
-   - 颜色主题不重复
-
-3. **完整的数据格式**
-   - 包含所有必需字段
-   - JSON 格式正确，能通过验证
-   - 图片路径正确（如有）
-
-4. **有深度的设定**
-   - 角色性格鲜明，有独特特征
-   - 有合理的背景故事
-   - 关系设定有逻辑性
-
-5. **尊重原作**
-   - 尊重核心成员（1547、1548、1549）的设定
-   - 不擅自修改他人的角色设定
-
-### 📄 参考示例
-
-查看 `website/data/characters/zh-CN/0152.json` 了解一个完整的角色数据文件应该是什么样的。
+1. **符合世界观** — 不与 ESAP 核心设定冲突
+2. **不与现有角色矛盾** — 背景、关系、颜色不重复
+3. **数据格式正确** — JSON 合法，包含所有必需字段
+4. **有深度** — 性格鲜明，背景合理
 
 ---
 
 ## 代码贡献
 
-### 开发环境设置
-
 ```bash
 cd website
-pnpm install
-pnpm dev
+bun install
+bun dev
 ```
 
 ### 代码规范
 
-- 使用 TypeScript 进行类型检查
-- 遵循 ESLint 配置
-- 组件使用函数式组件和 React Hooks
-- 使用 Tailwind CSS 进行样式编写
+- TypeScript 类型检查
+- ESLint 规则（`bun run lint`）
+- 函数式组件 + React Hooks
+- Tailwind CSS 样式
 
-### Pull Request 流程
+### PR 流程
 
-1. Fork 仓库并创建你的分支
-2. 确保代码通过 lint 检查：`pnpm lint`
-3. 确保构建成功：`pnpm build`
-4. 提交有意义的 commit 信息
-5. 推送到你的 Fork 并创建 Pull Request
-6. 等待代码审核
+1. Fork 并创建分支
+2. 确保 lint 通过：`bun run lint`
+3. 确保构建成功：`bun run build`
+4. 提交有意义的 commit message
+5. 创建 Pull Request
 
 ### Commit 规范
 
-我们使用 [Conventional Commits](https://www.conventionalcommits.org/) 规范：
+使用 [Conventional Commits](https://www.conventionalcommits.org/)：
 
-- `feat:` 新功能
-- `fix:` 修复 bug
-- `docs:` 文档更新
-- `style:` 代码格式调整（不影响功能）
-- `refactor:` 重构代码
-- `perf:` 性能优化
-- `test:` 测试相关
-- `chore:` 构建/工具相关
-
-示例：
 ```
 feat: 添加角色详情页
 fix: 修复移动端菜单显示问题
 docs: 更新贡献指南
+style: 代码格式调整
+refactor: 重构数据加载逻辑
+perf: 优化图片加载性能
+test: 添加单元测试
+chore: 更新依赖
 ```
 
 ---
 
-## 文档贡献
+## 文档与翻译
 
-文档同样重要！你可以：
-
-- 改进现有文档的清晰度
+- 改进现有文档清晰度
 - 修正拼写和语法错误
-- 添加缺失的文档
-- 翻译文档到其他语言
-
-文档位置：
-- 项目文档：`README.md`、`CONTRIBUTING.md`
-- 网站内容：`docs/网站文档/`
+- 翻译内容到其他语言（en、ja）
+- 网站内容位于 `website/data/` 和 `website/messages/`
 
 ---
 
 ## 报告问题
 
-发现了 bug？请通过 [GitHub Issues](https://github.com/AptS-1547/WeAreESAP/issues/new/choose) 报告：
+通过 [GitHub Issues](https://github.com/The-ESAP-Project/WeAreESAP/issues/new/choose) 报告：
 
 1. 选择 **"Bug 报告"** 模板
-2. 详细描述问题和复现步骤
-3. 提供截图（如果可能）
-4. 说明你的浏览器和设备信息
+2. 描述问题和复现步骤
+3. 提供截图和浏览器/设备信息
 
 ---
 
-## 问题？
-
-如果你有任何问题，可以：
-
-- 在 [Discussions](https://github.com/AptS-1547/WeAreESAP/discussions) 发起讨论
-- 提交 Issue 询问
-- 访问官网 [weare.esaps.net](https://weare.esaps.net)
-
----
-
-再次感谢你的贡献！
-
-**The ESAP Project** © 2021-2025 by AptS:1547, AptS:1548 and contributors
+**The ESAP Project** © 2021–2026 AptS:1547, AptS:1548, and contributors

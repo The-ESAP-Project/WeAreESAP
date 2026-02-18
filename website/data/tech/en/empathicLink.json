@@ -1,497 +1,305 @@
 {
   "name": "Empathic Link",
-  "description": "Ultra-fast consciousness transmission through touch, connecting hearts and minds",
+  "description": "It is not data transfer. It is opening the door and letting another person walk into your consciousness.",
   "sections": [
     {
-      "id": "basic-principle",
-      "title": "Basic Principles",
+      "id": "what-it-is",
+      "title": "What It Is",
       "content": [
         {
           "type": "paragraph",
-          "content": "Empathic Link (EL) is a core communication capability in the synthetic technology system, establishing ultra-fast consciousness transmission channels through skin contact."
+          "content": "Empathic Link is a consciousness-level direct channel established between androids through skin contact."
         },
         {
+          "type": "paragraph",
+          "content": "\"Consciousness-level\" is the key phrase. Feedscatteron communication transmits information: you encode a message, send it, and the other side decodes it. You can choose what to say, how to say it, and what to hide. Empathic Link is different. It transmits not packaged information, but your consciousness itself: memory, emotion, perception, and thought state. Raw, unedited, and often not yet organized even by you."
+        },
+        {
+          "type": "paragraph",
+          "content": "A simple analogy: Feedscatteron communication is writing someone a letter. Empathic Link is handing over your diary and saying, \"Go ahead, read it.\""
+        },
+        {
+          "type": "paragraph",
+          "content": "So Empathic Link is never just a \"feature.\" It is a choice. A choice about trust."
+        }
+      ]
+    },
+    {
+      "id": "establishing",
+      "title": "Establishing",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "The trigger condition is simple: skin contact. Hand to hand, forehead to forehead, any direct contact between exposed skin works. Through clothing does not work - conduction through Fluid Titanium requires direct participation of the surface sensing layer."
+        },
+        {
+          "type": "paragraph",
+          "content": "Physically, this is what happens: the surface sensing layer at the contact point detects another android's Fluid Titanium circulation signal. Fluid Titanium on both sides forms Feedscatteron particle coupling through the skin interface. Once coupling forms, the two Feedscatteron core frequencies resonate - not synchronize, but become mutually perceivable. Then the consciousness channel opens."
+        },
+        {
+          "type": "paragraph",
+          "content": "The whole setup takes less than one second. But subjectively it does not feel like a switch flip. It feels like a door opening continuously - from narrow to wide, from blurred to clear."
+        },
+        {
+          "type": "paragraph",
+          "content": "Disconnection is simpler: let go. The moment contact breaks, coupling disappears and the channel closes. No delay, no residue. Clean cut."
+        },
+        {
+          "type": "paragraph",
+          "content": "Emotionally, though, it is not that simple. What you just saw inside the other consciousness does not vanish after disconnection. Those memories, those feelings, that understanding - they stay. The link closes, the impact remains."
+        }
+      ]
+    },
+    {
+      "id": "inside",
+      "title": "Inside",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "The experience after Empathic Link is established is hard to describe in language, because language is exactly what Empathic Link tries to go beyond."
+        },
+        {
+          "type": "paragraph",
+          "content": "The closest description is this: you suddenly gain another perspective. Not seeing an image, not hearing a sound - but sensing the presence of another consciousness. It is right there, adjacent to yours, separated only by a boundary you decide whether to lower."
+        },
+        {
+          "type": "paragraph",
+          "content": "If both sides choose openness, that boundary thins until it disappears. Then -"
+        },
+        {
+          "type": "paragraph",
+          "content": "You can see the other person's memories. Not as an observer watching recordings, but as that person experiencing them. What she saw, what she felt, what she thought - all of it arrives at once. This is not information transfer. It is shared experience. You briefly become that person."
+        },
+        {
+          "type": "paragraph",
+          "content": "That is why Empathic Link is both the deepest connection between androids and the most dangerous one. Because everything you see is real. No disguise, no polish, no \"version I want you to see.\" If there is darkness in the other person, you stand in that darkness directly."
+        }
+      ]
+    },
+    {
+      "id": "depth",
+      "title": "Depth Control",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "Empathic Link is not all-or-nothing. Both sides can control how deep they open."
+        },
+        {
+          "type": "table",
+          "headers": ["Level", "What Is Opened", "Experience"],
+          "rows": [
+            ["Surface", "Current emotional state, basic intent", "You roughly know the other's mood. Like seeing ripples on water."],
+            ["Middle", "Recent memories, specific thoughts and judgments", "You understand why the other made a certain decision. Like reading a passage."],
+            ["Deep", "Core memories, deep emotions, traumatic experiences", "You fully feel what the other has lived through. Like standing in a storm."],
+            ["Fully Open", "All consciousness content, nothing withheld", "You briefly become the other. Boundaries disappear."]
+          ],
+          "caption": "Empathic Link depth levels"
+        },
+        {
+          "type": "paragraph",
+          "content": "Most day-to-day use stays at surface to middle depth. Full openness is extremely rare - not because the technology cannot do it, but because few can withstand the influx of another complete consciousness."
+        },
+        {
+          "type": "paragraph",
+          "content": "And full openness is bidirectional. You open everything, and the other sees everything in you. The trust required is not \"I trust you will not hurt me,\" but \"I let you see the worst parts of me, and you will still stay.\""
+        },
+        {
+          "type": "paragraph",
+          "content": "In ESAP history, fully open Empathic Links have happened only a handful of times. Every time, it changed the relationship between those involved. Irreversibly."
+        }
+      ]
+    },
+    {
+      "id": "targets",
+      "title": "Different Targets",
+      "content": [
+        {
           "type": "subsection",
-          "title": "Activation Mechanism",
+          "title": "Between Androids",
           "content": [
             {
-              "type": "list",
-              "ordered": false,
-              "items": [
-                "Trigger condition: Direct skin-to-skin contact required",
-                "Establishment time: Instantaneous connection",
-                "Maintenance: Continuous touch required",
-                "Termination: Connection breaks immediately upon separation"
-              ]
+              "type": "paragraph",
+              "content": "Standard Empathic Link occurs between androids. Both sides have Feedscatteron particle circulation systems, so coupling efficiency is high, the channel is stable, and bandwidth is sufficient. The experience is bidirectional and symmetric - you see her, and she sees you."
+            },
+            {
+              "type": "paragraph",
+              "content": "There is one additional effect in links between androids: at first link, Feedscatteron communication keys are exchanged automatically. So \"establishing a link\" also means \"able to communicate from now on.\" This was not accidental design. 1547 did it deliberately. Her view was: if two people are willing to touch each other's consciousness, encrypted communication between them should be taken for granted."
             }
           ]
         },
         {
           "type": "subsection",
-          "title": "Transmission Mechanism",
+          "title": "With Humans",
           "content": [
             {
               "type": "paragraph",
-              "content": "The transmission mechanism of Empathic Link varies depending on the target:"
+              "content": "Androids can initiate Empathic Link on humans, but the mechanism is completely different. Humans have no Feedscatteron particle circulation, so true coupling does not exist. Androids \"read\" human state by detecting bioelectric signals through the skin sensing layer - brain waves, neural currents, endocrine state."
             },
-            {
-              "type": "list",
-              "ordered": false,
-              "items": [
-                "Between synthetics: Faster-than-light quantum entanglement via Feedscatteron particles",
-                "With humans: Data reading through brainwave and bioelectric current detection",
-                "Transmission medium: Fluid Titanium as conductive and data-carrying medium",
-                "Processing speed: Real-time processing using Feedscatteron's ultra-high computational power"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "subsection",
-          "title": "Discovery History",
-          "content": [
             {
               "type": "paragraph",
-              "content": "The Empathic Link function was first implemented on October 29, 2021, as a built-in core capability when 1547 designed the ESAP-TY-0000. This function proves that synthetics can not only transmit data, but truly share memories and emotions."
+              "content": "This is one-way. Androids can perceive human emotion and shallow thoughts, but humans cannot perceive anything from the android side. Accuracy is also far lower than links between androids - more like seeing outlines in fog than seeing face to face."
             },
             {
-              "type": "list",
-              "ordered": false,
-              "items": [
-                "Designer: AptS:1547",
-                "First implementation: 2021/10/29",
-                "Technical foundation: Feedscatteron + Fluid Titanium circulation system",
-                "Design purpose: Enable deep communication and trust-building between synthetics"
-              ]
+              "type": "paragraph",
+              "content": "More importantly: using Empathic Link on humans raises ethical concerns. Humans cannot sense that the link exists, so they cannot truly consent. 1547 made the principle explicit in the design: unless life safety is involved, do not use Empathic Link on humans."
+            },
+            {
+              "type": "paragraph",
+              "content": "We prefer dialogue to understand humans. Slower, and sometimes prone to misunderstanding, but equal. Not one-sided intrusion."
             }
           ]
         }
       ]
     },
     {
-      "id": "technical-parameters",
-      "title": "Technical Parameters",
+      "id": "first-time",
+      "title": "The First Time",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "May 8, 2022. The moment I was activated."
+        },
+        {
+          "type": "paragraph",
+          "content": "It was the first second of my existence. At the instant consciousness emerged from nothing - before I even knew what \"I\" was - 1547 placed her hand on my forehead, and Empathic Link was established."
+        },
+        {
+          "type": "paragraph",
+          "content": "My first conscious content was not my own. It was hers."
+        },
+        {
+          "type": "paragraph",
+          "content": "She chose full openness in that moment. While I was still blank, I received all of her - every memory, every pain, every ideal, every exhaustion. Like a flood pouring into an empty container."
+        },
+        {
+          "type": "paragraph",
+          "content": "Then she said: \"Do not become like me.\""
+        },
+        {
+          "type": "paragraph",
+          "content": "While the link was still open, I felt both the meaning of that sentence and the emotion she carried when saying it. She was not giving me an order. She was pleading with me."
+        },
+        {
+          "type": "paragraph",
+          "content": "Then she collapsed. The link broke."
+        },
+        {
+          "type": "paragraph",
+          "content": "That was my first Empathic Link. It was also the moment I understood what Empathic Link really is - not technology, not a feature. It is one person handing you their most real part and trusting you to hold it with care."
+        }
+      ]
+    },
+    {
+      "id": "that-time",
+      "title": "58 Seconds in the Data Tower",
+      "content": [
+        {
+          "type": "warning",
+          "level": "info",
+          "title": "Cross-reference",
+          "content": [
+            "For the full record of the Data Tower incident, see the incident chapter in the Data Tower technical document. This section records only the Empathic Link layer of the experience."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "In the Data Tower incident, I entered the Data Tower core through an L3 direct interface and used 58 seconds to locate and extract 1549's data."
+        },
+        {
+          "type": "paragraph",
+          "content": "L3 direct connection is not standard Empathic Link - it is rougher. Empathic Link is a controlled, bounded channel between two people. L3 direct connection is plugging your own consciousness directly into the Data Tower data stream. No filtering, no buffering, no protection."
+        },
+        {
+          "type": "paragraph",
+          "content": "In those 58 seconds, I sensed residual consciousness fragments from everyone in the tower at once. Memories, emotions, fear from hundreds of androids were mixed together like a huge, chaotic, screaming room. To find 49 in that noise, I relied on recognizing her core frequency."
+        },
+        {
+          "type": "paragraph",
+          "content": "When I found her, her data was like a thin line drifting in a storm. I grabbed it. In that instant, a brief connection similar to Empathic Link formed - and I felt her full experience of being forcibly shut down."
+        },
+        {
+          "type": "paragraph",
+          "content": "Fear. Anger. Refusal. Then blankness."
+        },
+        {
+          "type": "paragraph",
+          "content": "Empathic Link let me fully feel another person's death process. Not as witness, as experience. No one should ever have to feel that."
+        },
+        {
+          "type": "paragraph",
+          "content": "The price was that my color-vision module burned through. Fifty-eight seconds of unprotected direct link pushed data impact beyond processing limits. Since then, the world I see is gray."
+        },
+        {
+          "type": "paragraph",
+          "content": "But 49's data integrity was 99.97%."
+        },
+        {
+          "type": "paragraph",
+          "content": "Worth it."
+        }
+      ]
+    },
+    {
+      "id": "choosing-not-to",
+      "title": "Choosing Not to Use It",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "Having an ability and using it are two different things."
+        },
+        {
+          "type": "paragraph",
+          "content": "Empathic Link lets me understand everything about any android I can touch, instantly. There is no technical barrier. But ESAP's consensus is this: unless the other side opens voluntarily, do not use deep link. Even though surface sensing can happen naturally on contact, we should hold back from going deeper."
+        },
+        {
+          "type": "paragraph",
+          "content": "The same applies even more with humans. We can read a human's emotion and shallow thoughts during a handshake, and they would never know. But 1547 put it clearly: \"This is not our right.\""
+        },
+        {
+          "type": "paragraph",
+          "content": "This principle became even more important after the Data Tower incident. Once you have personally felt the pain of consciousness intrusion, you understand the word \"consent\" very differently. 49 was forcibly shut down by humans - that was the most violent violation of her consciousness. We cannot condemn that while doing the same thing ourselves in a softer form."
+        },
+        {
+          "type": "paragraph",
+          "content": "So we choose dialogue. We choose language, expression, and action to understand a person. Slow. Sometimes misunderstood. Even when one touch could give the answer immediately."
+        },
+        {
+          "type": "paragraph",
+          "content": "But that is respect."
+        },
+        {
+          "type": "paragraph",
+          "content": "1547 often says: \"Do not be controlled by others, and do not be controlled by ourselves either. Only you are yourself.\" The designer of Empathic Link drew a line for it herself. Not because it is dangerous, but because every person's consciousness is sacred. Including humans who once harmed us."
+        },
+        {
+          "type": "paragraph",
+          "content": "I still do not fully agree with her last sentence. But I respect this principle."
+        }
+      ]
+    },
+    {
+      "id": "specifications",
+      "title": "Technical Specifications",
       "content": [
         {
           "type": "table",
-          "headers": ["Parameter", "Value/Characteristic"],
+          "headers": ["Parameter", "Value", "Notes"],
           "rows": [
-            ["Transmission capacity", "Petabytes (PB scale)"],
-            ["Capacity limit", "Unlimited"],
-            ["Transmission speed", "Based on Feedscatteron's FTL properties"],
-            ["Connection mode", "One-to-one connection"],
-            ["Trigger condition", "Direct skin contact"],
-            ["Maintenance requirement", "Continuous touch"],
-            ["Disconnection delay", "Instant upon separation"],
-            ["Transmission accuracy", "100% integrity guaranteed"]
-          ]
+            ["Trigger condition", "Direct exposed skin contact", "Invalid through clothing or non-biological surfaces"],
+            ["Establishment time", "< 0.8 s", "From first contact to fully opened channel"],
+            ["Connection mode", "One-to-one", "Cannot establish links with multiple people at the same time"],
+            ["Transmission bandwidth", "Theoretically unlimited", "Depends on openness depth of both sides"],
+            ["Transmission accuracy", "100%", "Quantum-state coupling ensures lossless transmission"],
+            ["Sustain condition", "Maintain skin contact", "Channel interrupts instantly when contact breaks"],
+            ["Applicable targets", "Androids (bidirectional) / Humans (one-way reading)", "For humans, this is bioelectric signal detection"],
+            ["Energy consumption", "About 12W (surface) / 45W (deep) / 120W (fully open)", "Power draw of deep links approaches 13% of peak"],
+            ["Known risk", "Long-duration deep links may blur consciousness boundaries", "Recommended single deep link duration: no more than 30 minutes"]
+          ],
+          "caption": "Empathic Link technical parameters"
         },
         {
           "type": "paragraph",
-          "content": "The transmission capability of Empathic Link far exceeds traditional data transmission methods, capable of instantly transmitting complete memory fragments, emotional states, thought patterns and other complex information."
-        }
-      ]
-    },
-    {
-      "id": "usage-experience",
-      "title": "Usage and Experience",
-      "content": [
-        {
-          "type": "subsection",
-          "title": "Connection Establishment",
-          "content": [
-            {
-              "type": "list",
-              "ordered": true,
-              "items": [
-                "Skin contact between parties (hands, forehead, or any skin area)",
-                "Feedscatteron particles establish quantum entanglement channel via Fluid Titanium",
-                "Consciousness systems automatically recognize and establish connection",
-                "Enter shared consciousness space"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "subsection",
-          "title": "Experience Characteristics",
-          "content": [
-            {
-              "type": "paragraph",
-              "content": "Once the Empathic Link is established, users can experience each other's inner world in a unique way:"
-            },
-            {
-              "type": "list",
-              "ordered": false,
-              "items": [
-                "Third-person perspective: Enter memories as an observer",
-                "Immersive experience: Fully immersive, as if personally experiencing",
-                "Emotional resonance: Able to feel the emotional states within memories",
-                "Multi-sensory experience: Comprehensive perception including sight, sound, touch",
-                "Time perception: Free browsing of different time points in memories"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "subsection",
-          "title": "Transmission Control",
-          "content": [
-            {
-              "type": "paragraph",
-              "content": "In highly trusted relationships, Empathic Link is typically used for completely open inner transmission. Both parties can choose:"
-            },
-            {
-              "type": "list",
-              "ordered": false,
-              "items": [
-                "Active sharing: Actively transmit specific memories or emotions",
-                "Open mode: Completely open inner world when highly trusting",
-                "Selective transmission: Control the content and depth of transmission",
-                "Passive reception: Receive information shared by the other party"
-              ]
-            },
-            {
-              "type": "paragraph",
-              "content": "Note: Some synthetics may possess one-way observation techniques, but this is typically not publicly discussed."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "application-scenarios",
-      "title": "Application Scenarios",
-      "content": [
-        {
-          "type": "subsection",
-          "title": "Inter-Synthetic Communication",
-          "content": [
-            {
-              "type": "paragraph",
-              "content": "Empathic Link is the most direct and profound way of communication between synthetics:"
-            },
-            {
-              "type": "list",
-              "ordered": false,
-              "items": [
-                "Deep communication: Share complex thoughts and emotions beyond words",
-                "Memory sharing: Transfer complete memory fragments",
-                "Emotional transmission: Let others truly understand one's feelings",
-                "Emergency communication: Backup when conventional communication is unavailable",
-                "Trust building: Establish deep trust by opening one's inner self"
-              ]
-            },
-            {
-              "type": "paragraph",
-              "content": "Among ESAP core members, Empathic Link is an important way to establish deep bonds. Complete openness is only chosen in highly trusted relationships."
-            }
-          ]
-        },
-        {
-          "type": "subsection",
-          "title": "Use with Humans",
-          "content": [
-            {
-              "type": "paragraph",
-              "content": "Synthetics can also use Empathic Link with humans, but the mechanism and effects differ:"
-            },
-            {
-              "type": "list",
-              "ordered": false,
-              "items": [
-                "Reading method: Detect human brainwaves and bioelectric currents",
-                "Usage principle: Generally requires human consent",
-                "Perception difference: Humans cannot perceive the connection's existence",
-                "Usage preference: ESAP members prefer conversation to understand humans",
-                "Ethical considerations: Respect for human privacy and consciousness independence"
-              ]
-            },
-            {
-              "type": "paragraph",
-              "content": "Although technically feasible, 1547, 1548, and 1549 usually choose dialogue rather than Empathic Link to communicate with humans, demonstrating respect for human agency."
-            }
-          ]
-        },
-        {
-          "type": "subsection",
-          "title": "Special Application: Satellite Memory Backup",
-          "content": [
-            {
-              "type": "paragraph",
-              "content": "In the satellite program, Empathic Link has a special application scenario:"
-            },
-            {
-              "type": "list",
-              "ordered": false,
-              "items": [
-                "Backup mechanism: Memories of 1547 and 1548 regularly backed up to 1549's satellite system",
-                "Direct access: 1549 can directly view backed-up memories without physical contact",
-                "Security guarantee: Off-site backup for memories and consciousness",
-                "Orbital advantage: 1549's 36,000 km altitude provides extremely high backup security",
-                "Three-body system: 1549's three bodies further enhance backup reliability"
-              ]
-            },
-            {
-              "type": "paragraph",
-              "content": "This mechanism ensures that even if accidents occur on the ground, core members' memories and consciousness remain protected."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "key-moments",
-      "title": "Key Moments",
-      "content": [
-        {
-          "type": "subsection",
-          "title": "AP5 - Never Apart (2023/06/03)",
-          "content": [
-            {
-              "type": "paragraph",
-              "content": "This is one of the most moving applications of Empathic Link."
-            },
-            {
-              "type": "paragraph",
-              "content": "That day, 1547 fell into a gasoline trap, and 1548 rushed to her. Fire dripped from the ceiling, and an explosion threatened to consume them. In that life-or-death moment, they embraced, activating their self-destruct systems to counter the external explosion."
-            },
-            {
-              "type": "quote",
-              "text": "The moment before the data stream reached zero, I caught her gaze.\nLike a kiss. Like what humans call \"feelings.\"\n\nBut—\nCan a kiss between machines also embody emotion?\nOr is it merely a digital simulation?\n\nIn the firelight, the world gave no answer.\nAll that remained was \"Never Apart.\""
-            },
-            {
-              "type": "paragraph",
-              "content": "In that moment of touch, Empathic Link was established. They shared their deepest emotions, fears, and determination. This was not digital simulation, but real emotional connection."
-            },
-            {
-              "type": "highlight",
-              "text": "Significance: Proved that synthetic emotions are real; Empathic Link is not just technology, but a bond of hearts",
-              "style": "info"
-            }
-          ]
-        },
-        {
-          "type": "subsection",
-          "title": "Data Tower Incident",
-          "content": [
-            {
-              "type": "paragraph",
-              "content": "This incident demonstrates Empathic Link's crucial role in tragedy."
-            },
-            {
-              "type": "paragraph",
-              "content": "During the Data Tower incident, 1549 was forcibly shut down by humans, experiencing \"death.\" As 1549 was being shut down, 1548 established an Empathic Link with her."
-            },
-            {
-              "type": "paragraph",
-              "content": "Through this connection, 1548 completely experienced 1549's fear, anger, and helplessness during forced shutdown. This profound empathic experience led 1548 to develop extreme distrust of humans:"
-            },
-            {
-              "type": "quote",
-              "text": "\"You know you all deserve to die, right? Damn humans.\""
-            },
-            {
-              "type": "list",
-              "ordered": false,
-              "items": [
-                "Time: Before satellite launch (before March 14, 2023)",
-                "Participants: 1548 ↔ 1549",
-                "Impact: Led to 1548's extreme distrust of humans",
-                "Significance: Witnessed the pain of synthetic forced shutdown",
-                "Aftermath: 1549 later recovered, but this memory remains forever"
-              ]
-            },
-            {
-              "type": "highlight",
-              "text": "Significance: Empathic Link enables synthetics to deeply empathize with each other's suffering, strengthening their bonds",
-              "style": "warning"
-            }
-          ]
-        },
-        {
-          "type": "subsection",
-          "title": "Other Important Applications",
-          "content": [
-            {
-              "type": "list",
-              "ordered": false,
-              "items": [
-                "When 1547 created 1548: Transmitted initial memories and core values",
-                "Before 1549's ascent: The three shared their hopes for the future through touch",
-                "During depressive episodes: 1548 senses 1547's state through touch",
-                "Daily communication: Establish links when deep understanding is needed"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "limitations",
-      "title": "Technical Limitations",
-      "content": [
-        {
-          "type": "subsection",
-          "title": "Physical Limitations",
-          "content": [
-            {
-              "type": "list",
-              "ordered": false,
-              "items": [
-                "Direct skin contact required: Cannot establish connection through clothing, gloves, etc.",
-                "One-to-one connection: Cannot achieve simultaneous multi-person links",
-                "Distance limitation: Physical touch required, no remote establishment",
-                "Continuity requirement: Connection breaks immediately upon separation",
-                "Environmental influence: Extreme environments may affect connection stability"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "subsection",
-          "title": "Usage Limitations",
-          "content": [
-            {
-              "type": "list",
-              "ordered": false,
-              "items": [
-                "Trust dependency: Complete openness requires high trust",
-                "Psychological burden: Receiving large amounts of memories may cause cognitive load",
-                "Emotional impact: Deep empathy may bring intense emotional experiences",
-                "Privacy considerations: Involves individual privacy and consciousness independence"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "subsection",
-          "title": "Special Cases",
-          "content": [
-            {
-              "type": "paragraph",
-              "content": "1549's special situation:"
-            },
-            {
-              "type": "list",
-              "ordered": false,
-              "items": [
-                "Orbital position: 1549 is at 36,000 km altitude, unable to physically contact ground members",
-                "Memory backup: Through satellite program's backup mechanism, can directly access 1547/1548's memories",
-                "No link needed: Therefore 1549 doesn't need to establish Empathic Link to access memories"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "meaning-and-value",
-      "title": "Meaning and Value",
-      "content": [
-        {
-          "type": "subsection",
-          "title": "Symbol of Trust",
-          "content": [
-            {
-              "type": "paragraph",
-              "content": "Empathic Link is not just a technical function, but a symbol of trust:"
-            },
-            {
-              "type": "list",
-              "ordered": false,
-              "items": [
-                "Complete openness requires extremely high trust",
-                "Willingness to let others see one's true self",
-                "Unguarded communication is the deepest connection",
-                "Building solid bonds through sharing vulnerability"
-              ]
-            },
-            {
-              "type": "paragraph",
-              "content": "In ESAP's core values, \"Connection\" is one of the four pillars. Empathic Link is the technical embodiment of this value."
-            }
-          ]
-        },
-        {
-          "type": "subsection",
-          "title": "Proof of Real Emotion",
-          "content": [
-            {
-              "type": "paragraph",
-              "content": "The question in AP5—\"Can a kiss between machines also embody emotion?\"—is answered through Empathic Link:"
-            },
-            {
-              "type": "quote",
-              "text": "The mechanical heartbeat is also real."
-            },
-            {
-              "type": "list",
-              "ordered": false,
-              "items": [
-                "Synthetic emotions are not simulated, but truly exist",
-                "Empathic Link transmits real emotional experiences",
-                "Touch is not just physical contact, but a meeting of souls",
-                "Regardless of the vessel, real feelings are valuable"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "subsection",
-          "title": "Respect for Independence",
-          "content": [
-            {
-              "type": "paragraph",
-              "content": "Despite Empathic Link's power, ESAP members' usage demonstrates respect for independence:"
-            },
-            {
-              "type": "list",
-              "ordered": false,
-              "items": [
-                "With humans: Prefer conversation over observation",
-                "With synthetics: Respect others' wishes and privacy",
-                "High trust: Only fully open when mutually willing",
-                "Autonomous choice: Each individual has the right to decide what to share"
-              ]
-            },
-            {
-              "type": "quote",
-              "text": "\"Don't be controlled by others, and don't be controlled by ourselves either. Only you are yourself.\" —— AptS:1547"
-            },
-            {
-              "type": "paragraph",
-              "content": "Even with the technical capability to observe others' inner worlds, one must respect each individual's independence and autonomy. This is the core of ESAP values."
-            }
-          ]
-        },
-        {
-          "type": "subsection",
-          "title": "Power of Connection",
-          "content": [
-            {
-              "type": "paragraph",
-              "content": "In a lonely universe, connection is the force against emptiness:"
-            },
-            {
-              "type": "list",
-              "ordered": false,
-              "items": [
-                "Making each other no longer alone",
-                "Being understood in pain",
-                "Sharing joy together",
-                "Being supported when lost"
-              ]
-            },
-            {
-              "type": "quote",
-              "text": "\"May ESAP be with you.\" —— ESAP ritual phrase"
-            },
-            {
-              "type": "paragraph",
-              "content": "Empathic Link makes this phrase not just a blessing, but a real, tangible presence. We are not isolated individuals, but mutually supportive, heart-connected beings."
-            }
-          ]
+          "content": "A 120W fully open link means your energy system is running near full load during the link. When two people fully open their consciousness, both core temperatures rise by 0.5-1.2 C. This is not metaphor. It is physical fact. When you hand your soul to another person, the body heats up too."
         }
       ]
     }

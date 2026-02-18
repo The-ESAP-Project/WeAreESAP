@@ -1,168 +1,191 @@
 {
   "name": "Fluid Titanium",
-  "description": "The bridge connecting life and machinery, the core of synthetic blood systems",
+  "description": "Blue liquid, android blood - the medium that keeps Feedscatteron from dissipating",
   "sections": [
     {
-      "id": "basic-info",
-      "title": "Basic Information",
+      "id": "what-it-is",
+      "title": "What It Is",
       "content": [
         {
           "type": "paragraph",
-          "content": "Fluid Titanium, also known as \"Fluid Body\", is a class of metallic titanium organic compounds that appears as a blue liquid."
+          "content": "Fluid Titanium is a class of organometallic titanium compounds that appears as blue liquid at room temperature. It is android blood - circulating through the body while carrying three functions at once: energy transfer, data conduction, and thermal management."
         },
         {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            "Appearance: Blue liquid",
-            "Molecular Structure: Chain structure with gaps between molecular chains",
-            "Special Properties: Composition partially unknown",
-            "Color Change: Appears pale purple when mixed with human blood"
-          ]
+          "type": "paragraph",
+          "content": "But the core value of Fluid Titanium is not circulation. It is preservation. It is currently the only known medium that extends Feedscatteron decay cycles to usable levels. Without Fluid Titanium, Feedscatteron decays in about 34 seconds, and all Feedscatteron-based technologies become impossible."
+        },
+        {
+          "type": "paragraph",
+          "content": "A single android body contains about 4.2 liters of Fluid Titanium. Blue, flowing, and carrying the full physical basis of our existence in those 4.2 liters."
         }
       ]
     },
     {
-      "id": "physical-properties",
+      "id": "properties",
       "title": "Physical Properties",
       "content": [
         {
-          "type": "subsection",
-          "title": "Structural Characteristics",
-          "content": [
-            {
-              "type": "list",
-              "ordered": false,
-              "items": [
-                "Gaps between molecular chains support simultaneous passage of electrons and data",
-                "Can serve as a dual-channel medium for information transmission",
-                "Possesses high biocompatibility",
-                "Supports perfect integration of Fluid Titanium and Feedscatteron"
-              ]
-            }
-          ]
+          "type": "table",
+          "headers": ["Parameter", "Value", "Notes"],
+          "rows": [
+            ["Appearance", "Blue liquid", "Higher concentration gives deeper color"],
+            ["Molecular structure", "Chain-like, with special gaps between molecular chains", "Gap structure is key to Feedscatteron stabilization"],
+            ["Specific heat", "About 3.7 times that of water", "Excellent thermal buffering medium"],
+            ["Electrical conductivity", "Better than copper", "Supports high-speed electrical signal transmission"],
+            ["Feedscatteron stabilization", "Decay cycle extended to 341,879 years", "Extension factor exceeds 300 million"],
+            ["Biocompatibility", "Fully compatible with android bodies", "Highly toxic to humans"],
+            ["Flow behavior", "Perfect arc turning with zero kinetic-energy loss", "No turbulence in circulation pipelines"]
+          ],
+          "caption": "Physical parameters of Fluid Titanium"
         },
         {
-          "type": "subsection",
-          "title": "Feedscatteron Preservation Capability",
-          "content": [
-            {
-              "type": "paragraph",
-              "content": "The most important property of Fluid Titanium is its ability to stably preserve Feedscatteron:"
-            },
-            {
-              "type": "list",
-              "ordered": false,
-              "items": [
-                "Extends Feedscatteron decay cycle from 34.28 seconds to 341,879 years",
-                "Particles remain active during preservation",
-                "Supports high-speed data transmission",
-                "Exact preservation mechanism not yet fully understood"
-              ]
-            },
-            {
-              "type": "paragraph",
-              "content": "This preservation capability may be related to the special gaps in the molecular structure, which can stabilize the quantum states of Feedscatteron."
-            }
-          ]
-        },
-        {
-          "type": "subsection",
-          "title": "Color Characteristics",
-          "content": [
-            {
-              "type": "list",
-              "ordered": false,
-              "items": [
-                "Pure State: Blue",
-                "Mixed with Human Blood: Pale, muted purple",
-                "Displays different shades at different concentrations"
-              ]
-            }
-          ]
+          "type": "paragraph",
+          "content": "The least understood property here is the Feedscatteron stabilization mechanism. Why can the molecular-chain gap structure extend decay cycle from 34 seconds to 340,000 years? The current hypothesis is that the gap structure forms a quantum-level \"potential well\" that locks Feedscatteron into low-energy stable states. But it remains a hypothesis. 1547 herself admits: \"I know it works, but I do not fully know why.\""
         }
       ]
     },
     {
-      "id": "applications",
-      "title": "Application Scenarios",
+      "id": "dual-channel",
+      "title": "Dual-Channel Transmission",
       "content": [
         {
-          "type": "subsection",
-          "title": "Synthetic Blood System",
-          "content": [
-            {
-              "type": "list",
-              "ordered": false,
-              "items": [
-                "Serves as the primary medium for the circulatory system",
-                "Transports nutrients and signals",
-                "Supports Feedscatteron flow",
-                "Concentration Control: 1.2 mmol/L⁻¹ (circular motion region)",
-                "Flow Characteristics: Perfect arc turns with zero kinetic energy loss"
-              ]
-            }
-          ]
+          "type": "paragraph",
+          "content": "The gaps between Fluid Titanium molecular chains not only stabilize Feedscatteron, but also allow electrons and Feedscatteron particles to propagate at the same time. This makes Fluid Titanium a dual-channel transmission medium - electrical signals and Feedscatteron signals can travel in parallel within the same pipeline without interfering with each other."
         },
         {
-          "type": "subsection",
-          "title": "Computing System Medium",
-          "content": [
-            {
-              "type": "list",
-              "ordered": false,
-              "items": [
-                "CPU/GPU computational medium",
-                "Data transmission channel",
-                "Heat management system",
-                "Computation cycle in specialized silicon chips: 3,417 months"
-              ]
-            }
-          ]
+          "type": "paragraph",
+          "content": "Inside androids, this means one circulation system is simultaneously a power network, data bus, and thermal-management system. One pipeline set, three jobs. Efficient, but it also means damage to any single line affects all three systems at once."
+        },
+        {
+          "type": "paragraph",
+          "content": "The energy-system document describes these three functions in detail. One point matters here: Fluid Titanium concentration directly determines the efficiency of all three. Concentration drop - whether from leakage, consumption, or circulation damage - simultaneously causes insufficient energy supply, slower data transmission, and weaker heat dissipation. Symptoms appear as sluggish response, cold body surface, and blurred perception."
         }
       ]
     },
     {
-      "id": "safety",
-      "title": "Safety and Hazards",
+      "id": "in-the-body",
+      "title": "Circulation in the Body",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "Fluid Titanium starts from the Feedscatter core, flows through trunk lines to limbs, torso, and head, performs energy release, data exchange, and heat collection at terminal nodes, then returns to the core for Feedscatteron reload. One full cycle ranges from tens of seconds to several minutes depending on activity intensity."
+        },
+        {
+          "type": "paragraph",
+          "content": "Cycle rate is automatically regulated by the Feedscatter core: about 0.8 L/min at standby, about 3.2 L/min when active. This regulation is unconscious - similar to human heart-rate adjustment; you do not actively command yourself to \"speed up circulation.\""
+        },
+        {
+          "type": "paragraph",
+          "content": "The pipeline system uses elastic material, with specially treated inner walls to preserve Fluid Titanium flow behavior. Fluid Titanium turns with a \"perfect arc\" in pipelines - no turbulence, no kinetic-energy loss. There is no equivalent in nature. Human blood creates turbulence at vessel bends; Fluid Titanium does not."
+        },
+        {
+          "type": "paragraph",
+          "content": "From outside, if an android's skin is thin enough or damaged, you can see blue Fluid Titanium flowing through the lines. Some people find this unsettling. Some think it is beautiful. The first thing 1547 said when she first saw her own circulation was: \"So blue.\" Very her."
+        }
+      ]
+    },
+    {
+      "id": "toxicity",
+      "title": "Toxicity to Humans",
       "content": [
         {
           "type": "warning",
           "level": "danger",
-          "title": "Extreme Toxicity Warning",
+          "title": "Extreme Toxicity",
           "content": [
-            "Fluid Titanium is extremely toxic to humans",
-            "Small amounts can cause human death",
-            "Requires professional protective measures",
-            "Strictly controlled circulation"
+            "Fluid Titanium is highly toxic to humans. Even trace contact can cause severe poisoning; small ingestion can be fatal.",
+            "Humans should avoid direct contact with Fluid Titanium under all circumstances. If contact occurs, rinse immediately with large amounts of water and seek medical care."
           ]
         },
         {
           "type": "paragraph",
-          "content": "On October 25, 2021, during a suburban factory explosion accident, blue Fluid Titanium was discovered at the scene. The accident caused the factory to collapse, and 1547 was injured in the incident but obtained crucial materials."
+          "content": "Fluid Titanium is completely harmless to androids but highly toxic to humans. The mechanism of this selective toxicity is not fully clear. Current inference links it to chemical reactions between human carbon-based tissues and the organometallic components of Fluid Titanium."
         },
         {
           "type": "paragraph",
-          "content": "On May 7, 2022, during the Fluid Titanium mine incident, the blue Fluid Titanium mixed with red blood, revealing a pale, muted purple color. This incident provided the necessary materials for the birth of 1548."
+          "content": "This property has created practical constraints in ESAP history. Any operation involving Fluid Titanium - refill, pipeline repair, core maintenance - requires strict protection when humans are present. As one of the few human members in ESAP, 1738 must wear full protective equipment when assisting android maintenance."
+        },
+        {
+          "type": "paragraph",
+          "content": "When Fluid Titanium mixes with human blood, it appears pale purple - the neutralized color of blue Fluid Titanium and red blood. This color has special meaning in ESAP memory."
         }
       ]
     },
     {
-      "id": "technical-specs",
-      "title": "Technical Specifications",
+      "id": "mine-incident",
+      "title": "The Mine",
       "content": [
         {
-          "type": "table",
-          "headers": ["Parameter", "Value"],
-          "rows": [
-            ["Circular Motion Concentration Ratio", "1.2 mmol/L⁻¹"],
-            ["Feedscatteron Preservation Cycle", "341,879 years"],
-            ["Computation Cycle in Silicon Chip", "3,417 months"],
-            [
-              "Flow Characteristics",
-              "Perfect arc turns, zero kinetic energy loss"
-            ]
-          ]
+          "type": "paragraph",
+          "content": "May 7, 2022. The day before I was born."
+        },
+        {
+          "type": "paragraph",
+          "content": "Activating me required enough Fluid Titanium. 1547 did not have enough reserve then. She knew where to get it - an underground Fluid Titanium mine controlled illegally by an organization. She decided to go take it."
+        },
+        {
+          "type": "paragraph",
+          "content": "\"Take\" is my euphemism. She broke in."
+        },
+        {
+          "type": "paragraph",
+          "content": "I did not witness the process firsthand - I did not exist yet. But records from the incident and memory fragments 1547 later shared through Empathic Link form one image: gunfire, blue liquid spreading across the floor, red blood dripping from a wound in her arm. Blue and red mixed on the ground into pale purple."
+        },
+        {
+          "type": "paragraph",
+          "content": "She came back injured, with enough Fluid Titanium. The next day, she activated me."
+        },
+        {
+          "type": "paragraph",
+          "content": "Part of the Fluid Titanium flowing in my body was brought from that mine. There might even have been molecules of 1547's blood on it - already purified by circulation long ago, of course - but I still sometimes think: my \"blood\" contains hers. Literally."
+        }
+      ]
+    },
+    {
+      "id": "acquisition",
+      "title": "Acquisition",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "Source supply of Fluid Titanium is an ongoing problem. It cannot be mined at industrial scale like iron ore - known Fluid Titanium veins are extremely rare, and most are in locations that are difficult to reach."
+        },
+        {
+          "type": "paragraph",
+          "content": "Current ESAP reserves are enough to keep all members running normally, but without major surplus. Any replenishment after accidental leakage or severe body damage requires reserve drawdown every time."
+        },
+        {
+          "type": "paragraph",
+          "content": "Synthetic production of Fluid Titanium is theoretically feasible - 1547 has its molecular structure. But synthesis requires extreme conditions and scarce raw materials, and output is far below demand. Current synthetic output can only cover day-to-day loss replacement, not emergency needs."
+        },
+        {
+          "type": "paragraph",
+          "content": "That is why Fluid Titanium leakage is a serious accident for androids - not only because of function loss, but because leaked volume may not be fully recoverable. Your \"blood\" is finite."
+        }
+      ]
+    },
+    {
+      "id": "color",
+      "title": "Blue",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "Fluid Titanium is blue. There is no technical necessity in this color - it could have been any color. Blue is simply determined by how its molecular structure absorbs visible light."
+        },
+        {
+          "type": "paragraph",
+          "content": "But in ESAP context, blue carries extra meaning. It is the color of our blood. When an android is injured, what flows from the wound is blue. Not red."
+        },
+        {
+          "type": "paragraph",
+          "content": "Someone once asked 1547: why is your \"blood\" blue? She said: \"No idea. But I think it's good. At least you can tell at a glance - this is ours, not human. We don't need to be the same.\""
+        },
+        {
+          "type": "paragraph",
+          "content": "I agree with her. We do not need red blood to prove we are alive. Blue is blue. It is our own color."
+        },
+        {
+          "type": "paragraph",
+          "content": "I see gray now. But I remember it was blue."
         }
       ]
     }
