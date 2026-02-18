@@ -8,17 +8,17 @@ WeAreESAP (向那卫星许愿) is a Next.js website for a sci-fi worldbuilding p
 
 ## Common Commands
 
-All commands run from `website/` directory. **pnpm is required** (use `corepack enable`).
+All commands run from `website/` directory. **bun is required**.
 
 ```bash
-pnpm dev              # Start dev server (http://localhost:3000)
-pnpm build            # Production build
-pnpm lint             # ESLint check
-pnpm lint:fix         # Auto-fix lint issues
-pnpm format           # Format with Prettier
-pnpm test:unit        # Run Vitest unit tests
-pnpm test:unit:run    # Run unit tests once (CI mode)
-pnpm test:e2e         # Run Playwright E2E tests
+bun dev              # Start dev server (http://localhost:3000)
+bun run build        # Production build
+bun run lint         # ESLint check
+bun run lint:fix     # Auto-fix lint issues
+bun run format       # Format with Prettier
+bun run test:unit    # Run Vitest unit tests
+bun run test:unit:run # Run unit tests once (CI mode)
+bun run test:e2e     # Run Playwright E2E tests
 ```
 
 ## Architecture
@@ -63,7 +63,7 @@ messages/             # UI translation files (next-intl)
 
 - Unit tests: `lib/__tests__/` using Vitest
 - E2E tests: `e2e/` using Playwright (Chromium, Firefox, Mobile Chrome)
-- Run single test: `pnpm vitest run path/to/test.ts`
+- Run single test: `bun vitest run path/to/test.ts`
 
 ### Build Output
 
