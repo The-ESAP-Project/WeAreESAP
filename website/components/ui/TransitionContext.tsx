@@ -108,6 +108,8 @@ export function TransitionProvider({ children }: { children: ReactNode }) {
   useEffect(() => {
     if (pendingTransitionRef.current) {
       pendingTransitionRef.current = false;
+      // 过渡遮罩还在的时候滚到顶部，用户看不到滚动过程
+      window.scrollTo({ top: 0, behavior: "instant" });
       setNavigationKey((prev) => prev + 1);
     }
   }, [pathname]);

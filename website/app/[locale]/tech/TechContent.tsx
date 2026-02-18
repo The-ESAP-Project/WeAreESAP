@@ -43,38 +43,24 @@ export function TechContent({ modules, initialModuleId }: TechContentProps) {
     [modules, activeModuleId]
   );
 
-  // 记录每个 tab 的滚动位置
-  const scrollPositions = useRef<Map<string, number>>(new Map());
-  const activeModuleIdRef = useRef(activeModuleId);
-  activeModuleIdRef.current = activeModuleId;
   const tabsRef = useRef<HTMLDivElement>(null);
 
-  // 获取 tabs 距页面顶部的偏移量（减去 sticky nav 高度 h-16 = 64px）
-  const getTabsTop = useCallback(() => {
-    if (!tabsRef.current) return 0;
-    return tabsRef.current.getBoundingClientRect().top + window.scrollY - 64;
+  const handleTabChange = useCallback((moduleId: string) => {
+    setActiveModuleId(moduleId);
+    const segments = window.location.pathname.split("/");
+    const idx = segments.indexOf("tech");
+    if (idx !== -1) {
+      segments[idx + 1] = moduleId;
+      window.history.pushState(null, "", segments.join("/"));
+    }
+    // 切换 tab 后滚动到 tabs 顶部
+    requestAnimationFrame(() => {
+      if (!tabsRef.current) return;
+      const tabsTop =
+        tabsRef.current.getBoundingClientRect().top + window.scrollY - 64;
+      window.scrollTo({ top: tabsTop });
+    });
   }, []);
-
-  const handleTabChange = useCallback(
-    (moduleId: string) => {
-      // 保存当前 tab 的滚动位置
-      scrollPositions.current.set(activeModuleIdRef.current, window.scrollY);
-      setActiveModuleId(moduleId);
-      const segments = window.location.pathname.split("/");
-      const idx = segments.indexOf("tech");
-      if (idx !== -1) {
-        segments[idx + 1] = moduleId;
-        window.history.pushState(null, "", segments.join("/"));
-      }
-      // 恢复目标 tab 的滚动位置，最高只能到 tabs 顶部（不露出大标题）
-      const saved = scrollPositions.current.get(moduleId);
-      const tabsTop = getTabsTop();
-      requestAnimationFrame(() => {
-        window.scrollTo({ top: Math.max(saved ?? tabsTop, tabsTop) });
-      });
-    },
-    [getTabsTop]
-  );
 
   // 浏览器前进/后退时同步状态
   useEffect(() => {
