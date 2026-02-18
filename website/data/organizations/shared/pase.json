@@ -1,0 +1,10 @@
+{
+  "id": "pase",
+  "order": 5,
+  "icon": "Eye",
+  "theme": {
+    "primary": "#a855f7",
+    "accent": "#c084fc",
+    "dark": "#7c3aed"
+  }
+}

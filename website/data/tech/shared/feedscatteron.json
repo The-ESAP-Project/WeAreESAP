@@ -1,0 +1,9 @@
+{
+  "id": "feedback-particle",
+  "order": 1,
+  "icon": "Atom",
+  "color": {
+    "primary": "#ffd93d",
+    "dark": "#ffc107"
+  }
+}

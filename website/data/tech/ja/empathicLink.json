@@ -1,12 +1,5 @@
 {
-  "id": "empathic-link",
-  "order": 6,
   "name": "意識リンク",
-  "icon": "HeartHandshake",
-  "color": {
-    "primary": "#ff69b4",
-    "dark": "#ff1493"
-  },
   "description": "触れることで確立される超高速意識伝送、心と心を真につなぐ",
   "sections": [
     {

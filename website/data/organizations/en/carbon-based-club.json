@@ -1,7 +1,4 @@
 {
-  "id": "carbon-based-club",
-  "order": 6,
-  "image": "",
   "info": {
     "name": "Carbon-Based Club",
     "code": "CBC",
@@ -10,12 +7,6 @@
     "establishedTime": "Summer 2024",
     "coreDirective": "We're the normal ones",
     "status": "active"
-  },
-  "icon": "Coffee",
-  "theme": {
-    "primary": "#8B7355",
-    "accent": "#FF8A65",
-    "dark": "#6B5744"
   },
   "description": "The three humans in ESAP. They get dinner sometimes and talk about what it's like living among non-humans.",
   "members": [

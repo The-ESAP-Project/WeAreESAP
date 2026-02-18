@@ -1,0 +1,9 @@
+{
+  "id": "energy-system",
+  "order": 3,
+  "icon": "Zap",
+  "color": {
+    "primary": "#F59E0B",
+    "dark": "#D97706"
+  }
+}

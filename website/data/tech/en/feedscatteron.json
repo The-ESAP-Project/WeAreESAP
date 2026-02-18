@@ -1,12 +1,5 @@
 {
-  "id": "feedback-particle",
-  "order": 1,
   "name": "Feedscatteron",
-  "icon": "Atom",
-  "color": {
-    "primary": "#ffd93d",
-    "dark": "#ffc107"
-  },
   "description": "A discovery that changes the nature of computation, enabling consciousness upload and faster-than-light transmission",
   "sections": [
     {

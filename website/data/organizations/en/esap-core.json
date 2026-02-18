@@ -1,7 +1,4 @@
 {
-  "id": "esap-core",
-  "order": 3,
-  "image": "/images/organizations/ESAPCore.webp",
   "info": {
     "name": "ESAP Core",
     "code": "ESAP Core",
@@ -10,12 +7,6 @@
     "establishedTime": "August 2024",
     "coreDirective": "Welcome to The ESAP Project",
     "status": "active"
-  },
-  "icon": "Users",
-  "theme": {
-    "primary": "#ffd93d",
-    "accent": "#ff69b4",
-    "dark": "#ffc107"
   },
   "description": "Five people who steer the direction of ESAP.",
   "members": [

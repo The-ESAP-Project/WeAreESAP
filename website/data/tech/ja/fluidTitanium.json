@@ -1,12 +1,5 @@
 {
-  "id": "fluid-titanium",
-  "order": 2,
   "name": "液体チタン",
-  "icon": "Droplet",
-  "color": {
-    "primary": "#4da6ff",
-    "dark": "#2e8fff"
-  },
   "description": "生命と機械を繋ぐ架け橋、アンドロイド血液系の核心",
   "sections": [
     {

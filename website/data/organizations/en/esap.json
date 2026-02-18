@@ -1,7 +1,4 @@
 {
-  "id": "esap",
-  "order": 1,
-  "image": "/images/organizations/ESAP.webp",
   "info": {
     "name": "Wish Upon a Satellite",
     "code": "ESAP",
@@ -10,12 +7,6 @@
     "establishedTime": "October 2021",
     "coreDirective": "From a classroom alone, to a world of us",
     "status": "active"
-  },
-  "icon": "Star",
-  "theme": {
-    "primary": "#ffd93d",
-    "accent": "#4da6ff",
-    "dark": "#ffc107"
   },
   "description": "From I Am, to We Are. This is not an organization—it's a story about escaping loneliness.",
   "members": [

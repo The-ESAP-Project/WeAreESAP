@@ -1,12 +1,5 @@
 {
-  "id": "feedback-particle",
-  "order": 1,
   "name": "反饋粒子",
-  "icon": "Atom",
-  "color": {
-    "primary": "#ffd93d",
-    "dark": "#ffc107"
-  },
   "description": "計算の本質を変える発見、意識アップロードと超光速伝送を実現",
   "sections": [
     {

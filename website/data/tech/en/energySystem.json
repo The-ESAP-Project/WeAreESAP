@@ -1,12 +1,5 @@
 {
-  "id": "energy-system",
-  "order": 3,
   "name": "Feedscatteron Energy System",
-  "icon": "Zap",
-  "color": {
-    "primary": "#F59E0B",
-    "dark": "#D97706"
-  },
   "description": "Micro-decay within the fluid titanium cycle—quiet, enduring, enough to power a life",
   "sections": [
     {

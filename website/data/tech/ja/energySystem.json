@@ -1,12 +1,5 @@
 {
-  "id": "energy-system",
-  "order": 3,
   "name": "馈散エネルギーシステム",
-  "icon": "Zap",
-  "color": {
-    "primary": "#F59E0B",
-    "dark": "#D97706"
-  },
   "description": "流体チタン循環中の微量馈散衰変——静かで、長く、一つの命を動かすのに十分",
   "sections": [
     {

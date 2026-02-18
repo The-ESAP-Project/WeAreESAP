@@ -1,0 +1,9 @@
+{
+  "id": "empathic-link",
+  "order": 6,
+  "icon": "HeartHandshake",
+  "color": {
+    "primary": "#ff69b4",
+    "dark": "#ff1493"
+  }
+}

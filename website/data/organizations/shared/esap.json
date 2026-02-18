@@ -1,0 +1,11 @@
+{
+  "id": "esap",
+  "order": 1,
+  "image": "/images/organizations/ESAP.webp",
+  "icon": "Star",
+  "theme": {
+    "primary": "#ffd93d",
+    "accent": "#4da6ff",
+    "dark": "#ffc107"
+  }
+}

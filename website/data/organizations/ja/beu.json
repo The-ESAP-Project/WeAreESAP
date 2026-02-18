@@ -1,7 +1,4 @@
 {
-  "id": "beu",
-  "order": 4,
-  "image": "/images/organizations/BEU.webp",
   "info": {
     "name": "境界執行班",
     "code": "BEU",
@@ -10,12 +7,6 @@
     "establishedTime": "2024–2025年",
     "coreDirective": "越境した",
     "status": "dormant"
-  },
-  "icon": "Shield",
-  "theme": {
-    "primary": "#475569",
-    "accent": "#F59E0B",
-    "dark": "#334155"
   },
   "description": "システムレベルの異常介入モジュール。通常の判断メカニズムが境界の完全性を維持できない場合にのみ起動される",
   "members": [

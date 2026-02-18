@@ -1,12 +1,5 @@
 {
-  "id": "synthetic-technology",
-  "order": 5,
   "name": "アンドロイド技術",
-  "icon": "Cpu",
-  "color": {
-    "primary": "#ff69b4",
-    "dark": "#ff1493"
-  },
   "description": "生命のもう一つの形態、機械と意識の完璧な融合",
   "sections": [
     {

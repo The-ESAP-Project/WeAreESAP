@@ -1,7 +1,4 @@
 {
-  "id": "esap-core",
-  "order": 3,
-  "image": "/images/organizations/ESAPCore.webp",
   "info": {
     "name": "ESAP Core",
     "code": "ESAP Core",
@@ -10,12 +7,6 @@
     "establishedTime": "2024年8月",
     "coreDirective": "The ESAP Project へようこそ",
     "status": "active"
-  },
-  "icon": "Users",
-  "theme": {
-    "primary": "#ffd93d",
-    "accent": "#ff69b4",
-    "dark": "#ffc107"
   },
   "description": "ESAPの方向性を決める五人。",
   "members": [

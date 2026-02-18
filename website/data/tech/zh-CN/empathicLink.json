@@ -1,12 +1,5 @@
 {
-  "id": "empathic-link",
-  "order": 6,
   "name": "意识链接",
-  "icon": "HeartHandshake",
-  "color": {
-    "primary": "#ff69b4",
-    "dark": "#ff1493"
-  },
   "description": "通过触碰建立的超高速意识传输,让心灵真正相连",
   "sections": [
     {

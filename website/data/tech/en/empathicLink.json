@@ -1,12 +1,5 @@
 {
-  "id": "empathic-link",
-  "order": 6,
   "name": "Empathic Link",
-  "icon": "HeartHandshake",
-  "color": {
-    "primary": "#ff69b4",
-    "dark": "#ff1493"
-  },
   "description": "Ultra-fast consciousness transmission through touch, connecting hearts and minds",
   "sections": [
     {

@@ -1,0 +1,11 @@
+{
+  "id": "esap-core",
+  "order": 3,
+  "image": "/images/organizations/ESAPCore.webp",
+  "icon": "Users",
+  "theme": {
+    "primary": "#ffd93d",
+    "accent": "#ff69b4",
+    "dark": "#ffc107"
+  }
+}

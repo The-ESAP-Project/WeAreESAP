@@ -1,0 +1,11 @@
+{
+  "id": "carbon-based-club",
+  "order": 6,
+  "image": "",
+  "icon": "Coffee",
+  "theme": {
+    "primary": "#8B7355",
+    "accent": "#FF8A65",
+    "dark": "#6B5744"
+  }
+}

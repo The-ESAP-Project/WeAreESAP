@@ -1,7 +1,4 @@
 {
-  "id": "polaris",
-  "order": 2,
-  "image": "/images/organizations/PSP.webp",
   "info": {
     "name": "極星衛計画",
     "code": "PSP",
@@ -10,12 +7,6 @@
     "establishedTime": "2023年3月14日",
     "coreDirective": "たとえ人工の光でも、道を照らすことができる",
     "status": "active"
-  },
-  "icon": "Radio",
-  "theme": {
-    "primary": "#4da6ff",
-    "accent": "#ffd93d",
-    "dark": "#2e8fff"
   },
   "description": "自然の星空を失った時代に、私たちは人工の星を作った。衛星に願いを。闇の中でも、光は存在する。",
   "members": [

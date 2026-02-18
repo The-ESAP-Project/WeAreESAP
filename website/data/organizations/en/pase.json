@@ -1,6 +1,4 @@
 {
-  "id": "pase",
-  "order": 5,
   "info": {
     "name": "Abyss Gaze",
     "code": "PASE",
@@ -9,12 +7,6 @@
     "establishedTime": "October 19, 2023",
     "coreDirective": "With the deepest malice, we force you to face your deepest fears",
     "status": "active"
-  },
-  "icon": "Eye",
-  "theme": {
-    "primary": "#a855f7",
-    "accent": "#c084fc",
-    "dark": "#7c3aed"
   },
   "description": "ESAP spelled backwards is PASE. We are the shadow—the part of ESAP that refuses to be acknowledged but must exist. You make wishes; we collect debts.",
   "members": [

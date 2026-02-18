@@ -1,6 +1,4 @@
 {
-  "id": "pase",
-  "order": 5,
   "info": {
     "name": "深渊凝视",
     "code": "PASE",
@@ -9,12 +7,6 @@
     "establishedTime": "2023 年 10 月 19 日",
     "coreDirective": "用最深的恶意，逼你直视最深的恐惧",
     "status": "active"
-  },
-  "icon": "Eye",
-  "theme": {
-    "primary": "#a855f7",
-    "accent": "#c084fc",
-    "dark": "#7c3aed"
   },
   "description": "ESAP 反过来就是 PASE。我们是影子，是 ESAP 不愿承认但必须存在的那部分。你们许愿，我们讨债。",
   "members": [

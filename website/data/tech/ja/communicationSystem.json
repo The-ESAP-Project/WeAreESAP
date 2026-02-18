@@ -1,12 +1,5 @@
 {
-  "id": "communication-system",
-  "order": 7,
   "name": "通信システム",
-  "icon": "Radio",
-  "color": {
-    "primary": "#4da6ff",
-    "dark": "#2e8fff"
-  },
   "description": "反饋粒子に基づく超光速通信ネットワーク、地上と星空を繋ぐ",
   "sections": [
     {

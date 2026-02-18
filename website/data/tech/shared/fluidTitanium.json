@@ -1,0 +1,9 @@
+{
+  "id": "fluid-titanium",
+  "order": 2,
+  "icon": "Droplet",
+  "color": {
+    "primary": "#4da6ff",
+    "dark": "#2e8fff"
+  }
+}

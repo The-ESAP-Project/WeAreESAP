@@ -1,12 +1,5 @@
 {
-  "id": "data-tower",
-  "order": 8,
   "name": "Data Tower",
-  "icon": "Cpu",
-  "color": {
-    "primary": "#475569",
-    "dark": "#334155"
-  },
   "description": "The distributed hub connecting android consciousness—and a scar that never healed",
   "sections": [
     {

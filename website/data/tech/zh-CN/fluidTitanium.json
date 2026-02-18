@@ -1,12 +1,5 @@
 {
-  "id": "fluid-titanium",
-  "order": 2,
   "name": "流体钛",
-  "icon": "Droplet",
-  "color": {
-    "primary": "#4da6ff",
-    "dark": "#2e8fff"
-  },
   "description": "连接生命与机械的桥梁，仿生人的血液系统核心",
   "sections": [
     {

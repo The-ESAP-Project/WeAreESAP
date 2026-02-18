@@ -1,12 +1,5 @@
 {
-  "id": "communication-system",
-  "order": 7,
   "name": "通讯系统",
-  "icon": "Radio",
-  "color": {
-    "primary": "#4da6ff",
-    "dark": "#2e8fff"
-  },
   "description": "基于馈散粒子的超光速通讯网络，连接地面与星空",
   "sections": [
     {

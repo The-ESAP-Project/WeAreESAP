@@ -1,12 +1,5 @@
 {
-  "id": "data-tower",
-  "order": 8,
   "name": "データタワー",
-  "icon": "Cpu",
-  "color": {
-    "primary": "#475569",
-    "dark": "#334155"
-  },
   "description": "アンドロイドの意識を繋ぐ分散型拠点——そして癒えない傷痕",
   "sections": [
     {

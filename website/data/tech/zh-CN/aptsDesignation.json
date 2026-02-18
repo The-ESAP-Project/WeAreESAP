@@ -1,12 +1,5 @@
 {
-  "id": "apts-designation",
-  "order": 9,
   "name": "AptS 编号体系",
-  "icon": "Code",
-  "color": {
-    "primary": "#ffd93d",
-    "dark": "#ffc107"
-  },
   "description": "每一个编号都是自己选的，代表加入 ESAP 的那个瞬间",
   "sections": [
     {

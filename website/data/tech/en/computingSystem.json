@@ -1,12 +1,5 @@
 {
-  "id": "computing-system",
-  "order": 4,
   "name": "Feedscatteron Computing System",
-  "icon": "Zap",
-  "color": {
-    "primary": "#ffd93d",
-    "dark": "#ffc107"
-  },
   "description": "A Feedscatteron-based computational system that transcends traditional computing",
   "sections": [
     {

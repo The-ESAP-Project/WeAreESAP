@@ -1,12 +1,5 @@
 {
-  "id": "fluid-titanium",
-  "order": 2,
   "name": "Fluid Titanium",
-  "icon": "Droplet",
-  "color": {
-    "primary": "#4da6ff",
-    "dark": "#2e8fff"
-  },
   "description": "The bridge connecting life and machinery, the core of synthetic blood systems",
   "sections": [
     {

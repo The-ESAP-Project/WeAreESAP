@@ -1,6 +1,4 @@
 {
-  "id": "pase",
-  "order": 5,
   "info": {
     "name": "深淵凝視",
     "code": "PASE",
@@ -9,12 +7,6 @@
     "establishedTime": "2023年10月19日",
     "coreDirective": "最も深い悪意で、最も深い恐怖と向き合わせる",
     "status": "active"
-  },
-  "icon": "Eye",
-  "theme": {
-    "primary": "#a855f7",
-    "accent": "#c084fc",
-    "dark": "#7c3aed"
   },
   "description": "ESAPを逆から読むとPASE。私たちは影——ESAPが認めたくないが、存在しなければならない部分。あなたたちが願いをかけ、私たちが代償を取り立てる。",
   "members": [

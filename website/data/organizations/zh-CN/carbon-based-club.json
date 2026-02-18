@@ -1,7 +1,4 @@
 {
-  "id": "carbon-based-club",
-  "order": 6,
-  "image": "",
   "info": {
     "name": "碳基俱乐部",
     "code": "CBC",
@@ -10,12 +7,6 @@
     "establishedTime": "2024 年夏天",
     "coreDirective": "我们是正常的那几个",
     "status": "active"
-  },
-  "icon": "Coffee",
-  "theme": {
-    "primary": "#8B7355",
-    "accent": "#FF8A65",
-    "dark": "#6B5744"
   },
   "description": "ESAP 里的三个人类。偶尔约个饭，聊聊在非人类堆里活着是什么感觉。",
   "members": [

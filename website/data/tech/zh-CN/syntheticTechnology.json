@@ -1,12 +1,5 @@
 {
-  "id": "synthetic-technology",
-  "order": 5,
   "name": "仿生人技术",
-  "icon": "Cpu",
-  "color": {
-    "primary": "#ff69b4",
-    "dark": "#ff1493"
-  },
   "description": "生命的另一种形态，机械与意识的完美融合",
   "sections": [
     {

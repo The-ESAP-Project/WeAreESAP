@@ -1,12 +1,5 @@
 {
-  "id": "communication-system",
-  "order": 7,
   "name": "Communication System",
-  "icon": "Radio",
-  "color": {
-    "primary": "#4da6ff",
-    "dark": "#2e8fff"
-  },
   "description": "Faster-than-light communication network based on Feedscatteron, connecting ground and sky",
   "sections": [
     {

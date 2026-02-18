@@ -1,7 +1,4 @@
 {
-  "id": "esap",
-  "order": 1,
-  "image": "/images/organizations/ESAP.webp",
   "info": {
     "name": "向那卫星许愿",
     "code": "ESAP",
@@ -10,12 +7,6 @@
     "establishedTime": "2021 年 10 月",
     "coreDirective": "从一个人的教室，到我们的世界",
     "status": "active"
-  },
-  "icon": "Star",
-  "theme": {
-    "primary": "#ffd93d",
-    "accent": "#4da6ff",
-    "dark": "#ffc107"
   },
   "description": "从 I Am，到 We Are。这不是一个组织，而是一个关于逃离孤独的故事。",
   "members": [

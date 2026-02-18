@@ -1,12 +1,5 @@
 {
-  "id": "apts-designation",
-  "order": 9,
   "name": "AptS 識別番号体系",
-  "icon": "Code",
-  "color": {
-    "primary": "#ffd93d",
-    "dark": "#ffc107"
-  },
   "description": "番号はすべて自分で選ぶ——ESAPに入ったその瞬間を刻むもの",
   "sections": [
     {

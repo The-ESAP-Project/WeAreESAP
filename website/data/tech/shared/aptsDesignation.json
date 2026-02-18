@@ -1,0 +1,9 @@
+{
+  "id": "apts-designation",
+  "order": 9,
+  "icon": "Code",
+  "color": {
+    "primary": "#ffd93d",
+    "dark": "#ffc107"
+  }
+}

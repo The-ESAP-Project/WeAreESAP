@@ -1,12 +1,5 @@
 {
-  "id": "apts-designation",
-  "order": 9,
   "name": "AptS Designation System",
-  "icon": "Code",
-  "color": {
-    "primary": "#ffd93d",
-    "dark": "#ffc107"
-  },
   "description": "Every number is self-chosen—it marks the moment someone joined ESAP",
   "sections": [
     {

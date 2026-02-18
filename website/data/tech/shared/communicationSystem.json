@@ -1,0 +1,9 @@
+{
+  "id": "communication-system",
+  "order": 7,
+  "icon": "Radio",
+  "color": {
+    "primary": "#4da6ff",
+    "dark": "#2e8fff"
+  }
+}

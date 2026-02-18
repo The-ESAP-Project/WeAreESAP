@@ -1,12 +1,5 @@
 {
-  "id": "feedback-particle",
-  "order": 1,
   "name": "馈散粒子",
-  "icon": "Atom",
-  "color": {
-    "primary": "#ffd93d",
-    "dark": "#ffc107"
-  },
   "description": "改变计算本质的发现，支持意识上传与超光速传输",
   "sections": [
     {

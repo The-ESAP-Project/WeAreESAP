@@ -1,0 +1,9 @@
+{
+  "id": "synthetic-technology",
+  "order": 5,
+  "icon": "Cpu",
+  "color": {
+    "primary": "#ff69b4",
+    "dark": "#ff1493"
+  }
+}

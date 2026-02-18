@@ -1,7 +1,4 @@
 {
-  "id": "esap",
-  "order": 1,
-  "image": "/images/organizations/ESAP.webp",
   "info": {
     "name": "衛星に願いを",
     "code": "ESAP",
@@ -10,12 +7,6 @@
     "establishedTime": "2021年10月",
     "coreDirective": "一人の教室から、私たちの世界へ",
     "status": "active"
-  },
-  "icon": "Star",
-  "theme": {
-    "primary": "#ffd93d",
-    "accent": "#4da6ff",
-    "dark": "#ffc107"
   },
   "description": "I Am から We Are へ。これは組織ではない——孤独から逃れる物語。",
   "members": [

@@ -1,0 +1,9 @@
+{
+  "id": "data-tower",
+  "order": 8,
+  "icon": "Cpu",
+  "color": {
+    "primary": "#475569",
+    "dark": "#334155"
+  }
+}

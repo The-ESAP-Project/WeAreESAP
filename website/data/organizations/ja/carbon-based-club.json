@@ -1,7 +1,4 @@
 {
-  "id": "carbon-based-club",
-  "order": 6,
-  "image": "",
   "info": {
     "name": "炭素クラブ",
     "code": "CBC",
@@ -10,12 +7,6 @@
     "establishedTime": "2024年夏",
     "coreDirective": "普通なのは俺たちだけ",
     "status": "active"
-  },
-  "icon": "Coffee",
-  "theme": {
-    "primary": "#8B7355",
-    "accent": "#FF8A65",
-    "dark": "#6B5744"
   },
   "description": "ESAPにいる三人の人間。たまにご飯を食べて、人間じゃない人たちの中で暮らすってどんな感じか話す。",
   "members": [

@@ -1,7 +1,4 @@
 {
-  "id": "polaris",
-  "order": 2,
-  "image": "/images/organizations/PSP.webp",
   "info": {
     "name": "Project Polaris",
     "code": "PSP",
@@ -10,12 +7,6 @@
     "establishedTime": "March 14, 2023",
     "coreDirective": "Even artificial light can guide the way",
     "status": "active"
-  },
-  "icon": "Radio",
-  "theme": {
-    "primary": "#4da6ff",
-    "accent": "#ffd93d",
-    "dark": "#2e8fff"
   },
   "description": "In an age that lost its natural starry sky, we built an artificial star. Wish upon a satellite—even in darkness, light still exists.",
   "members": [

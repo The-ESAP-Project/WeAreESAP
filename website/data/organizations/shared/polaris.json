@@ -1,0 +1,11 @@
+{
+  "id": "polaris",
+  "order": 2,
+  "image": "/images/organizations/PSP.webp",
+  "icon": "Radio",
+  "theme": {
+    "primary": "#4da6ff",
+    "accent": "#ffd93d",
+    "dark": "#2e8fff"
+  }
+}

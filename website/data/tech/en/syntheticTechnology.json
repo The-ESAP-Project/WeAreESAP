@@ -1,12 +1,5 @@
 {
-  "id": "synthetic-technology",
-  "order": 5,
   "name": "Synthetic Technology",
-  "icon": "Cpu",
-  "color": {
-    "primary": "#ff69b4",
-    "dark": "#ff1493"
-  },
   "description": "Another form of life, the perfect fusion of machinery and consciousness",
   "sections": [
     {

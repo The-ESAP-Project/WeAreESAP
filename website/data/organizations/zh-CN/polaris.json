@@ -1,7 +1,4 @@
 {
-  "id": "polaris",
-  "order": 2,
-  "image": "/images/organizations/PSP.webp",
   "info": {
     "name": "极星卫计划",
     "code": "PSP",
@@ -10,12 +7,6 @@
     "establishedTime": "2023 年 3 月 14 日",
     "coreDirective": "即使是人造的光，也能指引方向",
     "status": "active"
-  },
-  "icon": "Radio",
-  "theme": {
-    "primary": "#4da6ff",
-    "accent": "#ffd93d",
-    "dark": "#2e8fff"
   },
   "description": "在失去自然星空的时代，我们造了一颗人造的星星。向那卫星许愿，即使在黑暗中，光依然存在。",
   "members": [

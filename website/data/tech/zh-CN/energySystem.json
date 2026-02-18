@@ -1,12 +1,5 @@
 {
-  "id": "energy-system",
-  "order": 3,
   "name": "馈散能源系统",
-  "icon": "Zap",
-  "color": {
-    "primary": "#F59E0B",
-    "dark": "#D97706"
-  },
   "description": "流体钛循环中的微量馈散衰变——安静、持久、足以驱动一个生命",
   "sections": [
     {

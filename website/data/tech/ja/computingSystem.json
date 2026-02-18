@@ -1,12 +1,5 @@
 {
-  "id": "computing-system",
-  "order": 4,
   "name": "反饋計算システム",
-  "icon": "Zap",
-  "color": {
-    "primary": "#ffd93d",
-    "dark": "#ffc107"
-  },
   "description": "従来の計算を超越する反饋粒子演算体系",
   "sections": [
     {

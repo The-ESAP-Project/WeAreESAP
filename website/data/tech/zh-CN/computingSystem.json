@@ -1,12 +1,5 @@
 {
-  "id": "computing-system",
-  "order": 4,
   "name": "馈散计算系统",
-  "icon": "Zap",
-  "color": {
-    "primary": "#ffd93d",
-    "dark": "#ffc107"
-  },
   "description": "超越传统计算的馈散粒子运算体系",
   "sections": [
     {

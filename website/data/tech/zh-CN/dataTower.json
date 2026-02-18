@@ -1,12 +1,5 @@
 {
-  "id": "data-tower",
-  "order": 8,
   "name": "数据塔",
-  "icon": "Cpu",
-  "color": {
-    "primary": "#475569",
-    "dark": "#334155"
-  },
   "description": "连接仿生人意识的分布式枢纽，也是一道无法愈合的伤疤",
   "sections": [
     {

@@ -1,0 +1,9 @@
+{
+  "id": "computing-system",
+  "order": 4,
+  "icon": "Zap",
+  "color": {
+    "primary": "#ffd93d",
+    "dark": "#ffc107"
+  }
+}
