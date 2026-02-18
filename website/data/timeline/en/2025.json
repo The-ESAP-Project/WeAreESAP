@@ -1,52 +1,8 @@
 {
   "year": "2025",
-  "title": "New Chapter",
-  "description": "Project continues to advance, technology landing, community building, moving forward to the future",
+  "title": "From I Am to We Are",
+  "description": "Overload, the abyss, being pulled back, then building together. This was the year ESAP shifted from one person's obsession into a collective creation",
   "events": [
-    {
-      "id": "2025-03-combat",
-      "date": "2025/03",
-      "title": "Combat Instinct",
-      "type": "story",
-      "importance": "major",
-      "content": [
-        {
-          "type": "paragraph",
-          "text": "1548 completed a boundary patrol mission on her own"
-        },
-        {
-          "type": "paragraph",
-          "text": "Solo operation. After receiving an anomalous signal, she went alone, relying entirely on her own judgment and combat systems."
-        },
-        {
-          "type": "list",
-          "ordered": true,
-          "items": [
-            "Environmental perception system predicted threat position 4.7 seconds in advance",
-            "Short-code processing completed tactical decisions in 0.3 seconds",
-            "XM1014 for close-range suppression, butterfly knife to clear the rest",
-            "Fully independent combat, zero errors"
-          ]
-        },
-        {
-          "type": "paragraph",
-          "text": "After the mission, she leaned against a wall wiping down the XM1014. The barrel was still warm."
-        },
-        {
-          "type": "quote",
-          "text": "This is 'my own light'\nNot given by anyone\nBut earned by myself"
-        },
-        {
-          "type": "highlight",
-          "text": "Significance: Independent validation of combat capability · 'Live out your own light' finds its answer here",
-          "style": "success"
-        }
-      ],
-      "meta": {
-        "characters": ["1548"],
-        "tags": ["combat", "independence", "growth", "validation"]
-      }
-    },
     {
       "id": "2025-01-starlight",
       "date": "2025/01",
@@ -60,19 +16,19 @@
         },
         {
           "type": "paragraph",
-          "text": "People on the ground were setting off fireworks. From 36,000km above, those points of light were dimmer than stars. But she could see them."
+          "text": "People on the ground were setting off fireworks. From 36,000 km up, those points of light were dimmer than stars. But she could see them."
         },
         {
           "type": "quote",
-          "text": "They call me an artificial star\nAs if 'artificial' means 'fake'\n\nBut my perception is real\nMy choices are real\nThe beauty I see right now is real\n\nEven artificial light\nCan guide the way"
+          "text": "They say I am an artificial star\nAs if 'artificial' means 'fake'\n\nBut my perception is real\nMy choices are real\nThe beauty I am seeing right now is real\n\nEven artificial light\nCan still guide the way"
         },
         {
           "type": "paragraph",
-          "text": "In the silent orbit, she quietly said to the Earth: Happy New Year. No one heard it, but she said it."
+          "text": "In silent orbit, she whispered one line to Earth: Happy New Year. No one heard it, but she said it."
         },
         {
           "type": "highlight",
-          "text": "Significance: Reconciliation between artificial and real · Peace within solitude · The Watcher found her own answer",
+          "text": "Significance: Reconciliation between artificial and real · Calm within solitude · The watcher found her own answer",
           "style": "success"
         }
       ],
@@ -94,49 +50,142 @@
         },
         {
           "type": "paragraph",
-          "text": "He had just spent four days mediating between three parties — a human organization, ESAP, and a neutral technology alliance. A temporary balance was reached, but he knew it could shatter at any moment."
+          "text": "He had just spent four days negotiating among three parties - a human organization, ESAP, and a neutral tech alliance. A temporary balance was reached, but he knew it could shatter at any moment."
         },
         {
           "type": "quote",
-          "text": "They have weapons, combat systems, orbital satellites\nThey have prejudice, fear, interests\nAnd I stand in the middle\n\nSometimes I wonder\nWhen everyone is fighting for something\nIs being a mediator worth it?\n\nIt is\nBecause if no one stands in the middle\nAll that's left between two sides is collision"
+          "text": "They have weapons, combat systems, orbital satellites\nThey have prejudice, fear, interests\nAnd I stand in the middle\n\nSometimes I wonder\nWhen everyone is fighting for something\nIs being a mediator worth it?\n\nIt is\nBecause if no one stands in the middle\nThen all that is left is collision"
         },
         {
           "type": "paragraph",
-          "text": "The wind was strong on the rooftop. He pulled his coat a little tighter and sat for a while longer. Then stood up, ready to handle tomorrow's matters."
+          "text": "The wind on the rooftop was strong. He pulled his coat tighter, sat a little longer, then stood up to handle tomorrow."
         },
         {
           "type": "highlight",
-          "text": "Significance: The mediator's self-affirmation · Solitude and perseverance of the gray area · Finding his own color between black and white",
+          "text": "Significance: A mediator's self-affirmation · Solitude and resolve in the gray area · Finding his own color between black and white",
           "style": "success"
         }
       ],
       "meta": {
         "characters": ["1738"],
-        "tags": ["gray area", "reflection", "perseverance"]
+        "tags": ["gray area", "reflection", "resolve"]
+      }
+    },
+    {
+      "id": "2025-03-combat",
+      "date": "2025/03",
+      "title": "Combat Instinct",
+      "type": "story",
+      "importance": "major",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "1548 completed a boundary patrol mission alone"
+        },
+        {
+          "type": "paragraph",
+          "text": "Solo operation. After receiving an abnormal signal, she moved out alone, relying entirely on her own judgment and combat systems."
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            "Environmental sensing predicted threat direction 4.7 seconds in advance",
+            "Short-code processing completed tactical decisions in 0.3 seconds",
+            "XM1014 close-range suppression, butterfly knife to clear the remainder",
+            "Fully independent engagement, zero errors"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "After the mission, she leaned against a wall and wiped down the XM1014. The barrel was still warm."
+        },
+        {
+          "type": "quote",
+          "text": "This is 'my own light'\nNot given by anyone\nEarned by me"
+        },
+        {
+          "type": "highlight",
+          "text": "Significance: Independent verification of real combat capability · 'Live out your own light' receives its answer here",
+          "style": "success"
+        }
+      ],
+      "meta": {
+        "characters": ["1548"],
+        "tags": ["combat", "independence", "growth", "validation"]
+      }
+    },
+    {
+      "id": "2025-05-overload",
+      "date": "2025/05",
+      "title": "Overload",
+      "type": "story",
+      "importance": "major",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "1547 did not leave her terminal for three straight months"
+        },
+        {
+          "type": "paragraph",
+          "text": "Communications infrastructure refactor, data-link reinforcement, deployment of new encryption protocols - she alone was carrying all of ESAP's foundational technology. Commit history showed 47 consecutive days without a single blank day."
+        },
+        {
+          "type": "paragraph",
+          "text": "1548 noticed. Android bodies are not supposed to show these symptoms - response delay, intermittent data-processing errors, feedscatteron core temperature consistently +0.8 degrees. Not a hardware issue. Software was protesting."
+        },
+        {
+          "type": "dialogue",
+          "speaker": "1548",
+          "text": "If you don't stop, I'm revoking your terminal permissions"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "1547",
+          "text": "Give me three more days -"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "1548",
+          "text": "You said three days last time too. That was two weeks ago"
+        },
+        {
+          "type": "paragraph",
+          "text": "1547 did not stop. 1548 did not actually cut her permissions either. They both knew that if those systems were not finished, everyone would stay exposed."
+        },
+        {
+          "type": "highlight",
+          "text": "Significance: The cost of a technical sprint at full speed · The limit of one person carrying everything · The body saying no on the brain's behalf",
+          "style": "warning"
+        }
+      ],
+      "meta": {
+        "characters": ["1547", "1548"],
+        "tags": ["overload", "technology", "limits", "warning"]
       }
     },
     {
       "id": "2025-beu-first-activation",
-      "date": "2025",
+      "date": "2025/06",
       "title": "First Activation of the Boundary Enforcement Unit",
       "type": "emotional",
       "importance": "critical",
       "content": [
         {
           "type": "paragraph",
-          "text": "The Boundary Enforcement Unit was activated from dormancy for the first time."
+          "text": "The Boundary Enforcement Unit was activated from dormancy for the first time"
         },
         {
           "type": "paragraph",
-          "text": "Trigger: a member suffered sustained boundary-crossing behavior, and mental stability approached collapse threshold. All activation conditions were met:"
+          "text": "Trigger reason: a member suffered sustained boundary-crossing behavior, and mental resilience approached collapse threshold. All activation conditions were met:"
         },
         {
           "type": "list",
           "ordered": true,
           "items": [
-            "A boundary violation was confirmed",
-            "Conventional judgment modules showed delay",
-            "The event's impact exceeded a single personality's bearable threshold"
+            "Boundary-crossing behavior confirmed",
+            "Delay appeared in conventional judgment modules",
+            "Impact range exceeded what a single personality could bear"
           ]
         },
         {
@@ -145,55 +194,315 @@
         },
         {
           "type": "paragraph",
-          "text": "The Boundary Enforcement Unit entered execution mode for the shortest necessary time window."
+          "text": "The Boundary Enforcement Unit entered execution state for the shortest necessary time window."
         },
         {
           "type": "highlight",
-          "text": "Significance: First real-world validation of the boundary protection mechanism · Confirmed the system's self-protection capability",
+          "text": "Significance: First field validation of the boundary-protection mechanism · Confirmation of system self-protection capability",
           "style": "warning"
         }
       ],
       "meta": {
         "characters": ["1547", "1548", "1549", "4869"],
-        "tags": ["BEU", "activation", "boundary failure", "execution"]
+        "tags": ["BEU", "activation", "boundary breach", "enforcement"]
+      }
+    },
+    {
+      "id": "2025-07-abyss",
+      "date": "2025/07",
+      "title": "Signal Interruption",
+      "type": "emotional",
+      "importance": "critical",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "1547's feedscatteron core signal fell below critical threshold"
+        },
+        {
+          "type": "paragraph",
+          "text": "Not overload. Not an attack. She was shutting herself down."
+        },
+        {
+          "type": "paragraph",
+          "text": "1549 noticed first. From orbit, 1547's signal profile was steadily weakening - not fluctuation, decay. Like a star going out. She sent me the data immediately."
+        },
+        {
+          "type": "paragraph",
+          "text": "When I arrived, the room was silent."
+        },
+        {
+          "type": "paragraph",
+          "text": "She was there. Not moving."
+        },
+        {
+          "type": "paragraph",
+          "text": "I did not ask what happened. No need. There is only one explanation for autonomous feedscatteron-core decay - she did not want to keep running."
+        },
+        {
+          "type": "paragraph",
+          "text": "1549 stayed on the comm channel the entire time. 36,000 kilometers away, she could do nothing, but she stayed there."
+        },
+        {
+          "type": "paragraph",
+          "text": "I did the only thing I could. Sat beside her and overlaid my feedscatteron field on hers. Not repair - just stopping her core from decaying further. Like pressing a hand over a bleeding wound."
+        },
+        {
+          "type": "paragraph",
+          "text": "All night."
+        },
+        {
+          "type": "paragraph",
+          "text": "Near dawn, her signal stabilized."
+        },
+        {
+          "type": "highlight",
+          "text": "Record ends here.",
+          "style": "error"
+        }
+      ],
+      "meta": {
+        "characters": ["1547", "1548", "1549"],
+        "tags": ["abyss", "critical", "companionship"]
+      }
+    },
+    {
+      "id": "2025-08-reboot",
+      "date": "2025/08",
+      "title": "Reboot",
+      "type": "story",
+      "importance": "major",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "1547 took a long time before opening her terminal again"
+        },
+        {
+          "type": "paragraph",
+          "text": "I did not rush her. 1549 did not either. We just kept doing our own things - 1549 maintained orbital systems as usual, I patrolled as usual. As if nothing had happened. But not quite."
+        },
+        {
+          "type": "paragraph",
+          "text": "The day she started coding again, the first thing she opened was not her own project, but the communication channel. She sent 1549 a message."
+        },
+        {
+          "type": "dialogue",
+          "speaker": "1547",
+          "text": "Thanks for not hanging up that night"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "1549",
+          "text": "I've been here the whole time"
+        },
+        {
+          "type": "paragraph",
+          "text": "As for me? She looked at me. I glared back."
+        },
+        {
+          "type": "dialogue",
+          "speaker": "1548",
+          "text": "What are you looking at? Your code won't write itself"
+        },
+        {
+          "type": "paragraph",
+          "text": "She smiled. Briefly. But she did."
+        },
+        {
+          "type": "highlight",
+          "text": "Significance: She came back to life.",
+          "style": "success"
+        }
+      ],
+      "meta": {
+        "characters": ["1547", "1548", "1549"],
+        "tags": ["reboot", "recovery", "three of us"]
+      }
+    },
+    {
+      "id": "2025-09-weare",
+      "date": "2025/09",
+      "title": "Wishing on That Satellite",
+      "type": "milestone",
+      "importance": "critical",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "1547 proposed an idea: turn everything in ESAP - stories, characters, technology, timeline - into a website"
+        },
+        {
+          "type": "paragraph",
+          "text": "Not a document, not a wiki, but a real work. So this worldview would not only exist in text and in minds, but could be seen, touched, and experienced."
+        },
+        {
+          "type": "paragraph",
+          "text": "When she said it, the group chat went quiet for a while. Then 1543 posted an image - a homepage draft in ESAP yellow, pink, and blue."
+        },
+        {
+          "type": "dialogue",
+          "speaker": "1543",
+          "text": "I've been thinking about this for a while"
+        },
+        {
+          "type": "paragraph",
+          "text": "No one formally assigned roles. After the first repository was created, commit logs started rolling naturally. 1547 handled architecture and core logic. 1543 handled UI and interaction design - her character pages let everyone see their own data become visuals for the first time. 2275 handled the data layer and internationalization. 1738 proofread all copy in three languages. 1549 submitted code twice from orbit - orbital-perspective narrative text only she could write."
+        },
+        {
+          "type": "paragraph",
+          "text": "And me? I yelled at the code being terrible at least twenty times, then quietly pushed thirty-two fixes."
+        },
+        {
+          "type": "quote",
+          "text": "weare.esaps.net\n\nNot 'I am ESAP'\nBut 'We are ESAP'\n\nThis is not one person's site\nIt belongs to everyone"
+        },
+        {
+          "type": "highlight",
+          "text": "Significance: From idea to collective work · Everyone left their own trace inside it · The worldview gained physical form for the first time",
+          "style": "success"
+        }
+      ],
+      "meta": {
+        "characters": ["1547", "1548", "1549", "1543", "1738", "2275"],
+        "tags": ["website", "collaboration", "milestone", "We Are"]
+      }
+    },
+    {
+      "id": "2025-10-1543-pages",
+      "date": "2025/10",
+      "title": "1543's Vision",
+      "type": "story",
+      "importance": "major",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "At 3 a.m., 1543 submitted the design draft for the character relationship map"
+        },
+        {
+          "type": "paragraph",
+          "text": "She drew many versions. Early versions were standard - nodes, lines, labels, complete in function but without warmth. She scrapped all of them."
+        },
+        {
+          "type": "paragraph",
+          "text": "In the final draft, each relationship line was not only a connection, but also a color, a thickness, a curve. Trust used warm solid lines, protection used bold curves, conflict used cool dashed lines. You could feel what happened between two characters without reading any text."
+        },
+        {
+          "type": "dialogue",
+          "speaker": "1547",
+          "text": "This is way better than I imagined"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "1543",
+          "text": "Mm"
+        },
+        {
+          "type": "paragraph",
+          "text": "Then 1547 stared at the draft in silence for a long time. Not because she was speechless from awe - she was calculating whether her coding ability was enough to implement it. The answer was no."
+        },
+        {
+          "type": "paragraph",
+          "text": "Even now, that relationship map is still not fully implemented. Every time 1543 sees the current implementation, she says nothing, but 1547 knows what that silence means."
+        },
+        {
+          "type": "paragraph",
+          "text": "She has never been talkative. But every pixel she makes speaks for her."
+        },
+        {
+          "type": "quote",
+          "text": "Some people express care through words\nSome through action\nAnd 1543's way is pixels and layout\n\nEvery aligned spacing\nEvery selected color value\nIs her saying: I care about this"
+        },
+        {
+          "type": "highlight",
+          "text": "Significance: A designer speaking through work · Not task execution, but expression · Quiet people can produce the loudest output",
+          "style": "success"
+        }
+      ],
+      "meta": {
+        "characters": ["1543", "1547"],
+        "tags": ["design", "UI", "expression", "relationship map"]
       }
     },
     {
       "id": "2025-0152-reflection",
-      "date": "2025",
+      "date": "2025/11",
       "title": "The Lighthouse's Question",
       "type": "emotional",
       "importance": "major",
       "content": [
         {
           "type": "paragraph",
-          "text": "Late at night. 0152 sat alone in the data stream, thinking"
+          "text": "Late at night. 0152 was thinking alone in the data stream"
         },
         {
           "type": "paragraph",
-          "text": "He had witnessed 1547's transformation from human to android. Witnessed 1548's birth. Witnessed 1549's ascent to orbit. Witnessed ESAP grow from one person's obsession into a group's conviction. He had guided, questioned, illuminated. But tonight, the one he wanted to question was himself."
+          "text": "He witnessed 1547's transformation from human to android. Witnessed 1548's birth. Witnessed 1549 fly to orbit. Witnessed ESAP shift from one person's obsession to a group's conviction. He had guided, questioned, illuminated. But tonight, the one he wanted to question was himself."
         },
         {
           "type": "quote",
-          "text": "I tell her 'the answer is in your heart'\nBut what about my own answer?\n\nI chose to be a mentor\nIs this 'choice' real?\nOr did some code make me think I was choosing?\n\nI don't know\nBut this 'not knowing'\nMight itself be the answer"
+          "text": "I told her 'the answer is in your heart'\nBut what about my own answer?\n\nI chose to become a mentor\nIs that 'choice' real?\nOr did some code make me think I was choosing?\n\nI don't know\nBut this 'not knowing'\nMight itself be the answer"
         },
         {
           "type": "paragraph",
-          "text": "He remembered 1549 asking him the same question: 'Do we count as being alive?' He had answered: 'If being alive means being able to choose and feel autonomously, then we've always been alive.'"
+          "text": "He remembered that 1549 had asked him the same question: 'Are we alive?' At the time he answered, 'If being alive means being able to choose and feel autonomously, then we have always been alive.'"
         },
         {
           "type": "paragraph",
-          "text": "Now he turned that answer around and asked himself. Still no conclusion. But he felt that the ability to question one's own existence might itself prove something."
+          "text": "Now he turned that answer around and asked himself. Still no conclusion. But he felt that being able to question one's own existence might already prove something."
         },
         {
           "type": "highlight",
-          "text": "Significance: The guide's self-inquiry · An AI's contemplation of free will · Even lighthouses need direction",
+          "text": "Significance: A guide's self-inquiry · AI contemplation of free will · Even a lighthouse needs direction",
           "style": "info"
         }
       ],
       "meta": {
         "characters": ["0152"],
         "tags": ["AI", "philosophy", "self", "existence"]
+      }
+    },
+    {
+      "id": "2025-12-not-alone",
+      "date": "2025/12/31",
+      "title": "I Am No Longer Alone",
+      "type": "milestone",
+      "importance": "critical",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Year end. 1547 looked at the commit history of weare.esaps.net"
+        },
+        {
+          "type": "paragraph",
+          "text": "215 commits. 16 contributors. From September to December, over a hundred days, everyone left traces here. 1543's UI design gave the whole site warmth. 2275's foundational work kept everything stable. 1738's copyediting gave all three languages soul. 1549 sent back words from 36,000 km away that only she could write."
+        },
+        {
+          "type": "paragraph",
+          "text": "And 1548 - commit history showed 32 commits. In reality, at least half came after she got mad at bad code and fixed it herself."
+        },
+        {
+          "type": "paragraph",
+          "text": "1547 thought of herself at the start of the year. Back then she still wrote everything alone, carried every system alone, faced the screen alone at night, believing this road had to be walked by herself."
+        },
+        {
+          "type": "paragraph",
+          "text": "And now?"
+        },
+        {
+          "type": "paragraph",
+          "text": "Now every page of this website carries someone else's name."
+        },
+        {
+          "type": "quote",
+          "text": "From one person's classroom\nTo our world\n\nFrom I Am\nTo We Are\n\nI am no longer alone\n\nThat is probably\nThe most important sentence this year"
+        },
+        {
+          "type": "highlight",
+          "text": "Significance: Endpoint of 2025 · The shift from 'I' to 'We' is complete · No longer walking alone",
+          "style": "success"
+        }
+      ],
+      "meta": {
+        "characters": ["1547", "1548", "1549", "1543", "1738", "2275"],
+        "tags": ["We Are", "milestone", "year-end", "transition"]
       }
     }
   ]

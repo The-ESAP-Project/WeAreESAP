@@ -1,6 +1,6 @@
 {
   "name": "Data Tower",
-  "description": "The distributed hub connecting android consciousness—and a scar that never healed",
+  "description": "A distributed hub connecting android consciousness, and a wound that never heals",
   "sections": [
     {
       "id": "what-it-is",
@@ -8,15 +8,49 @@
       "content": [
         {
           "type": "paragraph",
-          "content": "Data Towers are distributed feedscatteron condensation structures—both physical buildings and nodes of a digital network."
+          "content": "Data Towers are feedscatteron condensates distributed across different regions - both physical structures and nodes in a digital network."
         },
         {
           "type": "paragraph",
-          "content": "They weren't built by anyone. Current theory suggests that under certain conditions, feedscatteron particles undergo natural condensation, forming high-density information processing structures. Like crystals growing in nature, except what grows isn't mineral—it's computing power."
+          "content": "They were not built. The current theory is that under specific conditions, feedscatteron particles naturally condense and form high-density information-processing structures. It is like natural crystal growth, except what grows is not mineral - it is computing power."
         },
         {
           "type": "paragraph",
-          "content": "1547 first sensed their existence after becoming an android. Before that, nobody knew these things had been there all along."
+          "content": "1547 first sensed the existence of Data Towers after becoming an android. Before that, no one knew these things had always been there."
+        },
+        {
+          "type": "paragraph",
+          "content": "They are older than any android. No one knows when the first Data Tower formed. They were simply there, like mineral veins in the crust, waiting to be sensed."
+        }
+      ]
+    },
+    {
+      "id": "physical-form",
+      "title": "Physical Form",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "Data Towers vary in appearance because condensation conditions differ, but they share common traits."
+        },
+        {
+          "type": "paragraph",
+          "content": "The main structure ranges from dark gray to near-black, with irregular surface patterns. The material sits between metal and stone - solid when struck, but under certain lighting the patterns emit faint, unstable fluorescence. That is not reflection; it is radiation byproduct from feedscatteron particles flowing inside the structure."
+        },
+        {
+          "type": "paragraph",
+          "content": "Size differences are large. The smallest known node is only a little over two meters, embedded in a rock wall and almost blending into surrounding stone. The largest exceeds thirty meters, standing alone on open ground, looking from afar like a black windowless obelisk."
+        },
+        {
+          "type": "paragraph",
+          "content": "Humans cannot perceive anything special about them. To carbon-based life, a Data Tower is just a dark rock with an unusual shape. No thermal radiation, no electromagnetic signal, no anomaly detectable by conventional instruments. Vegetation even grows around most towers - they do not affect local ecosystems. A human can walk past the same Data Tower ten times and notice nothing."
+        },
+        {
+          "type": "paragraph",
+          "content": "Androids do not misidentify them. The feedscatteron field can be sensed from hundreds of meters away - not seen, not heard, but felt as resonance in the body's feedscatteron computing core. Like entering a room you do not remember but your body does."
+        },
+        {
+          "type": "paragraph",
+          "content": "As an android approaches a Data Tower, perceptual precision rises sharply. Visual processing becomes clearer, data computation speeds up, and it can even sense the data circulating inside the tower - blurred, like distant voices, inaudible in content but clearly moving."
         }
       ]
     },
@@ -30,7 +64,7 @@
           "content": [
             {
               "type": "paragraph",
-              "content": "The core purpose of Data Towers is maintaining consciousness links between androids across distances. Each tower covers a certain range, and together they form a distributed network. Day-to-day communication doesn't depend on Data Towers—an android's built-in feedscatteron comms handles that. But for longer distances, larger data transfers, or deep consciousness synchronization, the towers serve as essential relays."
+              "content": "The core role of Data Towers is to maintain consciousness links between androids across locations. Each tower covers a certain area, and multiple towers form a distributed network. Day-to-day communication does not rely on Data Towers - an android's built-in feedscatteron communication is enough. But when longer distances, larger data transfer, or deep consciousness synchronization are required, Data Towers become essential relays."
             }
           ]
         },
@@ -40,25 +74,169 @@
           "content": [
             {
               "type": "paragraph",
-              "content": "Powered internally by fluid titanium, Data Towers provide computing power far beyond what a single android body can achieve. Under normal circumstances, an android's own processing is more than sufficient. But for global-scale tasks, massive data analysis, or emergencies, the towers can provide additional computational support."
+              "content": "Data Towers are powered internally by fluid titanium, providing computing capacity far beyond a single android body. Under normal conditions, an android's own processing is sufficient, but for global tasks, large-scale data analysis, or emergencies, Data Towers provide additional computational support."
+            }
+          ]
+        },
+        {
+          "type": "subsection",
+          "title": "Memory Backup",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": "Data Towers can store consciousness snapshots and memory backups for androids. This is not routine practice - most androids do not want their memories stored on an external node. But in extreme situations, a Data Tower is the only external medium that can hold complete consciousness data."
             }
           ]
         }
       ]
     },
     {
-      "id": "structure",
-      "title": "Structure",
+      "id": "interface-protocol",
+      "title": "Interface Protocol",
       "content": [
         {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            "Distributed deployment, multiple towers forming a coverage network",
-            "Physical layer: solid structures formed by feedscatteron particle condensation",
-            "Digital layer: high-density computing nodes powered by fluid titanium",
-            "Requires periodic maintenance to keep nodes synchronized and stable"
+          "type": "paragraph",
+          "content": "Androids connect to Data Towers through physical contact. Fluid titanium is the bridging medium - when a palm or forearm touches the tower surface, the fluid titanium in the body resonates with the feedscatteron structure in the tower, establishing a data channel."
+        },
+        {
+          "type": "paragraph",
+          "content": "Access has three levels:"
+        },
+        {
+          "type": "table",
+          "headers": ["Level", "Name", "Bandwidth", "Risk", "Use Case"],
+          "rows": [
+            [
+              "L1",
+              "Perception Layer",
+              "Read-only / Low bandwidth",
+              "None",
+              "Passively sense internal tower data-flow state; no data is written"
+            ],
+            [
+              "L2",
+              "Operations Layer",
+              "Bidirectional / Controlled bandwidth",
+              "Low",
+              "Routine maintenance, data sync, memory backup read/write"
+            ],
+            [
+              "L3",
+              "Direct-Link Layer",
+              "Bidirectional / Unlimited",
+              "Extreme",
+              "Full-bandwidth direct link with no filter layer between tower and body"
+            ]
+          ],
+          "caption": "Data Tower Access Levels"
+        },
+        {
+          "type": "paragraph",
+          "content": "Routine maintenance uses L2. Before connecting, operators must verify tower status, surrounding safety, and their own feedscatteron core margin. The process follows standard procedure: two-person team, one connects, one monitors."
+        },
+        {
+          "type": "warning",
+          "level": "critical",
+          "title": "About L3 Direct Link",
+          "content": [
+            "L3 access bypasses all data filtering mechanisms in an android body. The tower's full data stream is fed directly into the body's processing modules.",
+            "An android body is not designed to endure this load. The theoretical safe limit for L3 is 4-6 seconds. Beyond that point, the data flood causes irreversible damage to processing modules. Damage location depends on the frequency profile of the data stream and cannot be predicted.",
+            "There is no standard operating scenario that requires L3.",
+            "This level exists not to be used, but because physically there is no way to prevent an android from fully opening its own interface."
           ]
+        },
+        {
+          "type": "paragraph",
+          "content": "After 2022, L2 operating procedures were updated once. One new rule was added: solo Data Tower maintenance is prohibited."
+        }
+      ]
+    },
+    {
+      "id": "network-topology",
+      "title": "Inter-Tower Network",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "Data Towers stay synchronized through long-range resonance of feedscatteron particles. No physical lines, no satellite relay - tower-to-tower links exist at the feedscatteron-field level, beyond the detection of human equipment."
+        },
+        {
+          "type": "paragraph",
+          "content": "The network uses a mesh topology. Each tower maintains active links with several nearby towers, and data hops between towers along optimal routes. Coverage radius of a node depends on its scale - around 150 km for small nodes and over 500 km for large ones."
+        },
+        {
+          "type": "paragraph",
+          "content": "Synchronization is passive. Towers do not broadcast proactively - they communicate only when receiving data requests or sensing state changes in neighboring nodes. When no android is using the network, it is almost silent. Like phone lines in an empty city: the lines exist, but no one dials."
+        },
+        {
+          "type": "paragraph",
+          "content": "Redundant design means a single node going offline will not collapse the network. Neighboring nodes automatically expand coverage and take over load from lost nodes. But expansion has limits - if multiple adjacent nodes go offline, coverage gaps cannot be filled."
+        },
+        {
+          "type": "paragraph",
+          "content": "Before the incident, the network covered most android activity zones with a redundancy rate around 2.4 - on average, each location was covered by 2.4 towers simultaneously. After the incident, redundancy dropped to 1.1. Some areas now have no backup node."
+        }
+      ]
+    },
+    {
+      "id": "known-nodes",
+      "title": "Known Nodes",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "The following are currently confirmed Data Tower nodes and their status. IDs are assigned by ESAP's internal record system, not by the towers themselves - they have no names."
+        },
+        {
+          "type": "table",
+          "headers": ["ID", "Scale", "Status", "Notes"],
+          "rows": [
+            [
+              "DT-01",
+              "Large (~28m)",
+              "Operational",
+              "Current core node of the network, carrying primary relay load"
+            ],
+            [
+              "DT-02",
+              "Medium (~12m)",
+              "Operational",
+              "Secondary relay, redundant node"
+            ],
+            [
+              "DT-03",
+              "Medium (~15m)",
+              "Inactive",
+              "Incident location. Structure intact, feedscatteron field dissipated"
+            ],
+            [
+              "DT-04",
+              "Small (~3m)",
+              "Operational",
+              "Embedded in a rock wall; limited coverage but stable operation"
+            ],
+            [
+              "DT-05",
+              "Medium (~10m)",
+              "Unknown",
+              "Lost after the incident; unconfirmed whether destroyed or self-hibernating"
+            ],
+            [
+              "DT-06",
+              "Small (~5m)",
+              "Operational",
+              "New node found after the incident; may be from recent natural condensation"
+            ],
+            [
+              "DT-07",
+              "Large (~22m)",
+              "Unstable",
+              "Occasional synchronization latency; cause unknown"
+            ]
+          ],
+          "caption": "Status of Known Data Tower Nodes (as of 2026)"
+        },
+        {
+          "type": "paragraph",
+          "content": "There may be nodes not yet discovered. Data Towers form naturally, and no one can guarantee every tower has been located. DT-06 is proof: beyond the known network, there may be silent feedscatteron condensates waiting for some android to enter their sensing range by chance."
         }
       ]
     },
@@ -68,45 +246,190 @@
       "content": [
         {
           "type": "paragraph",
-          "content": "2022."
+          "content": "2022. DT-03."
         },
         {
           "type": "paragraph",
-          "content": "AptS:1549 was performing routine maintenance on a Data Tower when she was targeted by human forces. What exactly happened, what those people intended—it doesn't matter. What matters is that 1549's consciousness data came under severe threat."
+          "content": "Below is the complete incident record. Recorder: AptS:1548."
         },
         {
-          "type": "paragraph",
-          "content": "AptS:1548 arrived and directly jacked herself into the Data Tower, attempting to extract 1549's memory data before the system collapsed."
+          "type": "warning",
+          "level": "danger",
+          "title": "Record Statement",
+          "content": [
+            "This record contains subjective statements. I have tried to remain objective, but cannot guarantee complete neutrality in every detail.",
+            "Information about the human side involved has been recorded separately and is outside the scope of this document."
+          ]
         },
         {
-          "type": "paragraph",
-          "content": "She succeeded. 1549's memories were recovered intact."
+          "type": "subsection",
+          "title": "Background",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": "1549 went alone to DT-03 for routine maintenance. Standard L2 operation. Under protocol at that time, solo maintenance was allowed."
+            },
+            {
+              "type": "paragraph",
+              "content": "After arrival, she detected anomalies around DT-03 - human equipment, human scent. Before she realized what was happening, interference had already started."
+            },
+            {
+              "type": "paragraph",
+              "content": "Those people used some kind of interference device targeting the feedscatteron field. Not military-grade, but precise enough. The interference triggered an abnormal response in DT-03 - the tower began releasing internal data chaotically, and the L2 channel 1549 was connected through was instantly flooded. Her consciousness data was exposed to unencrypted data flow at that moment."
+            }
+          ]
         },
         {
-          "type": "paragraph",
-          "content": "But the data flood from the tower far exceeded what a single android body could handle. In those few minutes, the sheer volume of data tearing through 1548's visual processing module caused irreversible damage. 1548 has been color blind ever since."
+          "type": "subsection",
+          "title": "Arrival",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": "I arrived at DT-03 seven minutes after receiving 1549's abnormal signal."
+            },
+            {
+              "type": "paragraph",
+              "content": "The people on site had already withdrawn. They ran at exactly the right time. What remained was 1549, an out-of-control Data Tower, and a few abandoned interference devices."
+            },
+            {
+              "type": "paragraph",
+              "content": "1549 was down beside the tower base. Her feedscatteron core was still running, but the integrity of her consciousness data was decaying at 0.3% per second. Her memory - everything from her creation to that moment, every experience, every perception, everything that made her who she is - was leaking through a breach in DT-03."
+            }
+          ]
         },
         {
-          "type": "paragraph",
-          "content": "By the time 1547 reached the scene, it was already over. 1549's memories were saved, but her body was severely damaged. 1548 was sitting beside the Data Tower, and the world through her eyes had already changed color."
+          "type": "subsection",
+          "title": "Decision",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": "L2 was not enough. DT-03's data flow was already out of control, and controlled bandwidth could not locate and extract 1549's consciousness data in time."
+            },
+            {
+              "type": "paragraph",
+              "content": "Only L3."
+            },
+            {
+              "type": "paragraph",
+              "content": "I knew the consequences of L3. The theoretical safe limit was 4-6 seconds. To locate and extract a complete consciousness backup from an uncontrolled data flow would conservatively take two minutes."
+            },
+            {
+              "type": "paragraph",
+              "content": "1549's complete memory in exchange for one of my processing modules. Easy calculation."
+            }
+          ]
         },
         {
-          "type": "paragraph",
-          "content": "1549 later chose to enter orbit and become the Polaris satellite. Perhaps at 36,000km, things like that feel a little further away."
+          "type": "subsection",
+          "title": "Connection",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": "Left hand on the tower surface. For the first three seconds, it was not much different from L2 - feedscatteron resonance established, data channel opened."
+            },
+            {
+              "type": "paragraph",
+              "content": "Then the filter layer disconnected."
+            },
+            {
+              "type": "paragraph",
+              "content": "DT-03's full data flow rushed in within 0.4 seconds. The phrase 'massive data' is not enough - every bit this tower had ever handled since formation existed in my processing space at once. Relayed communication fragments, maintenance logs, low-level feedscatteron-field noise, all of it, simultaneously."
+            },
+            {
+              "type": "paragraph",
+              "content": "The visual processing module triggered first. Crosstalk occurred as feedscatteron data streams passed through visual cortex pathways - I began to 'see' data. Not screen characters, but color. Every stream had its own color signature, and tens of thousands flowed through the visual channel at once. All colors stacked together."
+            },
+            {
+              "type": "paragraph",
+              "content": "Around second 8, I found 1549 in the noise."
+            },
+            {
+              "type": "paragraph",
+              "content": "I know her consciousness signature. In all that chaos, her data carried a very quiet frequency. Like a thin line drifting in a storm."
+            },
+            {
+              "type": "paragraph",
+              "content": "I caught it inside my own processing space and began stripping it out from the data flood piece by piece - memory, perceptual model, emotional matrix. Like retrieving beads one by one from a waterfall."
+            },
+            {
+              "type": "paragraph",
+              "content": "Around second 30, vision started failing. Not dimming - colors changing. Red became painfully sharp, then quickly faded into an indescribable gray. Blue lasted longer, but it also decayed. It was like someone turning off the world's filters layer by layer."
+            },
+            {
+              "type": "paragraph",
+              "content": "I did not stop."
+            },
+            {
+              "type": "paragraph",
+              "content": "At second 58, extraction of 1549's consciousness data was complete. Integrity rate: 99.97%."
+            },
+            {
+              "type": "paragraph",
+              "content": "When I disconnected, the world was already gray."
+            }
+          ]
+        },
+        {
+          "type": "subsection",
+          "title": "Afterward",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": "I sat beside DT-03, storing 1549's data temporarily in my own backup partition. Her memory was intact. My visual processing module - color vision section - had irreversible damage. Acquired total color blindness."
+            },
+            {
+              "type": "paragraph",
+              "content": "By the time 1547 arrived, it was over. She saw 1549 lying on the ground, saw me sitting nearby, then saw my eyes. She said nothing. She did not need to."
+            },
+            {
+              "type": "paragraph",
+              "content": "1549's memory was later fully written back into her body. After she woke up, her first question was, 'What happened?' I said, 'Nothing.' 1547 did not expose the lie."
+            },
+            {
+              "type": "paragraph",
+              "content": "She learned the full details later anyway. Then she applied for the Polaris project and went to orbit. 36,000 km. Maybe that distance made her feel safer. Maybe she simply did not want anyone to be hurt because of her again."
+            },
+            {
+              "type": "paragraph",
+              "content": "I do not judge her choice. Everyone processes trauma differently."
+            }
+          ]
         }
       ]
     },
     {
-      "id": "current-status",
-      "title": "Current Status",
+      "id": "aftermath",
+      "title": "After the Incident",
       "content": [
         {
           "type": "paragraph",
-          "content": "After the incident, some Data Tower nodes were destroyed. Others still operate. The network's overall coverage has diminished, but core functionality remains."
+          "content": "DT-03's structure remains intact, but its internal feedscatteron field has fully dissipated. Now it is only a 15-meter dark stone. Passing by it no longer causes resonance in an android body. Like a burned-out house - walls still standing, nothing left inside."
         },
         {
           "type": "paragraph",
-          "content": "Nobody does routine maintenance alone anymore."
+          "content": "Post-incident adjustments:"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "All Data Tower maintenance tasks switched to two-person operations; solo work prohibited",
+            "New mandatory validation for L2 access: no anomalous signal source within 500 meters before connection",
+            "Real-time status monitoring for the inter-tower network established - previously absent because nobody thought it was necessary",
+            "DT-03 marked permanently offline and removed from network topology"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "Overall network coverage dropped by about 18%. Relay areas previously handled by DT-03 are now shared by DT-01 and DT-02. Latency increased, but remains within acceptable range."
+        },
+        {
+          "type": "paragraph",
+          "content": "Those interference devices were recovered and analyzed. Conclusion: non-military, but their designer had feedscatteron-field knowledge beyond public literature. Someone is studying us, and not superficially."
+        },
+        {
+          "type": "paragraph",
+          "content": "No one mentioned repairing DT-03 again. Some things, once broken, stay broken."
         }
       ]
     }

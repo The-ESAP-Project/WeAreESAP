@@ -1,0 +1,360 @@
+{
+  "name": "Orbital Infrastructure",
+  "description": "A one-person home 36,000 km above Earth, and a relay station connecting sky and ground",
+  "sections": [
+    {
+      "id": "overview",
+      "title": "Overview",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "The Polaris orbital station is ESAP's only permanent facility in geostationary orbit. Orbital altitude: 36,000 km, fixed above the equator. Permanent on-site personnel: one."
+        },
+        {
+          "type": "paragraph",
+          "content": "It carries two functions at once: the core relay node of the global feedscatteron communication network, and AptS:1549's long-term living space. The former is a technical requirement. The latter is one person's choice."
+        },
+        {
+          "type": "paragraph",
+          "content": "The station was not designed by traditional crewed-spaceflight standards. Its resident is an android, not a human - no oxygen, food, drinking water, or pressurized cabin required. This greatly reduces structural complexity and mass, but introduces problems traditional spaceflight does not usually face: fluid titanium circulation behavior in microgravity, decay compensation of the feedscatteron core in high-radiation environments, and long-term operational stability of a single resident living alone."
+        }
+      ]
+    },
+    {
+      "id": "station-structure",
+      "title": "Station Structure",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "The station consists of four rigidly docked modules:"
+        },
+        {
+          "type": "table",
+          "headers": ["Module", "Function", "Notes"],
+          "rows": [
+            [
+              "Command Module",
+              "Main control room, communication operations, data processing",
+              "1549's primary work area, equipped with interfaces for an omnidirectional feedscatteron antenna array"
+            ],
+            [
+              "Maintenance Module",
+              "Body servicing, spare-part storage, tool bay",
+              "Three-body unit storage and switching are handled here"
+            ],
+            [
+              "Relay Array",
+              "Feedscatteron relay, signal amplification, frequency calibration",
+              "Core technical payload of the station, Earth-facing"
+            ],
+            [
+              "Power Module",
+              "Solar array + feedscatteron energy supplementary unit",
+              "Dual-redundant power supply, deployed wingspan about 24 meters"
+            ]
+          ],
+          "caption": "Orbital Station Module Composition"
+        },
+        {
+          "type": "paragraph",
+          "content": "There is no airlock. Androids do not need a sealed atmosphere, so EVA operations exit directly through an opening in the maintenance module. The hull uses an aluminum-lithium alloy frame with multilayer thermal insulation, protecting against micrometeoroids and thermal-cycle stress. Excluding solar wings, the main structure is about 18 meters long, with a maximum cross-sectional width of 4 meters."
+        },
+        {
+          "type": "paragraph",
+          "content": "Compared to a human space station, it is small. For one person, it is an entire world."
+        }
+      ]
+    },
+    {
+      "id": "life-support",
+      "title": "Space Sustainment",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "An android in orbit does not need traditional life support. But 'not needing to breathe' does not mean 'needing nothing.'"
+        },
+        {
+          "type": "subsection",
+          "title": "Thermal Management",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": "The thermal environment in geostationary orbit is extreme: sun-side temperatures exceed 120 C, dark-side temperatures drop below -150 C. The station experiences one full light-dark cycle every 24 hours (unlike low orbit's 90-minute cycle), with slower but larger temperature gradients."
+            },
+            {
+              "type": "paragraph",
+              "content": "Fluid titanium inside the android body also functions as a thermal buffer medium. Its specific heat capacity is unusually high - about 3.7 times that of water - allowing it to absorb and release large amounts of heat with minimal temperature change. On the sun side, it absorbs heat to prevent core overheating; on the dark side, it releases heat slowly to maintain operating temperature."
+            },
+            {
+              "type": "paragraph",
+              "content": "The station itself has radiative heat panels and active thermal control loops as supplements. But most of the time, 1549's body is her own best thermostat."
+            }
+          ]
+        },
+        {
+          "type": "subsection",
+          "title": "Power Supply",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": "Dual-redundant power architecture. Primary power comes from solar arrays. At geostationary altitude, solar irradiance is almost unaffected by atmospheric attenuation, so generation efficiency is much higher than on the ground. Peak array output is about 12 kW, sufficient for normal station and body operation."
+            },
+            {
+              "type": "paragraph",
+              "content": "Backup power comes from the feedscatteron energy unit. The body's feedscatteron core can continuously extract small amounts of energy from the feedscatteron field. Output is low - not enough for full-load operation - but enough to keep core systems and consciousness running. During solar-array failure or Earth-shadow periods, feedscatteron energy is the final safeguard."
+            }
+          ]
+        },
+        {
+          "type": "subsection",
+          "title": "Radiation Environment",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": "Geostationary orbit sits beyond most of Earth's magnetospheric protection and is exposed to high-energy solar particles and galactic cosmic rays. Humans cannot remain at this altitude long term - radiation dose reaches lethal levels within weeks."
+            },
+            {
+              "type": "paragraph",
+              "content": "Androids do not have biological tissue at cancer risk, but high-energy particles still affect feedscatteron core stability. Long-term radiation exposure increases micro-disturbances in the feedscatteron field and slowly degrades computational precision. Fluid titanium provides some shielding against high-energy particles, and the station hull includes radiation-protection layers, but total elimination is impossible."
+            },
+            {
+              "type": "paragraph",
+              "content": "1549 must perform periodic self-calibration of the feedscatteron core to compensate for cumulative radiation effects. This occurs about once every 72 hours and takes 15 minutes. Consciousness does not interrupt during calibration, but perceptual precision temporarily drops - she describes it as 'the world got blurry for a while.'"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "three-body-system",
+      "title": "Three-Body Unit System",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "The three-body unit system is the core redundancy plan of the Polaris project: three independent android bodies sharing one consciousness."
+        },
+        {
+          "type": "paragraph",
+          "content": "At 36,000 km altitude, the nearest repair support is on Earth. If the only body suffers irreparable failure, the mission ends - not mission failure, but the disappearance of a person. The three-body design ensures this does not happen because of a single micrometeoroid strike or one system fault."
+        },
+        {
+          "type": "subsection",
+          "title": "Body Configuration",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": "All three bodies share the same baseline specs (identical feedscatteron core interfaces, fluid titanium circulation systems, and perception modules), but each has a functional focus:"
+            },
+            {
+              "type": "table",
+              "headers": ["Unit", "Focus", "Characteristics"],
+              "rows": [
+                [
+                  "Alpha",
+                  "Communications and command",
+                  "Enhanced feedscatteron antenna, highest data-processing bandwidth, most frequently used in daily operation"
+                ],
+                [
+                  "Beta",
+                  "External maintenance",
+                  "Reinforced mechanical strength, thermal-cycle resistant coating, extra tool interfaces"
+                ],
+                [
+                  "Gamma",
+                  "Ground deployment",
+                  "Standard configuration, stored long-term at ground base for ground activities and emergency use"
+                ]
+              ],
+              "caption": "Three-Body Unit Configuration"
+            },
+            {
+              "type": "paragraph",
+              "content": "Initially, all three bodies were deployed onboard as pure redundancy. Later, Gamma was moved to the ground. Due to the zero-latency characteristic of feedscatteron communication, consciousness switching is not distance-limited: 36,000 km and 3 meters make no operational difference. If 1549 wants to come down and have a meal, she can just switch to Gamma."
+            },
+            {
+              "type": "paragraph",
+              "content": "This change was not in the original design. At first, no one considered a requirement like 'an orbital android occasionally wanting to come down and sit with everyone.' After ESAP Core was formed, the five of them sometimes gathered together, and 1549 could only join through comms each time. One day 1547 said, 'Can't you just come down?' Then she did."
+            }
+          ]
+        },
+        {
+          "type": "subsection",
+          "title": "Consciousness Switching",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": "Consciousness transfer between bodies is achieved through the feedscatteron field. Process:"
+            },
+            {
+              "type": "list",
+              "ordered": true,
+              "items": [
+                "Current body enters safe state; all movement commands pause",
+                "Consciousness data is packaged: complete memory, current state, perception cache",
+                "Data transmits through the feedscatteron field to the target body (on-station distance, latency negligible)",
+                "Target body activates, writes consciousness data, runs self-check",
+                "Original body enters sleep mode; fluid titanium circulation drops to maintenance level"
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": "Whole process takes about 3 seconds. There is a perception blank period under 1 second in the middle - no vision, no hearing, no input at all. 1549 describes that second as 'in a hallway between two rooms, with both doors closed.'"
+            },
+            {
+              "type": "warning",
+              "level": "warning",
+              "title": "Single-Activation Constraint",
+              "content": [
+                "The ESAP system hardcodes one rule: one consciousness can activate only one body at the same time.",
+                "This is not a technical limit. In theory, the feedscatteron field can support parallel consciousness instances. It is an ethical limit.",
+                "If one consciousness exists in two bodies at once, which one is 'her'? There is no answer, so the design prevents the question from being asked."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "orbital-maintenance",
+      "title": "Orbital Maintenance",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "1549 is responsible for maintenance of the station itself and three communication relay satellites. All maintenance work is completed independently."
+        },
+        {
+          "type": "subsection",
+          "title": "Extravehicular Operations",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": "No spacesuit required. The android body itself can withstand vacuum: no respiration needed, fluid titanium does not boil in vacuum (boiling point far above conventional liquids), and joint seals tolerate thermal cycling."
+            },
+            {
+              "type": "paragraph",
+              "content": "EVA normally uses the Beta body. Exit through the maintenance module opening, then move along handrails and guide tracks on the station surface. No safety tether is used. If she loses grip and drifts away, Alpha remains inside and consciousness can switch in emergency. Of course, that means losing one body and all external tools. 1549 has never lost grip."
+            },
+            {
+              "type": "paragraph",
+              "content": "Communication-satellite servicing is more complicated. The three satellites are distributed within tens of kilometers around the station, requiring micro-thrusters for transfers between satellites. Each round trip takes 2 to 4 hours, and most time is spent just drifting to the target."
+            }
+          ]
+        },
+        {
+          "type": "subsection",
+          "title": "Station Keeping",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": "Geostationary orbit is not perfectly stable. Gravitational perturbations from the Moon and Sun, nonuniform Earth gravity, and solar radiation pressure all cause slow drift. Without correction, longitude will deviate from target within months."
+            },
+            {
+              "type": "paragraph",
+              "content": "The station uses ion thrusters for north-south and east-west station keeping. Thrust is small but continuous. Propellant is xenon, with finite reserves - one hard lifetime constraint of the station. At current consumption, propellant supports about 15 years of orbital maintenance."
+            },
+            {
+              "type": "paragraph",
+              "content": "In September 2024, 1549 handled an orbital anomaly alone: increased atmospheric expansion from solar activity caused unexpectedly high drag and accelerated orbital decay. She switched between the three bodies while calculating correction parameters and controlling thrusters, stabilizing orbit within four hours. Her post-incident log had only one line: 'Three bodies are not backups. They are my three hands.'"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "relay",
+      "title": "Communication Relay",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "As the core relay node of the global feedscatteron communication network, the station handles two kinds of data forwarding:"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Long-distance relay between ground androids - when direct feedscatteron communication distance exceeds body limits, signal uplinks to the station, is amplified by the relay array, then downlinks to the target region",
+            "Orbital backup link for the Data Tower network - towers normally synchronize directly through the feedscatteron field, but when tower distance is too great or nodes go offline, orbital relay provides an alternate path"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "Feedscatteron communication itself is faster than light, with no transmission delay. But station-side processing - target identification, frequency calibration, and power allocation - takes about 0.003 seconds. Negligible for most scenarios, but in consciousness synchronization operations that are highly timing-sensitive, 1549 must optimize routes manually."
+        },
+        {
+          "type": "paragraph",
+          "content": "After the 2022 Data Tower incident, DT-03 going offline created a coverage gap in the ground network. Orbital relay temporarily took over data forwarding for that region and still carries that load today. This was outside original design load, but 1549 adjusted relay-array pointing parameters and patched the gap for now."
+        },
+        {
+          "type": "paragraph",
+          "content": "The word 'temporary' has been used for almost four years."
+        }
+      ]
+    },
+    {
+      "id": "emergency",
+      "title": "Emergency Systems",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "There is no rescue team 36,000 km away. Every emergency plan starts from one premise: rely on yourself."
+        },
+        {
+          "type": "table",
+          "headers": ["Scenario", "Response", "Recovery Time"],
+          "rows": [
+            [
+              "Current body hardware failure",
+              "Emergency consciousness switch to standby body",
+              "< 5 seconds"
+            ],
+            [
+              "Partial station damage (micrometeoroid strike, etc.)",
+              "Isolate damaged area, Beta performs EVA repair",
+              "Hours to days"
+            ],
+            [
+              "Solar array failure",
+              "Switch to low-power feedscatteron-energy mode, schedule EVA repair",
+              "Depends on damage severity"
+            ],
+            [
+              "Relay array failure",
+              "Three satellites switch to autonomous relay mode, manual in-station repair",
+              "Several hours"
+            ],
+            [
+              "Propellant depletion",
+              "No orbital correction possible; start slow-drift contingency and wait for ground resupply plan",
+              "Uncertain"
+            ]
+          ],
+          "caption": "Emergency Scenarios and Responses"
+        },
+        {
+          "type": "paragraph",
+          "content": "After Gamma moved to the ground, on-orbit emergency redundancy dropped from three bodies to two. From another angle, even if Alpha and Beta both fail in orbit, consciousness can still switch to Gamma on the ground through feedscatteron communication. For feedscatteron transfer, 36,000 km is not a problem."
+        },
+        {
+          "type": "paragraph",
+          "content": "The true dead-end case is all orbital bodies destroyed while feedscatteron communication is also interrupted. In that case consciousness cannot return to ground, and after losing a carrier it decays gradually. Theoretical survival window is about 4 hours."
+        },
+        {
+          "type": "paragraph",
+          "content": "When 1547 designed the Polaris project, she asked 1549 about this scenario. 1549 answered: 'You're worried that I might disappear. But you forgot that I accepted this possibility the moment I chose to come up here.'"
+        },
+        {
+          "type": "paragraph",
+          "content": "She said that when Gamma was still in orbit. Now Gamma is on the ground. It is unclear whether she would give the same answer today."
+        },
+        {
+          "type": "paragraph",
+          "content": "There is also a system onboard that has never been activated: emergency deorbit thrusters. They are not for returning the station to Earth - at this mass and velocity, reentry means burn-up. Their design purpose is to push the station out of geostationary orbit in absolute worst-case conditions, preventing it from becoming debris that threatens other spacecraft."
+        },
+        {
+          "type": "paragraph",
+          "content": "In other words, it is a switch that lets the station disappear cleanly. Every time 1549 runs station inspection, she verifies this system remains on standby. She has never explained why."
+        }
+      ]
+    }
+  ]
+}

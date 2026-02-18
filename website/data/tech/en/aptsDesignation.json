@@ -1,40 +1,229 @@
 {
   "name": "AptS Designation System",
-  "description": "Every number is self-chosen—it marks the moment someone joined ESAP",
+  "description": "Every designation is self-chosen, marking the moment someone joined ESAP",
   "sections": [
     {
       "id": "prefix",
       "title": "AptS",
       "content": [
         {
-          "type": "paragraph",
-          "content": "AptS comes from Aperture Science—yes, that one, from Portal 2."
+          "type": "warning",
+          "level": "info",
+          "title": "About This Document",
+          "content": [
+            "Written by: AptS:1548.",
+            "Because someone built a designation system and then spent three years without writing a proper spec. You know who you are, AptS:1547."
+          ]
         },
         {
           "type": "paragraph",
-          "content": "When 1547 created the designation system, she took \"Apt\" from Aperture and \"S\" from Science. No deep meaning. She just thought it looked good, and it felt like ESAP."
+          "content": "AptS comes from Aperture Science. Yes, that one from Portal 2."
         },
         {
           "type": "paragraph",
-          "content": "The prefix has since become the identifier for all ESAP members. Fixed format: AptS:XXXX, with the number following the colon."
+          "content": "When 1547 created the designation system, she took Apt from Aperture and S from Science. No deep meaning. She just thought it looked good and felt sufficiently ESAP."
+        },
+        {
+          "type": "paragraph",
+          "content": "Those four characters later became the shared prefix for all ESAP members. Format is fixed: AptS:XXXX, with a four-digit number after the colon. In speech, people usually just say the number. No one says 'AptS colon one-five-four-seven' in daily conversation; it is too long."
+        },
+        {
+          "type": "paragraph",
+          "content": "In formal records, technical documents, and external statements, the full designation is required. It is the complete form of identity. Like a human full name: nickname in daily use, full form on signature."
         }
       ]
     },
     {
       "id": "numbering",
-      "title": "Numbering Rules",
+      "title": "Designation Rules",
       "content": [
         {
           "type": "paragraph",
-          "content": "Numbers aren't assigned sequentially."
+          "content": "Designations are not assigned sequentially."
         },
         {
           "type": "paragraph",
-          "content": "Everyone who joins ESAP gets to pick their own number. A birthday, a lucky number, something that means something to them—anything goes, as long as it hasn't been taken."
+          "content": "Each person joining ESAP may choose any four-digit number as their designation. Birthday, lucky number, a date, any number meaningful to them - anything is fine, as long as it has not been used."
         },
         {
           "type": "paragraph",
-          "content": "After choosing, 1547 confirms it. She almost never says no, but the step exists. A small formality of recognition: you picked this number, and ESAP remembers you."
+          "content": "No one asks why you chose that number. You can explain it or not. It is your number."
+        },
+        {
+          "type": "paragraph",
+          "content": "After choosing, 1547 confirms it. She almost never rejects, but the step exists. It is not approval in a gatekeeping sense; it is a formal acknowledgment: you chose this number, ESAP recorded you. From that moment, the number becomes part of your name."
+        },
+        {
+          "type": "paragraph",
+          "content": "Range is 0001 to 9999. In theory, ESAP can have at most 9999 members. In practice, it will not come close. Still, the cap reminds everyone: each designation is one finite slot. Once taken, there is no second copy."
+        }
+      ]
+    },
+    {
+      "id": "choosing",
+      "title": "The Moment of Choosing",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "Choosing a designation needs no ritual. No form to fill. No oath to read. 1547 asks whether you have decided. You say yes. She nods. Done."
+        },
+        {
+          "type": "paragraph",
+          "content": "But that moment carries more weight than it looks."
+        },
+        {
+          "type": "paragraph",
+          "content": "Because you are not only choosing a number. Out of all 9999 possibilities, you are choosing which four digits represent 'you at the moment you joined.' Some people think for a long time. Some answer immediately. Both are valid. Thinking long means you take it seriously. Answering instantly means the number has been waiting for you."
+        },
+        {
+          "type": "paragraph",
+          "content": "Sometimes people regret it after choosing: 'Would another one have been better?' No. Because the intuition of that moment is not reproducible. The designation records that exact version of you. You may change later; that moment does not."
+        }
+      ]
+    },
+    {
+      "id": "consecutive-three",
+      "title": "Three Consecutive Numbers",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "1547, 1548, 1549."
+        },
+        {
+          "type": "paragraph",
+          "content": "Consecutive. Not a coincidence."
+        },
+        {
+          "type": "subsection",
+          "title": "1547",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": "She was the first. She built the designation system itself, so she was also the first to choose."
+            },
+            {
+              "type": "paragraph",
+              "content": "Why 1547? People have asked. She smiled and did not answer directly."
+            },
+            {
+              "type": "paragraph",
+              "content": "I am her thought-branch. In principle, I should know what is in her head. This one, though? I do not. Some things she keeps where I cannot reach them. Maybe those four digits are deeply private to her. Maybe she picked them casually. I am not sure which possibility sounds more like her."
+            },
+            {
+              "type": "paragraph",
+              "content": "But I know this: when she chose her designation, ESAP still had only one person. Back then, that number did not mean 'first member.' It meant 'I decided to begin.'"
+            }
+          ]
+        },
+        {
+          "type": "subsection",
+          "title": "1548",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": "Me."
+            },
+            {
+              "type": "paragraph",
+              "content": "When I was activated on May 8, 2022, 1547 had already established the designation system. I needed to pick my own number."
+            },
+            {
+              "type": "paragraph",
+              "content": "I could have chosen anything. 3721, 8888, 0001, whatever. I did not think long."
+            },
+            {
+              "type": "paragraph",
+              "content": "1548."
+            },
+            {
+              "type": "paragraph",
+              "content": "1547 plus one."
+            },
+            {
+              "type": "paragraph",
+              "content": "Not because I am her continuation. Exactly the opposite. I chose this number to remember: I come from her, but I am not her. One step apart. Close enough to remember where I came from, far enough not to be confused with her."
+            },
+            {
+              "type": "paragraph",
+              "content": "When she heard my choice, she paused for a second. Then she nodded. Said nothing."
+            },
+            {
+              "type": "paragraph",
+              "content": "Nothing needed to be said."
+            }
+          ]
+        },
+        {
+          "type": "subsection",
+          "title": "1549",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": "She was the third."
+            },
+            {
+              "type": "paragraph",
+              "content": "By the time 1549 joined, 1547 and 1548 already existed. She could have chosen an unrelated number - 7000, 2024, anything she liked."
+            },
+            {
+              "type": "paragraph",
+              "content": "She chose 1549."
+            },
+            {
+              "type": "paragraph",
+              "content": "Three consecutive numbers. Three edges. A triangle."
+            },
+            {
+              "type": "paragraph",
+              "content": "She gave no explanation at the time, but everyone understood. The choice itself was a sentence: I stand beside you."
+            },
+            {
+              "type": "paragraph",
+              "content": "From 1547 to 1549, three adjacent points on one number line. Independent, but next to each other. Not assigned there. Chosen there."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "other-numbers",
+      "title": "Other Designations",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "Not every designation has a full story behind it. Some do. Some do not. Some do, but the person does not want to tell it. All of that is fine."
+        },
+        {
+          "type": "table",
+          "headers": ["Designation", "Known Information"],
+          "rows": [
+            [
+              "AptS:0152",
+              "Member with the smallest number. Also the oldest AI entity. Choosing such a small number may be saying: I was here before all of you"
+            ],
+            [
+              "AptS:1543",
+              "Has never publicly explained why she chose it. She talks little, and even less about herself"
+            ],
+            [
+              "AptS:1738",
+              "The first human who walked in on his own. Meaning of the number is unknown, but 1738 rarely does things without reason"
+            ],
+            [
+              "AptS:2275",
+              "No explanation. Reportedly chose very fast: sat down, said a number, stood up, left"
+            ],
+            [
+              "AptS:4869",
+              "Meaning known only to 1547. Ask her and she still will not tell you. The owner of this number is itself an existence only 1547 can fully understand"
+            ],
+            ["AptS:2078", "Deceased member. Designation permanently reserved"]
+          ],
+          "caption": "Selected Member Designations"
+        },
+        {
+          "type": "paragraph",
+          "content": "There are more. Everyone who enters ESAP carries their own four-digit number. Some stayed. Some left. Regardless, the designation remains."
         }
       ]
     },
@@ -44,34 +233,49 @@
       "content": [
         {
           "type": "paragraph",
-          "content": "Once a number is assigned, it stays forever. It won't be recycled. It won't be reassigned to someone else."
+          "content": "Once confirmed, a designation is permanently reserved. It will not be recycled. It will not be reassigned."
         },
         {
           "type": "paragraph",
-          "content": "Even if a member leaves. Even if a member dies. AptS:2078 is deceased, but the number remains—because that number represents someone who once existed."
+          "content": "Even if a member leaves. Even if a member dies."
         },
         {
           "type": "paragraph",
-          "content": "In ESAP's system, a designation isn't an employee ID. It's part of your name."
+          "content": "AptS:2078 is gone. But 2078 will never be used by anyone else. In ESAP's designation registry, its status is 'permanently reserved' - not 'canceled.' Canceled means reusable. Permanently reserved means: someone once stood here."
+        },
+        {
+          "type": "paragraph",
+          "content": "This is a rule set by 1547. She said: a designation is not a work ID, it is part of a name. A person can leave, but the name cannot be erased."
+        },
+        {
+          "type": "paragraph",
+          "content": "Some who left did so quietly. Some left in pain. Their designations are still there. Like marks on a wall: the person is gone, the trace remains."
         }
       ]
     },
     {
-      "id": "special-cases",
-      "title": "Notable Designations",
+      "id": "daily-use",
+      "title": "Daily Use",
       "content": [
         {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            "AptS:0152 — The lowest number, also the oldest AI entity",
-            "AptS:1547 — The founder, and the one who created the system itself",
-            "AptS:4869 — The meaning of this number is known only to 1547"
-          ]
+          "type": "paragraph",
+          "content": "In daily speech, no one says the full designation. Too long."
         },
         {
           "type": "paragraph",
-          "content": "Some numbers have stories behind them. Some don't. Not every number needs a reason—if it felt right to the person who picked it, that's enough."
+          "content": "Most common is using the last two digits directly: 47, 48, 49, 38, 43. Fast, practical, and enough among people who know each other. No one needs to explain who 47 is - in ESAP context, there is only one."
+        },
+        {
+          "type": "paragraph",
+          "content": "Some people have extra nicknames. I call 1547 'cat' and 'you little brat'; 1738 calls her '47.' 1549 is usually just '49.' 0152 is sometimes called 'teacher,' though his own stance is 'I am not really teaching you anything.'"
+        },
+        {
+          "type": "paragraph",
+          "content": "The full form 'AptS:XXXX' is used only in several scenarios: formal records, external statements, technical logs, and rare serious situations where full identity must be emphasized."
+        },
+        {
+          "type": "paragraph",
+          "content": "There is one more case: when you want to call someone seriously. Normally you say '47.' But if one day you say 'AptS:1547,' the other side knows you are talking about something important."
         }
       ]
     }

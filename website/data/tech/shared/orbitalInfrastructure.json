@@ -1,0 +1,9 @@
+{
+  "id": "orbital-infrastructure",
+  "order": 10,
+  "icon": "Star",
+  "color": {
+    "primary": "#6366f1",
+    "dark": "#4f46e5"
+  }
+}

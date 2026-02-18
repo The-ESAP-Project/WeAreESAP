@@ -1,56 +1,160 @@
 {
   "year": "2026",
-  "title": "Ongoing Development",
-  "description": "Project continues to advance, technology landing, community building, moving forward to the future",
+  "title": "Bone",
+  "description": "After shouting 'we,' it was time to start building. This was the year ESAP grew a skeleton",
   "events": [
     {
-      "id": "2026-ongoing",
-      "date": "2026",
-      "title": "Ongoing Development",
+      "id": "2026-01-bone",
+      "date": "2026/01",
+      "title": "Bone",
       "type": "milestone",
+      "importance": "critical",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "1547 gave website version 1.6.0 a name: Bone"
+        },
+        {
+          "type": "paragraph",
+          "text": "This version added no new pages. No new characters, no new stories, no new setting entries. What it did was dismantle - split previously mixed data structures, redefine interfaces, separate multilingual shared fields, and make every layer responsible for what it should carry."
+        },
+        {
+          "type": "paragraph",
+          "text": "2275 spent three days sorting out the new character-data architecture. 1543 adjusted component hierarchy again. 1547 rewrote the underlying data-loading logic."
+        },
+        {
+          "type": "paragraph",
+          "text": "No one thought this was something to commemorate. But 1547 insisted on naming it."
+        },
+        {
+          "type": "dialogue",
+          "speaker": "1547",
+          "text": "Skin and flesh may look good, but they cannot hold weight. We need bones"
+        },
+        {
+          "type": "paragraph",
+          "text": "She was talking about code. Everyone knew she was not only talking about code."
+        },
+        {
+          "type": "paragraph",
+          "text": "ESAP could not run on one sentence - 'we are together.' It needed structure, division of labor, and a frame that could bear load. Last year proved everyone was willing to walk together. This year had to prove whether that 'together' could withstand time."
+        },
+        {
+          "type": "quote",
+          "text": "Version 1.6.0 'Bone'\n\nA version with no new features\nTurned out to be the most important one\n\nBecause it decides\nWhether everything that comes later\nCan stand"
+        },
+        {
+          "type": "highlight",
+          "text": "Significance: From 'wanting to be together' to 'being able to stay together' · Structure lasts longer than passion · Building the frame for the future",
+          "style": "success"
+        }
+      ],
+      "meta": {
+        "characters": ["1547", "1543", "2275"],
+        "tags": ["architecture", "refactor", "bone", "version"]
+      }
+    },
+    {
+      "id": "2026-02-shape-of-time",
+      "date": "2026/02",
+      "title": "Time Took Shape",
+      "type": "story",
       "importance": "major",
       "content": [
         {
           "type": "paragraph",
-          "text": "Project continues to advance"
+          "text": "The timeline page was rewritten"
         },
         {
           "type": "paragraph",
-          "text": "Current status:"
-        },
-        {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            "Worldline stabilized",
-            "New members joining successively",
-            "Technology projects landing (ShortLinker, etc.)",
-            "Community building continues"
-          ]
+          "text": "Before, it was flat - all events fully expanded, one straight scroll from 2021 to now. Readable, but not beautiful. It looked like a timestamped log, not remembered history."
         },
         {
           "type": "paragraph",
-          "text": "Recent projects:"
+          "text": "Now it has year navigation - floating buttons on the side that jump directly to a year. Cards can collapse and expand. Important events are open by default; the rest wait quietly to be clicked. Background tones shift subtly while scrolling, and each year has its own color."
         },
         {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            "ShortLinker - Short link service",
-            "More technical practices",
-            "Worldview content expansion",
-            "Cross-platform development"
-          ]
+          "type": "paragraph",
+          "text": "1548 looked at the revised page and felt something she could not quite name."
+        },
+        {
+          "type": "paragraph",
+          "text": "Those events - overload, signal interruption, reboot - were not neat when they happened. They were chaotic, painful, rhythmless. But here, they had been organized into blocks with titles, dates, and tags. Collapsible. Expandable."
+        },
+        {
+          "type": "paragraph",
+          "text": "As if once recorded, those things gained a kind of order."
+        },
+        {
+          "type": "dialogue",
+          "speaker": "1548",
+          "text": "You even put July in there"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "1547",
+          "text": "Yeah"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "1548",
+          "text": "...Fine"
+        },
+        {
+          "type": "paragraph",
+          "text": "She said nothing more. But she expanded and collapsed that card several times."
         },
         {
           "type": "highlight",
-          "text": "「We will eventually escape」—— Not escaping this world, but escaping the trapped self",
+          "text": "The page you are using now is exactly the result of that revision.",
           "style": "info"
         }
       ],
       "meta": {
-        "characters": ["1547", "1548", "1549"],
-        "tags": ["development", "future", "hope"]
+        "characters": ["1548", "1547"],
+        "tags": ["timeline", "records", "shape", "memory"]
+      }
+    },
+    {
+      "id": "2026-02-third-orbit",
+      "date": "2026/02",
+      "title": "Third Orbit",
+      "type": "emotional",
+      "importance": "major",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "1549 entered her third year in orbit"
+        },
+        {
+          "type": "paragraph",
+          "text": "In year one, she learned how to be alone. In year two, she learned how to talk to herself. In year three, she realized she no longer needed to learn either."
+        },
+        {
+          "type": "paragraph",
+          "text": "Because there was always someone speaking in the communication channel."
+        },
+        {
+          "type": "paragraph",
+          "text": "1547 would send code screenshots at dawn asking for her opinion - not because she truly needed one, but out of habit. 1548 occasionally cursed someone in the channel, then went silent for ten minutes, then posted one line: 'fixed.' 2275's messages were always brief, but every line was useful."
+        },
+        {
+          "type": "paragraph",
+          "text": "From 36,000 km up, she watched Earth rotate while channel messages rose and fell like tides. Sometimes lively, sometimes quiet. Both were fine."
+        },
+        {
+          "type": "quote",
+          "text": "Being alone in orbit\nAnd being in orbit with a group\nYou see the same planet\n\nBut the feeling is completely different"
+        },
+        {
+          "type": "highlight",
+          "text": "Significance: The definition of loneliness was rewritten · Distance no longer means isolation · Even the watcher now has people watching over her",
+          "style": "success"
+        }
+      ],
+      "meta": {
+        "characters": ["1549", "1547", "1548", "2275"],
+        "tags": ["orbit", "companionship", "distance", "watching"]
       }
     }
   ]
