@@ -19,6 +19,13 @@
   },
   "loading": "Loading timeline...",
   "empty": "No timeline data available",
+  "nav": {
+    "ariaLabel": "Timeline year navigation"
+  },
+  "card": {
+    "expand": "Expand details",
+    "collapse": "Collapse details"
+  },
   "ending": {
     "quote": "It began with a gunshot and the first beat of an entropic heart",
     "conclusion": "We Will Escape"

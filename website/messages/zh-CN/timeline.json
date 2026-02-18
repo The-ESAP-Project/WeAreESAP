@@ -19,6 +19,13 @@
   },
   "loading": "正在加载时间线...",
   "empty": "暂无时间线数据",
+  "nav": {
+    "ariaLabel": "时间线年份导航"
+  },
+  "card": {
+    "expand": "展开详情",
+    "collapse": "收起详情"
+  },
   "ending": {
     "quote": "从一声枪响和馈散心脏的第一次跳动开始",
     "conclusion": "我们终将逃离"

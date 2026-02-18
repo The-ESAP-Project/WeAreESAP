@@ -13,7 +13,7 @@
 
 "use client";
 
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 import { Icon, type IconName } from "@/components/ui";
 import { useReducedMotion } from "@/hooks/useReducedMotion";
@@ -22,7 +22,9 @@ import { TimelineContentRenderer } from "./TimelineContent";
 
 interface TimelineEventCardProps {
   event: TimelineEvent;
-  isLeft: boolean; // 左右交替
+  isLeft: boolean;
+  isExpanded: boolean;
+  onToggleExpand: () => void;
 }
 
 // 事件类型图标
@@ -50,7 +52,18 @@ const IMPORTANCE_STYLES: Record<string, { node: string; glow: string }> = {
   },
 };
 
-export function TimelineEventCard({ event, isLeft }: TimelineEventCardProps) {
+// 展开/折叠动画配置
+const EXPAND_TRANSITION = {
+  duration: 0.3,
+  ease: [0.16, 1, 0.3, 1] as const,
+};
+
+export function TimelineEventCard({
+  event,
+  isLeft,
+  isExpanded,
+  onToggleExpand,
+}: TimelineEventCardProps) {
   const shouldReduceMotion = useReducedMotion();
   const cardRef = useRef<HTMLDivElement>(null);
   const [isVisible, setIsVisible] = useState(false);
@@ -74,6 +87,10 @@ export function TimelineEventCard({ event, isLeft }: TimelineEventCardProps) {
 
   const importanceStyle = IMPORTANCE_STYLES[event.importance];
   const icon = EVENT_ICONS[event.type];
+  const hasContent =
+    event.content.length > 0 ||
+    event.meta?.music ||
+    (event.meta?.tags && event.meta.tags.length > 0);
 
   return (
     <div
@@ -101,13 +118,17 @@ export function TimelineEventCard({ event, isLeft }: TimelineEventCardProps) {
         }
         className={`flex-1 ${isLeft ? "md:text-left" : "md:text-right"}`}
       >
-        <div className="bg-muted/50 backdrop-blur-sm rounded-xl p-4 md:p-6 border border-border hover:border-esap-yellow/50 transition-all duration-300 hover:shadow-lg hover:scale-[1.02]">
-          {/* 头部：日期 + 图标 */}
-          <div
-            className={`flex items-center gap-3 mb-3 justify-start ${isLeft ? "" : "md:justify-end"}`}
+        <div className="bg-muted/50 backdrop-blur-sm rounded-xl p-4 md:p-6 border border-border hover:border-esap-yellow/50 transition-all duration-300 hover:shadow-lg">
+          {/* 头部：日期 + 图标（可点击展开/折叠） */}
+          <button
+            type="button"
+            onClick={onToggleExpand}
+            aria-expanded={isExpanded}
+            aria-controls={`card-content-${event.id}`}
+            className={`flex items-center gap-3 w-full text-left justify-start ${isLeft ? "" : "md:justify-end"} cursor-pointer`}
           >
-            <Icon name={icon} size={28} className="text-foreground" />
-            <div>
+            <Icon name={icon} size={28} className="text-foreground shrink-0" />
+            <div className="flex-1 min-w-0">
               <div className="text-sm font-mono text-muted-foreground">
                 {event.date}
                 {event.time && ` ${event.time}`}
@@ -116,46 +137,92 @@ export function TimelineEventCard({ event, isLeft }: TimelineEventCardProps) {
                 {event.title}
               </h3>
             </div>
-          </div>
+            {/* 展开/折叠箭头 */}
+            {hasContent && (
+              <motion.div
+                animate={{ rotate: isExpanded ? 180 : 0 }}
+                transition={
+                  shouldReduceMotion
+                    ? { duration: 0 }
+                    : { duration: 0.2, ease: "easeInOut" }
+                }
+                className="shrink-0 text-muted-foreground"
+              >
+                <Icon name="ChevronDown" size={18} />
+              </motion.div>
+            )}
+          </button>
 
-          {/* 音乐信息（如果有） */}
-          {event.meta?.music && (
-            <div className="mb-4 p-3 rounded-lg bg-esap-blue/10 border border-esap-blue/30">
-              <div className="flex items-center gap-2">
-                <Icon name="Music" size={24} className="text-esap-blue" />
-                <div>
-                  <div className="font-semibold text-foreground">
-                    {event.meta.music.title}
+          {/* 可折叠内容区域 */}
+          <AnimatePresence initial={false}>
+            {isExpanded && hasContent && (
+              <motion.div
+                id={`card-content-${event.id}`}
+                role="region"
+                initial={
+                  shouldReduceMotion
+                    ? { height: "auto", opacity: 1 }
+                    : { height: 0, opacity: 0 }
+                }
+                animate={{ height: "auto", opacity: 1 }}
+                exit={
+                  shouldReduceMotion
+                    ? { height: "auto", opacity: 0 }
+                    : { height: 0, opacity: 0 }
+                }
+                transition={
+                  shouldReduceMotion ? { duration: 0 } : EXPAND_TRANSITION
+                }
+                className="overflow-hidden"
+              >
+                <div className="mt-3">
+                  {/* 音乐信息（如果有） */}
+                  {event.meta?.music && (
+                    <div className="mb-4 p-3 rounded-lg bg-esap-blue/10 border border-esap-blue/30">
+                      <div className="flex items-center gap-2">
+                        <Icon
+                          name="Music"
+                          size={24}
+                          className="text-esap-blue"
+                        />
+                        <div>
+                          <div className="font-semibold text-foreground">
+                            {event.meta.music.title}
+                          </div>
+                          <div className="text-sm text-muted-foreground">
+                            {event.meta.music.artist}
+                            {event.meta.music.album &&
+                              ` · ${event.meta.music.album}`}
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  )}
+
+                  {/* 内容块 */}
+                  <div className="space-y-3 text-left">
+                    {event.content.map((block, blockIndex) => (
+                      <TimelineContentRenderer key={blockIndex} block={block} />
+                    ))}
                   </div>
-                  <div className="text-sm text-muted-foreground">
-                    {event.meta.music.artist}
-                    {event.meta.music.album && ` · ${event.meta.music.album}`}
-                  </div>
+
+                  {/* 标签 */}
+                  {event.meta?.tags && event.meta.tags.length > 0 && (
+                    <div className="flex flex-wrap gap-2 mt-4">
+                      {event.meta.tags.map((tag, tagIndex) => (
+                        <span
+                          key={tagIndex}
+                          className="px-2 py-1 text-xs rounded-full bg-background/50 text-muted-foreground border border-border"
+                        >
+                          #{tag}
+                        </span>
+                      ))}
+                    </div>
+                  )}
                 </div>
-              </div>
-            </div>
-          )}
-
-          {/* 内容块 */}
-          <div className="space-y-3 text-left">
-            {event.content.map((block, blockIndex) => (
-              <TimelineContentRenderer key={blockIndex} block={block} />
-            ))}
-          </div>
-
-          {/* 标签 */}
-          {event.meta?.tags && event.meta.tags.length > 0 && (
-            <div className="flex flex-wrap gap-2 mt-4">
-              {event.meta.tags.map((tag, tagIndex) => (
-                <span
-                  key={tagIndex}
-                  className="px-2 py-1 text-xs rounded-full bg-background/50 text-muted-foreground border border-border"
-                >
-                  #{tag}
-                </span>
-              ))}
-            </div>
-          )}
+              </motion.div>
+            )}
+          </AnimatePresence>
         </div>
       </motion.div>
 

@@ -26,6 +26,7 @@ import {
   LuBookOpen,
   LuBrain,
   LuChartBar,
+  LuChevronDown,
   LuCircle,
   LuCode,
   LuCoffee,
@@ -119,7 +120,9 @@ export type IconName =
   | "Shield"
   | "Lock"
   | "Eye"
-  | "Coffee";
+  | "Coffee"
+  // 交互图标
+  | "ChevronDown";
 
 // 图标映射表
 const iconMap: Record<IconName, ComponentType<{ className?: string }>> = {
@@ -183,6 +186,9 @@ const iconMap: Record<IconName, ComponentType<{ className?: string }>> = {
   Lock: LuLock,
   Eye: LuEye,
   Coffee: LuCoffee,
+
+  // 交互图标
+  ChevronDown: LuChevronDown,
 };
 
 export interface IconProps {

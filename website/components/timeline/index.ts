@@ -11,6 +11,8 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+export { TimelineAtmosphere } from "./TimelineAtmosphere";
 export { TimelineContentRenderer } from "./TimelineContent";
 export { TimelineEventCard } from "./TimelineEventCard";
 export { TimelineLine } from "./TimelineLine";
+export { TimelineYearNav } from "./TimelineYearNav";

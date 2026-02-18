@@ -1,6 +1,7 @@
 {
   "id": "pase",
   "order": 5,
+  "image": "/images/organizations/PASE.webp",
   "icon": "Eye",
   "theme": {
     "primary": "#a855f7",
