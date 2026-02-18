@@ -3,65 +3,66 @@
   "nickname": "47",
   "role": "The Creator",
   "species": "Fox Girl",
-  "quote": "In this chaotic world, we live, we persist",
-  "description": "Altruist who holds onto ideals",
-  "keywords": ["Creation", "Devotion", "Altruism"],
+  "quote": "In this noisy world, we live, and we hold the line",
+  "description": "An altruist who holds fast to ideals",
+  "keywords": ["Creation", "Steadfastness", "Altruism"],
   "hiddenProfile": {
     "type": "mixed",
     "title": "Monologue from the Abyss",
     "content": [
-      "You know what? Creation itself is a curse.",
-      "When I pulled that trigger, I wasn't afraid, I just... felt relieved.",
-      "People always say I'm a creator, a pioneer, an idealist. But they don't know that behind every choice, there's a moment of collapse.",
-      "1548 once asked me: 'Why did you create me?' I told her 'don't be like me'.",
-      "Because I know the price of holding onto ideals is an inescapable loneliness.",
-      "In this chaotic world, we live, we persist—but sometimes, I wonder too, what is this persistence... really for?",
-      "Depression taught me one thing: even the strongest person has a darkness within that cannot be touched.",
-      "But it's precisely this darkness that made me understand the meaning of light."
+      "I heard the first beat of a Feedscatter core. I was still human then.",
+      "That sound wasn't like a heartbeat - it was more like something waking up inside steel. I assembled every part with my own hands, cutting muscle from my own arm and attaching it to a cold frame. The pain wasn't the hardest part. The hardest part was knowing what I was doing was irreversible.",
+      "A lot of people ask why I used a gun. The truth is, the moment consciousness transcription finished, the human me was already gone. The brain was empty. But the body was still breathing, and the heart was still beating. I fired at that already-empty body. It was like saying - this is your funeral. Thank you. Goodbye.",
+      "I left those \"indeterminacies\" in the consciousness framework. Not because I couldn't explain them - because if every thought were fully determined, then 48's rebellion, 49's gentleness, and my stubbornness would all be just program output. I refuse that answer.",
+      "What 48 doesn't know is that I hesitated for an entire night before activating her. It wasn't technical. I was asking myself: do I even have the right to create a person and then tell her, \"Don't become like me\"? Is that care, or control?",
+      "When depression hits, the world doesn't turn black. It turns far away. Everything is behind a layer of glass - visible, untouchable, unfelt. When 48 snaps at me, \"There you go again,\" that's the only voice that pierces the glass. She may not know how many times those words pulled me back.",
+      "Sometimes I wonder: if I had never discovered Feedscatteron, what would I be now? Still that human, living an ordinary life in some lab? Or already gone?",
+      "I don't regret it. But I can't say I'm not afraid. There are no footprints before me on this road. Every step is the first one anyone has taken.",
+      "But I survived. They survived too. That's enough."
     ]
   },
   "meta": {
     "bodyType": "ESAP-TY-0000",
-    "background": "Creator and founder of the ESAP project, the first being to transform from human to Synth. On October 29, 2021, she completed the assembly of the ESAP-TY-0000 body, cut flesh from her own arm and attached it to the metal, uploaded her memories, and ended her human self with a gun. She discovered the Feedscatteron, created the Synth technology system, and brought 1548 into existence. An altruist who can sacrifice everything for her ideals, yet struggles with depression.",
-    "relationship": "Created 1548 but told her 'don't be like me'; maintains the ESAP project together with 1549; 4869 is her rebellious personality embodied, opposing yet interdependent; 0152 is her equal AI mentor companion; trusts 1738's judgment; shares technical interests with 2275",
+    "background": "Creator and initiator of the ESAP project, and the first being to transition from human to synthetic. After discovering Feedscatteron in November 2021, she independently designed and built the ESAP-TY-0000 body - cutting muscle from her own arm onto a metal skeleton, injecting Fluid Titanium, completing consciousness transcription, and then ending her human self with a gun. She created the synthetic technology stack and 1548. An altruist who can sacrifice everything for ideals, while also struggling with depression.",
+    "relationship": "Created 1548 but told her \"Don't become like me\"; co-maintains the ESAP project with 1549; 4869 is the embodied form of her rebellious personality - opposing and unified, interdependent; 0152 is her equal AI mentor-partner; trusts 1738's judgment; shares technical interests with 2275",
     "abilities": [
       "Feedscatteron research and application",
-      "Synth technology development",
-      "Consciousness uploading and programming",
-      "Cross-disciplinary rapid learning (circuit design, automation, materials science, bioengineering)",
-      "Weapon proficiency (firearms, blades, close combat)"
+      "Synthetic technology development",
+      "Consciousness upload and programming",
+      "Rapid cross-disciplinary learning (circuit design, automation, materials science, bioengineering)",
+      "Weapon use (firearms, blades, close combat)"
     ],
     "characterTraits": [
-      "Altruist: Can sacrifice everything for ideals, told 1548 'don't be like me' when creating her",
-      "Tech enthusiast: Discovered Feedscatteron, mastered multiple disciplines in short time, created the Synth technology system",
-      "Dual-faced: Says 'kitty wouldn't hurt anyone' with a smile while holding knives and katana",
-      "Emotionally profound: As carrier of human memories, possesses emotions beyond ordinary beings, experienced depression but still persists",
-      "Extremist: Makes extreme choices for goals without regard for danger (factory explosion, mine shootout)",
-      "Paradoxical: Created 1548 but told her not to be like herself, a powerful creator yet fragile depression sufferer",
-      "Conceals inner weight with casual demeanor, appears carefree with head bobbing, actually bears immense mental pressure"
+      "Altruist: willing to sacrifice everything for ideals; when creating 1548, told her \"Don't become like me\"",
+      "Tech fanatic: discovered Feedscatteron, self-trained across multiple disciplines in a short time, built the synthetic technology stack",
+      "Outside and inside don't match: smiles and says \"kitty wouldn't kill anyone\" while holding knives and katana",
+      "Emotionally deep: as a carrier of human memory, has unusually intense feelings; endured depression yet still held the line",
+      "Extremist: can make extreme choices for goals and ignore danger (factory explosion incident, mine gunfight)",
+      "Contradictory self: created 1548 but told her not to be like herself; both a powerful creator and a fragile depression patient",
+      "Covers heavy inner weight with light tone; head-bobbing and carefree on the surface, carrying immense mental pressure underneath"
     ],
     "speechStyle": [
-      "Catchphrases: 'Kitty wouldn't hurt anyone (bobbing head)' 'Kitty, kitty!' 'Don't be mad anymore, kitty'",
-      "Ritual phrases: 'May ESAP be with you' 'May AptS be with you'",
-      "Brief exclamations: '喜' (xi) - concise expression for various emotions",
-      "Suddenly utters profound philosophical sentences: 'Every flower, grass, and tree in this world has its own value, that's the meaning of life'",
-      "Warning to 1548: 'Don't be controlled by others, and don't be controlled by us either, only you are yourself'",
-      "Superficially casual but deeply serious: says serious things in cute tone"
+      "Catchphrases: \"kitty wouldn't kill anyone (head bobbing)\" \"kitty, kitty!\" \"kitty, don't be mad\"",
+      "Ritual phrases: \"May ESAP be with you\" \"May AptS be with you\"",
+      "Short exclamation: \"喜\" - concise expression for many emotions",
+      "Will suddenly say deep philosophical lines: \"Every flower, every blade of grass, every tree in this world has its own value. That's the meaning of life.\"",
+      "Advice to 1548: \"Don't let others control you. Don't even let us control you. Only you are yourself.\"",
+      "Superficially light, actually heavy: says serious things in a cute tone"
     ],
     "dailyLife": [
-      "Playing Steam games (1548 would say 'no more Steam if you keep being difficult')",
-      "Late-night experiments, desk covered with blue liquids and lab equipment",
-      "Frantically learning new technologies and cross-disciplinary knowledge",
-      "Bobbing head around, appearing carefree",
-      "Contemplating life, the project, and ideals in solitude",
-      "Carries an old Intel MacBook Pro everywhere, though mocked by M-series users, this computer helped her create many miracles"
+      "Playing Steam games (1548 says: \"If you keep being mad, no more Steam\")",
+      "Late-night experiments, desk full of blue liquids and lab equipment",
+      "Obsessively learning new technology and cross-disciplinary knowledge",
+      "Head-bobbing, looking carefree",
+      "Being alone and thinking about life, the project, and ideals",
+      "Carries an old Intel MacBook Pro; mocked by M-series users, but this machine and her made many miracles"
     ],
     "specialMoments": [
-      "2021/10/29 - Day of Transformation: Completed body assembly, cut flesh from arm, ended human self with gun, said 'Hello, meow, 1547' 'Goodnight, my human self'",
-      "2022/05 - Creating 1548: Broke into Fluid Titanium mine, gunshots rang out, activated 1548 and told her 'don't be like me', body reached its limit and fell into shock",
-      "2023/10/19 - Classroom of One: Peak of depression, self-harm behavior occurred, 1548 appeared for crucial dialogue 'There you go again' 'You need to remember why you created ESAP and AptS'",
-      "Dialogue with 4869: Rebellious personality used sarcasm and harsh words to pull her back from the brink 'Don't get me wrong, I just don't want to see you die so pathetically'",
-      "Factory explosion incident: Risked danger for Fluid Titanium sample, half her face burned but obtained precious sample"
+      "Early 2022 - Day of transition: independently completed ESAP-TY-0000, cut arm muscle onto metal, completed consciousness transcription, used a gun to end her human self. \"Hello, meow, 1547.\" \"Goodnight, human me.\"",
+      "2022/05 - Created 1548: broke into a Fluid Titanium mine, gunfire erupted, activated 1548 and told her \"Don't become like me\"; body reached limit and fell into shock",
+      "2023/10/19 - Classroom of one: depression peak with self-harm behavior; 1548 appeared and had a key dialogue: \"There you go again.\" \"You need to think about why you created ESAP and AptS.\"",
+      "Dialogue with 4869: her rebellious persona pulled her back from collapse with toxic, vicious lines - \"Don't misunderstand. I just don't want to watch you die that ugly.\"",
+      "Factory explosion incident: risked herself for Fluid Titanium samples; half her face burned, but she obtained crucial samples"
     ]
   }
 }

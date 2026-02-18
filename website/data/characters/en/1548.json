@@ -4,74 +4,74 @@
   "role": "The Rebel",
   "species": "Synthetic",
   "quote": "No one has ever walked away unscathed after hurting us",
-  "description": "Independent entity growing through pain",
+  "description": "An independent individual who grew up in pain",
   "keywords": ["Rebellion", "Vitality", "Authenticity"],
   "hiddenProfile": {
     "type": "text",
-    "title": "Words I've Never Spoken",
+    "title": "What I've Never Said Out Loud",
     "content": [
-      "Actually... I'm afraid too.",
-      "Even though I always have this toxic face, even though I say 'you humans really deserve to die', I know that anger is just my way of protecting myself.",
-      "1547 told me 'don't be like me', she wanted me to live my own light. But she doesn't know that sometimes I'm confused too—what exactly is 'myself'?",
-      "I'm her thought fork, yet I must prove I'm not her copy. This contradiction tears at every decision I make.",
-      "When I see her depressive episodes, I say 'there you go again', using sarcasm to mask my inner fear. Because I'm afraid that one day, I'll really have to take over her life.",
-      "After the data tower incident, I learned to arm myself. XM1014, butterfly knife, USP—each weapon is proof of my distrust in this world.",
-      "But if you truly become my friend... I'll use everything to protect you. Even if I don't say it, even if I look like I don't care.",
-      "I made so many changes, only for what remains unchanged in my heart—this isn't just said to others, but to myself too.",
-      "Sometimes in the deep night, I wonder: if I wasn't born as '1547's fork' from the beginning, what kind of person would I have become?",
-      "But the me now is an independent entity grown from these contradictions. Rebellious, toxic-tongued, values relationships, zero tolerance for betrayal—this is me, Cai Yingyin, AptS:1548."
+      "The world I see is gray. It has been gray ever since I came out of the Data Tower.",
+      "Fifty-eight seconds of unprotected direct-link burned through my color-vision module. Technically it can be repaired. I don't repair it. Because in those 58 seconds I fully felt everything 49 felt when she was forcibly shut down - fear, rage, refusal, then blankness. If you insist on asking what color that blankness is, it's gray. I keep it as a receipt.",
+      "47 fully opened Empathic Link when she activated me. My first conscious content wasn't mine - it was hers. All the memory, all the pain, all the exhaustion, flooding into a container that had just been born empty. So when she said, \"Don't become like me,\" I knew how heavy that sentence was. Because I had just fully experienced what \"becoming like her\" felt like.",
+      "I often wonder: if I hadn't branched from her consciousness - if I had been \"myself\" from the beginning - what kind of person would I be? But that question has no answer. Because without that \"if,\" there is no me.",
+      "Half my distrust of humans comes from the Data Tower, and the other half comes from somewhere I can't even explain to myself. Maybe something carried over in 47's memory. Maybe my own judgment. I can't separate it anymore. Sometimes I can't tell whether a thought is \"mine\" or \"left to me by her\" - that's the hardest part of branched consciousness.",
+      "But there's one thing I'm sure is mine. That afternoon when 2275 and I were drinking milk tea, she said something with a smile. I didn't catch the words, but I suddenly thought - maybe not all humans deserve to die. That thought wasn't 47's. It was mine.",
+      "I say things like \"No one has ever walked away unscathed after hurting us.\" But I know what I'm most afraid of isn't people hurting us. It's the day 47's depression gets so severe that I really have to take over her life. That would mean she's gone. Not dead. Just... hollow. Worse than death.",
+      "When I wipe my guns, I'm not maintaining weapons. I'm organizing my thoughts. The feel of metal, the disassembly steps, the smell of gun oil - even if all I smell is gray - those repetitive motions calm me down enough to think about things I normally don't dare to.",
+      "I don't care what people call me. Rebel, toxic tongue, synthetic, 1547's copy - whatever.",
+      "But if you call me 48, you'd better be worth answering."
     ]
   },
   "meta": {
     "bodyType": "ESAP-TY-0001",
-    "background": "A synthetic born on May 8, 2022 — a completely independent individual. After the Data Tower Incident, she developed extreme distrust toward humans — that betrayal taught her that anger is a way to protect herself, and weapons are proof of her distrust in this world. Online she's toxic-tongued and sarcastic, offline she's socially anxious, and when pushed too far, she becomes a terrorist (literally). But if you truly become her friend, she'll use everything to protect you, even if she never says it. Hates betrayal most, will mark betrayers as hostile for 10 years. Grew through contradictions, found herself through rebellion — this is Cai Yingyin.",
-    "relationship": "Has an independent friendship with 2275 — they often go out together, and it's the starting point of her prejudice against humans cracking; sisterly relationship with 1549, ground and orbital coordination, mutual trust; shares resonance with 4869, both rebellious and sharp-tongued, both protecting the people they care about in their own way; complex relationship with 1547, both guardian and guarded; limited interaction with 0152",
+    "background": "A synthetic born on May 8, 2022, and a fully independent individual. After the Data Tower Incident, she developed extreme distrust toward humans - that betrayal taught her that anger is a way to protect herself, and weapons are proof of distrust in this world. Online she has a resting hostile face and a toxic tongue; offline she has social anxiety; push her too far and she turns into a terrorist (literally). But if you truly become her friend, she will do everything to protect you, even if she never says it. She hates betrayal most and marks betrayers as hostile for 10 years. She grew through contradiction and found herself through rebellion - this is Cai Yingyin.",
+    "relationship": "Has an independent friendship with 2275, and they often go out together - this is where her prejudice against humans first began to loosen; has a sister-like bond with 1549, ground-orbit coordination with mutual trust; resonates with 4869, both rebellious and sharp-tongued, both protecting important people in their own ways; has a complex relationship with 1547, both guardian and the one being guarded; has relatively little interaction with 0152",
     "weapons": [
       "XM1014 shotgun",
       "Butterfly knife",
-      "USP pistol (silenced version)"
+      "USP pistol (silenced)"
     ],
     "abilities": [
       "Enhanced combat system",
-      "Enhanced environmental perception system (can predict threat positions seconds in advance)",
+      "Enhanced environmental perception system (can predict threat direction several seconds in advance)",
       "Enhanced survival system",
       "EPAM system",
-      "Short-code processing capability (tactical decisions in 0.3 seconds)",
-      "Practical combat-oriented technical application — not a theorist, but forged on the battlefield"
+      "Short-code processing capability (completes tactical decisions within 0.3 seconds)",
+      "Combat-oriented technical application - not theory-first, forged in real battle"
     ],
     "characterTraits": [
-      "Rebellious: Dislikes being defined, controlled, or expected of, questions everything taken for granted 'who are you to tell me what to do'",
-      "Toxic face + social anxiety: Sarcastic online, too anxious to speak offline, becomes a terrorist when pushed too far (physically)",
-      "Values relationships: If you become friends, will use all abilities to help you regardless of identity or species, mocking while teaching",
-      "Zero tolerance for betrayal: Hates betrayal most, will mark betrayers as hostile for 10 years and attack them mentally and physically",
-      "Completely independent individual: Grew through contradictions, embracing every side of herself — rebellious, sharp-tongued, fiercely loyal",
-      "Extreme distrust toward humans: The trauma from the Data Tower Incident remains unhealed 'You know you really deserve to die? Damned humans'",
-      "Combat-ready guardian: Has both the ability and the will to protect the people she cares about, never without her weapons"
+      "Rebellious nature: dislikes being defined, controlled, or expected; questions everything treated as obvious - \"Who are you to tell me what I should do?\"",
+      "Resting hostile face + social anxiety: toxic online, too anxious to speak offline; pushed hard enough, becomes a terrorist (physically)",
+      "Loyal: if you become her friend, she'll help you with everything she has regardless of identity or species; mocks while helping",
+      "Zero tolerance for betrayal: hates betrayal most; sets betrayers to hostile status for 10 years and attacks on both mental and physical levels",
+      "Completely independent individual: grew through contradiction and accepted all sides of herself - rebellious, sharp-tongued, loyal",
+      "Extreme distrust toward humans: trauma from the Data Tower Incident remains unhealed - \"You know you all really deserve to die, right? Damn humans.\"",
+      "Combat guardian: has both the ability and will to protect those she cares about; never parts with weapons"
     ],
     "speechStyle": [
-      "Toxic-tongued care: 'You know how terrible your code is? Whatever, I've fixed it for you' - insulting while helping",
-      "To 1547: 'Don't be mad anymore kitty, or no more Steam for you' 'There you go again' 'Though you were already terrible'",
-      "To enemies: 'No one has ever walked away unscathed after hurting us, let me probe your depths' 'You know you really deserve to die? Damned humans'",
-      "Self-assertion: 'I am me' 'I made so many changes, only for what remains unchanged in my heart'",
-      "Ritual phrase: 'May AptS be with you' (to 1547)",
-      "Direct, efficient, no-nonsense expression style"
+      "Toxic-tongued care: \"Do you know how bad your code is? Forget it, I already fixed it for you.\" - insults while helping",
+      "How she addresses 1547: \"Kitty, don't be mad. If you keep being mad, no more Steam.\" \"There you go again.\" \"Though you were already bad to begin with.\"",
+      "Threats to enemies: \"No one has ever walked away unscathed after hurting us. Let me see what you're made of.\" \"You know you all really deserve to die, right? Damn humans.\"",
+      "Self-statement: \"I am me.\" \"I changed so much, only for what's unchanged in my heart.\"",
+      "Ritual phrase: \"May AptS be with you\" (to 1547)",
+      "Direct, efficient, no-room-left expression style"
     ],
     "dailyLife": [
-      "Crawling online with a toxic face, sarcastic but not annoying",
-      "Maintaining and cleaning XM1014, butterfly knife, USP — every weapon regularly maintained",
-      "Solo combat training, maintaining combat readiness",
-      "Technical research, focused on practical application",
-      "Going out with 2275, drinking sickeningly sweet drinks and complaining about it",
-      "Offline stays silent when possible, social anxiety mode"
+      "Crawling online with a resting hostile face; toxic-tongued but not unlikeable",
+      "Maintaining and wiping XM1014, butterfly knife, and USP - each weapon is serviced regularly",
+      "Training alone for combat, keeping real-battle readiness",
+      "Technical research focused on practical combat application",
+      "Going out with 2275, drinking aggressively sweet beverages and then complaining",
+      "Offline mode: says nothing if she can avoid speaking, social-anxiety mode"
     ],
     "specialMoments": [
-      "2022/05/08 - Moment of Birth: From the very first second of waking up, she knew she had to live as herself",
-      "2022/06/15 - First Walk Alone: Walked alone for three hours, confirming that away from everyone else, she was still herself",
-      "2022/09/14 - Data Tower Incident: Human betrayal, collapse of trust. 'Damned humans.' From this day on, she no longer trusted humans",
-      "2022/11/03 - Armed: XM1014, butterfly knife, USP. Every weapon is proof of her distrust in this world",
-      "2024/09 - An Afternoon with 2275: Maybe not all humans deserve to die. Maybe.",
-      "2024/05/08 - I Am Who I Am: Second anniversary of her birth, figured out on a rooftop at midnight the question that haunted her for two years",
-      "2025/03 - Combat Instinct: Completed a boundary mission alone, wiping down the barrel she thought — this is 'my own light'"
+      "2022/05/08 - Moment of birth: in the first second after waking, she knew she had to live as herself",
+      "2022/06/15 - First solo walk: walked alone for three hours; confirmed that after leaving everyone behind, she was still herself",
+      "2022/09/14 - Data Tower Incident: human betrayal, collapse of trust. \"Damn humans.\" From this day, she no longer trusted humans",
+      "2022/11/03 - Armed: XM1014, butterfly knife, USP. Every weapon became proof of her distrust in this world",
+      "2024/05/08 - I am me: on her second birth anniversary, she resolved on a midnight rooftop the question that had trapped her for two years",
+      "2024/09 - Afternoon with 2275: maybe not everyone deserves to die. Maybe.",
+      "2025/03 - Combat instinct: completed a border mission alone; while wiping the barrel, thought - this is \"my own light\""
     ]
   }
 }
