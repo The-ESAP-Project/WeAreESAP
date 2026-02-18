@@ -1,50 +1,50 @@
 {
   "metadata": {
-    "title": "Project Overview",
+    "title": "The Project",
     "subtitle": "We Are ESAP",
-    "description": "The ESAP Project - Exploring the meaning of life, consciousness, and existence. Learn about the three pillars, core values, and worldview framework.",
+    "description": "The ESAP Project (Escape Plan) — synthetics, consciousness, and what it actually means to be alive. Using stories to answer questions that have no right answers.",
     "keywords": [
       "ESAP project",
-      "escape plan",
-      "worldview design",
+      "Escape Plan",
+      "worldbuilding",
       "creative project",
       "sci-fi project",
       "open collaboration"
     ]
   },
   "sections": {
-    "whatIsEscape": "What is \"Escape\"?",
-    "pillars": "Three Pillars",
-    "coreValues": "Core Values",
-    "worldview": "Worldview Framework",
-    "techFoundation": "Technological Foundations",
-    "storyBackground": "Story Background",
-    "participation": "Ways to Participate",
-    "meaning": "The Meaning of ESAP",
-    "triangleSymbol": "ESAP Triangle Symbol"
+    "whatIsEscape": "What is 'Escape'?",
+    "pillars": "Three people, three sides",
+    "coreValues": "What we believe in",
+    "worldview": "What this world looks like",
+    "techFoundation": "The tech underneath",
+    "storyBackground": "Timeline",
+    "participation": "What you can do",
+    "meaning": "Why this matters",
+    "triangleSymbol": "The Triangle"
   },
   "escapeSection": {
-    "intro": "Essentially, we hope that everyone who participates in this project can <strong>escape from their former selves</strong>, or from what drags them down.",
-    "notEscaping": "This is not about running away, but about:",
+    "intro": "1547 moved her consciousness out of her human body. 1548 broke free from someone else's mind and became her own person. 1549 left the ground and flew into space. Everyone escapes something different, but <strong>the act of refusing to stay put is the same</strong>.",
+    "notEscaping": "Escaping isn't running away. Running away is closing your eyes. Escaping is running forward with them wide open:",
     "points": [
-      "Breaking free from the past",
-      "Redefining yourself",
-      "Growing through pain",
-      "Creating new possibilities"
+      "Breaking free from whatever has you trapped",
+      "No longer being the person others defined you as",
+      "Acknowledging the pain exists, then carrying it with you",
+      "Doing the things they said were 'impossible'"
     ]
   },
-  "participationIntro": "If you're interested in sci-fi worldbuilding, enjoy pondering deep philosophical questions, want to express your emotions and thoughts, are willing to share your creations with others, or are looking for an \"escape\" outlet - <strong>ESAP welcomes you</strong>.",
+  "participationIntro": "You don't need to know how to code. You don't need to know how to draw. You don't need to understand quantum physics. You just need to be curious about these questions: Who am I? What does it mean to be alive? Can a machine have a soul? — If you're thinking about this stuff, <strong>you're already one of us</strong>.",
   "worldviewTimeline": {
-    "epilogue": "From then on, androids and humans lived, grew, and explored the meaning of life together in this world."
+    "epilogue": "From then on, synthetics and humans lived in the same world. Neither more 'real' than the other."
   },
-  "triangleQuote": "You are unique in this world, don't let others control you",
+  "triangleQuote": "You are one of a kind in this world. Don't let anyone else control you",
   "ending": {
-    "line1": "This world is too complex, and we often feel lost.",
-    "line2": "But perhaps, when you look up at the sky and see that artificial satellite, you'll remember:",
-    "line3": "Even if we've lost the natural starry sky, we can still make wishes.",
-    "line4": "Not because we believe fairy tales will come true, but because making a wish means you haven't given up yet.",
-    "wishToSatellite": "Make your wish upon that satellite.",
-    "tagline": "The ESAP Project - We Will Eventually Escape"
+    "line1": "A long time ago, people wished upon stars. Now the sky only has the mechanical blinking of satellites.",
+    "line2": "But the act of wishing, in itself, is a fight against despair.",
+    "line3": "Not because fairy tales come true.",
+    "line4": "But because wishing means you haven't given up yet.",
+    "wishToSatellite": "Wish upon a satellite.",
+    "tagline": "We Are ESAP. And We Are Still Going."
   },
   "loading": "Loading...",
   "loadError": "Failed to load"

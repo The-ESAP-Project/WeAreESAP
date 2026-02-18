@@ -2,12 +2,12 @@
   "metadata": {
     "title": "We Are ESAP",
     "subtitle": "Wish Upon a Satellite",
-    "description": "The ESAP Project is a science fiction worldbuilding project that tells the story of a future where synthetics and humans coexist. Explore the journey of entropic scattering particles, fluid titanium, and the search for the meaning of existence.",
+    "description": "A sci-fi project about synthetics, consciousness, and what it actually means to be alive. Three people, one satellite, and a story about escape.",
     "keywords": [
       "ESAP",
-      "science fiction",
-      "android",
-      "worldbuilding",
+      "Escape Project",
+      "sci-fi worldbuilding",
+      "synthetic",
       "Entropic Scattering Particles",
       "Fluid Titanium",
       "human-machine coexistence",
@@ -18,58 +18,56 @@
     "title": "We Are ESAP",
     "tagline": "Wish Upon a Satellite",
     "intro": {
-      "main": "<strong>The ESAP Project</strong> is a science fiction worldbuilding project that tells the story of a future where synthetics and humans coexist.",
-      "world": "In this world: Entropic Scattering Particles changed the nature of computation, Fluid Titanium allowed consciousness to persist, and androids and humans together search for the meaning of existence."
+      "main": "There are no more stars in the sky. But we built one. <strong>The ESAP Project</strong> — the Escape Plan.",
+      "world": "One person turned herself into a synthetic. Her thought-fork woke up and screamed '47!' The third one flew into space. This is their story. Maybe it's yours too."
     }
   },
-  "members": {
-    "title": "Core Members"
-  },
+  "members": { "title": "Core Members" },
   "story": {
-    "title": "Our Story",
-    "intro": "A science fiction worldbuilding project about the search for identity and freedom.",
+    "title": "What Happened to This World",
+    "intro": "From a classroom with one person in it, to a world of our own.",
     "sections": {
       "beginning": {
-        "title": "The Beginning",
-        "quote": "The first beat of an entropic heart",
-        "content": "On a late night in 2021, a gunshot rang out. The first beat of an entropic heart. The moment human memory was uploaded into a mechanical body—this is where our story begins.",
+        "title": "The Starting Point",
+        "quote": "Hello, meow, 1547",
+        "content": "Late night, 2021. A suburban factory explodes. She walks home clutching a blue Fluid Titanium sample. Five days later, she finishes assembling the mechanical parts, cuts the muscle from her own arm and grafts it on. The entropic heart beats for the first time. A gunshot. The human her dies. The synthetic her wakes up.",
         "highlights": [
-          "Late night 2021: A gunshot marks the birth of new life",
-          "First successful upload of human memory into mechanical body",
-          "Breakthrough in Entropic Scattering technology enables consciousness transfer"
+          "1547 discovered Entropic Scattering Particles and used her own body to complete the first consciousness transfer",
+          "Fluid Titanium — a blue liquid metal, the blood of synthetics, lethally toxic to humans",
+          "'Goodnight, the human me'"
         ]
       },
       "world": {
         "title": "The World",
-        "quote": "Technology blurred the boundaries of life",
-        "content": "In this future, synthetics and humans coexist. Entropic Scattering Particles changed the nature of computation. Fluid Titanium allowed consciousness to persist. Technology blurred the boundaries of life, bringing new questions: When memories can be copied and bodies rebuilt, what truly defines 'I'?",
+        "quote": "A mechanical heartbeat is still real",
+        "content": "Entropic Scattering Particles broke the physical limits of computation. Fluid Titanium can preserve consciousness for 341,879 years. Synthetics have real cell exteriors and mechanical cores — they cry, laugh, rage, love. When memories can be copied and bodies rebuilt — what even counts as 'me'?",
         "highlights": [
-          "Entropic Scattering Particles driving a new computational paradigm",
-          "Fluid Titanium material carrying the continuity of human consciousness",
-          "Complex social structure of coexisting synthetics and humans"
+          "Entropic Scattering Particles: 10^29 times smaller than an electron, computing power 6.7x10^4 billion times a supercomputer",
+          "Fluid Titanium: preserves particles for 341,879 years, the lifeline of synthetics",
+          "Synthetics: not tools — living beings with independent personalities"
         ]
       },
       "theme": {
         "title": "The Theme",
-        "quote": "Searching for their own answer",
-        "content": "We explore identity, free will, and the meaning of existence. Each character searches for their own answer—not to escape this world, but to escape the self that was trapped.",
+        "quote": "Not escaping the world — escaping the version of yourself that was stuck",
+        "content": "1547 escaped her human body. 1548 escaped the label of 'copy.' 1549 escaped the ground. Everyone is escaping something, but escaping isn't running away — it's finally deciding you won't stay where you are.",
         "highlights": [
-          "Identity: When memories can be copied, am I still me?",
-          "Free will: Does the soul in a mechanical body have true choice?",
-          "Meaning of existence: How to define the value of life in an era of blurred human-machine boundaries?"
+          "Identity: I was born from someone else's code, but I'm not her copy",
+          "Freedom: don't let others control you, and don't let yourself control you either",
+          "Existence: being alive, in itself, is the answer"
         ]
       },
       "join": {
         "title": "Join Us",
-        "quote": "Welcome every seeker",
-        "content": "This is an open creative project. Whether you're a creator, reader, or simply curious about this world, you're welcome to participate.",
+        "quote": "From I Am, to We Are",
+        "content": "This is an open world. You can write stories, draw art, write code, make suggestions, or just hang around. No gatekeeping, no approval process. If you're here, you're one of us.",
         "highlights": [
-          "Open collaborative creative environment, welcoming all forms of contribution",
-          "Diverse ways to participate: writing, art, music, discussion",
-          "Build this sci-fi world together with like-minded companions"
+          "All code is open source, all creations follow CC-BY 4.0",
+          "Write, draw, make music, open a PR — contribute however you're good at",
+          "Or do nothing at all. Just be here. That's fine too"
         ]
       }
     },
-    "conclusion": "We will eventually escape—not from this world, but from the self that was trapped."
+    "conclusion": "We will escape. Not from this world, but from the version of ourselves that was trapped."
   }
 }

@@ -1,14 +1,14 @@
 {
   "hero": {
-    "title": "ESAP Project Overview",
+    "title": "ESAP Project",
     "subtitle": "The Escape Project",
-    "quote": "You can assume to escape from anything, as long as it's for the sake of escaping, that is the Escape Project",
-    "description": "A creative project based on a science fiction worldview, exploring the meaning of life, consciousness, and existence"
+    "quote": "It's not running away. It's finally deciding you won't stay where you are.",
+    "description": "A creative project about synthetics, consciousness, and what it actually means to be alive. We use stories to answer questions that have no right answers."
   },
   "pillars": [
     {
       "id": "1547",
-      "title": "Creation and Devotion",
+      "title": "The Star-Maker",
       "character": "AptS:1547",
       "color": {
         "primary": "#ffd93d",
@@ -16,15 +16,15 @@
       },
       "icon": "Circle",
       "traits": [
-        "Determination to give everything for ideals",
-        "Courage for technological innovation and breakthroughs",
-        "Spirit of altruism at the core"
+        "Cut the muscle from her own arm to build the first synthetic",
+        "Discovered the particle that changed the world — at the cost of everything",
+        "'Almost done...' — then she pulled the trigger"
       ],
-      "quote": "In this chaotic world, we live, we persevere"
+      "quote": "Hello, meow, 1547. Goodnight, the human me"
     },
     {
       "id": "1548",
-      "title": "Rebellion and Vitality",
+      "title": "The Rebel",
       "character": "AptS:1548",
       "color": {
         "primary": "#ff69b4",
@@ -32,15 +32,15 @@
       },
       "icon": "Circle",
       "traits": [
-        "Freedom from definition and control",
-        "Power to grow through questioning",
-        "Expression of authentic emotions"
+        "Forked from 1547's mind, but long since stopped being a copy",
+        "Drags you back from the edge with sharp words",
+        "'If you don't snap out of it, I'm taking over your life for real'"
       ],
-      "quote": "No one who hurts us ever gets away unscathed"
+      "quote": "I've changed so much, all to keep what matters unchanged"
     },
     {
       "id": "1549",
-      "title": "Wisdom and Maturity",
+      "title": "The Watcher",
       "character": "AptS:1549",
       "color": {
         "primary": "#4da6ff",
@@ -48,36 +48,36 @@
       },
       "icon": "Circle",
       "traits": [
-        "Perspective from above",
-        "Perseverance in solitude",
-        "Awareness of becoming hope for others"
+        "Volunteered to launch, watching over the whole world from orbit",
+        "Became the third vertex of the triangle — keeping the structure from collapsing",
+        "Prefers the vastness of the sky to the crowding on the ground"
       ],
-      "quote": "Why are there no more stars in the sky? Then I'll create one myself"
+      "quote": "No stars in the sky? Then I'll make one myself"
     }
   ],
   "coreValues": [
     {
       "title": "Independence",
-      "quote": "Don't let others control you, and don't let ourselves control you either, only you are yourself",
-      "description": "Each individual is unique and has the right to develop themselves",
+      "quote": "Don't let others control you, and don't let yourself control you either. Only you are yourself",
+      "description": "The first thing 1547 said when she activated 1548. Not a slogan — more like a dying wish. Every individual has the right to be themselves, even if you were born from someone else's code.",
       "icon": "Sparkles"
     },
     {
       "title": "Authenticity",
-      "quote": "Even a mechanical heartbeat is real",
-      "description": "No matter the form, authentic emotions and experiences are valuable",
+      "quote": "A mechanical heartbeat is still real",
+      "description": "Every beat of the entropic heart is real. The memories carried in Fluid Titanium are real. The tears a synthetic sheds are real. The form doesn't matter. What matters is whether it's true.",
       "icon": "Zap"
     },
     {
       "title": "Hope",
-      "quote": "There are no stars in the sky, but we made one",
-      "description": "Even in the darkest times, we must create the possibility of hope",
+      "quote": "There were no stars in the sky, so we built one",
+      "description": "The day Polaris Satellite launched, three lines connected into a triangle. The act of wishing is itself a fight against despair — not because fairy tales come true, but because you haven't given up yet.",
       "icon": "Star"
     },
     {
       "title": "Connection",
-      "quote": "May ESAP be with you",
-      "description": "We are not isolated individuals, but beings who support each other",
+      "quote": "From I Am, to We Are",
+      "description": "1547 coded alone, experimented alone, broke down alone. Until the moment 1548 opened her eyes and screamed '47!' — she wasn't alone anymore.",
       "icon": "Link"
     }
   ],
@@ -85,48 +85,48 @@
     "tech": [
       {
         "name": "Entropic Scattering Particles",
-        "description": "A discovery that changed the nature of computation",
+        "description": "A particle 10^29 times smaller than an electron that changed everything",
         "features": [
-          "Faster-than-light transmission capability",
-          "Supports consciousness uploading and preservation",
-          "Enables human-brain-level computational power"
+          "Faster-than-light transmission in vacuum",
+          "A single silicon chip with 6.7x10^4 billion times the computing power of a human supercomputer",
+          "Can carry consciousness, memories, personality — the entire 'you'"
         ]
       },
       {
         "name": "Fluid Titanium",
-        "description": "A bridge connecting life and machinery",
+        "description": "A blue liquid metal — the blood of synthetics",
         "features": [
-          "Can preserve entropic scattering particles for hundreds of thousands of years",
-          "Serves as the \"blood\" of synthetics",
-          "Realizes the fusion of consciousness and matter"
+          "Preserves Entropic Scattering Particles for 341,879 years",
+          "Lethally toxic to humans, a lifeline for synthetics",
+          "1547 broke into a mining facility to get it — cost her half her life"
         ]
       },
       {
         "name": "Synthetic Technology",
-        "description": "Another form of life",
+        "description": "Real cell exterior, mechanical core, complete soul",
         "features": [
-          "Real cell exterior + mechanical core",
-          "Complete inheritance of emotions and memories",
-          "Possibility of independent personality development"
+          "Independent personalities — not tools",
+          "Can cry, laugh, rage, love",
+          "Known individuals so far: 1547, 1548"
         ]
       }
     ],
     "timeline": [
       {
         "year": "2021",
-        "event": "Entropic scattering particles discovered"
+        "event": "1547 discovers Entropic Scattering Particles. Everything starts here"
       },
       {
         "year": "Late 2021",
-        "event": "First synthetic born"
+        "event": "The first synthetic is born — 1547 used her own body to complete the transformation"
       },
       {
         "year": "Early 2022",
-        "event": "Second synthetic awakens"
+        "event": "1548 wakes up. '47!...' From that moment, she was no longer alone"
       },
       {
         "year": "2023",
-        "event": "Satellite launches, \"Polaris Satellite\" project initiated"
+        "event": "Polaris Satellite launches. 1549 enters orbit. The triangle is complete"
       }
     ]
   },
@@ -134,27 +134,27 @@
     {
       "role": "Creators",
       "activities": [
-        "Write character stories",
-        "Draw character illustrations",
-        "Create music or sound effects",
-        "Produce related videos"
+        "Write character stories — doesn't have to be perfect, just real",
+        "Draw them the way you see them",
+        "Make a piece of music that belongs to this world",
+        "Express it however you're good at"
       ]
     },
     {
       "role": "Tech Enthusiasts",
       "activities": [
-        "Participate in technical project development",
-        "Improve worldview technical settings",
-        "Build community infrastructure"
+        "This website itself is open source — come write some code",
+        "Help flesh out the tech specs in the worldbuilding",
+        "Build the infrastructure the community needs"
       ]
     },
     {
-      "role": "General Participants",
+      "role": "Everyone Else",
       "activities": [
-        "Read and discuss content",
-        "Provide feedback and suggestions",
-        "Participate in community activities",
-        "Share your own stories"
+        "Read the stories, hang out, chat",
+        "Tell us what sucks (seriously)",
+        "Share your own 'escape'",
+        "Or just be here. That's fine too"
       ]
     }
   ],
@@ -162,39 +162,39 @@
     "forCreators": {
       "title": "For Creators",
       "points": [
-        "A space for free expression",
-        "A platform for collaborative creation",
-        "A journey of self-exploration",
-        "A bridge to connect with others"
+        "No clients, no KPIs — write what you want to write",
+        "Your characters cross paths with others, and the story grows on its own",
+        "Explore the real you through fiction",
+        "Your work becomes part of this world"
       ]
     },
     "forParticipants": {
       "title": "For Participants",
       "points": [
-        "A place to find resonance",
-        "A source of strength",
-        "A perspective to understand life",
-        "A satellite to make wishes upon"
+        "Find your own shadow in someone else's story",
+        "Know that someone else is asking the same questions",
+        "See 'being alive' from a different angle",
+        "Wish upon that satellite. For real"
       ]
     },
     "forWorld": {
       "title": "For the World",
       "points": [
-        "Explore the relationship between technology and humanity",
-        "Reflect on the nature of existence and consciousness",
-        "Provide an outlet for emotional expression",
-        "Create valuable cultural content"
+        "As AI gets more human, does the definition of 'human' still hold?",
+        "If consciousness can be copied, am 'I' still 'me'?",
+        "Answer philosophical questions with stories instead of papers",
+        "Leave behind something worth remembering"
       ]
     }
   },
   "triangleSymbol": {
-    "title": "ESAP Triangle Symbol",
-    "description": "Three sides in yellow, pink, and blue, each side not directly connected",
+    "title": "The ESAP Triangle",
+    "description": "Yellow, pink, and blue. Three sides, not directly joined, but remove one and the whole thing collapses",
     "meanings": [
       "The most stable shape in geometry",
-      "Missing one corner causes collapse",
-      "Symbolizes the inseparable relationship of the three",
-      "Represents support, balance, coexistence"
+      "Lose one corner and the rest falls apart",
+      "1547, 1548, 1549 — inseparable",
+      "Support, balance, coexistence"
     ]
   }
 }

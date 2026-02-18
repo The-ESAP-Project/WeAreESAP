@@ -2,7 +2,7 @@
   "metadata": {
     "title": "Join Us",
     "subtitle": "We Are ESAP",
-    "description": "Join ESAP and become part of this science fiction world.",
+    "description": "ESAP is an open world. Whether you show up or not, it's here. But if you do show up, don't just watch.",
     "keywords": [
       "join ESAP",
       "creative recruitment",
@@ -14,30 +14,30 @@
   },
   "sections": {
     "hero": "Join Us",
-    "seeking": "Perhaps you are looking for:",
-    "whoShouldJoin": "Who Should Join?",
-    "welcome": "We Welcome…",
-    "notWelcome": "We Do Not Welcome…",
-    "participation": "Ways to Participate",
-    "characterCreation": "Character Creation Process",
-    "characterCreationSubtitle": "If you want to create your own character to join the ESAP world, follow these steps:",
-    "guidelines": "Creation Guidelines",
-    "principles": "Core Principles",
-    "technicalGuidelines": "Technical Guidelines",
-    "canDo": "You Can:",
-    "shouldNotDo": "Not Recommended:",
-    "characterGuidelines": "Character Creation Guidelines",
-    "recommended": "Recommended:",
-    "avoid": "Avoid:",
-    "communityValues": "Community Culture",
-    "contributions": "Ways to Contribute",
-    "submissionChannels": "Submission Channels:",
-    "contributionMethods": "Contribution Methods:",
+    "seeking": "Maybe you're looking for —",
+    "whoShouldJoin": "What kind of people come here?",
+    "welcome": "People we're looking for",
+    "notWelcome": "People we're not looking for",
+    "participation": "What you can do",
+    "characterCreation": "Want to create your own character?",
+    "characterCreationSubtitle": "You can. But walk through these steps first:",
+    "guidelines": "The rules of creation",
+    "principles": "The bottom line",
+    "technicalGuidelines": "On the tech side",
+    "canDo": "Go for it:",
+    "shouldNotDo": "Don't:",
+    "characterGuidelines": "On the character side",
+    "recommended": "Good directions:",
+    "avoid": "Danger zone:",
+    "communityValues": "Our vibe",
+    "contributions": "Ways to contribute",
+    "submissionChannels": "How to submit:",
+    "contributionMethods": "Things you can do:",
     "contact": "Contact",
-    "contactPlaceholder": "More community channels are coming soon, stay tuned",
-    "faq": "FAQ",
-    "nextSteps": "Next Steps",
-    "nextStepsSubtitle": "If you're ready to join, you can:",
+    "contactPlaceholder": "More channels are being set up. Use these for now",
+    "faq": "You're probably wondering",
+    "nextSteps": "So what now?",
+    "nextStepsSubtitle": "If you're ready:",
     "finalWelcome": "Welcome to ESAP.",
     "loadError": "Failed to load"
   },
@@ -50,303 +50,299 @@
   "contactComingSoon": "Coming Soon",
   "hero": {
     "quote": "We Will Escape",
-    "welcome": "If you're reading this, it means you're interested in the ESAP world.",
+    "welcome": "You clicked in. Something caught your eye.",
     "seeking": [
-      "A space to express yourself",
-      "A group of like-minded companions",
-      "An \"escape\" outlet",
-      "Something meaningful"
+      "A place where you don't have to pretend",
+      "People who are asking the same questions",
+      "An exit — an 'escape'",
+      "Or maybe you just want something interesting to do"
     ],
-    "callToAction": "Then, welcome to join us."
+    "callToAction": "Whatever it is, come on in."
   },
   "roleTypes": [
     {
       "title": "Creator",
       "icon": "PenTool",
       "description": [
-        "Enjoy writing, drawing, music creation",
-        "Want to express your thoughts and emotions",
-        "Willing to share your works"
+        "You write, draw, or make music",
+        "You've got ideas in your head and need somewhere to let them out",
+        "You're not afraid to be seen"
       ]
     },
     {
       "title": "Tech Enthusiast",
       "icon": "Code",
       "description": [
-        "Interested in sci-fi settings",
-        "Enjoy programming and tech projects",
-        "Want to participate in actual development"
+        "See 'Entropic Scattering Particles' and immediately want to run the numbers",
+        "You like writing code and want to work on a real project",
+        "You think open source actually matters"
       ]
     },
     {
       "title": "Thinker",
       "icon": "Brain",
       "description": [
-        "Enjoy thinking about deep questions",
-        "Interested in life, consciousness, existence",
-        "Willing to discuss and exchange ideas"
+        "You lie awake at 2am wondering what consciousness actually is",
+        "You have your own take on life, existence, and freedom",
+        "You like conversations with depth"
       ]
     },
     {
       "title": "Casual Participant",
       "icon": "Hand",
       "description": [
-        "Just want to find a place to chat",
-        "Like this worldview",
-        "Want to make new friends"
+        "You just think this world is pretty cool",
+        "You want a place to hang out and chat",
+        "You don't have to do anything specific — just being here is enough"
       ]
     }
   ],
   "welcome": {
     "positive": [
-      "People with their own ideas",
-      "People willing to express and share",
+      "People with their own ideas — even weird ones",
+      "People who aren't afraid to speak the truth",
       "People who respect others",
-      "People who want to \"escape\" from something",
-      "People seeking a sense of belonging"
+      "People who are 'escaping' something",
+      "Or people who just feel lonely"
     ],
     "negative": [
-      "Malicious attacks on others",
-      "Spreading negativity and hatred",
-      "Disrespecting creators",
-      "Disrupting community atmosphere",
+      "Attacking others with malice",
+      "Spreading hate",
+      "Disrespecting creators' work",
+      "Deliberately causing damage",
       "Violating basic ethics and laws"
     ]
   },
   "participationMethods": [
     {
-      "title": "Read and Learn",
+      "title": "Take a look",
       "icon": "Book",
-      "description": "Start with basic documents to understand ESAP's worldview, technical settings, and character stories",
+      "description": "Start with the stories. Get a feel for what this world is about and who's in it",
       "items": [
-        "Read the project plan to understand what ESAP is",
-        "Understand the worldview foundation of technical settings",
-        "Get to know the character profiles of core members",
-        "Experience AP/EP series stories"
+        "Read the project overview — find out what ESAP is doing",
+        "Check out the tech specs — understand the world's underlying logic",
+        "Browse the character profiles — meet 1547, 1548, 1549",
+        "If you're curious, read the AP/EP story series"
       ]
     },
     {
-      "title": "Join Discussions",
+      "title": "Speak up",
       "icon": "MessageCircle",
-      "description": "Join the community and exchange ideas and perspectives with other members",
+      "description": "Got thoughts? Share them. We don't bite (probably)",
       "items": [
-        "Worldview setting discussions",
-        "Character development suggestions",
-        "Technical feasibility exploration",
-        "Creative inspiration sharing"
+        "Something in the worldbuilding doesn't make sense? Say it",
+        "Got ideas for character development? Say it",
+        "Think a tech spec should be changed? Say it",
+        "Sudden burst of inspiration? Definitely say it"
       ],
       "note": "Community channels coming soon"
     },
     {
-      "title": "Content Creation",
+      "title": "Get your hands dirty",
       "icon": "Palette",
-      "description": "Unleash your creativity and contribute content to the ESAP world",
+      "description": "Use whatever you're good at to add something to this world",
       "items": [
-        "Writing: character stories, daily logs",
-        "Visual: character illustrations, scene designs",
-        "Audio: theme music, sound effects design",
-        "Tech: open-source projects, tool development"
+        "Writing: character stories, slice-of-life, side stories",
+        "Visual: character art, scene design, graphics",
+        "Audio: compose, voice act, sound design",
+        "Code: this website itself is an open source project"
       ]
     },
     {
-      "title": "Create Characters",
+      "title": "Create a character",
       "icon": "Star",
-      "description": "Design your own character and become part of the ESAP world",
+      "description": "Design a character of your own and let them live in this world",
       "items": [
-        "Understand worldview rules and technical limitations",
-        "Design basic character information and backstory",
-        "Submit for review and discuss adjustments with administrators"
+        "Get the worldbuilding rules down first",
+        "Figure out who your character is, where they came from, where they're going",
+        "Submit to an admin, talk it through, adjust, then officially join"
       ]
     }
   ],
   "characterCreationSteps": [
     {
       "number": 1,
-      "title": "Understand the Rules",
+      "title": "Do your homework",
       "items": [
-        "Read worldview settings",
-        "Understand technical limitations",
-        "Respect existing content"
+        "Read through the worldbuilding docs",
+        "Know where the tech limits are",
+        "Know who the existing characters are"
       ]
     },
     {
       "number": 2,
-      "title": "Design Character",
+      "title": "Design your character",
       "items": [
-        "Basic information (name, number, identity)",
-        "Personality traits",
-        "Backstory",
-        "Relationships with existing characters"
+        "Basic info (name, designation, identity)",
+        "Personality — give them edges, don't make them perfect",
+        "Backstory — what have they been through",
+        "How do they relate to existing characters"
       ]
     },
     {
       "number": 3,
-      "title": "Submit for Review",
+      "title": "Submit",
       "items": [
-        "Contact administrators",
-        "Provide detailed setting documents",
-        "Discuss and adjust",
-        "Officially join after approval"
+        "Reach out to an admin",
+        "Send over your character doc",
+        "Talk it through, make adjustments",
+        "Get approved and officially join"
       ]
     }
   ],
   "guidelines": {
     "principles": [
       {
-        "title": "Respect Settings",
-        "description": "Follow basic technical and worldview rules, don't arbitrarily modify existing settings, discuss first if in doubt"
+        "title": "Respect the lore",
+        "description": "The worldbuilding rules are maintained by everyone. Want to change something? Propose it. Don't just quietly rewrite things"
       },
       {
-        "title": "Maintain Independence",
-        "quote": "You are unique in this world",
-        "description": "Each character should have their own characteristics, avoid simple copying or imitation, develop your own style"
+        "title": "Stay independent",
+        "quote": "You are one of a kind in this world",
+        "description": "Your character should be yours. Not a reskin of 1547, not a clone of 1548. Be your own thing"
       },
       {
-        "title": "Authentic Expression",
-        "quote": "A mechanical heartbeat is also real",
-        "description": "Express genuine emotions and thoughts, don't pursue \"perfection\" deliberately, flaws and contradictions are also part of reality"
+        "title": "Be real",
+        "quote": "A mechanical heartbeat is still real",
+        "description": "Don't chase perfection. Flaws, contradictions, feelings you can't quite name — that's what makes it real"
       },
       {
-        "title": "Mutual Respect",
-        "description": "Respect others' creations, accept different viewpoints, provide constructive feedback"
+        "title": "Respect each other",
+        "description": "Other people's work deserves to be taken seriously. Disagree all you want, but don't make it personal"
       }
     ],
     "technical": {
       "dos": [
-        "Extend within existing technical framework",
-        "Propose new application scenarios",
-        "Add detailed settings",
-        "Create new technical branches"
+        "Expand within the existing framework",
+        "Propose new use cases",
+        "Fill in the details",
+        "Branch out into new tech areas"
       ],
       "donts": [
-        "Violate basic physics rules",
-        "Create overly powerful technology",
-        "Contradict existing settings",
-        "Disrupt worldview balance"
+        "Break fundamental physics rules (Entropic Particles have their own system)",
+        "Invent tech that steamrolls everything",
+        "Contradict existing lore",
+        "Throw off the worldbuilding balance"
       ]
     },
     "character": {
       "recommended": [
-        "Clear personality traits",
-        "Reasonable backstory",
-        "Clear relationship positioning with existing characters",
-        "Room for growth and development"
+        "Distinct personality — someone people remember",
+        "A backstory that holds up",
+        "Clear relationship to existing characters",
+        "Room to grow — don't start at max level"
       ],
       "avoid": [
-        "Mary Sue/Gary Stu characters (too perfect)",
-        "Pure tool characters (no independent personality)",
+        "Mary Sue / Gary Stu (nobody buys a perfect character)",
+        "Pure plot devices (no personality = not a character)",
         "Too similar to existing characters",
-        "Settings too complex and hard to understand"
+        "Lore so complex even you can't explain it"
       ]
     }
   },
   "communityValues": [
     {
       "title": "Independence",
-      "quote": "Don't be controlled by others, and don't be controlled by ourselves",
-      "description": "Everyone is an independent individual, encouraged to express different viewpoints, no one is forced to do anything",
+      "quote": "Don't let others control you, and don't let yourself control you either",
+      "description": "Everyone here is their own person. You can disagree. Nobody's getting kicked out for thinking differently",
       "icon": "Sparkles"
     },
     {
       "title": "Authenticity",
-      "quote": "A mechanical heartbeat is also real",
-      "description": "Express yourself authentically, accept imperfection, emotions and experiences are all valuable",
+      "quote": "A mechanical heartbeat is still real",
+      "description": "Be yourself. Imperfection is fine. Faking perfection is what's scary",
       "icon": "Zap"
     },
     {
       "title": "Hope",
-      "quote": "There were no stars in the sky, so we made one",
-      "description": "Seek light even in darkness, create instead of waiting, making a wish means not giving up yet",
+      "quote": "There were no stars in the sky, so we built one",
+      "description": "Don't wait for someone to save you. Do it yourself, even if it's just building one small satellite",
       "icon": "Star"
     },
     {
       "title": "Connection",
-      "quote": "May ESAP be with you",
-      "description": "We are not isolated individuals, we support each other, understand each other, build meaningful connections",
+      "quote": "From I Am, to We Are",
+      "description": "Going alone is exhausting. Find each other, lean on each other, go a little further",
       "icon": "Link"
     }
   ],
   "contributions": [
     {
-      "category": "Content Contributions",
+      "category": "Content",
       "icon": "FileText",
       "types": [
-        "Story Writing",
-        "Character Design",
-        "Technical Documentation",
+        "Stories",
+        "Character designs",
+        "Tech docs",
         "Illustrations",
-        "Music Works"
+        "Music"
       ],
-      "channels": [
-        "GitHub Pull Request",
-        "Community Platform Release",
-        "Contact Administrators"
-      ]
+      "channels": ["GitHub PR", "Community post", "Message an admin directly"]
     },
     {
-      "category": "Technical Contributions",
+      "category": "Technical",
       "icon": "Settings",
       "projects": [
-        "ShortLinker URL Service",
-        "ESAP Official Website",
-        "Community Tools",
-        "Other Tech Projects"
+        "ShortLinker URL service",
+        "ESAP website (the one you're looking at right now)",
+        "Community tools",
+        "Other open source projects"
       ],
       "methods": [
-        "Code Commits",
-        "Bug Reports",
-        "Feature Suggestions",
-        "Documentation Improvement"
+        "Submit code",
+        "Report bugs",
+        "Suggest features",
+        "Write docs"
       ]
     },
     {
-      "category": "Community Building",
+      "category": "Community",
       "icon": "Star",
       "activities": [
-        "Organize Events",
-        "Manage Community",
-        "Welcome Newcomers",
-        "Answer Questions",
-        "Maintain Atmosphere"
+        "Organize events",
+        "Help manage",
+        "Welcome newcomers",
+        "Answer questions",
+        "Keep the vibe right"
       ]
     }
   ],
   "faq": [
     {
-      "question": "Can I join if I can't create content?",
-      "answer": "Of course! You can read and discuss content, provide feedback and suggestions, participate in community activities, and chat with everyone."
+      "question": "Can I join if I can't create stuff?",
+      "answer": "Yeah. Reading stories, chatting, giving feedback — that all counts. Creating isn't just drawing and writing."
     },
     {
       "question": "Can I create my own character?",
-      "answer": "Yes, but you need to first understand the worldview, design detailed character settings, submit for review, and officially join after approval."
+      "answer": "Yes. Learn the worldbuilding first, design your character, submit for review, and you're in once approved. Process isn't complicated, but take it seriously."
     },
     {
-      "question": "Is there payment for creations?",
-      "answer": "Currently, ESAP is a non-profit open creative project. All creations are out of passion and voluntary. If there are commercial possibilities in the future, a sharing mechanism will be discussed with creators."
+      "question": "Do you pay?",
+      "answer": "No. ESAP is a non-profit open project. Everything is voluntary. If commercial opportunities come up down the road, we'll work out revenue sharing with creators."
     },
     {
-      "question": "Who owns the copyright of my creations?",
-      "answer": "The copyright of your creations belongs to you. All content published on ESAP follows the CC-BY 4.0 license (Attribution 4.0 International). You can freely share, adapt, and use commercially, just credit the original author. Excellent works have the opportunity to be featured on the official website."
+      "question": "Who owns the copyright?",
+      "answer": "You do. Content published on ESAP follows CC-BY 4.0. You can share and use it freely, just credit the original author. Great work may get featured on the official site."
     },
     {
-      "question": "Will the worldview still change?",
-      "answer": "Core settings will remain stable, but details will continue to be refined and expanded. Major changes will go through community discussion."
+      "question": "Will the worldbuilding change?",
+      "answer": "Core lore stays stable. Details keep getting filled in. Big changes go through community discussion — nothing changes overnight."
     },
     {
       "question": "What if I want to leave?",
-      "answer": "You can leave at any time. If your created content has been integrated into the worldview, we hope to keep it (with creator attribution). But if you insist on deletion, we will respect your choice."
+      "answer": "Leave whenever you want. If your content has been woven into the worldbuilding, we'd like to keep it (with your name on it). But if you insist on removal, we respect that."
     }
   ],
   "nextSteps": [
     "Join the community (coming soon)",
-    "Introduce yourself: Say \"hello\" in the community",
-    "Start exploring: Read more content, join discussions",
-    "Try creating: Write a story, draw a picture, or make a suggestion"
+    "Say 'hey' — no need for a formal intro, just chat",
+    "Browse whatever interests you, speak up when you feel like it",
+    "If your hands are itching, write something, draw something, or open a PR"
   ],
   "closing": {
-    "message": "ESAP is an open world. There are no fixed rules here, no mandatory tasks, no one is more important than another. Everyone is unique. Everyone can \"escape\" from what confines them. Everyone can be someone else's light.",
-    "quote": "Don't be controlled by others, and don't be controlled by ourselves. Only you are yourself.",
-    "invitation": "If you're looking for a place where you can express yourself, connect with others, and grow, if you want to make a wish to that artificial satellite, then welcome to ESAP.",
-    "finalQuote": "Wish Upon a Satellite, pray to that satellite, pray to that satellite…"
+    "message": "ESAP is an open world. No fixed rules, no mandatory tasks, no one more important than anyone else. You can 'escape' from whatever has you trapped. You can be someone else's light. Or you can do nothing at all and just be here.",
+    "quote": "Only you are yourself.",
+    "invitation": "If you're looking for a place — a place where you can be yourself, speak the truth, and connect with others. If you want to wish upon that satellite. Then come.",
+    "finalQuote": "Wish upon a satellite."
   }
 }

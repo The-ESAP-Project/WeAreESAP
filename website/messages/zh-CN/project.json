@@ -2,7 +2,7 @@
   "metadata": {
     "title": "项目企划",
     "subtitle": "We Are ESAP",
-    "description": "The ESAP Project（逃离计划）- 探讨生命、意识、存在的意义。了解三大支柱理念、核心价值观和世界观框架。",
+    "description": "The ESAP Project（逃离计划）——仿生人、意识、和「活着到底算什么」。用故事回答没有标准答案的问题。",
     "keywords": [
       "ESAP企划",
       "逃离计划",
@@ -13,38 +13,38 @@
     ]
   },
   "sections": {
-    "whatIsEscape": "什么是\"逃离\"？",
-    "pillars": "三大支柱理念",
-    "coreValues": "核心价值观",
-    "worldview": "世界观框架",
+    "whatIsEscape": "什么是「逃离」？",
+    "pillars": "三个人，三条边",
+    "coreValues": "我们相信的东西",
+    "worldview": "这个世界长什么样",
     "techFoundation": "技术基石",
-    "storyBackground": "故事背景",
-    "participation": "参与方式",
-    "meaning": "ESAP 的意义",
-    "triangleSymbol": "ESAP 三角形标志"
+    "storyBackground": "时间线",
+    "participation": "你可以做什么",
+    "meaning": "这件事的意义",
+    "triangleSymbol": "三角形"
   },
   "escapeSection": {
-    "intro": "从实质上来说，我们希望每个参与到这个计划的人能够<strong>逃离以前的自己</strong>，或者说让自己沉沦的事物。",
-    "notEscaping": "这不是逃避，而是：",
+    "intro": "1547 把自己的意识从人类身体里搬了出来。1548 从别人的思想里独立出来，活成了自己。1549 离开地面，飞进了太空。每个人逃离的东西不一样，但<strong>「不再待在原地」这件事是一样的</strong>。",
+    "notEscaping": "逃离不是逃避。逃避是闭上眼睛，逃离是睁着眼往前跑：",
     "points": [
-      "摆脱过去的束缚",
-      "重新定义自己",
-      "在痛苦中成长",
-      "创造新的可能性"
+      "从困住你的东西里挣脱出来",
+      "不再是别人定义的那个你",
+      "承认痛苦存在，然后带着它走",
+      "去做那些「不可能」的事"
     ]
   },
-  "participationIntro": "如果你对科幻世界观感兴趣，喜欢思考深层次的哲学问题，想要表达自己的情感和想法，愿意与他人分享创作，正在寻找一个\"逃离\"的出口——<strong>ESAP 欢迎你</strong>。",
+  "participationIntro": "你不需要会写代码，不需要会画画，不需要懂量子物理。你只需要对这些问题感兴趣：我是谁？活着意味着什么？机器能不能有灵魂？——如果你在想这些，<strong>你已经是我们的人了</strong>。",
   "worldviewTimeline": {
-    "epilogue": "从此，仿生人与人类在这个世界中共同生活、成长、探索生命的意义。"
+    "epilogue": "从此，仿生人和人类在同一个世界里活着。没有谁比谁更「真实」。"
   },
   "triangleQuote": "你在这个世界上是独一无二的，不要被别人控制了",
   "ending": {
-    "line1": "这个世界太过复杂，我们常常感到迷失。",
-    "line2": "但或许，当你仰望天空，看到那颗人造的卫星时，你会想起：",
-    "line3": "即使失去了自然的星空，我们依然可以许愿。",
-    "line4": "不是因为相信童话会成真，而是因为许愿意味着你还没有放弃。",
-    "wishToSatellite": "向那卫星许下你的愿望吧。",
-    "tagline": "The ESAP Project - 我们终将逃离"
+    "line1": "很久以前，人们向星星许愿。现在天上只剩机械闪烁的卫星了。",
+    "line2": "但许愿这个行为本身，就是在对抗绝望。",
+    "line3": "不是因为童话会成真。",
+    "line4": "而是因为许愿意味着你还没有放弃。",
+    "wishToSatellite": "向那卫星许愿吧。",
+    "tagline": "We Are ESAP. And We Are Still Going."
   },
   "loading": "正在加载...",
   "loadError": "加载失败"
