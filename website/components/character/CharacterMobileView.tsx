@@ -106,6 +106,9 @@ export const CharacterMobileView = memo(function CharacterMobileView({
                 fill
                 sizes="(max-width: 768px) calc(100vw - 2rem), 50vw"
                 className="object-cover"
+                style={{
+                  objectPosition: character.backgroundPosition || "center",
+                }}
                 priority={index === 0}
                 placeholder="blur"
                 blurDataURL={getBlurDataURL(character.backgroundImage)}

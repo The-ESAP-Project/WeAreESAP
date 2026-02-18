@@ -13,6 +13,7 @@
   "description": "技術の比喩で人の心を癒す太陽のような少女",
   "keywords": ["優しい", "明るい", "癒し", "技術"],
   "backgroundImage": "/images/characters/img_2275.webp",
+  "backgroundPosition": "70% center",
   "tier": "member",
   "meta": {
     "bodyType": "人間",

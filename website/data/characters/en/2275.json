@@ -13,6 +13,7 @@
   "description": "A sunshine girl who heals hearts with tech metaphors",
   "keywords": ["gentle", "sunny", "healing", "tech"],
   "backgroundImage": "/images/characters/img_2275.webp",
+  "backgroundPosition": "70% center",
   "tier": "member",
   "meta": {
     "bodyType": "Human",

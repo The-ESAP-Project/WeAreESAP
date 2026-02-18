@@ -13,6 +13,7 @@
   "description": "用技术比喻治愈人心的阳光少女",
   "keywords": ["温柔", "阳光", "治愈", "技术"],
   "backgroundImage": "/images/characters/img_2275.webp",
+  "backgroundPosition": "70% center",
   "tier": "member",
   "meta": {
     "bodyType": "人类",

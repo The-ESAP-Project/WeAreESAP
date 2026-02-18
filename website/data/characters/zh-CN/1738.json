@@ -13,6 +13,7 @@
   "description": "在纷争中保持冷静的调停者",
   "keywords": ["冷静", "平衡", "忠诚"],
   "backgroundImage": "/images/characters/img_1738.webp",
+  "backgroundPosition": "65% center",
   "tier": "core",
   "meta": {
     "bodyType": "人类",

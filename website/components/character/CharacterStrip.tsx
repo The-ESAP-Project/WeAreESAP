@@ -62,6 +62,7 @@ function CharacterStripComponent({
           fill
           sizes="(max-width: 768px) 100vw, 60vw"
           className="object-cover"
+          style={{ objectPosition: character.backgroundPosition || "center" }}
           priority={index === 0}
           placeholder="blur"
           blurDataURL={getBlurDataURL(character.backgroundImage)}

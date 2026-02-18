@@ -84,6 +84,7 @@ function CharacterCardComponent({
             fill
             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 25vw"
             className="object-cover"
+            style={{ objectPosition: character.backgroundPosition || "center" }}
             priority={priority}
             loading={priority ? undefined : "lazy"}
             placeholder="blur"

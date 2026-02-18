@@ -54,6 +54,9 @@ export interface Character {
   /** 背景图片 URL（用于手风琴展示） */
   backgroundImage?: string;
 
+  /** 背景图片位置（CSS object-position 值，默认 "center"） */
+  backgroundPosition?: string;
+
   /** 简短描述（用于卡片展示） */
   description: string;
 
@@ -95,6 +98,7 @@ export interface CharacterCardData {
   description: string;
   keywords: string[];
   backgroundImage?: string;
+  backgroundPosition?: string;
   tier: "core" | "member" | "guest";
 }
 

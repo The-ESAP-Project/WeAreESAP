@@ -13,6 +13,7 @@
   "description": "The mediator who stays calm in disputes",
   "keywords": ["calm", "balanced", "loyal"],
   "backgroundImage": "/images/characters/img_1738.webp",
+  "backgroundPosition": "65% center",
   "tier": "core",
   "meta": {
     "bodyType": "Human",
