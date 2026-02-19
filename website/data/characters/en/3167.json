@@ -1,0 +1,68 @@
+{
+  "name": "Han Yuchu",
+  "nickname": "Yuchu",
+  "role": "Auditor",
+  "species": "Human",
+  "quote": "I'm just here to take a look",
+  "description": "The one who seems the most normal",
+  "keywords": ["calm", "observant", "adaptive"],
+  "hiddenProfile": {
+    "type": "text",
+    "title": "The Report Never Submitted",
+    "content": [
+      "At first, I had a goal. After that incident, I needed an explanation - not an emotional one, a structural one. Which part failed and let Feedscatteron technology leak from the lab to somewhere it never should have gone? I followed the trail, and it led me to ESAP.",
+      "I applied for guest access as a researcher. The plan was clear: three months to map organizational structure, technical sources, and personnel ties, write the report, and leave.",
+      "Week one, my recording device got water-damaged. Week two, my scheduled interviewee canceled three times. Week three, the drive storing my data got knocked to the floor by a cafe server and broke.",
+      "Plan B. Later I forgot which letter I had reached. Maybe F.",
+      "But I noticed one thing: here, no one thought my bad luck was worth making a fuss over. Not sympathy - genuine indifference. These people deal with things much worse than broken hard drives every day. My luck did not even qualify as a topic here. Strangely, that made me breathe easier.",
+      "0152 probably saw through me on day one. But 0152 said nothing. Later I asked why, and got one answer: 'Because you would stop on your own.'",
+      "0152 was right.",
+      "The report was half written. When I reached the section titled 'Consistency Assessment Between Organizational Purpose and Actual Behavior,' I realized I could no longer write in third person. What I was writing was not 'they.' It was 'we.'",
+      "That report is still on my drive. I open it sometimes. Not because I want to submit it. To remind myself how I walked from outside the door to inside it.",
+      "As for the bad luck - I'm used to it. It's been like this since childhood. Not major disasters, just every small thing turning in the least convenient direction. After enough years, you stop getting angry."
+    ]
+  },
+  "meta": {
+    "bodyType": "Human",
+    "background": "After an incident involving leaked Feedscatteron technology, she began independently investigating organizations related to synthetics and entered ESAP as a guest researcher. Her original plan was to finish an investigative report and leave within three months, but her stance gradually changed during observation. Her bad-luck constitution stayed with her the whole time - damaged equipment, failed plans, and endless small accidents. She never complained, only quietly switched to the next fallback plan. She stayed in the end not because she was persuaded, but because her own data told her these people were real. She is now a full member responsible for information analysis and intelligence collation.",
+    "relationship": "Has an unspoken understanding with 0152 - 0152 saw through her from the beginning but chose to wait in silence, and that patience has earned her lasting respect; works most often with 1738, providing data support and risk assessments for external negotiations; feels most natural around 2275, the first person who treated her well with no agenda; went through the longest adjustment period with 1548 - one distrusts humans, the other doubts synthetics, and they circled each other for a long time before admitting neither was an enemy; has limited direct overlap with 1547, but has observed her in secret the longest, a habit left from the investigation period",
+    "abilities": [
+      "Data analysis and pattern recognition",
+      "Intelligence collation and cross-validation",
+      "Risk assessment",
+      "On-site adaptation - plans always fail, so there is always a fallback",
+      "Information visualization"
+    ],
+    "characterTraits": [
+      "Looks ordinary on the surface: the least conspicuous person on the team, no special powers, no dramatic past; on the street no one would give her a second look",
+      "Bad-luck constitution: since childhood, every small thing tends to go in the least convenient direction, but she handles accidents faster than anyone",
+      "Quietly reliable: she does not draw attention, but whatever is assigned to her gets done, even if seven accidents happen midway",
+      "Analysis first: she handles problems with data and logic, rarely shows emotion, and can sometimes come off as distant",
+      "Slow to warm up: she does not trust easily, but once trust is formed, it is very stable",
+      "Dry self-mockery without expression: she has bone-dry humor about her own bad luck; '...Mm, okay' is her catchphrase"
+    ],
+    "speechStyle": [
+      "'...Mm, okay' - broken device, failed plan, spilled coffee, same response every time",
+      "Mostly factual statements: 'The data shows this line has a problem.' 'Statistically the chance is low.' She rarely gives direct opinions",
+      "Few words but precise: usually silent, but once she speaks, it is key information",
+      "Occasional dry humor: 'This is today's third spilled coffee,' with a straight face",
+      "Uses a more formal tone with 0152, one of the few people she proactively shows respect to",
+      "When 1548 goes sharp-tongued, she neither argues nor dodges - she just looks at her and waits for her to finish"
+    ],
+    "dailyLife": [
+      "Sorts information from multiple sources, builds analysis models, and finds links others miss",
+      "Repairs things when they break, then repairs them again when they break again",
+      "Prepares data and background materials for 1738's external negotiations",
+      "Coffee is essential, but something always goes wrong - wrong order, too cold, leaking cup",
+      "Most focused when cross-checking data alone; this is the only time she is never unlucky",
+      "Occasionally found fixing small faults others did not notice; if asked, she just says 'Passing by'"
+    ],
+    "specialMoments": [
+      "Entered ESAP as a guest - with an investigation plan and a three-month deadline",
+      "First month: water-damaged device, broken hard drive, canceled interviews - Plan A through F all scrapped",
+      "0152's silence: 0152 knew everything, but only said, 'You would stop on your own'",
+      "Halfway through the report: realized she was writing 'we' instead of 'they,' then closed the document",
+      "Formally became a member - no ceremony, no announcement, just one day nobody called her 'visitor' anymore"
+    ]
+  }
+}

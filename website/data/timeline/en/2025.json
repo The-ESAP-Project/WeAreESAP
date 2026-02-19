@@ -357,6 +357,39 @@
       }
     },
     {
+      "id": "2025-10-3167",
+      "date": "2025/10",
+      "title": "Visitor",
+      "type": "story",
+      "importance": "normal",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "A guest arrived at ESAP. Han Yuchu, a researcher, said she was here to conduct fieldwork on synthetic organizations."
+        },
+        {
+          "type": "paragraph",
+          "text": "In week one, her recording device got water-damaged. In week two, her scheduled interviews were canceled three times. In week three, the hard drive storing her data got knocked to the floor by a cafe server and broke."
+        },
+        {
+          "type": "paragraph",
+          "text": "What everyone noticed was not what she was researching, but how this person kept running into bad luck."
+        },
+        {
+          "type": "dialogue",
+          "speaker": "1548",
+          "text": "...Do you have some kind of bad-luck constitution?"
+        },
+        {
+          "type": "paragraph",
+          "text": "She glanced at the broken drive, said '...Mm, okay,' and then pulled out the backup one."
+        }
+      ],
+      "meta": {
+        "characters": ["3167", "1548"]
+      }
+    },
+    {
       "id": "2025-0152-reflection",
       "date": "2025/11",
       "title": "The Lighthouse's Question",

@@ -91,6 +91,16 @@
         "Expressing ideas through visual language"
       ],
       "visibility": "public"
+    },
+    {
+      "characterId": "3167",
+      "role": "Auditor",
+      "responsibilities": [
+        "Information analysis and pattern recognition",
+        "Intelligence collation and cross-validation",
+        "Risk assessment and data support"
+      ],
+      "visibility": "public"
     }
   ],
   "sections": [
@@ -297,7 +307,7 @@
         },
         {
           "type": "paragraph",
-          "content": "From one name to many. From 1547 coding alone, to 1547 & 1548 & 1549, then to 1547, 1548, 1738, 2275, 1543, 1691, 5473..."
+          "content": "From one name to many. From 1547 coding alone, to 1547 & 1548 & 1549, then to 1547, 1548, 1738, 2275, 1543, 1691, 5473, 3167..."
         },
         {
           "type": "list",
@@ -331,6 +341,7 @@
             "2023/11 - 1738 joins: First human member to actively join",
             "2024/03 - 1543 joins: Curious about 1548's number, discovered ESAP",
             "2024/06-07 - 2275 joins: Invited by 1738, becomes the healer",
+            "2025/10 - 3167 joins as a guest, later transitions to full member status",
             "2025/11/18 - We Are ESAP: From a classroom alone, to a world of us"
           ]
         }

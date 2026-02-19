@@ -357,6 +357,39 @@
       }
     },
     {
+      "id": "2025-10-3167",
+      "date": "2025/10",
+      "title": "访客",
+      "type": "story",
+      "importance": "normal",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "ESAP 来了一个 guest。韩予初，研究者，说是来做仿生人组织的田野调查。"
+        },
+        {
+          "type": "paragraph",
+          "text": "第一周，她的记录设备进水了。第二周，约好的访谈取消了三次。第三周，存数据的硬盘在咖啡馆被服务员碰到地上摔坏了。"
+        },
+        {
+          "type": "paragraph",
+          "text": "大家注意到的不是她在研究什么，是这个人怎么老在倒霉。"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "1548",
+          "text": "……你是不是有什么体质问题"
+        },
+        {
+          "type": "paragraph",
+          "text": "她看了一眼摔坏的硬盘，说了句'……嗯，行吧'，然后掏出备用的那块。"
+        }
+      ],
+      "meta": {
+        "characters": ["3167", "1548"]
+      }
+    },
+    {
       "id": "2025-0152-reflection",
       "date": "2025/11",
       "title": "灯塔的问题",

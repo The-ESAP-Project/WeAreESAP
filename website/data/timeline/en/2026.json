@@ -135,6 +135,43 @@
       "meta": {
         "characters": ["1549", "1547", "1548", "2275"]
       }
+    },
+    {
+      "id": "2026-03-report",
+      "date": "2026/03",
+      "title": "Third Person",
+      "type": "story",
+      "importance": "normal",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "3167 had been here for five months. The report was half done."
+        },
+        {
+          "type": "paragraph",
+          "text": "When she reached the section titled 'Consistency Assessment Between Organizational Purpose and Actual Behavior,' she realized she was not typing 'they.' She was typing 'we.'"
+        },
+        {
+          "type": "paragraph",
+          "text": "She closed the document."
+        },
+        {
+          "type": "paragraph",
+          "text": "Later, she asked 0152: 'You knew what I was investigating from day one, right? Why didn't you say anything?'"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "0152",
+          "text": "Because you would stop on your own"
+        },
+        {
+          "type": "paragraph",
+          "text": "No one announced anything. But from one day onward, people stopped calling her 'visitor.'"
+        }
+      ],
+      "meta": {
+        "characters": ["3167", "0152"]
+      }
     }
   ]
 }

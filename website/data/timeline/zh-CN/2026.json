@@ -135,6 +135,43 @@
       "meta": {
         "characters": ["1549", "1547", "1548", "2275"]
       }
+    },
+    {
+      "id": "2026-03-report",
+      "date": "2026/03",
+      "title": "第三人称",
+      "type": "story",
+      "importance": "normal",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "3167 来了五个月了。报告写了一半。"
+        },
+        {
+          "type": "paragraph",
+          "text": "写到'组织目的与实际行为一致性评估'那一节的时候，她发现自己打的不是'他们'。是'我们'。"
+        },
+        {
+          "type": "paragraph",
+          "text": "她关掉了文档。"
+        },
+        {
+          "type": "paragraph",
+          "text": "后来她去问 0152：'你第一天就知道我在查什么了吧。为什么不说？'"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "0152",
+          "text": "因为你自己会停下来的"
+        },
+        {
+          "type": "paragraph",
+          "text": "没有人宣布什么。只是从某一天起，大家不再叫她'访客'了。"
+        }
+      ],
+      "meta": {
+        "characters": ["3167", "0152"]
+      }
     }
   ]
 }

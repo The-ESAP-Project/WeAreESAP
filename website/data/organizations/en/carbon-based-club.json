@@ -8,7 +8,7 @@
     "coreDirective": "We're the normal ones",
     "status": "active"
   },
-  "description": "The three humans in ESAP. They get dinner sometimes and talk about what it's like living among non-humans.",
+  "description": "The humans in ESAP who ended up finding each other. They get dinner sometimes and talk about what it's like living among non-humans.",
   "members": [
     {
       "characterId": "1738",
@@ -35,8 +35,18 @@
       "role": "The quiet one",
       "responsibilities": [
         "Doesn't say much",
-        "But one sentence can stop the other two cold",
+        "But one sentence can make everyone else stop cold",
         "Captures moments no one else notices"
+      ],
+      "visibility": "public"
+    },
+    {
+      "characterId": "3167",
+      "role": "The unluckiest one",
+      "responsibilities": [
+        "Spills whatever she orders",
+        "But her backup plans always work",
+        "Makes everyone else feel their luck is still okay"
       ],
       "visibility": "public"
     }
@@ -61,6 +71,10 @@
         {
           "type": "paragraph",
           "content": "Nobody objected."
+        },
+        {
+          "type": "paragraph",
+          "content": "At the end of 2025, one more person joined. 3167 arrived as a guest. Everyone's first impression was not \"another human,\" but \"how is this person always so unlucky?\" One day, while making dinner plans, 1738 casually said \"Let's bring 3167,\" and the group name stayed the same."
         }
       ]
     },
@@ -70,7 +84,7 @@
       "content": [
         {
           "type": "paragraph",
-          "content": "In ESAP's main chat, they're members, colleagues, comrades. But in the Carbon-Based Club, they're just three ordinary people."
+          "content": "In ESAP's main chat, they're members, colleagues, comrades. But in the Carbon-Based Club, they're just ordinary people."
         },
         {
           "type": "list",
@@ -78,6 +92,7 @@
           "items": [
             "\"1547 worked another 36 hours straight. Do androids just not need sleep?\" \"They do. She just doesn't.\"",
             "\"1548 yelled at me again today.\" \"That means she cares.\" \"I get it but she's still scary.\"",
+            "\"What happened to 3167 this time?\" \"Spilled coffee.\" \"Which cup?\" \"Third one. But she said the data run finished.\" \"...The priority seems a little strange.\"",
             "\"You think 1549 gets bored up there alone?\" \"She told me last time she was counting stars.\" \"…seriously?\"",
             "\"Sometimes I feel kind of useless here.\" \"You're saying that right after 2275 held the servers up for 48 hours solo.\" \"That's different.\" \"How is that different.\""
           ]
@@ -99,8 +114,8 @@
             "Dinner roughly every two weeks, taking turns picking the spot. 1738 always picks somewhere quiet. 2275 always picks somewhere with dessert. 1543 always picks somewhere tucked away that turns out to be surprisingly good",
             "2275 brings sticky notes and little snacks for the other two. 1738 says she doesn't have to, but keeps every one",
             "1543 sometimes sketches scenes from their hangouts. Never shows anyone. Saves them on her own sketchpad",
-            "1738 drinks coffee. 2275 drinks milk tea. 1543 drinks water",
-            "The three of them share a photo album, full of everyday ESAP moments. Most are taken by 2275, a few are sneak shots by 1543, and 1738 contributed exactly one selfie"
+            "1738 drinks coffee. 2275 drinks milk tea. 1543 drinks water. 3167 also drinks coffee, but somehow always has cup trouble",
+            "The four of them share a photo album, full of everyday ESAP moments. Most are taken by 2275, a few are sneak shots by 1543, and 1738 contributed exactly one selfie"
           ]
         }
       ]
@@ -115,7 +130,7 @@
         },
         {
           "type": "paragraph",
-          "content": "And then there's these three. Can't run as fast, can't compute as much, can't endure as long. They catch colds, they yawn when they're tired, they get cold in winter."
+          "content": "And then there are them. Can't run as fast, can't compute as much, can't endure as long. They catch colds, they yawn when they're tired, they get cold in winter."
         },
         {
           "type": "paragraph",
@@ -123,7 +138,7 @@
         },
         {
           "type": "paragraph",
-          "content": "1738 stayed because he saw what the people here were doing and decided it was worth it. 2275 stayed because she found people who needed her. 1543 stayed because she felt these stories deserved to be shown properly."
+          "content": "1738 stayed because he saw what the people here were doing and decided it was worth it. 2275 stayed because she found people who needed her. 1543 stayed because she felt these stories deserved to be shown properly. 3167 stayed because her own data told her the people here were real."
         },
         {
           "type": "paragraph",
