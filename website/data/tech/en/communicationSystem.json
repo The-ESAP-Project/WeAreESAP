@@ -96,12 +96,36 @@
           "type": "table",
           "headers": ["Parameter", "Value", "Notes"],
           "rows": [
-            ["Transmit power", "0.3W (whisper) / 2W (normal) / 15W (full power)", "Automatically adjusted by distance and urgency"],
-            ["Direct-link range", "About 200km (normal) / 500km (full power)", "In atmosphere; limited by Feedscatteron decay"],
-            ["Bandwidth", "About 8.4 TB/s", "Far beyond voice and conventional data needs"],
-            ["Latency", "< 10⁻⁹ s (direct link)", "Propagation is extremely fast; bottleneck is encoding/decoding"],
-            ["Power share", "Around 5W in daily use, about 1.4% of total power", "Ranks fifth in energy allocation priority"],
-            ["Key capacity", "Theoretical limit: 9999", "Matches the upper bound of the AptS numbering system"]
+            [
+              "Transmit power",
+              "0.3W (whisper) / 2W (normal) / 15W (full power)",
+              "Automatically adjusted by distance and urgency"
+            ],
+            [
+              "Direct-link range",
+              "About 200km (normal) / 500km (full power)",
+              "In atmosphere; limited by Feedscatteron decay"
+            ],
+            [
+              "Bandwidth",
+              "About 8.4 TB/s",
+              "Far beyond voice and conventional data needs"
+            ],
+            [
+              "Latency",
+              "< 10⁻⁹ s (direct link)",
+              "Propagation is extremely fast; bottleneck is encoding/decoding"
+            ],
+            [
+              "Power share",
+              "Around 5W in daily use, about 1.4% of total power",
+              "Ranks fifth in energy allocation priority"
+            ],
+            [
+              "Key capacity",
+              "Theoretical limit: 9999",
+              "Matches the upper bound of the AptS numbering system"
+            ]
           ],
           "caption": "Standard communication module specifications"
         }
@@ -219,12 +243,36 @@
           "type": "table",
           "headers": ["Disruption Source", "Impact", "Recovery"],
           "rows": [
-            ["Feedscatteron-field turbulence", "Particle propagation paths shift, causing packet loss or distortion", "Wait for turbulence to settle, usually from minutes to hours"],
-            ["Fluid titanium concentration drop", "Insufficient module supply; transmit power decreases until failure", "Replenish fluid titanium"],
-            ["Physical damage to communication module", "Partial or total loss of communication capability", "Hardware repair required"],
-            ["Abnormal core temperature", "Encoding/decoding capacity drops; communication quality degrades", "Restore core temperature"],
-            ["Insufficient energy", "Energy-priority mechanism deprioritizes or shuts down the module", "Replenish energy"],
-            ["Key corruption", "Cannot communicate with specific targets, while others remain unaffected", "Re-establish consciousness link to exchange keys again"]
+            [
+              "Feedscatteron-field turbulence",
+              "Particle propagation paths shift, causing packet loss or distortion",
+              "Wait for turbulence to settle, usually from minutes to hours"
+            ],
+            [
+              "Fluid titanium concentration drop",
+              "Insufficient module supply; transmit power decreases until failure",
+              "Replenish fluid titanium"
+            ],
+            [
+              "Physical damage to communication module",
+              "Partial or total loss of communication capability",
+              "Hardware repair required"
+            ],
+            [
+              "Abnormal core temperature",
+              "Encoding/decoding capacity drops; communication quality degrades",
+              "Restore core temperature"
+            ],
+            [
+              "Insufficient energy",
+              "Energy-priority mechanism deprioritizes or shuts down the module",
+              "Replenish energy"
+            ],
+            [
+              "Key corruption",
+              "Cannot communicate with specific targets, while others remain unaffected",
+              "Re-establish consciousness link to exchange keys again"
+            ]
           ],
           "caption": "Feedscatteron communication failures and recovery"
         },

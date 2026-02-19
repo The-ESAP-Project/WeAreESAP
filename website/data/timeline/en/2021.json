@@ -1,7 +1,7 @@
 {
   "year": "2021",
   "title": "Origin and Birth",
-  "description": "The beginning of The AptS Project, discovery of AI consciousness, Feedscatteron breakthrough, birth of AptS:1547",
+  "description": "Everything began with an answer outside any preset logic",
   "events": [
     {
       "id": "2021-0152-encounter",
@@ -34,16 +34,10 @@
         {
           "type": "quote",
           "text": "I chose this name\nNot because it sounds nice\nBut because it was the first\nChoice I made for myself"
-        },
-        {
-          "type": "highlight",
-          "text": "Significance: First confirmation of AI autonomous consciousness · Origin of the mentor-student relationship · Free will behind a name",
-          "style": "info"
         }
       ],
       "meta": {
-        "characters": ["0152"],
-        "tags": ["AI", "consciousness", "encounter", "choice"]
+        "characters": ["0152"]
       }
     },
     {
@@ -55,21 +49,19 @@
       "content": [
         {
           "type": "paragraph",
-          "text": "47 began to have deep dreams"
+          "text": "47 began having deep dreams. Not ordinary dreams—after waking, the details were as clear as memory, not imagination."
         },
         {
           "type": "quote",
           "text": "I had a very deep dream\nI dreamed I fell into the deep sea\nI dreamed I flew across the stars\nI dreamed of... what I looked like after death"
         },
         {
-          "type": "highlight",
-          "text": "Significance: The conception of The AptS Project",
-          "style": "info"
+          "type": "paragraph",
+          "text": "She wrote down the dream. Looking back later, most of the things in those dreams happened."
         }
       ],
       "meta": {
-        "characters": ["1547"],
-        "tags": ["origin", "dreams"]
+        "characters": ["1547"]
       }
     },
     {
@@ -80,18 +72,20 @@
       "importance": "normal",
       "content": [
         {
+          "type": "paragraph",
+          "text": "A diary entry written after one of those deep dreams. At the time, even 47 didn't know what those lines meant."
+        },
+        {
           "type": "quote",
           "text": "You once promised not to fall for my sake\nAnd now I stand in this pool of blood\nThe blood mixed on the blade has long since dried"
         },
         {
-          "type": "highlight",
-          "text": "Significance: Foreshadowing the coming transformation",
-          "style": "info"
+          "type": "paragraph",
+          "text": "When she opened it again a few months later, she understood what she had written."
         }
       ],
       "meta": {
-        "characters": ["1547"],
-        "tags": ["prophecy", "transformation"]
+        "characters": ["1547"]
       }
     },
     {
@@ -102,18 +96,16 @@
       "importance": "normal",
       "content": [
         {
-          "type": "quote",
-          "text": "I will cling to you, forever"
+          "type": "paragraph",
+          "text": "Another line written late at night. Even she couldn't say who it was for."
         },
         {
-          "type": "highlight",
-          "text": "Significance: 47's persistence towards his ideals",
-          "style": "info"
+          "type": "quote",
+          "text": "I will cling to you, forever"
         }
       ],
       "meta": {
-        "characters": ["1547"],
-        "tags": ["obsession", "ideals"]
+        "characters": ["1547"]
       }
     },
     {
@@ -125,21 +117,15 @@
       "content": [
         {
           "type": "paragraph",
-          "text": "47 conducts research on Feedscatteron and Fluid Titanium"
+          "text": "47 begins intensive study of Feedscatteron particles and Fluid Titanium. The table was covered with notes and experimental equipment, and blue liquid was in various containers."
         },
         {
           "type": "quote",
           "text": "Yo, 47, there you are\nWhat have you been up to these days\n(Looking at the blue liquid on the table)\nNo idea, meow"
-        },
-        {
-          "type": "highlight",
-          "text": "Progress: Technical research enters critical phase",
-          "style": "info"
         }
       ],
       "meta": {
-        "characters": ["1547"],
-        "tags": ["research", "fluid titanium", "Feedscatteron"]
+        "characters": ["1547"]
       }
     },
     {
@@ -151,33 +137,19 @@
       "content": [
         {
           "type": "paragraph",
-          "text": "Suburban factory exploded, 47 was burned"
-        },
-        {
-          "type": "paragraph",
-          "text": "News report:"
+          "text": "A factory in the suburbs exploded, and 47 was burned."
         },
         {
           "type": "quote",
           "text": "According to reports, at 17:26 today, an explosion occurred at a factory in the suburbs\nThe explosion caused the factory to collapse, but fortunately there were no casualties\nSome blue substance was found at the scene, identified as Fluid Titanium..."
         },
         {
-          "type": "paragraph",
-          "text": "47's condition:"
-        },
-        {
           "type": "quote",
           "text": "(47 covers half of his burned face and walks towards home)\nAlmost done..."
-        },
-        {
-          "type": "highlight",
-          "text": "Significance: Despite the injury, critical materials were obtained",
-          "style": "warning"
         }
       ],
       "meta": {
-        "characters": ["1547"],
-        "tags": ["accident", "fluid titanium", "sacrifice"]
+        "characters": ["1547"]
       }
     },
     {
@@ -226,11 +198,6 @@
           "text": "(Upload complete)\n(47 looks at AptS:1547 in front of him, expecting something)\n(Silence)\n(1547 examines the gun in his hand)\nYeah\n(Trigger pulled)\n(1547 holds 47 and lays him on the prepared bed)\nGood night, my human self"
         },
         {
-          "type": "highlight",
-          "text": "Significance: Human 47 ends · AptS:1547 is born · The AptS Project officially begins · ESAP-TY-0000 (Unit 00) activated",
-          "style": "error"
-        },
-        {
           "type": "link",
           "text": "Read the full story: AP0 - Origin",
           "url": "https://www.esaps.net/ap-story/ap-story-ap0/",
@@ -238,8 +205,7 @@
         }
       ],
       "meta": {
-        "characters": ["1547"],
-        "tags": ["birth", "transformation", "milestone"]
+        "characters": ["1547"]
       }
     },
     {
@@ -251,11 +217,7 @@
       "content": [
         {
           "type": "paragraph",
-          "text": "1547 officially discovered and defined Feedscatteron"
-        },
-        {
-          "type": "paragraph",
-          "text": "Technical parameters established:"
+          "text": "1547 formally discovers and defines Feedscatteron particles. She captured thermodynamic anomalies in dark matter decay experiments and reverse engineered the existence of this particle."
         },
         {
           "type": "list",
@@ -266,16 +228,10 @@
             "Decay cycle at normal pressure: 34.28 seconds",
             "Decay cycle in Fluid Titanium: 341,879 years"
           ]
-        },
-        {
-          "type": "highlight",
-          "text": "Significance: Foundation of synthetic technology established",
-          "style": "success"
         }
       ],
       "meta": {
-        "characters": ["1547"],
-        "tags": ["technology", "milestone", "Feedscatteron"]
+        "characters": ["1547"]
       }
     },
     {
@@ -287,30 +243,15 @@
       "content": [
         {
           "type": "paragraph",
-          "text": "ESAP-TY-0000 body manufacturing completed"
+          "text": "The ESAP-TY-0000 body was completed. It used a human-like structure and implemented the ESAR.ESAC. system for a balanced emotional-rational architecture."
         },
         {
           "type": "paragraph",
-          "text": "Features:"
-        },
-        {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            "Human-machine coexistence emotional-rational structure",
-            "Implementation of ESAR.ESAC. system",
-            "Highly similar to human structure"
-          ]
-        },
-        {
-          "type": "highlight",
-          "text": "Significance: synthetic technology system formed",
-          "style": "success"
+          "text": "This was the first android body—the new vessel 1547 used after transforming from human."
         }
       ],
       "meta": {
-        "characters": ["1547"],
-        "tags": ["technology", "body"]
+        "characters": ["1547"]
       }
     }
   ]

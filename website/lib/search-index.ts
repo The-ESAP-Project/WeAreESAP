@@ -80,7 +80,6 @@ export async function buildSearchIndex(locale: string): Promise<SearchItem[]> {
           .map((c) => ("text" in c ? c.text : ""))
           .join(" "),
         url: `${localePrefix}/timeline?event=${event.id}`,
-        keywords: event.meta?.tags,
       });
     });
   });

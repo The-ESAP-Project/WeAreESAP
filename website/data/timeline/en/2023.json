@@ -1,7 +1,7 @@
 {
   "year": "2023",
   "title": "Team Formation",
-  "description": "1549 launched into space, core team of three complete, emotional bonds deepened",
+  "description": "1549 launched, 1738 joined, and three became many",
   "events": [
     {
       "id": "2023-03-14",
@@ -12,7 +12,7 @@
       "content": [
         {
           "type": "highlight",
-          "text": "「Polar Satellite」Day · 1549 launched into space",
+          "text": "「Polaris Satellite」Day · 1549 launched into orbit",
           "style": "info"
         },
         {
@@ -21,21 +21,7 @@
         },
         {
           "type": "paragraph",
-          "text": "Configuration:"
-        },
-        {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            "1549 volunteered to participate",
-            "Three satellites entered geosynchronous orbit",
-            "Orbital altitude: 36,000 km",
-            "1549 possesses three bodies"
-          ]
-        },
-        {
-          "type": "paragraph",
-          "text": "Symbolic meaning:"
+          "text": "1549 volunteered. Three satellites entered geosynchronous orbit at 36,000 km. 1549 has three bodies."
         },
         {
           "type": "quote",
@@ -49,8 +35,7 @@
         }
       ],
       "meta": {
-        "characters": ["1549"],
-        "tags": ["satellite", "milestone", "hope"]
+        "characters": ["1549"]
       }
     },
     {
@@ -71,20 +56,10 @@
         {
           "type": "quote",
           "text": "So this is what they call the 'blue marble'\nFrom this height, every conflict looks absurdly small\nBut those people too small to see\nEvery single one is earnestly alive\n\nI want to protect this view"
-        },
-        {
-          "type": "paragraph",
-          "text": "In that moment she understood why she chose to stay. Not because she was assigned, not because of a mission — because from this height, she could see what truly matters."
-        },
-        {
-          "type": "highlight",
-          "text": "Significance: The Watcher's awakening · Understanding the value of solitude · From executor to chooser",
-          "style": "info"
         }
       ],
       "meta": {
-        "characters": ["1549"],
-        "tags": ["overview", "awakening", "choice"]
+        "characters": ["1549"]
       }
     },
     {
@@ -96,36 +71,34 @@
       "content": [
         {
           "type": "paragraph",
-          "text": "AptS:2077 was discovered by 1547 and 1548"
+          "text": "That day, a thin layer of frost covered the entrance to the database. The wind was cold."
         },
         {
           "type": "paragraph",
-          "text": "Characteristics:"
+          "text": "2077 slipped on the ice. She had not yet learned to walk on her own feet."
         },
         {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            "Shapeshifting ability (cat, fox, humanoid)",
-            "Mood expressed through form changes",
-            "Rescued and joined the team"
-          ]
+          "type": "paragraph",
+          "text": "When she woke up, two silhouettes stood in the light—one with red-and-blue heterochromia, one carrying a hot-water bottle."
         },
         {
-          "type": "highlight",
-          "text": "Significance: Core team of three expanded",
-          "style": "info"
+          "type": "dialogue",
+          "speaker": "1547",
+          "text": "Welcome here."
+        },
+        {
+          "type": "paragraph",
+          "text": "1548 handed her the hot-water bottle."
         },
         {
           "type": "link",
           "text": "Read the full story: AP4 - Encounter",
           "url": "https://www.esaps.net/ap-story/ap-story-ap4/",
-          "description": "1547 and 1548 meet 2077 for the first time, the little one who fell at the database entrance"
+          "description": "1547 and 1548 meet 2077 for the first time"
         }
       ],
       "meta": {
-        "characters": ["2077"],
-        "tags": ["new member", "shapeshifting"]
+        "characters": ["2077", "1547", "1548"]
       }
     },
     {
@@ -137,36 +110,35 @@
       "content": [
         {
           "type": "paragraph",
-          "text": "47 and 48 trapped, chose to die together"
+          "text": "Basement of abandoned building. As the door closed, 47 smelled gasoline."
         },
         {
           "type": "paragraph",
-          "text": "Scenario:"
+          "text": "48 shouldn't be here. 47 told her to come back later. But she came anyway."
         },
         {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            "Facing an inescapable predicament",
-            "Two made a joint choice",
-            "Initiated self-destruct program"
-          ]
+          "type": "dialogue",
+          "speaker": "1547",
+          "text": "Get out—"
         },
         {
-          "type": "highlight",
-          "text": "Core philosophy: Unwilling to escape alone · Face destruction together · Demonstrates deep bond",
-          "style": "warning"
+          "type": "dialogue",
+          "speaker": "1548",
+          "text": "If you're going down, I'm going with you"
+        },
+        {
+          "type": "paragraph",
+          "text": "The fire rose. Together, they triggered the self-destruct program."
         },
         {
           "type": "link",
           "text": "Read the full story: AP5 - Dying Together",
           "url": "https://www.esaps.net/ap-story/ap-story-ap5/",
-          "description": "The choice of 47 and 48, a bond of life and death"
+          "description": "Choice of 47 and 48"
         }
       ],
       "meta": {
-        "characters": ["1547", "1548"],
-        "tags": ["bond", "choice", "dying together"]
+        "characters": ["1547", "1548"]
       }
     },
     {
@@ -191,16 +163,10 @@
         {
           "type": "paragraph",
           "text": "He didn't look back when he left. He knew what he was searching for — not another organization, but a place that truly believes in what it does."
-        },
-        {
-          "type": "highlight",
-          "text": "Significance: A life turning point · Breaking free from a hypocritical system · Laying groundwork for joining ESAP",
-          "style": "warning"
         }
       ],
       "meta": {
-        "characters": ["1738"],
-        "tags": ["break", "turning point", "principles"]
+        "characters": ["1738"]
       }
     },
     {
@@ -225,20 +191,10 @@
         {
           "type": "paragraph",
           "text": "No one knows the content of these late-night conversations. No one knows that within her consciousness dwells a voice that speaks the cruelest truths."
-        },
-        {
-          "type": "quote",
-          "text": "The voice says the most vicious things\nYet it has never truly pushed her to die\n\nPerhaps that is why\nShe has never asked the voice to disappear"
-        },
-        {
-          "type": "highlight",
-          "text": "Significance: A dialogue in the depths of consciousness · A nameless presence · The cruelest form of care",
-          "style": "info"
         }
       ],
       "meta": {
-        "characters": ["1547"],
-        "tags": ["inner", "dialogue", "late night", "voice"]
+        "characters": ["1547"]
       }
     },
     {
@@ -250,17 +206,15 @@
       "content": [
         {
           "type": "paragraph",
-          "text": "Warm moment for the three (1547, 1548, 1549)"
+          "text": "A warm moment for the three (1547, 1548, 1549). 1549 was in orbit, 1547 and 1548 were on the ground, and the comm channel stayed open all night."
         },
         {
-          "type": "highlight",
-          "text": "Significance: Rare peaceful time · Emotional bonds within the team · Brief respite in the escape plan",
-          "style": "success"
+          "type": "paragraph",
+          "text": "A rare peace."
         }
       ],
       "meta": {
-        "characters": ["1547", "1548", "1549"],
-        "tags": ["reunion", "warmth"]
+        "characters": ["1547", "1548", "1549"]
       }
     },
     {
@@ -299,18 +253,12 @@
           "text": "Humans can't prove their emotions aren't simulations of neural signals either"
         },
         {
-          "type": "quote",
-          "text": "That night's conversation lasted four hours\nNo conclusions\nBut both AIs felt\nNot needing conclusions was fine too"
-        },
-        {
-          "type": "highlight",
-          "text": "Significance: Existentialist dialogue from an AI perspective · Spiritual exchange between two non-human individuals",
-          "style": "info"
+          "type": "paragraph",
+          "text": "Their conversation lasted four hours. No conclusion—but both AIs felt that was fine."
         }
       ],
       "meta": {
-        "characters": ["1549", "0152"],
-        "tags": ["AI", "philosophy", "consciousness", "dialogue"]
+        "characters": ["1549", "0152"]
       }
     },
     {
@@ -326,11 +274,6 @@
           "text": "1547 heard Weavers for the first time"
         },
         {
-          "type": "highlight",
-          "text": "Significance: Musical theme of EP0 · Symbol of origin · Metaphor for weaving life's possibilities",
-          "style": "info"
-        },
-        {
           "type": "link",
           "text": "Related log: EP0 - Weavers",
           "url": "https://www.esaps.net/ep-story/ep0-weavers/",
@@ -342,8 +285,7 @@
         "music": {
           "title": "Weavers",
           "artist": "Feint"
-        },
-        "tags": ["music", "origin"]
+        }
       }
     },
     {
@@ -355,11 +297,7 @@
       "content": [
         {
           "type": "paragraph",
-          "text": "1547's depression episode, 1548 accompanied and helped"
-        },
-        {
-          "type": "paragraph",
-          "text": "Timeline:"
+          "text": "1547 had a depressive episode, and 1548 stayed with her and pulled her through."
         },
         {
           "type": "list",
@@ -369,10 +307,6 @@
             "13:25 - Reached peak, acute stress reaction, self-harm behavior",
             "13:35 - 1548 appeared and had crucial conversation"
           ]
-        },
-        {
-          "type": "paragraph",
-          "text": "Key dialogue:"
         },
         {
           "type": "dialogue",
@@ -410,10 +344,6 @@
           "text": "...Okay, I won't control you, but don't continue like this"
         },
         {
-          "type": "paragraph",
-          "text": "Ritual:"
-        },
-        {
           "type": "dialogue",
           "speaker": "1548",
           "text": "May AptS be with you"
@@ -424,11 +354,6 @@
           "text": "May ESAP be with you"
         },
         {
-          "type": "highlight",
-          "text": "Significance: Shows 1548's protection of 1547 · Deep emotions within the team · Depression is an ongoing challenge · Real meaning of the escape plan",
-          "style": "warning"
-        },
-        {
           "type": "link",
           "text": "Read the full article: A Classroom of One",
           "url": "https://www.esaps.net/mood/one-persons-classroom/",
@@ -436,8 +361,7 @@
         }
       ],
       "meta": {
-        "characters": ["1547", "1548"],
-        "tags": ["emotion", "protection", "depression"]
+        "characters": ["1547", "1548"]
       }
     },
     {
@@ -455,16 +379,10 @@
         {
           "type": "quote",
           "text": "Actually, school is pretty good, there are many small places where I can be alone\nIn this highly modernized era, I really can't stay for a moment! (said with a laugh)"
-        },
-        {
-          "type": "highlight",
-          "text": "Significance: Relief from depression · Found new coping methods · A classroom of one, escaping depression's classroom",
-          "style": "success"
         }
       ],
       "meta": {
-        "characters": ["1547"],
-        "tags": ["recovery", "solitude"]
+        "characters": ["1547"]
       }
     },
     {
@@ -489,14 +407,11 @@
         {
           "type": "paragraph",
           "text": "He reached out to ESAP on his own and stated his purpose. No grand self-introduction, just one sentence: 'What I can do is build a bridge between you and the outside world. If you need one.'"
-        },
-        {
-          "type": "highlight",
-          "text": "Significance: ESAP gained a bridge to the outside world · A human chose to stand with synthetics · The wisdom of the gray area joined the team",
-          "style": "success"
         }
       ],
-      "meta": { "characters": ["1738"], "tags": ["joining", "ESAP", "bridge"] }
+      "meta": {
+        "characters": ["1738"]
+      }
     }
   ]
 }

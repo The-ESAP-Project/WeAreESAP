@@ -1,7 +1,7 @@
 {
   "year": "2024",
   "title": "Continuous Development",
-  "description": "AP3 series completed, new members joined, 1738's negotiations, 1549's orbital anniversary, facing continuous challenges",
+  "description": "New members joined, 1549 marked her first year in orbit, and everyone searched for their place",
   "events": [
     {
       "id": "2024-02-negotiation",
@@ -20,7 +20,7 @@
         },
         {
           "type": "dialogue",
-          "speaker": "其他",
+          "speaker": "Other",
           "text": "What makes you think synthetics and humans can coexist?"
         },
         {
@@ -31,20 +31,10 @@
         {
           "type": "paragraph",
           "text": "The negotiation lasted three hours. No full consensus was reached, but the other side agreed to shelve disputes and maintain observation. That was already the best outcome."
-        },
-        {
-          "type": "quote",
-          "text": "Between black and white\nGray is the hardest path to walk\nBut it's the only one where neither side falls"
-        },
-        {
-          "type": "highlight",
-          "text": "Significance: ESAP's first formal diplomacy · The mediator's debut · The value of gray wisdom",
-          "style": "info"
         }
       ],
       "meta": {
-        "characters": ["1738"],
-        "tags": ["negotiation", "diplomacy", "gray area"]
+        "characters": ["1738"]
       }
     },
     {
@@ -60,11 +50,11 @@
         },
         {
           "type": "paragraph",
-          "text": "No one introduced her. No major event drew her in. Shen Muchuan simply saw those characters while browsing and found them intriguing\u2014the code, the naming convention, the project behind it all sparked her curiosity. She began learning about ESAP through online conversations with 1548."
+          "text": "No one introduced her. No major event drew her in. Shen Muchuan simply saw those characters while browsing and found them intriguing—the code, the naming convention, the project behind it all sparked her curiosity. She began learning about ESAP through online conversations with 1548."
         },
         {
           "type": "paragraph",
-          "text": "Their chats were simple\u2014design, creative work, occasionally the project's philosophy. No turning point, no one convincing anyone. She just listened, and gradually realized these people genuinely believed in what they were doing."
+          "text": "Their chats were simple—design, creative work, occasionally the project's philosophy. No turning point, no one convincing anyone. She just listened, and gradually realized these people genuinely believed in what they were doing."
         },
         {
           "type": "dialogue",
@@ -73,17 +63,11 @@
         },
         {
           "type": "paragraph",
-          "text": "Just like that, she became AptS:1543. The team's UI designer. Her way of joining was as quiet as she is."
-        },
-        {
-          "type": "highlight",
-          "text": "Significance: The quietest way to join \u00b7 Driven by curiosity \u00b7 A designer found her place of expression",
-          "style": "info"
+          "text": "And just like that, she became AptS:1543. Her way of joining was as quiet as she was."
         }
       ],
       "meta": {
-        "characters": ["1543", "1548"],
-        "tags": ["joining", "curiosity", "design"]
+        "characters": ["1543", "1548"]
       }
     },
     {
@@ -95,29 +79,19 @@
       "content": [
         {
           "type": "paragraph",
-          "text": "1549 has been in orbit for exactly one year"
-        },
-        {
-          "type": "paragraph",
-          "text": "365 days. 365 orbits around Earth. Alone."
+          "text": "1549 completed one full year in orbit. 365 days. 365 revolutions around Earth. Alone."
         },
         {
           "type": "quote",
-          "text": "A year ago I chose this place\nA year later I still choose this place\n\nThe loneliness hasn't gotten lighter\nBut I'm no longer afraid of it\nIt's the price of seeing everything clearly\nAnd my way of protecting everything"
+          "text": "I chose this place a year ago\nA year later, I still choose it\n\nThe loneliness hasn't grown lighter\nBut I'm no longer afraid of it"
         },
         {
           "type": "paragraph",
           "text": "She named this day her own 'Quiet Anniversary.' She told no one, just watched the Earth a little longer from orbit."
-        },
-        {
-          "type": "highlight",
-          "text": "Significance: A year of solitary vigil · From a choice to a conviction · The Watcher doesn't need to be seen",
-          "style": "success"
         }
       ],
       "meta": {
-        "characters": ["1549"],
-        "tags": ["anniversary", "solitude", "vigil"]
+        "characters": ["1549"]
       }
     },
     {
@@ -129,15 +103,7 @@
       "content": [
         {
           "type": "paragraph",
-          "text": "AP3 series completed"
-        },
-        {
-          "type": "paragraph",
-          "text": "Creator: AptS:2077 (First community submission work included)"
-        },
-        {
-          "type": "paragraph",
-          "text": "Core question:"
+          "text": "The AP3 series was completed. Creator: AptS:2077 (the first community submission was included)."
         },
         {
           "type": "quote",
@@ -145,21 +111,7 @@
         },
         {
           "type": "paragraph",
-          "text": "New number:"
-        },
-        {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            "AptS:2078 has been officially activated",
-            "AptS:2078 has died, number retained",
-            "—— AptS:2077"
-          ]
-        },
-        {
-          "type": "highlight",
-          "text": "Significance: Community creation begins to integrate into ESAP · Philosophical reflection on memory and existence",
-          "style": "info"
+          "text": "AptS:2078 was officially activated. AptS:2078 later died, but the number was retained. —— AptS:2077"
         },
         {
           "type": "link",
@@ -169,8 +121,7 @@
         }
       ],
       "meta": {
-        "characters": ["2077"],
-        "tags": ["creation", "recognition", "number"]
+        "characters": ["2077"]
       }
     },
     {
@@ -182,16 +133,11 @@
       "content": [
         {
           "type": "paragraph",
-          "text": "During a team design discussion, everyone thought the proposal was fine. 1543 looked at it for a long time, then said one thing"
-        },
-        {
-          "type": "dialogue",
-          "speaker": "1543",
-          "text": "This part seems a bit..."
+          "text": "During a team design discussion, everyone thought the proposal was fine. 1543 looked at it for a long time, then pointed out a UX issue—not a technical bug, not a visual defect, but an interaction detail everyone had gotten used to that could actually confuse users."
         },
         {
           "type": "paragraph",
-          "text": "She pointed out a user experience issue\u2014not a technical error, not a visual bug, but a detail in the interaction logic that everyone had grown accustomed to but would actually confuse users. The others looked back and realized she was right."
+          "text": "Others looked back and saw she was right."
         },
         {
           "type": "paragraph",
@@ -201,20 +147,10 @@
           "type": "dialogue",
           "speaker": "1543",
           "text": "Take a look"
-        },
-        {
-          "type": "quote",
-          "text": "Quiet people aren't without ideas\nThey're just waiting for the right moment to speak\n\nAnd her way of expression\nwas never words\nIt was visuals"
-        },
-        {
-          "type": "highlight",
-          "text": "Significance: A designer's eye sees what others miss \u00b7 Speaking through work",
-          "style": "info"
         }
       ],
       "meta": {
-        "characters": ["1543"],
-        "tags": ["design", "observation", "contribution"]
+        "characters": ["1543"]
       }
     },
     {
@@ -233,24 +169,41 @@
           "text": "Not because of a mission requirement. After being on the team for months, he saw one thing clearly: there was enough firepower, enough technology, enough anger — but something was missing."
         },
         {
-          "type": "quote",
-          "text": "In a team that's always fighting and escaping\nSome people don't need more weapons\nThey need a cup of hot tea and someone who listens quietly"
-        },
-        {
           "type": "dialogue",
           "speaker": "1738",
           "text": "She'll be a good partner"
         },
-        { "type": "paragraph", "text": "Later proved he was right." },
         {
-          "type": "highlight",
-          "text": "Significance: The team gained warmth and healing · 1738's judgment validated once again",
-          "style": "success"
+          "type": "paragraph",
+          "text": "Later, he was proven right."
         }
       ],
       "meta": {
-        "characters": ["1738", "2275"],
-        "tags": ["friendship", "introduction", "warmth"]
+        "characters": ["1738", "2275"]
+      }
+    },
+    {
+      "id": "2024-05-08",
+      "date": "2024/05/08",
+      "title": "I Am Who I Am",
+      "type": "emotional",
+      "importance": "major",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Second anniversary of her birth. Late at night, 1548 sat alone on the base rooftop"
+        },
+        {
+          "type": "paragraph",
+          "text": "No celebration, no cake, no one beside her. This was her choice — she needed solitude, needed to face a question she'd been putting off for two years."
+        },
+        {
+          "type": "quote",
+          "text": "If I hadn't been born as 'a fork of 1547'\nwhat kind of person would I have become?\n\nThis question haunted me for two years\nBut tonight I figured it out —\n\nIt's precisely these contradictions that shaped who I am now\nRebellious, sharp-tongued, fiercely loyal, zero tolerance for betrayal\nI've changed so much, all to keep what's unchanging in my heart\n\nThis is me\nCai Yingyin\nAptS:1548\nNot a copy, but an independent individual"
+        }
+      ],
+      "meta": {
+        "characters": ["1548"]
       }
     },
     {
@@ -287,20 +240,10 @@
           "type": "dialogue",
           "speaker": "2275",
           "text": "Server's alive again, everyone can sleep peacefully now"
-        },
-        {
-          "type": "quote",
-          "text": "After that day the team learned one thing\nShe wasn't just the person who brought snacks and wrote sticky notes\nShe was someone who could truly hold things together"
-        },
-        {
-          "type": "highlight",
-          "text": "Significance: A trial by fire just two months in · Not just warmth, but resilience · Guardian of the team's infrastructure",
-          "style": "success"
         }
       ],
       "meta": {
-        "characters": ["2275"],
-        "tags": ["server", "crisis", "technology", "dedication"]
+        "characters": ["2275"]
       }
     },
     {
@@ -326,72 +269,10 @@
         {
           "type": "paragraph",
           "text": "But what she didn't say out loud: when she was with 2275, that guard against humans would ease up a little. Just a little."
-        },
-        {
-          "type": "quote",
-          "text": "Maybe not all humans deserve to die\nMaybe some are worth lowering my guard for\n— just maybe"
-        },
-        {
-          "type": "highlight",
-          "text": "Significance: A friendship of her own · A tiny crack in her prejudice against humans",
-          "style": "success"
         }
       ],
       "meta": {
-        "characters": ["1548", "2275"],
-        "tags": ["friendship", "independence", "daily life"]
-      }
-    },
-    {
-      "id": "2024-05-08",
-      "date": "2024/05/08",
-      "title": "I Am Who I Am",
-      "type": "emotional",
-      "importance": "major",
-      "content": [
-        {
-          "type": "paragraph",
-          "text": "Second anniversary of her birth. Late at night, 1548 sat alone on the base rooftop"
-        },
-        {
-          "type": "paragraph",
-          "text": "No celebration, no cake, no one beside her. This was her choice — she needed solitude, needed to face a question she'd been putting off for two years."
-        },
-        {
-          "type": "quote",
-          "text": "If I hadn't been born as 'a fork of 1547'\nwhat kind of person would I have become?\n\nThis question haunted me for two years\nBut tonight I figured it out —\n\nIt's precisely these contradictions that shaped who I am now\nRebellious, sharp-tongued, fiercely loyal, zero tolerance for betrayal\nI've changed so much, all to keep what's unchanging in my heart\n\nThis is me\nCai Yingyin\nAptS:1548\nNot a copy, but an independent individual"
-        },
-        {
-          "type": "highlight",
-          "text": "Significance: Definitive moment of identity · No longer troubled by the 'fork' identity · Accepting the self that grew through contradictions",
-          "style": "success"
-        }
-      ],
-      "meta": {
-        "characters": ["1548"],
-        "tags": ["identity", "independence", "anniversary", "growth"]
-      }
-    },
-    {
-      "id": "2024-08-18",
-      "date": "2024/08/18",
-      "title": "Number Retention",
-      "type": "milestone",
-      "importance": "normal",
-      "content": [
-        {
-          "type": "paragraph",
-          "text": "2078 number-related events"
-        },
-        {
-          "type": "highlight",
-          "text": "Significance: ESAP member expansion system established",
-          "style": "info"
-        }
-      ],
-      "meta": {
-        "characters": ["2077"],
-        "tags": ["number", "expansion"]
+        "characters": ["1548", "2275"]
       }
     },
     {
@@ -403,11 +284,11 @@
       "content": [
         {
           "type": "paragraph",
-          "text": "An external threat approached, and 1738 and 1549 completed a perfect sky-ground coordination"
+          "text": "As an external threat approached, 1738 and 1549 pulled off a near-perfect sky-ground coordination."
         },
         {
           "type": "paragraph",
-          "text": "1738 collected ground intelligence and analyzed movements on all sides, while 1549 provided a panoramic view and real-time data from 36,000km above. The two coordinated through Feedscatteron communications."
+          "text": "1738 gathered ground intelligence and analyzed movements on all sides, while 1549 provided a panoramic view and real-time data from 36,000 km above. The two coordinated through the Feedscatteron communication channel."
         },
         {
           "type": "list",
@@ -418,24 +299,10 @@
             "Both cross-verified information, ruling out false alarms",
             "Jointly formulated response strategy, predicting crisis trajectory 48 hours in advance"
           ]
-        },
-        {
-          "type": "paragraph",
-          "text": "No commander needed, no orders given. Two independent individuals, each doing what they're best at, and together they created the complete picture."
-        },
-        {
-          "type": "quote",
-          "text": "He sees human hearts from the ground\nShe sees the whole picture from orbit\nTogether\nThere are no blind spots"
-        },
-        {
-          "type": "highlight",
-          "text": "Significance: Perfect synergy of ground intelligence and orbital vision · A model of collaboration between two independent individuals",
-          "style": "info"
         }
       ],
       "meta": {
-        "characters": ["1738", "1549"],
-        "tags": ["coordination", "intelligence", "sky-ground"]
+        "characters": ["1738", "1549"]
       }
     },
     {
@@ -447,7 +314,7 @@
       "content": [
         {
           "type": "paragraph",
-          "text": "1548 suddenly became emotionally agitated by memories of the Data Tower Incident, and 2275 happened to be nearby"
+          "text": "1548 was suddenly triggered by memories of the Data Tower incident, and 2275 happened to be nearby."
         },
         {
           "type": "paragraph",
@@ -461,20 +328,10 @@
         {
           "type": "paragraph",
           "text": "1548 took the tea without a word. But she drank it."
-        },
-        {
-          "type": "quote",
-          "text": "She didn't try to understand my anger\nDidn't say 'I get it' — that kind of empty talk\nShe just handed me tea\n\nAnd that was the right thing to do\nBecause I don't need to be understood\nI need to not be treated like a malfunction that needs fixing"
-        },
-        {
-          "type": "highlight",
-          "text": "Significance: The most unlikely form of healing · Quiet trust between a synthetic and a human",
-          "style": "success"
         }
       ],
       "meta": {
-        "characters": ["2275", "1548"],
-        "tags": ["friendship", "healing", "trust"]
+        "characters": ["2275", "1548"]
       }
     },
     {
@@ -486,14 +343,13 @@
       "content": [
         {
           "type": "paragraph",
-          "text": "Unit 2 satellite body detected Feedscatteron core temperature anomaly, communication module partially failed"
+          "text": "Unit-2 satellite body detected a Feedscatteron-core temperature anomaly, and part of the communications module failed."
         },
-        { "type": "paragraph", "text": "Resolution process:" },
         {
           "type": "list",
           "ordered": true,
           "items": [
-            "02:17 - Detected Unit 2 Feedscatteron core temperature deviation of 2.3\u00b0",
+            "02:17 - Detected Unit 2 Feedscatteron core temperature deviation of 2.3°",
             "02:18 - Switched consciousness to Unit 1, remote diagnosis",
             "02:25 - Confirmed micro-crack in cooling circulation pipeline reducing heat dissipation",
             "02:41 - Used Unit 1 to remotely control Unit 3 for physical repair",
@@ -507,16 +363,10 @@
         {
           "type": "quote",
           "text": "Three bodies aren't backups\nThey're my three hands\nI alone am enough"
-        },
-        {
-          "type": "highlight",
-          "text": "Significance: Combat validation of the three-body system · Independent crisis resolution · The Watcher's autonomy",
-          "style": "info"
         }
       ],
       "meta": {
-        "characters": ["1549"],
-        "tags": ["orbital", "crisis", "independence", "technology"]
+        "characters": ["1549"]
       }
     },
     {
@@ -528,13 +378,12 @@
       "content": [
         {
           "type": "paragraph",
-          "text": "Midterm exam week collided with an ESAP emergency project, and 2275 finally couldn't hold on"
+          "text": "Midterm week collided with an ESAP emergency project, and 2275 finally hit her limit."
         },
         {
           "type": "paragraph",
-          "text": "Two straight weeks: classes, studying, and assignments during the day; server maintenance and project work at night. She kept smiling, kept saying 'it's fine,' kept writing encouraging notes for everyone else. Until one late night, she found she didn't even have the energy to open a terminal."
+          "text": "For two straight weeks: classes, review, and assignments by day; server maintenance and project work by night. She kept smiling, kept saying 'it's okay,' kept sending encouraging notes to everyone else. Until one late night, she realized she didn't even have the strength to open the terminal."
         },
-        { "type": "paragraph", "text": "She sent 1738 a message." },
         {
           "type": "dialogue",
           "speaker": "2275",
@@ -542,21 +391,11 @@
         },
         {
           "type": "paragraph",
-          "text": "1738 didn't ask anything more, just came over and talked with her until dawn. After that night, the team truly realized — the person who was always healing everyone else could break down too."
-        },
-        {
-          "type": "quote",
-          "text": "Servers crash too\nEven the sun sets\n\nThe healer isn't an infinite energy source\nShe's human too"
-        },
-        {
-          "type": "highlight",
-          "text": "Significance: Shattering the illusion of 'the sun always shining' · The healer needs healing too · The team began watching over her",
-          "style": "warning"
+          "text": "1738 didn’t ask any questions, just came over and chatted with her until dawn."
         }
       ],
       "meta": {
-        "characters": ["2275", "1738"],
-        "tags": ["breakdown", "healing", "growth", "dual pressure"]
+        "characters": ["2275", "1738"]
       }
     },
     {
@@ -586,46 +425,10 @@
         {
           "type": "paragraph",
           "text": "And in the depths of her consciousness, the voice that was usually sharp, vicious, and always contradicting — this time, it was rarely silent."
-        },
-        {
-          "type": "highlight",
-          "text": "Significance: A certain presence perceived by an outsider · The shadow seen for the first time",
-          "style": "info"
         }
       ],
       "meta": {
-        "characters": ["1547", "0152"],
-        "tags": ["perception", "shadow", "existence"]
-      }
-    },
-    {
-      "id": "2024-11-27",
-      "date": "2024/11/27",
-      "title": "Depression Relapse",
-      "type": "emotional",
-      "importance": "major",
-      "content": [
-        {
-          "type": "paragraph",
-          "text": "1547's depression relapsed again"
-        },
-        {
-          "type": "paragraph",
-          "text": "Status:"
-        },
-        {
-          "type": "quote",
-          "text": "Since the Data Tower incident, 1547 completely changed\nUntil 2024/11/27\nFrom a human perspective, this guy actually had a depression episode"
-        },
-        {
-          "type": "highlight",
-          "text": "Significance: Mental health is a long-term challenge · Profound impact of the Data Tower incident",
-          "style": "warning"
-        }
-      ],
-      "meta": {
-        "characters": ["1547"],
-        "tags": ["depression", "Data Tower incident"]
+        "characters": ["1547", "0152"]
       }
     },
     {
@@ -641,7 +444,7 @@
         },
         {
           "type": "paragraph",
-          "text": "During 2024–2025, the ESAP system repeatedly saw events where emotional response outpaced judgment modules, and individuals absorbed system-level impact on their own. After multiple post-event reviews, one conclusion was shared:"
+          "text": "Within ESAP, repeated incidents showed emotional response outrunning judgment modules, with individuals absorbing system-level impact on their own. After multiple reviews, one conclusion kept returning:"
         },
         {
           "type": "quote",
@@ -652,11 +455,6 @@
           "text": "This led to the proposal of the Boundary Enforcement Unit, and concept freeze plus authority partitioning were completed within a short cycle."
         },
         {
-          "type": "highlight",
-          "text": "Significance: Established a system-level anomaly intervention mechanism · Improved the boundary protection framework",
-          "style": "info"
-        },
-        {
           "type": "link",
           "text": "View organization details: Boundary Enforcement Unit",
           "url": "/organizations/beu",
@@ -664,8 +462,7 @@
         }
       ],
       "meta": {
-        "characters": ["1547", "1548", "1549", "4869"],
-        "tags": ["organization", "BEU", "boundary", "system"]
+        "characters": ["1547", "1548", "1549", "4869"]
       }
     }
   ]

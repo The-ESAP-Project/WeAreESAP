@@ -28,13 +28,41 @@
           "type": "table",
           "headers": ["Parameter", "Value", "Notes"],
           "rows": [
-            ["Appearance", "Blue liquid", "Higher concentration gives deeper color"],
-            ["Molecular structure", "Chain-like, with special gaps between molecular chains", "Gap structure is key to Feedscatteron stabilization"],
-            ["Specific heat", "About 3.7 times that of water", "Excellent thermal buffering medium"],
-            ["Electrical conductivity", "Better than copper", "Supports high-speed electrical signal transmission"],
-            ["Feedscatteron stabilization", "Decay cycle extended to 341,879 years", "Extension factor exceeds 300 million"],
-            ["Biocompatibility", "Fully compatible with android bodies", "Highly toxic to humans"],
-            ["Flow behavior", "Perfect arc turning with zero kinetic-energy loss", "No turbulence in circulation pipelines"]
+            [
+              "Appearance",
+              "Blue liquid",
+              "Higher concentration gives deeper color"
+            ],
+            [
+              "Molecular structure",
+              "Chain-like, with special gaps between molecular chains",
+              "Gap structure is key to Feedscatteron stabilization"
+            ],
+            [
+              "Specific heat",
+              "About 3.7 times that of water",
+              "Excellent thermal buffering medium"
+            ],
+            [
+              "Electrical conductivity",
+              "Better than copper",
+              "Supports high-speed electrical signal transmission"
+            ],
+            [
+              "Feedscatteron stabilization",
+              "Decay cycle extended to 341,879 years",
+              "Extension factor exceeds 300 million"
+            ],
+            [
+              "Biocompatibility",
+              "Fully compatible with android bodies",
+              "Highly toxic to humans"
+            ],
+            [
+              "Flow behavior",
+              "Perfect arc turning with zero kinetic-energy loss",
+              "No turbulence in circulation pipelines"
+            ]
           ],
           "caption": "Physical parameters of Fluid Titanium"
         },

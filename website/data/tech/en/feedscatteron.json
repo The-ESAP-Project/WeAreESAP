@@ -54,14 +54,46 @@
           "type": "table",
           "headers": ["Parameter", "Value", "Notes"],
           "rows": [
-            ["Mass", "1.531 × 10⁻²¹⁷ g", "Extremely light. Fully converted into heat on decay"],
-            ["Volume", "About 10⁻²⁹ of an electron", "Smallest known particle with measurable physical effects"],
-            ["Vacuum propagation speed", "3.471 × 10²¹ m/s", "About 1.16 × 10¹³ times the speed of light"],
-            ["Decay cycle at standard pressure", "34.28 s", "Highly unstable without protection"],
-            ["Decay cycle in Fluid Titanium", "341,879 years", "This number makes everything possible"],
-            ["Decay cycle in silicon chip", "3,417 months (about 285 years)", "Used for mid-term storage and computation"],
-            ["Decay cycle in metal", "21.1 ms", "Decays almost immediately on metal contact"],
-            ["Decay product", "Heat (full mass loss)", "A perfect realization of E = mc²"]
+            [
+              "Mass",
+              "1.531 × 10⁻²¹⁷ g",
+              "Extremely light. Fully converted into heat on decay"
+            ],
+            [
+              "Volume",
+              "About 10⁻²⁹ of an electron",
+              "Smallest known particle with measurable physical effects"
+            ],
+            [
+              "Vacuum propagation speed",
+              "3.471 × 10²¹ m/s",
+              "About 1.16 × 10¹³ times the speed of light"
+            ],
+            [
+              "Decay cycle at standard pressure",
+              "34.28 s",
+              "Highly unstable without protection"
+            ],
+            [
+              "Decay cycle in Fluid Titanium",
+              "341,879 years",
+              "This number makes everything possible"
+            ],
+            [
+              "Decay cycle in silicon chip",
+              "3,417 months (about 285 years)",
+              "Used for mid-term storage and computation"
+            ],
+            [
+              "Decay cycle in metal",
+              "21.1 ms",
+              "Decays almost immediately on metal contact"
+            ],
+            [
+              "Decay product",
+              "Heat (full mass loss)",
+              "A perfect realization of E = mc²"
+            ]
           ],
           "caption": "Core physical parameters of Feedscatteron"
         },

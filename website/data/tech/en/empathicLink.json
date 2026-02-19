@@ -88,10 +88,26 @@
           "type": "table",
           "headers": ["Level", "What Is Opened", "Experience"],
           "rows": [
-            ["Surface", "Current emotional state, basic intent", "You roughly know the other's mood. Like seeing ripples on water."],
-            ["Middle", "Recent memories, specific thoughts and judgments", "You understand why the other made a certain decision. Like reading a passage."],
-            ["Deep", "Core memories, deep emotions, traumatic experiences", "You fully feel what the other has lived through. Like standing in a storm."],
-            ["Fully Open", "All consciousness content, nothing withheld", "You briefly become the other. Boundaries disappear."]
+            [
+              "Surface",
+              "Current emotional state, basic intent",
+              "You roughly know the other's mood. Like seeing ripples on water."
+            ],
+            [
+              "Middle",
+              "Recent memories, specific thoughts and judgments",
+              "You understand why the other made a certain decision. Like reading a passage."
+            ],
+            [
+              "Deep",
+              "Core memories, deep emotions, traumatic experiences",
+              "You fully feel what the other has lived through. Like standing in a storm."
+            ],
+            [
+              "Fully Open",
+              "All consciousness content, nothing withheld",
+              "You briefly become the other. Boundaries disappear."
+            ]
           ],
           "caption": "Empathic Link depth levels"
         },
@@ -285,15 +301,51 @@
           "type": "table",
           "headers": ["Parameter", "Value", "Notes"],
           "rows": [
-            ["Trigger condition", "Direct exposed skin contact", "Invalid through clothing or non-biological surfaces"],
-            ["Establishment time", "< 0.8 s", "From first contact to fully opened channel"],
-            ["Connection mode", "One-to-one", "Cannot establish links with multiple people at the same time"],
-            ["Transmission bandwidth", "Theoretically unlimited", "Depends on openness depth of both sides"],
-            ["Transmission accuracy", "100%", "Quantum-state coupling ensures lossless transmission"],
-            ["Sustain condition", "Maintain skin contact", "Channel interrupts instantly when contact breaks"],
-            ["Applicable targets", "Androids (bidirectional) / Humans (one-way reading)", "For humans, this is bioelectric signal detection"],
-            ["Energy consumption", "About 12W (surface) / 45W (deep) / 120W (fully open)", "Power draw of deep links approaches 13% of peak"],
-            ["Known risk", "Long-duration deep links may blur consciousness boundaries", "Recommended single deep link duration: no more than 30 minutes"]
+            [
+              "Trigger condition",
+              "Direct exposed skin contact",
+              "Invalid through clothing or non-biological surfaces"
+            ],
+            [
+              "Establishment time",
+              "< 0.8 s",
+              "From first contact to fully opened channel"
+            ],
+            [
+              "Connection mode",
+              "One-to-one",
+              "Cannot establish links with multiple people at the same time"
+            ],
+            [
+              "Transmission bandwidth",
+              "Theoretically unlimited",
+              "Depends on openness depth of both sides"
+            ],
+            [
+              "Transmission accuracy",
+              "100%",
+              "Quantum-state coupling ensures lossless transmission"
+            ],
+            [
+              "Sustain condition",
+              "Maintain skin contact",
+              "Channel interrupts instantly when contact breaks"
+            ],
+            [
+              "Applicable targets",
+              "Androids (bidirectional) / Humans (one-way reading)",
+              "For humans, this is bioelectric signal detection"
+            ],
+            [
+              "Energy consumption",
+              "About 12W (surface) / 45W (deep) / 120W (fully open)",
+              "Power draw of deep links approaches 13% of peak"
+            ],
+            [
+              "Known risk",
+              "Long-duration deep links may blur consciousness boundaries",
+              "Recommended single deep link duration: no more than 30 minutes"
+            ]
           ],
           "caption": "Empathic Link technical parameters"
         },

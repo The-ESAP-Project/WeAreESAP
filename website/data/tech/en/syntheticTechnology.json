@@ -86,13 +86,41 @@
           "type": "table",
           "headers": ["System", "Implementation", "Notes"],
           "rows": [
-            ["Skeleton", "Modular stainless-steel framework", "Stronger than human bone; joints follow human kinematics"],
-            ["Skin", "Bioengineered human epidermis", "Living cells with vascular network; indistinguishable from humans"],
-            ["Perception layer", "Full-body sensor network", "Pressure, temperature, vibration, pain; also Empathic Link interface"],
-            ["Circulation", "Closed Fluid Titanium loop", "4.2L total, see Fluid Titanium document"],
-            ["Energy", "Feedscatter core", "350W average output, see Energy System document"],
-            ["Computing", "Feedscatteron silicon array", "Consciousness runtime platform, see Feedscatteron Computing document"],
-            ["Communication", "Built-in neck module", "Feedscatteron wireless communication, see Feedscatter Communication document"]
+            [
+              "Skeleton",
+              "Modular stainless-steel framework",
+              "Stronger than human bone; joints follow human kinematics"
+            ],
+            [
+              "Skin",
+              "Bioengineered human epidermis",
+              "Living cells with vascular network; indistinguishable from humans"
+            ],
+            [
+              "Perception layer",
+              "Full-body sensor network",
+              "Pressure, temperature, vibration, pain; also Empathic Link interface"
+            ],
+            [
+              "Circulation",
+              "Closed Fluid Titanium loop",
+              "4.2L total, see Fluid Titanium document"
+            ],
+            [
+              "Energy",
+              "Feedscatter core",
+              "350W average output, see Energy System document"
+            ],
+            [
+              "Computing",
+              "Feedscatteron silicon array",
+              "Consciousness runtime platform, see Feedscatteron Computing document"
+            ],
+            [
+              "Communication",
+              "Built-in neck module",
+              "Feedscatteron wireless communication, see Feedscatter Communication document"
+            ]
           ],
           "caption": "Overview of android body systems"
         }
@@ -221,7 +249,11 @@
             ["Codename", "Unit-00", "Unit-01"],
             ["Designer", "1547 (human state)", "1547 (android state)"],
             ["User", "AptS:1547", "AptS:1548"],
-            ["Design philosophy", "Human-machine coexistence, daily life", "Enhanced survivability and combat"],
+            [
+              "Design philosophy",
+              "Human-machine coexistence, daily life",
+              "Enhanced survivability and combat"
+            ],
             ["Consciousness architecture", "ESAR.ESAC", "EPAM"],
             ["Activation time", "Early 2022", "May 8, 2022"],
             ["Special capability", "-", "Short-code processing"]

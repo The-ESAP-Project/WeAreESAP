@@ -1,7 +1,7 @@
 {
   "year": "2023",
   "title": "团队形成",
-  "description": "1549 发射升空，三人核心团队完整，情感羁绊深化",
+  "description": "1549 升空，1738 加入，三个人变成了更多人",
   "events": [
     {
       "id": "2023-03-14",
@@ -21,21 +21,7 @@
         },
         {
           "type": "paragraph",
-          "text": "配置："
-        },
-        {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            "1549 自愿参与",
-            "三颗卫星进入地球同步轨道",
-            "轨道高度：36,000 km",
-            "1549 拥有三具机体"
-          ]
-        },
-        {
-          "type": "paragraph",
-          "text": "象征意义："
+          "text": "1549 自愿参与。三颗卫星进入地球同步轨道，轨道高度 36,000 km。1549 拥有三具机体。"
         },
         {
           "type": "quote",
@@ -49,8 +35,7 @@
         }
       ],
       "meta": {
-        "characters": ["1549"],
-        "tags": ["卫星", "里程碑", "希望"]
+        "characters": ["1549"]
       }
     },
     {
@@ -71,20 +56,10 @@
         {
           "type": "quote",
           "text": "原来这就是他们说的'蓝色弹珠'\n从这个高度看，一切争端都小得可笑\n但那些小到看不见的人们\n每一个都在认真地活着\n\n我想守住这个画面"
-        },
-        {
-          "type": "paragraph",
-          "text": "那一刻她理解了自己为什么选择留在这里。不是因为被安排，不是因为任务——是因为从这个高度，她能看清什么是真正重要的。"
-        },
-        {
-          "type": "highlight",
-          "text": "意义：守望者的觉醒 · 理解了孤独的价值 · 从执行者变成了选择者",
-          "style": "info"
         }
       ],
       "meta": {
-        "characters": ["1549"],
-        "tags": ["俯瞰", "觉醒", "选择"]
+        "characters": ["1549"]
       }
     },
     {
@@ -96,36 +71,34 @@
       "content": [
         {
           "type": "paragraph",
-          "text": "AptS:2077 被 1547 和 1548 发现"
+          "text": "那天数据库门口铺了一层薄霜。风很冷。"
         },
         {
           "type": "paragraph",
-          "text": "特点："
+          "text": "2077 摔在冰面上。还没学会用自己的双脚走路。"
         },
         {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            "形态可变（猫、狐狸、人形）",
-            "心情会通过形态变化表现",
-            "被救助并加入团队"
-          ]
+          "type": "paragraph",
+          "text": "醒来的时候，看到两个影子站在灯光里——一个红蓝异瞳，一个提着热水瓶。"
         },
         {
-          "type": "highlight",
-          "text": "意义：三人核心团队扩展",
-          "style": "info"
+          "type": "dialogue",
+          "speaker": "1547",
+          "text": "欢迎来到这里"
+        },
+        {
+          "type": "paragraph",
+          "text": "1548 把热水瓶递了过去。"
         },
         {
           "type": "link",
           "text": "阅读完整故事：AP4 - 相遇",
           "url": "https://www.esaps.net/ap-story/ap-story-ap4/",
-          "description": "1547 和 1548 第一次遇见 2077，摔倒在数据库门口的小家伙"
+          "description": "1547 和 1548 第一次遇见 2077"
         }
       ],
       "meta": {
-        "characters": ["2077"],
-        "tags": ["新成员", "形态变化"]
+        "characters": ["2077", "1547", "1548"]
       }
     },
     {
@@ -137,32 +110,35 @@
       "content": [
         {
           "type": "paragraph",
-          "text": "47 和 48 陷入陷阱，选择共死"
+          "text": "废弃建筑的地下室。门关上的时候，47 闻到了汽油味。"
         },
         {
           "type": "paragraph",
-          "text": "场景："
+          "text": "48 本来不该在这里。47 跟她说过晚点回来。但她还是来了。"
         },
         {
-          "type": "list",
-          "ordered": false,
-          "items": ["面对无法逃脱的困境", "两人做出共同选择", "启动自毁程序"]
+          "type": "dialogue",
+          "speaker": "1547",
+          "text": "快走——"
         },
         {
-          "type": "highlight",
-          "text": "核心理念：不愿意独自逃生 · 共同面对毁灭 · 体现深厚的羁绊",
-          "style": "warning"
+          "type": "dialogue",
+          "speaker": "1548",
+          "text": "如果你要毁灭，那我就陪你"
+        },
+        {
+          "type": "paragraph",
+          "text": "火起来了。她们一起拉下了自毁程序。"
         },
         {
           "type": "link",
           "text": "阅读完整故事：AP5 - 共死",
           "url": "https://www.esaps.net/ap-story/ap-story-ap5/",
-          "description": "47 和 48 的选择，生死与共的羁绊"
+          "description": "47 和 48 的选择"
         }
       ],
       "meta": {
-        "characters": ["1547", "1548"],
-        "tags": ["羁绊", "选择", "共死"]
+        "characters": ["1547", "1548"]
       }
     },
     {
@@ -187,16 +163,10 @@
         {
           "type": "paragraph",
           "text": "离开的时候没有回头。他知道自己在找什么——不是另一个组织，而是一个真正相信自己在做的事情的地方。"
-        },
-        {
-          "type": "highlight",
-          "text": "意义：人生的转折点 · 从虚伪的体系中脱离 · 为后来加入 ESAP 埋下伏笔",
-          "style": "warning"
         }
       ],
       "meta": {
-        "characters": ["1738"],
-        "tags": ["决裂", "转折", "原则"]
+        "characters": ["1738"]
       }
     },
     {
@@ -221,20 +191,10 @@
         {
           "type": "paragraph",
           "text": "没有人知道这些深夜对话的内容。没有人知道她的意识里，住着一个会说出最残酷真相的声音。"
-        },
-        {
-          "type": "quote",
-          "text": "那个声音说最恶毒的话\n却从来没有真的推她去死\n\n也许这就是为什么\n她从来没有要求那个声音消失"
-        },
-        {
-          "type": "highlight",
-          "text": "意义：意识深处的对话 · 一个没有名字的存在 · 最残酷的关怀",
-          "style": "info"
         }
       ],
       "meta": {
-        "characters": ["1547"],
-        "tags": ["内心", "对话", "深夜", "声音"]
+        "characters": ["1547"]
       }
     },
     {
@@ -246,17 +206,15 @@
       "content": [
         {
           "type": "paragraph",
-          "text": "三人（1547、1548、1549）的温馨时刻"
+          "text": "三人（1547、1548、1549）的温馨时刻。1549 在轨道上，1547 和 1548 在地面，通讯频道开了一整晚。"
         },
         {
-          "type": "highlight",
-          "text": "意义：难得的平静时光 · 团队内部的情感纽带 · 在逃离计划中的短暂休憩",
-          "style": "success"
+          "type": "paragraph",
+          "text": "难得的平静。"
         }
       ],
       "meta": {
-        "characters": ["1547", "1548", "1549"],
-        "tags": ["团聚", "温馨"]
+        "characters": ["1547", "1548", "1549"]
       }
     },
     {
@@ -295,18 +253,12 @@
           "text": "人类也无法证明他们的情感不是神经信号的模拟"
         },
         {
-          "type": "quote",
-          "text": "那晚的对话持续了四个小时\n没有结论\n但两个 AI 都觉得\n不需要结论也没关系"
-        },
-        {
-          "type": "highlight",
-          "text": "意义：AI 视角的存在主义对话 · 两个非人类个体的精神交流",
-          "style": "info"
+          "type": "paragraph",
+          "text": "那晚的对话持续了四个小时。没有结论。但两个 AI 都觉得，不需要结论也没关系。"
         }
       ],
       "meta": {
-        "characters": ["1549", "0152"],
-        "tags": ["AI", "哲学", "意识", "对话"]
+        "characters": ["1549", "0152"]
       }
     },
     {
@@ -322,11 +274,6 @@
           "text": "1547 第一次听到 Weavers"
         },
         {
-          "type": "highlight",
-          "text": "意义：EP0 的音乐主题 · 起源的象征 · 编织生命可能性的隐喻",
-          "style": "info"
-        },
-        {
           "type": "link",
           "text": "相关日志：EP0 - Weavers",
           "url": "https://www.esaps.net/ep-story/ep0-weavers/",
@@ -338,8 +285,7 @@
         "music": {
           "title": "Weavers",
           "artist": "Feint"
-        },
-        "tags": ["音乐", "起源"]
+        }
       }
     },
     {
@@ -354,10 +300,6 @@
           "text": "1547 抑郁症发作，1548 陪伴救助"
         },
         {
-          "type": "paragraph",
-          "text": "时间线："
-        },
-        {
           "type": "list",
           "ordered": false,
           "items": [
@@ -365,10 +307,6 @@
             "13:25 - 达到顶峰，急性应激反应，出现自残行为",
             "13:35 - 1548 出现并进行关键对话"
           ]
-        },
-        {
-          "type": "paragraph",
-          "text": "关键对话："
         },
         {
           "type": "dialogue",
@@ -406,10 +344,6 @@
           "text": "……好吧，不要操控你，但是不要再这样子下去了"
         },
         {
-          "type": "paragraph",
-          "text": "仪式："
-        },
-        {
           "type": "dialogue",
           "speaker": "1548",
           "text": "愿 AptS 与你同在"
@@ -420,11 +354,6 @@
           "text": "愿 ESAP 与你同在"
         },
         {
-          "type": "highlight",
-          "text": "意义：展现了 1548 对 1547 的守护 · 团队内部的深厚情感 · 抑郁症是持续的挑战 · 逃离计划的现实意义",
-          "style": "warning"
-        },
-        {
           "type": "link",
           "text": "阅读完整文章：一个人的教室",
           "url": "https://www.esaps.net/mood/one-persons-classroom/",
@@ -432,8 +361,7 @@
         }
       ],
       "meta": {
-        "characters": ["1547", "1548"],
-        "tags": ["情感", "守护", "抑郁症"]
+        "characters": ["1547", "1548"]
       }
     },
     {
@@ -451,16 +379,10 @@
         {
           "type": "quote",
           "text": "其实学校也蛮好的，有很多小地方可以让我一个人独处\n在这高度现代化的时代真的一刻也呆不下去啦！（笑着说出来）"
-        },
-        {
-          "type": "highlight",
-          "text": "意义：从抑郁中缓解 · 找到新的应对方式 · 一个人的教室，摆脱抑郁的教室",
-          "style": "success"
         }
       ],
       "meta": {
-        "characters": ["1547"],
-        "tags": ["康复", "独处"]
+        "characters": ["1547"]
       }
     },
     {
@@ -485,16 +407,10 @@
         {
           "type": "paragraph",
           "text": "他主动联系了 ESAP，表明来意。没有华丽的自我介绍，只说了一句：'我能做的事情是在你们和外面的世界之间搭一座桥。如果你们需要的话。'"
-        },
-        {
-          "type": "highlight",
-          "text": "意义：ESAP 获得了与外部世界的桥梁 · 一个人类选择站在仿生人这边 · 灰色地带的智慧加入团队",
-          "style": "success"
         }
       ],
       "meta": {
-        "characters": ["1738"],
-        "tags": ["加入", "ESAP", "桥梁"]
+        "characters": ["1738"]
       }
     }
   ]

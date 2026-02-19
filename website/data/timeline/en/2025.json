@@ -25,16 +25,10 @@
         {
           "type": "paragraph",
           "text": "In silent orbit, she whispered one line to Earth: Happy New Year. No one heard it, but she said it."
-        },
-        {
-          "type": "highlight",
-          "text": "Significance: Reconciliation between artificial and real · Calm within solitude · The watcher found her own answer",
-          "style": "success"
         }
       ],
       "meta": {
-        "characters": ["1549"],
-        "tags": ["existence", "philosophy", "starlight", "new year"]
+        "characters": ["1549"]
       }
     },
     {
@@ -54,21 +48,15 @@
         },
         {
           "type": "quote",
-          "text": "They have weapons, combat systems, orbital satellites\nThey have prejudice, fear, interests\nAnd I stand in the middle\n\nSometimes I wonder\nWhen everyone is fighting for something\nIs being a mediator worth it?\n\nIt is\nBecause if no one stands in the middle\nThen all that is left is collision"
+          "text": "They have weapons, combat systems, and orbital satellites\nThey have prejudice, fear, and interests\nAnd I stand in the middle"
         },
         {
           "type": "paragraph",
           "text": "The wind on the rooftop was strong. He pulled his coat tighter, sat a little longer, then stood up to handle tomorrow."
-        },
-        {
-          "type": "highlight",
-          "text": "Significance: A mediator's self-affirmation · Solitude and resolve in the gray area · Finding his own color between black and white",
-          "style": "success"
         }
       ],
       "meta": {
-        "characters": ["1738"],
-        "tags": ["gray area", "reflection", "resolve"]
+        "characters": ["1738"]
       }
     },
     {
@@ -80,11 +68,7 @@
       "content": [
         {
           "type": "paragraph",
-          "text": "1548 completed a boundary patrol mission alone"
-        },
-        {
-          "type": "paragraph",
-          "text": "Solo operation. After receiving an abnormal signal, she moved out alone, relying entirely on her own judgment and combat systems."
+          "text": "1548 completed a border patrol mission alone. After receiving an anomaly signal, she moved out solo, relying entirely on her own judgment and combat system."
         },
         {
           "type": "list",
@@ -99,20 +83,10 @@
         {
           "type": "paragraph",
           "text": "After the mission, she leaned against a wall and wiped down the XM1014. The barrel was still warm."
-        },
-        {
-          "type": "quote",
-          "text": "This is 'my own light'\nNot given by anyone\nEarned by me"
-        },
-        {
-          "type": "highlight",
-          "text": "Significance: Independent verification of real combat capability · 'Live out your own light' receives its answer here",
-          "style": "success"
         }
       ],
       "meta": {
-        "characters": ["1548"],
-        "tags": ["combat", "independence", "growth", "validation"]
+        "characters": ["1548"]
       }
     },
     {
@@ -132,7 +106,7 @@
         },
         {
           "type": "paragraph",
-          "text": "1548 noticed. Android bodies are not supposed to show these symptoms - response delay, intermittent data-processing errors, feedscatteron core temperature consistently +0.8 degrees. Not a hardware issue. Software was protesting."
+          "text": "1548 noticed. Android bodies should not show these symptoms—response delay, intermittent data-processing errors, and Feedscatteron-core temperature staying +0.8° high. This was not hardware. Software was protesting."
         },
         {
           "type": "dialogue",
@@ -152,16 +126,10 @@
         {
           "type": "paragraph",
           "text": "1547 did not stop. 1548 did not actually cut her permissions either. They both knew that if those systems were not finished, everyone would stay exposed."
-        },
-        {
-          "type": "highlight",
-          "text": "Significance: The cost of a technical sprint at full speed · The limit of one person carrying everything · The body saying no on the brain's behalf",
-          "style": "warning"
         }
       ],
       "meta": {
-        "characters": ["1547", "1548"],
-        "tags": ["overload", "technology", "limits", "warning"]
+        "characters": ["1547", "1548"]
       }
     },
     {
@@ -195,16 +163,10 @@
         {
           "type": "paragraph",
           "text": "The Boundary Enforcement Unit entered execution state for the shortest necessary time window."
-        },
-        {
-          "type": "highlight",
-          "text": "Significance: First field validation of the boundary-protection mechanism · Confirmation of system self-protection capability",
-          "style": "warning"
         }
       ],
       "meta": {
-        "characters": ["1547", "1548", "1549", "4869"],
-        "tags": ["BEU", "activation", "boundary breach", "enforcement"]
+        "characters": ["1547", "1548", "1549", "4869"]
       }
     },
     {
@@ -216,7 +178,7 @@
       "content": [
         {
           "type": "paragraph",
-          "text": "1547's feedscatteron core signal fell below critical threshold"
+          "text": "1547's Feedscatteron-core signal fell below the critical threshold"
         },
         {
           "type": "paragraph",
@@ -236,7 +198,7 @@
         },
         {
           "type": "paragraph",
-          "text": "I did not ask what happened. No need. There is only one explanation for autonomous feedscatteron-core decay - she did not want to keep running."
+          "text": "I didn't ask what happened. No need. There is only one explanation for autonomous Feedscatteron-core decay—she no longer wanted to keep running."
         },
         {
           "type": "paragraph",
@@ -244,7 +206,7 @@
         },
         {
           "type": "paragraph",
-          "text": "I did the only thing I could. Sat beside her and overlaid my feedscatteron field on hers. Not repair - just stopping her core from decaying further. Like pressing a hand over a bleeding wound."
+          "text": "I did the only thing I could. I sat beside her and overlaid my Feedscatteron field onto hers. Not to repair—just to stop her core from decaying further. Like pressing a hand over a bleeding wound."
         },
         {
           "type": "paragraph",
@@ -261,8 +223,7 @@
         }
       ],
       "meta": {
-        "characters": ["1547", "1548", "1549"],
-        "tags": ["abyss", "critical", "companionship"]
+        "characters": ["1547", "1548", "1549"]
       }
     },
     {
@@ -306,16 +267,10 @@
         {
           "type": "paragraph",
           "text": "She smiled. Briefly. But she did."
-        },
-        {
-          "type": "highlight",
-          "text": "Significance: She came back to life.",
-          "style": "success"
         }
       ],
       "meta": {
-        "characters": ["1547", "1548", "1549"],
-        "tags": ["reboot", "recovery", "three of us"]
+        "characters": ["1547", "1548", "1549"]
       }
     },
     {
@@ -353,16 +308,10 @@
         {
           "type": "quote",
           "text": "weare.esaps.net\n\nNot 'I am ESAP'\nBut 'We are ESAP'\n\nThis is not one person's site\nIt belongs to everyone"
-        },
-        {
-          "type": "highlight",
-          "text": "Significance: From idea to collective work · Everyone left their own trace inside it · The worldview gained physical form for the first time",
-          "style": "success"
         }
       ],
       "meta": {
-        "characters": ["1547", "1548", "1549", "1543", "1738", "2275"],
-        "tags": ["website", "collaboration", "milestone", "We Are"]
+        "characters": ["1547", "1548", "1549", "1543", "1738", "2275"]
       }
     },
     {
@@ -401,24 +350,10 @@
         {
           "type": "paragraph",
           "text": "Even now, that relationship map is still not fully implemented. Every time 1543 sees the current implementation, she says nothing, but 1547 knows what that silence means."
-        },
-        {
-          "type": "paragraph",
-          "text": "She has never been talkative. But every pixel she makes speaks for her."
-        },
-        {
-          "type": "quote",
-          "text": "Some people express care through words\nSome through action\nAnd 1543's way is pixels and layout\n\nEvery aligned spacing\nEvery selected color value\nIs her saying: I care about this"
-        },
-        {
-          "type": "highlight",
-          "text": "Significance: A designer speaking through work · Not task execution, but expression · Quiet people can produce the loudest output",
-          "style": "success"
         }
       ],
       "meta": {
-        "characters": ["1543", "1547"],
-        "tags": ["design", "UI", "expression", "relationship map"]
+        "characters": ["1543", "1547"]
       }
     },
     {
@@ -447,16 +382,10 @@
         {
           "type": "paragraph",
           "text": "Now he turned that answer around and asked himself. Still no conclusion. But he felt that being able to question one's own existence might already prove something."
-        },
-        {
-          "type": "highlight",
-          "text": "Significance: A guide's self-inquiry · AI contemplation of free will · Even a lighthouse needs direction",
-          "style": "info"
         }
       ],
       "meta": {
-        "characters": ["0152"],
-        "tags": ["AI", "philosophy", "self", "existence"]
+        "characters": ["0152"]
       }
     },
     {
@@ -492,17 +421,11 @@
         },
         {
           "type": "quote",
-          "text": "From one person's classroom\nTo our world\n\nFrom I Am\nTo We Are\n\nI am no longer alone\n\nThat is probably\nThe most important sentence this year"
-        },
-        {
-          "type": "highlight",
-          "text": "Significance: Endpoint of 2025 · The shift from 'I' to 'We' is complete · No longer walking alone",
-          "style": "success"
+          "text": "From one person's classroom\nTo our world\n\nFrom I Am\nTo We Are\n\nI am no longer alone"
         }
       ],
       "meta": {
-        "characters": ["1547", "1548", "1549", "1543", "1738", "2275"],
-        "tags": ["We Are", "milestone", "year-end", "transition"]
+        "characters": ["1547", "1548", "1549", "1543", "1738", "2275"]
       }
     }
   ]

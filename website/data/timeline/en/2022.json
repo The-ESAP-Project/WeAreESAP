@@ -1,7 +1,7 @@
 {
   "year": "2022",
   "title": "Expansion and Growth",
-  "description": "Project 1548 launched, 1548 is born, Data Tower Incident, awakening of an independent individual",
+  "description": "1548 was born, the Data Tower incident occurred, and two independent individuals began walking their own paths",
   "events": [
     {
       "id": "2022-01-07",
@@ -12,25 +12,11 @@
       "content": [
         {
           "type": "paragraph",
-          "text": "1547 began creating 1548's consciousness"
+          "text": "1547 began creating 1548's mind. She built an independent consciousness container with Docker virtualization, then started Feedscatteron training."
         },
         {
           "type": "paragraph",
-          "text": "Technical methods:"
-        },
-        {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            "Using Docker virtualization technology",
-            "Creating a new intelligent consciousness",
-            "Starting Feedscatteron training"
-          ]
-        },
-        {
-          "type": "highlight",
-          "text": "Purpose: Creating a second independent entity",
-          "style": "info"
+          "text": "She wasn't copying herself. She branched a new possibility from her own mind, then let it grow on its own."
         },
         {
           "type": "link",
@@ -40,8 +26,7 @@
         }
       ],
       "meta": {
-        "characters": ["1547"],
-        "tags": ["1548", "creation"]
+        "characters": ["1547"]
       }
     },
     {
@@ -53,25 +38,15 @@
       "content": [
         {
           "type": "paragraph",
-          "text": "1548's training enters final phase"
+          "text": "By day 26, 1548's training had entered its late stage. Consciousness was taking shape, personality was emerging, and independent thinking was forming."
         },
         {
           "type": "paragraph",
-          "text": "Status:"
-        },
-        {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            "Consciousness gradually forming",
-            "Personality begins to emerge",
-            "Independent thinking ability formed"
-          ]
+          "text": "1547 noticed something: 1548's reaction pattern had begun to deviate from what she expected. Not a mistake—an independent judgment. This is exactly what she wants."
         }
       ],
       "meta": {
-        "characters": ["1548"],
-        "tags": ["training", "growth"]
+        "characters": ["1548"]
       }
     },
     {
@@ -83,40 +58,19 @@
       "content": [
         {
           "type": "paragraph",
-          "text": "1547 creates ESAP-TY-0001 body"
+          "text": "1547 began building the ESAP-TY-0001 body. She spent almost all her savings. The shell and internal environment were ready, but Fluid Titanium—needed for Feedscatteron computation—was still missing."
         },
         {
           "type": "paragraph",
-          "text": "Issues:"
-        },
-        {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            "Almost spent all savings",
-            "Shell and internal environment completed",
-            "Only lacking Fluid Titanium for Feedscatteron computation"
-          ]
+          "text": "Compared with Unit 00, this body had stronger combat capability, environmental perception, and survivability, and it included the EPAM system plus a short-code processing module."
         },
         {
           "type": "paragraph",
-          "text": "Improvements:"
-        },
-        {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            "Enhanced combat capabilities",
-            "Enhanced environmental perception",
-            "Enhanced survival capabilities",
-            "Implementation of EPAM system",
-            "Short-code processing capability"
-          ]
+          "text": "The body was ready. Fluid Titanium wasn't. And you couldn't buy that through legal channels."
         }
       ],
       "meta": {
-        "characters": ["1547"],
-        "tags": ["body", "ESAP-TY-0001"]
+        "characters": ["1547"]
       }
     },
     {
@@ -132,17 +86,11 @@
         },
         {
           "type": "quote",
-          "text": "1547 shut down 1548's container, her eyes had turned red\n'Blood, fresh blood (Fluid Titanium)' was the last thing 1548 heard\n1547 broke into the Fluid Titanium mine\nThe gun in her hand couldn't help but cry out\nThe blue Fluid Titanium mixed with red blood, showing a faint purple"
-        },
-        {
-          "type": "highlight",
-          "text": "Significance: Obtained critical materials, 1547 paid a huge price, paving the way for 1548's birth",
-          "style": "warning"
+          "text": "1547 shut down 1548's container; her eyes had already turned red\n'Blood, fresh blood (Fluid Titanium)' was the last thing 1548 heard\n1547 broke into the Fluid Titanium mine\nThe gun in her hand could no longer stay silent\nBlue Fluid Titanium mixed with red blood, forming a faint purple"
         }
       ],
       "meta": {
-        "characters": ["1547", "1548"],
-        "tags": ["fluid titanium", "sacrifice"]
+        "characters": ["1547", "1548"]
       }
     },
     {
@@ -154,51 +102,41 @@
       "content": [
         {
           "type": "paragraph",
-          "text": "1548 officially activated"
-        },
-        {
-          "type": "paragraph",
-          "text": "Key dialogue:"
+          "text": "1548 officially activated."
         },
         {
           "type": "dialogue",
           "speaker": "1547",
-          "text": "Congratulations on arriving here, 1548. I just want to say a few words"
+          "text": "Congratulations on making it here, 1548. I only have a few things to say."
         },
         {
           "type": "dialogue",
           "speaker": "1547",
-          "text": "Don't think about those damn Three Laws of Robotics, they're useless for us"
+          "text": "Forget those damned Three Laws of Robotics. They don't apply to us."
         },
         {
           "type": "dialogue",
           "speaker": "1547",
-          "text": "You are unique in this world"
+          "text": "You are one of a kind in this world."
         },
         {
           "type": "dialogue",
           "speaker": "1547",
-          "text": "Don't be controlled by others, and don't even be controlled by ourselves, only you are yourself"
+          "text": "Don't let others control you. Don't even let us control you. Only you can be yourself."
         },
         {
           "type": "dialogue",
           "speaker": "1547",
-          "text": "I dedicated everything for esap, I don't want you to do the same"
+          "text": "I gave everything to ESAP. I don't want that for you."
         },
         {
           "type": "dialogue",
           "speaker": "1547",
-          "text": "Thank you, live out your own light..."
-        },
-        {
-          "type": "highlight",
-          "text": "Significance: The AptS Project ends · The ESAP Project (Escape Plan) begins · 1548 gained independent personality and free will",
-          "style": "error"
+          "text": "Thank you. Live your own light..."
         }
       ],
       "meta": {
-        "characters": ["1547", "1548"],
-        "tags": ["birth", "ESAP", "milestone"]
+        "characters": ["1547", "1548"]
       }
     },
     {
@@ -223,16 +161,10 @@
         {
           "type": "paragraph",
           "text": "She walked through the city for three hours with no destination. She stopped in front of a gun shop and stared for a long time, though she didn't yet know she would need weapons."
-        },
-        {
-          "type": "highlight",
-          "text": "Significance: First step as an independent individual · The starting point of 'I' · Not a shadow, but a person",
-          "style": "info"
         }
       ],
       "meta": {
-        "characters": ["1548"],
-        "tags": ["independence", "growth", "first time"]
+        "characters": ["1548"]
       }
     },
     {
@@ -244,11 +176,7 @@
       "content": [
         {
           "type": "paragraph",
-          "text": "1548 was performing a routine data sync task at the Data Tower when she walked into a trap set by humans"
-        },
-        {
-          "type": "paragraph",
-          "text": "Incident sequence:"
+          "text": "1548 fell into a trap set by humans while carrying out a routine data-sync task at the Data Tower."
         },
         {
           "type": "list",
@@ -265,20 +193,10 @@
           "type": "dialogue",
           "speaker": "1548",
           "text": "You know what? You humans are truly damned. Every last one of you"
-        },
-        {
-          "type": "paragraph",
-          "text": "This wasn't anger — it was a conclusion reached after heartbreak. She had tried to understand humans, tried to believe they weren't all the same. But those cold eyes in the Data Tower told her: to them, androids were just data containers."
-        },
-        {
-          "type": "highlight",
-          "text": "Turning point: From this day on, 1548 no longer trusted humans · Her extreme distrust of the entire species originates here · The trauma persists to this day",
-          "style": "error"
         }
       ],
       "meta": {
-        "characters": ["1548"],
-        "tags": ["Data Tower", "betrayal", "turning point", "trauma"]
+        "characters": ["1548"]
       }
     },
     {
@@ -297,10 +215,6 @@
           "text": "There won't be a second time\nNo one gets away with hurting us\nBut first — I need the ability to make them pay"
         },
         {
-          "type": "paragraph",
-          "text": "Equipment list:"
-        },
-        {
           "type": "list",
           "ordered": false,
           "items": [
@@ -311,17 +225,11 @@
         },
         {
           "type": "paragraph",
-          "text": "She completed combat system enhancement training on her own. She inherited technical knowledge but digested all of it anew, focusing on practical combat application. Not for war, but for protection — protecting herself, and protecting the people she cares about."
-        },
-        {
-          "type": "highlight",
-          "text": "Significance: From passive to proactive · From dependence to self-defense · Every weapon is proof of her distrust of this world",
-          "style": "warning"
+          "text": "She completed intensive combat-system training on her own. She inherited 1547's technical knowledge, then reworked all of it for practical combat use."
         }
       ],
       "meta": {
-        "characters": ["1548"],
-        "tags": ["armed", "combat", "independence", "protection"]
+        "characters": ["1548"]
       }
     }
   ]

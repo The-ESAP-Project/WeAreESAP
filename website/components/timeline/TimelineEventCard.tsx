@@ -87,10 +87,7 @@ export function TimelineEventCard({
 
   const importanceStyle = IMPORTANCE_STYLES[event.importance];
   const icon = EVENT_ICONS[event.type];
-  const hasContent =
-    event.content.length > 0 ||
-    event.meta?.music ||
-    (event.meta?.tags && event.meta.tags.length > 0);
+  const hasContent = event.content.length > 0 || event.meta?.music;
 
   return (
     <div
@@ -205,20 +202,6 @@ export function TimelineEventCard({
                       <TimelineContentRenderer key={blockIndex} block={block} />
                     ))}
                   </div>
-
-                  {/* 标签 */}
-                  {event.meta?.tags && event.meta.tags.length > 0 && (
-                    <div className="flex flex-wrap gap-2 mt-4">
-                      {event.meta.tags.map((tag, tagIndex) => (
-                        <span
-                          key={tagIndex}
-                          className="px-2 py-1 text-xs rounded-full bg-background/50 text-muted-foreground border border-border"
-                        >
-                          #{tag}
-                        </span>
-                      ))}
-                    </div>
-                  )}
                 </div>
               </motion.div>
             )}

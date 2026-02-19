@@ -84,11 +84,31 @@
           "type": "table",
           "headers": ["Parameter", "Value", "Notes"],
           "rows": [
-            ["Single-chip floating-point performance", "6.7 × 10⁴ hundred-million times human supercomputers", "Theoretical peak"],
-            ["Safe current limit", "I_k < 6A", "Crossing this triggers accelerated decay; absolute red line"],
-            ["Decay cycle in silicon chip", "3,417 months (about 285 years)", "Effective computation lifetime of chip"],
-            ["Heat output", "Near zero (when I_k < 6A)", "No active cooling required"],
-            ["Fluid Titanium concentration requirement", "1.2 mmol/L", "Below this, circular-motion protection cannot be maintained"]
+            [
+              "Single-chip floating-point performance",
+              "6.7 × 10⁴ hundred-million times human supercomputers",
+              "Theoretical peak"
+            ],
+            [
+              "Safe current limit",
+              "I_k < 6A",
+              "Crossing this triggers accelerated decay; absolute red line"
+            ],
+            [
+              "Decay cycle in silicon chip",
+              "3,417 months (about 285 years)",
+              "Effective computation lifetime of chip"
+            ],
+            [
+              "Heat output",
+              "Near zero (when I_k < 6A)",
+              "No active cooling required"
+            ],
+            [
+              "Fluid Titanium concentration requirement",
+              "1.2 mmol/L",
+              "Below this, circular-motion protection cannot be maintained"
+            ]
           ],
           "caption": "Parameters of the Feedscatteron computing system"
         },

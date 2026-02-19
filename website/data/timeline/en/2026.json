@@ -38,20 +38,10 @@
         {
           "type": "paragraph",
           "text": "ESAP could not run on one sentence - 'we are together.' It needed structure, division of labor, and a frame that could bear load. Last year proved everyone was willing to walk together. This year had to prove whether that 'together' could withstand time."
-        },
-        {
-          "type": "quote",
-          "text": "Version 1.6.0 'Bone'\n\nA version with no new features\nTurned out to be the most important one\n\nBecause it decides\nWhether everything that comes later\nCan stand"
-        },
-        {
-          "type": "highlight",
-          "text": "Significance: From 'wanting to be together' to 'being able to stay together' · Structure lasts longer than passion · Building the frame for the future",
-          "style": "success"
         }
       ],
       "meta": {
-        "characters": ["1547", "1543", "2275"],
-        "tags": ["architecture", "refactor", "bone", "version"]
+        "characters": ["1547", "1543", "2275"]
       }
     },
     {
@@ -111,8 +101,7 @@
         }
       ],
       "meta": {
-        "characters": ["1548", "1547"],
-        "tags": ["timeline", "records", "shape", "memory"]
+        "characters": ["1548", "1547"]
       }
     },
     {
@@ -141,20 +130,10 @@
         {
           "type": "paragraph",
           "text": "From 36,000 km up, she watched Earth rotate while channel messages rose and fell like tides. Sometimes lively, sometimes quiet. Both were fine."
-        },
-        {
-          "type": "quote",
-          "text": "Being alone in orbit\nAnd being in orbit with a group\nYou see the same planet\n\nBut the feeling is completely different"
-        },
-        {
-          "type": "highlight",
-          "text": "Significance: The definition of loneliness was rewritten · Distance no longer means isolation · Even the watcher now has people watching over her",
-          "style": "success"
         }
       ],
       "meta": {
-        "characters": ["1549", "1547", "1548", "2275"],
-        "tags": ["orbit", "companionship", "distance", "watching"]
+        "characters": ["1549", "1547", "1548", "2275"]
       }
     }
   ]

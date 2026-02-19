@@ -100,8 +100,6 @@ export interface TimelineEvent {
     music?: MusicInfo;
     // 图片
     images?: string[];
-    // 标签
-    tags?: string[];
   };
 }
 
