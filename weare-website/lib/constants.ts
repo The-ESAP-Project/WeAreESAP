@@ -65,7 +65,7 @@ export const SITE_CONFIG = {
 
 // 默认图片路径
 export const DEFAULT_IMAGES = {
-  homepage: "/assets/images/homepage.jpg", // 首页和默认 OG 图片
+  homepage: "/assets/images/homepage.webp", // 首页和默认 OG 图片
   notFound: "/assets/images/not-found.webp", // 404 页面图片
   favicon: "/favicon.ico", // 默认图标
 } as const;
