@@ -1,7 +1,7 @@
 {
   "id": "esap-core",
   "order": 3,
-  "image": "/images/organizations/ESAPCore.webp",
+  "image": "/assets/images/organizations/ESAPCore.webp",
   "icon": "Users",
   "theme": {
     "primary": "#ffd93d",

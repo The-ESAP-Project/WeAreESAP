@@ -19,7 +19,7 @@ import blurData from "@/data/blur-placeholders.json";
 
 /**
  * 根据图片路径获取对应的 blur data URL
- * @param imagePath - 图片路径，例如 "/images/characters/img_1549.webp"
+ * @param imagePath - 图片路径，例如 "/assets/images/characters/img_1549.webp"
  * @returns blur data URL 或 undefined
  */
 export function getBlurDataURL(imagePath: string): string | undefined {

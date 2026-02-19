@@ -25,7 +25,7 @@ import { fileURLToPath } from "url";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const IMAGE_DIR = path.join(__dirname, "../public/images/characters");
+const IMAGE_DIR = path.join(__dirname, "../public/assets/images/characters");
 const LARGE_IMAGES = ["img_1543.webp", "img_1549.webp", "img_1548.webp"];
 
 const MAX_WIDTH = 1920; // 限制最大宽度

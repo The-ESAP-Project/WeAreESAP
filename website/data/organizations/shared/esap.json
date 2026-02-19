@@ -1,7 +1,7 @@
 {
   "id": "esap",
   "order": 1,
-  "image": "/images/organizations/ESAP.webp",
+  "image": "/assets/images/organizations/ESAP.webp",
   "icon": "Star",
   "theme": {
     "primary": "#ffd93d",

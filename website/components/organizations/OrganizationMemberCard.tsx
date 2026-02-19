@@ -42,7 +42,7 @@ export const OrganizationMemberCard = memo(function OrganizationMemberCard({
   const isClassified = member.visibility === "classified";
   const hasCharacterPage = !!characterName && !isClassified;
   const [avatarError, setAvatarError] = useState(false);
-  const avatarSrc = `/images/avatar/img_${member.characterId}.webp`;
+  const avatarSrc = `/assets/images/avatar/img_${member.characterId}.webp`;
   const avatarBlur = getBlurDataURL(avatarSrc);
 
   const cardContent = (

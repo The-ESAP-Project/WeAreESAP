@@ -28,7 +28,7 @@ async function generateBlurPlaceholders() {
   console.log("🎨 开始生成模糊占位符...\n");
 
   // 需要扫描的图片目录（相对于 public/）
-  const imageDirs = ["images/characters", "images/avatar", "images/organizations"];
+  const imageDirs = ["assets/images/characters", "assets/images/avatar", "assets/images/organizations"];
   const publicDir = path.join(__dirname, "../public");
   const outputFile = path.join(__dirname, "../data/blur-placeholders.json");
 

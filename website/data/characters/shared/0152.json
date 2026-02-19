@@ -5,7 +5,7 @@
     "primary": "#1abc9c",
     "dark": "#16a085"
   },
-  "backgroundImage": "/images/characters/img_0152.webp",
+  "backgroundImage": "/assets/images/characters/img_0152.webp",
   "backgroundPosition": "35% center",
   "tier": "member"
 }

@@ -1,7 +1,7 @@
 {
   "id": "polaris",
   "order": 2,
-  "image": "/images/organizations/PSP.webp",
+  "image": "/assets/images/organizations/PSP.webp",
   "icon": "Radio",
   "theme": {
     "primary": "#4da6ff",

@@ -5,6 +5,6 @@
     "primary": "#ffd93d",
     "dark": "#ffc107"
   },
-  "backgroundImage": "/images/characters/img_2077.webp",
+  "backgroundImage": "/assets/images/characters/img_2077.webp",
   "tier": "guest"
 }

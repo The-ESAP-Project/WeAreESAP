@@ -1,7 +1,7 @@
 {
   "id": "beu",
   "order": 4,
-  "image": "/images/organizations/BEU.webp",
+  "image": "/assets/images/organizations/BEU.webp",
   "icon": "Shield",
   "theme": {
     "primary": "#475569",

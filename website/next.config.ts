@@ -27,7 +27,7 @@ const nextConfig: NextConfig = {
     return [
       // 图片资源缓存（1 天 + SWR 1 周）
       {
-        source: "/images/:path*",
+        source: "/assets/images/:path*",
         headers: [
           {
             key: "Cache-Control",
