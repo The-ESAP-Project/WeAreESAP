@@ -102,7 +102,7 @@ export const Navigation = memo(function Navigation() {
             </TransitionLink>
 
             {/* 桌面端导航链接 */}
-            <div className="hidden md:flex items-center gap-6">
+            <div className="hidden md:flex items-center gap-3 lg:gap-6">
               {navLinks.map((link) => {
                 const active = isActive(link.href);
                 return (
