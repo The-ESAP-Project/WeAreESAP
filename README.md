@@ -39,7 +39,7 @@
 
 ```bash
 git clone https://github.com/The-ESAP-Project/WeAreESAP.git
-cd WeAreESAP/website
+cd WeAreESAP/weare-website
 
 bun install
 bun dev              # 开发服务器 → http://localhost:3000
@@ -52,7 +52,7 @@ bun run test:e2e     # E2E 测试
 
 ```
 WeAreESAP/
-├── website/                  # Next.js 项目
+├── weare-website/            # Next.js 项目
 │   ├── app/[locale]/         # 页面（按语言路由）
 │   ├── components/           # React 组件（按功能分目录）
 │   ├── data/

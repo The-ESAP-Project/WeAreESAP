@@ -39,7 +39,7 @@ Requires Node.js >= 18.17 and [Bun](https://bun.sh/).
 
 ```bash
 git clone https://github.com/The-ESAP-Project/WeAreESAP.git
-cd WeAreESAP/website
+cd WeAreESAP/weare-website
 
 bun install
 bun dev              # Dev server → http://localhost:3000
@@ -52,7 +52,7 @@ bun run test:e2e     # E2E tests
 
 ```
 WeAreESAP/
-├── website/                  # Next.js project
+├── weare-website/            # Next.js project
 │   ├── app/[locale]/         # Pages (locale-based routing)
 │   ├── components/           # React components (feature-based)
 │   ├── data/

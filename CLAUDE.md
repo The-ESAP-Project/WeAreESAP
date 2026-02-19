@@ -4,11 +4,11 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-WeAreESAP (向那卫星许愿) is a Next.js website for a sci-fi worldbuilding project about androids and humans. The main codebase is in the `website/` directory.
+WeAreESAP (向那卫星许愿) is a Next.js website for a sci-fi worldbuilding project about androids and humans. The main codebase is in the `weare-website/` directory.
 
 ## Common Commands
 
-All commands run from `website/` directory. **bun is required**.
+All commands run from `weare-website/` directory. **bun is required**.
 
 ```bash
 bun dev              # Start dev server (http://localhost:3000)
@@ -31,7 +31,7 @@ bun run test:e2e     # Run Playwright E2E tests
 - ReactFlow + ELK for character relation graphs
 - Vitest (unit) + Playwright (E2E)
 
-### Directory Structure (website/)
+### Directory Structure (weare-website/)
 
 ```text
 app/[locale]/         # Pages with locale routing
