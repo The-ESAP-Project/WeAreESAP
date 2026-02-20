@@ -11,6 +11,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+export { AnimatedSection } from "./components/AnimatedSection";
 export {
   LanguageSwitcher,
   type LanguageSwitcherProps,

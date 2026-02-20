@@ -11,41 +11,4 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-"use client";
-
-import { motion, useReducedMotion } from "framer-motion";
-import type { ReactNode } from "react";
-
-interface AnimatedSectionProps {
-  children: ReactNode;
-  className?: string;
-  delay?: number;
-}
-
-/**
- * 通用的进入视口动画包装组件
- * 克制优雅风格：淡入 + 轻微上移
- */
-export function AnimatedSection({
-  children,
-  className,
-  delay = 0,
-}: AnimatedSectionProps) {
-  const shouldReduceMotion = useReducedMotion();
-
-  return (
-    <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{
-        duration: shouldReduceMotion ? 0 : 0.4,
-        delay,
-        ease: [0.16, 1, 0.3, 1] as const,
-      }}
-      className={className}
-    >
-      {children}
-    </motion.div>
-  );
-}
+export { AnimatedSection } from "@esap/shared-ui";
