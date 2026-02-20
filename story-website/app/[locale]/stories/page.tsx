@@ -3,8 +3,13 @@
 
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
+import { locales } from "@/i18n/request";
 import { loadStory, loadStoryRegistry } from "@/lib/story-loader";
 import { StoriesClient } from "./StoriesClient";
+
+export function generateStaticParams() {
+  return locales.map((locale) => ({ locale }));
+}
 
 export async function generateMetadata({
   params,

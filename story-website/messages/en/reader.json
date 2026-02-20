@@ -24,7 +24,8 @@
   },
   "unlock": {
     "locked": "This content is not yet unlocked",
-    "hint": "Complete earlier chapters and perspectives to unlock this content.",
+    "hint": "Complete earlier chapters or try reading from a different perspective to unlock this content.",
+    "backToPrev": "Back to Previous Chapter",
     "unlocked": "New content unlocked!"
   },
   "perspective": {

@@ -104,12 +104,22 @@ export function ChapterReader({
           <p className="text-sm text-muted-foreground mb-6">
             {t("unlock.hint")}
           </p>
-          <Link
-            href={`/stories/${story.slug}`}
-            className="inline-block px-5 py-2.5 bg-foreground text-background rounded-lg text-sm font-medium hover:opacity-90 transition-opacity"
-          >
-            {t("navigation.backToStory")}
-          </Link>
+          <div className="flex flex-col sm:flex-row gap-3 justify-center">
+            {prevChapterId && (
+              <Link
+                href={`/stories/${story.slug}/${prevChapterId}`}
+                className="inline-block px-5 py-2.5 bg-foreground text-background rounded-lg text-sm font-medium hover:opacity-90 transition-opacity"
+              >
+                &larr; {t("unlock.backToPrev")}
+              </Link>
+            )}
+            <Link
+              href={`/stories/${story.slug}`}
+              className="inline-block px-5 py-2.5 border border-border text-foreground rounded-lg text-sm font-medium hover:bg-muted transition-colors"
+            >
+              {t("navigation.backToStory")}
+            </Link>
+          </div>
         </div>
       </div>
     );

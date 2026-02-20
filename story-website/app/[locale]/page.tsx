@@ -4,7 +4,12 @@
 import { setRequestLocale } from "next-intl/server";
 import { FeaturedStory } from "@/components/home/FeaturedStory";
 import { HomeHero } from "@/components/home/HomeHero";
+import { locales } from "@/i18n/request";
 import { loadStoryRegistry } from "@/lib/story-loader";
+
+export function generateStaticParams() {
+  return locales.map((locale) => ({ locale }));
+}
 
 export default async function HomePage({
   params,
