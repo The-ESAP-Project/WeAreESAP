@@ -1,0 +1,12 @@
+{
+  "name": "weareesap-monorepo",
+  "private": true,
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "@parcel/watcher",
+      "@swc/core",
+      "esbuild",
+      "sharp"
+    ]
+  }
+}

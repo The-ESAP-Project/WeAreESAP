@@ -15,18 +15,19 @@
     "url": "https://github.com/AptS-1547/WeAreESAP"
   },
   "scripts": {
-    "dev": "bun run prebuild && next dev",
+    "dev": "pnpm run prebuild && next dev",
     "prebuild": "node ./scripts/generate-build-info.mjs",
     "build": "next build",
     "start": "next start",
-    "test:unit": "bun run prebuild && vitest",
-    "test:unit:run": "bun run prebuild && vitest run",
+    "test:unit": "pnpm run prebuild && vitest",
+    "test:unit:run": "pnpm run prebuild && vitest run",
     "lint": "biome check",
     "lint:fix": "biome check --fix",
     "format": "biome format --write .",
     "license:add": "node ./scripts/add-license-headers.js"
   },
   "dependencies": {
+    "@esap/shared-ui": "workspace:*",
     "framer-motion": "12.34.3",
     "next": "16.1.6",
     "next-intl": "^4.8.3",

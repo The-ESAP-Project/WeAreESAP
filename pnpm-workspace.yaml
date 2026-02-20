@@ -1,0 +1,4 @@
+packages:
+  - "packages/*"
+  - "weare-website"
+  - "story-website"

@@ -13,26 +13,26 @@ The two sites share a similar tech stack and patterns but are fully independent 
 
 ## weare-website
 
-All commands run from `weare-website/`. Uses **bun** as package manager (bun.lock present). Note: the `dev` script internally calls `pnpm run prebuild`, so **pnpm must also be installed**.
+All commands run from `weare-website/`. Uses **pnpm** as package manager (pnpm.lock present). Note: the `dev` script internally calls `pnpm run prebuild`, so **pnpm must also be installed**.
 
 ```bash
-bun dev                   # Prebuild + start dev server (http://localhost:3000)
-bun run build             # Production build (runs prebuild + postbuild sitemap)
-bun run lint              # Biome check
-bun run lint:fix          # Biome check --fix
-bun run format            # Biome format --write
-bun run test:unit         # Vitest (watch mode)
-bun run test:unit:run     # Vitest (CI mode, single run)
-bun run test:unit:coverage # Vitest with coverage report
-bun run test:e2e          # Build + Playwright E2E tests
-bun run test:e2e:ui       # Build + Playwright with UI
-bun run test:e2e:debug    # Build + Playwright debug mode
-bun run analyze           # Bundle analysis
-bun run blur:generate     # Regenerate blur placeholders for images
-bun run sitemap:generate  # Regenerate sitemap
+pnpm dev                   # Prebuild + start dev server (http://localhost:3000)
+pnpm run build             # Production build (runs prebuild + postbuild sitemap)
+pnpm run lint              # Biome check
+pnpm run lint:fix          # Biome check --fix
+pnpm run format            # Biome format --write
+pnpm run test:unit         # Vitest (watch mode)
+pnpm run test:unit:run     # Vitest (CI mode, single run)
+pnpm run test:unit:coverage # Vitest with coverage report
+pnpm run test:e2e          # Build + Playwright E2E tests
+pnpm run test:e2e:ui       # Build + Playwright with UI
+pnpm run test:e2e:debug    # Build + Playwright debug mode
+pnpm run analyze           # pnpmdle analysis
+pnpm run blur:generate     # Regenerate blur placeholders for images
+pnpm run sitemap:generate  # Regenerate sitemap
 ```
 
-Run a single unit test: `bun vitest run lib/__tests__/path/to/test.ts`
+Run a single unit test: `pnpm vitest run lib/__tests__/path/to/test.ts`
 
 ### Tech Stack
 
@@ -62,16 +62,16 @@ Run a single unit test: `bun vitest run lib/__tests__/path/to/test.ts`
 
 ## story-website
 
-All commands run from `story-website/`. Uses **bun** as package manager.
+All commands run from `story-website/`. Uses **pnpm** as package manager.
 
 ```bash
-bun dev              # Prebuild + start dev server
-bun run build        # Production build
-bun run lint         # Biome check
-bun run lint:fix     # Biome check --fix
-bun run format       # Biome format --write
-bun run test:unit    # Vitest (watch mode)
-bun run test:unit:run # Vitest (CI mode, single run)
+pnpm dev              # Prebuild + start dev server
+pnpm run build        # Production build
+pnpm run lint         # Biome check
+pnpm run lint:fix     # Biome check --fix
+pnpm run format       # Biome format --write
+pnpm run test:unit    # Vitest (watch mode)
+pnpm run test:unit:run # Vitest (CI mode, single run)
 ```
 
 ### Tech Stack

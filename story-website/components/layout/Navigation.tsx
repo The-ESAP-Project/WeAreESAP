@@ -13,15 +13,20 @@
 
 "use client";
 
+import { LanguageSwitcher, ThemeToggle } from "@esap/shared-ui";
 import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { memo, useCallback, useState } from "react";
 import { Icon } from "@/components/ui/Icon";
-import { LanguageSwitcher } from "@/components/ui/LanguageSwitcher";
-import { ThemeToggle } from "@/components/ui/ThemeToggle";
-import { Link, usePathname } from "@/i18n/navigation";
+import { Link, usePathname, useRouter } from "@/i18n/navigation";
+import { locales } from "@/i18n/request";
 import { cn } from "@/lib/utils";
+
+const localeNames: Record<string, string> = {
+  "zh-CN": "简体中文",
+  en: "English",
+};
 
 const navLinks = [{ href: "/stories", key: "stories" }] as const;
 
@@ -29,6 +34,8 @@ export const Navigation = memo(function Navigation() {
   const t = useTranslations("common.navigation");
   const tMobileMenu = useTranslations("common.mobileMenu");
   const pathname = usePathname();
+  const router = useRouter();
+  const locale = useLocale();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const closeMobileMenu = useCallback(() => setIsMobileMenuOpen(false), []);
@@ -98,7 +105,12 @@ export const Navigation = memo(function Navigation() {
           <div className="flex items-center gap-1 shrink-0">
             {/* Desktop: language + theme */}
             <div className="hidden md:flex items-center gap-1">
-              <LanguageSwitcher />
+              <LanguageSwitcher
+                locales={locales}
+                localeNames={localeNames}
+                currentLocale={locale}
+                onLocaleChange={(loc) => router.push(pathname, { locale: loc })}
+              />
               <ThemeToggle />
             </div>
 
@@ -191,7 +203,15 @@ export const Navigation = memo(function Navigation() {
                     <span className="text-sm text-muted-foreground">
                       {tMobileMenu("language")}
                     </span>
-                    <LanguageSwitcher />
+                    <LanguageSwitcher
+                      locales={locales}
+                      localeNames={localeNames}
+                      currentLocale={locale}
+                      onLocaleChange={(loc) => {
+                        router.push(pathname, { locale: loc });
+                        closeMobileMenu();
+                      }}
+                    />
                   </div>
                 </div>
               </div>

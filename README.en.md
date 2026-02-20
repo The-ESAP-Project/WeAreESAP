@@ -35,17 +35,17 @@ In this world: feedscatteron particles redefined computation, fluid titanium sus
 
 ### Local Development
 
-Requires Node.js >= 18.17 and [Bun](https://bun.sh/).
+Requires Node.js >= 18.17 and [pnpm](https://pnpm.sh/).
 
 ```bash
 git clone https://github.com/The-ESAP-Project/WeAreESAP.git
 cd WeAreESAP/weare-website
 
-bun install
-bun dev              # Dev server → http://localhost:3000
-bun run build        # Production build
-bun run test:unit    # Unit tests
-bun run test:e2e     # E2E tests
+pnpm install
+pnpm dev              # Dev server → http://localhost:3000
+pnpm run build        # Production build
+pnpm run test:unit    # Unit tests
+pnpm run test:e2e     # E2E tests
 ```
 
 ### Project Structure

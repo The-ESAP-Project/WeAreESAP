@@ -50,6 +50,7 @@
     "sitemap:generate": "next-sitemap --config ./scripts/next-sitemap.config.js"
   },
   "dependencies": {
+    "@esap/shared-ui": "workspace:*",
     "@tanstack/react-virtual": "^3.13.18",
     "elkjs": "^0.11.0",
     "framer-motion": "12.34.2",

@@ -112,8 +112,8 @@ git checkout -b add-character-你的角色ID
 
 # 测试
 cd website
-bun install
-bun dev
+pnpm install
+pnpm dev
 # 访问 http://localhost:3000/characters 确认显示正常
 
 # 提交
@@ -136,22 +136,22 @@ git push origin add-character-你的角色ID
 
 ```bash
 cd website
-bun install
-bun dev
+pnpm install
+pnpm dev
 ```
 
 ### 代码规范
 
 - TypeScript 类型检查
-- ESLint 规则（`bun run lint`）
+- ESLint 规则（`pnpm run lint`）
 - 函数式组件 + React Hooks
 - Tailwind CSS 样式
 
 ### PR 流程
 
 1. Fork 并创建分支
-2. 确保 lint 通过：`bun run lint`
-3. 确保构建成功：`bun run build`
+2. 确保 lint 通过：`pnpm run lint`
+3. 确保构建成功：`pnpm run build`
 4. 提交有意义的 commit message
 5. 创建 Pull Request
 

@@ -11,6 +11,9 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-// Re-exports from @esap/shared-ui to preserve all existing import paths.
-// All consumers using @/hooks/useReducedMotion continue to work unchanged.
-export { useReducedMotion } from "@esap/shared-ui";
+export {
+  LanguageSwitcher,
+  type LanguageSwitcherProps,
+} from "./components/LanguageSwitcher";
+export { ThemeToggle } from "./components/ThemeToggle";
+export { useReducedMotion } from "./hooks/useReducedMotion";

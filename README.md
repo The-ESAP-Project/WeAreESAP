@@ -35,17 +35,17 @@
 
 ### 本地开发
 
-需要 Node.js >= 18.17 和 [Bun](https://bun.sh/)。
+需要 Node.js >= 18.17 和 [pnpm](https://pnpm.sh/)。
 
 ```bash
 git clone https://github.com/The-ESAP-Project/WeAreESAP.git
 cd WeAreESAP/weare-website
 
-bun install
-bun dev              # 开发服务器 → http://localhost:3000
-bun run build        # 生产构建
-bun run test:unit    # 单元测试
-bun run test:e2e     # E2E 测试
+pnpm install
+pnpm dev              # 开发服务器 → http://localhost:3000
+pnpm run build        # 生产构建
+pnpm run test:unit    # 单元测试
+pnpm run test:e2e     # E2E 测试
 ```
 
 ### 项目结构

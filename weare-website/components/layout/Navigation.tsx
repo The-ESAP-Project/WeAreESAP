@@ -35,6 +35,12 @@ const localeNames: Record<string, string> = {
   ja: "日",
 };
 
+const desktopLocaleNames: Record<string, string> = {
+  "zh-CN": "简体中文",
+  en: "English",
+  ja: "日本語",
+};
+
 const navLinks = [
   { href: "/project", key: "project" },
   { href: "/characters", key: "characters" },
@@ -161,7 +167,14 @@ export const Navigation = memo(function Navigation() {
 
               {/* 语言切换器 - 桌面端 */}
               <div className="hidden md:block">
-                <LanguageSwitcher />
+                <LanguageSwitcher
+                  locales={locales}
+                  localeNames={desktopLocaleNames}
+                  currentLocale={locale}
+                  onLocaleChange={(loc) =>
+                    router.push(pathname, { locale: loc })
+                  }
+                />
               </div>
 
               {/* 主题切换按钮 - 桌面端 */}
