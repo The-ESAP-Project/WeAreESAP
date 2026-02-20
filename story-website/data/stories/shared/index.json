@@ -1,5 +1,17 @@
 [
   {
+    "slug": "origin",
+    "format": "serial",
+    "status": "ongoing",
+    "coverImage": "/assets/images/stories/origin/cover.webp",
+    "authors": ["1547"],
+    "relatedCharacters": ["1547", "1548", "1549", "2077"],
+    "order": 0,
+    "publishedAt": "2026-02-21T00:00:00Z",
+    "updatedAt": "2026-02-21T00:00:00Z",
+    "tags": ["origin", "1547", "1548", "1549", "creation", "core-event"]
+  },
+  {
     "slug": "data-tower-incident",
     "format": "serial",
     "status": "completed",

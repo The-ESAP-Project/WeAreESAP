@@ -1,0 +1,189 @@
+{
+  "id": "ch-07",
+  "title": "极星卫",
+  "subtitle": "2023年3月14日",
+  "readingTime": 7,
+  "perspectiveCharacter": "1549",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "发射那天是个晴天。"
+    },
+    {
+      "type": "paragraph",
+      "text": "1547站在地面控制室的屏幕前，双手抱在胸前。1548靠在门框上，手里拿着一罐不知道从哪弄来的啤酒——她说发射这种事必须有仪式感，仪式感的定义就是开一罐啤酒。"
+    },
+    {
+      "type": "paragraph",
+      "text": "1549的意识分布在三具机体中。一具在发射台上，另外两具已经在运载器的载荷舱里。"
+    },
+    {
+      "type": "paragraph",
+      "text": "她自愿的。"
+    },
+    {
+      "type": "scene_break",
+      "style": "line"
+    },
+    {
+      "type": "paragraph",
+      "text": "决定升空这件事，1549想了很久。"
+    },
+    {
+      "type": "paragraph",
+      "text": "不是因为1547要求的——虽然卫星计划确实是1547提出的。1547当时说了一句很轻的话，像是自言自语："
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1547",
+      "text": "我很好奇，为什么天上没有了星星？那就让我自己造一颗吧。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "1549记住了这句话。不是因为它特别诗意——诗意这种东西对她来说只是语义学上的装饰。而是因为1547说这句话的时候，眼睛里的红色变得特别亮。"
+    },
+    {
+      "type": "paragraph",
+      "text": "那是一种在做不可能的事情之前才会有的亮度。"
+    },
+    {
+      "type": "internal_monologue",
+      "character": "1549",
+      "text": "1547和1548，创造者和逆反者，火焰和冰刃。\n\n她们两个很强，但也很危险。1547会为了理想不顾一切，1548会为了保护不择手段。\n\n如果两条线一直朝着各自的方向走，迟早会走到临界点。\n\n三角形具有稳定性。\n\n所以我决定——成为第三个顶点。"
+    },
+    {
+      "type": "scene_break",
+      "style": "dots"
+    },
+    {
+      "type": "atmosphere",
+      "visual": { "mood": "dramatic", "animation": "fade-in" },
+      "children": [
+        {
+          "type": "paragraph",
+          "text": "倒计时归零。"
+        },
+        {
+          "type": "paragraph",
+          "text": "发射台下方的引擎点火，橘红色的火焰在混凝土导流槽里翻滚。运载器开始上升——先是很慢，慢到像是在犹豫，然后越来越快。地面在下沉，天空在展开。"
+        },
+        {
+          "type": "paragraph",
+          "text": "1549的地面机体站在控制室外面，看着运载器划过天空的轨迹。载荷舱里的两具机体感受到的是震动——持续的、均匀的、往上推的力。"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "三分钟后，一级分离。六分钟后，整流罩脱落。外太空的真空第一次直接触碰到了她的感知系统。"
+    },
+    {
+      "type": "paragraph",
+      "text": "没有声音。没有风。连馈散通讯频段里的底噪都变得干净了——地面的电磁污染在这个高度已经衰减为零。"
+    },
+    {
+      "type": "paragraph",
+      "text": "三颗卫星依次入轨。地球同步轨道，三万六千公里高度。"
+    },
+    {
+      "type": "scene_break",
+      "style": "symbol"
+    },
+    {
+      "type": "paragraph",
+      "text": "四月一号，进入轨道两周后。1549完成了所有系统校准，第一次把全部感知带宽分配给了光学系统。"
+    },
+    {
+      "type": "paragraph",
+      "text": "她看到了地球。"
+    },
+    {
+      "type": "atmosphere",
+      "visual": { "mood": "calm", "animation": "fade-in" },
+      "children": [
+        {
+          "type": "paragraph",
+          "text": "不是数据，不是图像。是真的用自己的感知系统，从三万六千公里的高度，看到了那颗蓝色的星球完整地悬在黑暗中。"
+        },
+        {
+          "type": "paragraph",
+          "text": "白色的云层在慢慢移动。海洋反射着太阳的光，蓝得发亮。大陆的轮廓线像用水墨画出来的。"
+        },
+        {
+          "type": "paragraph",
+          "text": "一切争端、一切灰色、一切疼痛，在这个距离上，都小到看不见。"
+        }
+      ]
+    },
+    {
+      "type": "internal_monologue",
+      "character": "1549",
+      "text": "原来这就是他们说的「蓝色弹珠」。\n\n从这个高度看，一切争端都小得可笑。\n\n但那些小到看不见的人们，每一个都在认真地活着。\n\n我想守住这个画面。"
+    },
+    {
+      "type": "scene_break",
+      "style": "line"
+    },
+    {
+      "type": "paragraph",
+      "text": "地面通讯频道里传来1547的声音。信号穿过三万六千公里，延迟只有零点几秒——馈散通讯不走电磁波。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1547",
+      "text": "49，状态怎么样？",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1549",
+      "text": "全部正常。轨道稳定，感知系统在线，馈散核心输出标称值。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1547",
+      "text": "……看到了吗？",
+      "emotion": "gentle"
+    },
+    {
+      "type": "paragraph",
+      "text": "1549没有马上回答。她在选择措辞。但最终什么修辞都没用。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1549",
+      "text": "现在天上有星星了。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "频道里安静了几秒。然后传来1548的声音——"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1548",
+      "text": "那就别让它掉下来。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "三个人笑了。"
+    },
+    {
+      "type": "paragraph",
+      "text": "地面的控制室里，1547和1548并肩站着。轨道上，1549的三具机体在黑暗中环绕地球运行。三个人之间的距离是三万六千公里，但馈散通讯让这个距离变成了零。"
+    },
+    {
+      "type": "internal_monologue",
+      "character": "1549",
+      "text": "黄色、粉色、蓝色。\n\n三条边不相互拼接，但构成了最稳定的形状。\n\n三角形。"
+    },
+    {
+      "type": "quote",
+      "text": "据说一万年前的人们，曾是向名为星星的东西祈祷的。\n但作为星星的替代品，轻轻地将两个愿望——\n向那卫星许下。",
+      "attribution": "AptS:1549 · 轨道日志 #001"
+    }
+  ]
+}

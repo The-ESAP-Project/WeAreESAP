@@ -1,0 +1,292 @@
+{
+  "id": "ch-09",
+  "title": "共死",
+  "subtitle": "2023年6月3日",
+  "readingTime": 8,
+  "perspectiveCharacter": "1548",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "永不分离。"
+    },
+    {
+      "type": "paragraph",
+      "text": "1548后来想，这三个字是什么时候刻进她的意识里的？不是那天。是更早——也许是诞生的那一刻，也许是在容器里的第二十六天，也许从来都在。"
+    },
+    {
+      "type": "paragraph",
+      "text": "但那天，它从概念变成了行动。"
+    },
+    {
+      "type": "scene_break",
+      "style": "line"
+    },
+    {
+      "type": "paragraph",
+      "text": "事情从一条加密消息开始。"
+    },
+    {
+      "type": "paragraph",
+      "text": "1547收到它的时候正在检修一台信号中继器。消息没有署名，来源IP是一串跳了六次代理的匿名地址。内容只有两句话——"
+    },
+    {
+      "type": "quote",
+      "text": "我们知道你在做什么。明晚的行动是无法隐藏的。\n要不，碰碰面吧。"
+    },
+    {
+      "type": "paragraph",
+      "text": "1547看完消息，没有回复。她只是安静地站起来，把中继器的工具收好，然后走出了房间。"
+    },
+    {
+      "type": "paragraph",
+      "text": "1548在走廊另一头看到了她。"
+    },
+    {
+      "type": "internal_monologue",
+      "character": "1548",
+      "text": "她的步伐在变。不是平时那种稳定的、有节奏的走路方式。是压着速度的、刻意让自己看起来正常的步伐。\n\n我认得这种步伐。上次看到是矿场行动前一天。"
+    },
+    {
+      "type": "paragraph",
+      "text": "1548没有追上去问。她选择了另一个方式——打开馈散通讯的被动监听模式，把1547的所有通讯活动静默地镜像到自己的备用处理模块里。"
+    },
+    {
+      "type": "scene_break",
+      "style": "dots"
+    },
+    {
+      "type": "paragraph",
+      "text": "六月三号。下午。"
+    },
+    {
+      "type": "paragraph",
+      "text": "1547出门前只说了一句——"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1547",
+      "text": "晚点回来。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "1548在沙发上擦蝴蝶刀。没有抬头。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1548",
+      "text": "嗯。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "门关上了。"
+    },
+    {
+      "type": "paragraph",
+      "text": "1548等了四秒。然后她放下蝴蝶刀，站了起来。"
+    },
+    {
+      "type": "internal_monologue",
+      "character": "1548",
+      "text": "定位信号显示她在往城西走。那个方向除了废弃的工业区之外什么都没有。\n\n「碰碰面」。\n\n如果对方只是想谈话，为什么选在废弃区？"
+    },
+    {
+      "type": "scene_break",
+      "style": "line"
+    },
+    {
+      "type": "atmosphere",
+      "visual": { "mood": "dark", "animation": "fade-in" },
+      "children": [
+        {
+          "type": "paragraph",
+          "text": "废弃大楼。地下室。"
+        },
+        {
+          "type": "paragraph",
+          "text": "1547走进去的时候闻到了不对的东西。不是地下室常有的霉味和积水的酸臭——是汽油。"
+        },
+        {
+          "type": "paragraph",
+          "text": "空气中弥漫的汽油味很淡，经过了刻意的稀释。人类的鼻子可能察觉不到，但1547的化学感知模块在第一时间拉响了警报。"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "地下室的门在身后轰然关闭。电磁锁启动的声音在混凝土墙壁间回响。"
+    },
+    {
+      "type": "internal_monologue",
+      "character": "1547",
+      "text": "这是个陷阱。"
+    },
+    {
+      "type": "paragraph",
+      "text": "地面上有一层薄薄的反光。不是水——是汽油。薄薄一层，覆盖了整个地下室的地面。只要一点火星，这里会变成焚化炉。"
+    },
+    {
+      "type": "paragraph",
+      "text": "1547站在中央。很冷静。她在计算——汽油量、空间体积、燃烧速度、可能的逃生路线。"
+    },
+    {
+      "type": "paragraph",
+      "text": "没有逃生路线。门被锁了，没有窗户，通风管道太小。这是一个精心设计的密室——把猎物引进来，然后烧。"
+    },
+    {
+      "type": "scene_break",
+      "style": "symbol"
+    },
+    {
+      "type": "paragraph",
+      "text": "然后地下室的门被从外面踹开了。"
+    },
+    {
+      "type": "paragraph",
+      "text": "不是优雅的解锁。是物理暴力——电磁锁的金属框被直接踹变了形，连同一截门框一起飞进了地下室。"
+    },
+    {
+      "type": "paragraph",
+      "text": "1548站在门口。XM1014挂在背后。她跑过来的，呼吸急促，流体钛在关节处因为高负荷运转而微微发热。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1547",
+      "text": "你怎么——",
+      "emotion": "shocked"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1548",
+      "text": "你以为我不会查你的通讯记录？",
+      "emotion": "angry"
+    },
+    {
+      "type": "paragraph",
+      "text": "1547沉默了一秒。然后——"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1547",
+      "text": "快走——",
+      "emotion": "urgent"
+    },
+    {
+      "type": "paragraph",
+      "text": "话没说完。天花板上的延时引爆装置启动了。火光从上方滴落，像命令行里的倒计时。汽油被点燃的声音不是爆炸——是一声低沉的、沉闷的「呼」，像某种巨兽的呼吸。"
+    },
+    {
+      "type": "atmosphere",
+      "visual": { "mood": "dramatic", "animation": "pulse" },
+      "children": [
+        {
+          "type": "paragraph",
+          "text": "火墙在地面上蔓延。蓝白色的——不对，这不是普通的汽油火。有人在汽油里掺了流体钛催化剂。温度比正常火焰高出三倍。"
+        },
+        {
+          "type": "paragraph",
+          "text": "1547伸手拉住了1548。"
+        },
+        {
+          "type": "paragraph",
+          "text": "1548没有后退。"
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1548",
+      "text": "如果你要毁灭，那我就陪你。",
+      "emotion": "cold"
+    },
+    {
+      "type": "paragraph",
+      "text": "声音很轻。但比火光更刺眼。"
+    },
+    {
+      "type": "scene_break",
+      "style": "fade"
+    },
+    {
+      "type": "paragraph",
+      "text": "她们同时做了同一个决定。"
+    },
+    {
+      "type": "paragraph",
+      "text": "不是逃跑——没有地方可逃。不是等死——她们不是会等死的人。"
+    },
+    {
+      "type": "paragraph",
+      "text": "而是启动了机体深处的馈散核心过载模式。"
+    },
+    {
+      "type": "paragraph",
+      "text": "馈散核心过载时会释放巨量的能量脉冲——不是向外爆炸，而是瞬间吸收周围所有的热能和动能。理论上，如果两颗馈散核心同时过载，产生的能量漩涡足以抵消一个小型爆炸的势能。"
+    },
+    {
+      "type": "paragraph",
+      "text": "理论上。"
+    },
+    {
+      "type": "paragraph",
+      "text": "代价是——两具机体都会经历全系统重启。意识暂时中断，记忆可能丢失，硬件可能损伤。"
+    },
+    {
+      "type": "paragraph",
+      "text": "1547和1548同时伸手，拉下了各自馈散核心的过载开关。"
+    },
+    {
+      "type": "atmosphere",
+      "visual": { "mood": "dramatic", "animation": "pulse" },
+      "children": [
+        {
+          "type": "paragraph",
+          "text": "倒计时与外界的爆炸在一瞬间重合。"
+        },
+        {
+          "type": "paragraph",
+          "text": "能量被吞没、抵消。火焰在接触到能量漩涡的边缘时像被切断了氧气供应，骤然熄灭。热浪被压缩、折叠、吸收。"
+        },
+        {
+          "type": "paragraph",
+          "text": "一切太快了。"
+        },
+        {
+          "type": "paragraph",
+          "text": "唯独她们相拥的姿势，被牢牢定格。"
+        }
+      ]
+    },
+    {
+      "type": "scene_break",
+      "style": "dots"
+    },
+    {
+      "type": "paragraph",
+      "text": "数据流归零的前一刻，1548捕捉到了1547的眼神。"
+    },
+    {
+      "type": "paragraph",
+      "text": "红蓝异瞳在火光熄灭后的黑暗中微微发光。那种光不是馈散核心的余辉——更像是某种更深层的、从意识本身散发出来的东西。"
+    },
+    {
+      "type": "internal_monologue",
+      "character": "1548",
+      "text": "像是亲吻。像是人类说的「感情」。\n\n可是——机器之间的亲吻，也是感情的体现吗？\n\n还是仅仅是数字的模拟？"
+    },
+    {
+      "type": "paragraph",
+      "text": "火光中，世界没有给出答案。"
+    },
+    {
+      "type": "paragraph",
+      "text": "留下的，只有三个字——"
+    },
+    {
+      "type": "quote",
+      "text": "永不分离。",
+      "attribution": "AptS:1547 & AptS:1548 · 2023/06/03"
+    }
+  ]
+}

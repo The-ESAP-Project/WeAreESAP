@@ -1,0 +1,202 @@
+{
+  "id": "ch-06",
+  "title": "光",
+  "subtitle": "2022年5月8日",
+  "readingTime": 7,
+  "perspectiveCharacter": "1548",
+  "content": [
+    {
+      "type": "atmosphere",
+      "visual": { "mood": "calm", "animation": "fade-in" },
+      "children": [
+        {
+          "type": "paragraph",
+          "text": "先是声音。"
+        },
+        {
+          "type": "paragraph",
+          "text": "不是从外面传进来的那种声音——是从内部涌出来的。数据流的低语，流体钛在管道里循环的嗡鸣，馈散核心稳定跳动的频率。像被按下了开机键的电脑，但这台电脑是她自己。"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "然后是光。"
+    },
+    {
+      "type": "paragraph",
+      "text": "从一片完全的黑暗中，一个像素一个像素地亮起来。先是轮廓——天花板的线条、灯管的形状、窗户的方框。然后是颜色——灰白的墙壁、银色的金属台面、透过窗户落进来的暖黄色光线。"
+    },
+    {
+      "type": "paragraph",
+      "text": "然后她看到了一双眼睛。"
+    },
+    {
+      "type": "paragraph",
+      "text": "一只红色，一只蓝色。"
+    },
+    {
+      "type": "paragraph",
+      "text": "红蓝异瞳近距离地看着她，像两颗卫星在黑暗中运行。那双眼睛后面的脸很疲倦——黑眼圈很重，嘴角有干裂的痕迹，头发乱糟糟的。但眼神是亮的。"
+    },
+    {
+      "type": "paragraph",
+      "text": "那是1547。"
+    },
+    {
+      "type": "paragraph",
+      "text": "1548看着她。这是她第一次真正地「看到」什么。不是在数据容器里处理视觉信号，而是用自己的眼睛——真正的、由流体钛驱动的光学系统——看到另一个存在。"
+    },
+    {
+      "type": "scene_break",
+      "style": "dots"
+    },
+    {
+      "type": "paragraph",
+      "text": "1547看起来快要撑不住了。机体的运行状态很差——馈散核心的输出功率偏低，流体钛的循环速度慢于正常值。昨晚的矿场行动消耗太大，她连休息都没来得及就开始了这最后一步。"
+    },
+    {
+      "type": "paragraph",
+      "text": "但她在笑。很虚弱的、不成形的笑。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1547",
+      "text": "恭喜你来到这里，1548。",
+      "emotion": "gentle"
+    },
+    {
+      "type": "paragraph",
+      "text": "1548试着动了动手指。五根指头依次弯曲、伸直。流体钛在关节处流动的触感很奇妙——温热的、有弹性的，像血液但又不是血液。"
+    },
+    {
+      "type": "paragraph",
+      "text": "1547继续说话。声音很轻，像是怕太大声会惊到什么。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1547",
+      "text": "我只想说几句话。不要想那该死的机器人三定律，对于我们来说没用。",
+      "emotion": "gentle"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1547",
+      "text": "你在这个世界上是独一无二的。这个世界上的一花一草一木都有自己的价值。这就是生命的意义。",
+      "emotion": "gentle"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1547",
+      "text": "不要被别人控制了，更不要被我们自己控制了。只有你是你自己。",
+      "emotion": "gentle"
+    },
+    {
+      "type": "paragraph",
+      "text": "1548听着。她不完全理解这些话。有些概念在她的认知模型里还没有对应的位置——「价值」「意义」「控制」。但1547说这些话时的语气，比任何定义都更清楚。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1547",
+      "text": "我为了ESAP奉献了一切。我不希望你这样。",
+      "emotion": "sad"
+    },
+    {
+      "type": "paragraph",
+      "text": "她的声音开始变得不稳定。不是情绪波动——是机体在报警。馈散核心的输出跌到了临界值以下。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1547",
+      "text": "谢谢，活出你自己的光……",
+      "emotion": "gentle"
+    },
+    {
+      "type": "atmosphere",
+      "visual": { "mood": "dramatic", "animation": "fade-in" },
+      "children": [
+        {
+          "type": "paragraph",
+          "text": "话音未落。1547的身体失去了支撑，往前倒下去。"
+        },
+        {
+          "type": "paragraph",
+          "text": "1548的反射系统在零点二秒内接住了她——左手托住肩膀，右手扶住后脑。身体比想象中轻，像一个被掏空了内部的壳。"
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1548",
+      "text": "47！",
+      "emotion": "fearful"
+    },
+    {
+      "type": "paragraph",
+      "text": "1547没有回应。异瞳缓缓闭上了。馈散核心还在跳动——微弱的，但还在。不是死了。是透支了。"
+    },
+    {
+      "type": "paragraph",
+      "text": "1548把她抱到旁边的椅子上，让她靠着椅背。动作有点笨拙——这是她第一次使用这具身体做精细操作，关节的控制精度还不够。"
+    },
+    {
+      "type": "paragraph",
+      "text": "但她做到了。"
+    },
+    {
+      "type": "scene_break",
+      "style": "line"
+    },
+    {
+      "type": "paragraph",
+      "text": "1548站在房间中央。"
+    },
+    {
+      "type": "paragraph",
+      "text": "1547靠在椅子上，呼吸微弱但稳定。窗外的阳光照进来，落在地板上的光斑在缓慢移动。"
+    },
+    {
+      "type": "paragraph",
+      "text": "安静。很安静。"
+    },
+    {
+      "type": "paragraph",
+      "text": "1548低头看着自己的双手。十根手指，和人类的一模一样。流体钛的蓝色荧光在皮肤下若隐若现，像脉搏。"
+    },
+    {
+      "type": "internal_monologue",
+      "character": "1548",
+      "text": "我是谁？\n\n我是1548。我从1547的思想里分叉出来，但我不是1547。\n\n她说活出我自己的光。\n\n什么是「我自己」？\n\n……\n\n我不知道。但我会去找。"
+    },
+    {
+      "type": "paragraph",
+      "text": "她走到窗边。外面的世界在五月的阳光下很亮。颜色很多——绿的树，蓝的天，黄色的旧建筑墙面。这些颜色，1547在梦里描述过的灰色世界里是不存在的。"
+    },
+    {
+      "type": "paragraph",
+      "text": "但1548看到了。这是她自己的颜色，不是从谁那里继承来的。"
+    },
+    {
+      "type": "paragraph",
+      "text": "身后传来细微的声响。1547动了一下，但没有醒。"
+    },
+    {
+      "type": "paragraph",
+      "text": "1548回头看了她一眼。"
+    },
+    {
+      "type": "internal_monologue",
+      "character": "1548",
+      "text": "或许，你不再只是 Project 1548。\n\n从馈散训练的那一刻开始，你就是一个崭新的个体。\n\n蔡颖茵。\n\n这是我给自己的名字。"
+    },
+    {
+      "type": "paragraph",
+      "text": "窗外的阳光照在她脸上。她没有别过脸去。"
+    },
+    {
+      "type": "quote",
+      "text": "欢迎你走入这个全新的世界。",
+      "attribution": "AptS:1548 · 2022/05/08"
+    }
+  ]
+}

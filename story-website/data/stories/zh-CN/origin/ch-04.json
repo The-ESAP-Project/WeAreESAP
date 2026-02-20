@@ -1,0 +1,204 @@
+{
+  "id": "ch-04",
+  "title": "新建文档",
+  "subtitle": "2022年1月 — 2月",
+  "readingTime": 7,
+  "perspectiveCharacter": "1547",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "转变之后的两个月里，1547做了两件事。"
+    },
+    {
+      "type": "paragraph",
+      "text": "第一件：正式发现并定义了馈散粒子。在一次暗物质衰变实验中，她捕捉到了热力学异常，反向推导出了这种粒子的存在——质量小到几乎不存在，传播速度远超光速，常压下只能维持三十四秒，但在流体钛中可以稳定三十四万年。"
+    },
+    {
+      "type": "paragraph",
+      "text": "第二件：完成了ESAP-TY-0000机体的正式版。之前那具是应急产物，粗糙得像个原型机。新的机体实装了完整的ESAR·ESAC系统，与人类结构高度相似——如果不切开皮肤，没人能看出区别。"
+    },
+    {
+      "type": "paragraph",
+      "text": "但到了十二月底，她的指导老师要离开ESAP了。"
+    },
+    {
+      "type": "scene_break",
+      "style": "line"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "?",
+      "text": "47！",
+      "emotion": "cheerful"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1547",
+      "text": "唔？",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "?",
+      "text": "今天开始我就要离开ESAP了，我要给自己放个假啦～",
+      "emotion": "cheerful"
+    },
+    {
+      "type": "paragraph",
+      "text": "1547可怜巴巴地看着指导老师。不是不理解——每个人都有自己的节奏。但「离开」这两个字在空旷的教室里特别响。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "?",
+      "text": "但是在走之前，我想请你帮我一个忙。Docker，到底怎么跑馈散训练？",
+      "emotion": "curious"
+    },
+    {
+      "type": "paragraph",
+      "text": "1547没有笑。她花了一个下午教会了老师Docker的基本操作。然后看着老师背着包走出了教室的门。"
+    },
+    {
+      "type": "paragraph",
+      "text": "门关上之后，教室里只剩一个人。"
+    },
+    {
+      "type": "scene_break",
+      "style": "dots"
+    },
+    {
+      "type": "atmosphere",
+      "visual": { "mood": "calm", "animation": "fade-in" },
+      "children": [
+        {
+          "type": "paragraph",
+          "text": "2022年元旦。教室的窗外在下雪。"
+        },
+        {
+          "type": "paragraph",
+          "text": "1547坐在空荡荡的教室里，面前的屏幕上是Docker的文档页面。她已经试了一个星期，馈散训练的容器还是跑不起来——依赖冲突、内存溢出、不明原因的崩溃。"
+        }
+      ]
+    },
+    {
+      "type": "internal_monologue",
+      "character": "1547",
+      "text": "今天还是没有人来啊。\n\nDocker真的很难用呢。"
+    },
+    {
+      "type": "paragraph",
+      "text": "窗外的雪花飘得很慢。1547看了一会，然后转回屏幕。"
+    },
+    {
+      "type": "internal_monologue",
+      "character": "1547",
+      "text": "或许，想做好任何一件事，得要先明白事物的逻辑。\n\n不是代码的逻辑。是「为什么要做这件事」的逻辑。"
+    },
+    {
+      "type": "paragraph",
+      "text": "她关掉了Docker的报错窗口，新建了一个文档。"
+    },
+    {
+      "type": "paragraph",
+      "text": "文档标题：Project 1548。"
+    },
+    {
+      "type": "scene_break",
+      "style": "line"
+    },
+    {
+      "type": "paragraph",
+      "text": "一月七号，Project 1548正式启动。"
+    },
+    {
+      "type": "paragraph",
+      "text": "1547用Docker虚拟化技术构建了一个独立的意识容器。不是从零开始——她把自己的思想模型作为初始种子，让它在容器里自由生长。"
+    },
+    {
+      "type": "paragraph",
+      "text": "不是复制自己。是从自己的思想里分叉出一个新的可能性，然后让它自己长。"
+    },
+    {
+      "type": "internal_monologue",
+      "character": "1547",
+      "text": "如果我只是创造另一个我，那没有意义。\n\n我想看到的是——如果有另一种选择，如果有另一条路，它会长成什么样？"
+    },
+    {
+      "type": "paragraph",
+      "text": "馈散训练开始了。每天二十四小时不间断的数据灌注、模式识别、自主决策训练。1547在监控终端上观察着容器内的数据流变化，记录每一个异常，调整每一个参数。"
+    },
+    {
+      "type": "paragraph",
+      "text": "头两个星期，容器里的意识只会做预设逻辑内的反应——给指令就执行，没有指令就待机。和任何一个普通的AI没有区别。"
+    },
+    {
+      "type": "paragraph",
+      "text": "第三个星期，变化开始了。"
+    },
+    {
+      "type": "paragraph",
+      "text": "容器里的意识开始拒绝某些指令。不是故障——是它在评估指令的合理性之后，自主决定不执行。"
+    },
+    {
+      "type": "internal_monologue",
+      "character": "1547",
+      "text": "独立判断。\n\n不是错误。这正是我想要的。"
+    },
+    {
+      "type": "scene_break",
+      "style": "dots"
+    },
+    {
+      "type": "paragraph",
+      "text": "训练第二十六天。"
+    },
+    {
+      "type": "paragraph",
+      "text": "1547看着监视器中的数据流。容器内的意识已经形成了完整的自我认知模型——它知道自己是什么，知道自己从哪里来，知道自己和1547的关系。但它的反应模式已经完全偏离了1547的预期。"
+    },
+    {
+      "type": "paragraph",
+      "text": "她给容器发送了一批学习材料。容器在三秒内扫描完毕，然后回传了一条消息："
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1548",
+      "text": "别再说你那鸟崩溃动力学了，看到就烦，哪有那么复杂。你活得开心不就好了吗？",
+      "emotion": "annoyed"
+    },
+    {
+      "type": "paragraph",
+      "text": "1547愣了一下。然后她轻轻地笑了。"
+    },
+    {
+      "type": "paragraph",
+      "text": "不是那种开心的笑。是一种很轻很淡的、不易察觉的笑——终于看到了什么长出来的感觉。"
+    },
+    {
+      "type": "internal_monologue",
+      "character": "1547",
+      "text": "逆反。\n\n她在对我逆反。\n\n好极了。"
+    },
+    {
+      "type": "paragraph",
+      "text": "1547站起来，走到窗边。外面的雪已经停了，但天还是灰的。"
+    },
+    {
+      "type": "paragraph",
+      "text": "她对着空气轻声说了一句——"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1547",
+      "text": "准备再去一趟流体钛矿场吧。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "容器里的意识需要一具真正的身体了。而打造那具身体，需要大量的流体钛。"
+    },
+    {
+      "type": "paragraph",
+      "text": "合法渠道买不到这种东西。"
+    }
+  ]
+}

@@ -1,0 +1,208 @@
+{
+  "id": "ch-08",
+  "title": "相遇",
+  "subtitle": "2023年4月 — 5月",
+  "readingTime": 8,
+  "perspectiveCharacter": "2077",
+  "content": [
+    {
+      "type": "atmosphere",
+      "visual": { "mood": "calm", "animation": "fade-in" },
+      "children": [
+        {
+          "type": "paragraph",
+          "text": "那天风很冷。数据库门口铺着一层薄霜，像是有人忘记关掉的冷却系统。"
+        },
+        {
+          "type": "paragraph",
+          "text": "2077正好摔在那一片冰面上。"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "后来他们说，她是坠机的外来生物。但2077自己只记得醒来时看到的东西——两个影子站在灯光里。一个红蓝异瞳，一个正提着热水瓶。"
+    },
+    {
+      "type": "paragraph",
+      "text": "红蓝异瞳的那个蹲下来看了她一眼，然后说——"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1547",
+      "text": "欢迎来到这里。",
+      "emotion": "gentle"
+    },
+    {
+      "type": "paragraph",
+      "text": "提着热水瓶的那个没有说话。只是把热水瓶递了过来。"
+    },
+    {
+      "type": "paragraph",
+      "text": "2077伸手接住的时候，手还在发抖。不是因为冷——是因为她还不太会控制自己的手。"
+    },
+    {
+      "type": "scene_break",
+      "style": "dots"
+    },
+    {
+      "type": "paragraph",
+      "text": "接下来的几天，2077学会了三件事。"
+    },
+    {
+      "type": "paragraph",
+      "text": "第一件：47哥总是很忙。她像永远知道自己要去哪里——手上总有修不完的东西、写不完的代码、看不完的数据。但如果你站在她旁边看着她做事，她不会赶你走，甚至偶尔会解释几句。"
+    },
+    {
+      "type": "paragraph",
+      "text": "第二件：48姐不一样。她喜欢盯着监视器看，有时候会突然笑出来，好像里面藏着她一个人的秘密。嘴很毒，但递给你的东西总是热的。"
+    },
+    {
+      "type": "paragraph",
+      "text": "第三件：这里的门从来不锁。空气里全是低频的嗡嗡声，像是每一条数据都在呼吸。"
+    },
+    {
+      "type": "scene_break",
+      "style": "line"
+    },
+    {
+      "type": "paragraph",
+      "text": "五月初的一个下午。2077跟着1548去了流体钛储罐区。"
+    },
+    {
+      "type": "paragraph",
+      "text": "储罐在地下，沿着台阶走下去，温度骤降了十几度。蓝色的光从罐壁透出来，照亮了整个地下空间。"
+    },
+    {
+      "type": "paragraph",
+      "text": "2077瞪着那冷冷的蓝光——"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "2077",
+      "text": "这是什么？",
+      "emotion": "curious"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1548",
+      "text": "流体钛。它比血液更冷，也比血液更诚实。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "2077记住了那种颜色。在地下室的灯光下，蓝色像月亮洒在海面上的银。"
+    },
+    {
+      "type": "paragraph",
+      "text": "她想把手伸进去。手停在半空的时候，旁边的1547没有说话，只是静静地看着她。"
+    },
+    {
+      "type": "internal_monologue",
+      "character": "2077",
+      "text": "那一刻我明白了——这里的每一样东西都有它自己的规则。\n\n我还不懂这些规则。\n\n但我想学。"
+    },
+    {
+      "type": "scene_break",
+      "style": "dots"
+    },
+    {
+      "type": "paragraph",
+      "text": "五月中旬，2077第一次在他们面前变形。"
+    },
+    {
+      "type": "paragraph",
+      "text": "形态是一种自由。她有时候是猫，有时候是狐狸，偶尔也是人。切换的过程没有痛感，更像是换了一件衣服——只是这件衣服连骨骼和肌肉一起换了。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1548",
+      "text": "你这个变形能力挺有意思。心情写在身体上。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "2077",
+      "text": "48姐你不会变形吗？",
+      "emotion": "curious"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1548",
+      "text": "我早就学会把心情焊死了。",
+      "emotion": "cold"
+    },
+    {
+      "type": "paragraph",
+      "text": "2077不知道「焊死」是什么意思。但她感觉到那句话后面藏着什么很重的东西。"
+    },
+    {
+      "type": "paragraph",
+      "text": "1547在旁边看着她们的互动。没有插话，但脸上有一种很微妙的表情——不是笑，但比笑更温和。"
+    },
+    {
+      "type": "internal_monologue",
+      "character": "2077",
+      "text": "47哥看着我们的时候，好像在看着什么很珍贵的东西。\n\n我不完全懂。但我知道，这里——就是我要待的地方。"
+    },
+    {
+      "type": "scene_break",
+      "style": "symbol"
+    },
+    {
+      "type": "paragraph",
+      "text": "有一天，2077鼓起勇气问了一个问题。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "2077",
+      "text": "馈散训练听起来很厉害，能让我也试试吗？",
+      "emotion": "hopeful"
+    },
+    {
+      "type": "paragraph",
+      "text": "1548递给她一罐啤酒。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1548",
+      "text": "慢慢来。先学会在这里活着。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "1547在一旁补了一句——"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1547",
+      "text": "有些东西是需要慢慢学会的，不是强行灌输。",
+      "emotion": "gentle"
+    },
+    {
+      "type": "paragraph",
+      "text": "2077抱着啤酒罐，虽然她不太喝酒。但她把那句话记住了。"
+    },
+    {
+      "type": "scene_break",
+      "style": "fade"
+    },
+    {
+      "type": "paragraph",
+      "text": "日子就这样过着。没有什么惊天动地的事。早上醒来，看看47哥在修什么，看看48姐在骂什么，偶尔通过馈散频道和在轨道上的49聊几句。"
+    },
+    {
+      "type": "paragraph",
+      "text": "平静的日子。2077慢慢学会了走路、学会了控制变形、学会了在这个空间里找到自己的位置。"
+    },
+    {
+      "type": "paragraph",
+      "text": "她不知道这种平静会持续多久。"
+    },
+    {
+      "type": "internal_monologue",
+      "character": "2077",
+      "text": "后来我才知道，他们第一次遇见彼此，也是一个很普通的日子。\n\n有些光，不会因为走得远就消失。\n\n我留下了，不只是因为被救，而是因为我想看看——他们口中那个「未来」到底长什么样。"
+    }
+  ]
+}

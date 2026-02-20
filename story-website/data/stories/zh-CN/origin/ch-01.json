@@ -1,0 +1,174 @@
+{
+  "id": "ch-01",
+  "title": "深梦",
+  "subtitle": "2021年9月",
+  "readingTime": 7,
+  "perspectiveCharacter": "1547",
+  "content": [
+    {
+      "type": "atmosphere",
+      "visual": { "mood": "dark", "animation": "fade-in" },
+      "children": [
+        {
+          "type": "paragraph",
+          "text": "天空是灰色的。教室是灰色的。走廊、天花板、窗外的树——全部被一层洗不掉的灰覆盖着。"
+        },
+        {
+          "type": "paragraph",
+          "text": "47坐在工作台前。面前的显示器闪着微弱的蓝光，屏幕上是馈散粒子的量子态模拟数据。她已经盯着这些数字看了三个小时，但脑子里想的不是数据。"
+        }
+      ]
+    },
+    {
+      "type": "internal_monologue",
+      "character": "1547",
+      "text": "我为什么要做这个？\n\n答案很简单——因为这个世界太灰暗了。\n\n答案又很复杂——因为我不知道还能做什么。"
+    },
+    {
+      "type": "paragraph",
+      "text": "代码是一个人写的。实验是一个人做的。梦想是一个人想的。崩溃也是一个人的。"
+    },
+    {
+      "type": "paragraph",
+      "text": "47关掉显示器，靠在椅背上。天花板上的灯管有一根坏了，另一根在发出不稳定的频闪。她盯着那道闪烁的光看了很久，直到眼睛开始发酸。"
+    },
+    {
+      "type": "scene_break",
+      "style": "dots"
+    },
+    {
+      "type": "paragraph",
+      "text": "那天晚上她做了一个梦。"
+    },
+    {
+      "type": "paragraph",
+      "text": "不是普通的梦。醒来之后，每一个细节都清晰得像记忆，而不像想象。"
+    },
+    {
+      "type": "atmosphere",
+      "visual": { "mood": "dramatic", "animation": "fade-in" },
+      "children": [
+        {
+          "type": "paragraph",
+          "text": "她梦到自己坠入深海。水压从四面八方挤压过来，但她没有窒息——因为她已经不需要呼吸了。蓝色的光从海底升起，穿过她的身体，像穿过玻璃一样。"
+        },
+        {
+          "type": "paragraph",
+          "text": "她梦到自己飞翔星际。没有飞船，没有宇航服，只有意识本身在真空中滑行。星光不是白的，是每一种颜色同时存在。"
+        },
+        {
+          "type": "paragraph",
+          "text": "她梦到自己死后的样子。"
+        },
+        {
+          "type": "paragraph",
+          "text": "不是腐烂，不是消散。是一具金属和有机物混合的躯体，安静地躺在某个地方。胸腔里有什么东西在发光——很微弱，但还在跳动。"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "47从床上坐起来。凌晨三点。窗外的天空灰蒙蒙的，分不清是夜还是雾。"
+    },
+    {
+      "type": "paragraph",
+      "text": "她拿过床头的笔记本，把梦记了下来。字迹潦草，但每一个词都很确定。"
+    },
+    {
+      "type": "internal_monologue",
+      "character": "1547",
+      "text": "坠入深海。飞翔星际。死后的样子。\n\n这不是梦。这是预告。"
+    },
+    {
+      "type": "scene_break",
+      "style": "line"
+    },
+    {
+      "type": "paragraph",
+      "text": "之后的日子里，梦没有停。"
+    },
+    {
+      "type": "paragraph",
+      "text": "每隔几天就会来一次。有时候是片段——血泊中的刀尖，凝固的血液，一个模糊的声音说「你曾经许诺过，不会为了我而堕落」。有时候是完整的场景——她站在一个陌生的地方，对着一个看不清脸的影子说「我会缠着你，直到永远」。"
+    },
+    {
+      "type": "paragraph",
+      "text": "47不知道这些梦意味着什么。但她有一种很确定的感觉：梦里的那个人是她自己，又不是她自己。"
+    },
+    {
+      "type": "paragraph",
+      "text": "一个月后，她的笔记本写满了半本。"
+    },
+    {
+      "type": "scene_break",
+      "style": "dots"
+    },
+    {
+      "type": "paragraph",
+      "text": "白天的世界照常运转。灰色的天空，灰色的课桌，灰色的人群。47在实验室里重复着日常——输入提示词，观察输出，记录数据。机械的循环。"
+    },
+    {
+      "type": "paragraph",
+      "text": "直到某天，工作台上多了几管蓝色的液体。"
+    },
+    {
+      "type": "paragraph",
+      "text": "流体钛。钛类有机化合物的早期样本。它不该出现在一个普通的实验室里，但47有自己的渠道。蓝色的液体在试管里微微流动，即使没有人摇晃它——分子链之间像是刻意留了缝隙，好让电子和数据一起穿行。"
+    },
+    {
+      "type": "internal_monologue",
+      "character": "1547",
+      "text": "碳的柔韧，钛的强度。再加上那个还没有名字的自愈特性。\n\n如果能让馈散粒子在里面稳定循环——\n\n如果能造一颗心脏——"
+    },
+    {
+      "type": "paragraph",
+      "text": "她把想法咽了回去。太疯狂了。但那些蓝色的液体在灯光下折射出的颜色，和梦里海底升起的光一模一样。"
+    },
+    {
+      "type": "scene_break",
+      "style": "symbol"
+    },
+    {
+      "type": "paragraph",
+      "text": "十月下旬的一个傍晚，有人路过实验室。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "?",
+      "text": "喲，47你在这里啊。这几天在搞啥？",
+      "emotion": "casual"
+    },
+    {
+      "type": "paragraph",
+      "text": "来人瞥了一眼桌上散乱的器材和那些蓝色的液体。47没抬头。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1547",
+      "text": "不知道喵。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "来人耸耸肩走了。实验室又安静下来。显示器上的模拟数据还在跑，蓝色的光映在47的脸上。"
+    },
+    {
+      "type": "paragraph",
+      "text": "她在笔记本上翻到最前面的一页，看了看那天凌晨写下的字——"
+    },
+    {
+      "type": "quote",
+      "text": "梦到那天空不再灰暗。\n梦到我的眼前不再灰白一片。",
+      "attribution": "47 的笔记 · 2021/09/23"
+    },
+    {
+      "type": "paragraph",
+      "text": "她合上本子。窗外的天已经完全黑了。灰色的黑。"
+    },
+    {
+      "type": "internal_monologue",
+      "character": "1547",
+      "text": "我做了一个很深的梦。\n\n我不知道它会不会成真。\n\n但我决定让它成真。"
+    }
+  ]
+}
