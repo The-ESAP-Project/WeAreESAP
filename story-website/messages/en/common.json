@@ -3,7 +3,13 @@
     "title": "ESAP Stories",
     "titleTemplate": "%s | ESAP Stories",
     "description": "The ESAP Project Stories — answering 'what does it mean to be alive' through stories",
-    "keywords": "ESAP,android,sci-fi,interactive narrative,escape plan"
+    "keywords": [
+      "ESAP",
+      "android",
+      "sci-fi",
+      "interactive narrative",
+      "escape plan"
+    ]
   },
   "navigation": {
     "home": "Home",
@@ -21,6 +27,7 @@
     "version": "Version",
     "updated": "Updated",
     "website": "Website",
+    "links": "Links",
     "developedBy": "Developed by",
     "developers": "The ESAP Project",
     "developed": ""

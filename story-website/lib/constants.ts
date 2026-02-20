@@ -48,6 +48,7 @@ export const SITE_CONFIG = {
 
 export const DEFAULT_IMAGES = {
   favicon: "/favicon.ico",
+  ogDefault: "/assets/images/og-default.webp",
 } as const;
 
 export const ANIMATION_CONFIG = {

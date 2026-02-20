@@ -4,67 +4,91 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-WeAreESAP (向那卫星许愿) is a Next.js website for a sci-fi worldbuilding project about androids and humans. The main codebase is in the `weare-website/` directory.
+WeAreESAP (向那卫星许愿) is a monorepo containing two Next.js websites for a sci-fi worldbuilding project about androids and humans:
 
-## Common Commands
+- **`weare-website/`** — Character archive, timeline, tech docs, and relationship graphs (https://weare.esaps.net)
+- **`story-website/`** — Interactive sci-fi story reading platform (https://story.esaps.net)
 
-All commands run from `weare-website/` directory. **bun is required**.
+The two sites share a similar tech stack and patterns but are fully independent projects with separate dependencies.
+
+## weare-website
+
+All commands run from `weare-website/`. Uses **bun** as package manager (bun.lock present). Note: the `dev` script internally calls `pnpm run prebuild`, so **pnpm must also be installed**.
 
 ```bash
-bun dev              # Start dev server (http://localhost:3000)
-bun run build        # Production build
-bun run lint         # ESLint check
-bun run lint:fix     # Auto-fix lint issues
-bun run format       # Format with Prettier
-bun run test:unit    # Run Vitest unit tests
-bun run test:unit:run # Run unit tests once (CI mode)
-bun run test:e2e     # Run Playwright E2E tests
+bun dev                   # Prebuild + start dev server (http://localhost:3000)
+bun run build             # Production build (runs prebuild + postbuild sitemap)
+bun run lint              # Biome check
+bun run lint:fix          # Biome check --fix
+bun run format            # Biome format --write
+bun run test:unit         # Vitest (watch mode)
+bun run test:unit:run     # Vitest (CI mode, single run)
+bun run test:unit:coverage # Vitest with coverage report
+bun run test:e2e          # Build + Playwright E2E tests
+bun run test:e2e:ui       # Build + Playwright with UI
+bun run test:e2e:debug    # Build + Playwright debug mode
+bun run analyze           # Bundle analysis
+bun run blur:generate     # Regenerate blur placeholders for images
+bun run sitemap:generate  # Regenerate sitemap
 ```
 
-## Architecture
+Run a single unit test: `bun vitest run lib/__tests__/path/to/test.ts`
 
 ### Tech Stack
 
-- Next.js 16 with App Router and React Server Components
-- React 19, TypeScript, Tailwind CSS 4
-- next-intl for i18n (zh-CN default, en, ja)
-- ReactFlow + ELK for character relation graphs
-- Vitest (unit) + Playwright (E2E)
+- Next.js 16, React 19, TypeScript, Tailwind CSS 4
+- next-intl v4 for i18n (zh-CN default, en, ja)
+- ReactFlow + ELK for character relationship graphs
+- Fuse.js for client-side search
+- Framer Motion for animations
+- Biome for linting/formatting
+- Vitest (unit) + Playwright (E2E, Chromium + Firefox + Mobile Chrome)
 
-### Directory Structure (weare-website/)
+### Architecture
 
-```text
-app/[locale]/         # Pages with locale routing
-components/           # React components by feature
-data/                 # JSON content (characters, timeline, tech)
-  ├── characters/
-  │   ├── zh-CN/     # Localized character data
-  │   ├── en/
-  │   ├── ja/
-  │   └── relations/ # Relationship definitions
-  ├── timeline/
-  └── tech/
-types/                # TypeScript type definitions
-lib/                  # Utilities and data loaders
-messages/             # UI translation files (next-intl)
+**Locale routing**: All pages under `app/[locale]/`. URL structure: `/` (zh-CN), `/en/`, `/ja/`.
+
+**Data loading**: JSON files in `data/` loaded via `lib/data-loader.ts`. Missing locales fall back to zh-CN. Character data uses a shared + locale split: `data/characters/{locale}/` for localized bios, `data/characters/relations/` for relationship definitions.
+
+**Character relations**: `lib/relationship-parser.ts` parses relation JSON; `lib/graph-layout.ts` runs the ELK auto-layout algorithm.
+
+**Prebuild steps**: `scripts/generate-blur-placeholders.mjs` generates base64 blur placeholders for images; `scripts/generate-build-info.mjs` writes build metadata. Both run before `next dev` and `next build`.
+
+**Build output**: `standalone` mode for Docker deployment. Post-build generates sitemap via next-sitemap.
+
+**Unit tests**: `lib/__tests__/` directory.
+
+**SVG icons**: Use `components/ui/Icon.tsx` instead of inline SVGs or direct icon imports.
+
+## story-website
+
+All commands run from `story-website/`. Uses **bun** as package manager.
+
+```bash
+bun dev              # Prebuild + start dev server
+bun run build        # Production build
+bun run lint         # Biome check
+bun run lint:fix     # Biome check --fix
+bun run format       # Biome format --write
+bun run test:unit    # Vitest (watch mode)
+bun run test:unit:run # Vitest (CI mode, single run)
 ```
 
-### Key Patterns
+### Tech Stack
 
-**Locale Routing**: All pages under `app/[locale]/`. URL structure: `/` (zh-CN), `/en`, `/ja`.
+- Next.js 16, React 19, TypeScript, Tailwind CSS 4
+- next-intl v4, next-themes, Framer Motion
+- Biome for linting/formatting
+- Vitest for unit tests (no E2E tests)
 
-**Data Loading**: JSON files in `data/` are loaded via `lib/data-loader.ts`. When localized content is missing, falls back to zh-CN.
+### Architecture
 
-**Character Relations**: Uses `lib/relationship-parser.ts` to parse relation definitions and `lib/graph-layout.ts` (ELK algorithm) for auto-layout.
+**Pages**: `app/[locale]/stories/[slug]/` for story detail, `app/[locale]/stories/[slug]/[chapterId]/` for chapter reader, `app/[locale]/stories/[slug]/explore/[sceneId]/` for interactive exploration mode.
 
-**Component Organization**: Feature-based folders (character/, timeline/, tech/, layout/, ui/).
+**Story data**: JSON files in `data/stories/`. Loaded via `lib/story-loader.ts` and `lib/data-loader.ts`.
 
-### Testing
+**Interactive features**: `lib/branch-resolver.ts` handles branching narrative logic; `lib/unlock-engine.ts` manages chapter unlock conditions; `lib/exploration.ts` and `lib/interactive.ts` power the scene exploration system.
 
-- Unit tests: `lib/__tests__/` using Vitest
-- E2E tests: `e2e/` using Playwright (Chromium, Firefox, Mobile Chrome)
-- Run single test: `bun vitest run path/to/test.ts`
+**Reading state**: `lib/reading-state.ts` persists reader progress (likely localStorage-based).
 
-### Build Output
-
-Uses `standalone` output mode for Docker deployment. Build generates blur placeholders for images via `scripts/generate-blur-placeholders.mjs`.
+**SVG icons**: Use `components/ui/Icon.tsx` instead of inline SVGs or direct icon imports.

@@ -3,7 +3,7 @@
     "title": "ESAP Stories",
     "titleTemplate": "%s | ESAP Stories",
     "description": "逃离计划故事站 —— 用故事回答「活着到底算什么」",
-    "keywords": "ESAP,仿生人,科幻,交互式叙事,逃离计划"
+    "keywords": ["ESAP", "仿生人", "科幻", "交互式叙事", "逃离计划"]
   },
   "navigation": {
     "home": "首页",
@@ -21,6 +21,7 @@
     "version": "版本",
     "updated": "更新",
     "website": "官网",
+    "links": "相关链接",
     "developedBy": "由",
     "developers": "The ESAP Project",
     "developed": "开发"

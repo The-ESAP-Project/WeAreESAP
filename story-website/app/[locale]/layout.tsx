@@ -4,7 +4,11 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
-import { getMessages, setRequestLocale } from "next-intl/server";
+import {
+  getMessages,
+  getTranslations,
+  setRequestLocale,
+} from "next-intl/server";
 import { Footer } from "@/components/layout/Footer";
 import { Navigation } from "@/components/layout/Navigation";
 import { ScrollToTop } from "@/components/layout/ScrollToTop";
@@ -30,14 +34,28 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   setRequestLocale(locale);
+  const t = await getTranslations("common.metadata");
+  const rawKeywords = t.raw("keywords");
+  const keywords = Array.isArray(rawKeywords) ? (rawKeywords as string[]) : [];
+  const title = t("title");
+  const description = t("description");
 
   return {
     title: {
-      default: SITE_CONFIG.siteName,
-      template: `%s | ${SITE_CONFIG.siteName}`,
+      default: title,
+      template: `%s | ${title}`,
     },
-    description: SITE_CONFIG.description,
+    description,
+    keywords,
     metadataBase: new URL(SITE_CONFIG.baseUrl),
+    authors: SITE_CONFIG.authors.map((name) => ({ name })),
+    openGraph: {
+      siteName: SITE_CONFIG.siteName,
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+    },
   };
 }
 

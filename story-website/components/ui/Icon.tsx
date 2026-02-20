@@ -5,6 +5,7 @@ import type { ComponentType } from "react";
 import {
   LuBookOpen,
   LuChevronDown,
+  LuChevronUp,
   LuEye,
   LuGlobe,
   LuLock,
@@ -34,7 +35,8 @@ export type IconName =
   | "X"
   | "Sun"
   | "Moon"
-  | "ChevronDown";
+  | "ChevronDown"
+  | "ChevronUp";
 
 const iconMap: Record<IconName, ComponentType<{ className?: string }>> = {
   Globe: LuGlobe,
@@ -52,6 +54,7 @@ const iconMap: Record<IconName, ComponentType<{ className?: string }>> = {
   Sun: LuSun,
   Moon: LuMoon,
   ChevronDown: LuChevronDown,
+  ChevronUp: LuChevronUp,
 };
 
 export interface IconProps {

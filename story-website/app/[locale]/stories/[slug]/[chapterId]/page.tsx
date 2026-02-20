@@ -10,6 +10,7 @@ import {
   getPerspectives,
   getPrevChapterId,
 } from "@/lib/branch-resolver";
+import { SITE_CONFIG } from "@/lib/constants";
 import { loadChapter, loadStory, loadStoryRegistry } from "@/lib/story-loader";
 import { ChapterReader } from "./ChapterReader";
 
@@ -43,9 +44,44 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale, slug, chapterId } = await params;
   setRequestLocale(locale);
-  const chapter = await loadChapter(slug, chapterId, locale);
-  if (!chapter) return {};
-  return { title: chapter.title };
+  const [story, chapter] = await Promise.all([
+    loadStory(slug, locale),
+    loadChapter(slug, chapterId, locale),
+  ]);
+
+  if (!chapter) {
+    return { robots: { index: false, follow: true } };
+  }
+
+  const localePrefix = locale === "zh-CN" ? "" : `/${locale}`;
+  const url = `${SITE_CONFIG.baseUrl}${localePrefix}/stories/${slug}/${chapterId}`;
+  const title = chapter.title;
+  const description = chapter.subtitle ?? story?.description ?? "";
+  const image = story?.coverImage;
+
+  return {
+    title,
+    description: description || undefined,
+    openGraph: {
+      title,
+      description: description || undefined,
+      type: "article",
+      url,
+      siteName: SITE_CONFIG.siteName,
+      images: image
+        ? [{ url: image, width: 1200, height: 630, alt: title }]
+        : undefined,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description: description || undefined,
+      images: image ? [image] : undefined,
+    },
+    alternates: {
+      canonical: url,
+    },
+  };
 }
 
 export default async function ChapterPage({

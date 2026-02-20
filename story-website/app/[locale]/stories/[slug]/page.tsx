@@ -5,6 +5,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { setRequestLocale } from "next-intl/server";
 import { locales } from "@/i18n/request";
+import { SITE_CONFIG } from "@/lib/constants";
 import { loadChapter, loadStory, loadStoryRegistry } from "@/lib/story-loader";
 import { StoryLanding } from "./StoryLanding";
 
@@ -27,8 +28,42 @@ export async function generateMetadata({
   const { locale, slug } = await params;
   setRequestLocale(locale);
   const story = await loadStory(slug, locale);
-  if (!story) return {};
-  return { title: story.title, description: story.description };
+
+  if (!story) {
+    return { robots: { index: false, follow: true } };
+  }
+
+  const localePrefix = locale === "zh-CN" ? "" : `/${locale}`;
+  const url = `${SITE_CONFIG.baseUrl}${localePrefix}/stories/${slug}`;
+  const title = story.title;
+  const description = story.synopsis ?? story.description;
+  const image = story.coverImage;
+  const keywords = [...story.tags, ...story.relatedCharacters];
+
+  return {
+    title,
+    description,
+    keywords,
+    openGraph: {
+      title,
+      description,
+      type: "article",
+      url,
+      siteName: SITE_CONFIG.siteName,
+      images: image
+        ? [{ url: image, width: 1200, height: 630, alt: title }]
+        : undefined,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: image ? [image] : undefined,
+    },
+    alternates: {
+      canonical: url,
+    },
+  };
 }
 
 export default async function StoryPage({
