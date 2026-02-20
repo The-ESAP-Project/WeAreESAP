@@ -23,6 +23,7 @@ import { Footer } from "@/components/layout/Footer";
 import { Navigation } from "@/components/layout/Navigation";
 import { ScrollToTop } from "@/components/layout/ScrollToTop";
 import { SearchCommand, SearchProvider } from "@/components/search";
+import { PanguProvider } from "@/components/ui/PanguProvider";
 import { ThemeProvider } from "@/components/ui/ThemeProvider";
 import { locales } from "@/i18n/request";
 import { SITE_CONFIG } from "@/lib/constants";
@@ -96,6 +97,7 @@ export default async function RootLayout({
             disableTransitionOnChange={false}
           >
             <SearchProvider searchIndex={searchIndex}>
+              <PanguProvider />
               <Navigation />
               <SearchCommand />
               <main className="min-h-screen">{children}</main>
