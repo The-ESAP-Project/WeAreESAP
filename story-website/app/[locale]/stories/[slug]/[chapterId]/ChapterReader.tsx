@@ -169,6 +169,18 @@ export function ChapterReader({
         <ReaderContent blocks={chapter.content} storySlug={story.slug} />
       </div>
 
+      {/* Perspective switch (bottom) */}
+      {perspectives && perspectives.length > 0 && (
+        <div className="max-w-3xl mx-auto px-4 pt-8">
+          <PerspectiveSwitch
+            storySlug={story.slug}
+            currentChapterId={chapter.id}
+            perspectives={perspectives}
+            storyMeta={story}
+          />
+        </div>
+      )}
+
       {/* Bottom navigation */}
       <div className="max-w-3xl mx-auto px-4 pt-12 pb-8">
         <div className="flex justify-between items-center border-t border-border pt-6">

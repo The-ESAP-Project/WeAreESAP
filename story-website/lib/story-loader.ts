@@ -1,6 +1,7 @@
 // Copyright 2021-2026 The ESAP Project
 // SPDX-License-Identifier: Apache-2.0
 
+import { cache } from "react";
 import type { Chapter } from "@/types/chapter";
 import type { ExplorationScene } from "@/types/exploration";
 import type {
@@ -12,16 +13,18 @@ import type {
 import { loadJsonFile, loadJsonFileDirect } from "./data-loader";
 import { logger } from "./logger";
 
-/** Load the story registry (all stories list) */
-export async function loadStoryRegistry(): Promise<StoryRegistryEntry[]> {
-  const data = await loadJsonFileDirect<StoryRegistryEntry[]>([
-    "data",
-    "stories",
-    "shared",
-    "index.json",
-  ]);
-  return data ?? [];
-}
+/** Load the story registry (all stories list) — cached per request */
+export const loadStoryRegistry = cache(
+  async (): Promise<StoryRegistryEntry[]> => {
+    const data = await loadJsonFileDirect<StoryRegistryEntry[]>([
+      "data",
+      "stories",
+      "shared",
+      "index.json",
+    ]);
+    return data ?? [];
+  }
+);
 
 /** Load a single story (registry + meta + locale info merged) */
 export async function loadStory(
