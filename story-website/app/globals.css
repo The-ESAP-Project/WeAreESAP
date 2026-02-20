@@ -36,6 +36,8 @@
   --esap-gray-dark: #3a3a3a;
   --esap-mint: #7fcdbb;
   --esap-mint-dark: #5bb5a0;
+  --esap-sky: #87ceeb;
+  --esap-sky-dark: #5f9ea0;
 
   --reader-max-width: 65ch;
   --reader-font-size-sm: 0.9rem;
@@ -64,6 +66,8 @@
   --esap-gray-dark: #a0a0a0;
   --esap-mint: #7fcdbb;
   --esap-mint-dark: #99ddd0;
+  --esap-sky: #87ceeb;
+  --esap-sky-dark: #a0d8ef;
 }
 
 @theme inline {
@@ -224,6 +228,9 @@ button,
 }
 .speaker-2275 {
   color: var(--esap-mint);
+}
+.speaker-1543 {
+  color: var(--esap-sky);
 }
 
 @media (prefers-reduced-motion: reduce) {
