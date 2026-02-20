@@ -11,7 +11,7 @@ export function HomeHero() {
   const t = useTranslations("home.hero");
 
   return (
-    <section className="relative min-h-[70vh] flex items-center justify-center px-4">
+    <section className="relative flex items-center justify-center px-4 py-16 md:py-28">
       {/* ESAP gradient background */}
       <div className="absolute inset-0 bg-gradient-to-br from-esap-yellow/5 via-esap-pink/5 to-esap-blue/5" />
 

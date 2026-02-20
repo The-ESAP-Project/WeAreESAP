@@ -1,0 +1,96 @@
+// Copyright 2021-2026 The ESAP Project
+// SPDX-License-Identifier: Apache-2.0
+
+import type { MetadataRoute } from "next";
+import { loadJsonFileDirect } from "@/lib/data-loader";
+import { loadStoryRegistry } from "@/lib/story-loader";
+import type { StoryMeta } from "@/types/story";
+
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://story.esaps.net";
+
+const LOCALES = ["zh-CN", "en"] as const;
+const DEFAULT_LOCALE = "zh-CN";
+
+function localizedUrl(urlPath: string, locale: string): string {
+  const prefix = locale === DEFAULT_LOCALE ? "" : `/${locale}`;
+  return `${SITE_URL}${prefix}${urlPath}`;
+}
+
+function buildEntry(
+  urlPath: string,
+  lastModified: string,
+  changeFrequency: MetadataRoute.Sitemap[number]["changeFrequency"],
+  priority: number
+): MetadataRoute.Sitemap[number] {
+  return {
+    url: localizedUrl(urlPath, DEFAULT_LOCALE),
+    lastModified,
+    changeFrequency,
+    priority,
+    alternates: {
+      languages: Object.fromEntries(
+        LOCALES.map((locale) => [locale, localizedUrl(urlPath, locale)])
+      ),
+    },
+  };
+}
+
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
+  const entries: MetadataRoute.Sitemap = [];
+  const now = new Date().toISOString();
+
+  // 静态路由
+  entries.push(buildEntry("/", now, "weekly", 1.0));
+  entries.push(buildEntry("/stories", now, "weekly", 0.9));
+
+  // 故事路由
+  const registry = await loadStoryRegistry();
+
+  for (const story of registry) {
+    const { slug, updatedAt } = story;
+    const lastMod = updatedAt || now;
+
+    // 故事详情页
+    entries.push(buildEntry(`/stories/${slug}`, lastMod, "monthly", 0.8));
+
+    // 从 meta.json 读取章节和探索场景列表
+    const meta = await loadJsonFileDirect<StoryMeta>([
+      "data",
+      "stories",
+      "shared",
+      slug,
+      "meta.json",
+    ]);
+
+    if (meta) {
+      const chapterIds = new Set<string>(meta.chapterOrder ?? []);
+
+      // 视角变体章节
+      for (const perspective of meta.perspectives ?? []) {
+        for (const variant of perspective.variants) {
+          chapterIds.add(variant.chapterId);
+        }
+      }
+
+      for (const chapterId of chapterIds) {
+        entries.push(
+          buildEntry(`/stories/${slug}/${chapterId}`, lastMod, "monthly", 0.7)
+        );
+      }
+
+      // 探索场景
+      for (const sceneId of meta.explorationScenes ?? []) {
+        entries.push(
+          buildEntry(
+            `/stories/${slug}/explore/${sceneId}`,
+            lastMod,
+            "monthly",
+            0.6
+          )
+        );
+      }
+    }
+  }
+
+  return entries;
+}

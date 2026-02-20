@@ -25,6 +25,10 @@
     "developers": "The ESAP Project",
     "developed": ""
   },
+  "mobileMenu": {
+    "theme": "Theme",
+    "language": "Language"
+  },
   "theme": {
     "light": "Light",
     "dark": "Dark",
