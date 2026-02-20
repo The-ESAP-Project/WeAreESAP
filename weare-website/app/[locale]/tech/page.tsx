@@ -14,6 +14,7 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { DEFAULT_IMAGES, SITE_CONFIG } from "@/lib/constants";
+import { buildAlternates } from "@/lib/metadata";
 
 export async function generateMetadata({
   params,
@@ -27,7 +28,7 @@ export async function generateMetadata({
   const title = `${t("title")} - ${SITE_CONFIG.siteName}`;
   const description = t("description");
   const ogImage = DEFAULT_IMAGES.homepage;
-  const localizedUrl = `${SITE_CONFIG.baseUrl}/${locale}/tech`;
+  const alternates = buildAlternates(locale, "/tech");
 
   return {
     title,
@@ -36,7 +37,7 @@ export async function generateMetadata({
       title,
       description,
       type: "website",
-      url: localizedUrl,
+      url: alternates.canonical,
       images: [
         {
           url: ogImage,
@@ -53,9 +54,7 @@ export async function generateMetadata({
       description,
       images: [ogImage],
     },
-    alternates: {
-      canonical: localizedUrl,
-    },
+    alternates,
   };
 }
 

@@ -25,8 +25,9 @@ import {
 import { CharacterSkeleton, GraphSkeleton } from "@/components/loading";
 import { PersonJsonLd } from "@/components/seo";
 import { locales } from "@/i18n/request";
-import { DEFAULT_IMAGES, SITE_CONFIG } from "@/lib/constants";
+import { DEFAULT_IMAGES } from "@/lib/constants";
 import { loadJsonFile } from "@/lib/data-loader";
+import { buildAlternates } from "@/lib/metadata";
 import { getCharacterRelationships } from "@/lib/relationship-parser";
 import type { Character } from "@/types/character";
 import type { Relationship } from "@/types/relationship";
@@ -150,7 +151,7 @@ export async function generateMetadata({
   const characterTitle = `${character.name} (${character.code})`;
   const characterDesc = `${character.description} - ${character.quote}`;
   const characterImage = character.backgroundImage || DEFAULT_IMAGES.homepage;
-  const characterUrl = `${SITE_CONFIG.baseUrl}/${locale}/characters/${character.id}`;
+  const alternates = buildAlternates(locale, `/characters/${character.id}`);
 
   // 动态生成角色专属 keywords（纯角色词）
   const keywords = [
@@ -172,7 +173,7 @@ export async function generateMetadata({
       title: characterTitle,
       description: characterDesc,
       type: "profile",
-      url: characterUrl,
+      url: alternates.canonical,
       images: [
         {
           url: characterImage,
@@ -189,9 +190,7 @@ export async function generateMetadata({
       description: characterDesc,
       images: [characterImage],
     },
-    alternates: {
-      canonical: characterUrl,
-    },
+    alternates,
   };
 }
 

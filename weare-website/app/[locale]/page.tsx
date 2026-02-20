@@ -16,6 +16,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { AnimatedSection } from "@/components/ui";
 import { DEFAULT_IMAGES, SITE_CONFIG } from "@/lib/constants";
 import { loadJsonFiles } from "@/lib/data-loader";
+import { buildAlternates } from "@/lib/metadata";
 import type { CharacterCardData } from "@/types/character";
 import { HomeCharacters } from "./HomeCharacters";
 import { HomeHero } from "./HomeHero";
@@ -37,7 +38,7 @@ export async function generateMetadata({
   const rawKeywords = t.raw("keywords");
   const keywords = Array.isArray(rawKeywords) ? (rawKeywords as string[]) : [];
   const ogImage = DEFAULT_IMAGES.homepage;
-  const localizedUrl = `${SITE_CONFIG.baseUrl}/${locale}`;
+  const alternates = buildAlternates(locale, "");
 
   return {
     title,
@@ -47,7 +48,7 @@ export async function generateMetadata({
       title,
       description,
       type: "website",
-      url: localizedUrl,
+      url: alternates.canonical,
       images: [
         {
           url: ogImage,
@@ -64,9 +65,7 @@ export async function generateMetadata({
       description,
       images: [ogImage],
     },
-    alternates: {
-      canonical: localizedUrl,
-    },
+    alternates,
   };
 }
 

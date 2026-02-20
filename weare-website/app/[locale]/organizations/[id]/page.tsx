@@ -16,6 +16,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { locales } from "@/i18n/request";
 import { DEFAULT_IMAGES, SITE_CONFIG } from "@/lib/constants";
 import { loadJsonFiles } from "@/lib/data-loader";
+import { buildAlternates } from "@/lib/metadata";
 import type { Organization } from "@/types/organization";
 
 async function getAllOrganizations(locale: string): Promise<Organization[]> {
@@ -56,7 +57,7 @@ export async function generateMetadata({
   const title = `${organization.info.name} - ${t("title")}`;
   const description = organization.description;
   const ogImage = organization.image || DEFAULT_IMAGES.homepage;
-  const localizedUrl = `${SITE_CONFIG.baseUrl}/${locale}/organizations/${id}`;
+  const alternates = buildAlternates(locale, `/organizations/${id}`);
 
   return {
     title,
@@ -65,7 +66,7 @@ export async function generateMetadata({
       title,
       description,
       type: "website",
-      url: localizedUrl,
+      url: alternates.canonical,
       images: [
         {
           url: ogImage,
@@ -82,9 +83,7 @@ export async function generateMetadata({
       description,
       images: [ogImage],
     },
-    alternates: {
-      canonical: localizedUrl,
-    },
+    alternates,
   };
 }
 

@@ -19,6 +19,7 @@ import { LoadingSpinner } from "@/components/loading";
 import { AnimatedSection } from "@/components/ui";
 import { DEFAULT_IMAGES, SITE_CONFIG } from "@/lib/constants";
 import { loadJsonFiles } from "@/lib/data-loader";
+import { buildAlternates } from "@/lib/metadata";
 import type { TimelineYear } from "@/types/timeline";
 import { TimelineHero } from "./TimelineHero";
 
@@ -40,7 +41,7 @@ export async function generateMetadata({
   const rawKeywords = t.raw("keywords");
   const keywords = Array.isArray(rawKeywords) ? (rawKeywords as string[]) : [];
   const ogImage = DEFAULT_IMAGES.homepage;
-  const localizedUrl = `${SITE_CONFIG.baseUrl}/${locale}/timeline`;
+  const alternates = buildAlternates(locale, "/timeline");
 
   return {
     title,
@@ -50,7 +51,7 @@ export async function generateMetadata({
       title,
       description,
       type: "website",
-      url: localizedUrl,
+      url: alternates.canonical,
       images: [
         {
           url: ogImage,
@@ -67,9 +68,7 @@ export async function generateMetadata({
       description,
       images: [ogImage],
     },
-    alternates: {
-      canonical: localizedUrl,
-    },
+    alternates,
   };
 }
 

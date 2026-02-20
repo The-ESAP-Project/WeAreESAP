@@ -17,6 +17,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { ChecklistItem } from "@/components";
 import { Icon, type IconName } from "@/components/ui";
 import { DEFAULT_IMAGES, SITE_CONFIG } from "@/lib/constants";
+import { buildAlternates } from "@/lib/metadata";
 import type {
   CommunityValue,
   Contribution,
@@ -60,7 +61,7 @@ export async function generateMetadata({
   const rawKeywords = t.raw("keywords");
   const keywords = Array.isArray(rawKeywords) ? (rawKeywords as string[]) : [];
   const ogImage = DEFAULT_IMAGES.homepage;
-  const localizedUrl = `${SITE_CONFIG.baseUrl}/${locale}/join`;
+  const alternates = buildAlternates(locale, "/join");
 
   return {
     title,
@@ -70,7 +71,7 @@ export async function generateMetadata({
       title,
       description,
       type: "website",
-      url: localizedUrl,
+      url: alternates.canonical,
       images: [
         {
           url: ogImage,
@@ -87,9 +88,7 @@ export async function generateMetadata({
       description,
       images: [ogImage],
     },
-    alternates: {
-      canonical: localizedUrl,
-    },
+    alternates,
   };
 }
 

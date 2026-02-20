@@ -16,6 +16,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { locales } from "@/i18n/request";
 import { DEFAULT_IMAGES, SITE_CONFIG } from "@/lib/constants";
 import { loadJsonFiles } from "@/lib/data-loader";
+import { buildAlternates } from "@/lib/metadata";
 import type { TechModule } from "@/types/tech";
 
 async function getAllTechModules(locale: string): Promise<TechModule[]> {
@@ -58,7 +59,7 @@ export async function generateMetadata({
   const title = `${techModule.name} - ${t("title")}`;
   const description = techModule.description;
   const ogImage = DEFAULT_IMAGES.homepage;
-  const localizedUrl = `${SITE_CONFIG.baseUrl}/${locale}/tech/${id}`;
+  const alternates = buildAlternates(locale, `/tech/${id}`);
 
   return {
     title,
@@ -67,7 +68,7 @@ export async function generateMetadata({
       title,
       description,
       type: "website",
-      url: localizedUrl,
+      url: alternates.canonical,
       images: [
         {
           url: ogImage,
@@ -84,9 +85,7 @@ export async function generateMetadata({
       description,
       images: [ogImage],
     },
-    alternates: {
-      canonical: localizedUrl,
-    },
+    alternates,
   };
 }
 
