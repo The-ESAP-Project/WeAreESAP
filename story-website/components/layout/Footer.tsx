@@ -85,7 +85,7 @@ export function Footer() {
             ))}
           </div>
           <p className="text-center text-xs text-muted-foreground pt-2">
-            © 2021-{currentYear} <strong>{t("projectName")}</strong>
+            © 2021-{currentYear} <strong>{t("copyrightHolder")}</strong>
           </p>
         </div>
       </div>
@@ -112,7 +112,7 @@ export function Footer() {
                 &ldquo;{t("quote")}&rdquo;
               </p>
               <p className="text-xs text-muted-foreground pt-2">
-                © 2021-{currentYear} <strong>{t("projectName")}</strong>
+                © 2021-{currentYear} <strong>{t("copyrightHolder")}</strong>
                 <br />
                 {t("allRightsReserved")}
               </p>
