@@ -13,7 +13,13 @@
 
 "use client";
 
-import { useCallback, useEffect, useState } from "react";
+import {
+  createContext,
+  useCallback,
+  useContext,
+  useEffect,
+  useState,
+} from "react";
 import { loadState, saveState, updatePreferences } from "@/lib/reading-state";
 import type { ReadingPreferences, ReadingState } from "@/types/reading-state";
 import {
@@ -21,7 +27,20 @@ import {
   DEFAULT_READING_STATE,
 } from "@/types/reading-state";
 
-export function useReadingPreferences() {
+interface ReadingPreferencesContextValue {
+  preferences: ReadingPreferences;
+  setPreferences: (prefs: Partial<ReadingPreferences>) => void;
+  hydrated: boolean;
+}
+
+const ReadingPreferencesContext =
+  createContext<ReadingPreferencesContextValue | null>(null);
+
+export function ReadingPreferencesProvider({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   const [state, setState] = useState<ReadingState>(DEFAULT_READING_STATE);
   const [hydrated, setHydrated] = useState(false);
 
@@ -42,5 +61,21 @@ export function useReadingPreferences() {
     setState((prev) => updatePreferences(prev, prefs));
   }, []);
 
-  return { preferences, setPreferences, hydrated };
+  return (
+    <ReadingPreferencesContext.Provider
+      value={{ preferences, setPreferences, hydrated }}
+    >
+      {children}
+    </ReadingPreferencesContext.Provider>
+  );
+}
+
+export function useReadingPreferences() {
+  const context = useContext(ReadingPreferencesContext);
+  if (!context) {
+    throw new Error(
+      "useReadingPreferences must be used within ReadingPreferencesProvider"
+    );
+  }
+  return context;
 }

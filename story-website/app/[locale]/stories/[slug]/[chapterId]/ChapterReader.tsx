@@ -19,7 +19,10 @@ import { PerspectiveSwitch } from "@/components/interactive/PerspectiveSwitch";
 import { ReaderContent } from "@/components/reader/ReaderContent";
 import { ReaderToolbar } from "@/components/reader/ReaderToolbar";
 import { Icon } from "@/components/ui/Icon";
-import { useReadingPreferences } from "@/hooks/useReadingPreferences";
+import {
+  ReadingPreferencesProvider,
+  useReadingPreferences,
+} from "@/hooks/useReadingPreferences";
 import { useReadingState } from "@/hooks/useReadingState";
 import { Link } from "@/i18n/navigation";
 import { getBaseChapterId } from "@/lib/branch-resolver";
@@ -36,7 +39,15 @@ interface ChapterReaderProps {
   perspectives: { characterId: string; chapterId: string }[] | null;
 }
 
-export function ChapterReader({
+export function ChapterReader(props: ChapterReaderProps) {
+  return (
+    <ReadingPreferencesProvider>
+      <ChapterReaderInner {...props} />
+    </ReadingPreferencesProvider>
+  );
+}
+
+function ChapterReaderInner({
   story,
   chapter,
   nextChapterId,
