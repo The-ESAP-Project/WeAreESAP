@@ -169,6 +169,8 @@ function ChapterReaderInner({
             currentChapterId={chapter.id}
             perspectives={perspectives}
             storyMeta={story}
+            storyState={storyState}
+            hydrated={hydrated}
           />
         </div>
       )}
@@ -208,6 +210,8 @@ function ChapterReaderInner({
             currentChapterId={chapter.id}
             perspectives={perspectives}
             storyMeta={story}
+            storyState={storyState}
+            hydrated={hydrated}
           />
         </div>
       )}

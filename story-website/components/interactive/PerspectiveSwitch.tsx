@@ -14,12 +14,12 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import { useReadingState } from "@/hooks/useReadingState";
 import { Link } from "@/i18n/navigation";
 import { getBaseChapterId } from "@/lib/branch-resolver";
 import { CHARACTER_COLORS } from "@/lib/constants";
 import { isUnlocked } from "@/lib/unlock-engine";
 import { cn } from "@/lib/utils";
+import type { StoryReadingState } from "@/types/reading-state";
 import type { StoryMeta } from "@/types/story";
 
 interface PerspectiveSwitchProps {
@@ -27,6 +27,8 @@ interface PerspectiveSwitchProps {
   currentChapterId: string;
   perspectives: { characterId: string; chapterId: string }[];
   storyMeta: StoryMeta;
+  storyState: StoryReadingState;
+  hydrated: boolean;
 }
 
 export function PerspectiveSwitch({
@@ -34,9 +36,10 @@ export function PerspectiveSwitch({
   currentChapterId,
   perspectives,
   storyMeta,
+  storyState,
+  hydrated,
 }: PerspectiveSwitchProps) {
   const t = useTranslations("reader.perspective");
-  const { storyState, hydrated } = useReadingState(storySlug);
 
   const baseChapterId = getBaseChapterId(storyMeta, currentChapterId);
 

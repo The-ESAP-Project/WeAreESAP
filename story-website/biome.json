@@ -11,7 +11,8 @@
       "!**/public",
       "!**/scripts",
       "!**/playwright-report",
-      "!**/test-results"
+      "!**/test-results",
+      "!**/data/build-info.json"
     ]
   },
   "formatter": {
