@@ -1,11 +1,22 @@
 // Copyright 2021-2026 The ESAP Project
-// SPDX-License-Identifier: Apache-2.0
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
 
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { setRequestLocale } from "next-intl/server";
 import { locales } from "@/i18n/request";
 import { SITE_CONFIG } from "@/lib/constants";
+import { buildAlternates } from "@/lib/metadata";
 import {
   loadExplorationScene,
   loadStory,
@@ -44,8 +55,10 @@ export async function generateMetadata({
     return { robots: { index: false, follow: true } };
   }
 
-  const localePrefix = locale === "zh-CN" ? "" : `/${locale}`;
-  const url = `${SITE_CONFIG.baseUrl}${localePrefix}/stories/${slug}/explore/${sceneId}`;
+  const alternates = buildAlternates(
+    locale,
+    `/stories/${slug}/explore/${sceneId}`
+  );
   const title = scene.title;
   const description = scene.description;
   const image = scene.backgroundImage || story?.coverImage;
@@ -57,7 +70,7 @@ export async function generateMetadata({
       title,
       description,
       type: "article",
-      url,
+      url: alternates.canonical,
       siteName: SITE_CONFIG.siteName,
       images: image
         ? [{ url: image, width: 1200, height: 630, alt: title }]
@@ -69,9 +82,7 @@ export async function generateMetadata({
       description,
       images: image ? [image] : undefined,
     },
-    alternates: {
-      canonical: url,
-    },
+    alternates,
   };
 }
 
