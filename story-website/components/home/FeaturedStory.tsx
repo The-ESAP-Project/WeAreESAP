@@ -26,7 +26,7 @@ export async function FeaturedStory({ story }: FeaturedStoryProps) {
   const tS = await getTranslations("stories");
 
   return (
-    <section className="max-w-5xl mx-auto px-4 pt-8 pb-16">
+    <section className="max-w-5xl mx-auto px-4 pt-8 pb-8">
       <h2 className="text-2xl font-bold text-foreground mb-6">{t("title")}</h2>
       <Link href={`/stories/${story.slug}`} className="block group">
         <div className="rounded-xl border border-border overflow-hidden hover:border-esap-blue/50 transition-colors">
