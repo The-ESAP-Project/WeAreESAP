@@ -9,6 +9,9 @@
     "title": "Featured Stories",
     "readMore": "Read Story"
   },
+  "moreStories": {
+    "title": "More Stories"
+  },
   "recent": {
     "title": "Recent Updates",
     "empty": "No updates yet"

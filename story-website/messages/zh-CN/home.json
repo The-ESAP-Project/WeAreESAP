@@ -9,6 +9,9 @@
     "title": "精选故事",
     "readMore": "阅读故事"
   },
+  "moreStories": {
+    "title": "更多故事"
+  },
   "recent": {
     "title": "最近更新",
     "empty": "暂无更新"

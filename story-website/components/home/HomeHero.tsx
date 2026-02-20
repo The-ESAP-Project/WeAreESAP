@@ -19,11 +19,8 @@ export function HomeHero() {
         <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-4 tracking-tight">
           {t("title")}
         </h1>
-        <p className="text-xl md:text-2xl text-muted-foreground mb-3 italic">
+        <p className="text-xl md:text-2xl text-muted-foreground mb-8 italic">
           {t("subtitle")}
-        </p>
-        <p className="text-base text-muted-foreground mb-8">
-          {t("description")}
         </p>
         <Link
           href="/stories"

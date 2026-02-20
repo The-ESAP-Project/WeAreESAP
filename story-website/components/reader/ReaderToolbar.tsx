@@ -36,7 +36,7 @@ export function ReaderToolbar() {
       <button
         type="button"
         onClick={() => setOpen(!open)}
-        className="fixed bottom-6 left-6 z-40 w-10 h-10 rounded-full bg-muted border border-border flex items-center justify-center hover:bg-muted/80 transition-colors"
+        className="fixed bottom-20 right-6 z-40 w-10 h-10 rounded-full bg-muted border border-border flex items-center justify-center hover:bg-muted/80 transition-colors"
         aria-label="Reading settings"
       >
         <svg
@@ -54,7 +54,7 @@ export function ReaderToolbar() {
 
       {/* Panel */}
       {open && (
-        <div className="fixed bottom-18 left-6 z-40 w-64 bg-background border border-border rounded-xl shadow-lg p-4 space-y-4">
+        <div className="fixed bottom-36 right-6 z-40 w-64 bg-background border border-border rounded-xl shadow-lg p-4 space-y-4">
           {/* Font size */}
           <div>
             <span className="text-xs text-muted-foreground mb-1 block">
