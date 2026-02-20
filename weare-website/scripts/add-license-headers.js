@@ -1,4 +1,4 @@
-// Copyright 2025 The ESAP Project
+// Copyright 2021-2026 The ESAP Project
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
 // You may obtain a copy of the License at
@@ -27,7 +27,7 @@ const path = require("path");
 // 许可证头部模板
 const LICENSE_HEADERS = {
   // TypeScript/JavaScript 文件
-  ts: `// Copyright 2025 The ESAP Project
+  ts: `// Copyright 2021-2026 The ESAP Project
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
 // You may obtain a copy of the License at
@@ -44,7 +44,7 @@ const LICENSE_HEADERS = {
 
   // CSS 文件
   css: `/**
- * Copyright 2025 The ESAP Project
+ * Copyright 2021-2026 The ESAP Project
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at

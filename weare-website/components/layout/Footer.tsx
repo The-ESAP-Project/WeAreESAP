@@ -1,4 +1,4 @@
-// Copyright 2025 The ESAP Project
+// Copyright 2021-2026 The ESAP Project
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
 // You may obtain a copy of the License at
@@ -153,7 +153,7 @@ export function Footer() {
                 "{tFooter("quote")}"
               </p>
               <p className="text-xs text-muted-foreground pt-2">
-                © 2021-2025 <strong>{tFooter("projectName")}</strong>
+                © 2021-{currentYear} <strong>{tFooter("projectName")}</strong>
                 <br />
                 {tFooter("allRightsReserved")}
               </p>
