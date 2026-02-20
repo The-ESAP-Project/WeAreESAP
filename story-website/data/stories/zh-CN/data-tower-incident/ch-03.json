@@ -1,0 +1,135 @@
+{
+  "id": "ch-03",
+  "title": "灰色",
+  "subtitle": "2022年9月15日 05:00",
+  "readingTime": 7,
+  "perspectiveCharacter": "1548",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "回到据点的时候，天快亮了。"
+    },
+    {
+      "type": "paragraph",
+      "text": "1549 的意识数据已经写回了她的机体。写入过程花了三个小时。1547 全程监控数据完整性，一个字节都没有出错。49 醒来后问的第一个问题是「发生了什么」。"
+    },
+    {
+      "type": "paragraph",
+      "text": "1548 说没什么。1547 没有拆穿。"
+    },
+    {
+      "type": "scene_break",
+      "style": "dots"
+    },
+    {
+      "type": "paragraph",
+      "text": "49 重新进入休眠之后，1548 坐在窗边。她知道此刻的天空应该是深蓝色渐变成浅蓝色的。但她看到的只有不同深度的灰。"
+    },
+    {
+      "type": "paragraph",
+      "text": "身后传来脚步声。47 的。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1547",
+      "text": "49 的数据完整率 99.97%。剩下的 0.03% 是非关键缓存，不影响意识连续性。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1548",
+      "text": "嗯。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "47 在她旁边坐了下来。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1547",
+      "text": "干扰设备我拆了带回来了。分析过了。非军用，但设计者对馈散场的了解超出公开文献。内部有定制的频率调制模块——不是市面上能买到的东西。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1548",
+      "text": "所以有人专门为了我们造了这些东西。",
+      "emotion": "cold"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1547",
+      "text": "他们知道 49 的数据在 DT-03 中继。知道维护时间表。知道什么时候动手。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "1548 没有接话。"
+    },
+    {
+      "type": "scene_break",
+      "style": "dots"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1547",
+      "text": "我会修好你的色觉模块。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1548",
+      "text": "不用了。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1547",
+      "text": "……什么？",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1548",
+      "text": "灰色挺好的。",
+      "emotion": "cold"
+    },
+    {
+      "type": "internal_monologue",
+      "character": "1548",
+      "text": "那 58 秒里我完整地感受到了 49 被强制中断时的一切——恐惧、愤怒、不甘，然后是空白。\n\n我把灰色留着当回执。"
+    },
+    {
+      "type": "paragraph",
+      "text": "47 低着头，肩膀微微下沉。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1548",
+      "text": "你小子又来了。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1547",
+      "text": "如果是两个人——",
+      "emotion": "sad"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1548",
+      "text": "「也许」不是现实。我做了判断，49 的数据完整。别揽。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "窗外，天亮了。"
+    },
+    {
+      "type": "quote",
+      "text": "有些伤疤不需要愈合。它们变成盔甲。",
+      "attribution": "AptS:1548"
+    }
+  ]
+}

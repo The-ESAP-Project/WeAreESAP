@@ -1,0 +1,42 @@
+{
+  "toolbar": {
+    "fontSize": "Font Size",
+    "fontFamily": "Font",
+    "lineHeight": "Line Height",
+    "atmosphere": "Atmosphere Effects",
+    "sans": "Sans-serif",
+    "serif": "Serif"
+  },
+  "navigation": {
+    "prev": "Previous Chapter",
+    "next": "Next Chapter",
+    "backToStory": "Back to Story",
+    "tableOfContents": "Table of Contents"
+  },
+  "progress": {
+    "reading": "Reading",
+    "completed": "Completed"
+  },
+  "branch": {
+    "chooseYourPath": "Choose your path",
+    "chosen": "Chosen",
+    "otherOptions": "Other options"
+  },
+  "unlock": {
+    "locked": "This content is not yet unlocked",
+    "hint": "Complete earlier chapters and perspectives to unlock this content.",
+    "unlocked": "New content unlocked!"
+  },
+  "perspective": {
+    "switchPov": "Switch Perspective",
+    "currentPov": "Current POV",
+    "locked": "Locked"
+  },
+  "exploration": {
+    "explore": "Explore",
+    "discovered": "Discovered",
+    "items": "items",
+    "of": "/",
+    "back": "Back to Reading"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "hero": {
+    "title": "ESAP Stories",
+    "subtitle": "用故事回答「活着到底算什么」",
+    "description": "在这里，你可以阅读、探索、选择，成为故事的一部分。",
+    "cta": "开始阅读"
+  },
+  "featured": {
+    "title": "精选故事",
+    "readMore": "阅读故事"
+  },
+  "recent": {
+    "title": "最近更新",
+    "empty": "暂无更新"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "toolbar": {
+    "fontSize": "字号",
+    "fontFamily": "字体",
+    "lineHeight": "行高",
+    "atmosphere": "氛围效果",
+    "sans": "无衬线",
+    "serif": "衬线"
+  },
+  "navigation": {
+    "prev": "上一章",
+    "next": "下一章",
+    "backToStory": "返回故事",
+    "tableOfContents": "目录"
+  },
+  "progress": {
+    "reading": "正在阅读",
+    "completed": "已读完"
+  },
+  "branch": {
+    "chooseYourPath": "选择你的路",
+    "chosen": "已选择",
+    "otherOptions": "其他选项"
+  },
+  "unlock": {
+    "locked": "此内容尚未解锁",
+    "hint": "完成前面的章节和视角后即可解锁此内容。",
+    "unlocked": "已解锁新内容！"
+  },
+  "perspective": {
+    "switchPov": "切换视角",
+    "currentPov": "当前视角",
+    "locked": "需解锁"
+  },
+  "exploration": {
+    "explore": "探索",
+    "discovered": "已发现",
+    "items": "个物品",
+    "of": "/",
+    "back": "返回阅读"
+  }
+}

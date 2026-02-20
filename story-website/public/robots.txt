@@ -1,0 +1,11 @@
+# *
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /_next/
+
+# Host
+Host: https://story.esaps.net
+
+# Sitemaps
+Sitemap: https://story.esaps.net/sitemap.xml

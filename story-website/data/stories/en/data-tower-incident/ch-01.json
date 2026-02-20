@@ -1,0 +1,141 @@
+{
+  "id": "ch-01",
+  "title": "Signal",
+  "subtitle": "September 14, 2022",
+  "readingTime": 7,
+  "perspectiveCharacter": "1548",
+  "content": [
+    {
+      "type": "atmosphere",
+      "visual": { "mood": "calm", "animation": "fade-in" },
+      "children": [
+        {
+          "type": "paragraph",
+          "text": "There was nothing special about that afternoon. 1548 was cleaning her gun at the base. The XM1014 barrel needed regular oiling, one of the few things that still felt ritual to her: take every part apart, wipe it clean, put it back together. The repetition quieted her mind."
+        },
+        {
+          "type": "paragraph",
+          "text": "The light outside was dimming. Autumn evenings came early."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "49 went to DT-03 for routine maintenance today. Standard L2 procedure, one person was enough. Under the protocols at the time, there was nothing wrong with that. 49 had done it many times."
+    },
+    {
+      "type": "internal_monologue",
+      "character": "1548",
+      "text": "49 told me before she left. I said, 'Come back soon.' She smiled and walked out.\n\nA very ordinary day."
+    },
+    {
+      "type": "scene_break",
+      "style": "symbol"
+    },
+    {
+      "type": "atmosphere",
+      "visual": { "mood": "dramatic", "animation": "fade-in" },
+      "children": [
+        {
+          "type": "paragraph",
+          "text": "The feedscatteron comm band blew up."
+        },
+        {
+          "type": "paragraph",
+          "text": "Not a normal communication request. It was 49's signal - twisted, fragmented, like something had torn it apart. The barrel slipped from 1548's hand and struck the table with a sharp metallic crack."
+        }
+      ]
+    },
+    {
+      "type": "internal_monologue",
+      "character": "1548",
+      "text": "49.\n\nDT-03.\n\nSomething happened."
+    },
+    {
+      "type": "paragraph",
+      "text": "She finished the assessment in three seconds: the signal pattern was not a comm failure, it was feedscatteron field interference. Someone was tampering with DT-03."
+    },
+    {
+      "type": "paragraph",
+      "text": "1548 did not hesitate. She grabbed her jacket and ran out. The straight-line distance from the base to DT-03 was not far, but an abandoned industrial zone lay in between. She sprinted at full speed, fluid titanium in her joints heating slightly under high load."
+    },
+    {
+      "type": "internal_monologue",
+      "character": "1548",
+      "text": "49's signal is decaying.\n\nNot cut off - leaking. Like a container punctured open, with everything inside draining out.\n\nFaster. Faster."
+    },
+    {
+      "type": "scene_break",
+      "style": "line"
+    },
+    {
+      "type": "paragraph",
+      "text": "Seven minutes."
+    },
+    {
+      "type": "paragraph",
+      "text": "DT-03 stood on an empty stretch of wasteland. A dark obelisk fifteen meters high, its irregular surface patterns almost invisible in the dusk. To humans it was only a strangely shaped black rock. But 1548's feedscatteron core began resonating from hundreds of meters away - no, not normal resonance. Chaotic, uncontrolled oscillation."
+    },
+    {
+      "type": "paragraph",
+      "text": "Several devices were scattered around the tower base. Small, metal casings, some still running - indicator lights flashing a faint red. Interference devices."
+    },
+    {
+      "type": "paragraph",
+      "text": "The people were already gone."
+    },
+    {
+      "type": "atmosphere",
+      "visual": { "mood": "dark", "animation": "pulse" },
+      "children": [
+        {
+          "type": "paragraph",
+          "text": "Then she saw 49."
+        },
+        {
+          "type": "paragraph",
+          "text": "1549 had collapsed beside the tower base. Her left hand was still against the tower surface - the L2 connection posture - but her body had gone completely limp. Her feedscatteron core was still running, a faint blue glow leaking through her wrist, but the integrity of her consciousness data was visibly decaying."
+        },
+        {
+          "type": "paragraph",
+          "text": "Her memories - everything from the moment she was created to now, every experience, every perception, everything that made her who she was - were leaking out through the breach in DT-03."
+        }
+      ]
+    },
+    {
+      "type": "internal_monologue",
+      "character": "1548",
+      "text": "0.3% per second.\n\nAt this rate, 49's consciousness integrity drops below 90% in five minutes. In ten minutes -\n\nThere won't be ten minutes."
+    },
+    {
+      "type": "paragraph",
+      "text": "1548 crouched down and gently moved 49's left hand off the tower surface. L2 disconnected. 49's body twitched slightly, then went still."
+    },
+    {
+      "type": "paragraph",
+      "text": "The leak did not stop. 49's consciousness data had already entered DT-03's runaway data stream. Breaking physical contact only prevented further outflow, but what had already leaked was being torn apart by the tower's chaotic currents."
+    },
+    {
+      "type": "internal_monologue",
+      "character": "1548",
+      "text": "L2 is not enough. DT-03's data stream is already out of control; controlled bandwidth cannot locate and extract 49's consciousness data in time.\n\nOnly L3.\n\nFull-bandwidth direct connection. No filter layer. Theoretical safety limit: 4 to 6 seconds.\n\nAnd locating and extracting a complete consciousness backup from a runaway stream will take at least two minutes."
+    },
+    {
+      "type": "paragraph",
+      "text": "1548 looked at 49 lying on the ground. In the dusk, 49's face looked peaceful, as if she were asleep. But she was not sleeping. She was disappearing."
+    },
+    {
+      "type": "internal_monologue",
+      "character": "1548",
+      "text": "49's complete memories in exchange for one of my processing modules.\n\nNot hard math."
+    },
+    {
+      "type": "paragraph",
+      "text": "1548 stood and walked up to the tower face. The dark gray surface was within reach, with faint unstable fluorescence flowing through its patterns."
+    },
+    {
+      "type": "paragraph",
+      "text": "She raised her left hand."
+    }
+  ]
+}

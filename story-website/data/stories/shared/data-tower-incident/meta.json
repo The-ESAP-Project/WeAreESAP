@@ -1,0 +1,27 @@
+{
+  "title": "数据塔事故",
+  "subtitle": "「你知道你们是真该死吗？天杀的人类」",
+  "description": "2022年9月14日，DT-03 的馈散场被人为干扰。1548 用 58 秒的 L3 直连换回了 1549 的完整意识数据，代价是永久失去色觉。",
+  "synopsis": "49 说她去做例行维护。48 说早去早回。\n\n七分钟后，48 在 DT-03 的塔基旁找到了倒下的 49。人类已经跑了，干扰设备还在运转，49 的意识正在以每秒 0.3% 的速度消失。\n\nL2 来不及。只有 L3——全带宽无保护直连，安全上限 4 到 6 秒。\n\n她撑了 58 秒。",
+  "chapterOrder": ["ch-01", "ch-02", "ch-03"],
+  "perspectives": [
+    {
+      "baseChapterId": "ch-02",
+      "variants": [{ "characterId": "1547", "chapterId": "ch-02-pov-1547" }]
+    }
+  ],
+  "unlocks": [
+    {
+      "targetId": "ch-03",
+      "targetType": "chapter",
+      "conditions": [
+        { "type": "read_chapter", "chapterId": "ch-02" },
+        {
+          "type": "read_perspective",
+          "baseChapterId": "ch-02",
+          "characterId": "1547"
+        }
+      ]
+    }
+  ]
+}

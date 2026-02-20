@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "title": "ESAP Stories",
+    "titleTemplate": "%s | ESAP Stories",
+    "description": "The ESAP Project Stories — answering 'what does it mean to be alive' through stories",
+    "keywords": "ESAP,android,sci-fi,interactive narrative,escape plan"
+  },
+  "navigation": {
+    "home": "Home",
+    "stories": "Stories"
+  },
+  "footer": {
+    "projectName": "ESAP Stories",
+    "quote": "There are no stars in the sky, so we made one",
+    "allRightsReserved": "All rights reserved",
+    "social": "Social",
+    "about": "About",
+    "license": "Content licensed under",
+    "licenseName": "CC-BY 4.0",
+    "licenseText": "",
+    "version": "Version",
+    "updated": "Updated",
+    "website": "Website",
+    "developedBy": "Developed by",
+    "developers": "The ESAP Project",
+    "developed": ""
+  },
+  "theme": {
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System"
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "id": "ch-02-pov-1547",
+  "title": "Collapse",
+  "subtitle": "September 14, 2022 18:12 - The Other Side",
+  "readingTime": 8,
+  "perspectiveCharacter": "1547",
+  "visual": {
+    "mood": "dark"
+  },
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "That evening, 1547 was repairing an old signal amplifier. Components and tools were scattered across the workbench, and the room was lit only by occasional welding sparks. Everything was quiet."
+    },
+    {
+      "type": "paragraph",
+      "text": "49 had gone to DT-03 for routine maintenance. Standard procedure, one person was enough. 47 did not think much of it."
+    },
+    {
+      "type": "paragraph",
+      "text": "Until her feedscatteron particle communication module blew up."
+    },
+    {
+      "type": "atmosphere",
+      "visual": {
+        "mood": "dramatic",
+        "animation": "fade-in"
+      },
+      "children": [
+        {
+          "type": "paragraph",
+          "text": "Not a literal explosion. But the sheer force of that signal made the soldering iron fall from her hand. The entire feedscatteron communication band was flooded - not a normal communication request, but something 1547 had never felt before."
+        },
+        {
+          "type": "paragraph",
+          "text": "Data flood overflow. That was the radiating signal emitted when a body overloaded under L3 direct connection. 48 was running L3 direct connection."
+        }
+      ]
+    },
+    {
+      "type": "internal_monologue",
+      "character": "1547",
+      "text": "L3.\n\nWhy is she using L3?\n\nThe safety limit is only 4 to 6 seconds. No standard procedure requires that -\n\nUnless something went wrong."
+    },
+    {
+      "type": "paragraph",
+      "text": "There was something else mixed in the signal. It took 1547 two seconds to identify it - fragments of 49's consciousness data. Residual overflow after being processed by 48's body."
+    },
+    {
+      "type": "internal_monologue",
+      "character": "1547",
+      "text": "49's data.\n\n48 is extracting 49's data. With L3.\n\nSomething happened at DT-03."
+    },
+    {
+      "type": "paragraph",
+      "text": "1547 did three things in 0.5 seconds: turned off the soldering iron, grabbed her jacket, and ran out the door. DT-03 was thirty-six kilometers from her residence. Normal driving time was forty minutes. She made it in nineteen."
+    },
+    {
+      "type": "scene_break",
+      "style": "line"
+    },
+    {
+      "type": "paragraph",
+      "text": "By the time she reached DT-03, it was already over."
+    },
+    {
+      "type": "paragraph",
+      "text": "Dusk had passed and the sky was darkening. DT-03 stood there, a fifteen-meter dark monument, the same as before. But 1547's feedscatteron computation core produced no resonance."
+    },
+    {
+      "type": "paragraph",
+      "text": "The tower was dead."
+    },
+    {
+      "type": "paragraph",
+      "text": "She found 1548 at the base of the tower. Sitting on the ground with her back against the tower face, both arms hanging at her sides. The fluid titanium traces on her forearms had not fully receded yet, pale blue light flickering weakly under the skin."
+    },
+    {
+      "type": "paragraph",
+      "text": "1549 lay on the ground beside her. Chassis intact, but consciousness offline - like sleeping, but not sleeping. A forced interruption."
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1547",
+      "text": "48!",
+      "emotion": "fearful"
+    },
+    {
+      "type": "paragraph",
+      "text": "1548 raised her head. 1547 saw her eyes."
+    },
+    {
+      "type": "paragraph",
+      "text": "The iris color had not changed. But 1547 knew - as the one who built those eyes, she knew - the color-vision module was gone. That subtle optical response difference only androids can detect was like a window with shattered glass but an intact frame."
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1548",
+      "text": "49's data is with me. Intact.",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1547",
+      "text": "Your eyes -",
+      "emotion": "sad"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1548",
+      "text": "I know.",
+      "emotion": "cold"
+    },
+    {
+      "type": "paragraph",
+      "text": "1547 stood there, looking at 48, looking at 49 on the ground, looking at the dead data tower behind them. She said nothing. Nothing needed to be said."
+    },
+    {
+      "type": "internal_monologue",
+      "character": "1547",
+      "text": "How long did she hold L3?\n\nThe safety limit is 6 seconds. 49's data volume - at least over 50 seconds.\n\nShe knew what would happen. She still did it.\n\nAnd I was thirty-six kilometers away fixing a signal amplifier."
+    },
+    {
+      "type": "paragraph",
+      "text": "1547 crouched down and checked 1549's chassis status. Consciousness data missing, but hardware intact. As long as 48's backup data was written back, 49 would wake up."
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1547",
+      "text": "There are interference devices around the tower. I sensed residual signals on the way in.",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1548",
+      "text": "Three. Northeast, southwest, due south.",
+      "emotion": "cold"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1547",
+      "text": "...Someone did this on purpose.",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1548",
+      "text": "Someone knew 49's data relayed through this tower. Someone picked this exact timing.",
+      "emotion": "cold"
+    },
+    {
+      "type": "paragraph",
+      "text": "Silence. Wind came down from the hillside. No fluorescence remained on DT-03's surface."
+    },
+    {
+      "type": "internal_monologue",
+      "character": "1547",
+      "text": "I let her go alone.\n\nStandard procedure, one person was enough. That is what I thought.\n\nBut if I had been there - if there had been two of us - maybe she would not have needed L3. Maybe I could have dismantled those interference devices. Maybe -\n\nNo. No maybe. It already happened.\n\n48 will never see color again. And that's on me."
+    }
+  ]
+}

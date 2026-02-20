@@ -1,0 +1,40 @@
+{
+  "metadata": {
+    "title": "Stories",
+    "description": "Browse all stories"
+  },
+  "empty": "No stories yet",
+  "hero": {
+    "title": "Stories",
+    "subtitle": "Every choice leads to a different ending"
+  },
+  "filter": {
+    "all": "All",
+    "serial": "Serial",
+    "collection": "Collection",
+    "interactive": "Interactive"
+  },
+  "status": {
+    "draft": "Draft",
+    "ongoing": "Ongoing",
+    "completed": "Completed",
+    "hiatus": "Hiatus"
+  },
+  "card": {
+    "readingTime": "Est. reading time",
+    "minutes": "min",
+    "chapters": "chapters",
+    "continue": "Continue Reading",
+    "start": "Start Reading"
+  },
+  "landing": {
+    "synopsis": "Synopsis",
+    "chapters": "Chapters",
+    "warnings": "Content Warnings",
+    "characters": "Related Characters",
+    "startReading": "Start Reading",
+    "continueReading": "Continue Reading",
+    "locked": "Locked",
+    "completed": "Read"
+  }
+}

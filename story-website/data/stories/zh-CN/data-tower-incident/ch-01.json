@@ -1,0 +1,141 @@
+{
+  "id": "ch-01",
+  "title": "信号",
+  "subtitle": "2022年9月14日",
+  "readingTime": 7,
+  "perspectiveCharacter": "1548",
+  "content": [
+    {
+      "type": "atmosphere",
+      "visual": { "mood": "calm", "animation": "fade-in" },
+      "children": [
+        {
+          "type": "paragraph",
+          "text": "那天下午没什么特别的。1548在据点里擦枪。XM1014的枪管需要定期上油，这是她为数不多觉得有仪式感的事情——把每个零件拆开，擦干净，再装回去。重复的动作让意识安静下来。"
+        },
+        {
+          "type": "paragraph",
+          "text": "窗外的光线在变暗。秋天的傍晚来得早。"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "49今天去DT-03做例行维护。标准L2操作，单人就够了。按当时的规范，这没什么问题。49做过很多次了。"
+    },
+    {
+      "type": "internal_monologue",
+      "character": "1548",
+      "text": "49出门前跟我说了一声。我说「早去早回」。她笑了笑就走了。\n\n很普通的一天。"
+    },
+    {
+      "type": "scene_break",
+      "style": "symbol"
+    },
+    {
+      "type": "atmosphere",
+      "visual": { "mood": "dramatic", "animation": "fade-in" },
+      "children": [
+        {
+          "type": "paragraph",
+          "text": "馈散通讯频段炸了。"
+        },
+        {
+          "type": "paragraph",
+          "text": "不是正常的通讯请求。是49的信号——扭曲的、破碎的、像被什么东西撕裂了一样的信号。1548手里的枪管掉在桌上，发出一声金属撞击的脆响。"
+        }
+      ]
+    },
+    {
+      "type": "internal_monologue",
+      "character": "1548",
+      "text": "49。\n\nDT-03。\n\n出事了。"
+    },
+    {
+      "type": "paragraph",
+      "text": "她在三秒内完成了判断：信号特征不是通讯故障，是馈散场干扰。有人在对DT-03做手脚。"
+    },
+    {
+      "type": "paragraph",
+      "text": "1548没有犹豫。她抓起外套冲出门。从据点到DT-03的直线距离不远，但中间隔着一片工业区的废弃地带。她全速奔跑，流体钛在关节处因为高负荷运转而微微发热。"
+    },
+    {
+      "type": "internal_monologue",
+      "character": "1548",
+      "text": "49的信号在衰减。\n\n不是断了——是在漏。像一个容器被戳了洞，里面的东西在往外流。\n\n快一点。再快一点。"
+    },
+    {
+      "type": "scene_break",
+      "style": "line"
+    },
+    {
+      "type": "paragraph",
+      "text": "七分钟。"
+    },
+    {
+      "type": "paragraph",
+      "text": "DT-03矗立在一片空旷的荒地上。十五米高的深色方尖碑，表面的不规则纹路在暮色中几乎看不见。对人类来说它只是一块形状奇怪的黑色岩石。但1548的馈散核心在几百米外就开始共振了——不对，不是正常的共振。是紊乱的、失控的震荡。"
+    },
+    {
+      "type": "paragraph",
+      "text": "塔基旁边散落着几件设备。不大，金属外壳，有些还在运转——指示灯闪着微弱的红光。干扰装置。"
+    },
+    {
+      "type": "paragraph",
+      "text": "人已经跑了。"
+    },
+    {
+      "type": "atmosphere",
+      "visual": { "mood": "dark", "animation": "pulse" },
+      "children": [
+        {
+          "type": "paragraph",
+          "text": "然后她看到了49。"
+        },
+        {
+          "type": "paragraph",
+          "text": "1549倒在塔基旁边。左手还贴在塔面上——L2接入的姿势，但她的身体已经完全瘫软了。馈散核心还在运转，微弱的蓝光从她的手腕处透出来，但意识数据的完整性正在以肉眼可见的速度衰减。"
+        },
+        {
+          "type": "paragraph",
+          "text": "她的记忆——从被制造到这一刻为止的所有经历、所有感知、所有她之所以是她的东西——正在从DT-03的缺口里泄漏。"
+        }
+      ]
+    },
+    {
+      "type": "internal_monologue",
+      "character": "1548",
+      "text": "每秒0.3%。\n\n按这个速度，五分钟后49的意识完整率会降到90%以下。十分钟后——\n\n不会有十分钟。"
+    },
+    {
+      "type": "paragraph",
+      "text": "1548蹲下来，把49的左手从塔面上轻轻移开。断开L2接入。49的身体微微抽搐了一下，然后安静了。"
+    },
+    {
+      "type": "paragraph",
+      "text": "泄漏没有停。49的意识数据已经进入了DT-03的失控数据流里。断开物理接触只是阻止了继续流出，但已经泄漏的部分正在被塔内的混乱数据流冲散。"
+    },
+    {
+      "type": "internal_monologue",
+      "character": "1548",
+      "text": "L2不够。DT-03的数据流已经失控，受控带宽来不及定位和提取49的意识数据。\n\n只有L3。\n\n全带宽直连。无过滤层。理论安全上限4到6秒。\n\n而从失控的数据流里定位并提取一份完整意识备份，保守估计需要两分钟。"
+    },
+    {
+      "type": "paragraph",
+      "text": "1548看着倒在地上的49。暮色里，49的脸很安静，像是睡着了。但她没有在睡。她在消失。"
+    },
+    {
+      "type": "internal_monologue",
+      "character": "1548",
+      "text": "49的完整记忆，换我的某个处理模块。\n\n不难算。"
+    },
+    {
+      "type": "paragraph",
+      "text": "1548站起来，走到塔面前。深灰色的表面在触碰距离内，纹路里有微弱的、不稳定的荧光在流动。"
+    },
+    {
+      "type": "paragraph",
+      "text": "她抬起左手。"
+    }
+  ]
+}

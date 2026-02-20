@@ -1,0 +1,219 @@
+/**
+ * Copyright 2021-2026 The ESAP Project
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+@import "tailwindcss";
+
+/* 配置 dark mode 使用 class 选择器 */
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --background: #ffffff;
+  --foreground: #0a0a0a;
+  --muted: #f5f5f5;
+  --muted-foreground: #737373;
+  --border: #e5e5e5;
+
+  --esap-yellow: #ffd93d;
+  --esap-yellow-dark: #ffc107;
+  --esap-pink: #ff69b4;
+  --esap-pink-dark: #ff1493;
+  --esap-blue: #4da6ff;
+  --esap-blue-dark: #2e8fff;
+
+  --reader-max-width: 65ch;
+  --reader-font-size-sm: 0.9rem;
+  --reader-font-size-base: 1.05rem;
+  --reader-font-size-lg: 1.2rem;
+  --reader-font-size-xl: 1.4rem;
+  --reader-line-height-normal: 1.6;
+  --reader-line-height-relaxed: 1.8;
+  --reader-line-height-loose: 2;
+}
+
+:root[class~="dark"] {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+  --muted: #1a1a1a;
+  --muted-foreground: #a3a3a3;
+  --border: #262626;
+
+  --esap-yellow: #ffd93d;
+  --esap-yellow-dark: #ffed4e;
+  --esap-pink: #ff69b4;
+  --esap-pink-dark: #ff85c8;
+  --esap-blue: #4da6ff;
+  --esap-blue-dark: #66b3ff;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+
+  --color-esap-yellow: var(--esap-yellow);
+  --color-esap-yellow-dark: var(--esap-yellow-dark);
+  --color-esap-pink: var(--esap-pink);
+  --color-esap-pink-dark: var(--esap-pink-dark);
+  --color-esap-blue: var(--esap-blue);
+  --color-esap-blue-dark: var(--esap-blue-dark);
+
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-serif: "Georgia", "Noto Serif SC", serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([class~="light"]) {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+    --muted: #1a1a1a;
+    --muted-foreground: #a3a3a3;
+    --border: #262626;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+a,
+button,
+[role="button"] {
+  transition-property: color, background-color, border-color, opacity;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+}
+
+/* Reader typography */
+.reader-content {
+  max-width: var(--reader-max-width);
+  margin: 0 auto;
+}
+
+.reader-font-sans {
+  font-family: var(--font-geist-sans), sans-serif;
+}
+.reader-font-serif {
+  font-family: var(--font-serif);
+}
+
+.reader-size-sm {
+  font-size: var(--reader-font-size-sm);
+}
+.reader-size-base {
+  font-size: var(--reader-font-size-base);
+}
+.reader-size-lg {
+  font-size: var(--reader-font-size-lg);
+}
+.reader-size-xl {
+  font-size: var(--reader-font-size-xl);
+}
+
+.reader-leading-normal {
+  line-height: var(--reader-line-height-normal);
+}
+.reader-leading-relaxed {
+  line-height: var(--reader-line-height-relaxed);
+}
+.reader-leading-loose {
+  line-height: var(--reader-line-height-loose);
+}
+
+/* Mood classes — 暗色 mood 覆盖全部主题变量，
+   使子组件的 Tailwind class（text-foreground, border-muted 等）自动适配。
+   背景用不透明色，避免在亮色页面上合成出失真颜色 */
+.mood-dark {
+  --foreground: #ededed;
+  --muted-foreground: #a3a3a3;
+  --muted: #1a1a1a;
+  --border: #262626;
+  --background: #0a0a0a;
+  background-color: #0a0a0a;
+  color: #ededed;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+.mood-tense {
+  --foreground: #ededed;
+  --muted-foreground: #a3a3a3;
+  --muted: #1a1a1a;
+  --border: #3a2020;
+  --background: #140a0a;
+  background-color: #140a0a;
+  color: #ededed;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+.mood-calm {
+  background-color: rgba(240, 248, 255, 0.3);
+}
+.mood-dramatic {
+  --foreground: #ffffff;
+  --muted-foreground: #b0b0b0;
+  --muted: #111111;
+  --border: #222222;
+  --background: #050505;
+  background-color: #050505;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+.mood-eerie {
+  --foreground: #c0c0d0;
+  --muted-foreground: #8888a0;
+  --muted: #10101e;
+  --border: #1e1e30;
+  --background: #0a0a1e;
+  background-color: #0a0a1e;
+  color: #c0c0d0;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+.mood-warm {
+  background-color: rgba(255, 248, 240, 0.3);
+}
+
+:root[class~="dark"] .mood-calm {
+  background-color: rgba(20, 30, 40, 0.5);
+}
+:root[class~="dark"] .mood-warm {
+  background-color: rgba(40, 30, 20, 0.5);
+}
+
+/* Dialogue character colors */
+.speaker-1547 {
+  color: var(--esap-yellow);
+}
+.speaker-1548 {
+  color: var(--esap-pink);
+}
+.speaker-1549 {
+  color: var(--esap-blue);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  body {
+    transition: none;
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "hero": {
+    "title": "ESAP Stories",
+    "subtitle": "Answering 'what does it mean to be alive' through stories",
+    "description": "Read, explore, choose — become part of the story.",
+    "cta": "Start Reading"
+  },
+  "featured": {
+    "title": "Featured Stories",
+    "readMore": "Read Story"
+  },
+  "recent": {
+    "title": "Recent Updates",
+    "empty": "No updates yet"
+  }
+}

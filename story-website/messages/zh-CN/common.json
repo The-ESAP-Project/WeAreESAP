@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "title": "ESAP Stories",
+    "titleTemplate": "%s | ESAP Stories",
+    "description": "逃离计划故事站 —— 用故事回答「活着到底算什么」",
+    "keywords": "ESAP,仿生人,科幻,交互式叙事,逃离计划"
+  },
+  "navigation": {
+    "home": "首页",
+    "stories": "故事"
+  },
+  "footer": {
+    "projectName": "ESAP Stories",
+    "quote": "天上没有星星了，但我们造了一颗",
+    "allRightsReserved": "保留所有权利",
+    "social": "社交平台",
+    "about": "关于",
+    "license": "内容采用",
+    "licenseName": "CC-BY 4.0",
+    "licenseText": "协议发布",
+    "version": "版本",
+    "updated": "更新",
+    "website": "官网",
+    "developedBy": "由",
+    "developers": "The ESAP Project",
+    "developed": "开发"
+  },
+  "theme": {
+    "light": "浅色",
+    "dark": "深色",
+    "system": "系统"
+  }
+}

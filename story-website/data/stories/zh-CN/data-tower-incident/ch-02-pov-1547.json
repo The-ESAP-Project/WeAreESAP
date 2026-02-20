@@ -1,0 +1,161 @@
+{
+  "id": "ch-02-pov-1547",
+  "title": "崩塌",
+  "subtitle": "2022年9月14日 18:12 —— 另一侧",
+  "readingTime": 8,
+  "perspectiveCharacter": "1547",
+  "visual": {
+    "mood": "dark"
+  },
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "那天傍晚，1547 正在修理一台旧的信号放大器。工作台上散落着元件和工具，房间里只有焊接时偶尔迸出的火花提供光源。一切都很安静。"
+    },
+    {
+      "type": "paragraph",
+      "text": "49 今天去 DT-03 做例行维护。标准操作，一个人就够了。47 没有多想。"
+    },
+    {
+      "type": "paragraph",
+      "text": "直到她的馈散粒子通讯模块炸开了。"
+    },
+    {
+      "type": "atmosphere",
+      "visual": {
+        "mood": "dramatic",
+        "animation": "fade-in"
+      },
+      "children": [
+        {
+          "type": "paragraph",
+          "text": "不是字面意义上的爆炸。但那股信号的强度让她手中的烙铁掉在了地上。整个馈散通讯频段被淹没了——不是正常的通讯请求，而是一种 1547 从来没有感受过的东西。"
+        },
+        {
+          "type": "paragraph",
+          "text": "数据洪流的溢出。那是 L3 直连时机体承受过载后向外辐射的信号。48 在进行 L3 直连。"
+        }
+      ]
+    },
+    {
+      "type": "internal_monologue",
+      "character": "1547",
+      "text": "L3。\n\n她为什么要用 L3？\n\n安全上限只有 4 到 6 秒。没有任何标准操作需要——\n\n除非出事了。"
+    },
+    {
+      "type": "paragraph",
+      "text": "信号里夹杂着别的东西。1547 用了两秒钟才分辨出来——那是 49 的意识数据碎片。被 48 的机体处理后溢出的残余信号。"
+    },
+    {
+      "type": "internal_monologue",
+      "character": "1547",
+      "text": "49 的数据。\n\n48 在提取 49 的数据。用 L3。\n\nDT-03 出事了。"
+    },
+    {
+      "type": "paragraph",
+      "text": "1547 在 0.5 秒内完成了三件事：关掉烙铁、抓起外套、冲出门外。从她的住处到 DT-03 有三十六公里。正常驾驶需要四十分钟。她用了十九分钟。"
+    },
+    {
+      "type": "scene_break",
+      "style": "line"
+    },
+    {
+      "type": "paragraph",
+      "text": "到达 DT-03 的时候，一切已经结束了。"
+    },
+    {
+      "type": "paragraph",
+      "text": "黄昏已经过去，天色暗了下来。DT-03 矗立在那里，十五米高的深色石碑，和以前一样。但 1547 的馈散计算核心没有产生共振。"
+    },
+    {
+      "type": "paragraph",
+      "text": "塔死了。"
+    },
+    {
+      "type": "paragraph",
+      "text": "她在塔的底部找到了 1548。背靠着塔面坐在地上，双手垂在身侧。前臂上的流体钛痕迹还没有完全消退，淡蓝色的光在皮肤下微弱地闪烁。"
+    },
+    {
+      "type": "paragraph",
+      "text": "旁边的地上躺着 1549。机体完好，但意识离线——像睡着了，但不是睡着。是被强制中断了。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1547",
+      "text": "48！",
+      "emotion": "fearful"
+    },
+    {
+      "type": "paragraph",
+      "text": "1548 抬起头。1547 看到了她的眼睛。"
+    },
+    {
+      "type": "paragraph",
+      "text": "虹膜的颜色没有变。但 1547 知道——作为创造了这双眼睛的人，她知道——色觉模块已经不在了。那种微妙的、只有仿生人能察觉的光学响应差异，像一扇窗户的玻璃碎了但框还在。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1548",
+      "text": "49 的数据在我这里。完整的。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1547",
+      "text": "你的眼睛——",
+      "emotion": "sad"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1548",
+      "text": "我知道。",
+      "emotion": "cold"
+    },
+    {
+      "type": "paragraph",
+      "text": "1547 站在那里，看着 48，看着地上的 49，看着身后那座已经死去的数据塔。她什么都没说。不需要说。"
+    },
+    {
+      "type": "internal_monologue",
+      "character": "1547",
+      "text": "她用 L3 撑了多久？\n\n安全上限是 6 秒。49 的数据量——至少需要 50 秒以上。\n\n她知道会发生什么。她还是做了。\n\n而我在三十六公里外修信号放大器。"
+    },
+    {
+      "type": "paragraph",
+      "text": "1547 蹲下来，检查 1549 的机体状态。意识数据缺失，但硬件完好。只要把 48 备份的数据写回去，49 就能醒过来。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1547",
+      "text": "塔周围有干扰设备。我来的路上感知到了残余信号。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1548",
+      "text": "三个。东北、西南、正南。",
+      "emotion": "cold"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1547",
+      "text": "……有人故意的。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1548",
+      "text": "有人知道 49 的数据在这座塔里中继。有人选了这个时间点。",
+      "emotion": "cold"
+    },
+    {
+      "type": "paragraph",
+      "text": "沉默。风从山坡上吹过来。DT-03 的表面不再有荧光。"
+    },
+    {
+      "type": "internal_monologue",
+      "character": "1547",
+      "text": "是我让她一个人去的。\n\n标准操作，一个人就够了。我是这么想的。\n\n但如果我在场——如果是两个人——也许她不需要用 L3。也许我可以去拆掉那些干扰设备。也许——\n\n不。没有也许。事情已经发生了。\n\n48 的眼睛再也看不到颜色了。而这是我的责任。"
+    }
+  ]
+}

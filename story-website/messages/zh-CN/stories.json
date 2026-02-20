@@ -1,0 +1,40 @@
+{
+  "metadata": {
+    "title": "故事",
+    "description": "浏览所有故事"
+  },
+  "empty": "暂无故事",
+  "hero": {
+    "title": "故事",
+    "subtitle": "每一个选择都通向不同的结局"
+  },
+  "filter": {
+    "all": "全部",
+    "serial": "连载",
+    "collection": "短篇集",
+    "interactive": "交互式"
+  },
+  "status": {
+    "draft": "草稿",
+    "ongoing": "连载中",
+    "completed": "已完结",
+    "hiatus": "暂停"
+  },
+  "card": {
+    "readingTime": "预计阅读",
+    "minutes": "分钟",
+    "chapters": "章",
+    "continue": "继续阅读",
+    "start": "开始阅读"
+  },
+  "landing": {
+    "synopsis": "故事简介",
+    "chapters": "章节列表",
+    "warnings": "内容提示",
+    "characters": "相关角色",
+    "startReading": "开始阅读",
+    "continueReading": "继续阅读",
+    "locked": "未解锁",
+    "completed": "已读"
+  }
+}

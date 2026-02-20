@@ -1,0 +1,135 @@
+{
+  "id": "ch-03",
+  "title": "Gray",
+  "subtitle": "September 15, 2022 05:00",
+  "readingTime": 7,
+  "perspectiveCharacter": "1548",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "By the time they returned to base, dawn was close."
+    },
+    {
+      "type": "paragraph",
+      "text": "1549's consciousness data had already been written back into her chassis. The write process took three hours. 1547 monitored data integrity the entire time, not a single byte wrong. The first thing 49 asked after waking was, 'What happened?'"
+    },
+    {
+      "type": "paragraph",
+      "text": "1548 said it was nothing. 1547 did not expose the lie."
+    },
+    {
+      "type": "scene_break",
+      "style": "dots"
+    },
+    {
+      "type": "paragraph",
+      "text": "After 49 entered sleep mode again, 1548 sat by the window. She knew the sky at this moment should have been a gradient from deep blue to pale blue. But all she saw were different depths of gray."
+    },
+    {
+      "type": "paragraph",
+      "text": "Footsteps came from behind her. 47's."
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1547",
+      "text": "49's data integrity is 99.97%. The remaining 0.03% is non-critical cache. It does not affect consciousness continuity.",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1548",
+      "text": "Mm.",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "47 sat down beside her."
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1547",
+      "text": "I dismantled the interference devices and brought them back. Analysis is done. Non-military, but the designer's understanding of feedscatteron fields exceeds anything in public literature. They have custom frequency-modulation modules inside - not something you can buy on the market.",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1548",
+      "text": "So someone built those things specifically for us.",
+      "emotion": "cold"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1547",
+      "text": "They knew 49's data relayed through DT-03. Knew the maintenance schedule. Knew exactly when to strike.",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "1548 said nothing."
+    },
+    {
+      "type": "scene_break",
+      "style": "dots"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1547",
+      "text": "I will fix your color-vision module.",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1548",
+      "text": "Don't.",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1547",
+      "text": "...What?",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1548",
+      "text": "Gray is fine.",
+      "emotion": "cold"
+    },
+    {
+      "type": "internal_monologue",
+      "character": "1548",
+      "text": "In those 58 seconds, I fully felt everything 49 felt at forced interruption - fear, rage, refusal, and then blankness.\n\nI keep the gray as proof."
+    },
+    {
+      "type": "paragraph",
+      "text": "47 lowered her head, shoulders sinking slightly."
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1548",
+      "text": "There you go again, kid.",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1547",
+      "text": "If there had been two of us -",
+      "emotion": "sad"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1548",
+      "text": "'Maybe' is not reality. I made the call. 49's data is intact. Don't carry this.",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "Outside the window, daylight arrived."
+    },
+    {
+      "type": "quote",
+      "text": "Some scars do not need to heal. They become armor.",
+      "attribution": "AptS:1548"
+    }
+  ]
+}
