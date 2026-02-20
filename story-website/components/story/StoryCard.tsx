@@ -15,6 +15,7 @@
 
 import Image from "next/image";
 import { useTranslations } from "next-intl";
+import { FormatBadge, StatusBadge } from "@/components/story/StoryBadge";
 import { Link } from "@/i18n/navigation";
 import type { Story } from "@/types/story";
 
@@ -41,12 +42,8 @@ export function StoryCard({ story }: StoryCardProps) {
         )}
         <div className="p-5 flex flex-col flex-1">
           <div className="flex items-center gap-2 mb-3">
-            <span className="text-xs px-2 py-0.5 rounded-full bg-esap-blue/10 text-esap-blue font-medium">
-              {t(`filter.${story.format}`)}
-            </span>
-            <span className="text-xs px-2 py-0.5 rounded-full bg-muted text-muted-foreground">
-              {t(`status.${story.status}`)}
-            </span>
+            <FormatBadge label={t(`filter.${story.format}`)} />
+            <StatusBadge label={t(`status.${story.status}`)} />
             <span className="text-xs text-muted-foreground ml-auto">
               {story.chapterOrder.length} {t("card.chapters")}
             </span>

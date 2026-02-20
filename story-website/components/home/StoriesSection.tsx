@@ -13,6 +13,7 @@
 
 import Image from "next/image";
 import { getTranslations } from "next-intl/server";
+import { FormatBadge, StatusBadge } from "@/components/story/StoryBadge";
 import { Link } from "@/i18n/navigation";
 import type { Story } from "@/types/story";
 
@@ -50,12 +51,8 @@ export async function StoriesSection({ stories }: StoriesSectionProps) {
               )}
               <div className="p-4">
                 <div className="flex items-center gap-2 mb-2">
-                  <span className="text-xs px-2 py-0.5 rounded-full bg-esap-blue/10 text-esap-blue">
-                    {tS(`filter.${story.format}`)}
-                  </span>
-                  <span className="text-xs px-2 py-0.5 rounded-full bg-esap-pink/10 text-esap-pink">
-                    {tS(`status.${story.status}`)}
-                  </span>
+                  <FormatBadge label={tS(`filter.${story.format}`)} />
+                  <StatusBadge label={tS(`status.${story.status}`)} />
                 </div>
                 <h3 className="text-base font-bold text-foreground group-hover:text-esap-blue transition-colors mb-1">
                   {story.title}
