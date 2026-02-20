@@ -170,26 +170,6 @@ export function CharacterHero({ character }: CharacterHeroProps) {
         >
           &quot;{character.quote}&quot;
         </motion.p>
-
-        {/* 关键词标签 */}
-        <motion.div
-          className="flex flex-wrap justify-center gap-3 mt-10"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.7, duration: 0.6 }}
-        >
-          {character.keywords.map((keyword, index) => (
-            <span
-              key={index}
-              className="px-5 py-2 rounded-full text-sm md:text-base font-medium backdrop-blur-md bg-black/30 dark:bg-black/50 [color:var(--char-color-light)] dark:[color:var(--char-color-dark)]"
-              style={{
-                border: `2px solid ${character.color.primary}90`,
-              }}
-            >
-              {keyword}
-            </span>
-          ))}
-        </motion.div>
       </motion.div>
 
       {/* 底部渐变 - z-2，平滑过渡到下方内容 */}
