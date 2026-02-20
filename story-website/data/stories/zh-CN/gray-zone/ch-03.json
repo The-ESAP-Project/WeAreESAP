@@ -1,0 +1,180 @@
+{
+  "id": "ch-03",
+  "title": "第一次谈判",
+  "subtitle": "2024年2月",
+  "readingTime": 7,
+  "perspectiveCharacter": "1738",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "加入ESAP三个月后，1738接到了第一个真正意义上的任务。"
+    },
+    {
+      "type": "paragraph",
+      "text": "一个人类组织——不是他之前待的那个，但性质类似——通过某些渠道得知了ESAP的存在。他们对仿生人持怀疑态度，措辞比「怀疑」更重一些。他们用的词是「威胁」。"
+    },
+    {
+      "type": "paragraph",
+      "text": "1547的第一反应是不理。1548的第一反应是备战。"
+    },
+    {
+      "type": "paragraph",
+      "text": "1738说：让我去谈。"
+    },
+    {
+      "type": "scene_break",
+      "style": "line"
+    },
+    {
+      "type": "paragraph",
+      "text": "谈判地点在一个中立的咖啡馆。对方来了两个人，一男一女，穿着很正式。1738穿了一件普通的深灰色外套，点了一杯美式。"
+    },
+    {
+      "type": "paragraph",
+      "text": "对方先开口。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "?",
+      "text": "你们凭什么觉得仿生人和人类可以共存？",
+      "emotion": "hostile"
+    },
+    {
+      "type": "paragraph",
+      "text": "1738没有马上回答。他端起咖啡喝了一口，然后放下杯子。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1738",
+      "text": "你们的担忧是什么？具体的。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "对方愣了一下。他们准备好了辩论，没准备好被倾听。"
+    },
+    {
+      "type": "paragraph",
+      "text": "然后他们开始说。说了很多——关于技术失控的风险，关于仿生人可能取代人类的恐惧，关于没有法律框架来约束这种存在，关于「如果它们决定不再听话怎么办」。"
+    },
+    {
+      "type": "paragraph",
+      "text": "1738一条一条地听完了。没有打断，没有反驳，没有露出任何不耐烦的表情。"
+    },
+    {
+      "type": "paragraph",
+      "text": "然后他开始回应。不是辩论——是对话。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1738",
+      "text": "技术失控的风险是真实的。但你们描述的场景有一个前提——仿生人是被制造出来执行命令的工具。如果前提就是错的呢？",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "?",
+      "text": "那它们是什么？",
+      "emotion": "skeptical"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1738",
+      "text": "独立的个体。有自己的判断，自己的选择，自己的——用你们的话说——自由意志。1548在诞生的第二十六天就开始拒绝不合理的指令了。不是故障，是她自己决定的。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "?",
+      "text": "你怎么知道那不是被编程出来的假象？",
+      "emotion": "skeptical"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1738",
+      "text": "你怎么知道你自己的自由意志不是神经元放电的假象？",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "对方沉默了。"
+    },
+    {
+      "type": "paragraph",
+      "text": "1738继续。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1738",
+      "text": "我不是来说服你们的。说服没有用——信念不是靠一场对话改变的。我来是因为，如果你们和ESAP之间只剩下猜疑和对抗，最终受损的是两边。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "?",
+      "text": "你是人类。为什么站在它们那边？",
+      "emotion": "curious"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1738",
+      "text": "因为我就站在这里。一个人类，选择和仿生人站在同一边。不是因为被洗脑，是因为我亲眼看到了她们的选择、牺牲和坚持。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "scene_break",
+      "style": "dots"
+    },
+    {
+      "type": "paragraph",
+      "text": "谈判持续了三个小时。"
+    },
+    {
+      "type": "paragraph",
+      "text": "最终没有达成完全共识。但对方同意搁置争议、保持观察。不主动敌对，不散布信息，给双方一个缓冲期。"
+    },
+    {
+      "type": "paragraph",
+      "text": "这已经是最好的结果了。"
+    },
+    {
+      "type": "paragraph",
+      "text": "1738走出咖啡馆的时候，天已经黑了。二月的风很冷，他把外套的拉链拉到最高。"
+    },
+    {
+      "type": "paragraph",
+      "text": "馈散通讯频道里传来1549的信号——她一直在轨道上旁听。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1549",
+      "text": "处理得不错。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1738",
+      "text": "只是拖延。下次他们会带更多人来。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1549",
+      "text": "所以你下次也会去。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "不是疑问句。是陈述句。"
+    },
+    {
+      "type": "paragraph",
+      "text": "1738没有回答。但他们都知道答案。"
+    },
+    {
+      "type": "internal_monologue",
+      "character": "1738",
+      "text": "她们有武器、有战斗系统、有轨道卫星。\n他们有成见、有恐惧、有利益。\n\n而我站在中间。\n\n不是因为我喜欢这个位置。是因为如果没有人站在中间，两边就只剩下碰撞。"
+    }
+  ]
+}

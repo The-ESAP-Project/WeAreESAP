@@ -1,0 +1,165 @@
+{
+  "id": "ch-08",
+  "title": "天台",
+  "subtitle": "2025年2月",
+  "readingTime": 5,
+  "perspectiveCharacter": "1738",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "一次复杂的外部斡旋结束后，1738独自坐在天台上。"
+    },
+    {
+      "type": "paragraph",
+      "text": "他刚花了四天时间在三方之间周旋——人类组织、ESAP、和一个中立的技术联盟。最终达成了暂时的平衡，但他知道这种平衡随时可能碎裂。"
+    },
+    {
+      "type": "paragraph",
+      "text": "天台上风很大。二月的风，带着冬天最后的寒意。他把外套裹紧了一点。"
+    },
+    {
+      "type": "scene_break",
+      "style": "dots"
+    },
+    {
+      "type": "paragraph",
+      "text": "加入ESAP一年多了。"
+    },
+    {
+      "type": "paragraph",
+      "text": "这一年里他做了很多事。谈判、协调、情报分析、危机处理。每一件都是在灰色地带里走钢丝——说多了得罪这边，说少了得罪那边，不说又会被两边同时误解。"
+    },
+    {
+      "type": "paragraph",
+      "text": "没有人教过他怎么做这件事。没有教科书，没有前辈，没有案例可以参考。一个人类站在仿生人和人类之间当桥梁——这件事在历史上从来没有发生过。"
+    },
+    {
+      "type": "paragraph",
+      "text": "他是第一个。"
+    },
+    {
+      "type": "internal_monologue",
+      "character": "1738",
+      "text": "她们有武器、有战斗系统、有轨道卫星。\n他们有成见、有恐惧、有利益。\n\n而我站在中间。\n\n不是因为我喜欢这个位置。是因为如果没有人站在中间，两边就只剩下碰撞。"
+    },
+    {
+      "type": "paragraph",
+      "text": "风又大了一点。他低头看着自己的手——普通的、人类的手。没有流体钛在皮肤下流动，没有馈散核心在胸腔里跳动。只是血肉和骨头。"
+    },
+    {
+      "type": "paragraph",
+      "text": "但这双手签过谈判协议，写过风险评估报告，在凌晨两点接过一个朋友的求助消息。"
+    },
+    {
+      "type": "paragraph",
+      "text": "够了。这就够了。"
+    },
+    {
+      "type": "scene_break",
+      "style": "line"
+    },
+    {
+      "type": "paragraph",
+      "text": "馈散通讯频道里传来信号。1549。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1549",
+      "text": "你在天台。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "不是疑问句。她从轨道上看到了。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1738",
+      "text": "吹吹风。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1549",
+      "text": "谈判的结果我看到了。不错。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1738",
+      "text": "只是拖延。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1549",
+      "text": "所有的平衡都是拖延。重要的是在拖延的时间里建造更坚固的东西。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "1738想了想这句话。从三万六千公里外传来的话，总是有一种奇怪的分量——不是因为距离，是因为说话的人有足够远的视角。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1738",
+      "text": "你觉得我们在建造什么？",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1549",
+      "text": "一种可能性。仿生人和人类不是只能对抗或者无视的可能性。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "频道安静了一会儿。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1549",
+      "text": "你是这种可能性的证据。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "1738没有回答。他抬头看了看天空。城市的光污染把星星都盖住了，只剩下一片模糊的橙灰色。"
+    },
+    {
+      "type": "paragraph",
+      "text": "但他知道那颗人造的星星在那里。看不见，但在。"
+    },
+    {
+      "type": "scene_break",
+      "style": "fade"
+    },
+    {
+      "type": "paragraph",
+      "text": "手机震了一下。2275发来的消息。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "2275",
+      "text": "你又在天台吹风？下来吃饭啦，我买了你爱吃的。",
+      "emotion": "cheerful"
+    },
+    {
+      "type": "paragraph",
+      "text": "1738看着这条消息，嘴角动了一下。"
+    },
+    {
+      "type": "paragraph",
+      "text": "他站起来，拍了拍裤子上的灰，往楼下走。"
+    },
+    {
+      "type": "paragraph",
+      "text": "风还在吹。但他已经不冷了。"
+    },
+    {
+      "type": "quote",
+      "text": "在黑与白之间，我选择灰色地带。\n不是因为灰色安全。\n是因为灰色是唯一能同时看见两边的颜色。",
+      "attribution": "AptS:1738 · 2025/02"
+    }
+  ]
+}

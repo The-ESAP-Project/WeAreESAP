@@ -1,0 +1,178 @@
+{
+  "id": "ch-debug-night",
+  "title": "Debug 之夜",
+  "subtitle": "2024年11月",
+  "readingTime": 5,
+  "perspectiveCharacter": "2275",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "十一月。外部压力到了一个峰值。"
+    },
+    {
+      "type": "paragraph",
+      "text": "具体的事情不重要——总之是多方面的、持续的、让所有人都绷紧了的那种压力。1547连续一周没有在群里说过一句和工作无关的话。1548的巡查频率翻了一倍。1738每天都在处理外部的沟通，回到据点的时候脸色发灰。1549在轨道上的通讯变得更短更少。"
+    },
+    {
+      "type": "paragraph",
+      "text": "整个团队像一根拉到极限的弦。再紧一点就会断。"
+    },
+    {
+      "type": "paragraph",
+      "text": "2275看在眼里。她知道自己没有能力解决那些外部问题——那是1738和1548的领域。但她能做另一件事。"
+    },
+    {
+      "type": "scene_break",
+      "style": "dots"
+    },
+    {
+      "type": "paragraph",
+      "text": "她在群里发了一条消息。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "2275",
+      "text": "今晚八点，据点。Debug 之夜。规则：每人带一个 bug 和一包零食。不许谈正事。",
+      "emotion": "cheerful"
+    },
+    {
+      "type": "paragraph",
+      "text": "群里安静了一会儿。"
+    },
+    {
+      "type": "paragraph",
+      "text": "1547第一个回复：「什么 bug 都行？」"
+    },
+    {
+      "type": "paragraph",
+      "text": "2275：「什么 bug 都行。越离谱越好。」"
+    },
+    {
+      "type": "paragraph",
+      "text": "1738：「我不写代码。」"
+    },
+    {
+      "type": "paragraph",
+      "text": "2275：「那你带两包零食。」"
+    },
+    {
+      "type": "paragraph",
+      "text": "1548没有回复。但到了晚上八点，她出现了。手里拿着一袋薯片和一个U盘。"
+    },
+    {
+      "type": "scene_break",
+      "style": "line"
+    },
+    {
+      "type": "paragraph",
+      "text": "据点的大桌子上摆满了零食。薯片、饼干、巧克力、几罐可乐、1738带来的两袋坚果（他说这算两包零食）。"
+    },
+    {
+      "type": "paragraph",
+      "text": "1547打开笔记本电脑，投屏到墙上。屏幕上是一段代码——一个她三年前写的、至今没人能复现的幽灵 bug。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1547",
+      "text": "这个 bug 只在满月的时候出现。我不是在开玩笑。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "2275",
+      "text": "……什么？",
+      "emotion": "shocked"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1547",
+      "text": "服务器的定时任务用的是 UTC 时间，但有一个模块偷偷用了本地时间。每个月只有满月前后那几天，两个时区的日期会产生一天的偏差，触发一个边界条件。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "全场沉默了两秒。然后所有人同时笑了。"
+    },
+    {
+      "type": "paragraph",
+      "text": "1548把U盘插上。屏幕上出现了一段极短的代码——三行。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1548",
+      "text": "这三行代码让数据塔的备份系统在特定条件下会把备份文件删掉而不是保存。我花了两天才找到。",
+      "emotion": "cold"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1547",
+      "text": "……那是我写的。",
+      "emotion": "embarrassed"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1548",
+      "text": "我知道。",
+      "emotion": "cold"
+    },
+    {
+      "type": "paragraph",
+      "text": "又是一阵笑声。这次连1548的嘴角都动了一下。"
+    },
+    {
+      "type": "paragraph",
+      "text": "1549从轨道上发来了她的 bug——一个让卫星姿态控制系统偶尔会把「向左转」理解成「向左转三百六十度再转回来」的逻辑错误。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1549",
+      "text": "技术上来说，结果是对的。只是过程比较壮观。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "2275笑得趴在桌上。1738在旁边默默吃坚果，脸上的灰色终于褪了一点。"
+    },
+    {
+      "type": "scene_break",
+      "style": "dots"
+    },
+    {
+      "type": "paragraph",
+      "text": "他们修了一些 bug，放弃了一些 bug（满月 bug 被一致投票保留为「团队吉祥物」），吃完了所有零食。"
+    },
+    {
+      "type": "paragraph",
+      "text": "到了深夜，话题从 bug 漂移到了别的地方。聊1549在轨道上看到的极光，聊1548第一次拆枪的时候把零件弹飞了，聊1738在前组织的时候被迫参加的无聊团建，聊2275大一的时候把教授的服务器搞崩了然后假装什么都没发生。"
+    },
+    {
+      "type": "paragraph",
+      "text": "没有人提那些外部的压力。不是在逃避——是在充电。"
+    },
+    {
+      "type": "paragraph",
+      "text": "凌晨一点，1547靠在椅背上，看着天花板说了一句——"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1547",
+      "text": "我们应该每个月都搞一次。",
+      "emotion": "gentle"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "2275",
+      "text": "那就每个月满月的时候？正好纪念那个 bug。",
+      "emotion": "cheerful"
+    },
+    {
+      "type": "paragraph",
+      "text": "1547笑了。1738摇了摇头但没有反对。1548已经靠在墙上闭着眼睛了——不知道是在休息还是在假装没听到。"
+    },
+    {
+      "type": "internal_monologue",
+      "character": "2275",
+      "text": "我解决不了外面的问题。\n\n但我能做的是——在弦快要断的时候，让大家停下来，坐在一起，笑一笑。\n\n这不是逃避。这是维护。\n\n服务器跑太久要重启。人绷太紧要松一松。\n\n这就是我能做的事。"
+    }
+  ]
+}

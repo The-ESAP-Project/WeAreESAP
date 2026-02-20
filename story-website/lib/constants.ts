@@ -39,6 +39,8 @@ export const CHARACTER_COLORS: Record<
   "1547": { primary: "#ffd93d", dark: "#ffc107" },
   "1548": { primary: "#ff69b4", dark: "#ff1493" },
   "1549": { primary: "#4da6ff", dark: "#2e8fff" },
+  "1738": { primary: "#585858", dark: "#3a3a3a" },
+  "2275": { primary: "#7fcdbb", dark: "#5bb5a0" },
 };
 
 export const ROUTES = {

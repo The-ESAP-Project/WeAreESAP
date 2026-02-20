@@ -22,5 +22,17 @@
     "publishedAt": "2026-02-20T00:00:00Z",
     "updatedAt": "2026-02-20T00:00:00Z",
     "tags": ["data-tower", "1548", "core-event", "trust"]
+  },
+  {
+    "slug": "gray-zone",
+    "format": "serial",
+    "status": "completed",
+    "coverImage": "/assets/images/stories/data-tower-incident/cover.webp",
+    "authors": ["1738"],
+    "relatedCharacters": ["1738", "2275", "1547", "1548", "1549"],
+    "order": 2,
+    "publishedAt": "2026-02-21T00:00:00Z",
+    "updatedAt": "2026-02-21T00:00:00Z",
+    "tags": ["1738", "2275", "bridge", "negotiation", "trust"]
   }
 ]

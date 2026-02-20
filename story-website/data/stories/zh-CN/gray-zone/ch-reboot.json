@@ -1,0 +1,154 @@
+{
+  "id": "ch-reboot",
+  "title": "服务器可以重启，你也可以",
+  "subtitle": "2024年9月",
+  "readingTime": 5,
+  "perspectiveCharacter": "2275",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "2275第一次见到1547抑郁发作，是在一个很普通的下午。"
+    },
+    {
+      "type": "paragraph",
+      "text": "没有任何征兆。上午1547还在群里讨论新系统的架构设计，中午还回复了2275关于服务器迁移的问题。然后下午三点，她突然从所有频道消失了。"
+    },
+    {
+      "type": "paragraph",
+      "text": "2275一开始没在意——1547经常突然消失去做实验。但到了傍晚，1548在群里发了一句话——"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1548",
+      "text": "47又来了。谁有空去看一眼。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "「又来了」。这三个字让2275意识到，这不是第一次。"
+    },
+    {
+      "type": "scene_break",
+      "style": "dots"
+    },
+    {
+      "type": "paragraph",
+      "text": "2275找到1547的时候，她坐在据点的角落里。灯没开，窗帘拉着，只有笔记本电脑屏幕的微光照在她脸上。屏幕上是一个空白的代码编辑器——光标在闪，但什么都没写。"
+    },
+    {
+      "type": "paragraph",
+      "text": "2275在门口站了一会儿。她不确定该怎么做——1738没有教过她这个，角色文档里也没有写「当你的仿生人队友抑郁发作时应该怎么办」。"
+    },
+    {
+      "type": "paragraph",
+      "text": "但她的直觉告诉她一件事：不要试图修复。只要在。"
+    },
+    {
+      "type": "paragraph",
+      "text": "她走进去，在1547旁边坐下来。没有说话。就那样坐着。"
+    },
+    {
+      "type": "paragraph",
+      "text": "过了很久。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1547",
+      "text": "你不用在这里。",
+      "emotion": "tired"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "2275",
+      "text": "嗯，我知道。",
+      "emotion": "gentle"
+    },
+    {
+      "type": "paragraph",
+      "text": "又过了很久。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1547",
+      "text": "我不知道为什么会这样。明明什么都没发生。",
+      "emotion": "weak"
+    },
+    {
+      "type": "paragraph",
+      "text": "2275想了想。然后她说了一句话——不是提前准备好的，是从某个她自己都不知道的地方冒出来的。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "2275",
+      "text": "你看，服务器崩溃了可以重启。人也一样。关机休息，然后重新启动，一切都还在。",
+      "emotion": "gentle"
+    },
+    {
+      "type": "paragraph",
+      "text": "1547看着她。红蓝异瞳在黑暗里微微发光。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1547",
+      "text": "……你在用服务器比喻安慰我？",
+      "emotion": "weak"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "2275",
+      "text": "因为你听得懂这个比喻呀。",
+      "emotion": "gentle"
+    },
+    {
+      "type": "paragraph",
+      "text": "1547沉默了一会儿。然后她笑了。很小声的，几乎听不到的笑。但是是笑了。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1547",
+      "text": "那我现在算什么？蓝屏？",
+      "emotion": "weak"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "2275",
+      "text": "顶多算内存泄漏。重启一下就好了。",
+      "emotion": "cheerful"
+    },
+    {
+      "type": "paragraph",
+      "text": "1547又笑了。这次稍微大声了一点。"
+    },
+    {
+      "type": "paragraph",
+      "text": "2275没有继续说什么。她只是安静地坐在那里，陪着。窗外的天色从傍晚变成了夜晚，房间里越来越暗，但两个人都没有去开灯。"
+    },
+    {
+      "type": "scene_break",
+      "style": "fade"
+    },
+    {
+      "type": "paragraph",
+      "text": "后来1547告诉1548，2275用服务器重启来安慰她。"
+    },
+    {
+      "type": "paragraph",
+      "text": "1548的反应是——"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1548",
+      "text": "……至少比你上次自己安慰自己的方式强。",
+      "emotion": "cold"
+    },
+    {
+      "type": "paragraph",
+      "text": "1547没有反驳。因为1548说的是事实。"
+    },
+    {
+      "type": "internal_monologue",
+      "character": "2275",
+      "text": "后来我才知道，1547记住了那句话。\n\n不是因为它有多深刻——说实话，用服务器比喻安慰人挺傻的。\n\n但在那个下午，在那个黑暗的房间里，有一个人用她听得懂的语言说了一句话。\n\n服务器可以重启。\n\n人也可以。"
+    }
+  ]
+}

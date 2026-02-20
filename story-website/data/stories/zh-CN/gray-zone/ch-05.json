@@ -1,0 +1,177 @@
+{
+  "id": "ch-05",
+  "title": "服务器可以重启",
+  "subtitle": "2024年6月 — 8月",
+  "readingTime": 7,
+  "perspectiveCharacter": "2275",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "暑假前，林宸瑶正式加入ESAP，成为AptS:2275。"
+    },
+    {
+      "type": "paragraph",
+      "text": "第一天，1547给她开了服务器的root权限。2275看着终端里的系统信息，倒吸了一口气——不是因为配置差，是因为这台服务器的uptime显示它已经连续运行了四百多天没有重启过。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "2275",
+      "text": "四百多天？！你们就没人维护吗？",
+      "emotion": "shocked"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1547",
+      "text": "……一直在跑就没管了。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "2275深呼吸了一下。然后她打开了htop，看着满屏的僵尸进程和内存泄漏，用一种很平静的语气说——"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "2275",
+      "text": "好的。我来了。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "scene_break",
+      "style": "line"
+    },
+    {
+      "type": "paragraph",
+      "text": "头两个月，2275做的事情不复杂但很多——清理日志、修补漏洞、优化配置、写监控脚本。她把服务器当成一个生病的人来照顾：先稳住生命体征，再慢慢调理。"
+    },
+    {
+      "type": "paragraph",
+      "text": "同时她也在适应这个团队。"
+    },
+    {
+      "type": "paragraph",
+      "text": "1547会在群里发一些她完全看不懂的馈散粒子公式，然后问「有人能帮我验算一下吗」。1548偶尔冒出来说一句毒舌的话然后消失。1549每隔几天从轨道上发一段很短的文字，像诗，又像日志。"
+    },
+    {
+      "type": "paragraph",
+      "text": "2275觉得这些人很奇怪。但是是好的那种奇怪。"
+    },
+    {
+      "type": "scene_break",
+      "style": "dots"
+    },
+    {
+      "type": "atmosphere",
+      "visual": { "mood": "dramatic", "animation": "pulse" },
+      "children": [
+        {
+          "type": "paragraph",
+          "text": "八月的某个凌晨两点，监控脚本疯狂报警。"
+        },
+        {
+          "type": "paragraph",
+          "text": "DDoS。大规模的、持续的、有组织的分布式拒绝服务攻击。流量从几十个IP同时涌入，每秒数万次请求，服务器的带宽在三分钟内被打满。"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "2275从床上弹起来的时候还没完全清醒。她摸到笔记本电脑，打开终端，手指开始自动运行——这是肌肉记忆，不需要大脑完全上线。"
+    },
+    {
+      "type": "paragraph",
+      "text": "先切流量到备用节点。然后分析攻击模式。然后写过滤规则。然后——"
+    },
+    {
+      "type": "paragraph",
+      "text": "攻击换了模式。"
+    },
+    {
+      "type": "paragraph",
+      "text": "不是简单的流量洪泛。对方在针对性地攻击数据库接口，试图通过慢速请求耗尽连接池。2275刚堵住一个口，另一个口就被撕开。"
+    },
+    {
+      "type": "internal_monologue",
+      "character": "2275",
+      "text": "这不是脚本小子。这是有人在盯着我的防御，实时调整攻击策略。\n\n好吧。那就比谁更快。"
+    },
+    {
+      "type": "paragraph",
+      "text": "她在群里发了一条消息：「服务器被打了，我在处理，大家先别慌。」"
+    },
+    {
+      "type": "paragraph",
+      "text": "然后她关掉了群聊窗口，全部注意力投入终端。"
+    },
+    {
+      "type": "paragraph",
+      "text": "凌晨两点到四点，攻防交替了七轮。2275的眼睛开始发酸，手指在键盘上的速度没有降，但准确率在下降——她打错了两次命令，不得不回退重来。"
+    },
+    {
+      "type": "paragraph",
+      "text": "四点十五分，她找到了攻击的核心节点。不是靠技术——是靠直觉。攻击流量的时间间隔里有一个微妙的规律，像是某个人在手动触发每一轮攻击。她顺着那个规律反向追踪，锁定了控制服务器的IP。"
+    },
+    {
+      "type": "paragraph",
+      "text": "四点二十三分。她把那个IP加入黑洞路由，同时把所有被污染的数据库连接全部断开重建。"
+    },
+    {
+      "type": "paragraph",
+      "text": "攻击停了。"
+    },
+    {
+      "type": "paragraph",
+      "text": "服务器的负载从99%开始往下掉。CPU温度在降。连接数在恢复正常。"
+    },
+    {
+      "type": "paragraph",
+      "text": "2275靠在椅背上，盯着监控面板看了五分钟，确认没有第二波。然后她在群里发了一条消息——"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "2275",
+      "text": "服务器活过来了，大家可以安心睡了。",
+      "emotion": "tired"
+    },
+    {
+      "type": "paragraph",
+      "text": "发完这条消息之后，她把笔记本电脑合上，头往椅背上一靠，就睡着了。"
+    },
+    {
+      "type": "scene_break",
+      "style": "fade"
+    },
+    {
+      "type": "paragraph",
+      "text": "第二天中午醒来的时候，脖子僵得转不动。群里有几条未读消息。"
+    },
+    {
+      "type": "paragraph",
+      "text": "1547发的：「辛苦了。」"
+    },
+    {
+      "type": "paragraph",
+      "text": "1549发的：「轨道上看到攻击流量的地理分布了。下次我提前预警。」"
+    },
+    {
+      "type": "paragraph",
+      "text": "1548发的：「……」"
+    },
+    {
+      "type": "paragraph",
+      "text": "三个点。没有别的。2275看着那三个点，笑了一下。"
+    },
+    {
+      "type": "paragraph",
+      "text": "1738发的：「我就说她会是个好伙伴。」"
+    },
+    {
+      "type": "paragraph",
+      "text": "2275笑了一下，揉了揉僵硬的脖子。然后她打开笔记本电脑，开始写这次攻击的复盘报告。"
+    },
+    {
+      "type": "internal_monologue",
+      "character": "2275",
+      "text": "服务器不能宕机。\n\n希望也不能。"
+    }
+  ]
+}

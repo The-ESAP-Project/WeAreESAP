@@ -1,0 +1,171 @@
+{
+  "id": "ch-06",
+  "title": "热茶",
+  "subtitle": "2024年9月",
+  "readingTime": 5,
+  "perspectiveCharacter": "2275",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "九月的一个傍晚，2275在据点的厨房里烧水。"
+    },
+    {
+      "type": "paragraph",
+      "text": "不是为自己——她刚喝过奶茶。是因为她路过走廊的时候，听到了一个声音。"
+    },
+    {
+      "type": "paragraph",
+      "text": "不是很大的声音。是金属撞击桌面的声音，然后是沉默。那种很用力地把什么东西放下、然后强迫自己不再动的沉默。"
+    },
+    {
+      "type": "paragraph",
+      "text": "2275探头看了一眼。"
+    },
+    {
+      "type": "paragraph",
+      "text": "1548坐在房间里。蝴蝶刀插在桌面上，刀刃还在微微震动。她的手撑在桌沿，指节发白。"
+    },
+    {
+      "type": "paragraph",
+      "text": "2275认得这种状态。不是愤怒——愤怒会有动作，会有声音。这是愤怒之后的东西。是某种记忆被触发了，然后整个人被钉在原地。"
+    },
+    {
+      "type": "internal_monologue",
+      "character": "2275",
+      "text": "数据塔事故。\n\n今天是九月。两年前的九月，DT-03。\n\n她失去色觉的那天。"
+    },
+    {
+      "type": "paragraph",
+      "text": "2275没有进去。她转身去了厨房，烧了一壶水，泡了一杯茶。不是什么好茶——据点里只有最普通的绿茶包。但水是热的。"
+    },
+    {
+      "type": "paragraph",
+      "text": "她端着茶走到门口，轻轻敲了一下门框。"
+    },
+    {
+      "type": "paragraph",
+      "text": "1548抬头看她。眼神很冷。不是针对2275的冷——是那种把所有东西都冻住才能不让自己碎掉的冷。"
+    },
+    {
+      "type": "paragraph",
+      "text": "2275把茶放在桌上。离蝴蝶刀远一点的位置。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "2275",
+      "text": "人的情绪系统也需要冷却。喝口热的，降降温。",
+      "emotion": "gentle"
+    },
+    {
+      "type": "paragraph",
+      "text": "1548看着她。然后看着那杯茶。"
+    },
+    {
+      "type": "paragraph",
+      "text": "2275没有多说。没有问「你还好吗」，没有说「我理解你的感受」，没有试图安慰或修复什么。她只是把茶放在那里，然后靠在门框上，安静地待着。"
+    },
+    {
+      "type": "paragraph",
+      "text": "过了很久。"
+    },
+    {
+      "type": "paragraph",
+      "text": "1548伸手拿起了茶杯。"
+    },
+    {
+      "type": "paragraph",
+      "text": "她喝了一口。茶不好喝——绿茶包泡太久了，有点苦。但是热的。"
+    },
+    {
+      "type": "paragraph",
+      "text": "2275看着她喝茶，没有说话。窗外的天色在变暗，九月的傍晚来得比夏天早。"
+    },
+    {
+      "type": "paragraph",
+      "text": "1548放下茶杯。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1548",
+      "text": "你不怕我？",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "2275",
+      "text": "怕什么呀？",
+      "emotion": "gentle"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1548",
+      "text": "我不信任人类。你知道的。",
+      "emotion": "cold"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "2275",
+      "text": "嗯，我知道呀。",
+      "emotion": "gentle"
+    },
+    {
+      "type": "paragraph",
+      "text": "2275笑了一下。很小的笑。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "2275",
+      "text": "但茶不分人类和仿生人嘛。热的就是热的。",
+      "emotion": "gentle"
+    },
+    {
+      "type": "paragraph",
+      "text": "1548没有回答。但她把茶喝完了。"
+    },
+    {
+      "type": "paragraph",
+      "text": "2275收走空杯子的时候，1548说了一句——"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1548",
+      "text": "下次泡久一点。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "2275愣了一下。然后她笑了——那种很亮的笑。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "2275",
+      "text": "好呀。",
+      "emotion": "cheerful"
+    },
+    {
+      "type": "scene_break",
+      "style": "fade"
+    },
+    {
+      "type": "internal_monologue",
+      "character": "2275",
+      "text": "1738后来问我那天发生了什么。我说没什么，就是泡了杯茶。\n\n他看了我一眼，没再问了。\n\n我觉得他懂。有些事情不需要做很多。只需要在对的时候，把对的东西放在对的位置。\n\n一杯热茶。就够了。"
+    },
+    {
+      "type": "paragraph",
+      "text": "后来2275注意到一件事：1548在她面前说话的频率变高了。不是变得友好——1548对谁都不算友好。但她开始在2275经过的时候，偶尔说一句什么。"
+    },
+    {
+      "type": "paragraph",
+      "text": "比如「今天的服务器日志有个异常，你看一下」。"
+    },
+    {
+      "type": "paragraph",
+      "text": "比如「厨房里的茶包快没了」。"
+    },
+    {
+      "type": "paragraph",
+      "text": "1548就是这么奇怪。"
+    }
+  ]
+}

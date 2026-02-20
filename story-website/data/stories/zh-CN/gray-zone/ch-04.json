@@ -1,0 +1,134 @@
+{
+  "id": "ch-04",
+  "title": "她会是个好伙伴",
+  "subtitle": "2024年4月",
+  "readingTime": 5,
+  "perspectiveCharacter": "1738",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "1738在ESAP待了五个月之后，开始意识到一件事。"
+    },
+    {
+      "type": "paragraph",
+      "text": "这个团队缺一种东西。不是技术——1547的技术能力足以支撑整个项目。不是战斗力——1548一个人就是一支小队。不是视野——1549在三万六千公里外看得比谁都远。"
+    },
+    {
+      "type": "paragraph",
+      "text": "缺的是温度。"
+    },
+    {
+      "type": "paragraph",
+      "text": "1547会在凌晨三点还在写代码，然后在第二天中午因为没吃早饭而头晕。1548会在巡查回来之后一个人擦枪，不和任何人说话。1549在轨道上，物理距离本身就是一种隔绝。"
+    },
+    {
+      "type": "paragraph",
+      "text": "1738自己也不是那种会主动关心别人情绪的人。他能分析局势，能协调矛盾，能在谈判桌上保持冷静——但「你今天看起来不太开心，要不要聊聊」这种话，他说不出口。"
+    },
+    {
+      "type": "paragraph",
+      "text": "然后他想到了一个人。"
+    },
+    {
+      "type": "scene_break",
+      "style": "line"
+    },
+    {
+      "type": "paragraph",
+      "text": "林宸瑶。大学同学。计算机专业。"
+    },
+    {
+      "type": "paragraph",
+      "text": "他们不算特别亲近，但1738观察过她——不是刻意的，是调停者的本能。她在班里是那种所有人都愿意找她聊天的人。不是因为她有多聪明或多有趣，而是因为她会听。真的听。不是等你说完然后给建议，而是让你觉得你说的每一句话都被接住了。"
+    },
+    {
+      "type": "paragraph",
+      "text": "而且她技术不差。Linux运维玩得很溜，服务器出问题的时候比大多数人都冷静。"
+    },
+    {
+      "type": "internal_monologue",
+      "character": "1738",
+      "text": "ESAP需要的不是另一个战士，也不是另一个天才。\n\n需要的是一个能让这些人停下来喘口气的人。\n\n而且——她自己也需要一个值得投入的地方。我看得出来，她在学校里过得不算差，但也不算真正活着。"
+    },
+    {
+      "type": "paragraph",
+      "text": "四月的某天，1738约她吃了顿饭。"
+    },
+    {
+      "type": "paragraph",
+      "text": "没有铺垫，没有试探。他直接说了。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1738",
+      "text": "我加入了一个项目。成员里有仿生人。他们需要技术支持，也需要——怎么说呢——一个能让大家好好活着的人。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "林宸瑶放下筷子，看着他。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "2275",
+      "text": "仿生人？真的假的？",
+      "emotion": "surprised"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1738",
+      "text": "真的。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "2275",
+      "text": "……酷。",
+      "emotion": "curious"
+    },
+    {
+      "type": "paragraph",
+      "text": "1738等着她问更多问题。但她没有。她只是想了一会儿，然后说——"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "2275",
+      "text": "服务器是什么配置？",
+      "emotion": "curious"
+    },
+    {
+      "type": "paragraph",
+      "text": "1738笑了。很轻的，几乎看不出来的笑。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1738",
+      "text": "她会是个好伙伴。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "这句话他是对自己说的。但林宸瑶听到了，歪了歪头——"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "2275",
+      "text": "你在夸我吗？",
+      "emotion": "cheerful"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1738",
+      "text": "陈述事实。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "林宸瑶笑了。那种很亮的笑。"
+    },
+    {
+      "type": "paragraph",
+      "text": "1738看着她的笑，默默的在心里，确认了一件事。"
+    }
+  ]
+}

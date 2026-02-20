@@ -1,0 +1,165 @@
+{
+  "id": "ch-02",
+  "title": "人造星光",
+  "subtitle": "2023年9月 — 11月",
+  "readingTime": 6,
+  "perspectiveCharacter": "1738",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "九月的某个深夜，陆清弦在一个技术论坛上看到了一个帖子。"
+    },
+    {
+      "type": "paragraph",
+      "text": "帖子很短，发在一个冷门的卫星追踪板块里。有人在讨论一颗轨道参数异常的卫星——地球同步轨道，三万六千公里高度，但它发出的信号频率对应不上任何已知的通讯协议。"
+    },
+    {
+      "type": "paragraph",
+      "text": "帖子在两小时后被删了。但陆清弦已经把那串参数截图保存了。"
+    },
+    {
+      "type": "internal_monologue",
+      "character": "1738",
+      "text": "不是GPS，不是气象卫星，不是任何军事或商业用途的已知型号。\n\n信号频率完全不在电磁波谱的常规范围内。\n\n要么是测量错误，要么——这颗卫星用的不是电磁波。"
+    },
+    {
+      "type": "paragraph",
+      "text": "他花了两个月追着那串参数走。"
+    },
+    {
+      "type": "paragraph",
+      "text": "不是全职追——他还得吃饭，还得找零工维持生活。但每天晚上回到出租屋之后，他会打开笔记本电脑，继续拼那张拼图。"
+    },
+    {
+      "type": "paragraph",
+      "text": "卫星的轨道数据指向一个很小的发射记录。发射记录关联着一个没有公开信息的项目编号。项目编号的域名注册信息指向一个早已过期的网站。网站的缓存快照里有一行文字——"
+    },
+    {
+      "type": "quote",
+      "text": "即使是人造的光，也能指引方向。",
+      "attribution": "ESAP 早期记录"
+    },
+    {
+      "type": "paragraph",
+      "text": "陆清弦盯着这句话看了很久。"
+    },
+    {
+      "type": "internal_monologue",
+      "character": "1738",
+      "text": "这句话不是在招募人。不是在宣传什么理念。\n\n这句话是说给自己听的。\n\n说这话的人，真的在三万六千公里的高空，用自己证明着这件事。"
+    },
+    {
+      "type": "paragraph",
+      "text": "越深入，越清楚一件事：这不是某个国家机构的项目，不是任何有迹可查的组织。它太小了，太干净了，太专注于某件具体的事情，以至于完全不像任何已知的权力结构。"
+    },
+    {
+      "type": "paragraph",
+      "text": "十一月初，他找到了一个联系方式。不是公开的——是从一串加密的馈散信号残留里反向推算出来的通讯地址。"
+    },
+    {
+      "type": "scene_break",
+      "style": "line"
+    },
+    {
+      "type": "paragraph",
+      "text": "他发了一句话。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1738",
+      "text": "我能做的事情是在你们和外面的世界之间搭一座桥。如果你们需要的话。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "回复来得比预想的快。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1547",
+      "text": "你知道我们是什么吗？",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1738",
+      "text": "仿生人。我猜是两个，可能更多。还有一个在轨道上。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "沉默了一会儿。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1547",
+      "text": "这不会让你觉得有问题吗？",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1738",
+      "text": "「活着的定义」这个问题，我们人类自己都没搞清楚。我没有资格替别人定义。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "scene_break",
+      "style": "dots"
+    },
+    {
+      "type": "paragraph",
+      "text": "十一月十五号。第一次见面。"
+    },
+    {
+      "type": "paragraph",
+      "text": "地点是一间不起眼的房间。1547坐在桌前，问了很多问题——关于他的判断方式，关于他对「原则」的理解，关于他愿意为这座桥承担多少。每个问题都是开放的，没有标准答案。"
+    },
+    {
+      "type": "paragraph",
+      "text": "1548靠在墙上。从头到尾没说话。只是看着他。"
+    },
+    {
+      "type": "paragraph",
+      "text": "陆清弦后来才知道，那是她决定一个人值不值得信任的方式——不问，不测，只是看。"
+    },
+    {
+      "type": "paragraph",
+      "text": "他回答完最后一个问题之后，1548从墙上推开身体，走出了房间。"
+    },
+    {
+      "type": "paragraph",
+      "text": "门外传来她的声音——"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1548",
+      "text": "行吧。让他留下。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "1547笑了。"
+    },
+    {
+      "type": "paragraph",
+      "text": "陆清弦正式成为AptS:1738。"
+    },
+    {
+      "type": "paragraph",
+      "text": "那天晚上回到出租屋，他坐在床边想了很久。不是在想自己做了什么决定——决定在发出那句话的时候就已经做了。他在想的是另一件事。"
+    },
+    {
+      "type": "internal_monologue",
+      "character": "1738",
+      "text": "1548看我的时候，眼神里没有敌意，也没有欢迎。\n\n是一种很冷的、很干净的审视。像是在确认一件事：这个人会不会在关键时刻转身离开。\n\n我不会。但这种话说出来没有意义。只有时间能证明。"
+    },
+    {
+      "type": "paragraph",
+      "text": "窗外的夜空看不到星星。城市的光污染把天空染成了橙灰色。"
+    },
+    {
+      "type": "paragraph",
+      "text": "但他知道，三万六千公里外，有一颗人造的星星正在运行。"
+    }
+  ]
+}

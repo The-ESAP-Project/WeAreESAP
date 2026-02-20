@@ -1,0 +1,156 @@
+{
+  "id": "ch-sky-ground",
+  "title": "天地协同",
+  "subtitle": "2024年8月",
+  "readingTime": 5,
+  "perspectiveCharacter": "1738",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "DDoS事件之后，1549主动联系了1738。"
+    },
+    {
+      "type": "paragraph",
+      "text": "不是通过群聊——是馈散通讯的私人频道。1738作为人类无法直接接收馈散信号，但1547给他做了一个转译终端，把馈散通讯的内容实时转成文字显示在一个加密的终端窗口里。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1549",
+      "text": "DDoS的攻击源IP分布，我从轨道上看到了地理热力图。集中在三个区域。和上次谈判的那个组织的活动范围高度重合。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1738",
+      "text": "我也在查。地面这边能拿到的信息是——攻击用的僵尸网络是租的，付款走的加密货币，但中间有一笔转账的时间戳和那个组织内部一次会议的时间完全吻合。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1549",
+      "text": "巧合的概率？",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1738",
+      "text": "低于2%。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "频道安静了三秒。然后1549发来了一张图——从三万六千公里高度拍摄的地面热力图，上面标注了三个区域的精确坐标和信号活动时间线。"
+    },
+    {
+      "type": "paragraph",
+      "text": "1738看着那张图，把它和自己手里的地面情报叠在一起。两张拼图咬合得严丝合缝。"
+    },
+    {
+      "type": "internal_monologue",
+      "character": "1738",
+      "text": "她在天上看全局，我在地面看细节。\n\n她能看到信号的地理分布，我能看到信号背后的人际关系。\n\n不需要谁指挥谁。只需要把各自看到的东西放在一起。"
+    },
+    {
+      "type": "scene_break",
+      "style": "line"
+    },
+    {
+      "type": "paragraph",
+      "text": "接下来的两周，他们建立了一套固定的情报交换流程。"
+    },
+    {
+      "type": "paragraph",
+      "text": "每天晚上十点，1549把当天的轨道观测数据发下来——信号异常、可疑的通讯活动、地面设施的变化。1738把地面收集到的信息整理好发上去——人际动态、组织动向、公开信息里的蛛丝马迹。"
+    },
+    {
+      "type": "paragraph",
+      "text": "不需要开会，不需要讨论。两个人各自做各自的分析，然后把结论放在一起比对。大多数时候结论一致。偶尔不一致的时候，他们会各自说明理由，然后取交集。"
+    },
+    {
+      "type": "paragraph",
+      "text": "1547看到这套流程之后说了一句——"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1547",
+      "text": "你们两个什么时候变得这么默契的？",
+      "emotion": "surprised"
+    },
+    {
+      "type": "paragraph",
+      "text": "1738想了想。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1738",
+      "text": "大概是因为我们都习惯先观察再行动。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "1549从轨道上补了一句——"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1549",
+      "text": "而且我们都不喜欢说废话。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "1738嘴角动了一下。这大概是他和1549之间最接近「开玩笑」的时刻了。"
+    },
+    {
+      "type": "scene_break",
+      "style": "fade"
+    },
+    {
+      "type": "paragraph",
+      "text": "八月底的某个深夜，1738在整理情报的时候收到了1549的一条消息。不是情报——是一句话。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1549",
+      "text": "1738。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1738",
+      "text": "嗯？",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1549",
+      "text": "三角形加一条边，不一定变成四边形。也可以变成两个三角形。更稳定。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "1738看着这句话，想了一会儿。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1738",
+      "text": "数学不错。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1549",
+      "text": "48可说我数学不行。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1738",
+      "text": "她说谁数学都不行。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "频道安静了。两个人各自在各自的位置上，继续做各自的事。"
+    }
+  ]
+}

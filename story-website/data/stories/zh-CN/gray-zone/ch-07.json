@@ -1,0 +1,204 @@
+{
+  "id": "ch-07",
+  "title": "缓冲区溢出",
+  "subtitle": "2024年10月",
+  "readingTime": 6,
+  "perspectiveCharacter": "2275",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "期中考试周和ESAP的紧急项目撞在了一起。"
+    },
+    {
+      "type": "paragraph",
+      "text": "白天上课、复习、写作业。晚上维护服务器、处理告警、写部署脚本。凌晨两点合上笔记本电脑，六点闹钟响，继续。"
+    },
+    {
+      "type": "paragraph",
+      "text": "2275觉得自己还撑得住。她一直觉得自己撑得住——这是她的默认设定。别人崩溃的时候她在旁边递纸巾，别人焦虑的时候她说「没关系的，我陪着你」。她是那个永远在线的人，永远有余量的人。"
+    },
+    {
+      "type": "paragraph",
+      "text": "直到余量用完了。"
+    },
+    {
+      "type": "scene_break",
+      "style": "dots"
+    },
+    {
+      "type": "paragraph",
+      "text": "十月的某个深夜。"
+    },
+    {
+      "type": "paragraph",
+      "text": "2275坐在宿舍的书桌前，面前是数据结构的期中复习资料和一个还没写完的监控脚本。两个窗口并排开着，她的眼睛在两边来回移动，但什么都看不进去。"
+    },
+    {
+      "type": "paragraph",
+      "text": "字在跳。不是屏幕的问题——是她的眼睛在跳。太累了。"
+    },
+    {
+      "type": "paragraph",
+      "text": "她揉了揉眼睛，试图继续。但手指放在键盘上的时候，突然什么都打不出来了。"
+    },
+    {
+      "type": "paragraph",
+      "text": "不是不知道打什么。是手指不动了。像是某个信号在大脑和手指之间断开了。"
+    },
+    {
+      "type": "paragraph",
+      "text": "然后眼泪掉下来了。"
+    },
+    {
+      "type": "paragraph",
+      "text": "没有原因。没有具体的触发点。不是因为考试，不是因为服务器，不是因为任何一件具体的事。是所有的事加在一起，终于超过了她能承载的总量。"
+    },
+    {
+      "type": "atmosphere",
+      "visual": { "mood": "dark", "animation": "fade-in" },
+      "children": [
+        {
+          "type": "paragraph",
+          "text": "她趴在桌上哭了。很安静的哭——宿舍里还有室友在睡觉，她把脸埋在手臂里，肩膀一抖一抖的，但没有发出声音。"
+        },
+        {
+          "type": "paragraph",
+          "text": "治愈者也会坏掉。太阳也会熄灭。服务器跑太久不重启，也会崩溃。"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "她拿起手机，给1738发了一条消息。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "2275",
+      "text": "我的缓冲区满了。我也需要被重启一下。",
+      "emotion": "weak"
+    },
+    {
+      "type": "scene_break",
+      "style": "line"
+    },
+    {
+      "type": "paragraph",
+      "text": "1738的回复在三十秒内到了。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1738",
+      "text": "在哪？",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "2275",
+      "text": "宿舍。",
+      "emotion": "weak"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1738",
+      "text": "出来走走？还是线上聊？",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "2275",
+      "text": "线上吧。出去怕吵到室友。",
+      "emotion": "weak"
+    },
+    {
+      "type": "paragraph",
+      "text": "然后他们聊了。"
+    },
+    {
+      "type": "paragraph",
+      "text": "不是那种有结构的、有目的的对话。是那种深夜里两个人各自靠在各自的椅子上，断断续续地说话的聊天。"
+    },
+    {
+      "type": "paragraph",
+      "text": "2275说了很多。说考试的压力，说服务器的告警，说她觉得自己应该能撑住但其实撑不住，说她害怕让别人失望，说她不知道为什么自己可以安慰所有人但没有人来安慰她——"
+    },
+    {
+      "type": "paragraph",
+      "text": "说到最后一句的时候她停住了。因为她意识到这不是事实。"
+    },
+    {
+      "type": "paragraph",
+      "text": "1738就在这里。凌晨两点，他在这里。"
+    },
+    {
+      "type": "paragraph",
+      "text": "1738没有说「你已经很努力了」。没有说「一切都会好的」。他说的是——"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1738",
+      "text": "你不需要一直是那个治愈别人的人。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "停了一下。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1738",
+      "text": "考试的事情，能过就行，不用拿高分。服务器的事情，明天我帮你分担一部分。你今晚什么都不用做。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "2275的眼泪又掉下来了。但这次不一样。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "2275",
+      "text": "……谢谢你。",
+      "emotion": "quiet"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1738",
+      "text": "不用谢。你之前也是这样对别人的。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "他们聊到天亮。后半段已经不是在聊压力了——聊了一些乱七八糟的东西，聊服务器的奇怪bug，聊1548今天又说了什么毒舌的话，聊1549从轨道上发回来的照片里地球的颜色。"
+    },
+    {
+      "type": "paragraph",
+      "text": "天亮的时候，2275的眼睛肿了，但心里的那个东西松开了。"
+    },
+    {
+      "type": "scene_break",
+      "style": "fade"
+    },
+    {
+      "type": "paragraph",
+      "text": "第二天，2275在群里发了一条消息。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "2275",
+      "text": "今天的我需要被治愈一下呢。",
+      "emotion": "gentle"
+    },
+    {
+      "type": "paragraph",
+      "text": "1547回了一个「辛苦了」。1549发了一张地球的照片，配文「送你一颗蓝色弹珠」。1548发了三个点。"
+    },
+    {
+      "type": "paragraph",
+      "text": "2275看着那三个点，笑了。"
+    },
+    {
+      "type": "internal_monologue",
+      "character": "2275",
+      "text": "治愈者也需要被治愈。\n\n这不是软弱。这是——系统维护。\n\n定期重启，清理缓存，释放内存。然后重新上线。\n\n我还在。"
+    }
+  ]
+}
