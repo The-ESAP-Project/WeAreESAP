@@ -1,0 +1,44 @@
+{
+  "metadata": {
+    "title": "ESAP Stories",
+    "titleTemplate": "%s | ESAP Stories",
+    "description": "ESAP Stories - 物語で「生きるとは何か」に答える",
+    "keywords": [
+      "ESAP",
+      "アンドロイド",
+      "SF",
+      "インタラクティブ・ナラティブ",
+      "逃離計画"
+    ]
+  },
+  "navigation": {
+    "home": "ホーム",
+    "stories": "ストーリー"
+  },
+  "footer": {
+    "projectName": "ESAP Stories",
+    "quote": "空に星がなかったから、私たちは一つ作った",
+    "allRightsReserved": "著作権所有",
+    "social": "ソーシャル",
+    "about": "このプロジェクトについて",
+    "license": "コンテンツは",
+    "licenseName": "CC-BY 4.0",
+    "licenseText": "ライセンスで公開",
+    "version": "バージョン",
+    "updated": "更新日",
+    "website": "公式サイト",
+    "links": "リンク",
+    "developedBy": "",
+    "developers": "The ESAP Project",
+    "developed": "により開発"
+  },
+  "mobileMenu": {
+    "theme": "テーマ",
+    "language": "言語"
+  },
+  "theme": {
+    "light": "ライト",
+    "dark": "ダーク",
+    "system": "システム"
+  }
+}

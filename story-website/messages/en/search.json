@@ -1,0 +1,7 @@
+{
+  "placeholder": "Search stories...",
+  "button": "Search",
+  "shortcut": "⌘K",
+  "hint": "Type to search stories",
+  "noResults": "No stories found"
+}

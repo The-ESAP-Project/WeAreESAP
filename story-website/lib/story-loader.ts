@@ -24,6 +24,10 @@ import type {
 import { loadJsonFile, loadJsonFileDirect } from "./data-loader";
 import { logger } from "./logger";
 
+function getFallbackLocale(locale: string): string {
+  return locale === "ja" ? "en" : "zh-CN";
+}
+
 /** Load the story registry (all stories list) — cached per request */
 export const loadStoryRegistry = cache(
   async (): Promise<StoryRegistryEntry[]> => {
@@ -55,7 +59,12 @@ export const loadStory = unstable_cache(
         slug,
         "meta.json",
       ]),
-      loadJsonFile<StoryInfo>(["data", "stories"], `${slug}/info.json`, locale),
+      loadJsonFile<StoryInfo>(
+        ["data", "stories"],
+        `${slug}/info.json`,
+        locale,
+        getFallbackLocale(locale)
+      ),
     ]);
 
     if (!meta) {
@@ -83,7 +92,8 @@ export const loadChapter = unstable_cache(
     return loadJsonFile<Chapter>(
       ["data", "stories"],
       `${slug}/${chapterId}.json`,
-      locale
+      locale,
+      getFallbackLocale(locale)
     );
   },
   ["chapter"],
@@ -99,6 +109,7 @@ export async function loadExplorationScene(
   return loadJsonFile<ExplorationScene>(
     ["data", "stories"],
     `${slug}/${sceneId}.json`,
-    locale
+    locale,
+    getFallbackLocale(locale)
   );
 }

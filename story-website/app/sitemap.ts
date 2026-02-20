@@ -18,7 +18,7 @@ import type { StoryMeta } from "@/types/story";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://story.esaps.net";
 
-const LOCALES = ["zh-CN", "en"] as const;
+const LOCALES = ["zh-CN", "en", "ja"] as const;
 const DEFAULT_LOCALE = "zh-CN";
 
 function localizedUrl(urlPath: string, locale: string): string {

@@ -14,23 +14,27 @@
 import "@/app/globals.css";
 import { getLocale } from "next-intl/server";
 
+const supportedLocales = ["zh-CN", "en", "ja"] as const;
+type SupportedLocale = (typeof supportedLocales)[number];
+
 export default async function NotFound() {
-  let locale = "zh-CN";
+  let locale: SupportedLocale = "zh-CN";
   try {
-    locale = await getLocale();
+    const detected = await getLocale();
+    if (supportedLocales.includes(detected as SupportedLocale)) {
+      locale = detected as SupportedLocale;
+    }
   } catch {}
 
-  const messages =
-    locale === "en"
-      ? (await import("@/messages/en/notFound.json")).default
-      : (await import("@/messages/zh-CN/notFound.json")).default;
+  const messages = (await import(`@/messages/${locale}/notFound.json`)).default;
+  const homePath = locale === "zh-CN" ? "/" : `/${locale}`;
 
   return (
     <html lang={locale} suppressHydrationWarning>
       <body className="bg-background text-foreground min-h-screen flex flex-col items-center justify-center px-4 text-center">
         <h1 className="text-6xl font-bold mb-4">404</h1>
         <p className="text-muted-foreground mb-8">{messages.description}</p>
-        <a href="/" className="text-esap-blue hover:underline">
+        <a href={homePath} className="text-esap-blue hover:underline">
           {messages.backHome}
         </a>
       </body>

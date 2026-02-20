@@ -11,10 +11,14 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-import { defineRouting } from "next-intl/routing";
+export type SearchResultType = "story";
 
-export const routing = defineRouting({
-  locales: ["zh-CN", "en", "ja"],
-  defaultLocale: "zh-CN",
-  localePrefix: "as-needed",
-});
+export interface SearchItem {
+  id: string;
+  type: SearchResultType;
+  title: string;
+  subtitle?: string;
+  description: string;
+  url: string;
+  keywords?: string[];
+}

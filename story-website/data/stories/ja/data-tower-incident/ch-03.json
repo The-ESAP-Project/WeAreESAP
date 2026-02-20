@@ -1,0 +1,135 @@
+{
+  "id": "ch-03",
+  "title": "灰色",
+  "subtitle": "2022年9月15日 05:00",
+  "readingTime": 7,
+  "perspectiveCharacter": "1548",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "拠点へ戻った頃には、もう夜明けが近かった。"
+    },
+    {
+      "type": "paragraph",
+      "text": "1549の意識データはすでに機体へ書き戻されていた。書き込み処理には3時間。1547は全工程で完全性を監視し、1バイトの欠落も許さなかった。目覚めた49が最初に聞いたのは「何があったの？」だった。"
+    },
+    {
+      "type": "paragraph",
+      "text": "1548は「何もない」と答えた。1547はその嘘を暴かなかった。"
+    },
+    {
+      "type": "scene_break",
+      "style": "dots"
+    },
+    {
+      "type": "paragraph",
+      "text": "49が再びスリープに入った後、1548は窓辺に座った。いまの空は、本来なら濃い青から薄い青へつながるグラデーションのはずだ。でも彼女に見えるのは、濃淡の違う灰だけ。"
+    },
+    {
+      "type": "paragraph",
+      "text": "背後で足音がした。47の足音。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1547",
+      "text": "49のデータ完全率は99.97%。残り0.03%は非クリティカルなキャッシュ。意識連続性には影響しない。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1548",
+      "text": "ん。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "47は彼女の隣に腰を下ろした。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1547",
+      "text": "干渉装置は全部回収して解析した。軍用品ではない。でも設計者の反饋場理解は公開文献を超えてる。内部にカスタムの周波数変調モジュールが入ってた。市場で買える物じゃない。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1548",
+      "text": "つまり、私たちのためにわざわざ作ったってこと。",
+      "emotion": "cold"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1547",
+      "text": "49のデータがDT-03を中継するって知ってた。保守スケジュールも知ってた。狙う時刻まで。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "1548は何も返さない。"
+    },
+    {
+      "type": "scene_break",
+      "style": "dots"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1547",
+      "text": "君の色覚モジュール、私が直す。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1548",
+      "text": "要らない。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1547",
+      "text": "...え？",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1548",
+      "text": "灰色でいい。",
+      "emotion": "cold"
+    },
+    {
+      "type": "internal_monologue",
+      "character": "1548",
+      "text": "あの58秒で、49が強制中断の瞬間に感じた全部を私は受け取った。恐怖、怒り、拒絶、そして空白。\n\nこの灰色は、受領印として残しておく。"
+    },
+    {
+      "type": "paragraph",
+      "text": "47はうつむき、肩をわずかに落とした。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1548",
+      "text": "またそれか、ガキ。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1547",
+      "text": "もし二人だったら -",
+      "emotion": "sad"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1548",
+      "text": "『もし』は現実じゃない。判断したのは私だ。49のデータは完全。背負うな。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "窓の外で、夜が明けた。"
+    },
+    {
+      "type": "quote",
+      "text": "癒える必要のない傷もある。それは鎧になる。",
+      "attribution": "AptS:1548"
+    }
+  ]
+}

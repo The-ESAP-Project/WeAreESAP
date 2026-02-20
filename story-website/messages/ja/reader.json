@@ -1,0 +1,43 @@
+{
+  "toolbar": {
+    "fontSize": "文字サイズ",
+    "fontFamily": "フォント",
+    "lineHeight": "行間",
+    "atmosphere": "雰囲気エフェクト",
+    "sans": "サンセリフ",
+    "serif": "セリフ"
+  },
+  "navigation": {
+    "prev": "前の章",
+    "next": "次の章",
+    "backToStory": "ストーリーへ戻る",
+    "tableOfContents": "目次"
+  },
+  "progress": {
+    "reading": "読書中",
+    "completed": "読了"
+  },
+  "branch": {
+    "chooseYourPath": "進む道を選ぶ",
+    "chosen": "選択済み",
+    "otherOptions": "ほかの選択肢"
+  },
+  "unlock": {
+    "locked": "このコンテンツはまだ解放されていません",
+    "hint": "前の章を読み進めるか、別の視点に切り替えると解放できます。",
+    "backToPrev": "前の章へ戻る",
+    "unlocked": "新しいコンテンツが解放されました！"
+  },
+  "perspective": {
+    "switchPov": "視点を切り替える",
+    "currentPov": "現在の視点",
+    "locked": "ロック中"
+  },
+  "exploration": {
+    "explore": "探索",
+    "discovered": "発見済み",
+    "items": "件",
+    "of": "/",
+    "back": "読書に戻る"
+  }
+}

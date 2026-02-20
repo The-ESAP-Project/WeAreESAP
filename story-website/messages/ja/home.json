@@ -1,0 +1,23 @@
+{
+  "metadata": {
+    "title": "ESAP Stories",
+    "description": "ESAP Stories - 物語で「生きるとは何か」に答える。読んで、探索して、選んで。物語の一部になろう。"
+  },
+  "hero": {
+    "title": "ESAP Stories",
+    "subtitle": "物語で「生きるとは何か」に答える",
+    "description": "読んで、探索して、選んで。物語の一部になろう。",
+    "cta": "読み始める"
+  },
+  "featured": {
+    "title": "注目のストーリー",
+    "readMore": "読む"
+  },
+  "moreStories": {
+    "title": "もっと見る"
+  },
+  "recent": {
+    "title": "最近の更新",
+    "empty": "まだ更新はありません"
+  }
+}

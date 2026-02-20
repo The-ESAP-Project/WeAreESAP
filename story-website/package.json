@@ -28,6 +28,7 @@
   },
   "dependencies": {
     "@esap/shared-ui": "workspace:*",
+    "fuse.js": "^7.1.0",
     "framer-motion": "12.34.3",
     "next": "16.1.6",
     "next-intl": "^4.8.3",

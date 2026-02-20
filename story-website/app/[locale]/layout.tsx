@@ -22,9 +22,11 @@ import {
 import { Footer } from "@/components/layout/Footer";
 import { Navigation } from "@/components/layout/Navigation";
 import { ScrollToTop } from "@/components/layout/ScrollToTop";
+import { SearchCommand, SearchProvider } from "@/components/search";
 import { ThemeProvider } from "@/components/ui/ThemeProvider";
 import { locales } from "@/i18n/request";
 import { SITE_CONFIG } from "@/lib/constants";
+import { buildSearchIndex } from "@/lib/search-index";
 import "@/app/globals.css";
 
 const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
@@ -79,6 +81,7 @@ export default async function RootLayout({
   const { locale } = await params;
   setRequestLocale(locale);
   const messages = await getMessages();
+  const searchIndex = await buildSearchIndex(locale);
 
   return (
     <html lang={locale} suppressHydrationWarning>
@@ -92,10 +95,13 @@ export default async function RootLayout({
             enableSystem
             disableTransitionOnChange={false}
           >
-            <Navigation />
-            <main className="min-h-screen">{children}</main>
-            <Footer />
-            <ScrollToTop />
+            <SearchProvider searchIndex={searchIndex}>
+              <Navigation />
+              <SearchCommand />
+              <main className="min-h-screen">{children}</main>
+              <Footer />
+              <ScrollToTop />
+            </SearchProvider>
           </ThemeProvider>
         </NextIntlClientProvider>
       </body>

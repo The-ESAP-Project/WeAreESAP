@@ -1,0 +1,40 @@
+{
+  "metadata": {
+    "title": "ストーリー",
+    "description": "すべてのストーリーを見る"
+  },
+  "empty": "まだストーリーがありません",
+  "hero": {
+    "title": "ストーリー",
+    "subtitle": "選択ごとに違う結末へ"
+  },
+  "filter": {
+    "all": "すべて",
+    "serial": "連載",
+    "collection": "短編集",
+    "interactive": "インタラクティブ"
+  },
+  "status": {
+    "draft": "下書き",
+    "ongoing": "連載中",
+    "completed": "完結",
+    "hiatus": "休載"
+  },
+  "card": {
+    "readingTime": "推定読書時間",
+    "minutes": "分",
+    "chapters": "章",
+    "continue": "続きを読む",
+    "start": "読み始める"
+  },
+  "landing": {
+    "synopsis": "あらすじ",
+    "chapters": "チャプター",
+    "warnings": "コンテンツ注意",
+    "characters": "関連キャラクター",
+    "startReading": "読み始める",
+    "continueReading": "続きを読む",
+    "locked": "ロック中",
+    "completed": "読了"
+  }
+}

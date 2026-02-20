@@ -17,15 +17,26 @@ import { LanguageSwitcher, ThemeToggle } from "@esap/shared-ui";
 import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
 import { useLocale, useTranslations } from "next-intl";
+import { useTheme } from "next-themes";
 import { memo, useCallback, useState } from "react";
+import { useSearch } from "@/components/search";
 import { Icon } from "@/components/ui/Icon";
 import { Link, usePathname, useRouter } from "@/i18n/navigation";
 import { locales } from "@/i18n/request";
 import { cn } from "@/lib/utils";
 
+// 桌面端下拉菜单完整名称
 const localeNames: Record<string, string> = {
   "zh-CN": "简体中文",
   en: "English",
+  ja: "日本語",
+};
+
+// 移动端 pill 按钮短名称
+const mobileLocaleNames: Record<string, string> = {
+  "zh-CN": "中",
+  en: "EN",
+  ja: "日",
 };
 
 const navLinks = [{ href: "/stories", key: "stories" }] as const;
@@ -33,10 +44,13 @@ const navLinks = [{ href: "/stories", key: "stories" }] as const;
 export const Navigation = memo(function Navigation() {
   const t = useTranslations("common.navigation");
   const tMobileMenu = useTranslations("common.mobileMenu");
+  const tSearch = useTranslations("search");
   const pathname = usePathname();
   const router = useRouter();
   const locale = useLocale();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const { openSearch } = useSearch();
+  const { resolvedTheme, setTheme } = useTheme();
 
   const closeMobileMenu = useCallback(() => setIsMobileMenuOpen(false), []);
 
@@ -103,8 +117,20 @@ export const Navigation = memo(function Navigation() {
 
           {/* Right controls */}
           <div className="flex items-center gap-1 shrink-0">
-            {/* Desktop: language + theme */}
+            {/* Desktop: search + language + theme */}
             <div className="hidden md:flex items-center gap-1">
+              <button
+                type="button"
+                onClick={openSearch}
+                className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-muted hover:bg-border transition-colors text-sm text-muted-foreground"
+                aria-label={tSearch("button")}
+              >
+                <Icon name="Search" size={16} />
+                <span className="hidden lg:inline">{tSearch("button")}</span>
+                <kbd className="hidden lg:inline-flex px-1.5 py-0.5 text-xs bg-background rounded border border-border">
+                  {tSearch("shortcut")}
+                </kbd>
+              </button>
               <LanguageSwitcher
                 locales={locales}
                 localeNames={localeNames}
@@ -114,8 +140,16 @@ export const Navigation = memo(function Navigation() {
               <ThemeToggle />
             </div>
 
-            {/* Mobile hamburger */}
-            <div className="md:hidden">
+            {/* Mobile: search icon + hamburger */}
+            <div className="md:hidden flex items-center gap-1">
+              <button
+                type="button"
+                onClick={openSearch}
+                className="w-9 h-9 rounded-md bg-muted hover:bg-border transition-colors flex items-center justify-center"
+                aria-label={tSearch("button")}
+              >
+                <Icon name="Search" size={18} />
+              </button>
               <button
                 type="button"
                 onClick={() => setIsMobileMenuOpen((v) => !v)}
@@ -193,25 +227,59 @@ export const Navigation = memo(function Navigation() {
 
                 {/* Settings */}
                 <div className="pt-4 mt-2 space-y-4">
+                  {/* 主题切换 */}
                   <div className="flex items-center justify-between">
                     <span className="text-sm text-muted-foreground">
                       {tMobileMenu("theme")}
                     </span>
-                    <ThemeToggle />
+                    <button
+                      type="button"
+                      onClick={() =>
+                        setTheme(resolvedTheme === "dark" ? "light" : "dark")
+                      }
+                      className="w-10 h-10 rounded-lg bg-muted hover:bg-border transition-colors flex items-center justify-center"
+                      aria-label="切换主题"
+                    >
+                      {resolvedTheme === "dark" ? (
+                        <Icon
+                          name="Sun"
+                          size={18}
+                          className="text-esap-yellow"
+                        />
+                      ) : (
+                        <Icon
+                          name="Moon"
+                          size={18}
+                          className="text-esap-blue"
+                        />
+                      )}
+                    </button>
                   </div>
+
+                  {/* 语言切换 */}
                   <div className="flex items-center justify-between">
                     <span className="text-sm text-muted-foreground">
                       {tMobileMenu("language")}
                     </span>
-                    <LanguageSwitcher
-                      locales={locales}
-                      localeNames={localeNames}
-                      currentLocale={locale}
-                      onLocaleChange={(loc) => {
-                        router.push(pathname, { locale: loc });
-                        closeMobileMenu();
-                      }}
-                    />
+                    <div className="flex gap-1">
+                      {locales.map((loc) => (
+                        <button
+                          key={loc}
+                          type="button"
+                          onClick={() => {
+                            router.push(pathname, { locale: loc });
+                            closeMobileMenu();
+                          }}
+                          className={`px-2.5 py-1.5 text-sm rounded-md transition-colors ${
+                            locale === loc
+                              ? "bg-esap-blue text-white dark:bg-esap-blue/30 font-medium"
+                              : "bg-muted text-muted-foreground hover:bg-border"
+                          }`}
+                        >
+                          {mobileLocaleNames[loc]}
+                        </button>
+                      ))}
+                    </div>
                   </div>
                 </div>
               </div>

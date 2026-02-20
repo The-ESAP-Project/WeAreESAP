@@ -15,7 +15,7 @@ import { hasLocale } from "next-intl";
 import { getRequestConfig } from "next-intl/server";
 import { routing } from "./routing";
 
-export const locales = ["zh-CN", "en"] as const;
+export const locales = ["zh-CN", "en", "ja"] as const;
 export type Locale = (typeof locales)[number];
 export const defaultLocale: Locale = routing.defaultLocale;
 
@@ -33,6 +33,7 @@ export default getRequestConfig(async ({ requestLocale }) => {
       stories: (await import(`@/messages/${locale}/stories.json`)).default,
       reader: (await import(`@/messages/${locale}/reader.json`)).default,
       notFound: (await import(`@/messages/${locale}/notFound.json`)).default,
+      search: (await import(`@/messages/${locale}/search.json`)).default,
     },
   };
 });

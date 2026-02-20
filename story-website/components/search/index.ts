@@ -11,10 +11,6 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-import { defineRouting } from "next-intl/routing";
-
-export const routing = defineRouting({
-  locales: ["zh-CN", "en", "ja"],
-  defaultLocale: "zh-CN",
-  localePrefix: "as-needed",
-});
+export { SearchCommand } from "./SearchCommand";
+export { SearchProvider, useSearch } from "./SearchProvider";
+export { SearchResult } from "./SearchResult";
