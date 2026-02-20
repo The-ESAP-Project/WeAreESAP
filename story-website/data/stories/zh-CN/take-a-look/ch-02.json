@@ -1,0 +1,111 @@
+{
+  "id": "ch-02",
+  "title": "线上",
+  "subtitle": "2024年3月",
+  "readingTime": 4,
+  "perspectiveCharacter": "1543",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "和 1548 的聊天变成了一种固定的节奏。"
+    },
+    {
+      "type": "paragraph",
+      "text": "不是每天都聊。有时候隔两三天，有时候隔一周。但每次聊起来，都是那种不需要暖场的对话——直接进入主题，说完就走，没有多余的寒暄。"
+    },
+    {
+      "type": "paragraph",
+      "text": "沈沐川很少遇到这样的人。大多数人聊天都需要铺垫——「最近怎么样」「吃了吗」「在干嘛」。1548 不需要。她发消息永远是直奔主题，回复永远简短，不用表情包，不用语气词。"
+    },
+    {
+      "type": "paragraph",
+      "text": "这让沈沐川很放松。"
+    },
+    {
+      "type": "scene_break",
+      "style": "dots"
+    },
+    {
+      "type": "paragraph",
+      "text": "聊的内容一开始是设计。沈沐川给 1548 看了几张自己画的 UI 草图，1548 看完说了一句「不丑」。沈沐川后来才知道，这在 1548 的评价体系里已经算很高了。"
+    },
+    {
+      "type": "paragraph",
+      "text": "后来话题慢慢漂移。从设计聊到创作，从创作聊到审美，从审美聊到——"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1548",
+      "text": "你为什么画画？",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "沈沐川想了很久。不是不知道答案，是不知道怎么用文字说。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1543",
+      "text": "因为有些东西说不出来。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1548",
+      "text": "比如？",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "沈沐川没有回复文字。她画了一张小图发过去——一个人坐在窗边，耳机线垂下来，窗外是模糊的城市轮廓。没有表情，没有文字，但看到的人都能感觉到那种安静的、不需要被打扰的状态。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1548",
+      "text": "懂了。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "两个字。"
+    },
+    {
+      "type": "scene_break",
+      "style": "line"
+    },
+    {
+      "type": "paragraph",
+      "text": "三月中下旬的某天晚上，1548 发来了一条消息。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1548",
+      "text": "我们项目缺个做 UI 的。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "沈沐川看着这条消息。不是邀请，不是请求。就是一个陈述。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1543",
+      "text": "我可以帮你们做 UI 设计。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1548",
+      "text": "行。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "就这样，沈沐川成为了 AptS:1543。"
+    },
+    {
+      "type": "paragraph",
+      "text": "没有仪式，没有宣言。两个话不多的人之间的一次很短的对话。"
+    }
+  ]
+}

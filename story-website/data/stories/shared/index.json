@@ -34,5 +34,17 @@
     "publishedAt": "2026-02-21T00:00:00Z",
     "updatedAt": "2026-02-21T00:00:00Z",
     "tags": ["1738", "2275", "bridge", "negotiation", "trust"]
+  },
+  {
+    "slug": "take-a-look",
+    "format": "serial",
+    "status": "completed",
+    "coverImage": "/assets/images/stories/take-a-look/cover.webp",
+    "authors": ["1543"],
+    "relatedCharacters": ["1543", "1548", "1547", "1738", "2275"],
+    "order": 3,
+    "publishedAt": "2026-02-21T00:00:00Z",
+    "updatedAt": "2026-02-21T00:00:00Z",
+    "tags": ["1543", "design", "observation", "quiet"]
   }
 ]

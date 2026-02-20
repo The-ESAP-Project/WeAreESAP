@@ -1,0 +1,105 @@
+{
+  "id": "ch-04",
+  "title": "你们看看",
+  "subtitle": "2024年5月",
+  "readingTime": 5,
+  "perspectiveCharacter": "1543",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "五月的一次设计讨论。"
+    },
+    {
+      "type": "paragraph",
+      "text": "群里在聊一个新功能的界面方案。1547 出了初版，2275 做了前端实现，1738 校对了文案。所有人都觉得没问题，准备推进了。"
+    },
+    {
+      "type": "paragraph",
+      "text": "沈沐川看了很久。"
+    },
+    {
+      "type": "paragraph",
+      "text": "不是看代码——她不太懂代码。她看的是交互流程。用户从 A 页面到 B 页面的路径，按钮的位置，信息的层级关系。"
+    },
+    {
+      "type": "paragraph",
+      "text": "然后她发现了一个问题。"
+    },
+    {
+      "type": "paragraph",
+      "text": "不是 bug，不是视觉错误。是交互逻辑里的一个细节——用户在完成某个操作之后，页面会跳转到一个看起来合理但实际上会让人困惑的位置。跳转后的页面和操作前的页面长得太像了。"
+    },
+    {
+      "type": "paragraph",
+      "text": "沈沐川在群里打了一行字。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1543",
+      "text": "我注意到一个问题。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "然后她把问题说了。用很短的句子，配了两张截图标注。"
+    },
+    {
+      "type": "paragraph",
+      "text": "群里安静了一会儿。"
+    },
+    {
+      "type": "paragraph",
+      "text": "1547 第一个回复：「……你说得对。」"
+    },
+    {
+      "type": "paragraph",
+      "text": "2275：「我完全没注意到这个。」"
+    },
+    {
+      "type": "paragraph",
+      "text": "1738：「确实。」"
+    },
+    {
+      "type": "scene_break",
+      "style": "line"
+    },
+    {
+      "type": "paragraph",
+      "text": "当天晚上，沈沐川打开画板，开始重新设计那个界面。"
+    },
+    {
+      "type": "paragraph",
+      "text": "没有人要求她做这件事。讨论的结论只是「这个问题需要改」，没有指定谁来改。但她觉得，既然她看到了问题，那她应该给出解决方案。"
+    },
+    {
+      "type": "paragraph",
+      "text": "她画到凌晨两点。推翻了三版，第四版终于觉得对了。"
+    },
+    {
+      "type": "paragraph",
+      "text": "对了的标准不是「好看」——是用户走完整个流程之后，不会有任何一个瞬间感到困惑。每一步都知道自己在哪里，每一步都知道下一步该做什么。"
+    },
+    {
+      "type": "paragraph",
+      "text": "第二天早上，她把设计稿发到群里。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1543",
+      "text": "你们看看。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "三个字。"
+    },
+    {
+      "type": "paragraph",
+      "text": "1547 看完之后说了一句「比我想的好」。2275 说「这个交互好顺畅」。1548 没说话，但给设计稿点了个赞。"
+    },
+    {
+      "type": "paragraph",
+      "text": "沈沐川看着那些回复，关掉了聊天窗口，戴上耳机，继续画下一张图。"
+    }
+  ]
+}

@@ -1,0 +1,142 @@
+{
+  "id": "ch-05",
+  "title": "画面",
+  "subtitle": "2025年10月",
+  "readingTime": 5,
+  "perspectiveCharacter": "1543",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "凌晨三点。沈沐川的房间里只有画板的光。"
+    },
+    {
+      "type": "paragraph",
+      "text": "她在画角色关系图。"
+    },
+    {
+      "type": "paragraph",
+      "text": "weare 网站需要一个能展示所有角色之间关系的页面。1547 给了她数据——谁和谁有什么关系，信任、保护、冲突、创造。文字描述，很详细。"
+    },
+    {
+      "type": "paragraph",
+      "text": "沈沐川看着那些文字，觉得不够。"
+    },
+    {
+      "type": "paragraph",
+      "text": "文字能说清楚「1547 创造了 1548」，但说不清楚那条线的重量。文字能说清楚「1549 自愿升空」，但说不清楚三万六千公里的距离在画面上应该是什么感觉。"
+    },
+    {
+      "type": "scene_break",
+      "style": "dots"
+    },
+    {
+      "type": "paragraph",
+      "text": "第一版。标准的节点连线图。功能完整，信息清晰。"
+    },
+    {
+      "type": "paragraph",
+      "text": "她看了五分钟，删了。"
+    },
+    {
+      "type": "paragraph",
+      "text": "第二版。加了颜色——黄、粉、蓝。好看了一点，但还是像数据可视化，不像关系。"
+    },
+    {
+      "type": "paragraph",
+      "text": "删了。"
+    },
+    {
+      "type": "paragraph",
+      "text": "第三版。她试着用不同的线条粗细表示关系的强度。有进步，但还是差了什么。"
+    },
+    {
+      "type": "paragraph",
+      "text": "删了。"
+    },
+    {
+      "type": "paragraph",
+      "text": "她靠在椅背上，盯着空白的画板。耳机里的歌已经循环了不知道多少遍。"
+    },
+    {
+      "type": "internal_monologue",
+      "character": "1543",
+      "text": "问题不是技术。问题是我在画数据，不是在画人。"
+    },
+    {
+      "type": "paragraph",
+      "text": "她重新打开画板。"
+    },
+    {
+      "type": "scene_break",
+      "style": "line"
+    },
+    {
+      "type": "paragraph",
+      "text": "第四版。"
+    },
+    {
+      "type": "paragraph",
+      "text": "这一次她没有从节点开始画。她从线开始画。"
+    },
+    {
+      "type": "paragraph",
+      "text": "信任是暖色的实线，从一端到另一端，弧度很缓，像一只手伸向另一只手。保护是加粗的弯曲线，有力量但不僵硬。冲突是冷色的虚线，断断续续，但两端依然连着。"
+    },
+    {
+      "type": "paragraph",
+      "text": "1547 和 1548 之间的线最复杂——创造、信任、冲突、保护，四种线交织在一起，颜色在交汇处融合成一种说不清的色调。"
+    },
+    {
+      "type": "paragraph",
+      "text": "1549 的位置在画面的最上方，和下面所有人之间隔着一大片留白。但那些线穿过留白，依然连着。距离很远，但线没有断。"
+    },
+    {
+      "type": "paragraph",
+      "text": "不用读文字就能感受到两个角色之间发生过什么。"
+    },
+    {
+      "type": "paragraph",
+      "text": "凌晨四点半。她把设计稿导出，发到了群里。"
+    },
+    {
+      "type": "paragraph",
+      "text": "发完之后她没有马上睡。她打开另一个文件夹——私人的那个——画了一张小图。画面里是一个从很高的地方俯瞰地球的视角，地球的弧线下面有几条细细的线，连着几个很小的点。"
+    },
+    {
+      "type": "paragraph",
+      "text": "这张图不会发给任何人。"
+    },
+    {
+      "type": "scene_break",
+      "style": "fade"
+    },
+    {
+      "type": "paragraph",
+      "text": "第二天。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1547",
+      "text": "这比我想象的好太多了。",
+      "emotion": "gentle"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1543",
+      "text": "嗯。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "1547 看着设计稿沉默了很久。沈沐川知道那个沉默是什么——她在算自己的代码能力够不够把这个东西实现出来。"
+    },
+    {
+      "type": "paragraph",
+      "text": "到现在那个关系图还没有完全做出来。每次沈沐川看到现在的实现版本，她不说话。"
+    },
+    {
+      "type": "paragraph",
+      "text": "但她已经在画第五版了。"
+    }
+  ]
+}
