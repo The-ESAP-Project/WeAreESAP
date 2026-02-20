@@ -44,6 +44,7 @@ export const CHARACTER_COLORS: Record<
 export const ROUTES = {
   home: "/",
   stories: "/stories",
+  characters: "/characters",
 } as const;
 
 export const SITE_CONFIG = {

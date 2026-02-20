@@ -12,6 +12,7 @@
 // limitations under the License.
 
 import type { MetadataRoute } from "next";
+import { loadCharacters } from "@/lib/character-loader";
 import { loadJsonFileDirect } from "@/lib/data-loader";
 import { loadStoryRegistry } from "@/lib/story-loader";
 import type { StoryMeta } from "@/types/story";
@@ -52,6 +53,15 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // 静态路由
   entries.push(buildEntry("/", now, "weekly", 1.0));
   entries.push(buildEntry("/stories", now, "weekly", 0.9));
+  entries.push(buildEntry("/characters", now, "weekly", 0.85));
+
+  // 角色路由
+  const characters = await loadCharacters(DEFAULT_LOCALE);
+  for (const character of characters) {
+    entries.push(
+      buildEntry(`/characters/${character.id}`, now, "monthly", 0.75)
+    );
+  }
 
   // 故事路由
   const registry = await loadStoryRegistry();

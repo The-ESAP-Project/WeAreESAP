@@ -34,6 +34,8 @@ export default getRequestConfig(async ({ requestLocale }) => {
       reader: (await import(`@/messages/${locale}/reader.json`)).default,
       notFound: (await import(`@/messages/${locale}/notFound.json`)).default,
       search: (await import(`@/messages/${locale}/search.json`)).default,
+      characters: (await import(`@/messages/${locale}/characters.json`))
+        .default,
     },
   };
 });

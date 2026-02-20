@@ -1,0 +1,23 @@
+{
+  "metadata": {
+    "title": "Characters",
+    "description": "Characters in the ESAP stories"
+  },
+  "hero": {
+    "title": "Characters",
+    "subtitle": "Those who left their mark in the stories"
+  },
+  "archive": "Archive",
+  "bio": "Biography",
+  "relatedStories": "Appears in",
+  "perspectiveChapters": "Perspective chapters",
+  "noRelatedStories": "No related stories yet",
+  "backToList": "Back to characters",
+  "readStory": "Read story",
+  "info": {
+    "code": "Code",
+    "name": "Name",
+    "nickname": "Alias",
+    "role": "Role"
+  }
+}

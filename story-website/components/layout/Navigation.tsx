@@ -39,7 +39,10 @@ const mobileLocaleNames: Record<string, string> = {
   ja: "日",
 };
 
-const navLinks = [{ href: "/stories", key: "stories" }] as const;
+const navLinks = [
+  { href: "/stories", key: "stories" },
+  { href: "/characters", key: "characters" },
+] as const;
 
 export const Navigation = memo(function Navigation() {
   const t = useTranslations("common.navigation");

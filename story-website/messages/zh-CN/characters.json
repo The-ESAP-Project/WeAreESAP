@@ -1,0 +1,23 @@
+{
+  "metadata": {
+    "title": "人物",
+    "description": "ESAP 故事中的登场人物"
+  },
+  "hero": {
+    "title": "人物",
+    "subtitle": "故事中留下足迹的人"
+  },
+  "archive": "档案",
+  "bio": "简史",
+  "relatedStories": "出现的故事",
+  "perspectiveChapters": "视角章节",
+  "noRelatedStories": "暂无关联故事",
+  "backToList": "返回人物列表",
+  "readStory": "阅读故事",
+  "info": {
+    "code": "代号",
+    "name": "名字",
+    "nickname": "别称",
+    "role": "定位"
+  }
+}

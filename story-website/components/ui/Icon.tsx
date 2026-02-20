@@ -13,8 +13,10 @@
 
 import type { ComponentType } from "react";
 import {
+  LuArrowLeft,
   LuBookOpen,
   LuChevronDown,
+  LuChevronRight,
   LuChevronUp,
   LuEye,
   LuGlobe,
@@ -31,6 +33,7 @@ import {
 import { SiDiscord, SiGithub } from "react-icons/si";
 
 export type IconName =
+  | "ArrowLeft"
   | "Globe"
   | "Github"
   | "Discord"
@@ -46,9 +49,11 @@ export type IconName =
   | "Sun"
   | "Moon"
   | "ChevronDown"
+  | "ChevronRight"
   | "ChevronUp";
 
 const iconMap: Record<IconName, ComponentType<{ className?: string }>> = {
+  ArrowLeft: LuArrowLeft,
   Globe: LuGlobe,
   Github: SiGithub,
   Discord: SiDiscord,
@@ -64,6 +69,7 @@ const iconMap: Record<IconName, ComponentType<{ className?: string }>> = {
   Sun: LuSun,
   Moon: LuMoon,
   ChevronDown: LuChevronDown,
+  ChevronRight: LuChevronRight,
   ChevronUp: LuChevronUp,
 };
 

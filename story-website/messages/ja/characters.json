@@ -1,0 +1,23 @@
+{
+  "metadata": {
+    "title": "登場人物",
+    "description": "ESAP ストーリーの登場人物"
+  },
+  "hero": {
+    "title": "登場人物",
+    "subtitle": "物語に足跡を残した者たち"
+  },
+  "archive": "アーカイブ",
+  "bio": "略歴",
+  "relatedStories": "登場するストーリー",
+  "perspectiveChapters": "視点チャプター",
+  "noRelatedStories": "関連ストーリーはまだありません",
+  "backToList": "人物一覧に戻る",
+  "readStory": "ストーリーを読む",
+  "info": {
+    "code": "コード",
+    "name": "名前",
+    "nickname": "通称",
+    "role": "役割"
+  }
+}
