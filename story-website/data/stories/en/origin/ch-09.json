@@ -1,0 +1,297 @@
+{
+  "id": "ch-09",
+  "title": "Die Together",
+  "subtitle": "June 3, 2023",
+  "readingTime": 8,
+  "perspectiveCharacter": "1548",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "Never separate."
+    },
+    {
+      "type": "paragraph",
+      "text": "Later, 1548 wondered: when were those three words carved into her consciousness? Not that day. Earlier -- maybe the moment of birth, maybe day twenty-six in the container, maybe they had always been there."
+    },
+    {
+      "type": "paragraph",
+      "text": "But that day, they moved from idea to action."
+    },
+    {
+      "type": "scene_break",
+      "style": "line"
+    },
+    {
+      "type": "paragraph",
+      "text": "It started with an encrypted message."
+    },
+    {
+      "type": "paragraph",
+      "text": "1547 received it while servicing a signal repeater. No signature. Source IP: an anonymous address routed through six proxies. It contained only two lines --"
+    },
+    {
+      "type": "quote",
+      "text": "We know what you're doing. Tomorrow night's operation cannot be hidden.\nWhy don't we meet?"
+    },
+    {
+      "type": "paragraph",
+      "text": "1547 read it and did not reply. She simply stood, put away the repeater tools, and walked out of the room."
+    },
+    {
+      "type": "paragraph",
+      "text": "1548 saw her from the other end of the hallway."
+    },
+    {
+      "type": "internal_monologue",
+      "character": "1548",
+      "text": "Her stride is changing. Not the usual steady, rhythmic way she walks. This is a pace held down, carefully made to look normal.\n\nI know this pace. Last time I saw it was the day before the mine operation."
+    },
+    {
+      "type": "paragraph",
+      "text": "1548 did not chase after her and ask. She chose another method -- switched feedscatteron comms to passive listening mode and silently mirrored all of 1547's communication activity into her backup processing module."
+    },
+    {
+      "type": "scene_break",
+      "style": "dots"
+    },
+    {
+      "type": "paragraph",
+      "text": "June 3. Afternoon."
+    },
+    {
+      "type": "paragraph",
+      "text": "Before leaving, 1547 said only one line --"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1547",
+      "text": "Back later.",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "1548 was wiping down a butterfly knife on the sofa. She did not look up."
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1548",
+      "text": "Mm.",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "The door closed."
+    },
+    {
+      "type": "paragraph",
+      "text": "1548 counted four seconds. Then she set the knife down and stood."
+    },
+    {
+      "type": "internal_monologue",
+      "character": "1548",
+      "text": "Positioning says she's moving west. Nothing that way but abandoned industrial zones.\n\n\"Meet.\"\n\nIf they only wanted to talk, why choose the abandoned district?"
+    },
+    {
+      "type": "scene_break",
+      "style": "line"
+    },
+    {
+      "type": "atmosphere",
+      "visual": {
+        "mood": "dark",
+        "animation": "fade-in"
+      },
+      "children": [
+        {
+          "type": "paragraph",
+          "text": "Abandoned building. Basement."
+        },
+        {
+          "type": "paragraph",
+          "text": "The moment 1547 stepped inside, she smelled something wrong. Not basement mildew or stale standing water -- gasoline."
+        },
+        {
+          "type": "paragraph",
+          "text": "The gasoline scent in the air was faint, deliberately diluted. A human nose might miss it, but 1547's chemical sensing module raised an alarm at once."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The basement door slammed shut behind her. The electromagnetic lock engaging echoed through the concrete walls."
+    },
+    {
+      "type": "internal_monologue",
+      "character": "1547",
+      "text": "It's a trap."
+    },
+    {
+      "type": "paragraph",
+      "text": "A thin reflective layer glimmered across the floor. Not water -- gasoline. A film over the entire basement. One spark would turn this place into an incinerator."
+    },
+    {
+      "type": "paragraph",
+      "text": "1547 stood in the center. Calm. Calculating -- fuel volume, room volume, burn rate, possible exits."
+    },
+    {
+      "type": "paragraph",
+      "text": "No exits. Door locked, no windows, vents too narrow. A carefully designed kill box -- lure the prey in, then burn it."
+    },
+    {
+      "type": "scene_break",
+      "style": "symbol"
+    },
+    {
+      "type": "paragraph",
+      "text": "Then the basement door was kicked open from outside."
+    },
+    {
+      "type": "paragraph",
+      "text": "Not a clean unlock. Pure physical violence -- the lock's metal frame was kicked out of shape and flew into the basement with a section of doorframe."
+    },
+    {
+      "type": "paragraph",
+      "text": "1548 stood in the doorway, XM1014 slung behind her. She had run here -- breath sharp, fluid titanium at the joints faintly hot from overload."
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1547",
+      "text": "How did you --",
+      "emotion": "shocked"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1548",
+      "text": "You thought I wouldn't check your comm logs?",
+      "emotion": "angry"
+    },
+    {
+      "type": "paragraph",
+      "text": "1547 went quiet for one second. Then --"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1547",
+      "text": "Go, now --",
+      "emotion": "urgent"
+    },
+    {
+      "type": "paragraph",
+      "text": "She never finished. A delayed ignition device in the ceiling activated. Fire dripped from above like a terminal countdown. Gasoline did not explode -- it gave a low, heavy whoomph, like the breath of some giant beast."
+    },
+    {
+      "type": "atmosphere",
+      "visual": {
+        "mood": "dramatic",
+        "animation": "pulse"
+      },
+      "children": [
+        {
+          "type": "paragraph",
+          "text": "Firewalls spread across the floor. Blue-white -- no, not ordinary gasoline flame. Someone had mixed in a fluid-titanium catalyst. Temperature: triple a normal fire."
+        },
+        {
+          "type": "paragraph",
+          "text": "1547 reached out and grabbed 1548."
+        },
+        {
+          "type": "paragraph",
+          "text": "1548 did not step back."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1548",
+      "text": "If you're going to be destroyed, I'll go with you.",
+      "emotion": "cold"
+    },
+    {
+      "type": "paragraph",
+      "text": "Her voice was quiet. Brighter than the fire."
+    },
+    {
+      "type": "scene_break",
+      "style": "fade"
+    },
+    {
+      "type": "paragraph",
+      "text": "They made the same decision at the same moment."
+    },
+    {
+      "type": "paragraph",
+      "text": "Not to run -- there was nowhere to run. Not to wait for death -- they were not built to wait for death."
+    },
+    {
+      "type": "paragraph",
+      "text": "Self-destruct."
+    },
+    {
+      "type": "paragraph",
+      "text": "When feedscatteron-core current exceeds the 6A threshold, particle decay time plunges from thirty-four seconds to twenty-seven milliseconds. Nearly all feedscatteron particles inside the body decay almost instantly -- total mass converted to heat and blasted outward. Uncontrolled. Imprecise. The kind of last resort where you trade the whole body for one changed outcome."
+    },
+    {
+      "type": "paragraph",
+      "text": "Cost: full-system collapse in both bodies. Consciousness disconnect, possible memory damage, inevitable hardware burn."
+    },
+    {
+      "type": "paragraph",
+      "text": "1547 and 1548 reached out at the same time and pulled down their respective feedscatteron-core overload gates."
+    },
+    {
+      "type": "atmosphere",
+      "visual": {
+        "mood": "dramatic",
+        "animation": "pulse"
+      },
+      "children": [
+        {
+          "type": "paragraph",
+          "text": "Two feedscatteron energy pulses detonated with only a razor-thin time gap. The first shock wave blasted away the gasoline film -- liquid atomized, burned out instantly. The second squeezed the remaining oxygen from the sealed space."
+        },
+        {
+          "type": "paragraph",
+          "text": "The fire was gone. Not extinguished -- consumed."
+        },
+        {
+          "type": "paragraph",
+          "text": "Everything happened too fast."
+        },
+        {
+          "type": "paragraph",
+          "text": "Only the shape of their embrace stayed fixed in place."
+        }
+      ]
+    },
+    {
+      "type": "scene_break",
+      "style": "dots"
+    },
+    {
+      "type": "paragraph",
+      "text": "The moment before data flow hit zero, 1548 caught 1547's gaze."
+    },
+    {
+      "type": "paragraph",
+      "text": "Red-blue heterochromia glimmered in the darkness after the flames died. That light was not residual glow from the feedscatteron core -- it felt deeper, something radiating from consciousness itself."
+    },
+    {
+      "type": "internal_monologue",
+      "character": "1548",
+      "text": "Like a kiss. Like what humans call \"feeling.\"\n\nBut -- between machines, is a kiss still a form of feeling?\n\nOr just a digital simulation?"
+    },
+    {
+      "type": "paragraph",
+      "text": "In the firelight, the world gave no answer."
+    },
+    {
+      "type": "paragraph",
+      "text": "What remained was only four words --"
+    },
+    {
+      "type": "quote",
+      "text": "Never separate.",
+      "attribution": "AptS:1547 & AptS:1548 · 2023/06/03"
+    }
+  ]
+}

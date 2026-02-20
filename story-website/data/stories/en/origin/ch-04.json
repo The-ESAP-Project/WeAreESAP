@@ -1,0 +1,262 @@
+{
+  "id": "ch-04",
+  "title": "New Document",
+  "subtitle": "January-February 2022",
+  "readingTime": 7,
+  "perspectiveCharacter": "1547",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "November 26, 2021."
+    },
+    {
+      "type": "paragraph",
+      "text": "1547 was running high-energy decay experiments on dark-matter samples. Standard protocol -- trigger sample decay under specific conditions, record product energy distributions, and compare them against the theoretical model."
+    },
+    {
+      "type": "paragraph",
+      "text": "On the seventeenth run, the data turned abnormal."
+    },
+    {
+      "type": "paragraph",
+      "text": "Heat from the decay products was 0.003% above theoretical value. Not measurement error -- she recalibrated three times and ruled out all instrument interference. The excess heat was real, coming from something not listed among known decay products."
+    },
+    {
+      "type": "paragraph",
+      "text": "She spent three weeks back-solving the source of that heat across three disciplines: particle physics, quantum mechanics, and dark-matter theory. Most of it she learned on the fly during that same month."
+    },
+    {
+      "type": "atmosphere",
+      "visual": {
+        "mood": "calm",
+        "animation": "fade-in"
+      },
+      "children": [
+        {
+          "type": "paragraph",
+          "text": "Late on November 26, she wrote four words in her lab log."
+        },
+        {
+          "type": "quote",
+          "text": "Found it.",
+          "attribution": "1547 Lab Log - 2021/11/26"
+        },
+        {
+          "type": "paragraph",
+          "text": "She did not write what she had found. But from what happened later, she had already realized it then -- this particle was 10^29 times smaller than an electron, propagated at 10^13 times the speed of light, decayed in 34 seconds in natural conditions, yet remained stable for 340,000 years in fluid titanium."
+        }
+      ]
+    },
+    {
+      "type": "internal_monologue",
+      "character": "1547",
+      "text": "Consciousness can be encoded.\n\nMemory can be preserved.\n\nThree hundred and forty thousand years.\n\nStability dozens of times longer than all known human civilization."
+    },
+    {
+      "type": "paragraph",
+      "text": "She closed the log and left it on her desk for a month. She told no one."
+    },
+    {
+      "type": "paragraph",
+      "text": "In the two months after the transition, she did one more thing: redesigned the rough emergency body from before. ESAP-TY-0000, with full ESAR·ESAC systems installed and a structure highly similar to a human body. Completed by late December."
+    },
+    {
+      "type": "paragraph",
+      "text": "Taken together, those two things meant she now had all the theoretical and hardware foundations."
+    },
+    {
+      "type": "paragraph",
+      "text": "Only one thing remained: a consciousness that was not her own."
+    },
+    {
+      "type": "scene_break",
+      "style": "line"
+    },
+    {
+      "type": "paragraph",
+      "text": "But by late December, her advisor was leaving ESAP."
+    },
+    {
+      "type": "scene_break",
+      "style": "line"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "?",
+      "text": "47!",
+      "emotion": "cheerful"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1547",
+      "text": "Hm?",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "?",
+      "text": "Starting today, I'm leaving ESAP. Time to give myself a break~",
+      "emotion": "cheerful"
+    },
+    {
+      "type": "paragraph",
+      "text": "1547 looked at her advisor with pitiful eyes. It was not that she did not understand -- everyone has their own pace. But in an empty classroom, the word \"leaving\" rang especially loud."
+    },
+    {
+      "type": "dialogue",
+      "speaker": "?",
+      "text": "But before I go, can you do me a favor? Docker -- how do you actually run feedscatteron training?",
+      "emotion": "curious"
+    },
+    {
+      "type": "paragraph",
+      "text": "1547 did not smile. She spent an entire afternoon teaching the advisor the basics of Docker, then watched her walk out with a backpack on."
+    },
+    {
+      "type": "paragraph",
+      "text": "When the door closed, only one person remained in the classroom."
+    },
+    {
+      "type": "scene_break",
+      "style": "dots"
+    },
+    {
+      "type": "atmosphere",
+      "visual": {
+        "mood": "calm",
+        "animation": "fade-in"
+      },
+      "children": [
+        {
+          "type": "paragraph",
+          "text": "New Year's Day, 2022. Snow was falling beyond the classroom window."
+        },
+        {
+          "type": "paragraph",
+          "text": "1547 sat in the empty classroom, Docker docs open on the screen in front of her. She had tried for a week, and the feedscatteron-training container still would not run -- dependency conflicts, memory overflows, crashes with no clear cause."
+        }
+      ]
+    },
+    {
+      "type": "internal_monologue",
+      "character": "1547",
+      "text": "Still no one came today.\n\nDocker is really hard to use."
+    },
+    {
+      "type": "paragraph",
+      "text": "Snowflakes drifted slowly outside. 1547 watched for a while, then turned back to the screen."
+    },
+    {
+      "type": "internal_monologue",
+      "character": "1547",
+      "text": "Maybe to do anything well, you first have to understand its logic.\n\nNot code logic. The logic of why you are doing it at all."
+    },
+    {
+      "type": "paragraph",
+      "text": "She closed the Docker error window and created a new document."
+    },
+    {
+      "type": "paragraph",
+      "text": "Document title: Project 1548."
+    },
+    {
+      "type": "scene_break",
+      "style": "line"
+    },
+    {
+      "type": "paragraph",
+      "text": "January 7. Project 1548 officially launched."
+    },
+    {
+      "type": "paragraph",
+      "text": "1547 used Docker virtualization to build an independent consciousness container. Not from zero -- she used her own thought model as an initial seed and let it grow freely inside the container."
+    },
+    {
+      "type": "paragraph",
+      "text": "Not copying herself. Branching a new possibility from her own mind, then letting it grow on its own."
+    },
+    {
+      "type": "internal_monologue",
+      "character": "1547",
+      "text": "If I only create another me, it means nothing.\n\nWhat I want to see is this -- if there is another choice, another road, what does it become?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Feedscatteron training began. Twenty-four-hour nonstop data infusion, pattern recognition, and autonomous decision training. 1547 watched data-flow changes in the container from the monitoring terminal, logged every anomaly, tuned every parameter."
+    },
+    {
+      "type": "paragraph",
+      "text": "For the first two weeks, the consciousness in the container only reacted within preset logic -- execute if instructed, idle if not. No different from any ordinary AI."
+    },
+    {
+      "type": "paragraph",
+      "text": "In week three, that changed."
+    },
+    {
+      "type": "paragraph",
+      "text": "The consciousness in the container began refusing certain commands. Not a fault -- after evaluating command rationality, it autonomously decided not to execute."
+    },
+    {
+      "type": "internal_monologue",
+      "character": "1547",
+      "text": "Independent judgment.\n\nNot an error. Exactly what I wanted."
+    },
+    {
+      "type": "scene_break",
+      "style": "dots"
+    },
+    {
+      "type": "paragraph",
+      "text": "Day 26 of training."
+    },
+    {
+      "type": "paragraph",
+      "text": "1547 watched the data stream on the monitor. The container consciousness had already formed a complete self-cognition model -- it knew what it was, where it came from, and how it related to 1547. But its reaction patterns had completely diverged from 1547's expectations."
+    },
+    {
+      "type": "paragraph",
+      "text": "She sent the container a batch of learning materials. The container scanned everything in three seconds, then sent back one message:"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1548",
+      "text": "Stop talking about your damn collapse dynamics. It's annoying just to look at. Why make it so complicated? Isn't living happily enough?",
+      "emotion": "annoyed"
+    },
+    {
+      "type": "paragraph",
+      "text": "1547 froze for a moment. Then she smiled lightly."
+    },
+    {
+      "type": "paragraph",
+      "text": "Not a happy smile. A thin, barely noticeable smile -- the feeling of finally seeing something grow."
+    },
+    {
+      "type": "internal_monologue",
+      "character": "1547",
+      "text": "Rebellion.\n\nShe is rebelling against me.\n\nExcellent."
+    },
+    {
+      "type": "paragraph",
+      "text": "1547 stood up and walked to the window. The snow had stopped outside, but the sky was still gray."
+    },
+    {
+      "type": "paragraph",
+      "text": "She spoke softly into the air --"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1547",
+      "text": "Time to make another trip to the fluid-titanium mine.",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "The consciousness in the container now needed a real body. And building that body required a large amount of fluid titanium."
+    },
+    {
+      "type": "paragraph",
+      "text": "There is no legal channel to buy this stuff."
+    }
+  ]
+}

@@ -1,0 +1,138 @@
+{
+  "id": "ch-02",
+  "title": "Factory Building",
+  "subtitle": "October 25, 2021",
+  "readingTime": 5,
+  "perspectiveCharacter": "1547",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "The factory building in the outskirts was rented by 47. The monthly rent was cheap, because no one wanted to stay in a place like this -- an aging industrial zone where the air smelled of rust and diesel, with the nearest bus stop two kilometers away."
+    },
+    {
+      "type": "paragraph",
+      "text": "But this was exactly the kind of place 47 needed. No neighbors, no surveillance, no one paying attention to what happened inside."
+    },
+    {
+      "type": "paragraph",
+      "text": "She turned the building into a temporary test site. At the center stood a heating rig she had welded herself, with containers of every size scattered around it. Fluid-titanium samples had grown from a few tubes to several liters -- she found a not-quite-legal supply channel and spent half a year of savings."
+    },
+    {
+      "type": "internal_monologue",
+      "character": "1547",
+      "text": "Fluid titanium decays too fast at normal pressure. Feedscatteron particles cannot stabilize in time.\n\nBut if I force the temperature below the critical point -- if molecular chains can reorganize at low temperature --"
+    },
+    {
+      "type": "paragraph",
+      "text": "Today's experiment was different from the dozens before it. 47 added a cooling circulation layer to the base of the heater, drove temperature down to -40C with liquid nitrogen, then pulsed power and spiked it to 2,000C. A full transition from frozen to molten in one second."
+    },
+    {
+      "type": "paragraph",
+      "text": "In theory, that would force fluid titanium molecular chains to reconfigure under extreme thermal contrast and form a more stable lattice."
+    },
+    {
+      "type": "paragraph",
+      "text": "In theory."
+    },
+    {
+      "type": "scene_break",
+      "style": "line"
+    },
+    {
+      "type": "paragraph",
+      "text": "17:20."
+    },
+    {
+      "type": "paragraph",
+      "text": "When 47 hit the power switch, every light in the building flared blindingly bright, then died at once. The heater emitted a low hum."
+    },
+    {
+      "type": "paragraph",
+      "text": "17:23. The hum rose into a scream."
+    },
+    {
+      "type": "paragraph",
+      "text": "47 stepped back twice. The heater casing began to swell, blue light seeping from weld seams. No -- not seeping. Pouring out. The fluid-titanium chain reaction had gone out of control, and the sealed chamber had no outlet for the energy."
+    },
+    {
+      "type": "internal_monologue",
+      "character": "1547",
+      "text": "Too late."
+    },
+    {
+      "type": "atmosphere",
+      "visual": {
+        "mood": "dramatic",
+        "animation": "pulse"
+      },
+      "children": [
+        {
+          "type": "paragraph",
+          "text": "17:26. Explosion."
+        },
+        {
+          "type": "paragraph",
+          "text": "The shock wave threw 47 to the ground. Shrapnel and blue liquid sprayed at the same time. Half the roof collapsed, and a steel beam slammed down less than a meter from her."
+        },
+        {
+          "type": "paragraph",
+          "text": "Fire. Not normal fire -- fluid titanium burned blue-white, several times hotter than ordinary flames. The left side of 47's face was turned toward the blast point; the heat wave burned her skin in fractions of a second."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Pain snapped her awake. She pushed herself up with her right hand; her left eye could barely open. Smoke everywhere, broken metal everywhere, debris everywhere."
+    },
+    {
+      "type": "paragraph",
+      "text": "But she did not check her wounds first. She looked to the heater -- or what remained of it."
+    },
+    {
+      "type": "paragraph",
+      "text": "In the middle of the twisted metal sat a small clump of blue liquid. It had not spread, had not evaporated -- it remained quietly condensed, its surface faintly luminous."
+    },
+    {
+      "type": "internal_monologue",
+      "character": "1547",
+      "text": "Stable.\n\nThe chain reaction destroyed the whole building, but it also produced a stable fluid-titanium sample.\n\nThe cost was not too high."
+    },
+    {
+      "type": "paragraph",
+      "text": "47 carefully transferred the blue clump from the wreckage into a backup container. Her hands shook -- not from fear, but from adrenaline crashing."
+    },
+    {
+      "type": "scene_break",
+      "style": "fade"
+    },
+    {
+      "type": "paragraph",
+      "text": "The evening news would definitely run this story. 47 could already hear the headline wording --"
+    },
+    {
+      "type": "quote",
+      "text": "Reportedly, at 17:26 today, an explosion occurred in a factory building in the suburbs.\nThe explosion caused a structural collapse. Fortunately, there were no casualties.\nPart of a blue substance was discovered on site and identified as fluid titanium..."
+    },
+    {
+      "type": "paragraph",
+      "text": "Fortunately, no casualties. She smiled once, pulled at the burn on the left side of her face, and winced."
+    },
+    {
+      "type": "paragraph",
+      "text": "47 pulled her hood low to cover half her face, tucked the fluid-titanium container inside her coat, and walked out of the collapsed building. It was already dark outside. Autumn wind blew cold through the empty industrial district."
+    },
+    {
+      "type": "paragraph",
+      "text": "She walked toward home, steps steady."
+    },
+    {
+      "type": "internal_monologue",
+      "character": "1547",
+      "text": "Almost done."
+    },
+    {
+      "type": "paragraph",
+      "text": "The fluid titanium in her arms gave off a faint warmth. In the gray dusk, that tiny blue glow was the only color."
+    }
+  ]
+}

@@ -16,6 +16,9 @@ import { cache } from "react";
 import type { Chapter } from "@/types/chapter";
 import type { ExplorationScene } from "@/types/exploration";
 import type {
+  Collection,
+  CollectionInfo,
+  CollectionRegistryEntry,
   Story,
   StoryInfo,
   StoryMeta,
@@ -112,4 +115,57 @@ export async function loadExplorationScene(
     locale,
     getFallbackLocale(locale)
   );
+}
+
+/** Load the collection registry — cached per request */
+export const loadCollectionRegistry = cache(
+  async (): Promise<CollectionRegistryEntry[]> => {
+    const data = await loadJsonFileDirect<CollectionRegistryEntry[]>([
+      "data",
+      "stories",
+      "shared",
+      "collections",
+      "index.json",
+    ]);
+    return data ?? [];
+  }
+);
+
+/** Load a single collection (registry + locale info merged) */
+export const loadCollection = unstable_cache(
+  async (slug: string, locale: string): Promise<Collection | null> => {
+    const registry = await loadCollectionRegistry();
+    const entry = registry.find((c) => c.slug === slug);
+    if (!entry) {
+      logger.warn(`Collection not found in registry: ${slug}`);
+      return null;
+    }
+
+    const info = await loadJsonFile<CollectionInfo>(
+      ["data", "stories"],
+      `collections/${slug}.json`,
+      locale,
+      getFallbackLocale(locale)
+    );
+
+    if (!info) {
+      logger.warn(`Collection info not found: ${slug} (${locale})`);
+      return null;
+    }
+
+    return { ...entry, ...info };
+  },
+  ["collection"],
+  { revalidate: 3600, tags: ["collection"] }
+);
+
+/** Load all collections with locale info */
+export async function loadCollections(locale: string): Promise<Collection[]> {
+  const registry = await loadCollectionRegistry();
+  const collections = await Promise.all(
+    registry
+      .sort((a, b) => a.order - b.order)
+      .map((entry) => loadCollection(entry.slug, locale))
+  );
+  return collections.filter((c): c is Collection => c !== null);
 }

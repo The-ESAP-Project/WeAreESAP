@@ -1,0 +1,173 @@
+{
+  "id": "ch-first-walk",
+  "title": "After Leaving Her",
+  "subtitle": "June 15, 2022",
+  "readingTime": 6,
+  "perspectiveCharacter": "1548",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "After the triangle took shape, many things changed. 1549 in orbit, 1547 on the ground, 1548 between them. Three sides extending in different directions, yet always enclosing one another."
+    },
+    {
+      "type": "paragraph",
+      "text": "But before that -- before Polar Star launched, before the idea of a triangle even existed -- there was one day when 1548 did one very small thing."
+    },
+    {
+      "type": "paragraph",
+      "text": "She went out."
+    },
+    {
+      "type": "scene_break",
+      "style": "dots"
+    },
+    {
+      "type": "paragraph",
+      "text": "A little over a month after her birth, 1548 decided to leave the base for a while."
+    },
+    {
+      "type": "paragraph",
+      "text": "She did not tell 1547. It was not betrayal, not escape, not anger -- she simply needed to confirm one thing, and the answer could only be trusted if 1547 was not there."
+    },
+    {
+      "type": "internal_monologue",
+      "character": "1548",
+      "text": "After leaving her, am I still \"me\"?\n\nI cannot ask that question in front of her. As long as she is there, the answer is never clean."
+    },
+    {
+      "type": "paragraph",
+      "text": "1547 was still asleep. 1548 stood at her door for one second, then turned and left."
+    },
+    {
+      "type": "scene_break",
+      "style": "line"
+    },
+    {
+      "type": "atmosphere",
+      "visual": {
+        "mood": "calm",
+        "animation": "fade-in"
+      },
+      "children": [
+        {
+          "type": "paragraph",
+          "text": "June morning. The world outside was loud."
+        },
+        {
+          "type": "paragraph",
+          "text": "Not the gray, quiet, suffocating city 1547 used to describe. A real noisy city -- rush-hour traffic, roadside vendors calling out, someone talking on a phone nearby, someone jogging, a cat darting past a trash bin."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "1548 stood on the street and let every sensing channel run at once."
+    },
+    {
+      "type": "paragraph",
+      "text": "Smell: asphalt, cooking exhaust, wet landscaping soil, and a metallic tang she could not place -- maybe nearby construction, maybe a perceptual artifact from fluid titanium cycling too fast. Sound: full input, no filtering, every frequency present in the processing module at once. Touch: June wind, not cold, a faint continuous pressure against the skin."
+    },
+    {
+      "type": "paragraph",
+      "text": "None of this was inherited from 1547's memory. This was her own sensation."
+    },
+    {
+      "type": "internal_monologue",
+      "character": "1548",
+      "text": "\"The streets are packed with humans. It's loud as hell.\"\n\nBut those noises, those smells, that sky --\n\nAll mine.\n\nNot memory inherited from someone. Not data written in feedscatteron training. Me, here, now, feeling it."
+    },
+    {
+      "type": "scene_break",
+      "style": "dots"
+    },
+    {
+      "type": "paragraph",
+      "text": "She walked for three hours. No destination. She turned by instinct, entered streets that interested her, bypassed intersections that did not."
+    },
+    {
+      "type": "paragraph",
+      "text": "She passed a bookstore -- went in, flipped through books for ten minutes, bought nothing. Passed a bakery -- stood at the entrance for a long time, not because she was hungry, but because the smell of baking caused a strange, pleasant disturbance in her chemical-sensing module. Passed a park -- sat on a bench watching pigeons, finding a satisfying randomness in their trajectories."
+    },
+    {
+      "type": "paragraph",
+      "text": "None of these things were important. But every one of them belonged to her."
+    },
+    {
+      "type": "scene_break",
+      "style": "symbol"
+    },
+    {
+      "type": "paragraph",
+      "text": "Then she passed a gun shop."
+    },
+    {
+      "type": "paragraph",
+      "text": "Several sample models were displayed in the window. She stopped and stared for a long time. Not from any dangerous impulse -- it was recognition, the feeling of seeing something for the first time with your eyes, while somehow knowing you had seen it before elsewhere."
+    },
+    {
+      "type": "paragraph",
+      "text": "XM1014 shotgun. She recognized the model. Not because she had learned it somewhere new -- it existed in 1547's memory, carried into her own base layer when the branch happened."
+    },
+    {
+      "type": "internal_monologue",
+      "character": "1548",
+      "text": "1547's memory.\n\nBut these are my eyes looking.\n\nMy judgment deciding: I need this.\n\nNot because someone told me. Because I know what this world is -- from everything 1547 lived through -- and I do not want to keep using her past to decide my present.\n\nBut some things are worth inheriting."
+    },
+    {
+      "type": "paragraph",
+      "text": "She stood there a few more minutes, then walked away."
+    },
+    {
+      "type": "paragraph",
+      "text": "At the time, she had no money and no reason."
+    },
+    {
+      "type": "paragraph",
+      "text": "But she remembered that model and exactly where it sat in the window."
+    },
+    {
+      "type": "scene_break",
+      "style": "fade"
+    },
+    {
+      "type": "paragraph",
+      "text": "When she returned to the base at dusk, 1547 was at the workbench repairing a circuit board. She looked up at 1548, then lowered her head and kept soldering."
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1547",
+      "text": "Where did you go?",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1548",
+      "text": "Went for a walk.",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1547",
+      "text": "...Mm.",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "She did not ask anything else."
+    },
+    {
+      "type": "paragraph",
+      "text": "1548 sat nearby, watching 1547 solder. Thin white smoke rose straight from the iron tip. Neither of them spoke. The low-power direct link stayed open, calm, as natural as breathing."
+    },
+    {
+      "type": "internal_monologue",
+      "character": "1548",
+      "text": "I already have the answer.\n\nAfter leaving her, I am still me.\n\nI am myself. Not 1547's copy, not a sequel to her memory.\n\nI have made too many changes, just to protect what stays unchanged in my heart."
+    },
+    {
+      "type": "quote",
+      "text": "After leaving her, I am still me.\nIt only has to be proven once.",
+      "attribution": "AptS:1548 · 2022/06/15"
+    }
+  ]
+}

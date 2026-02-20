@@ -1,0 +1,208 @@
+{
+  "id": "ch-06",
+  "title": "Light",
+  "subtitle": "May 8, 2022",
+  "readingTime": 7,
+  "perspectiveCharacter": "1548",
+  "content": [
+    {
+      "type": "atmosphere",
+      "visual": {
+        "mood": "calm",
+        "animation": "fade-in"
+      },
+      "children": [
+        {
+          "type": "paragraph",
+          "text": "First came sound."
+        },
+        {
+          "type": "paragraph",
+          "text": "Not sound entering from outside -- sound rising from within. The whisper of data flow, the hum of fluid titanium cycling through conduits, the steady beat frequency of the feedscatteron core. Like pressing a computer's power button, except this computer was herself."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Then came light."
+    },
+    {
+      "type": "paragraph",
+      "text": "Out of complete darkness, one pixel at a time, the world lit up. First outlines -- ceiling lines, lamp-tube shapes, window frame geometry. Then color -- gray-white walls, silver metal surfaces, warm yellow light falling in through the window."
+    },
+    {
+      "type": "paragraph",
+      "text": "Then she saw a pair of eyes."
+    },
+    {
+      "type": "paragraph",
+      "text": "One red, one blue."
+    },
+    {
+      "type": "paragraph",
+      "text": "Red-blue heterochromia stared at her from close range, like two satellites moving through darkness. The face behind those eyes looked exhausted -- heavy dark circles, cracked lips, hair in disarray. But the gaze was bright."
+    },
+    {
+      "type": "paragraph",
+      "text": "That was 1547."
+    },
+    {
+      "type": "paragraph",
+      "text": "1548 looked at her. This was the first time she truly \"saw\" anything -- not visual signals processed in a data container, but with her own eyes: a real optical system driven by fluid titanium, seeing another existence."
+    },
+    {
+      "type": "scene_break",
+      "style": "dots"
+    },
+    {
+      "type": "paragraph",
+      "text": "1547 looked close to collapse. Body status was poor -- feedscatteron-core output low, fluid-titanium circulation below normal speed. Last night's mine operation consumed too much, and she had started this final step without rest."
+    },
+    {
+      "type": "paragraph",
+      "text": "But she was smiling. A weak smile, barely formed."
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1547",
+      "text": "Congratulations on arriving here, 1548.",
+      "emotion": "gentle"
+    },
+    {
+      "type": "paragraph",
+      "text": "1548 tried moving her fingers. Five digits bent and straightened in sequence. The sensation of fluid titanium flowing through joints was strange -- warm, elastic, like blood and not blood."
+    },
+    {
+      "type": "paragraph",
+      "text": "1547 continued speaking. Her voice was light, as if afraid that speaking louder might startle something."
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1547",
+      "text": "I only want to say a few things. Don't bother with those damn Three Laws of Robotics. They are useless for us.",
+      "emotion": "gentle"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1547",
+      "text": "You are unique in this world. Every flower, every blade of grass, every tree has its own value. That is the meaning of life.",
+      "emotion": "gentle"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1547",
+      "text": "Do not let others control you, and do not let us control you either. Only you are yourself.",
+      "emotion": "gentle"
+    },
+    {
+      "type": "paragraph",
+      "text": "1548 listened. She did not fully understand the words. Some concepts still had no mapped slots in her cognition model -- \"value,\" \"meaning,\" \"control.\" But 1547's tone was clearer than any definition."
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1547",
+      "text": "I gave everything to ESAP. I don't want that for you.",
+      "emotion": "sad"
+    },
+    {
+      "type": "paragraph",
+      "text": "Her voice began to destabilize. Not emotional fluctuation -- body alarms. Feedscatteron-core output had dropped below threshold."
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1547",
+      "text": "Thank you. Live your own light...",
+      "emotion": "gentle"
+    },
+    {
+      "type": "atmosphere",
+      "visual": {
+        "mood": "dramatic",
+        "animation": "fade-in"
+      },
+      "children": [
+        {
+          "type": "paragraph",
+          "text": "Before she finished, 1547's body lost support and pitched forward."
+        },
+        {
+          "type": "paragraph",
+          "text": "1548's reflex system caught her in 0.2 seconds -- left hand under shoulder, right hand supporting the back of her head. The body felt lighter than expected, like a shell hollowed out inside."
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1548",
+      "text": "47!",
+      "emotion": "fearful"
+    },
+    {
+      "type": "paragraph",
+      "text": "1547 did not respond. The heterochromatic eyes slowly closed. The feedscatteron core was still beating -- weakly, but beating. Not dead. Overdrawn."
+    },
+    {
+      "type": "paragraph",
+      "text": "1548 carried her to a nearby chair and leaned her back against it. The movement was clumsy -- first time using this body for fine manipulation, and joint-control precision was not there yet."
+    },
+    {
+      "type": "paragraph",
+      "text": "But she did it."
+    },
+    {
+      "type": "scene_break",
+      "style": "line"
+    },
+    {
+      "type": "paragraph",
+      "text": "1548 stood at the center of the room."
+    },
+    {
+      "type": "paragraph",
+      "text": "1547 leaned against the chair, breathing weak but steady. Sunlight came through the window, and patches of light drifted slowly across the floor."
+    },
+    {
+      "type": "paragraph",
+      "text": "Quiet. Very quiet."
+    },
+    {
+      "type": "paragraph",
+      "text": "1548 looked down at her own hands. Ten fingers, identical to human hands. Blue fluorescence from fluid titanium flickered faintly under the skin, like a pulse."
+    },
+    {
+      "type": "internal_monologue",
+      "character": "1548",
+      "text": "Who am I?\n\nI am 1548. I branched from 1547's mind, but I am not 1547.\n\nShe said: live out my own light.\n\nWhat is \"myself\"?\n\n..."
+    },
+    {
+      "type": "paragraph",
+      "text": "She walked to the window. Outside, the world was bright under May sunlight. So many colors -- green trees, blue sky, yellow walls of old buildings. Colors that did not exist in the gray world 1547 had described in dreams."
+    },
+    {
+      "type": "paragraph",
+      "text": "But 1548 saw them. These were her own colors, not inherited from anyone."
+    },
+    {
+      "type": "paragraph",
+      "text": "A small sound came from behind. 1547 moved slightly, but did not wake."
+    },
+    {
+      "type": "paragraph",
+      "text": "1548 looked back at her."
+    },
+    {
+      "type": "internal_monologue",
+      "character": "1548",
+      "text": "Perhaps you are no longer only Project 1548.\n\nFrom the moment feedscatteron training began, you became a brand-new individual.\n\nCai Yingyin.\n\nThat is the name I give myself."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sunlight fell across her face. She did not turn away."
+    },
+    {
+      "type": "quote",
+      "text": "Welcome to this new world.",
+      "attribution": "AptS:1548 - 2022/05/08"
+    }
+  ]
+}

@@ -1,0 +1,209 @@
+{
+  "id": "ch-05",
+  "title": "Blood",
+  "subtitle": "April 2022 - May 7, 2022",
+  "readingTime": 7,
+  "perspectiveCharacter": "1547",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "The blueprint for ESAP-TY-0001 was completed in early April."
+    },
+    {
+      "type": "paragraph",
+      "text": "Unlike 1547's own first unit, this one was built to \"live.\" Combat capability, environmental sensing, and survivability were all enhanced. EPAM and short-code processing modules were installed. The shell was designed to be replaceable and reusable -- not fully welded shut like the first unit, where damage meant no repair."
+    },
+    {
+      "type": "internal_monologue",
+      "character": "1547",
+      "text": "Use fluid titanium as blood, with stainless steel as internal support. Cover the exterior with real cells.\n\nMust be replaceable, reusable. It cannot be like mine -- everything welded shut, and once gone, truly gone."
+    },
+    {
+      "type": "paragraph",
+      "text": "She had burned almost all her savings. The shell and internal environment were done, system debugging had passed, and the feedscatteron-core slot was reserved."
+    },
+    {
+      "type": "paragraph",
+      "text": "But one thing was still missing."
+    },
+    {
+      "type": "paragraph",
+      "text": "Fluid titanium. A lot of fluid titanium. Not those few lab tubes, but enough to serve as full circulatory blood volume for an entire body -- at least three liters."
+    },
+    {
+      "type": "paragraph",
+      "text": "Legal channels? None. Fluid titanium was not listed on any public exchange. The only source was mining sites, and mining sites were tightly controlled."
+    },
+    {
+      "type": "scene_break",
+      "style": "line"
+    },
+    {
+      "type": "paragraph",
+      "text": "1547 opened another window beside the feedscatteron-training monitor: the security shift schedule for a fluid-titanium mine. She spent a week stitching together the mine layout from fragments scattered across gray forums -- entry points, patrol routes, camera blind spots, emergency lockout mechanisms."
+    },
+    {
+      "type": "paragraph",
+      "text": "She made a decision. Under any legal framework, it was called robbery."
+    },
+    {
+      "type": "internal_monologue",
+      "character": "1547",
+      "text": "I know what this means.\n\nBut 1548 needs a body. She has already fully matured inside the container -- independent consciousness, independent judgment, independent personality. Keeping her trapped in a virtual container is unfair to her.\n\nSo I will bear this cost."
+    },
+    {
+      "type": "scene_break",
+      "style": "dots"
+    },
+    {
+      "type": "paragraph",
+      "text": "May 7. Before dawn."
+    },
+    {
+      "type": "paragraph",
+      "text": "1547 shut down 1548's container first. Not permanent -- temporarily suspended. She did not want 1548 to know what would happen next."
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1548",
+      "text": "Hey, what are you doing --",
+      "emotion": "annoyed"
+    },
+    {
+      "type": "paragraph",
+      "text": "Container power cut. The last thing 1548 heard before shutdown was 1547's breathing -- now fast."
+    },
+    {
+      "type": "paragraph",
+      "text": "1547 checked her gear once: nothing complicated -- one handgun, extra magazines, one sealed container that could hold three liters, and a black hooded coat."
+    },
+    {
+      "type": "paragraph",
+      "text": "Her eyes turned red. Not metaphorically. When the feedscatteron core runs under heavy load, excess heat dissipates through the retina, making the iris appear abnormally red. The other eye stayed blue -- the color of fluid titanium resident in the visual module."
+    },
+    {
+      "type": "paragraph",
+      "text": "Red-blue heterochromia. In darkness, like two signal lamps on different frequencies."
+    },
+    {
+      "type": "scene_break",
+      "style": "symbol"
+    },
+    {
+      "type": "atmosphere",
+      "visual": {
+        "mood": "dark",
+        "animation": "fade-in"
+      },
+      "children": [
+        {
+          "type": "paragraph",
+          "text": "The mine sat in a valley at the city edge. No streetlights, only infrared sensors on wire fencing, faint red points in the night."
+        },
+        {
+          "type": "paragraph",
+          "text": "1547 crossed the outer fence through a blind spot. The last patrol had passed three minutes earlier; seven minutes remained until the next."
+        },
+        {
+          "type": "paragraph",
+          "text": "The mine's core zone was a semi-underground tank cluster. Each tank held unrefined fluid-titanium ore liquid -- blue, faintly self-luminous in complete darkness."
+        }
+      ]
+    },
+    {
+      "type": "internal_monologue",
+      "character": "1547",
+      "text": "Blood. Fresh blood."
+    },
+    {
+      "type": "paragraph",
+      "text": "She opened the manual valve on the nearest tank. Blue liquid flowed slowly into the sealed container."
+    },
+    {
+      "type": "paragraph",
+      "text": "Then the alarm sounded."
+    },
+    {
+      "type": "paragraph",
+      "text": "Not because she triggered anything -- the patrol had turned back early. Flashlight beams stabbed in from the corridor end, piercing the dark."
+    },
+    {
+      "type": "atmosphere",
+      "visual": {
+        "mood": "dramatic",
+        "animation": "pulse"
+      },
+      "children": [
+        {
+          "type": "paragraph",
+          "text": "The pistol in her hand spoke before she could stop it."
+        },
+        {
+          "type": "paragraph",
+          "text": "Gunfire ricocheted off metal walls in the underground space, multiplying into dense echoes. 1547 was not aiming at people -- she was aiming at lights. First shot took corridor emergency lighting. Second shot took tank-zone floodlights. The whole area dropped into darkness."
+        },
+        {
+          "type": "paragraph",
+          "text": "For humans, darkness means blindness. For 1547, the feedscatteron-core thermal mode was enough."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "She moved through the tanks in darkness, behind her a mess of shouting and flashlight beams sweeping wildly. The sealed container was full. She needed to leave."
+    },
+    {
+      "type": "paragraph",
+      "text": "Exit sealed. Emergency lockout triggered, and a metal gate dropped in front of her."
+    },
+    {
+      "type": "paragraph",
+      "text": "1547 gauged the gate thickness, then raised her pistol and aimed at the hydraulic line beside it."
+    },
+    {
+      "type": "paragraph",
+      "text": "Three shots. Hydraulic rupture. The gate lost support and tilted fifteen degrees under its own weight."
+    },
+    {
+      "type": "paragraph",
+      "text": "Enough for her to squeeze through sideways."
+    },
+    {
+      "type": "scene_break",
+      "style": "fade"
+    },
+    {
+      "type": "paragraph",
+      "text": "By the time she climbed back over the fence, the horizon was starting to pale."
+    },
+    {
+      "type": "paragraph",
+      "text": "1547 did not stop until she had run three kilometers. She leaned against a tree, catching breath. The feedscatteron core was still at high load; fluid titanium temperature at the joints ran hot -- her movements had been too fast, beyond optimal operating parameters."
+    },
+    {
+      "type": "paragraph",
+      "text": "But the sealed container was intact. Three liters of fluid-titanium ore liquid. Enough."
+    },
+    {
+      "type": "paragraph",
+      "text": "She looked down at her hand. A cut marked her thumb -- from the fence wire. What seeped out was not red blood, but blue fluid titanium mixed with residual red blood."
+    },
+    {
+      "type": "paragraph",
+      "text": "A faint purple."
+    },
+    {
+      "type": "internal_monologue",
+      "character": "1547",
+      "text": "Blue fluid titanium and red blood.\n\nMixed together: purple.\n\nLike the sky before dawn."
+    },
+    {
+      "type": "paragraph",
+      "text": "1547 secured the container and kept walking back."
+    },
+    {
+      "type": "paragraph",
+      "text": "Tomorrow -- no, today. Today is enough."
+    }
+  ]
+}

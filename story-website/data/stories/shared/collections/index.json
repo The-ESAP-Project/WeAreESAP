@@ -1,0 +1,7 @@
+[
+  {
+    "slug": "core-events",
+    "order": 0,
+    "stories": ["origin", "data-tower-incident"]
+  }
+]

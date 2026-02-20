@@ -79,6 +79,7 @@ export async function loadJsonFile<T>(
   fallbackLocale = "zh-CN"
 ): Promise<T | null> {
   try {
+    const ultimateFallback = "zh-CN";
     // 尝试当前 locale 的文件
     let filePath = path.join(process.cwd(), ...basePath, locale, filename);
 
@@ -93,6 +94,19 @@ export async function loadJsonFile<T>(
         fallbackLocale,
         filename
       );
+
+      // 如果 fallbackLocale 也不存在，最终回退到 zh-CN
+      if (fallbackLocale !== ultimateFallback && !(await exists(filePath))) {
+        logger.warn(
+          `文件 ${path.join(fallbackLocale, filename)} 不存在，回退到 ${ultimateFallback}`
+        );
+        filePath = path.join(
+          process.cwd(),
+          ...basePath,
+          ultimateFallback,
+          filename
+        );
+      }
     }
 
     const fileContent = await fs.readFile(filePath, "utf-8");

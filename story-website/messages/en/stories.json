@@ -36,5 +36,8 @@
     "continueReading": "Continue Reading",
     "locked": "Locked",
     "completed": "Read"
+  },
+  "collections": {
+    "standalone": "Standalone Stories"
   }
 }

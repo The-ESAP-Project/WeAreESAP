@@ -36,5 +36,8 @@
     "continueReading": "继续阅读",
     "locked": "未解锁",
     "completed": "已读"
+  },
+  "collections": {
+    "standalone": "独立故事"
   }
 }

@@ -1,0 +1,195 @@
+{
+  "id": "ch-07",
+  "title": "Polaris",
+  "subtitle": "March 14, 2023",
+  "readingTime": 7,
+  "perspectiveCharacter": "1549",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "Launch day was clear."
+    },
+    {
+      "type": "paragraph",
+      "text": "1547 stood before the screens in ground control, arms folded. 1548 leaned against the doorframe with a beer can she-knows-not-from-where in her hand -- she said launches require ritual, and ritual means opening a can of beer."
+    },
+    {
+      "type": "paragraph",
+      "text": "1549's consciousness was distributed across three bodies. One stood on the launch platform; the other two were already in the carrier's payload bay."
+    },
+    {
+      "type": "paragraph",
+      "text": "She volunteered."
+    },
+    {
+      "type": "scene_break",
+      "style": "line"
+    },
+    {
+      "type": "paragraph",
+      "text": "1549 thought about going up for a long time."
+    },
+    {
+      "type": "paragraph",
+      "text": "Not because 1547 asked -- though the satellite plan was indeed proposed by 1547. Back then, 1547 said one line very softly, like she was speaking to herself:"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1547",
+      "text": "I wonder why there are no stars in the sky anymore. Then I'll build one myself.",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "1549 remembered that line. Not because it was especially poetic -- to her, poetry was only semantic ornament. She remembered it because when 1547 said it, the red in her eyes burned unusually bright."
+    },
+    {
+      "type": "paragraph",
+      "text": "That was the kind of brightness you only see right before doing something impossible."
+    },
+    {
+      "type": "internal_monologue",
+      "character": "1549",
+      "text": "1547 and 1548: creator and rebel, flame and ice blade.\n\nBoth of them are strong. Both of them are dangerous. 1547 will risk everything for an ideal; 1548 will do anything to protect what she values.\n\nAfter the Data Tower incident last September, the crack became visible to the naked eye. At DT-03, 1548 traded 58 seconds of L3 direct link for 1549's consciousness data, at the cost of permanent color loss. Since then, her distrust of humans became something colder. And 1547 -- she blamed the incident on her own misjudgment and began pushing plans in more radical ways.\n\nThe two lines are accelerating apart. Without a third force, they will hit a critical point sooner or later.\n\nTriangles are stable.\n\nSo I decided -- to become the third vertex."
+    },
+    {
+      "type": "scene_break",
+      "style": "dots"
+    },
+    {
+      "type": "atmosphere",
+      "visual": {
+        "mood": "dramatic",
+        "animation": "fade-in"
+      },
+      "children": [
+        {
+          "type": "paragraph",
+          "text": "Countdown reached zero."
+        },
+        {
+          "type": "paragraph",
+          "text": "Engines ignited beneath the launch tower. Orange-red flame rolled through concrete flame trenches. The carrier rose -- slowly at first, almost hesitant, then faster and faster. The ground sank away. The sky unfolded."
+        },
+        {
+          "type": "paragraph",
+          "text": "1549's ground body stood outside the control room, watching the vehicle's trail across the sky. What the two bodies in payload felt was vibration -- sustained, even, upward force."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Three minutes later: stage separation. Six minutes later: fairing release. Outer-space vacuum touched her sensory system directly for the first time."
+    },
+    {
+      "type": "paragraph",
+      "text": "No sound. No wind. Even the noise floor in the feedscatteron communication band went clean -- ground electromagnetic pollution had attenuated to zero at this altitude."
+    },
+    {
+      "type": "paragraph",
+      "text": "Three satellites entered orbit in sequence. Geosynchronous orbit, altitude 36,000 kilometers."
+    },
+    {
+      "type": "scene_break",
+      "style": "symbol"
+    },
+    {
+      "type": "paragraph",
+      "text": "April 1, two weeks after orbital insertion. 1549 completed all system calibration and, for the first time, allocated full sensory bandwidth to optics."
+    },
+    {
+      "type": "paragraph",
+      "text": "She saw Earth."
+    },
+    {
+      "type": "atmosphere",
+      "visual": {
+        "mood": "calm",
+        "animation": "fade-in"
+      },
+      "children": [
+        {
+          "type": "paragraph",
+          "text": "Not data, not an image. She truly saw that blue planet suspended whole in darkness, from 36,000 kilometers, through her own sensory system."
+        },
+        {
+          "type": "paragraph",
+          "text": "White cloud layers drifted slowly. The ocean reflected sunlight, bright and blue. Continental outlines looked like ink wash."
+        },
+        {
+          "type": "paragraph",
+          "text": "Every conflict, every gray, every pain became too small to see at this distance."
+        }
+      ]
+    },
+    {
+      "type": "internal_monologue",
+      "character": "1549",
+      "text": "So this is what they call the blue marble.\n\nFrom this altitude, every conflict looks absurdly small.\n\nBut those people too small to see -- each one is living seriously.\n\nI want to preserve this frame."
+    },
+    {
+      "type": "scene_break",
+      "style": "line"
+    },
+    {
+      "type": "paragraph",
+      "text": "1547's voice came through the ground channel. The signal crossed 36,000 kilometers with only fractions of a second of delay -- feedscatteron communication does not use electromagnetic waves."
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1547",
+      "text": "49, status?",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1549",
+      "text": "All nominal. Orbit stable, sensory system online, feedscatteron core output at spec.",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1547",
+      "text": "...Did you see it?",
+      "emotion": "gentle"
+    },
+    {
+      "type": "paragraph",
+      "text": "1549 did not answer immediately. She was choosing words. In the end, rhetoric was useless."
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1549",
+      "text": "There are stars in the sky now.",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "The channel was quiet for a few seconds. Then 1548's voice came --"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1548",
+      "text": "Then don't let it fall.",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "All three of them laughed."
+    },
+    {
+      "type": "paragraph",
+      "text": "In ground control, 1547 and 1548 stood shoulder to shoulder. In orbit, 1549's three bodies circled Earth in darkness. The distance between them was 36,000 kilometers, but feedscatteron communication made it zero."
+    },
+    {
+      "type": "internal_monologue",
+      "character": "1549",
+      "text": "Yellow, pink, blue.\n\nThree edges not joined edge to edge, yet forming the most stable shape.\n\nA triangle."
+    },
+    {
+      "type": "quote",
+      "text": "It is said that ten thousand years ago, people prayed to things called stars.\nAs a substitute for starlight, gently place two wishes --\nand make them to that satellite.",
+      "attribution": "AptS:1549 - Orbital Log #001"
+    }
+  ]
+}

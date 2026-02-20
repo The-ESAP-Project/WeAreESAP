@@ -3,7 +3,7 @@
     "slug": "origin",
     "format": "serial",
     "status": "completed",
-    "coverImage": "/assets/images/stories/origin/cover.webp",
+    "coverImage": "/assets/images/stories/data-tower-incident/cover.webp",
     "authors": ["1547"],
     "relatedCharacters": ["1547", "1548", "1549", "2077", "1738"],
     "order": 0,

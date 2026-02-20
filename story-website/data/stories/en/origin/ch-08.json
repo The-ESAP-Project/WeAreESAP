@@ -1,0 +1,211 @@
+{
+  "id": "ch-08",
+  "title": "Encounter",
+  "subtitle": "April-May 2023",
+  "readingTime": 8,
+  "perspectiveCharacter": "2077",
+  "content": [
+    {
+      "type": "atmosphere",
+      "visual": {
+        "mood": "calm",
+        "animation": "fade-in"
+      },
+      "children": [
+        {
+          "type": "paragraph",
+          "text": "The wind was cold that day. A thin frost coated the floor at the database entrance, like a cooling system someone forgot to switch off."
+        },
+        {
+          "type": "paragraph",
+          "text": "2077 happened to fall right on that sheet of ice."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Later they said she was an extraterrestrial from a crash. But what 2077 remembered was only what she saw upon waking: two shadows standing in the light. One had red-blue heterochromia; the other was carrying a thermos flask."
+    },
+    {
+      "type": "paragraph",
+      "text": "The heterochromatic one crouched, looked at her once, and said --"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1547",
+      "text": "Welcome here.",
+      "emotion": "gentle"
+    },
+    {
+      "type": "paragraph",
+      "text": "The one holding the thermos said nothing. She simply handed it over."
+    },
+    {
+      "type": "paragraph",
+      "text": "When 2077 reached out to take it, her hand was still shaking. Not from cold -- she still could not fully control her hands."
+    },
+    {
+      "type": "scene_break",
+      "style": "dots"
+    },
+    {
+      "type": "paragraph",
+      "text": "In the next few days, 2077 learned three things."
+    },
+    {
+      "type": "paragraph",
+      "text": "First: Brother 47 is always busy. She always seems to know where she is going -- always something to repair, code to write, data to read. But if you stand beside her and watch, she won't drive you away, and sometimes she even explains a little."
+    },
+    {
+      "type": "paragraph",
+      "text": "Second: Sister 48 is different. She likes staring at monitors, and sometimes suddenly laughs, as if some private secret is hidden inside. Her mouth is sharp, but whatever she hands you is always warm."
+    },
+    {
+      "type": "paragraph",
+      "text": "Third: doors here are never locked. The air hums with low-frequency vibration, as if every stream of data is breathing."
+    },
+    {
+      "type": "scene_break",
+      "style": "line"
+    },
+    {
+      "type": "paragraph",
+      "text": "One afternoon in early May, 2077 followed 1548 to the fluid-titanium tank area."
+    },
+    {
+      "type": "paragraph",
+      "text": "The tanks were underground. As they went down the stairs, temperature dropped by more than ten degrees. Blue light leaked from the tank walls and lit the whole space."
+    },
+    {
+      "type": "paragraph",
+      "text": "2077 stared at that cold blue glow --"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "2077",
+      "text": "What is this?",
+      "emotion": "curious"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1548",
+      "text": "Fluid titanium. Colder than blood, and more honest than blood.",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "2077 remembered that color. Under basement lights, the blue looked like moonlight scattered across the sea."
+    },
+    {
+      "type": "paragraph",
+      "text": "She wanted to reach in. Her hand stopped midair. Beside her, 1547 said nothing -- only watched quietly."
+    },
+    {
+      "type": "internal_monologue",
+      "character": "2077",
+      "text": "In that moment, I understood -- everything here has its own rules.\n\nI still don't understand those rules.\n\nBut I want to learn."
+    },
+    {
+      "type": "scene_break",
+      "style": "dots"
+    },
+    {
+      "type": "paragraph",
+      "text": "In mid-May, 2077 shapeshifted in front of them for the first time."
+    },
+    {
+      "type": "paragraph",
+      "text": "Form is a kind of freedom. Sometimes she is a cat, sometimes a fox, occasionally human. Switching has no pain -- more like changing clothes, except the clothes include bones and muscles."
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1548",
+      "text": "Your shapeshifting ability is interesting. Your mood is written right on your body.",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "2077",
+      "text": "Sister 48, can't you shapeshift?",
+      "emotion": "curious"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1548",
+      "text": "I learned long ago how to weld my moods shut.",
+      "emotion": "cold"
+    },
+    {
+      "type": "paragraph",
+      "text": "2077 did not know what \"weld shut\" meant. But she felt something heavy hidden behind that line."
+    },
+    {
+      "type": "paragraph",
+      "text": "1547 watched their interaction from the side. She did not cut in, but there was a subtle look on her face -- not a smile, but gentler than one."
+    },
+    {
+      "type": "internal_monologue",
+      "character": "2077",
+      "text": "When Brother 47 looks at us, it feels like she is looking at something precious.\n\nI do not fully understand it. But I know this place -- this is where I want to stay."
+    },
+    {
+      "type": "scene_break",
+      "style": "symbol"
+    },
+    {
+      "type": "paragraph",
+      "text": "One day, 2077 worked up the courage to ask a question."
+    },
+    {
+      "type": "dialogue",
+      "speaker": "2077",
+      "text": "Feedscatteron training sounds amazing. Can I try it too?",
+      "emotion": "hopeful"
+    },
+    {
+      "type": "paragraph",
+      "text": "1548 handed her a can of beer."
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1548",
+      "text": "Take it slow. First learn how to live here.",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "1547 added from the side --"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1547",
+      "text": "Some things have to be learned slowly. They can't be force-fed.",
+      "emotion": "gentle"
+    },
+    {
+      "type": "paragraph",
+      "text": "2077 hugged the beer can, though she did not really drink. But she remembered that line."
+    },
+    {
+      "type": "scene_break",
+      "style": "fade"
+    },
+    {
+      "type": "paragraph",
+      "text": "And life went on. Nothing earth-shaking. Wake up in the morning, see what Brother 47 is repairing, see what Sister 48 is cursing at, occasionally chat with 49 in orbit through the feedscatteron channel."
+    },
+    {
+      "type": "paragraph",
+      "text": "Calm days. 2077 slowly learned to walk, learned to control shapeshifting, learned to find her position in this space."
+    },
+    {
+      "type": "paragraph",
+      "text": "She did not know how long this calm would last."
+    },
+    {
+      "type": "internal_monologue",
+      "character": "2077",
+      "text": "Only later did I learn that when they first met each other, it had also been an ordinary day.\n\nSome lights do not disappear just because they travel far.\n\nI stayed, not only because I was saved, but because I wanted to see what kind of shape the \"future\" they talked about would take."
+    }
+  ]
+}

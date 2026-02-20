@@ -36,5 +36,8 @@
     "continueReading": "続きを読む",
     "locked": "ロック中",
     "completed": "読了"
+  },
+  "collections": {
+    "standalone": "独立ストーリー"
   }
 }

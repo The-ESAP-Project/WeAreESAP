@@ -76,3 +76,20 @@ export type UnlockCondition =
   | { type: "read_perspective"; baseChapterId: string; characterId: string }
   | { type: "found_item"; sceneId: string; itemId: string }
   | { type: "read_all_perspectives"; baseChapterId: string };
+
+/** Collection registry entry — shared/collections/index.json */
+export interface CollectionRegistryEntry {
+  slug: string;
+  coverImage?: string;
+  order: number;
+  stories: string[];
+}
+
+/** Translated collection info — {locale}/collections/{slug}.json */
+export interface CollectionInfo {
+  title: string;
+  description?: string;
+}
+
+/** Merged collection data (registry + info) */
+export type Collection = CollectionRegistryEntry & CollectionInfo;

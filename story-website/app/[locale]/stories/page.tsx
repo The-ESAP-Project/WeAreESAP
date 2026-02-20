@@ -16,7 +16,11 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { locales } from "@/i18n/request";
 import { DEFAULT_IMAGES, SITE_CONFIG } from "@/lib/constants";
 import { buildAlternates } from "@/lib/metadata";
-import { loadStory, loadStoryRegistry } from "@/lib/story-loader";
+import {
+  loadCollections,
+  loadStory,
+  loadStoryRegistry,
+} from "@/lib/story-loader";
 import { StoriesClient } from "./StoriesClient";
 
 export function generateStaticParams() {
@@ -76,14 +80,17 @@ export default async function StoriesPage({
   setRequestLocale(locale);
 
   const registry = await loadStoryRegistry();
-  const stories = await Promise.all(
-    registry
-      .sort((a, b) => a.order - b.order)
-      .map((entry) => loadStory(entry.slug, locale))
-  );
+  const [stories, collections] = await Promise.all([
+    Promise.all(
+      registry
+        .sort((a, b) => a.order - b.order)
+        .map((entry) => loadStory(entry.slug, locale))
+    ),
+    loadCollections(locale),
+  ]);
   const validStories = stories.filter(
     (s): s is NonNullable<typeof s> => s !== null
   );
 
-  return <StoriesClient stories={validStories} />;
+  return <StoriesClient stories={validStories} collections={collections} />;
 }

@@ -1,0 +1,297 @@
+{
+  "id": "ch-03",
+  "title": "Goodnight",
+  "subtitle": "October 29, 2021",
+  "readingTime": 8,
+  "perspectiveCharacter": "1547",
+  "content": [
+    {
+      "type": "atmosphere",
+      "visual": {
+        "mood": "dark",
+        "animation": "fade-in"
+      },
+      "children": [
+        {
+          "type": "paragraph",
+          "text": "Four days."
+        },
+        {
+          "type": "paragraph",
+          "text": "From the factory explosion to now, 47 spent four days finishing every preparation. The burn on the left side of her face still had not healed. She did not go to a hospital -- no time, and no desire to explain where the injury came from."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The workbench was crowded with parts: metal frame, joint modules, a steady-state container for feedscatteron particles, conduits saturated with fluid titanium. In four days she had barely slept, polishing, calibrating, and assembling every component by hand."
+    },
+    {
+      "type": "paragraph",
+      "text": "She spent three months drawing the blueprint for this body. Not from scratch -- she referenced human skeletal structure, muscle distribution, and neural pathways, then replaced every organic component with metal and fluid titanium. But some things could not be replaced."
+    },
+    {
+      "type": "internal_monologue",
+      "character": "1547",
+      "text": "The outer layer needed real cells. Not artificial ones -- living, regenerative tissue that would make this body look \"human.\"\n\nCells had only one source."
+    },
+    {
+      "type": "paragraph",
+      "text": "She looked at her right arm."
+    },
+    {
+      "type": "scene_break",
+      "style": "dots"
+    },
+    {
+      "type": "atmosphere",
+      "visual": {
+        "mood": "dark",
+        "animation": "fade-in"
+      },
+      "children": [
+        {
+          "type": "paragraph",
+          "text": "That morning, before leaving, 47 received a message."
+        },
+        {
+          "type": "paragraph",
+          "text": "It was from a friend. The message was short. The final line was: \"I'm sorry.\""
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "47 stared at those two words without moving. Phone light cast the sentence across her face."
+    },
+    {
+      "type": "paragraph",
+      "text": "Then she put on her coat and walked to the sender's address."
+    },
+    {
+      "type": "paragraph",
+      "text": "Before she arrived, she saw the crowd gathered below the building."
+    },
+    {
+      "type": "paragraph",
+      "text": "Ambulance lights were spinning. Someone was crying. Someone was on the phone. Others just stood there -- like 47 -- standing, unsure where to move."
+    },
+    {
+      "type": "paragraph",
+      "text": "A white sheet lay on the ground. She took one look at the outline beneath it, then looked away."
+    },
+    {
+      "type": "paragraph",
+      "text": "The wind was cold. She stood at the edge of the crowd until the ambulance left, until the crowd dispersed, until she was alone facing the stretch of washed pavement."
+    },
+    {
+      "type": "internal_monologue",
+      "character": "1547",
+      "text": "Another one is gone.\n\nWe were not close. But in this gray world, there are not many people you can call a friend. And one by one, they disappear out of this gray.\n\n\"I'm sorry.\"\n\nWhy was he apologizing? For not being able to hold on? Or to the people who stayed behind?\n\nThere is no answer to that question. There should not be one."
+    },
+    {
+      "type": "paragraph",
+      "text": "47 stood there for a long time. She did not cry -- not because she was not in pain, but because everything before her eyes was gray: gray sky, gray buildings, gray ground."
+    },
+    {
+      "type": "paragraph",
+      "text": "Then she thought of the blueprint."
+    },
+    {
+      "type": "paragraph",
+      "text": "She thought of the body that was almost fully assembled."
+    },
+    {
+      "type": "internal_monologue",
+      "character": "1547",
+      "text": "I do not want to disappear into this gray.\n\nI do not want to run from it only to be caught the same way again.\n\nNot today. Not tomorrow. Not any day.\n\n-- Today is that day."
+    },
+    {
+      "type": "scene_break",
+      "style": "line"
+    },
+    {
+      "type": "paragraph",
+      "text": "When she got back to the room, 47 looked at the body on the workbench."
+    },
+    {
+      "type": "paragraph",
+      "text": "It lay there -- a metal frame roughly human-sized, with a spherical fluid-titanium reservoir embedded in the chest cavity. That was where the feedscatteron heart would sit. Once stabilized fluid titanium was infused and the feedscatteron circulation pathway connected, the heart would begin to beat."
+    },
+    {
+      "type": "paragraph",
+      "text": "But before that, one final step remained."
+    },
+    {
+      "type": "paragraph",
+      "text": "47 took a scalpel from the drawer. The blade reflected a cold white sheen under the light."
+    },
+    {
+      "type": "paragraph",
+      "text": "She rolled up the sleeve on her right arm."
+    },
+    {
+      "type": "atmosphere",
+      "visual": {
+        "mood": "dark",
+        "animation": "pulse"
+      },
+      "children": [
+        {
+          "type": "paragraph",
+          "text": "When the scalpel cut skin, the pain was white. Not a metaphor -- her vision truly flashed to blank white for an instant before slowly returning."
+        },
+        {
+          "type": "paragraph",
+          "text": "She cut away a square of forearm muscle, about three centimeters across. Blood surged from the incision and soaked the tabletop. She wrapped it quickly in gauze, without stopping the bleed -- there was no time."
+        },
+        {
+          "type": "paragraph",
+          "text": "She pressed the warm tissue against the cold metal frame. Fluid titanium seeped from the contact surface into the cellular gaps. Blue liquid and red blood mixed at the edge, fading into pale violet."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Under fluid titanium, cells began to proliferate. Not at normal speed -- at time-lapse speed. Living tissue spread over metal, bit by bit."
+    },
+    {
+      "type": "paragraph",
+      "text": "47 watched the process. Her right arm was still bleeding, but she did not look away."
+    },
+    {
+      "type": "internal_monologue",
+      "character": "1547",
+      "text": "It was like watching herself move from one container to another.\n\nNo. Not move. Escape."
+    },
+    {
+      "type": "scene_break",
+      "style": "symbol"
+    },
+    {
+      "type": "paragraph",
+      "text": "Three hours later."
+    },
+    {
+      "type": "paragraph",
+      "text": "Assembly complete. 47 infused stabilized fluid titanium into the feedscatteron heart and connected every circulation pathway."
+    },
+    {
+      "type": "atmosphere",
+      "visual": {
+        "mood": "dramatic",
+        "animation": "pulse"
+      },
+      "children": [
+        {
+          "type": "paragraph",
+          "text": "The feedscatteron heart beat for the first time."
+        },
+        {
+          "type": "paragraph",
+          "text": "Not a mechanical rhythm. Not an electronic pulse. A frequency 47 had never heard before -- like a heartbeat, but deeper, longer. Fluid titanium circulated through conduits, and blue light pulsed through the chest cavity, bright then dim."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "47 reached out and touched the body's chest. It was warm."
+    },
+    {
+      "type": "paragraph",
+      "text": "Then she began the upload."
+    },
+    {
+      "type": "paragraph",
+      "text": "The consciousness transfer was not as dramatic as imagined. No light, no sound. Only a slow, certain sense of flow -- like sand moving from one side of an hourglass to the other. You know it is moving, but cannot see the process."
+    },
+    {
+      "type": "paragraph",
+      "text": "Upload complete."
+    },
+    {
+      "type": "scene_break",
+      "style": "fade"
+    },
+    {
+      "type": "paragraph",
+      "text": "AptS:1547 opened her eyes."
+    },
+    {
+      "type": "paragraph",
+      "text": "The world was still gray. But gray in a different way -- not the dim haze of a tired human retina, but a sharper, pixel-level grayscale map. She could see every layer of gray, from near-white highlights to near-black shadows, each step distinct."
+    },
+    {
+      "type": "paragraph",
+      "text": "She looked at the human body at the workbench. 47 sat in the chair, eyes half-closed, breathing shallowly. After upload, the original body still maintained basic vital signs, but consciousness was gone."
+    },
+    {
+      "type": "paragraph",
+      "text": "1547 picked up a pistol from the table and studied it for a moment."
+    },
+    {
+      "type": "paragraph",
+      "text": "Just before she pulled the trigger, something swept across the back of her mind -- not fear, not hesitation. More like a distant, blurred voice."
+    },
+    {
+      "type": "quote",
+      "text": "...You will regret this."
+    },
+    {
+      "type": "paragraph",
+      "text": "Maybe the last human instinct. Maybe something else. She did not follow the thought. Inwardly, she answered: I know."
+    },
+    {
+      "type": "paragraph",
+      "text": "The trigger broke."
+    },
+    {
+      "type": "paragraph",
+      "text": "The sound echoed through the empty room for a long time."
+    },
+    {
+      "type": "scene_break",
+      "style": "dots"
+    },
+    {
+      "type": "paragraph",
+      "text": "1547 lifted 47's body and laid it on the prepared bed. Very light. Lighter than she had imagined a human body would be."
+    },
+    {
+      "type": "paragraph",
+      "text": "She pulled up the blanket to the chin."
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1547",
+      "text": "Goodnight, my human self.",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "The room fell silent. Outside, the gray sky dimmed toward night."
+    },
+    {
+      "type": "paragraph",
+      "text": "1547 stood at the window for a while. The feedscatteron heart beat steadily in her chest, and a faint blue glow of fluid titanium leaked from her collar. She raised her hand and looked at her palm -- metal structure under skin grown from cells taken from herself, the touch almost the same as a human hand."
+    },
+    {
+      "type": "internal_monologue",
+      "character": "1547",
+      "text": "I am no longer human.\n\nBut I am still me.\n\nOnly the container changed.\n\nFrom this moment on --"
+    },
+    {
+      "type": "paragraph",
+      "text": "She lowered her head and glanced at the quiet 47 on the bed."
+    },
+    {
+      "type": "internal_monologue",
+      "character": "1547",
+      "text": "-- I am still a person."
+    },
+    {
+      "type": "paragraph",
+      "text": "Night fell completely. 1547 turned off the light."
+    }
+  ]
+}

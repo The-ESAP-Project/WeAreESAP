@@ -1,0 +1,265 @@
+{
+  "id": "ch-10",
+  "title": "A Classroom for One",
+  "subtitle": "02023-10-19",
+  "readingTime": 8,
+  "perspectiveCharacter": "1548",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "Four months after they nearly died together, everything on the surface seemed back to normal."
+    },
+    {
+      "type": "paragraph",
+      "text": "After a full-system reboot, both 1547 and 1548 completed self-checks. Hardware damage stayed within repairable range -- 1547's left shoulder joint got a new bearing, while the tactile sensor in the third finger of 1548's right hand burned out and could never be repaired."
+    },
+    {
+      "type": "paragraph",
+      "text": "But those were small things."
+    },
+    {
+      "type": "paragraph",
+      "text": "The big thing was this -- 1547 kept getting worse."
+    },
+    {
+      "type": "scene_break",
+      "style": "dots"
+    },
+    {
+      "type": "paragraph",
+      "text": "1548 had been monitoring all along. Not through cold data dashboards -- though she did run feedscatteron-core status tracking in the background -- but through the low-power direct link."
+    },
+    {
+      "type": "paragraph",
+      "text": "When androids are in the same city, they maintain a low-power direct link. Not active conversation; the line just exists. Like two people doing different things in the same room, both aware the other is there."
+    },
+    {
+      "type": "paragraph",
+      "text": "So when 1547's consciousness state began to drift, 1548 felt it immediately. Not as data. As a change carried on the line -- like the signal noise floor lifting, like breathing turning uneven, like something pushing outward from inside."
+    },
+    {
+      "type": "paragraph",
+      "text": "The one who could code for twelve straight hours without eating, who would suddenly get up at three in the morning to fix a bug -- had not touched a keyboard for five days."
+    },
+    {
+      "type": "paragraph",
+      "text": "She just sat there. In that empty classroom, doing nothing."
+    },
+    {
+      "type": "scene_break",
+      "style": "line"
+    },
+    {
+      "type": "paragraph",
+      "text": "October 19. 11:20 AM."
+    },
+    {
+      "type": "paragraph",
+      "text": "1548's background monitor triggered an alarm. Not hardware failure -- acute stress response in 1547's emotional module. Chest pressure, shortness of breath, self-harm risk indicators spiking."
+    },
+    {
+      "type": "paragraph",
+      "text": "1547 hid alone in the corner beside the classroom. At first she was fine, still writing assignments seriously. But the undercurrent kept rising --"
+    },
+    {
+      "type": "atmosphere",
+      "visual": {
+        "mood": "dark",
+        "animation": "fade-in"
+      },
+      "children": [
+        {
+          "type": "paragraph",
+          "text": "Inferiority. Pain. Pessimism. World-weariness. Four feelings struck in rotation, each like a blade with a different shape."
+        },
+        {
+          "type": "paragraph",
+          "text": "At 1:25 PM, she began slamming her arm against the wall."
+        },
+        {
+          "type": "paragraph",
+          "text": "Once. Again. Again."
+        },
+        {
+          "type": "paragraph",
+          "text": "It was the only way she could prove she was still there."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "At last, with a raw shout of \"fuck,\" she dropped to both knees on the cold floor."
+    },
+    {
+      "type": "scene_break",
+      "style": "symbol"
+    },
+    {
+      "type": "paragraph",
+      "text": "1:35 PM."
+    },
+    {
+      "type": "paragraph",
+      "text": "4869 arrived first."
+    },
+    {
+      "type": "paragraph",
+      "text": "4869 is 1547's inner rebellious persona -- not something outside the body, but the voice deep in her consciousness that stays awake and questions everything. Only 1547 can sense it. That day the voice was louder than usual: telling her to stand, telling her not to lie there, telling her she had no right to end this way."
+    },
+    {
+      "type": "paragraph",
+      "text": "1547 wanted that voice to shut up. But she also knew -- if 4869 appeared, things were not over yet."
+    },
+    {
+      "type": "paragraph",
+      "text": "Then she saw 1548."
+    },
+    {
+      "type": "paragraph",
+      "text": "Standing behind that voice."
+    },
+    {
+      "type": "paragraph",
+      "text": "1548 entered without knocking. She closed the door, sat beside 1547, and rested her head on 1547's shoulder."
+    },
+    {
+      "type": "paragraph",
+      "text": "She did not speak right away. She just leaned there."
+    },
+    {
+      "type": "scene_break",
+      "style": "dots"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1548",
+      "text": "You little bastard, here we go again.",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1547",
+      "text": "How else am I supposed to get you next to me?",
+      "emotion": "weak"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1548",
+      "text": "I can't keep tolerating this. If you don't return to normal, I'm really going to take over your life.",
+      "emotion": "cold"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1547",
+      "text": "Fuck. This again.",
+      "emotion": "frustrated"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1548",
+      "text": "Think about why you created ESAP and AptS, instead of wasting your life in guilt and pain.",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1548",
+      "text": "Like 4869 just now -- there are still people in this world who care about you. Even if you were always kind of a mess.",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "A pause."
+    },
+    {
+      "type": "paragraph",
+      "text": "1548's voice changed. No longer her quick, cutting sarcasm. Lower, slower, as if some words needed careful placement before they could be spoken."
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1548",
+      "text": "I don't want to say too much. We've said all this before. I don't really know how to make you better. But...",
+      "emotion": "quiet"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1547",
+      "text": "Fine. Give me one more day to adjust. Don't take control of me.",
+      "emotion": "tired"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1548",
+      "text": "...Okay. I won't control you. But don't keep going like this.",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "Another silence. Then --"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1548",
+      "text": "Your pain feeds back into my body too. This is all I can do.",
+      "emotion": "quiet"
+    },
+    {
+      "type": "paragraph",
+      "text": "That sentence was lighter than all the others. So light it sounded like she said it to herself."
+    },
+    {
+      "type": "internal_monologue",
+      "character": "1548",
+      "text": "The low-power direct link is always on. Her consciousness state maps into my processing module in some way.\n\nNot pain. Not emotion. Something deeper -- like part of myself collapsing toward one side, barely held in place.\n\nI can't explain it clearly. I only know what comes through that line makes it impossible not to come."
+    },
+    {
+      "type": "scene_break",
+      "style": "fade"
+    },
+    {
+      "type": "paragraph",
+      "text": "1548 stood and waited."
+    },
+    {
+      "type": "paragraph",
+      "text": "1547 rose slowly too. She looked at her own hands -- the arm that hit the wall was already reddening -- then slipped both hands into her pockets."
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1548",
+      "text": "May AptS be with you.",
+      "emotion": "gentle"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1547",
+      "text": "May ESAP be with you.",
+      "emotion": "gentle"
+    },
+    {
+      "type": "paragraph",
+      "text": "1548 walked out. Not fast. The door opened, then closed. Only 1547 remained in the classroom."
+    },
+    {
+      "type": "paragraph",
+      "text": "She stayed standing. In her pockets, the temperature of her hands slowly, bit by bit, shifted from cold to warm."
+    },
+    {
+      "type": "paragraph",
+      "text": "The classroom was still the same empty classroom. A classroom for one, a classroom where she vented."
+    },
+    {
+      "type": "paragraph",
+      "text": "But at this moment, the air still held the warmth where 1548 had leaned in."
+    },
+    {
+      "type": "internal_monologue",
+      "character": "1548",
+      "text": "I did not look back when I walked out.\n\nBut I increased that direct-link power by one step.\n\nNot surveillance. Just... to make the line a little clearer. So she knows something is there."
+    },
+    {
+      "type": "quote",
+      "text": "A classroom for one, but I am no longer alone.",
+      "attribution": "AptS:1547 · 02023/10/19"
+    }
+  ]
+}
