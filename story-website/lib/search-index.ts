@@ -19,7 +19,7 @@ export async function buildSearchIndex(locale: string): Promise<SearchItem[]> {
   const localePrefix = locale === "zh-CN" ? "" : `/${locale}`;
 
   const results = await Promise.all(
-    registry.map(async (entry) => {
+    registry.map(async (entry): Promise<SearchItem | null> => {
       const story = await loadStory(entry.slug, locale);
       if (!story) return null;
 
