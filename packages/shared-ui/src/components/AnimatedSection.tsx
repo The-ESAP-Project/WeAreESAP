@@ -13,6 +13,7 @@
 
 "use client";
 
+import type { Easing } from "framer-motion";
 import { motion } from "framer-motion";
 import type { ReactNode } from "react";
 import { useReducedMotion } from "../hooks/useReducedMotion";
@@ -22,7 +23,7 @@ interface AnimatedSectionProps {
   className?: string;
   delay?: number;
   duration?: number;
-  ease?: number[];
+  ease?: Easing | Easing[];
 }
 
 export function AnimatedSection({
@@ -30,7 +31,7 @@ export function AnimatedSection({
   className,
   delay = 0,
   duration = 0.4,
-  ease = [0.16, 1, 0.3, 1],
+  ease = [0.16, 1, 0.3, 1] as [number, number, number, number],
 }: AnimatedSectionProps) {
   const shouldReduceMotion = useReducedMotion();
 
