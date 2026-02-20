@@ -23,7 +23,8 @@
     "test:unit:run": "bun run prebuild && vitest run",
     "lint": "biome check",
     "lint:fix": "biome check --fix",
-    "format": "biome format --write ."
+    "format": "biome format --write .",
+    "license:add": "node ./scripts/add-license-headers.js"
   },
   "dependencies": {
     "framer-motion": "12.34.3",
