@@ -44,7 +44,7 @@ export function Footer() {
   const socialLinks = [
     {
       name: "GitHub",
-      href: "https://github.com/The-ESAP-Project/",
+      href: "https://github.com/The-ESAP-Project/WeAreESAP/tree/master/weare-website",
       icon: "Github" as const,
     },
     {

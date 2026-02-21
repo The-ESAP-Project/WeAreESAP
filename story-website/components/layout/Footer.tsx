@@ -35,7 +35,14 @@ export function Footer() {
     }
   }, [locale]);
 
+  const rssUrl = locale === "zh-CN" ? "/rss.xml" : `/${locale}/rss.xml`;
+
   const relatedLinks = [
+    {
+      name: "GitHub",
+      href: "https://github.com/The-ESAP-Project/WeAreESAP/tree/master/story-website",
+      icon: "Github" as const,
+    },
     {
       name: "We Are ESAP",
       href: "https://weare.esaps.net",
@@ -45,6 +52,11 @@ export function Footer() {
       name: t("website"),
       href: "https://www.esaps.net/",
       icon: "Globe" as const,
+    },
+    {
+      name: "RSS",
+      href: rssUrl,
+      icon: "Rss" as const,
     },
   ];
 

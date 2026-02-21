@@ -19,6 +19,7 @@ export interface Chapter {
   id: string;
   title: string;
   subtitle?: string;
+  publishedAt?: string;
   content: StoryContentBlock[];
   visual?: VisualEnhancement;
   readingTime?: number;

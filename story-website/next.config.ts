@@ -23,6 +23,17 @@ const nextConfig: NextConfig = {
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
   },
 
+  async redirects() {
+    return [
+      { source: "/rss", destination: "/rss.xml", permanent: true },
+      {
+        source: "/:locale(en|ja)/rss",
+        destination: "/:locale/rss.xml",
+        permanent: true,
+      },
+    ];
+  },
+
   async headers() {
     return [
       {

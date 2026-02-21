@@ -25,6 +25,7 @@ import {
   LuMenu,
   LuMessageCircle,
   LuMoon,
+  LuRss,
   LuSearch,
   LuSettings,
   LuSun,
@@ -48,6 +49,7 @@ export type IconName =
   | "X"
   | "Sun"
   | "Moon"
+  | "Rss"
   | "ChevronDown"
   | "ChevronRight"
   | "ChevronUp";
@@ -68,6 +70,7 @@ const iconMap: Record<IconName, ComponentType<{ className?: string }>> = {
   X: LuX,
   Sun: LuSun,
   Moon: LuMoon,
+  Rss: LuRss,
   ChevronDown: LuChevronDown,
   ChevronRight: LuChevronRight,
   ChevronUp: LuChevronUp,

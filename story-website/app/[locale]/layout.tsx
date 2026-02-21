@@ -55,6 +55,7 @@ export async function generateMetadata({
   const keywords = Array.isArray(rawKeywords) ? (rawKeywords as string[]) : [];
   const title = t("title");
   const description = t("description");
+  const localePrefix = locale === "zh-CN" ? "" : `/${locale}`;
 
   return {
     title: {
@@ -65,6 +66,11 @@ export async function generateMetadata({
     keywords,
     metadataBase: new URL(SITE_CONFIG.baseUrl),
     authors: SITE_CONFIG.authors.map((name) => ({ name })),
+    alternates: {
+      types: {
+        "application/rss+xml": `${SITE_CONFIG.baseUrl}${localePrefix}/rss.xml`,
+      },
+    },
     openGraph: {
       siteName: SITE_CONFIG.siteName,
       type: "website",
