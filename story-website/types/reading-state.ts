@@ -20,7 +20,7 @@ export interface ReadingState {
 export interface StoryReadingState {
   chaptersRead: string[];
   currentChapterId?: string;
-  scrollPosition?: number;
+  chapterScrollPositions?: Record<string, number>;
   choices: Record<string, string>;
   perspectivesViewed: Record<string, string[]>;
   discoveredItems: Record<string, string[]>;

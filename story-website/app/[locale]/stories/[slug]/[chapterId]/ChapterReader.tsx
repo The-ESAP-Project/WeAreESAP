@@ -13,8 +13,9 @@
 
 "use client";
 
+import { AnimatePresence, motion } from "framer-motion";
 import { useTranslations } from "next-intl";
-import { useEffect } from "react";
+import { useEffect, useRef, useState } from "react";
 import { PerspectiveSwitch } from "@/components/interactive/PerspectiveSwitch";
 import { ReaderContent } from "@/components/reader/ReaderContent";
 import { ReaderToolbar } from "@/components/reader/ReaderToolbar";
@@ -27,7 +28,7 @@ import { useReadingState } from "@/hooks/useReadingState";
 import { Link } from "@/i18n/navigation";
 import { getBaseChapterId } from "@/lib/branch-resolver";
 import { getNewlyUnlocked, isUnlocked } from "@/lib/unlock-engine";
-import { cn } from "@/lib/utils";
+import { cn, debounce } from "@/lib/utils";
 import type { Chapter } from "@/types/chapter";
 import type { Story } from "@/types/story";
 
@@ -61,8 +62,12 @@ function ChapterReaderInner({
     markChapterRead,
     recordPerspective,
     unlockContent,
+    saveScrollPosition,
   } = useReadingState(story.slug);
   const { preferences } = useReadingPreferences();
+
+  const [showResumeBanner, setShowResumeBanner] = useState(false);
+  const savedScrollYRef = useRef(0);
 
   const currentLocked = hydrated && !isUnlocked(chapter.id, story, storyState);
   const nextLocked =
@@ -89,11 +94,36 @@ function ChapterReaderInner({
     story,
   ]);
 
-  // Scroll to top on chapter change
-  // biome-ignore lint/correctness/useExhaustiveDependencies: chapter.id is an intentional trigger
+  // Scroll to top on chapter change; show resume banner if a saved position exists
+  // biome-ignore lint/correctness/useExhaustiveDependencies: chapter.id and hydrated are intentional triggers; chapterScrollPositions read once after hydration
   useEffect(() => {
+    setShowResumeBanner(false);
     window.scrollTo(0, 0);
-  }, [chapter.id]);
+    if (!hydrated) return;
+    const savedY = storyState.chapterScrollPositions?.[chapter.id] ?? 0;
+    savedScrollYRef.current = savedY;
+    if (savedY > 0) setShowResumeBanner(true);
+  }, [chapter.id, hydrated]);
+
+  // Debounced scroll position saver
+  useEffect(() => {
+    const debouncedSave = debounce((pos: number) => {
+      saveScrollPosition(chapter.id, pos);
+    }, 500);
+    const handleScroll = () => debouncedSave(window.scrollY);
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [chapter.id, saveScrollPosition]);
+
+  const handleResume = () => {
+    window.scrollTo({ top: savedScrollYRef.current, behavior: "smooth" });
+    setShowResumeBanner(false);
+  };
+
+  const handleStartOver = () => {
+    saveScrollPosition(chapter.id, 0);
+    setShowResumeBanner(false);
+  };
 
   // Auto-unlock inline content gates when conditions are met
   useEffect(() => {
@@ -248,6 +278,39 @@ function ChapterReaderInner({
 
       {/* Reader toolbar */}
       <ReaderToolbar />
+
+      {/* Resume reading banner */}
+      <AnimatePresence>
+        {showResumeBanner && (
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 20 }}
+            transition={{ duration: 0.25, ease: "easeOut" }}
+            className="fixed bottom-20 inset-x-0 z-50 flex justify-center px-4 pointer-events-none"
+          >
+            <div className="pointer-events-auto bg-background border border-border rounded-xl shadow-xl px-4 py-3 flex items-center gap-3 max-w-xs w-full">
+              <span className="text-sm text-foreground flex-1">
+                {t("resumeBanner.prompt")}
+              </span>
+              <button
+                type="button"
+                onClick={handleResume}
+                className="text-sm font-medium text-esap-blue hover:opacity-75 transition-opacity shrink-0"
+              >
+                {t("resumeBanner.resume")}
+              </button>
+              <button
+                type="button"
+                onClick={handleStartOver}
+                className="text-sm text-muted-foreground hover:text-foreground transition-colors shrink-0"
+              >
+                {t("resumeBanner.startOver")}
+              </button>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 }

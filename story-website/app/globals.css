@@ -38,6 +38,12 @@
   --esap-mint-dark: #5bb5a0;
   --esap-sky: #87ceeb;
   --esap-sky-dark: #5f9ea0;
+  --esap-purple: #8b4fb3;
+  --esap-purple-dark: #5d3477;
+  --esap-teal: #1abc9c;
+  --esap-teal-dark: #16a085;
+  --esap-taupe: #8a857e;
+  --esap-taupe-dark: #6b665f;
 
   --reader-max-width: 65ch;
   --reader-font-size-sm: 0.9rem;
@@ -68,6 +74,12 @@
   --esap-mint-dark: #99ddd0;
   --esap-sky: #87ceeb;
   --esap-sky-dark: #a0d8ef;
+  --esap-purple: #a855f7;
+  --esap-purple-dark: #c084fc;
+  --esap-teal: #22d3b8;
+  --esap-teal-dark: #34e8cc;
+  --esap-taupe: #a8a39c;
+  --esap-taupe-dark: #bfbab3;
 }
 
 @theme inline {
@@ -231,6 +243,15 @@ button,
 }
 .speaker-1543 {
   color: var(--esap-sky);
+}
+.speaker-4869 {
+  color: var(--esap-purple);
+}
+.speaker-0152 {
+  color: var(--esap-teal);
+}
+.speaker-3167 {
+  color: var(--esap-taupe);
 }
 
 /* Japanese locale: YakuHanMP 半角标点 (明朝体) */

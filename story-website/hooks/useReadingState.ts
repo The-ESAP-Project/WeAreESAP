@@ -21,6 +21,7 @@ import {
   markUnlocked,
   recordChoice as recChoice,
   recordPerspective as recPerspective,
+  saveScrollPosition as saveScrollPos,
   saveState,
   updateStoryState,
 } from "@/lib/reading-state";
@@ -96,6 +97,17 @@ export function useReadingState(storySlug: string) {
     [storySlug]
   );
 
+  const saveScrollPosition = useCallback(
+    (chapterId: string, position: number) => {
+      setState((prev) =>
+        updateStoryState(prev, storySlug, (s) =>
+          saveScrollPos(s, chapterId, position)
+        )
+      );
+    },
+    [storySlug]
+  );
+
   return {
     storyState,
     preferences: state.preferences,
@@ -105,5 +117,6 @@ export function useReadingState(storySlug: string) {
     recordPerspective,
     discoverItem,
     unlockContent,
+    saveScrollPosition,
   };
 }

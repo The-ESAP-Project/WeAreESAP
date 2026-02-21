@@ -42,6 +42,17 @@ export function truncate(
   return text.slice(0, maxLength - suffix.length) + suffix;
 }
 
+export function debounce<TArgs extends unknown[]>(
+  fn: (...args: TArgs) => void,
+  delay: number
+): (...args: TArgs) => void {
+  let timer: ReturnType<typeof setTimeout> | null = null;
+  return (...args: TArgs) => {
+    if (timer !== null) clearTimeout(timer);
+    timer = setTimeout(() => fn(...args), delay);
+  };
+}
+
 export function getImageUrl(
   path: string | undefined,
   siteUrl?: string

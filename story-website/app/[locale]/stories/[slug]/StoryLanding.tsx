@@ -35,7 +35,8 @@ export function StoryLanding({ story, chapterTitles }: StoryLandingProps) {
   const firstUnreadChapter = story.chapterOrder.find(
     (id) => !storyState.chaptersRead.includes(id)
   );
-  const continueChapter = firstUnreadChapter ?? story.chapterOrder[0];
+  const continueChapter =
+    storyState.currentChapterId ?? firstUnreadChapter ?? story.chapterOrder[0];
   const hasProgress = storyState.chaptersRead.length > 0;
 
   return (

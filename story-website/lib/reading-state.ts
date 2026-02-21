@@ -143,6 +143,21 @@ export function markUnlocked(
   };
 }
 
+/** Save scroll position for a chapter */
+export function saveScrollPosition(
+  story: StoryReadingState,
+  chapterId: string,
+  position: number
+): StoryReadingState {
+  return {
+    ...story,
+    chapterScrollPositions: {
+      ...story.chapterScrollPositions,
+      [chapterId]: Math.round(position),
+    },
+  };
+}
+
 /** Update reading preferences */
 export function updatePreferences(
   state: ReadingState,

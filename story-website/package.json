@@ -16,7 +16,7 @@
   },
   "scripts": {
     "dev": "pnpm run prebuild && next dev",
-    "prebuild": "node ./scripts/generate-build-info.mjs",
+    "prebuild": "node ./scripts/generate-build-info.mjs && node ./scripts/update-story-timestamps.mjs",
     "build": "next build",
     "start": "next start",
     "test:unit": "pnpm run prebuild && vitest",
