@@ -15,23 +15,56 @@ export default function HomeLoading() {
   return (
     <div className="animate-pulse">
       {/* Hero skeleton */}
-      <div className="min-h-[60vh] flex flex-col items-center justify-center px-4 gap-6">
-        <div className="h-12 w-72 bg-muted rounded" />
-        <div className="h-5 w-96 bg-muted rounded" />
-        <div className="h-10 w-32 bg-muted rounded-full" />
-      </div>
+      <section className="flex items-center justify-center px-4 py-16 md:py-28">
+        <div className="text-center max-w-2xl mx-auto space-y-4">
+          <div className="h-14 w-80 bg-muted rounded mx-auto" />
+          <div className="h-6 w-96 bg-muted rounded mx-auto" />
+          <div className="h-10 w-32 bg-muted rounded-lg mx-auto" />
+        </div>
+      </section>
+
       {/* Featured story skeleton */}
-      <div className="max-w-4xl mx-auto px-4 pb-16">
-        <div className="border border-border rounded-xl p-8 flex gap-6">
-          <div className="w-32 h-44 bg-muted rounded-lg shrink-0" />
-          <div className="flex-1 space-y-3">
-            <div className="h-6 w-40 bg-muted rounded" />
+      <section className="max-w-5xl mx-auto px-4 pt-8 pb-8">
+        <div className="h-7 w-40 bg-muted rounded mb-6" />
+        <div className="rounded-xl border border-border overflow-hidden">
+          <div className="h-52 md:h-64 bg-muted" />
+          <div className="p-6 space-y-3">
+            <div className="flex gap-2">
+              <div className="h-5 w-14 bg-muted rounded-full" />
+              <div className="h-5 w-14 bg-muted rounded-full" />
+            </div>
+            <div className="h-6 w-56 bg-muted rounded" />
             <div className="h-4 w-full bg-muted rounded" />
-            <div className="h-4 w-3/4 bg-muted rounded" />
-            <div className="h-9 w-28 bg-muted rounded mt-4" />
+            <div className="h-4 w-4/5 bg-muted rounded" />
+            <div className="h-4 w-3/5 bg-muted rounded" />
+            <div className="h-4 w-20 bg-muted rounded mt-4" />
           </div>
         </div>
-      </div>
+      </section>
+
+      {/* More stories skeleton */}
+      <section className="max-w-5xl mx-auto px-4 pb-16">
+        <div className="h-7 w-32 bg-muted rounded mb-6" />
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          {Array.from({ length: 2 }).map((_, i) => (
+            <div
+              key={i}
+              className="rounded-xl border border-border overflow-hidden"
+            >
+              <div className="h-40 md:h-48 bg-muted" />
+              <div className="p-4 space-y-2">
+                <div className="flex gap-2">
+                  <div className="h-5 w-12 bg-muted rounded-full" />
+                  <div className="h-5 w-12 bg-muted rounded-full" />
+                </div>
+                <div className="h-5 w-40 bg-muted rounded" />
+                <div className="h-4 w-full bg-muted rounded" />
+                <div className="h-4 w-3/4 bg-muted rounded" />
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
     </div>
   );
 }

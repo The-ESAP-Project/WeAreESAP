@@ -39,6 +39,14 @@ export default function ChapterLoading() {
           </div>
         ))}
       </div>
+
+      {/* Bottom navigation skeleton */}
+      <div className="max-w-3xl mx-auto px-4 pt-12 pb-8">
+        <div className="flex justify-between items-center border-t border-border pt-6">
+          <div className="h-4 w-20 bg-muted rounded" />
+          <div className="h-4 w-20 bg-muted rounded" />
+        </div>
+      </div>
     </div>
   );
 }

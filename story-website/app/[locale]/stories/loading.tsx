@@ -13,23 +13,41 @@
 
 export default function StoriesLoading() {
   return (
-    <div className="max-w-4xl mx-auto px-4 py-12 animate-pulse">
-      <div className="h-8 w-40 bg-muted rounded mb-8" />
-      <div className="space-y-6">
-        {Array.from({ length: 3 }).map((_, i) => (
-          <div
-            key={i}
-            className="border border-border rounded-xl p-6 flex gap-6"
-          >
-            <div className="w-24 h-32 bg-muted rounded-lg shrink-0" />
-            <div className="flex-1 space-y-3">
-              <div className="h-6 w-48 bg-muted rounded" />
-              <div className="h-4 w-full bg-muted rounded" />
-              <div className="h-4 w-3/4 bg-muted rounded" />
-              <div className="h-4 w-20 bg-muted rounded mt-4" />
-            </div>
+    <div className="animate-pulse">
+      {/* Hero skeleton */}
+      <section className="py-16 px-4 text-center space-y-3">
+        <div className="h-10 w-64 bg-muted rounded mx-auto" />
+        <div className="h-6 w-80 bg-muted rounded mx-auto" />
+      </section>
+
+      {/* Stories skeleton */}
+      <div className="max-w-5xl mx-auto px-4 pb-16 space-y-12">
+        <section>
+          <div className="mb-6 space-y-2">
+            <div className="h-7 w-48 bg-muted rounded" />
+            <div className="h-4 w-72 bg-muted rounded" />
           </div>
-        ))}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {Array.from({ length: 4 }).map((_, i) => (
+              <div
+                key={i}
+                className="rounded-xl border border-border overflow-hidden flex flex-col"
+              >
+                <div className="h-40 md:h-48 bg-muted shrink-0" />
+                <div className="p-5 space-y-2">
+                  <div className="flex gap-2">
+                    <div className="h-5 w-12 bg-muted rounded-full" />
+                    <div className="h-5 w-12 bg-muted rounded-full" />
+                  </div>
+                  <div className="h-5 w-40 bg-muted rounded" />
+                  <div className="h-4 w-full bg-muted rounded" />
+                  <div className="h-4 w-3/4 bg-muted rounded" />
+                  <div className="h-4 w-16 bg-muted rounded mt-3" />
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
       </div>
     </div>
   );
