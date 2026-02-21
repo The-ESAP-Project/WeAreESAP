@@ -53,104 +53,104 @@ export function StoryLanding({ story, chapterTitles }: StoryLandingProps) {
       </div>
 
       <div className="max-w-3xl mx-auto px-4 py-12">
-      <AnimatedSection>
-        {/* Header */}
-        <div className="mb-8">
-          <div className="flex items-center gap-2 mb-3">
-            <FormatBadge label={tS(`filter.${story.format}`)} />
-            <StatusBadge label={tS(`status.${story.status}`)} />
-          </div>
-          <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-2">
-            {story.title}
-          </h1>
-          {story.subtitle && (
-            <p className="text-lg text-muted-foreground italic">
-              {story.subtitle}
-            </p>
-          )}
-        </div>
-
-        {/* Synopsis */}
-        {story.synopsis && (
+        <AnimatedSection>
+          {/* Header */}
           <div className="mb-8">
-            <h2 className="text-lg font-semibold text-foreground mb-3">
-              {t("synopsis")}
+            <div className="flex items-center gap-2 mb-3">
+              <FormatBadge label={tS(`filter.${story.format}`)} />
+              <StatusBadge label={tS(`status.${story.status}`)} />
+            </div>
+            <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-2">
+              {story.title}
+            </h1>
+            {story.subtitle && (
+              <p className="text-lg text-muted-foreground italic">
+                {story.subtitle}
+              </p>
+            )}
+          </div>
+
+          {/* Synopsis */}
+          {story.synopsis && (
+            <div className="mb-8">
+              <h2 className="text-lg font-semibold text-foreground mb-3">
+                {t("synopsis")}
+              </h2>
+              <div className="text-muted-foreground leading-relaxed whitespace-pre-line">
+                {story.synopsis}
+              </div>
+            </div>
+          )}
+
+          {/* Warnings */}
+          {story.warnings && story.warnings.length > 0 && (
+            <div className="mb-8 p-4 rounded-lg border border-esap-yellow/30 bg-esap-yellow/5">
+              <h3 className="text-sm font-semibold text-foreground mb-2">
+                {t("warnings")}
+              </h3>
+              <ul className="text-sm text-muted-foreground space-y-1">
+                {story.warnings.map((w, i) => (
+                  <li key={i}>· {w}</li>
+                ))}
+              </ul>
+            </div>
+          )}
+
+          {/* CTA */}
+          <div className="mb-10">
+            <Link
+              href={`/stories/${story.slug}/${continueChapter}`}
+              className="inline-block px-6 py-3 bg-foreground text-background rounded-lg font-medium hover:opacity-90 transition-opacity"
+            >
+              {hasProgress ? t("continueReading") : t("startReading")}
+            </Link>
+          </div>
+
+          {/* Chapter list */}
+          <div>
+            <h2 className="text-lg font-semibold text-foreground mb-4">
+              {t("chapters")}
             </h2>
-            <div className="text-muted-foreground leading-relaxed whitespace-pre-line">
-              {story.synopsis}
+            <div className="space-y-2">
+              {story.chapterOrder.map((chId, index) => {
+                const isRead = storyState.chaptersRead.includes(chId);
+                const locked = hydrated && !isUnlocked(chId, story, storyState);
+
+                return (
+                  <div key={chId}>
+                    {locked ? (
+                      <div className="flex items-center gap-3 px-4 py-3 rounded-lg bg-muted/50 text-muted-foreground">
+                        <span className="text-sm font-mono w-8">
+                          {String(index + 1).padStart(2, "0")}
+                        </span>
+                        <span className="text-sm flex-1">{t("locked")}</span>
+                        <Icon name="Lock" size={14} />
+                      </div>
+                    ) : (
+                      <Link
+                        href={`/stories/${story.slug}/${chId}`}
+                        className="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-muted/50 transition-colors group"
+                      >
+                        <span className="text-sm font-mono w-8 text-muted-foreground">
+                          {String(index + 1).padStart(2, "0")}
+                        </span>
+                        <span className="text-sm text-foreground group-hover:text-esap-blue transition-colors flex-1">
+                          {chapterTitles[chId] ?? chId}
+                        </span>
+                        {isRead && (
+                          <span className="text-xs text-esap-blue">
+                            {t("completed")}
+                          </span>
+                        )}
+                      </Link>
+                    )}
+                  </div>
+                );
+              })}
             </div>
           </div>
-        )}
-
-        {/* Warnings */}
-        {story.warnings && story.warnings.length > 0 && (
-          <div className="mb-8 p-4 rounded-lg border border-esap-yellow/30 bg-esap-yellow/5">
-            <h3 className="text-sm font-semibold text-foreground mb-2">
-              {t("warnings")}
-            </h3>
-            <ul className="text-sm text-muted-foreground space-y-1">
-              {story.warnings.map((w, i) => (
-                <li key={i}>· {w}</li>
-              ))}
-            </ul>
-          </div>
-        )}
-
-        {/* CTA */}
-        <div className="mb-10">
-          <Link
-            href={`/stories/${story.slug}/${continueChapter}`}
-            className="inline-block px-6 py-3 bg-foreground text-background rounded-lg font-medium hover:opacity-90 transition-opacity"
-          >
-            {hasProgress ? t("continueReading") : t("startReading")}
-          </Link>
-        </div>
-
-        {/* Chapter list */}
-        <div>
-          <h2 className="text-lg font-semibold text-foreground mb-4">
-            {t("chapters")}
-          </h2>
-          <div className="space-y-2">
-            {story.chapterOrder.map((chId, index) => {
-              const isRead = storyState.chaptersRead.includes(chId);
-              const locked = hydrated && !isUnlocked(chId, story, storyState);
-
-              return (
-                <div key={chId}>
-                  {locked ? (
-                    <div className="flex items-center gap-3 px-4 py-3 rounded-lg bg-muted/50 text-muted-foreground">
-                      <span className="text-sm font-mono w-8">
-                        {String(index + 1).padStart(2, "0")}
-                      </span>
-                      <span className="text-sm flex-1">{t("locked")}</span>
-                      <Icon name="Lock" size={14} />
-                    </div>
-                  ) : (
-                    <Link
-                      href={`/stories/${story.slug}/${chId}`}
-                      className="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-muted/50 transition-colors group"
-                    >
-                      <span className="text-sm font-mono w-8 text-muted-foreground">
-                        {String(index + 1).padStart(2, "0")}
-                      </span>
-                      <span className="text-sm text-foreground group-hover:text-esap-blue transition-colors flex-1">
-                        {chapterTitles[chId] ?? chId}
-                      </span>
-                      {isRead && (
-                        <span className="text-xs text-esap-blue">
-                          {t("completed")}
-                        </span>
-                      )}
-                    </Link>
-                  )}
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      </AnimatedSection>
+        </AnimatedSection>
+      </div>
     </div>
-  </div>
   );
 }

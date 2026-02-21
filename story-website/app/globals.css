@@ -86,7 +86,7 @@
 
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-  --font-serif: "Georgia", "Noto Serif SC", serif;
+  --font-serif: "LXGW WenKai", "Georgia", serif;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -231,6 +231,17 @@ button,
 }
 .speaker-1543 {
   color: var(--esap-sky);
+}
+
+/* Japanese locale: YakuHanMP 半角标点 (明朝体) */
+html[lang="ja"] body {
+  font-family: "YakuHanMP", var(--font-geist-sans), sans-serif;
+}
+html[lang="ja"] .reader-font-serif {
+  font-family: "YakuHanMP", var(--font-serif);
+}
+html[lang="ja"] .reader-font-sans {
+  font-family: "YakuHanMP", var(--font-geist-sans), sans-serif;
 }
 
 @media (prefers-reduced-motion: reduce) {

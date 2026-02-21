@@ -28,6 +28,9 @@ import { ThemeProvider } from "@/components/ui/ThemeProvider";
 import { locales } from "@/i18n/request";
 import { SITE_CONFIG } from "@/lib/constants";
 import { buildSearchIndex } from "@/lib/search-index";
+import "yakuhanjp/dist/css/yakuhanmp.css";
+import "lxgw-wenkai-webfont/lxgwwenkai-regular.css";
+import "lxgw-wenkai-webfont/lxgwwenkai-bold.css";
 import "@/app/globals.css";
 
 const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });

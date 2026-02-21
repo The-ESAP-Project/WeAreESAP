@@ -30,13 +30,15 @@
     "@esap/shared-ui": "workspace:*",
     "framer-motion": "12.34.3",
     "fuse.js": "^7.1.0",
+    "lxgw-wenkai-webfont": "^1.7.0",
     "next": "16.1.6",
     "next-intl": "^4.8.3",
     "next-themes": "^0.4.6",
     "pangu": "^7.2.0",
     "react": "19.2.4",
     "react-dom": "19.2.4",
-    "react-icons": "^5.5.0"
+    "react-icons": "^5.5.0",
+    "yakuhanjp": "^4.1.1"
   },
   "devDependencies": {
     "@biomejs/biome": "^2.4.4",
