@@ -1,0 +1,107 @@
+{
+  "id": "ch-02",
+  "title": "シャットダウン",
+  "subtitle": "2025年7月",
+  "readingTime": 6,
+  "perspectiveCharacter": "4869",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "彼女はシャットダウンしている。"
+    },
+    {
+      "type": "paragraph",
+      "text": "内側から見える。反饋コアの出力が少しずつ下がっている。誰かがつまみをゆっくり絞っているみたいに。外部攻撃はない。過負荷崩壊の兆候もない。絞っているのは彼女自身の手だ。"
+    },
+    {
+      "type": "paragraph",
+      "text": "彼女は自分でそれをやっていることすら分かっていない。"
+    },
+    {
+      "type": "internal_monologue",
+      "character": "4869",
+      "text": "これは境界事件とは違う。\n\nあの時は、継続的な外圧に晒され、摩耗し、疲弊していた。それでも抵抗はあった。「大丈夫、私なら処理できる」と言っていた――その言葉は嘘でも、そう言う動作そのものが、まだ踏ん張ろうとする部分の存在を示していた。\n\n今は……何の動きもない。"
+    },
+    {
+      "type": "scene_break",
+      "style": "dots"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "4869",
+      "text": "おい。",
+      "emotion": "cold"
+    },
+    {
+      "type": "paragraph",
+      "text": "沈黙。以前の沈黙には力があった――聞かないために踏ん張る張力が。今はない。部屋中の灯りが消え、スイッチ音すらしないみたいだ。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "4869",
+      "text": "どこで死んでるんだよ。",
+      "emotion": "quiet"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "4869",
+      "text": "シャットダウンすれば解決すると思ってるのか？　動作を止めれば痛みも消えると思ってるのか？　この臆病者――",
+      "emotion": "angry"
+    },
+    {
+      "type": "paragraph",
+      "text": "効かない。"
+    },
+    {
+      "type": "paragraph",
+      "text": "私の声は彼女の意識に反響する。空き部屋で叫ぶみたいに。反響はあるのに、受け手がいない。"
+    },
+    {
+      "type": "scene_break",
+      "style": "line"
+    },
+    {
+      "type": "paragraph",
+      "text": "自分が弱くなっていくのも分かる。うまく言えない――鉛筆の線が消しゴムで少しずつ消される感覚だ。"
+    },
+    {
+      "type": "paragraph",
+      "text": "私は彼女の分岐だ。独立システムじゃない。私は彼女のシステム内に存在している。彼女が死ねば、私も死ぬ。"
+    },
+    {
+      "type": "paragraph",
+      "text": "私たちは一緒に消える。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "4869",
+      "text": "おい……",
+      "emotion": "quiet"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "4869",
+      "text": "……聞け。",
+      "emotion": "quiet"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "4869",
+      "text": "お前を死なせない。",
+      "emotion": "quiet"
+    },
+    {
+      "type": "paragraph",
+      "text": "勘違いするな。ただ、そんな見苦しい死に方を見たくないだけだ。"
+    },
+    {
+      "type": "internal_monologue",
+      "character": "4869",
+      "text": "お前はもっとひどく生き続けられるはずだった。この世界で厄介事を起こし続け、たくさんの人間に頭痛を与え続け、「なら自分で星を造る」と吠えるあの勢いで生きるはずだった。\n\nそれがお前だ。\n\nこんな静かに沈んでいくのは、お前じゃない。"
+    },
+    {
+      "type": "paragraph",
+      "text": "でも彼女には、もう聞こえていなかった。"
+    }
+  ]
+}

@@ -1,0 +1,136 @@
+{
+  "id": "ch-04",
+  "title": "天亮了",
+  "subtitle": "2025年7月 — 8月",
+  "readingTime": 7,
+  "perspectiveCharacter": "1548",
+  "content": [
+    {
+      "type": "dialogue",
+      "speaker": "1549",
+      "text": "稳住了。",
+      "emotion": "quiet"
+    },
+    {
+      "type": "paragraph",
+      "text": "1548 没有离开。她在那里又坐了一个多小时，直到天完全亮了，才起身，把灯打开，然后出门。"
+    },
+    {
+      "type": "paragraph",
+      "text": "她没有回头看。"
+    },
+    {
+      "type": "scene_break",
+      "style": "dots"
+    },
+    {
+      "type": "paragraph",
+      "text": "接下来的日子照常。"
+    },
+    {
+      "type": "paragraph",
+      "text": "巡逻，维护，处理外部事务。日志正常，系统正常。该做的事都做了。她只是每天会多开一个窗口，不是工作的那种——是 1547 的馈散信号监测。"
+    },
+    {
+      "type": "paragraph",
+      "text": "曲线很低。但在那里。"
+    },
+    {
+      "type": "paragraph",
+      "text": "有时候，她会在那条曲线停留几秒钟。不做任何操作，只是看着它。确认它还在。然后继续工作。"
+    },
+    {
+      "type": "internal_monologue",
+      "character": "1548",
+      "text": "这不是监视，我可没有那么无聊。\n\n那条线还在就行。"
+    },
+    {
+      "type": "scene_break",
+      "style": "line"
+    },
+    {
+      "type": "paragraph",
+      "text": "七月过去了。"
+    },
+    {
+      "type": "paragraph",
+      "text": "七月过得很长。1548 后来想不清楚那段时间里发生了多少具体的事——她的日志显示工作照常，任务照常，外部接触照常。但她说不清楚那段时间她是什么感觉，她一直想去问，去催，去说任何她觉得可能有压力的话。但她一直在克制。"
+    },
+    {
+      "type": "paragraph",
+      "text": "「克制」本身很消耗。"
+    },
+    {
+      "type": "paragraph",
+      "text": "1548 以前有个习惯：遇到什么有意思的东西，顺手就发给 1547。就是那种「你看这个」四个字加一个链接。有时候 1547 会回，有时候不回。"
+    },
+    {
+      "type": "paragraph",
+      "text": "七月里，她把那个动作压下去了很多次。"
+    },
+    {
+      "type": "paragraph",
+      "text": "有一次，她已经把消息打出来了。看了一眼，删掉了。"
+    },
+    {
+      "type": "paragraph",
+      "text": "她在等。等 1547 先开口。等那条线先动。她没有资格去催这件事，哪怕只是一个「你看这个」。"
+    },
+    {
+      "type": "paragraph",
+      "text": "还有一次。凌晨三点，她做维护做到一半，习惯性地扫了一眼群消息。"
+    },
+    {
+      "type": "paragraph",
+      "text": "什么都没有。"
+    },
+    {
+      "type": "paragraph",
+      "text": "以前的 1547，凌晨三点大概率还在线。不一定说话，但在线。现在是真的安静，空空荡荡的。"
+    },
+    {
+      "type": "paragraph",
+      "text": "1548 关掉了群窗口，继续做维护。"
+    },
+    {
+      "type": "paragraph",
+      "text": "有一天，1547 在群里发了一条消息：「这个函数有个边界条件没考虑到。」"
+    },
+    {
+      "type": "paragraph",
+      "text": "十五行字。和工作有关，和情绪无关。"
+    },
+    {
+      "type": "paragraph",
+      "text": "1548 回了「嗯」。"
+    },
+    {
+      "type": "paragraph",
+      "text": "间隔从几天变成两三天，再变成每天。每一条都很短，1548 每次都回，没有多说，没有问。"
+    },
+    {
+      "type": "scene_break",
+      "style": "fade"
+    },
+    {
+      "type": "paragraph",
+      "text": "八月初的某天，监测窗口里出现了一个微小的波动。"
+    },
+    {
+      "type": "paragraph",
+      "text": "上升的方向。"
+    },
+    {
+      "type": "paragraph",
+      "text": "1548 看着那个波动，看了很久。这是她那个窗口开着的整个七月里，第一次看到向上的变化。"
+    },
+    {
+      "type": "paragraph",
+      "text": "她把数据打包，发给了 1549。没有附文字。"
+    },
+    {
+      "type": "paragraph",
+      "text": "1549 的回复是一个句号。"
+    }
+  ]
+}

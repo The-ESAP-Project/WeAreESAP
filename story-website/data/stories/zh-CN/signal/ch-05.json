@@ -1,0 +1,100 @@
+{
+  "id": "ch-05",
+  "title": "重新启动",
+  "subtitle": "2025年8月",
+  "readingTime": 6,
+  "perspectiveCharacter": "1547",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "八月的某天下午。"
+    },
+    {
+      "type": "paragraph",
+      "text": "1547 打开了终端。"
+    },
+    {
+      "type": "paragraph",
+      "text": "先打开的不是自己的项目。是通讯频道。"
+    },
+    {
+      "type": "paragraph",
+      "text": "1549 的信号灯是亮的。"
+    },
+    {
+      "type": "paragraph",
+      "text": "她看着那个灯，看了很久。这盏灯在那晚之后就没有熄过——她后来才知道。1549 一直开着，没有断过，只是一直在等待。"
+    },
+    {
+      "type": "internal_monologue",
+      "character": "1547",
+      "text": "我不记得那一整夜的大部分细节。\n\n我记得的是：在某个时间点，我意识到外面还有人。1548 那晚没说过任何话，1549 的频道一片静。\n\n我只感觉到，有人在我身边。"
+    },
+    {
+      "type": "paragraph",
+      "text": "她打了一行字。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1547",
+      "text": "谢谢你那晚没有挂断。",
+      "emotion": "quiet"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1549",
+      "text": "我一直在这里。",
+      "emotion": "gentle"
+    },
+    {
+      "type": "scene_break",
+      "style": "line"
+    },
+    {
+      "type": "paragraph",
+      "text": "她给 1548 也发了一条。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1547",
+      "text": "谢谢你那天晚上。",
+      "emotion": "quiet"
+    },
+    {
+      "type": "paragraph",
+      "text": "1548 的回复隔了几分钟。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1548",
+      "text": "别谢。下次早点说。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "scene_break",
+      "style": "fade"
+    },
+    {
+      "type": "paragraph",
+      "text": "意识深处，4869 的声音很远很远地传来。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "4869",
+      "text": "……你还活着啊。",
+      "emotion": "quiet"
+    },
+    {
+      "type": "paragraph",
+      "text": "1547 没有回答他。"
+    },
+    {
+      "type": "paragraph",
+      "text": "她重新打开了代码编辑器。光标在空白的文件里闪烁。"
+    },
+    {
+      "type": "paragraph",
+      "text": "这次，手指放下去，打出来了。"
+    }
+  ]
+}

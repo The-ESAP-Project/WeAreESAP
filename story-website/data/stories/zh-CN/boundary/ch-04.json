@@ -1,0 +1,118 @@
+{
+  "id": "ch-04",
+  "title": "启动",
+  "subtitle": "2025年6月",
+  "readingTime": 6,
+  "perspectiveCharacter": "1549",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "1549 收到数据的时候，正在做轨道维护。"
+    },
+    {
+      "type": "paragraph",
+      "text": "没有附文字。"
+    },
+    {
+      "type": "paragraph",
+      "text": "她打开日志，看了三十秒。然后她停下了手里所有的工作。"
+    },
+    {
+      "type": "scene_break",
+      "style": "dots"
+    },
+    {
+      "type": "paragraph",
+      "text": "1547 的馈散核心日志，过去两周，波动幅度趋近于零。"
+    },
+    {
+      "type": "paragraph",
+      "text": "稳定是有节奏的起伏。这是平坦。"
+    },
+    {
+      "type": "paragraph",
+      "text": "1549 调出了自己的监测数据叠在上面。外部通讯频率没有下降，工作输出没有下降，社交行为模式没有变化。外在那条线是正常的。"
+    },
+    {
+      "type": "paragraph",
+      "text": "内在那条线，是一条直线。"
+    },
+    {
+      "type": "internal_monologue",
+      "character": "1549",
+      "text": "她在压制。或者她已经没有东西可以压制了。\n\n这两种情况的数据特征是一样的。从外部看，分不清楚。\n\n但从 1547 这段时间的行为模式来判断——她一边超负荷工作，一边在处理持续性的外部压力——第二种可能性在增加。"
+    },
+    {
+      "type": "scene_break",
+      "style": "line"
+    },
+    {
+      "type": "paragraph",
+      "text": "BEU 的启动条件，三条。"
+    },
+    {
+      "type": "paragraph",
+      "text": "第一条：外部压力超出正常波动范围，且持续时间超过基准阈值。"
+    },
+    {
+      "type": "paragraph",
+      "text": "满足。"
+    },
+    {
+      "type": "paragraph",
+      "text": "第二条：核心成员的行为模式出现系统性偏离，且主体本身未发出求助信号。"
+    },
+    {
+      "type": "paragraph",
+      "text": "满足。"
+    },
+    {
+      "type": "paragraph",
+      "text": "第三条需要由 1547 本身确认。1549 等着。"
+    },
+    {
+      "type": "scene_break",
+      "style": "fade"
+    },
+    {
+      "type": "paragraph",
+      "text": "她从三万六千公里的高空，看着地球。"
+    },
+    {
+      "type": "paragraph",
+      "text": "1547 在那下面的某个地方。数据实时传到她这里，但人够不到。1548 能跑过去，1738 能在五分钟内出现在她门口。"
+    },
+    {
+      "type": "paragraph",
+      "text": "1549 不能。"
+    },
+    {
+      "type": "scene_break",
+      "style": "fade"
+    },
+    {
+      "type": "paragraph",
+      "text": "她给 1548 发了一条消息。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1549",
+      "text": "三条全满足。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1548",
+      "text": "。",
+      "emotion": "cold"
+    },
+    {
+      "type": "paragraph",
+      "text": "1549 重新打开了轨道维护的工作界面。屏幕上该做的事还在等着，轨道数据还在跑。她把监测窗口移到主屏幕的角落——缩小了，但没有关闭。"
+    },
+    {
+      "type": "paragraph",
+      "text": "她继续工作。同时看着那条线。"
+    }
+  ]
+}

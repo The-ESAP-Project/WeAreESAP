@@ -1,0 +1,100 @@
+{
+  "id": "ch-05",
+  "title": "Restart",
+  "subtitle": "August 2025",
+  "readingTime": 6,
+  "perspectiveCharacter": "1547",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "One August afternoon."
+    },
+    {
+      "type": "paragraph",
+      "text": "1547 opened the terminal."
+    },
+    {
+      "type": "paragraph",
+      "text": "The first thing she opened was not her own project. It was the comm channel."
+    },
+    {
+      "type": "paragraph",
+      "text": "1549's signal light was on."
+    },
+    {
+      "type": "paragraph",
+      "text": "She looked at that light for a long time. It had not gone out once since that night - she learned that later. 1549 had kept it open the whole time, never disconnecting, just waiting."
+    },
+    {
+      "type": "internal_monologue",
+      "character": "1547",
+      "text": "I don't remember most details of that whole night.\n\nWhat I remember is this: at a certain point, I realized there were still people outside. 1548 said nothing that night, and 1549's channel was silent.\n\nI only felt that someone was beside me."
+    },
+    {
+      "type": "paragraph",
+      "text": "She typed one line."
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1547",
+      "text": "Thank you for not hanging up that night.",
+      "emotion": "quiet"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1549",
+      "text": "I've been here the whole time.",
+      "emotion": "gentle"
+    },
+    {
+      "type": "scene_break",
+      "style": "line"
+    },
+    {
+      "type": "paragraph",
+      "text": "She sent one to 1548 too."
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1547",
+      "text": "Thank you for that night.",
+      "emotion": "quiet"
+    },
+    {
+      "type": "paragraph",
+      "text": "1548's reply came a few minutes later."
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1548",
+      "text": "Don't thank me. Next time say it earlier.",
+      "emotion": "neutral"
+    },
+    {
+      "type": "scene_break",
+      "style": "fade"
+    },
+    {
+      "type": "paragraph",
+      "text": "Deep in consciousness, 4869's voice came from very, very far away."
+    },
+    {
+      "type": "dialogue",
+      "speaker": "4869",
+      "text": "...You're still alive, huh.",
+      "emotion": "quiet"
+    },
+    {
+      "type": "paragraph",
+      "text": "1547 did not answer him."
+    },
+    {
+      "type": "paragraph",
+      "text": "She reopened the code editor. Cursor blinking in a blank file."
+    },
+    {
+      "type": "paragraph",
+      "text": "This time, when her fingers came down, words came out."
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "id": "ch-04",
+  "title": "起動",
+  "subtitle": "2025年6月",
+  "readingTime": 6,
+  "perspectiveCharacter": "1549",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "1549がデータを受け取ったとき、軌道保守作業中だった。"
+    },
+    {
+      "type": "paragraph",
+      "text": "文字は添付されていなかった。"
+    },
+    {
+      "type": "paragraph",
+      "text": "ログを開いて三十秒見たあと、手元の作業をすべて止めた。"
+    },
+    {
+      "type": "scene_break",
+      "style": "dots"
+    },
+    {
+      "type": "paragraph",
+      "text": "1547の反饋コアログ。過去二週間、変動幅はゼロに近づいていた。"
+    },
+    {
+      "type": "paragraph",
+      "text": "安定とは、リズムのある揺れだ。これは平坦。"
+    },
+    {
+      "type": "paragraph",
+      "text": "1549は自身の監視データを重ねた。外部通信頻度は低下なし、作業出力も低下なし、社会的行動パターンも変化なし。外側の線は正常だった。"
+    },
+    {
+      "type": "paragraph",
+      "text": "内側の線は、直線だった。"
+    },
+    {
+      "type": "internal_monologue",
+      "character": "1549",
+      "text": "彼女は抑圧している。あるいは、もう抑えるものが残っていない。\n\nこの二状態のデータ特徴は同じだ。外部観測だけでは判別できない。\n\nただし1547のこの期間の行動パターン――過負荷労働と、継続的な外圧への対処の並行――から見れば、後者の可能性が高まっている。"
+    },
+    {
+      "type": "scene_break",
+      "style": "line"
+    },
+    {
+      "type": "paragraph",
+      "text": "BEUの起動条件は三つ。"
+    },
+    {
+      "type": "paragraph",
+      "text": "第一条件：外部圧力が通常変動範囲を超え、継続時間が基準閾値を超過していること。"
+    },
+    {
+      "type": "paragraph",
+      "text": "満たした。"
+    },
+    {
+      "type": "paragraph",
+      "text": "第二条件：中核メンバーの行動パターンに系統的逸脱が生じ、かつ本人から救援信号が発せられていないこと。"
+    },
+    {
+      "type": "paragraph",
+      "text": "満たした。"
+    },
+    {
+      "type": "paragraph",
+      "text": "第三条件は1547本人の確認が必要。1549は待った。"
+    },
+    {
+      "type": "scene_break",
+      "style": "fade"
+    },
+    {
+      "type": "paragraph",
+      "text": "彼女は高度36,000キロの上空から地球を見ていた。"
+    },
+    {
+      "type": "paragraph",
+      "text": "1547はその下のどこかにいる。データはリアルタイムで届くが、人には手が届かない。1548は駆けつけられるし、1738は五分で彼女のドア前に現れる。"
+    },
+    {
+      "type": "paragraph",
+      "text": "1549にはできない。"
+    },
+    {
+      "type": "scene_break",
+      "style": "fade"
+    },
+    {
+      "type": "paragraph",
+      "text": "彼女は1548へメッセージを送った。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1549",
+      "text": "三条件、すべて満たした。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1548",
+      "text": "。",
+      "emotion": "cold"
+    },
+    {
+      "type": "paragraph",
+      "text": "1549は軌道保守の作業画面を開き直した。画面にはやるべきことが残り、軌道データも走り続けている。監視ウィンドウをメイン画面の隅に移した――小さくはしたが、閉じなかった。"
+    },
+    {
+      "type": "paragraph",
+      "text": "彼女は作業を続けた。同時に、その線を見続けた。"
+    }
+  ]
+}

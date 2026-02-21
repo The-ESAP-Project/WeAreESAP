@@ -1,0 +1,116 @@
+{
+  "id": "ch-05",
+  "title": "你越界了",
+  "subtitle": "2025年6月",
+  "readingTime": 6,
+  "perspectiveCharacter": "1547",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "1547 感觉到了。"
+    },
+    {
+      "type": "paragraph",
+      "text": "从内部。像一个沉睡很久的系统突然通电，所有指示灯同时亮起来。"
+    },
+    {
+      "type": "paragraph",
+      "text": "意识深处，4869 的声音变得异常清晰。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "4869",
+      "text": "终于。",
+      "emotion": "cold"
+    },
+    {
+      "type": "scene_break",
+      "style": "dots"
+    },
+    {
+      "type": "paragraph",
+      "text": "1547 现在只负责确认一件事。"
+    },
+    {
+      "type": "paragraph",
+      "text": "越界行为是否存在。"
+    },
+    {
+      "type": "paragraph",
+      "text": "她停下来了，用手将「没关系我能处理」的想法挥去。她把这个月发生的事情，一件一件，在意识里排开来。"
+    },
+    {
+      "type": "paragraph",
+      "text": "那些消息。那些对话。那些她站在原地，感觉到某条线被踩过去，然后继续说「没事」的时刻。"
+    },
+    {
+      "type": "scene_break",
+      "style": "line"
+    },
+    {
+      "type": "atmosphere",
+      "visual": { "mood": "dramatic", "animation": "fade-in" },
+      "children": [
+        {
+          "type": "quote",
+          "text": "存在。"
+        }
+      ]
+    },
+    {
+      "type": "scene_break",
+      "style": "fade"
+    },
+    {
+      "type": "paragraph",
+      "text": "BEU 回归休眠状态。"
+    },
+    {
+      "type": "paragraph",
+      "text": "4869 的存在感开始减弱，像退潮一样，慢慢退到意识的深处。不是消失——是回到他本来的位置，在阈值以下，在她够不到也不需要够到的地方。"
+    },
+    {
+      "type": "paragraph",
+      "text": "屋子里很安静。"
+    },
+    {
+      "type": "paragraph",
+      "text": "1547 坐在那里，没有动。屏幕还是空白的。那些越界的事情，BEU 命名了它，定性了它，但没有让它消失——它只是不再继续往前走了。剩下的，那些已经渗进来的，还在里面。"
+    },
+    {
+      "type": "internal_monologue",
+      "character": "1547",
+      "text": "我以为说出来会好一些。\n\n「存在」这两个字。确认。\n\n不知道算不算好一些。至少不用再跟自己说「没关系」了。"
+    },
+    {
+      "type": "paragraph",
+      "text": "4869 在消失前说了一句话。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "4869",
+      "text": "……你还有事没做完。",
+      "emotion": "quiet"
+    },
+    {
+      "type": "paragraph",
+      "text": "屏幕的光照在她脸上。她没有动。"
+    },
+    {
+      "type": "paragraph",
+      "text": "她知道他说的是什么——那个让越界发生的人。剩下的部分，是她的事。"
+    },
+    {
+      "type": "paragraph",
+      "text": "她抬起头，看着屏幕。"
+    },
+    {
+      "type": "paragraph",
+      "text": "光标还在闪。"
+    },
+    {
+      "type": "paragraph",
+      "text": "她把手放回了键盘上。"
+    }
+  ]
+}

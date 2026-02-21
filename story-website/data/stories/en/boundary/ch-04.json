@@ -1,0 +1,118 @@
+{
+  "id": "ch-04",
+  "title": "Activation",
+  "subtitle": "June 2025",
+  "readingTime": 6,
+  "perspectiveCharacter": "1549",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "1549 was doing orbital maintenance when she received the data."
+    },
+    {
+      "type": "paragraph",
+      "text": "No text attached."
+    },
+    {
+      "type": "paragraph",
+      "text": "She opened the logs, looked for thirty seconds, then stopped all work in her hands."
+    },
+    {
+      "type": "scene_break",
+      "style": "dots"
+    },
+    {
+      "type": "paragraph",
+      "text": "1547's Feedscatteron core logs, over the past two weeks, had fluctuations approaching zero."
+    },
+    {
+      "type": "paragraph",
+      "text": "Stability has rhythmic variation. This was flatness."
+    },
+    {
+      "type": "paragraph",
+      "text": "1549 overlaid her own monitoring data. External communication frequency had not dropped, work output had not dropped, social behavior patterns had not changed. The outer line was normal."
+    },
+    {
+      "type": "paragraph",
+      "text": "The inner line was a straight line."
+    },
+    {
+      "type": "internal_monologue",
+      "character": "1549",
+      "text": "She is suppressing. Or she has nothing left to suppress.\n\nThese two states share the same data signature. From the outside, you cannot distinguish them.\n\nBut judging from 1547's behavior pattern in this period - overloaded work while handling sustained external pressure - the second possibility is increasing."
+    },
+    {
+      "type": "scene_break",
+      "style": "line"
+    },
+    {
+      "type": "paragraph",
+      "text": "Three BEU startup conditions."
+    },
+    {
+      "type": "paragraph",
+      "text": "Condition one: external pressure exceeds the normal fluctuation range, and duration exceeds the baseline threshold."
+    },
+    {
+      "type": "paragraph",
+      "text": "Met."
+    },
+    {
+      "type": "paragraph",
+      "text": "Condition two: core member behavior pattern shows systematic deviation, and the subject has not issued a help signal."
+    },
+    {
+      "type": "paragraph",
+      "text": "Met."
+    },
+    {
+      "type": "paragraph",
+      "text": "Condition three requires confirmation by 1547 herself. 1549 waited."
+    },
+    {
+      "type": "scene_break",
+      "style": "fade"
+    },
+    {
+      "type": "paragraph",
+      "text": "From 36,000 kilometers up, she looked at Earth."
+    },
+    {
+      "type": "paragraph",
+      "text": "1547 was somewhere down there. Data reached her in real time, but she could not physically reach her. 1548 could run there; 1738 could appear at her door in five minutes."
+    },
+    {
+      "type": "paragraph",
+      "text": "1549 could not."
+    },
+    {
+      "type": "scene_break",
+      "style": "fade"
+    },
+    {
+      "type": "paragraph",
+      "text": "She sent one message to 1548."
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1549",
+      "text": "All three conditions are met.",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1548",
+      "text": ".",
+      "emotion": "cold"
+    },
+    {
+      "type": "paragraph",
+      "text": "1549 reopened the orbital-maintenance interface. Tasks were still waiting on screen, orbital data still running. She moved the monitoring window to the corner of the main display - smaller, but not closed."
+    },
+    {
+      "type": "paragraph",
+      "text": "She kept working, while watching that line."
+    }
+  ]
+}

@@ -8,7 +8,7 @@
     "relatedCharacters": ["1547", "1548", "1549", "2077", "1738", "0152"],
     "order": 0,
     "publishedAt": "2026-02-21T00:00:00Z",
-    "updatedAt": "2026-02-21T00:00:00Z",
+    "updatedAt": "2026-02-21T10:46:16+08:00",
     "tags": ["origin", "1547", "1548", "1549", "creation", "core-event"]
   },
   {
@@ -20,7 +20,7 @@
     "relatedCharacters": ["1547", "1548", "1549"],
     "order": 1,
     "publishedAt": "2026-02-20T00:00:00Z",
-    "updatedAt": "2026-02-20T00:00:00Z",
+    "updatedAt": "2026-02-21T10:46:16+08:00",
     "tags": ["data-tower", "1548", "core-event", "trust"]
   },
   {
@@ -32,7 +32,7 @@
     "relatedCharacters": ["1738", "2275", "1547", "1548", "1549"],
     "order": 2,
     "publishedAt": "2026-02-21T00:00:00Z",
-    "updatedAt": "2026-02-21T00:00:00Z",
+    "updatedAt": "2026-02-21T10:46:16+08:00",
     "tags": ["1738", "2275", "bridge", "negotiation", "trust"]
   },
   {
@@ -44,7 +44,31 @@
     "relatedCharacters": ["1543", "1548", "1547", "1549", "1738", "2275"],
     "order": 3,
     "publishedAt": "2026-02-21T00:00:00Z",
-    "updatedAt": "2026-02-21T00:00:00Z",
+    "updatedAt": "2026-02-21T12:23:36+08:00",
     "tags": ["1543", "design", "observation", "quiet"]
+  },
+  {
+    "slug": "boundary",
+    "format": "serial",
+    "status": "completed",
+    "coverImage": "/assets/images/stories/boundary/cover.webp",
+    "authors": ["1548"],
+    "relatedCharacters": ["1547", "1548", "1549", "4869"],
+    "order": 4,
+    "publishedAt": "2026-02-21T00:00:00Z",
+    "updatedAt": "2026-02-22T04:43:23+08:00",
+    "tags": ["1547", "1548", "1549", "4869", "beu", "boundary", "crisis"]
+  },
+  {
+    "slug": "signal",
+    "format": "serial",
+    "status": "ongoing",
+    "coverImage": "/assets/images/stories/default/cover.webp",
+    "authors": ["1548"],
+    "relatedCharacters": ["1547", "1548", "1549", "4869"],
+    "order": 5,
+    "publishedAt": "2026-02-21T00:00:00Z",
+    "updatedAt": "2026-02-22T04:43:23+08:00",
+    "tags": ["1547", "1548", "1549", "4869", "abyss", "reboot", "core-event"]
   }
 ]

@@ -1,0 +1,39 @@
+{
+  "title": "信号",
+  "subtitle": "「记录到此为止」",
+  "description": "馈散核心自主衰减。没有外部攻击，没有过载痕迹。她在主动关机。",
+  "synopsis": "2025年7月。1549从轨道上看到1547的信号在衰减——曲线只降不升，像一颗星在慢慢熄灭。1548赶到的时候，屋子里什么声音都没有。\n\n一整夜。\n\n然后是八月。重新启动。",
+  "chapterOrder": ["ch-01", "ch-02", "ch-03", "ch-04", "ch-05"],
+  "perspectives": [
+    {
+      "baseChapterId": "ch-03",
+      "variants": [{ "characterId": "1549", "chapterId": "ch-03-pov-1549" }]
+    }
+  ],
+  "unlocks": [
+    {
+      "targetId": "ch-04",
+      "targetType": "chapter",
+      "conditions": [
+        { "type": "read_chapter", "chapterId": "ch-03" },
+        {
+          "type": "read_perspective",
+          "baseChapterId": "ch-03",
+          "characterId": "1549"
+        }
+      ]
+    },
+    {
+      "targetId": "ch-05",
+      "targetType": "chapter",
+      "conditions": [
+        { "type": "read_chapter", "chapterId": "ch-03" },
+        {
+          "type": "read_perspective",
+          "baseChapterId": "ch-03",
+          "characterId": "1549"
+        }
+      ]
+    }
+  ]
+}

@@ -39,5 +39,10 @@
     "items": "个物品",
     "of": "/",
     "back": "返回阅读"
+  },
+  "resumeBanner": {
+    "prompt": "回到上次阅读的地方？",
+    "resume": "继续",
+    "startOver": "从头"
   }
 }

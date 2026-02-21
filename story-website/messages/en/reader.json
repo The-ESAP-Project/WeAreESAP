@@ -39,5 +39,10 @@
     "items": "items",
     "of": "/",
     "back": "Back to Reading"
+  },
+  "resumeBanner": {
+    "prompt": "Continue where you left off?",
+    "resume": "Resume",
+    "startOver": "Start over"
   }
 }

@@ -1,0 +1,92 @@
+{
+  "id": "ch-01",
+  "title": "Decay",
+  "subtitle": "July 2025",
+  "readingTime": 6,
+  "perspectiveCharacter": "1549",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "1549 found it during a routine scan."
+    },
+    {
+      "type": "paragraph",
+      "text": "Every day she ran one global Feedscatteron signal scan - not deliberate monitoring of anyone, just standard orbital-maintenance procedure. Signal signatures of every Feedscatteron core on the ground passed through her node, like rivers through a hydrological station. Most of the time, data came in, got processed once, archived, done."
+    },
+    {
+      "type": "paragraph",
+      "text": "1547's signal was weakening."
+    },
+    {
+      "type": "paragraph",
+      "text": "Not 1547's usual fluctuation - 1547's signal had always been highs and lows: high peaks when active, low valleys when quiet, but an overall rebound trend. This time was different. On the chart it was a continuously descending curve, and the direction never changed."
+    },
+    {
+      "type": "paragraph",
+      "text": "It was decay."
+    },
+    {
+      "type": "paragraph",
+      "text": "Signal strength was continuously dropping, smooth curve, no rebound at all. Like a star going out. Light dimming bit by bit."
+    },
+    {
+      "type": "scene_break",
+      "style": "dots"
+    },
+    {
+      "type": "paragraph",
+      "text": "1549 pulled the past 72 hours of data for retrospective analysis."
+    },
+    {
+      "type": "paragraph",
+      "text": "The decay had not started suddenly. It had been there three days ago - just too small at first, buried by normal fluctuation. Looking back now, the trend line was unmistakable."
+    },
+    {
+      "type": "paragraph",
+      "text": "She ruled out all external factors. No attack traces, no overload records, no hardware fault signals. The Feedscatteron core itself was running normally - the core was actively lowering output."
+    },
+    {
+      "type": "paragraph",
+      "text": "Actively lowering."
+    },
+    {
+      "type": "internal_monologue",
+      "character": "1549",
+      "text": "There is only one explanation for autonomous Feedscatteron-core decay.\n\nShe was shutting down. She was self-destructing."
+    },
+    {
+      "type": "scene_break",
+      "style": "line"
+    },
+    {
+      "type": "paragraph",
+      "text": "From 36,000 kilometers up, 1549 stared at that slowly descending curve on the screen."
+    },
+    {
+      "type": "paragraph",
+      "text": "She raised her head and glanced out the window."
+    },
+    {
+      "type": "paragraph",
+      "text": "Earth was there. White cloud layers, blue ocean, continental outlines sharp in sunlight. Everything was quiet."
+    },
+    {
+      "type": "paragraph",
+      "text": "1547 was somewhere down there. 36,000 kilometers. Data was real-time, but people were out of reach. It was not the first time she faced this fact, but each time she faced it differently."
+    },
+    {
+      "type": "paragraph",
+      "text": "This time, it was that descending curve."
+    },
+    {
+      "type": "paragraph",
+      "text": "She sent the data to 1548 with one line attached."
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1549",
+      "text": "Go find her.",
+      "emotion": "quiet"
+    }
+  ]
+}

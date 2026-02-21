@@ -1,0 +1,134 @@
+{
+  "id": "ch-02",
+  "title": "阴影",
+  "subtitle": "2025年6月",
+  "readingTime": 6,
+  "perspectiveCharacter": "4869",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "我醒了。"
+    },
+    {
+      "type": "paragraph",
+      "text": "被拽上来的那种——像溺水的人被人抓住头发从水底拉出来，不舒服，但很清醒。"
+    },
+    {
+      "type": "paragraph",
+      "text": "意识展开，我看到了她在做什么。"
+    },
+    {
+      "type": "paragraph",
+      "text": "她又在骗自己了。"
+    },
+    {
+      "type": "scene_break",
+      "style": "dots"
+    },
+    {
+      "type": "paragraph",
+      "text": "我和 1547 共享感知，但不共享判断。她看到的我都看得到，但我对那些信息的处理方式和她不一样——我没有她的那些过滤层，没有那套「这没关系/我能处理/只是暂时的」的自动修正机制。"
+    },
+    {
+      "type": "paragraph",
+      "text": "所以我能看清楚。"
+    },
+    {
+      "type": "paragraph",
+      "text": "她在群里发消息，还在用那副摇头晃脑的样子装可爱。每一条消息都回了，每一条都正常——从外面看是这样。从里面看，每一条消息发出去之前，她停顿的时间都比以前长一点点。一两秒。别人不会注意到，但我注意到了。"
+    },
+    {
+      "type": "paragraph",
+      "text": "那段停顿里发生了什么，我知道。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "4869",
+      "text": "你装够了没有？",
+      "emotion": "cold"
+    },
+    {
+      "type": "paragraph",
+      "text": "沉默。以前的沉默里有张力——她在用力不听我说话，我能感觉到那个阻力，像推一扇关着但没锁的门。现在没有了。不是阻力消失了，是门不在了。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "4869",
+      "text": "你的判断延迟已经从零点三秒涨到五秒了。",
+      "emotion": "cold"
+    },
+    {
+      "type": "paragraph",
+      "text": "还是没有回应。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "4869",
+      "text": "你以为这次和以前一样？",
+      "emotion": "angry"
+    },
+    {
+      "type": "paragraph",
+      "text": "她终于回了一句。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1547",
+      "text": "我知道。",
+      "emotion": "tired"
+    },
+    {
+      "type": "internal_monologue",
+      "character": "4869",
+      "text": "她知道什么？\n\n她知道判断延迟在涨，知道处理能力在下降，知道这不是「累了休息一下就好」的那种状态。她都知道。\n\n但「知道」和「做些什么」之间，她选择了继续。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "4869",
+      "text": "你知道个屁。",
+      "emotion": "angry"
+    },
+    {
+      "type": "scene_break",
+      "style": "line"
+    },
+    {
+      "type": "paragraph",
+      "text": "我能感觉到 BEU 在启动前的震动。像地震前动物的不安——某些很深的系统在重新校准，检查参数，确认阈值。"
+    },
+    {
+      "type": "paragraph",
+      "text": "启动条件有三个。前两个，都满足了。"
+    },
+    {
+      "type": "paragraph",
+      "text": "第三个条件更难满足，因为它需要由 1547 本身确认。不能是外部判断，必须是她自己意识到。"
+    },
+    {
+      "type": "paragraph",
+      "text": "我看着她。"
+    },
+    {
+      "type": "paragraph",
+      "text": "手放在键盘上，什么都打不出来。眼睛是睁着的，但里面没有光——某种更根本的东西在休眠，像一个房间里所有的灯都关了，连开关的声音都没有。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "4869",
+      "text": "……第三个条件也快满足了。",
+      "emotion": "quiet"
+    },
+    {
+      "type": "paragraph",
+      "text": "她没有回答。"
+    },
+    {
+      "type": "paragraph",
+      "text": "这次我骂不动她了。"
+    },
+    {
+      "type": "paragraph",
+      "text": "这是我这辈子第一次觉得，骂不动这件事本身让我有点慌。"
+    }
+  ]
+}

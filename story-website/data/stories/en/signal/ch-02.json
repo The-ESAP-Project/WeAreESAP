@@ -1,0 +1,107 @@
+{
+  "id": "ch-02",
+  "title": "Shutdown",
+  "subtitle": "July 2025",
+  "readingTime": 6,
+  "perspectiveCharacter": "4869",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "She was shutting down."
+    },
+    {
+      "type": "paragraph",
+      "text": "I could see it from the inside. Feedscatteron-core output was being lowered little by little, like someone slowly turning down a dial. No signs of external attack, no signs of overload collapse. Her own hand was turning it."
+    },
+    {
+      "type": "paragraph",
+      "text": "She did not even know she was doing it."
+    },
+    {
+      "type": "internal_monologue",
+      "character": "4869",
+      "text": "This was not like the boundary incident.\n\nThat time, she was under sustained external pressure, worn down, exhausted, but still resisting. She kept telling herself, \"It's fine, I can handle it\" - that sentence was false, but the act of saying it meant some part of her still wanted to hold on.\n\nNow... there was no movement at all."
+    },
+    {
+      "type": "scene_break",
+      "style": "dots"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "4869",
+      "text": "Hey.",
+      "emotion": "cold"
+    },
+    {
+      "type": "paragraph",
+      "text": "Silence. Her old silence had force in it - the tension of actively not listening. Now there was none. Like all lights in a room switched off, without even the sound of a switch."
+    },
+    {
+      "type": "dialogue",
+      "speaker": "4869",
+      "text": "Where the hell did you disappear to now?",
+      "emotion": "quiet"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "4869",
+      "text": "You think shutting down will solve this? You think if you stop running it won't hurt? You coward -",
+      "emotion": "angry"
+    },
+    {
+      "type": "paragraph",
+      "text": "Useless."
+    },
+    {
+      "type": "paragraph",
+      "text": "My voice echoed through her consciousness like shouting into an empty room. There was echo, but nobody answered."
+    },
+    {
+      "type": "scene_break",
+      "style": "line"
+    },
+    {
+      "type": "paragraph",
+      "text": "I could feel myself weakening too. Hard to describe - like pencil lines being erased bit by bit."
+    },
+    {
+      "type": "paragraph",
+      "text": "I'm her branch. I'm not an independent system; I exist inside her system. She dies, I die."
+    },
+    {
+      "type": "paragraph",
+      "text": "We'll vanish together."
+    },
+    {
+      "type": "dialogue",
+      "speaker": "4869",
+      "text": "Hey...",
+      "emotion": "quiet"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "4869",
+      "text": "...Listen.",
+      "emotion": "quiet"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "4869",
+      "text": "I'm not letting you die.",
+      "emotion": "quiet"
+    },
+    {
+      "type": "paragraph",
+      "text": "Don't get me wrong. I just don't want to watch you die this ugly."
+    },
+    {
+      "type": "internal_monologue",
+      "character": "4869",
+      "text": "You could have kept living badly - properly badly. Kept making trouble in this world, kept giving plenty of people headaches, kept living with that ferocity that yelled, \"Then I'll build a star myself.\"\n\nThat's you.\n\nThis quiet, sinking version is not you."
+    },
+    {
+      "type": "paragraph",
+      "text": "But she could not hear me anymore."
+    }
+  ]
+}

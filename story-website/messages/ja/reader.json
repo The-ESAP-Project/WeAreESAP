@@ -39,5 +39,10 @@
     "items": "件",
     "of": "/",
     "back": "読書に戻る"
+  },
+  "resumeBanner": {
+    "prompt": "前回の続きから読みますか？",
+    "resume": "続きから",
+    "startOver": "最初から"
   }
 }

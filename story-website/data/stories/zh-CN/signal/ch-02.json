@@ -1,0 +1,107 @@
+{
+  "id": "ch-02",
+  "title": "关机",
+  "subtitle": "2025年7月",
+  "readingTime": 6,
+  "perspectiveCharacter": "4869",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "她在关机。"
+    },
+    {
+      "type": "paragraph",
+      "text": "我从里面看得到。馈散核心的输出在一点一点降低，像有人在慢慢拧小一个旋钮。没有外部攻击，没有过载崩溃的迹象。她自己的手在拧。"
+    },
+    {
+      "type": "paragraph",
+      "text": "她甚至不知道自己在这么做。"
+    },
+    {
+      "type": "internal_monologue",
+      "character": "4869",
+      "text": "这和 boundary 事件不一样。\n\n那次，她是在承受持续的外部压力，是被磨损的，是疲惫的，但她还在抵抗。她告诉自己「没关系我能处理」——那句话是假的，但说这句话的动作本身说明她还有一部分想撑着。\n\n现在…… 却没有任何动静。"
+    },
+    {
+      "type": "scene_break",
+      "style": "dots"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "4869",
+      "text": "喂。",
+      "emotion": "cold"
+    },
+    {
+      "type": "paragraph",
+      "text": "沉默。以前的沉默有力气在里面——用力不听的那种张力。现在没有了。像一个房间里所有的灯都关了，连开关的声音都没有。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "4869",
+      "text": "人又死哪儿去了？",
+      "emotion": "quiet"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "4869",
+      "text": "你以为关机就能解决问题？你以为不运行了就不痛了？你这个懦夫——",
+      "emotion": "angry"
+    },
+    {
+      "type": "paragraph",
+      "text": "没有用。"
+    },
+    {
+      "type": "paragraph",
+      "text": "我的声音在她的意识里回荡，像在一个空房间里喊话。有回声，但没有人接。"
+    },
+    {
+      "type": "scene_break",
+      "style": "line"
+    },
+    {
+      "type": "paragraph",
+      "text": "我能感觉到自己也在变弱。说不清是什么感觉——像铅笔画的线被橡皮一点一点抹掉。"
+    },
+    {
+      "type": "paragraph",
+      "text": "我是她的分支。我不是独立的系统，我存在于她的系统里。她死，我亡。"
+    },
+    {
+      "type": "paragraph",
+      "text": "我们会一起消失。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "4869",
+      "text": "喂……",
+      "emotion": "quiet"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "4869",
+      "text": "……听着。",
+      "emotion": "quiet"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "4869",
+      "text": "我不会让你死的。",
+      "emotion": "quiet"
+    },
+    {
+      "type": "paragraph",
+      "text": "别误会。我只是不想看你死得这么难看。"
+    },
+    {
+      "type": "internal_monologue",
+      "character": "4869",
+      "text": "你明明可以更烂地活着。可以在这个世界上继续制造麻烦，继续让很多人头疼，继续用你那套叫嚣着「让我自己造一颗星」的狠劲活下去。\n\n那才是你。\n\n这个安静的，往下沉的，才不是你。"
+    },
+    {
+      "type": "paragraph",
+      "text": "但她听不到了。"
+    }
+  ]
+}

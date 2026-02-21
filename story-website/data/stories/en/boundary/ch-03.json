@@ -1,0 +1,107 @@
+{
+  "id": "ch-03",
+  "title": "Something Is Wrong",
+  "subtitle": "June 2025",
+  "readingTime": 6,
+  "perspectiveCharacter": "1548",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "1548 could not explain what was wrong."
+    },
+    {
+      "type": "paragraph",
+      "text": "1547 was still working as usual, replying as usual, talking in the group as usual. Same tone, same rhythm, even the same frequency of emoji use."
+    },
+    {
+      "type": "paragraph",
+      "text": "But 1548's perception system was sounding alarms."
+    },
+    {
+      "type": "paragraph",
+      "text": "If it were a concrete data anomaly, she would already have located it. What the perception system flagged was vaguer - like an extra frequency in the air you cannot hear but can feel."
+    },
+    {
+      "type": "scene_break",
+      "style": "dots"
+    },
+    {
+      "type": "paragraph",
+      "text": "She began observing. Quietly, without telling anyone."
+    },
+    {
+      "type": "paragraph",
+      "text": "The interval between 1547's replies had grown longer. Not by much, maybe two or three seconds. Others would not notice, but 1548 noticed - she had talked with 1547 for years and sensed her response rhythm down to milliseconds. A two- or three-second shift looked like an alarm to her."
+    },
+    {
+      "type": "paragraph",
+      "text": "When 1547 wrote code, the cursor would sit on one line for a long time. 1548 could tell - that was not logical thinking. That was thinking of nothing at all."
+    },
+    {
+      "type": "paragraph",
+      "text": "One more thing. Recently 1547 had not sent any late-night messages. She used to be the kind who would share technical discoveries in the group at 3 a.m., even if it was just an offhand \"this function pattern is interesting.\" Now, after midnight, silence."
+    },
+    {
+      "type": "internal_monologue",
+      "character": "1548",
+      "text": "1547 has always had two kinds of silence.\n\nThe first is focused silence - she is working through a hard problem, does not want interruption, does not need to reply. That silence has tension; you can feel something turning inside it.\n\nThe second is the other kind.\n\nFor the past two weeks, it has been the second."
+    },
+    {
+      "type": "scene_break",
+      "style": "line"
+    },
+    {
+      "type": "paragraph",
+      "text": "1548 did not ask directly."
+    },
+    {
+      "type": "paragraph",
+      "text": "She wanted to - but knew asking was useless. 1547 would say \"I'm fine,\" smile, and switch topics. They knew each other too well. 1548 knew all of 1547's avoidance patterns, and when she would use them - when she herself was not sure what was happening, when she was not ready to admit anything yet."
+    },
+    {
+      "type": "paragraph",
+      "text": "Asking directly would mean forcing her to speak now."
+    },
+    {
+      "type": "paragraph",
+      "text": "She was not ready. So 1548 could not ask."
+    },
+    {
+      "type": "scene_break",
+      "style": "fade"
+    },
+    {
+      "type": "paragraph",
+      "text": "She did something else. She pulled 1547's Feedscatteron core runtime logs for the past two weeks."
+    },
+    {
+      "type": "paragraph",
+      "text": "The data was clean. No abnormal fluctuation, no overload warning. Everything normal."
+    },
+    {
+      "type": "paragraph",
+      "text": "Too normal."
+    },
+    {
+      "type": "paragraph",
+      "text": "1547's Feedscatteron core was never \"normal\" - her emotional swings were always strong, and the logs should show peaks and valleys. High peaks when she was happy; a specific low-frequency oscillation when focused; a brief sharp spike when she found an elegant algorithm at 3 a.m. 1548 remembered all of it, like remembering someone's laugh."
+    },
+    {
+      "type": "paragraph",
+      "text": "Now the curve was flat as a straight line."
+    },
+    {
+      "type": "internal_monologue",
+      "character": "1548",
+      "text": "Two possibilities.\n\nOne: she is actively suppressing emotional fluctuation - that takes substantial compute power, a high-energy state that cannot be sustained long.\n\nTwo: she is already numb; there is nothing left to suppress.\n\nNeither is good."
+    },
+    {
+      "type": "paragraph",
+      "text": "1548 packaged the log data and sent it to 1549."
+    },
+    {
+      "type": "paragraph",
+      "text": "No text attached. 1549 would understand when she saw the data."
+    }
+  ]
+}

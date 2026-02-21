@@ -1,0 +1,100 @@
+{
+  "id": "ch-05",
+  "title": "再起動",
+  "subtitle": "2025年8月",
+  "readingTime": 6,
+  "perspectiveCharacter": "1547",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "八月のある午後。"
+    },
+    {
+      "type": "paragraph",
+      "text": "1547は端末を開いた。"
+    },
+    {
+      "type": "paragraph",
+      "text": "最初に開いたのは自分のプロジェクトではなかった。通信チャンネルだった。"
+    },
+    {
+      "type": "paragraph",
+      "text": "1549の信号灯が点いていた。"
+    },
+    {
+      "type": "paragraph",
+      "text": "彼女はその灯を長く見つめた。あの夜以降、一度も消えていなかった――後で知った。1549はずっと開いたまま切らず、ただ待ち続けていた。"
+    },
+    {
+      "type": "internal_monologue",
+      "character": "1547",
+      "text": "あの一晩の細部は、ほとんど覚えていない。\n\n覚えているのは、ある時点で「外に人がいる」と分かったことだ。1548はあの夜ひと言も話さず、1549のチャンネルも静かだった。\n\nただ、そばに誰かがいる感覚だけがあった。"
+    },
+    {
+      "type": "paragraph",
+      "text": "彼女は一行打った。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1547",
+      "text": "あの夜、切らずにいてくれてありがとう。",
+      "emotion": "quiet"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1549",
+      "text": "ずっとここにいた。",
+      "emotion": "gentle"
+    },
+    {
+      "type": "scene_break",
+      "style": "line"
+    },
+    {
+      "type": "paragraph",
+      "text": "1548にも一通送った。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1547",
+      "text": "あの夜、ありがとう。",
+      "emotion": "quiet"
+    },
+    {
+      "type": "paragraph",
+      "text": "1548の返信は数分後だった。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1548",
+      "text": "礼はいらない。次はもっと早く言え。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "scene_break",
+      "style": "fade"
+    },
+    {
+      "type": "paragraph",
+      "text": "意識の深部で、4869の声がずっと遠くから届いた。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "4869",
+      "text": "……まだ生きてるのか。",
+      "emotion": "quiet"
+    },
+    {
+      "type": "paragraph",
+      "text": "1547は彼に返さなかった。"
+    },
+    {
+      "type": "paragraph",
+      "text": "彼女はコードエディタを開き直した。空白ファイルでカーソルが点滅している。"
+    },
+    {
+      "type": "paragraph",
+      "text": "今度は、指を置くと文字が出た。"
+    }
+  ]
+}
