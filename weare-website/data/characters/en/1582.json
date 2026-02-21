@@ -1,0 +1,18 @@
+{
+  "name": "Matteo Ri",
+  "role": "Sojourner",
+  "species": "?",
+  "quote": "Words echo in my ears; memories surge like tides — I turn and find them within reach.",
+  "description": "Come from afar, having heard the stories of this place, now staying to watch the stars.",
+  "keywords": ["Observation", "Silence", "Latency"],
+  "meta": {
+    "background": "Once begged for something. Once cried for something. Once made a promise for something.\nOnce tried to escape, struggled, unable to move. Unable to move.\n\nTwisted, torn, unable to move;\nCorroded, amalgamated, unable to move.\n\nAt some unknown moment, she found herself suddenly outside.\nEscaped, then...\nBut what was once treasured like a gem held in cupped hands, embraced as a pillar of support,\nhas since become something incomprehensible. As if through a membrane, touch turns sticky,\nslipping through fingers, with nowhere to go.\nJust drawing near brings a deep, instinctive resistance.\n\n'Then... let's just walk forward a little...'\n'...What exactly are those things that were left behind...?'\nShe walked, picking up everything along the way,\ntrying to piece it all back together.\n\nAnd so she walked, until she arrived beneath another sky of stars —\na vast firmament with a satellite keeping watch, with people present, with hearts beating.\nSomeone was telling the stories of what had happened here.\n\nThen, there seemed to be an echo in her ears;\nmemories surging like tides, reachable at a glance back.\n...\"The rocky shore pale, heaven and earth one color, twenty thousand leagues of mist rising, no way to clear the wilderness in any direction.\"\nAt that moment she looked up, and seemed to feel the satellite passing across the sky\n...as if it had cut through something.\n\n'...Let's just stay here...'\n'...It has been so very long since I could see the stars...'\nAnd so, she sat down, looked up,\nand began to look, began to gather — from the heavens, from the earth, from within.",
+    "relationship": "After arriving at ESAP and hearing the stories of this place, she came to know 47, 48, and others; the relationship seems to be quite good.",
+    "abilities": ["Observation", "Listening", "Adaptation"],
+    "characterTraits": [
+      "Slightly sluggish, takes time to respond to external stimuli",
+      "Occasionally confused, feels a sense of detachment from familiar things",
+      "Tends to confirm her own existence through observation"
+    ]
+  }
+}
