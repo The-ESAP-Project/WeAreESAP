@@ -26,7 +26,13 @@ export default async function NotFound() {
     }
   } catch {}
 
-  const messages = (await import(`@/messages/${locale}/notFound.json`)).default;
+  const messagesModule =
+    locale === "en"
+      ? await import("@/messages/en/notFound.json")
+      : locale === "ja"
+        ? await import("@/messages/ja/notFound.json")
+        : await import("@/messages/zh-CN/notFound.json");
+  const messages = messagesModule.default;
   const homePath = locale === "zh-CN" ? "/" : `/${locale}`;
 
   return (
