@@ -27,7 +27,7 @@
     "slug": "gray-zone",
     "format": "serial",
     "status": "completed",
-    "coverImage": "/assets/images/stories/data-tower-incident/cover.webp",
+    "coverImage": "/assets/images/stories/gray-zone/cover.webp",
     "authors": ["1738"],
     "relatedCharacters": ["1738", "2275", "1547", "1548", "1549"],
     "order": 2,
