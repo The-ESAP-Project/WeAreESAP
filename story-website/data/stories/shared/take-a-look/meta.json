@@ -1,8 +1,12 @@
 {
-  "title": "你们看看",
-  "subtitle": "「我更喜欢用画面说话」",
-  "description": "一个安静的人，用设计语言表达自我。不是不会说话，是画面比语言更诚实。",
-  "synopsis": "沈沐川在网上看到了一串编号——AptS:1548。好奇心驱动她开始了解ESAP，然后她留了下来。\n\n不是因为被说服，不是因为什么戏剧性的转折。她只是觉得，这里的故事应该被好好呈现。\n\n这是一个用画面说话的人的故事。",
+  "format": "serial",
+  "status": "completed",
+  "coverImage": "/assets/images/stories/take-a-look/cover.webp",
+  "authors": ["1543"],
+  "relatedCharacters": ["1543", "1548", "1547", "1549", "1738", "2275"],
+  "publishedAt": "2026-02-21T00:00:00Z",
+  "updatedAt": "2026-02-21T12:23:36+08:00",
+  "tags": ["1543", "design", "observation", "quiet"],
   "chapterOrder": [
     "ch-01",
     "ch-02",

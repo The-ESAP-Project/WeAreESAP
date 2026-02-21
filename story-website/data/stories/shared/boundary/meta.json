@@ -1,8 +1,12 @@
 {
-  "title": "你越界了",
-  "subtitle": "「边界执行小组首次启动」",
-  "description": "系统级异常干预模块，仅在常规判断机制无法维持边界完整性时被激活。",
-  "synopsis": "2025年6月。持续性越界行为让1547的判断模块开始延迟。4869的存在感急剧增强。1548感觉到了不对劲。1549从轨道上确认了数据。\n\n三个启动条件全部满足。\n\n边界执行小组从休眠状态被激活。",
+  "format": "serial",
+  "status": "completed",
+  "coverImage": "/assets/images/stories/boundary/cover.webp",
+  "authors": ["1548"],
+  "relatedCharacters": ["1547", "1548", "1549", "4869"],
+  "publishedAt": "2026-02-21T00:00:00Z",
+  "updatedAt": "2026-02-22T04:43:23+08:00",
+  "tags": ["1547", "1548", "1549", "4869", "beu", "boundary", "crisis"],
   "chapterOrder": ["ch-01", "ch-02", "ch-03", "ch-04", "ch-05"],
   "perspectives": [],
   "unlocks": []

@@ -17,22 +17,19 @@ export type StoryStatus = "draft" | "ongoing" | "completed" | "hiatus";
 /** Story registry entry — locale-independent, stored in shared/index.json */
 export interface StoryRegistryEntry {
   slug: string;
+  order: number;
+}
+
+/** Story structural metadata — shared/{slug}/meta.json */
+export interface StoryMeta {
   format: StoryFormat;
   status: StoryStatus;
   coverImage: string;
   authors: string[];
   relatedCharacters: string[];
-  order: number;
   publishedAt: string;
   updatedAt: string;
   tags: string[];
-}
-
-/** Story structural metadata — shared/{slug}/meta.json */
-export interface StoryMeta {
-  slug: string;
-  format: StoryFormat;
-  status: StoryStatus;
   chapterOrder: string[];
   perspectives?: PerspectiveDefinition[];
   unlocks?: UnlockDefinition[];

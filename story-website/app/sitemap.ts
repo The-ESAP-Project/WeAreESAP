@@ -66,12 +66,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // 故事路由
   const registry = await loadStoryRegistry();
 
-  for (const story of registry) {
-    const { slug, updatedAt } = story;
-    const lastMod = updatedAt || now;
-
-    // 故事详情页
-    entries.push(buildEntry(`/stories/${slug}`, lastMod, "monthly", 0.8));
+  for (const entry of registry) {
+    const { slug } = entry;
 
     // 从 meta.json 读取章节和探索场景列表
     const meta = await loadJsonFileDirect<StoryMeta>([
@@ -81,6 +77,11 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       slug,
       "meta.json",
     ]);
+
+    const lastMod = meta?.updatedAt || now;
+
+    // 故事详情页
+    entries.push(buildEntry(`/stories/${slug}`, lastMod, "monthly", 0.8));
 
     if (meta) {
       const chapterIds = new Set<string>(meta.chapterOrder ?? []);
