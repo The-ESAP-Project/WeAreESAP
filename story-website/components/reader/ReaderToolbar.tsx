@@ -81,14 +81,9 @@ export function ReaderToolbar() {
         {open && (
           <motion.div
             ref={panelRef}
-            initial={{ opacity: 0, y: 8, scale: 0.95 }}
-            animate={{
-              opacity: 1,
-              y: 0,
-              scale: 1,
-              bottom: scrollVisible ? 128 : 72,
-            }}
-            exit={{ opacity: 0, y: 8, scale: 0.95 }}
+            initial={{ opacity: 0, bottom: scrollVisible ? 128 : 72 }}
+            animate={{ opacity: 1, bottom: scrollVisible ? 128 : 72 }}
+            exit={{ opacity: 0 }}
             transition={{ duration: 0.25, ease: "easeOut" }}
             style={{ right: 24 }}
             className="fixed z-40 w-64 bg-background border border-border rounded-xl shadow-lg p-4 space-y-4"

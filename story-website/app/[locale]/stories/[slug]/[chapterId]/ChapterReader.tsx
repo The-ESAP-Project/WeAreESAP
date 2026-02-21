@@ -102,7 +102,11 @@ function ChapterReaderInner({
     if (!hydrated) return;
     const savedY = storyState.chapterScrollPositions?.[chapter.id] ?? 0;
     savedScrollYRef.current = savedY;
-    if (savedY > 0) setShowResumeBanner(true);
+    if (savedY > 0) {
+      setShowResumeBanner(true);
+      const timer = setTimeout(() => setShowResumeBanner(false), 5000);
+      return () => clearTimeout(timer);
+    }
   }, [chapter.id, hydrated]);
 
   // Debounced scroll position saver
