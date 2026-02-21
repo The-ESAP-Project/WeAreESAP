@@ -103,7 +103,7 @@ function CharacterStripComponent({
             }
             className="w-full max-w-md space-y-6 p-8"
             style={{
-              textShadow: "0 1px 6px rgba(0,0,0,0.5)",
+              textShadow: "0 1px 8px rgba(0,0,0,0.7), 0 0 4px rgba(0,0,0,0.5)",
             }}
           >
             {/* 顶部装饰线 */}
