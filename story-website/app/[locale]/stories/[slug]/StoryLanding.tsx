@@ -14,6 +14,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import { FormatBadge, StatusBadge } from "@/components/story/StoryBadge";
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
 import { Icon } from "@/components/ui/Icon";
 import { useReadingState } from "@/hooks/useReadingState";
@@ -38,17 +39,26 @@ export function StoryLanding({ story, chapterTitles }: StoryLandingProps) {
   const hasProgress = storyState.chaptersRead.length > 0;
 
   return (
-    <div className="max-w-3xl mx-auto px-4 py-12">
+    <div className="min-h-screen">
+      {/* Top bar */}
+      <div className="sticky top-14 z-40 bg-background/90 backdrop-blur-sm border-b border-border">
+        <div className="max-w-3xl mx-auto px-4 py-2">
+          <Link
+            href="/stories"
+            className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+          >
+            &larr; {t("backToStories")}
+          </Link>
+        </div>
+      </div>
+
+      <div className="max-w-3xl mx-auto px-4 py-12">
       <AnimatedSection>
         {/* Header */}
         <div className="mb-8">
           <div className="flex items-center gap-2 mb-3">
-            <span className="text-xs px-2 py-0.5 rounded-full bg-esap-blue/10 text-esap-blue font-medium">
-              {tS(`filter.${story.format}`)}
-            </span>
-            <span className="text-xs px-2 py-0.5 rounded-full bg-muted text-muted-foreground">
-              {tS(`status.${story.status}`)}
-            </span>
+            <FormatBadge label={tS(`filter.${story.format}`)} />
+            <StatusBadge label={tS(`status.${story.status}`)} />
           </div>
           <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-2">
             {story.title}
@@ -141,5 +151,6 @@ export function StoryLanding({ story, chapterTitles }: StoryLandingProps) {
         </div>
       </AnimatedSection>
     </div>
+  </div>
   );
 }
