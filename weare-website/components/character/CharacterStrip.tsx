@@ -103,7 +103,7 @@ function CharacterStripComponent({
             }
             className="w-full max-w-md space-y-6 p-8"
             style={{
-              textShadow: "0 2px 12px rgba(0,0,0,0.8)",
+              textShadow: "0 1px 6px rgba(0,0,0,0.5)",
             }}
           >
             {/* 顶部装饰线 */}
@@ -116,7 +116,7 @@ function CharacterStripComponent({
 
             {/* 角色代号 */}
             <div
-              className="text-2xl font-mono font-bold [color:var(--char-color-light)] dark:[color:var(--char-color-dark)]"
+              className="text-2xl font-mono font-bold text-white"
               data-testid="character-code"
             >
               {character.code}
@@ -161,7 +161,7 @@ function CharacterStripComponent({
                 writingMode: "vertical-rl",
                 textOrientation: "upright",
                 letterSpacing: "0.5em",
-                textShadow: "0 2px 8px rgba(0,0,0,0.5)",
+                textShadow: "0 1px 4px rgba(0,0,0,0.4)",
               }}
             >
               {character.code}

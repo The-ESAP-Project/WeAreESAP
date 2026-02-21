@@ -114,7 +114,7 @@ export function CharacterHero({ character }: CharacterHeroProps) {
         style={{
           y: contentY,
           opacity: contentOpacity,
-          textShadow: "0 4px 20px rgba(0,0,0,0.9)",
+          textShadow: "0 2px 8px rgba(0,0,0,0.5)",
           // @ts-expect-error - CSS 自定义属性在 CSSProperties 中的类型限制
           "--char-color-light": lightModeColor,
           "--char-color-dark": darkModeColor,
@@ -133,7 +133,7 @@ export function CharacterHero({ character }: CharacterHeroProps) {
 
         {/* 角色代号 */}
         <motion.div
-          className="text-3xl md:text-4xl font-mono font-bold mb-6 [color:var(--char-color-light)] dark:[color:var(--char-color-dark)]"
+          className="text-3xl md:text-4xl font-mono font-bold mb-6 text-white"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2, duration: 0.6 }}

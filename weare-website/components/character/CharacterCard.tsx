@@ -120,10 +120,10 @@ function CharacterCardComponent({
 
           {/* 角色代号 */}
           <div
-            className="text-lg font-mono font-bold mb-2 [color:var(--char-color-light)] dark:[color:var(--char-color-dark)]"
+            className="text-lg font-mono font-bold mb-2 text-white"
             data-testid="character-code"
             style={{
-              textShadow: "0 2px 4px rgba(0,0,0,0.9), 0 0 8px rgba(0,0,0,0.7)",
+              textShadow: "0 1px 3px rgba(0,0,0,0.5), 0 0 5px rgba(0,0,0,0.4)",
             }}
           >
             {character.code}

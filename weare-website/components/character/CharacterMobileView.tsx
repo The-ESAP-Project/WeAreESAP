@@ -137,14 +137,14 @@ export const CharacterMobileView = memo(function CharacterMobileView({
             <div
               className="relative h-full p-6 text-white"
               style={{
-                textShadow: "0 2px 12px rgba(0,0,0,0.8)",
+                textShadow: "0 1px 6px rgba(0,0,0,0.5)",
               }}
             >
               {/* 基础信息（始终显示） */}
               <div className="space-y-2">
                 {/* 角色代号 */}
                 <div
-                  className="text-lg font-mono font-bold [color:var(--char-color-light)] dark:[color:var(--char-color-dark)]"
+                  className="text-lg font-mono font-bold text-white"
                   data-testid="character-code"
                 >
                   {character.code}

@@ -53,10 +53,9 @@ export function Footer() {
       icon: "MessageCircle" as const,
     },
     {
-      name: "Discord",
-      href: "#",
-      icon: "Discord" as const,
-      disabled: true,
+      name: tFooter("storyWebsite"),
+      href: "https://story.esaps.net/",
+      icon: "BookOpen" as const,
     },
     {
       name: tFooter("website"),
@@ -96,29 +95,19 @@ export function Footer() {
           <div className="flex items-center justify-center gap-4">
             {socialLinks.map((link, index) => (
               <div key={index}>
-                {link.disabled ? (
-                  <div className="cursor-not-allowed opacity-50">
-                    <Icon
-                      name={link.icon}
-                      size={20}
-                      className="text-foreground"
-                    />
-                  </div>
-                ) : (
-                  <a
-                    href={link.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="hover:scale-110 hover:rotate-6 transition-all duration-300"
-                    aria-label={link.name}
-                  >
-                    <Icon
-                      name={link.icon}
-                      size={20}
-                      className="text-foreground"
-                    />
-                  </a>
-                )}
+                <a
+                  href={link.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:scale-110 hover:rotate-6 transition-all duration-300"
+                  aria-label={link.name}
+                >
+                  <Icon
+                    name={link.icon}
+                    size={20}
+                    className="text-foreground"
+                  />
+                </a>
               </div>
             ))}
           </div>
@@ -167,32 +156,19 @@ export function Footer() {
               <div className="grid grid-cols-2 gap-3">
                 {socialLinks.map((link, index) => (
                   <div key={index}>
-                    {link.disabled ? (
-                      <div className="flex items-center gap-2 text-sm cursor-not-allowed opacity-50">
-                        <Icon
-                          name={link.icon}
-                          size={16}
-                          className="text-foreground"
-                        />
-                        <span className="text-xs text-muted-foreground">
-                          {link.name}
-                        </span>
-                      </div>
-                    ) : (
-                      <a
-                        href={link.href}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex items-center gap-2 text-sm text-muted-foreground hover:text-esap-blue hover:translate-x-1 transition-all duration-300 group"
-                      >
-                        <Icon
-                          name={link.icon}
-                          size={16}
-                          className="text-foreground group-hover:text-esap-blue group-hover:scale-110 group-hover:rotate-3 transition-all"
-                        />
-                        <span className="text-xs">{link.name}</span>
-                      </a>
-                    )}
+                    <a
+                      href={link.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 text-sm text-muted-foreground hover:text-esap-blue hover:translate-x-1 transition-all duration-300 group"
+                    >
+                      <Icon
+                        name={link.icon}
+                        size={16}
+                        className="text-foreground group-hover:text-esap-blue group-hover:scale-110 group-hover:rotate-3 transition-all"
+                      />
+                      <span className="text-xs">{link.name}</span>
+                    </a>
                   </div>
                 ))}
               </div>
