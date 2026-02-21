@@ -15,7 +15,7 @@
 
 import { AnimatePresence, motion } from "framer-motion";
 import { useTranslations } from "next-intl";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Icon } from "@/components/ui/Icon";
 import { useReadingPreferences } from "@/hooks/useReadingPreferences";
 import { useScrollVisible } from "@/hooks/useScrollVisible";
@@ -27,6 +27,22 @@ export function ReaderToolbar() {
   const { preferences, setPreferences } = useReadingPreferences();
   const [open, setOpen] = useState(false);
   const scrollVisible = useScrollVisible(300);
+  const buttonRef = useRef<HTMLButtonElement>(null);
+  const panelRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (!open) return;
+    const handleClickOutside = (e: MouseEvent) => {
+      if (
+        buttonRef.current?.contains(e.target as Node) ||
+        panelRef.current?.contains(e.target as Node)
+      )
+        return;
+      setOpen(false);
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, [open]);
 
   const fontSizes: ReadingPreferences["fontSize"][] = [
     "sm",
@@ -48,6 +64,7 @@ export function ReaderToolbar() {
     <>
       {/* Toggle button */}
       <motion.button
+        ref={buttonRef}
         type="button"
         onClick={() => setOpen(!open)}
         animate={{ bottom: scrollVisible ? 80 : 24 }}
@@ -63,6 +80,7 @@ export function ReaderToolbar() {
       <AnimatePresence>
         {open && (
           <motion.div
+            ref={panelRef}
             initial={{ opacity: 0, y: 8, scale: 0.95 }}
             animate={{
               opacity: 1,
@@ -71,7 +89,7 @@ export function ReaderToolbar() {
               bottom: scrollVisible ? 128 : 72,
             }}
             exit={{ opacity: 0, y: 8, scale: 0.95 }}
-            transition={{ duration: 0.15, ease: "easeOut" }}
+            transition={{ duration: 0.25, ease: "easeOut" }}
             style={{ right: 24 }}
             className="fixed z-40 w-64 bg-background border border-border rounded-xl shadow-lg p-4 space-y-4"
           >
