@@ -27,6 +27,7 @@ const registry = JSON.parse(readFileSync(indexPath, "utf-8"));
 let updated = 0;
 
 for (const entry of registry) {
+  const metaPath = join(root, "data", "stories", "shared", entry.slug, "meta.json");
   try {
     // 取该 story 下所有文件（zh-CN locale + shared meta）的最新 git 提交时间
     const timestamp = execSync(
@@ -35,7 +36,9 @@ for (const entry of registry) {
     ).trim();
 
     if (timestamp) {
-      entry.updatedAt = timestamp;
+      const meta = JSON.parse(readFileSync(metaPath, "utf-8"));
+      meta.updatedAt = timestamp;
+      writeFileSync(metaPath, JSON.stringify(meta, null, 2) + "\n");
       updated++;
     }
   } catch {
@@ -43,5 +46,4 @@ for (const entry of registry) {
   }
 }
 
-writeFileSync(indexPath, JSON.stringify(registry, null, 2) + "\n");
 console.log(`✨ story timestamps 已更新: ${updated}/${registry.length} 个`);

@@ -5,13 +5,18 @@
   "authors": ["1548"],
   "relatedCharacters": ["1547", "1548", "1549"],
   "publishedAt": "2026-02-20T00:00:00Z",
-  "updatedAt": "2026-02-21T10:46:16+08:00",
+  "updatedAt": "2026-02-22T05:08:34+08:00",
   "tags": ["data-tower", "1548", "core-event", "trust"],
   "chapterOrder": ["ch-01", "ch-02", "ch-03"],
   "perspectives": [
     {
       "baseChapterId": "ch-02",
-      "variants": [{ "characterId": "1547", "chapterId": "ch-02-pov-1547" }]
+      "variants": [
+        {
+          "characterId": "1547",
+          "chapterId": "ch-02-pov-1547"
+        }
+      ]
     }
   ],
   "unlocks": [
@@ -19,7 +24,10 @@
       "targetId": "ch-03",
       "targetType": "chapter",
       "conditions": [
-        { "type": "read_chapter", "chapterId": "ch-02" },
+        {
+          "type": "read_chapter",
+          "chapterId": "ch-02"
+        },
         {
           "type": "read_perspective",
           "baseChapterId": "ch-02",

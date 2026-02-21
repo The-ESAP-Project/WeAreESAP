@@ -75,29 +75,35 @@ export async function getCharacterRelatedContent(
   relatedStories: Story[];
   perspectiveChapters: PerspectiveChapterEntry[];
 }> {
-  // 1. 加载故事注册表，过滤出包含该角色的故事，按 order 排序
+  // 1. 加载故事注册表，并行加载所有 shared meta.json
   const registry = await loadStoryRegistry();
-  const relatedEntries = registry
-    .filter((entry) => entry.relatedCharacters.includes(characterId))
-    .sort((a, b) => a.order - b.order);
 
-  if (relatedEntries.length === 0) {
+  const allMetas = await Promise.all(
+    registry.map(async (entry) => {
+      const meta = await loadJsonFileDirect<StoryMeta>([
+        "data",
+        "stories",
+        "shared",
+        entry.slug,
+        "meta.json",
+      ]);
+      return { entry, meta };
+    })
+  );
+
+  // 2. 用 meta.relatedCharacters 过滤，按 order 排序
+  const relatedItems = allMetas
+    .filter(({ meta }) => meta?.relatedCharacters?.includes(characterId))
+    .sort((a, b) => a.entry.order - b.entry.order);
+
+  if (relatedItems.length === 0) {
     return { relatedStories: [], perspectiveChapters: [] };
   }
 
-  // 2. 并行加载每个相关故事的 Story 数据和 shared meta.json
+  // 3. 并行加载每个相关故事的完整 Story 数据（meta 已加载，直接复用）
   const results = await Promise.all(
-    relatedEntries.map(async (entry) => {
-      const [story, meta] = await Promise.all([
-        loadStory(entry.slug, locale),
-        loadJsonFileDirect<StoryMeta>([
-          "data",
-          "stories",
-          "shared",
-          entry.slug,
-          "meta.json",
-        ]),
-      ]);
+    relatedItems.map(async ({ entry, meta }) => {
+      const story = await loadStory(entry.slug, locale);
       return { slug: entry.slug, story, meta };
     })
   );

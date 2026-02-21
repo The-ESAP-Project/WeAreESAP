@@ -57,12 +57,11 @@ export async function generateFeed(locale: FeedLocale): Promise<string> {
   const registry = await loadStoryRegistry();
 
   const stories = (
-    await Promise.all(
-      registry
-        .filter((entry) => entry.status !== "draft")
-        .map((entry) => loadStory(entry.slug, locale))
-    )
-  ).filter((story) => story !== null);
+    await Promise.all(registry.map((entry) => loadStory(entry.slug, locale)))
+  ).filter(
+    (story): story is NonNullable<typeof story> =>
+      story !== null && story.status !== "draft"
+  );
 
   stories.sort(
     (a, b) => new Date(b.updatedAt).getTime() - new Date(a.updatedAt).getTime()

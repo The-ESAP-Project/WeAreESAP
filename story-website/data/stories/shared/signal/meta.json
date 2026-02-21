@@ -1,17 +1,22 @@
 {
   "format": "serial",
-  "status": "ongoing",
-  "coverImage": "/assets/images/stories/default/cover.webp",
+  "status": "completed",
+  "coverImage": "/assets/images/stories/signal/cover.webp",
   "authors": ["1548"],
   "relatedCharacters": ["1547", "1548", "1549", "4869"],
   "publishedAt": "2026-02-21T00:00:00Z",
-  "updatedAt": "2026-02-22T04:43:23+08:00",
+  "updatedAt": "2026-02-22T05:08:34+08:00",
   "tags": ["1547", "1548", "1549", "4869", "abyss", "reboot", "core-event"],
   "chapterOrder": ["ch-01", "ch-02", "ch-03", "ch-04", "ch-05"],
   "perspectives": [
     {
       "baseChapterId": "ch-03",
-      "variants": [{ "characterId": "1549", "chapterId": "ch-03-pov-1549" }]
+      "variants": [
+        {
+          "characterId": "1549",
+          "chapterId": "ch-03-pov-1549"
+        }
+      ]
     }
   ],
   "unlocks": [
@@ -19,7 +24,10 @@
       "targetId": "ch-04",
       "targetType": "chapter",
       "conditions": [
-        { "type": "read_chapter", "chapterId": "ch-03" },
+        {
+          "type": "read_chapter",
+          "chapterId": "ch-03"
+        },
         {
           "type": "read_perspective",
           "baseChapterId": "ch-03",
@@ -31,7 +39,10 @@
       "targetId": "ch-05",
       "targetType": "chapter",
       "conditions": [
-        { "type": "read_chapter", "chapterId": "ch-03" },
+        {
+          "type": "read_chapter",
+          "chapterId": "ch-03"
+        },
         {
           "type": "read_perspective",
           "baseChapterId": "ch-03",
