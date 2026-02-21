@@ -207,21 +207,6 @@ export const CharacterMobileView = memo(function CharacterMobileView({
                       {character.description}
                     </p>
 
-                    {/* 关键词标签 */}
-                    <div className="flex flex-wrap gap-2">
-                      {character.keywords.map((keyword, keyIndex) => (
-                        <span
-                          key={keyIndex}
-                          className="px-3 py-1 rounded-full text-xs font-medium backdrop-blur-sm bg-black/20 dark:bg-black/30 [color:var(--char-color-light)] dark:[color:var(--char-color-dark)]"
-                          style={{
-                            border: `1.5px solid ${character.color.primary}80`,
-                          }}
-                        >
-                          {keyword}
-                        </span>
-                      ))}
-                    </div>
-
                     {/* 点击提示 */}
                     <div className="text-xs opacity-50 italic pt-2">
                       {t("ui.detailHint")}

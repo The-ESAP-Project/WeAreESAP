@@ -135,22 +135,6 @@ function CharacterStripComponent({
               &quot;{character.quote}&quot;
             </p>
 
-            {/* 关键词标签 */}
-            <div className="flex flex-wrap gap-3">
-              {character.keywords.map((keyword, index) => (
-                <span
-                  key={index}
-                  className="px-4 py-2 rounded-full text-sm font-medium backdrop-blur-sm bg-black/30 dark:bg-black/50 [color:var(--char-color-light)] dark:[color:var(--char-color-dark)]"
-                  style={{
-                    border: `2px solid ${character.color.primary}80`,
-                    textShadow: "0 1px 8px rgba(0,0,0,0.9)",
-                  }}
-                >
-                  {keyword}
-                </span>
-              ))}
-            </div>
-
             {/* 描述 */}
             <p className="text-base opacity-75 leading-relaxed">
               {character.description}

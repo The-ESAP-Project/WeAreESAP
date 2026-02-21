@@ -170,21 +170,6 @@ function CharacterCardComponent({
           >
             {character.description}
           </p>
-
-          {/* 关键词标签 */}
-          <div className="flex flex-wrap gap-2">
-            {character.keywords.map((keyword, index) => (
-              <span
-                key={index}
-                className="px-3 py-1 text-xs rounded-full backdrop-blur-sm bg-black/30 dark:bg-black/50 transition-all [color:var(--char-color-light)] dark:[color:var(--char-color-dark)]"
-                style={{
-                  border: `1.5px solid ${character.color.primary}80`,
-                }}
-              >
-                {keyword}
-              </span>
-            ))}
-          </div>
         </div>
       </div>
     </motion.div>
