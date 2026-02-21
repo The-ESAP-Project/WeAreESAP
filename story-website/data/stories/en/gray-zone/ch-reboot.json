@@ -1,0 +1,154 @@
+{
+  "id": "ch-reboot",
+  "title": "Servers Can Reboot. So Can You.",
+  "subtitle": "September 2024",
+  "readingTime": 5,
+  "perspectiveCharacter": "2275",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "The first time 2275 saw 1547 go into a depressive episode was on an utterly ordinary afternoon."
+    },
+    {
+      "type": "paragraph",
+      "text": "There was no warning. In the morning, 1547 was still discussing the new system architecture in group chat. At noon, she replied to 2275's server migration question. Then at 3:00 p.m., she vanished from every channel."
+    },
+    {
+      "type": "paragraph",
+      "text": "At first 2275 didn't think much of it, 1547 often disappeared for experiments. But by evening, 1548 posted one line:"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1548",
+      "text": "47 again. Whoever's free, check on her.",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "\"Again.\" That one word told 2275 this was not the first time."
+    },
+    {
+      "type": "scene_break",
+      "style": "dots"
+    },
+    {
+      "type": "paragraph",
+      "text": "When 2275 found 1547, she was in the corner of the base. Lights off, curtains drawn, only the dim glow of a laptop screen on her face. On-screen was a blank code editor, cursor blinking, nothing typed."
+    },
+    {
+      "type": "paragraph",
+      "text": "2275 stood in the doorway for a while, unsure what to do. 1738 had never taught her this, and no role doc ever included \"what to do when your android teammate has a depressive episode.\""
+    },
+    {
+      "type": "paragraph",
+      "text": "But her instinct told her one thing: don't try to fix it. Just be there."
+    },
+    {
+      "type": "paragraph",
+      "text": "She walked in and sat beside 1547. No words. Just sat."
+    },
+    {
+      "type": "paragraph",
+      "text": "A long while passed."
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1547",
+      "text": "You don't have to stay here.",
+      "emotion": "tired"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "2275",
+      "text": "Mm. I know.",
+      "emotion": "gentle"
+    },
+    {
+      "type": "paragraph",
+      "text": "Another long while passed."
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1547",
+      "text": "I don't know why this happens. Nothing even happened.",
+      "emotion": "weak"
+    },
+    {
+      "type": "paragraph",
+      "text": "2275 thought for a moment, then said one sentence, not prepared, just rising from somewhere she couldn't name."
+    },
+    {
+      "type": "dialogue",
+      "speaker": "2275",
+      "text": "Look, when a server crashes, you reboot it. People can be like that too. Shut down, rest, start again. Everything important is still there.",
+      "emotion": "gentle"
+    },
+    {
+      "type": "paragraph",
+      "text": "1547 looked at her. Her red-blue heterochromic eyes glowed faintly in the dark."
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1547",
+      "text": "...Are you comforting me with a server metaphor?",
+      "emotion": "weak"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "2275",
+      "text": "Because that's a language you understand.",
+      "emotion": "gentle"
+    },
+    {
+      "type": "paragraph",
+      "text": "1547 stayed silent for a moment, then laughed, soft enough to almost disappear, but a laugh."
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1547",
+      "text": "So what am I right now? Blue screen?",
+      "emotion": "weak"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "2275",
+      "text": "At most a memory leak. Reboot and you'll be fine.",
+      "emotion": "cheerful"
+    },
+    {
+      "type": "paragraph",
+      "text": "1547 laughed again, a little louder this time."
+    },
+    {
+      "type": "paragraph",
+      "text": "2275 said nothing more. She just stayed there. Outside, dusk turned to night, the room grew darker, and neither of them turned on the lights."
+    },
+    {
+      "type": "scene_break",
+      "style": "fade"
+    },
+    {
+      "type": "paragraph",
+      "text": "Later, 1547 told 1548 that 2275 comforted her with a reboot analogy."
+    },
+    {
+      "type": "paragraph",
+      "text": "1548's reaction was:"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1548",
+      "text": "...Still better than how you tried to comfort yourself last time.",
+      "emotion": "cold"
+    },
+    {
+      "type": "paragraph",
+      "text": "1547 didn't argue. Because 1548 was right."
+    },
+    {
+      "type": "internal_monologue",
+      "character": "2275",
+      "text": "I only found out later that 1547 remembered that line.\n\nNot because it was profound, honestly, using server metaphors to comfort someone is kind of dumb.\n\nBut in that dark room that afternoon, someone spoke to her in a language she understood.\n\nServers can reboot.\n\nPeople can too."
+    }
+  ]
+}

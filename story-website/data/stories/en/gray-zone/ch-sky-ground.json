@@ -1,0 +1,156 @@
+{
+  "id": "ch-sky-ground",
+  "title": "Sky-Ground Coordination",
+  "subtitle": "August 2024",
+  "readingTime": 5,
+  "perspectiveCharacter": "1738",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "After the DDoS incident, 1549 proactively contacted 1738."
+    },
+    {
+      "type": "paragraph",
+      "text": "Through a private Feedscatteron Communication channel. As a human, 1738 couldn't receive Feedscatteron signals directly, so 1547 built him a translation terminal that rendered the communication into real-time text in an encrypted window."
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1549",
+      "text": "I saw a geographic heat map of the DDoS source IPs from orbit. They're concentrated in three regions. High overlap with the activity range of the organization from our last negotiation.",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1738",
+      "text": "I'm checking too. Ground-side data says the botnet was rented and paid in crypto, but one transfer timestamp lines up exactly with an internal meeting in that organization.",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1549",
+      "text": "Chance of coincidence?",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1738",
+      "text": "Below 2%.",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "The channel stayed silent for three seconds. Then 1549 sent an image, a ground heat map shot from 36,000 kilometers, marked with precise coordinates and activity timelines for all three regions."
+    },
+    {
+      "type": "paragraph",
+      "text": "1738 looked at it and overlaid it with his ground intel. The two puzzle pieces fit seamlessly."
+    },
+    {
+      "type": "internal_monologue",
+      "character": "1738",
+      "text": "She sees the whole board from the sky. I see the details on the ground.\n\nShe sees where signals cluster. I see the people behind those signals.\n\nNo one needs to command anyone. We just put what we each see together."
+    },
+    {
+      "type": "scene_break",
+      "style": "line"
+    },
+    {
+      "type": "paragraph",
+      "text": "Over the next two weeks, they built a fixed intelligence exchange workflow."
+    },
+    {
+      "type": "paragraph",
+      "text": "Every night at 10:00, 1549 sent down orbital observations: signal anomalies, suspicious communications, facility changes on the ground. 1738 sent up organized ground findings: interpersonal shifts, organizational movement, small clues in public info."
+    },
+    {
+      "type": "paragraph",
+      "text": "No meetings, no long discussions. Each did their own analysis, then compared conclusions. Most of the time they matched. When they didn't, each explained why, then they took the overlap."
+    },
+    {
+      "type": "paragraph",
+      "text": "After seeing this process, 1547 said:"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1547",
+      "text": "Since when are you two this in sync?",
+      "emotion": "surprised"
+    },
+    {
+      "type": "paragraph",
+      "text": "1738 thought for a second."
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1738",
+      "text": "Probably because we both observe first, then act.",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "1549 added from orbit:"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1549",
+      "text": "And because neither of us likes wasting words.",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "The corner of 1738's mouth moved. It was probably the closest thing to a joke he and 1549 had shared."
+    },
+    {
+      "type": "scene_break",
+      "style": "fade"
+    },
+    {
+      "type": "paragraph",
+      "text": "Late one night at the end of August, while organizing intel, 1738 received a message from 1549. Not intel, just one line."
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1549",
+      "text": "1738.",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1738",
+      "text": "Yeah?",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1549",
+      "text": "Add one side to a triangle and it doesn't have to become a quadrilateral. It can become two triangles instead. More stable.",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "1738 stared at the line for a moment."
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1738",
+      "text": "Not bad math.",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1549",
+      "text": "48 says my math is bad.",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1738",
+      "text": "She says everyone's math is bad.",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "The channel quieted again. In their separate positions, they went back to their separate work."
+    }
+  ]
+}

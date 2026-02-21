@@ -1,0 +1,180 @@
+{
+  "id": "ch-03",
+  "title": "The First Negotiation",
+  "subtitle": "February 2024",
+  "readingTime": 7,
+  "perspectiveCharacter": "1738",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "Three months after joining ESAP, 1738 received his first mission in the true sense of the word."
+    },
+    {
+      "type": "paragraph",
+      "text": "A human organization, not his former one, but similar in nature, learned about ESAP through certain channels. They were \"skeptical\" of androids, if anything, they used an even heavier word: \"threat.\""
+    },
+    {
+      "type": "paragraph",
+      "text": "1547's first reaction was to ignore them. 1548's first reaction was to prepare for conflict."
+    },
+    {
+      "type": "paragraph",
+      "text": "1738 said: Let me talk to them."
+    },
+    {
+      "type": "scene_break",
+      "style": "line"
+    },
+    {
+      "type": "paragraph",
+      "text": "The negotiation was held at a neutral cafe. Two representatives came, one man and one woman, both formally dressed. 1738 wore an ordinary dark gray coat and ordered an Americano."
+    },
+    {
+      "type": "paragraph",
+      "text": "The other side spoke first."
+    },
+    {
+      "type": "dialogue",
+      "speaker": "?",
+      "text": "Why do you think androids and humans can coexist?",
+      "emotion": "hostile"
+    },
+    {
+      "type": "paragraph",
+      "text": "1738 didn't answer immediately. He took a sip of coffee, then set the cup down."
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1738",
+      "text": "What exactly are your concerns?",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "They paused."
+    },
+    {
+      "type": "paragraph",
+      "text": "Then they started talking, at length, about runaway technology, fear of androids replacing humans, lack of legal frameworks for such beings, and \"what if they decide to stop obeying.\""
+    },
+    {
+      "type": "paragraph",
+      "text": "1738 listened point by point. No interruptions, no rebuttals, no visible impatience."
+    },
+    {
+      "type": "paragraph",
+      "text": "Then he responded. Not a debate, a conversation."
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1738",
+      "text": "The risk of technology running out of control is real. But your scenario assumes androids are tools built to execute commands. What if that premise is wrong?",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "?",
+      "text": "Then what are they?",
+      "emotion": "skeptical"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1738",
+      "text": "Independent individuals, with their own judgment, choices, and, in your words, free will. 1548 began rejecting unreasonable orders on day twenty-six after her birth. Not a malfunction, her choice.",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "?",
+      "text": "How do you know that isn't a programmed illusion?",
+      "emotion": "skeptical"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1738",
+      "text": "How do you know your own free will isn't just an illusion of neuronal firing?",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "Silence."
+    },
+    {
+      "type": "paragraph",
+      "text": "1738 continued."
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1738",
+      "text": "I'm not here to persuade you. Persuasion is useless, belief doesn't change in one conversation. I'm here because if all that remains between you and ESAP is suspicion and confrontation, both sides lose.",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "?",
+      "text": "You're human. Why stand with them?",
+      "emotion": "curious"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1738",
+      "text": "Because I'm standing here. A human choosing to stand on the same side as androids. Not because I was brainwashed, because I have seen their choices, sacrifices, and persistence with my own eyes.",
+      "emotion": "neutral"
+    },
+    {
+      "type": "scene_break",
+      "style": "dots"
+    },
+    {
+      "type": "paragraph",
+      "text": "The negotiation lasted three hours."
+    },
+    {
+      "type": "paragraph",
+      "text": "They reached no full consensus. But the other side agreed to shelve the dispute and continue observing: no proactive hostility, no information leaks, and a buffer period for both sides."
+    },
+    {
+      "type": "paragraph",
+      "text": "That was already the best possible outcome."
+    },
+    {
+      "type": "paragraph",
+      "text": "When 1738 stepped out of the cafe, night had fallen. February wind was cold, and he zipped his coat all the way up."
+    },
+    {
+      "type": "paragraph",
+      "text": "A signal from 1549 came through the Feedscatteron Communication channel, she had been listening from orbit the whole time."
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1549",
+      "text": "Handled well.",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1738",
+      "text": "Only a delay. Next time they'll bring more people.",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1549",
+      "text": "So you'll go again next time.",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "Not a question. A statement."
+    },
+    {
+      "type": "paragraph",
+      "text": "1738 did not answer."
+    },
+    {
+      "type": "internal_monologue",
+      "character": "1738",
+      "text": "They have weapons, combat systems, and orbital satellites.\nThey have prejudice, fear, and interests.\n\nAnd I stand in the middle.\n\nNot because I like this position. Because if no one stands in the middle, all that's left is collision."
+    }
+  ]
+}

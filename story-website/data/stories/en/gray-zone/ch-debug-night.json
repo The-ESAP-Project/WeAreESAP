@@ -1,0 +1,178 @@
+{
+  "id": "ch-debug-night",
+  "title": "Debug Night",
+  "subtitle": "November 2024",
+  "readingTime": 5,
+  "perspectiveCharacter": "2275",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "November. External pressure hit a peak."
+    },
+    {
+      "type": "paragraph",
+      "text": "Details didn't matter, it was sustained pressure from all sides, the kind that kept everyone wound tight. For a week, 1547 said nothing in chat unrelated to work. 1548 doubled patrol frequency. 1738 handled external communications all day and came back looking gray. Even 1549's messages from orbit grew shorter and rarer."
+    },
+    {
+      "type": "paragraph",
+      "text": "The whole team was like a string pulled to its limit. Pull any harder and it snaps."
+    },
+    {
+      "type": "paragraph",
+      "text": "2275 could see it. She couldn't solve the external situation, that was 1738 and 1548's domain. But she could do something else."
+    },
+    {
+      "type": "scene_break",
+      "style": "dots"
+    },
+    {
+      "type": "paragraph",
+      "text": "She sent one message to the group."
+    },
+    {
+      "type": "dialogue",
+      "speaker": "2275",
+      "text": "Tonight, 8 p.m., base. Debug Night. Rule: everyone brings one bug and one bag of snacks. No serious business.",
+      "emotion": "cheerful"
+    },
+    {
+      "type": "paragraph",
+      "text": "The chat went quiet for a while."
+    },
+    {
+      "type": "paragraph",
+      "text": "1547 replied first: \"Any bug?\""
+    },
+    {
+      "type": "paragraph",
+      "text": "2275: \"Any bug. The more absurd, the better.\""
+    },
+    {
+      "type": "paragraph",
+      "text": "1738: \"I don't write code.\""
+    },
+    {
+      "type": "paragraph",
+      "text": "2275: \"Then bring two bags of snacks.\""
+    },
+    {
+      "type": "paragraph",
+      "text": "1548 didn't reply. But at 8:00 p.m., she showed up with chips and a USB drive."
+    },
+    {
+      "type": "scene_break",
+      "style": "line"
+    },
+    {
+      "type": "paragraph",
+      "text": "The big table at the base was covered in snacks: chips, cookies, chocolate, a few cans of cola, and the two bags of nuts 1738 brought (which he insisted counted as two snacks)."
+    },
+    {
+      "type": "paragraph",
+      "text": "1547 opened her laptop and projected to the wall. On screen was a piece of code, a phantom bug she wrote three years ago that no one had ever reproduced."
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1547",
+      "text": "This bug only appears during a full moon. I'm not joking.",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "2275",
+      "text": "...What?",
+      "emotion": "shocked"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1547",
+      "text": "Server cron jobs use UTC, but one module secretly uses local time. Only around full moon each month, the two date systems shift by one day and trigger a boundary condition.",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "Two seconds of silence. Then everyone burst out laughing."
+    },
+    {
+      "type": "paragraph",
+      "text": "1548 plugged in the USB drive. Three lines of code appeared on screen."
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1548",
+      "text": "These three lines made the Data Tower backup system delete backup files instead of saving them under specific conditions. Took me two days to find.",
+      "emotion": "cold"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1547",
+      "text": "...I wrote that.",
+      "emotion": "embarrassed"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1548",
+      "text": "I know.",
+      "emotion": "cold"
+    },
+    {
+      "type": "paragraph",
+      "text": "Another round of laughter. This time even the corner of 1548's mouth twitched."
+    },
+    {
+      "type": "paragraph",
+      "text": "1549 sent hers from orbit: a logic error that sometimes made the attitude control system interpret \"turn left\" as \"turn left 360 degrees and then come back.\""
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1549",
+      "text": "Technically the result is correct. The process is just... more dramatic.",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "2275 laughed so hard she collapsed onto the table. Beside her, 1738 ate nuts in silence, and the gray in his face finally faded a little."
+    },
+    {
+      "type": "scene_break",
+      "style": "dots"
+    },
+    {
+      "type": "paragraph",
+      "text": "They fixed some bugs, gave up on others (the full-moon bug was unanimously preserved as the team's mascot), and finished every snack."
+    },
+    {
+      "type": "paragraph",
+      "text": "By late night, the topic drifted from bugs to everything else: auroras 1549 saw from orbit, parts flying across the room the first time 1548 disassembled a gun, the painfully boring team-building 1738 had been forced to join in his old organization, and the time freshman 2275 crashed a professor's server and pretended nothing happened."
+    },
+    {
+      "type": "paragraph",
+      "text": "No one mentioned external pressure."
+    },
+    {
+      "type": "paragraph",
+      "text": "At 1:00 a.m., 1547 leaned back, stared at the ceiling, and said:"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1547",
+      "text": "We should do this every month.",
+      "emotion": "gentle"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "2275",
+      "text": "Then full moon each month? In honor of that bug.",
+      "emotion": "cheerful"
+    },
+    {
+      "type": "paragraph",
+      "text": "1547 smiled. 1738 shook his head but didn't object. 1548 had already closed her eyes against the wall, resting, or pretending not to hear, hard to tell."
+    },
+    {
+      "type": "internal_monologue",
+      "character": "2275",
+      "text": "I can't solve the problems outside.\n\nBut when the string is about to snap, I can make everyone stop and laugh for a minute.\n\nThat's what I can do."
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "id": "ch-02",
+  "title": "オンライン",
+  "subtitle": "2024年3月",
+  "readingTime": 4,
+  "perspectiveCharacter": "1543",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "1548との会話は、いつの間にか一定のリズムになっていた。"
+    },
+    {
+      "type": "paragraph",
+      "text": "毎日話すわけではない。二、三日空くこともあれば、一週間空くこともある。だが、いったん話し始めれば、前置きのいらない会話だった。要点に入り、終われば終わる。余計な雑談はない。"
+    },
+    {
+      "type": "paragraph",
+      "text": "沈沐川は、こういう相手にほとんど出会ったことがない。多くの人は「最近どう？」「ごはん食べた？」「何してるの？」という助走が要る。1548にはそれがない。送る言葉はいつも直球で、返事は短い。絵文字も、語尾の飾りもない。"
+    },
+    {
+      "type": "paragraph",
+      "text": "それが沈沐川には心地よかった。"
+    },
+    {
+      "type": "scene_break",
+      "style": "dots"
+    },
+    {
+      "type": "paragraph",
+      "text": "最初に話したのはデザインのことだった。沈沐川が自分のUIラフを数枚見せると、1548は「不細工ではない」とだけ返した。あとで知ったが、それは1548の評価軸ではかなり高評価だった。"
+    },
+    {
+      "type": "paragraph",
+      "text": "その後、話題はゆっくり漂っていった。デザインから創作へ、創作から美意識へ、そして――"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1548",
+      "text": "どうして絵を描くの？",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "沈沐川は長く考えた。答えはあるのに、言葉がない。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1543",
+      "text": "言葉にできないものがあるから。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1548",
+      "text": "例えば？",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "沈沐川は文字では返さなかった。小さな絵を描いて送った。窓辺に座る一人、垂れたイヤホンの線、窓の外のぼやけた街の輪郭。表情も文章もないが、見る人には、静かで邪魔されたくない状態が伝わる。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1548",
+      "text": "分かった。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "二語。"
+    },
+    {
+      "type": "scene_break",
+      "style": "line"
+    },
+    {
+      "type": "paragraph",
+      "text": "三月の下旬のある夜、1548からメッセージが来た。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1548",
+      "text": "うちのプロジェクト、UIやれる人が足りない。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "沈沐川はその文を見た。事実だけで、余計な一語もない。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1543",
+      "text": "UIデザインなら手伝える。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1548",
+      "text": "いい。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "そうして沈沐川はAptS:1543になった。"
+    },
+    {
+      "type": "paragraph",
+      "text": "儀式も宣言もない。口数の少ない二人の、短い会話だけがあった。"
+    }
+  ]
+}

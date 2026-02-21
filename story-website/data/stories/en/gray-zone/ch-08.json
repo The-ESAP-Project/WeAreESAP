@@ -1,0 +1,165 @@
+{
+  "id": "ch-08",
+  "title": "Rooftop",
+  "subtitle": "February 2025",
+  "readingTime": 5,
+  "perspectiveCharacter": "1738",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "After one especially complex external mediation, 1738 sat alone on the rooftop."
+    },
+    {
+      "type": "paragraph",
+      "text": "He had just spent four days shuttling among three parties, a human organization, ESAP, and a neutral technology alliance. They had reached a temporary balance, but he knew it could break at any time."
+    },
+    {
+      "type": "paragraph",
+      "text": "The rooftop wind was strong. February wind, carrying winter's last chill. He pulled his coat tighter."
+    },
+    {
+      "type": "scene_break",
+      "style": "dots"
+    },
+    {
+      "type": "paragraph",
+      "text": "He had been with ESAP for over a year."
+    },
+    {
+      "type": "paragraph",
+      "text": "In that year he had done many things: negotiation, coordination, intelligence analysis, crisis handling. Every one of them was a tightrope walk in the gray zone, say too much and offend one side, say too little and offend the other, say nothing and both sides misunderstand."
+    },
+    {
+      "type": "paragraph",
+      "text": "No one had taught him how to do this. No textbook, no predecessor, no case studies. A human standing between androids and humans as a bridge, it had never happened before."
+    },
+    {
+      "type": "paragraph",
+      "text": "He was the first."
+    },
+    {
+      "type": "internal_monologue",
+      "character": "1738",
+      "text": "They have weapons, combat systems, and orbital satellites.\nThey have prejudice, fear, and interests.\n\nAnd I stand in the middle.\n\nNot because I like this position. Because if no one stands in the middle, all that's left is collision."
+    },
+    {
+      "type": "paragraph",
+      "text": "The wind picked up again. He looked down at his hands, ordinary human hands. No Fluid Titanium under the skin, no Feedscatter core pulsing in his chest. Just flesh and bone."
+    },
+    {
+      "type": "paragraph",
+      "text": "But these hands had signed negotiation agreements, written risk assessment reports, and answered a friend's cry for help at two in the morning."
+    },
+    {
+      "type": "paragraph",
+      "text": "Enough. That is enough."
+    },
+    {
+      "type": "scene_break",
+      "style": "line"
+    },
+    {
+      "type": "paragraph",
+      "text": "A signal came through the Feedscatteron Communication channel. 1549."
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1549",
+      "text": "You're on the rooftop.",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "Not a question. She had seen him from orbit."
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1738",
+      "text": "Getting some air.",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1549",
+      "text": "I saw the negotiation result. Not bad.",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1738",
+      "text": "Only a delay.",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1549",
+      "text": "All balance is delay. What matters is building something stronger with the time that delay buys you.",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "1738 thought about that line. Words from 36,000 kilometers away always carried a strange weight, not because of distance, but because of the speaker's vantage point."
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1738",
+      "text": "What do you think we're building?",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1549",
+      "text": "A possibility. The possibility that androids and humans are not limited to opposing each other or ignoring each other.",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "The channel went quiet for a while."
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1549",
+      "text": "You are proof of that possibility.",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "1738 said nothing. He looked up at the sky. City light pollution washed out the stars, leaving only a blurred orange-gray."
+    },
+    {
+      "type": "paragraph",
+      "text": "But he knew that artificial star was there. Invisible, but there."
+    },
+    {
+      "type": "scene_break",
+      "style": "fade"
+    },
+    {
+      "type": "paragraph",
+      "text": "His phone buzzed. A message from 2275."
+    },
+    {
+      "type": "dialogue",
+      "speaker": "2275",
+      "text": "You're up on the rooftop in the wind again? Come down and eat, I bought your favorite.",
+      "emotion": "cheerful"
+    },
+    {
+      "type": "paragraph",
+      "text": "1738 looked at the message and the corner of his mouth moved."
+    },
+    {
+      "type": "paragraph",
+      "text": "He stood up, dusted off his pants, and headed downstairs."
+    },
+    {
+      "type": "paragraph",
+      "text": "The wind was still blowing. But he was no longer cold."
+    },
+    {
+      "type": "quote",
+      "text": "Between black and white, I choose the gray zone.\nNot because gray is safe.\nBecause gray is the only color that can see both sides at once.",
+      "attribution": "AptS:1738 · 2025/02"
+    }
+  ]
+}

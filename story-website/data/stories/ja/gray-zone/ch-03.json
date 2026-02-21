@@ -1,0 +1,180 @@
+{
+  "id": "ch-03",
+  "title": "最初の交渉",
+  "subtitle": "2024年2月",
+  "readingTime": 7,
+  "perspectiveCharacter": "1738",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "ESAP加入から3か月後、1738は初めて「任務」と呼べる仕事を受けた。"
+    },
+    {
+      "type": "paragraph",
+      "text": "ある人間組織――以前いた場所ではないが性質は近い――が、何らかの経路でESAPの存在を知った。彼らはアンドロイドに懐疑的で、その語感は「懐疑」を越えていた。彼らの語は「脅威」。"
+    },
+    {
+      "type": "paragraph",
+      "text": "1547の第一反応は無視。1548の第一反応は臨戦態勢。"
+    },
+    {
+      "type": "paragraph",
+      "text": "1738は言った。「私が話しに行く。」"
+    },
+    {
+      "type": "scene_break",
+      "style": "line"
+    },
+    {
+      "type": "paragraph",
+      "text": "交渉場所は中立のカフェ。相手は男女二名、きっちりした服装だった。1738は地味なダークグレーの上着で、アメリカーノを頼んだ。"
+    },
+    {
+      "type": "paragraph",
+      "text": "先に口を開いたのは相手側。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "?",
+      "text": "なぜアンドロイドと人間が共存できると思う？",
+      "emotion": "hostile"
+    },
+    {
+      "type": "paragraph",
+      "text": "1738はすぐには答えず、コーヒーを一口飲んでカップを置いた。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1738",
+      "text": "あなたたちの懸念は何だ？ 具体的に。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "相手は一瞬言葉を失った。"
+    },
+    {
+      "type": "paragraph",
+      "text": "それから一気に話し始めた。技術暴走のリスク、アンドロイドが人間を代替する恐怖、法的拘束枠の不在、「従わなくなったらどうする」という不安。"
+    },
+    {
+      "type": "paragraph",
+      "text": "1738は一つずつ聞いた。遮らず、反論せず、苛立ちも見せない。"
+    },
+    {
+      "type": "paragraph",
+      "text": "そして返した。討論ではなく、対話として。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1738",
+      "text": "技術暴走のリスクは現実だ。だがあなたたちの想定には前提がある。アンドロイドは命令実行のために作られた道具だ、という前提だ。もしその前提が間違っていたら？",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "?",
+      "text": "なら、彼女たちは何なんだ？",
+      "emotion": "skeptical"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1738",
+      "text": "独立した個体だ。自分の判断があり、自分の選択があり、あなたたちの言葉で言うなら自由意志がある。1548は誕生26日目に不合理な指示を拒否し始めた。故障ではなく、彼女の意思で。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "?",
+      "text": "それがプログラムされた擬似自由意志じゃないと、どう証明する？",
+      "emotion": "skeptical"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1738",
+      "text": "あなた自身の自由意志が、神経発火の擬似現象じゃないと、どう証明する？",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "相手は黙った。"
+    },
+    {
+      "type": "paragraph",
+      "text": "1738は続けた。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1738",
+      "text": "私はあなたたちを説得しに来たわけじゃない。説得では信念は変わらない。来た理由は一つ。あなたたちとESAPの間に猜疑と対立しか残らなければ、最後に傷むのは双方だからだ。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "?",
+      "text": "あなたは人間だ。なぜ彼女たちの側に立つ？",
+      "emotion": "curious"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1738",
+      "text": "私はここに立っているからだ。人間として、アンドロイドと同じ側に立つことを選んだ。洗脳されたからじゃない。彼女たちの選択、犠牲、持続を自分の目で見たからだ。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "scene_break",
+      "style": "dots"
+    },
+    {
+      "type": "paragraph",
+      "text": "交渉は3時間続いた。"
+    },
+    {
+      "type": "paragraph",
+      "text": "完全合意には至らなかった。だが相手は、争点の棚上げと観察継続に同意した。先制敵対をしない。情報を拡散しない。双方に緩衝期間を置く。"
+    },
+    {
+      "type": "paragraph",
+      "text": "それが取り得る最良の着地だった。"
+    },
+    {
+      "type": "paragraph",
+      "text": "1738がカフェを出る頃には、外はもう暗かった。2月の風は冷たく、彼は上着のジッパーを喉元まで上げた。"
+    },
+    {
+      "type": "paragraph",
+      "text": "反饋通信チャンネルに1549から信号が入る。彼女は軌道上でずっと傍聴していた。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1549",
+      "text": "うまく処理した。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1738",
+      "text": "先延ばしにしただけ。次はもっと人数を連れてくる。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1549",
+      "text": "だから次も、あなたが行く。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "疑問形ではない。断定だった。"
+    },
+    {
+      "type": "paragraph",
+      "text": "1738は答えなかった。"
+    },
+    {
+      "type": "internal_monologue",
+      "character": "1738",
+      "text": "彼女たちには武器があり、戦闘システムがあり、軌道衛星がある。\n彼らには偏見があり、恐れがあり、利害がある。\n\nその間に、私が立つ。\n\nこの位置が好きだからじゃない。誰も間に立たなければ、残るのは衝突だけだからだ。"
+    }
+  ]
+}

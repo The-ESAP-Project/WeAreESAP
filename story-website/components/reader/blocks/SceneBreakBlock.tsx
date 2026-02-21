@@ -22,7 +22,7 @@ export const SceneBreakBlock = memo(function SceneBreakBlock({
   const style = data.style ?? "dots";
 
   return (
-    <div className="my-8 flex items-center justify-center">
+    <div className="my-8 flex items-center justify-center select-none">
       {style === "dots" && (
         <span className="text-muted-foreground tracking-[1em]">
           &middot;&middot;&middot;

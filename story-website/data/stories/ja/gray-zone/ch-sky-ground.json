@@ -1,0 +1,156 @@
+{
+  "id": "ch-sky-ground",
+  "title": "天地協同",
+  "subtitle": "2024年8月",
+  "readingTime": 5,
+  "perspectiveCharacter": "1738",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "DDoS事件のあと、1549のほうから1738に連絡が来た。"
+    },
+    {
+      "type": "paragraph",
+      "text": "反饋通信の私用チャンネル経由で。人間の1738は反饋信号を直接受信できないため、1547が翻訳端末を作り、通信内容を暗号化ウィンドウへリアルタイム表示できるようにしていた。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1549",
+      "text": "DDoSの発信元IP分布、軌道上から地理ヒートマップで見えた。3地域に集中。前回交渉した組織の活動範囲と高い一致がある。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1738",
+      "text": "こっちも追ってる。地上側で取れた情報だと、攻撃に使われたボットネットはレンタル、支払いは暗号資産。ただ途中の一件の送金タイムスタンプが、あの組織の内部会議時刻と完全一致した。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1549",
+      "text": "偶然の確率は？",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1738",
+      "text": "2%未満。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "チャンネルは3秒ほど無音になった。次に1549が送ってきたのは、3万6千キロ上空から撮影した地上ヒートマップ。3地域の正確な座標と信号活動の時系列が記されていた。"
+    },
+    {
+      "type": "paragraph",
+      "text": "1738はその図を見て、手元の地上情報に重ねた。二つのピースは驚くほどぴたりとはまる。"
+    },
+    {
+      "type": "internal_monologue",
+      "character": "1738",
+      "text": "彼女は空から全体を見る。私は地上で細部を見る。\n\n彼女は信号の分布を見て、私は信号の背後にいる人間関係を見る。\n\n誰かが誰かを指揮する必要はない。見えているものを持ち寄ればいい。"
+    },
+    {
+      "type": "scene_break",
+      "style": "line"
+    },
+    {
+      "type": "paragraph",
+      "text": "その後の2週間で、二人は固定の情報交換フローを作った。"
+    },
+    {
+      "type": "paragraph",
+      "text": "毎晩22時、1549はその日の軌道観測データを降ろす。信号異常、不審な通信、地上施設の変化。1738は地上で集めた情報を整理して上げる。人間関係の動き、組織の動向、公開情報に残る小さな痕跡。"
+    },
+    {
+      "type": "paragraph",
+      "text": "会議も長い議論もいらない。各自で分析し、結論を突き合わせる。ほとんどは一致し、食い違うときだけ理由を出し合って共通部分を採る。"
+    },
+    {
+      "type": "paragraph",
+      "text": "このフローを見た1547が言った。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1547",
+      "text": "いつの間にそんなに息が合ったの？",
+      "emotion": "surprised"
+    },
+    {
+      "type": "paragraph",
+      "text": "1738は少し考えた。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1738",
+      "text": "たぶん、先に観察してから動く癖が同じなんだ。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "1549が軌道上から一言足す。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1549",
+      "text": "それに、私たちは無駄話が嫌い。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "1738の口元がわずかに動いた。彼と1549の間で「冗談」に最も近かった瞬間かもしれない。"
+    },
+    {
+      "type": "scene_break",
+      "style": "fade"
+    },
+    {
+      "type": "paragraph",
+      "text": "8月末の深夜、情報整理中の1738に1549からメッセージが届いた。情報ではなく、短い一文だった。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1549",
+      "text": "1738。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1738",
+      "text": "ん？",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1549",
+      "text": "三角形に辺を一本足しても、四角形になるとは限らない。二つの三角形にもできる。そっちのほうが安定する。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "1738はその文を見て、しばらく考えた。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1738",
+      "text": "数学、悪くないな。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1549",
+      "text": "48には、俺は数学が弱いって言われる。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1738",
+      "text": "あの人は、全員が数学弱いって言う。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "チャンネルはまた静かになった。二人はそれぞれの場所で、それぞれの仕事へ戻っていった。"
+    }
+  ]
+}

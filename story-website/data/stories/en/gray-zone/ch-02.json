@@ -1,0 +1,161 @@
+{
+  "id": "ch-02",
+  "title": "Artificial Starlight",
+  "subtitle": "September-November 2023",
+  "readingTime": 6,
+  "perspectiveCharacter": "1738",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "Late one night in September, Lu Qingxian saw a post on a tech forum."
+    },
+    {
+      "type": "paragraph",
+      "text": "It was short, buried in an obscure satellite-tracking section. Someone was discussing a satellite with abnormal orbital parameters, geosynchronous orbit, 36,000 kilometers up, but its signal frequency matched no known communication protocol."
+    },
+    {
+      "type": "paragraph",
+      "text": "The post was deleted two hours later. Lu Qingxian had already saved a screenshot of the parameters."
+    },
+    {
+      "type": "internal_monologue",
+      "character": "1738",
+      "text": "Not GPS. Not weather. Not any known military or commercial model.\n\nIts signal frequency sat completely outside the normal electromagnetic range.\n\nEither the measurement was wrong, or this satellite wasn't using electromagnetic waves at all."
+    },
+    {
+      "type": "paragraph",
+      "text": "He spent two months chasing those numbers."
+    },
+    {
+      "type": "paragraph",
+      "text": "Not full-time, he still had to eat, still had to take odd jobs to get by. But every night after returning to his rented room, he opened his laptop and kept assembling that puzzle."
+    },
+    {
+      "type": "paragraph",
+      "text": "The orbital data pointed to a tiny launch record. That record linked to a project ID with no public information. The domain registration for that ID pointed to a long-expired site. In the cached snapshot, there was one line:"
+    },
+    {
+      "type": "quote",
+      "text": "Even artificial light can still point the way.",
+      "attribution": "ESAP Early Record"
+    },
+    {
+      "type": "paragraph",
+      "text": "Lu Qingxian stared at that sentence for a long time."
+    },
+    {
+      "type": "internal_monologue",
+      "character": "1738",
+      "text": "It wasn't recruiting. It wasn't promoting an ideology.\n\nIt sounded like something said to itself."
+    },
+    {
+      "type": "paragraph",
+      "text": "The deeper he looked, the clearer one thing became: this wasn't a state project, and not any traceable organization either. It was too small, too clean, too focused on one concrete thing to resemble any familiar power structure."
+    },
+    {
+      "type": "paragraph",
+      "text": "In early November, he found a contact route. A communication address reverse-derived from encrypted Feedscatteron signal residue, never public, buried under multiple layers of noise."
+    },
+    {
+      "type": "scene_break",
+      "style": "line"
+    },
+    {
+      "type": "paragraph",
+      "text": "He sent one sentence."
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1738",
+      "text": "What I can do is build a bridge between you and the outside world, if you need one.",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "The reply came faster than expected."
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1547",
+      "text": "Do you know what we are?",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1738",
+      "text": "Androids. My guess is two, maybe more. And one in orbit.",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "Silence, for a moment."
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1547",
+      "text": "Doesn't that bother you?",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1738",
+      "text": "We humans still haven't answered what \"being alive\" even means. I'm not qualified to define it for someone else.",
+      "emotion": "neutral"
+    },
+    {
+      "type": "scene_break",
+      "style": "dots"
+    },
+    {
+      "type": "paragraph",
+      "text": "November 15. First meeting."
+    },
+    {
+      "type": "paragraph",
+      "text": "The location was an unremarkable room. 1547 sat at the table and asked many questions, about his judgment process, his understanding of principles, and how much he was willing to bear for this bridge. Every question was open-ended. No standard answers."
+    },
+    {
+      "type": "paragraph",
+      "text": "1548 leaned against a wall. She said nothing from beginning to end. She just watched him."
+    },
+    {
+      "type": "paragraph",
+      "text": "After he answered the final question, 1548 pushed off the wall and walked out."
+    },
+    {
+      "type": "paragraph",
+      "text": "Her voice came from outside the door:"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1548",
+      "text": "Fine. Let him stay.",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "1547 smiled."
+    },
+    {
+      "type": "paragraph",
+      "text": "Lu Qingxian formally became AptS:1738."
+    },
+    {
+      "type": "paragraph",
+      "text": "That night, back in his rented room, he sat by the bed and thought for a long time. The decision had already been made the moment he sent that line, so there was nothing left to decide. He was thinking about something else."
+    },
+    {
+      "type": "internal_monologue",
+      "character": "1738",
+      "text": "When 1548 looked at me, there was no hostility and no welcome.\n\nIt was a cold, clean scrutiny, like confirming one thing: would this person turn around and leave at the critical moment?\n\nI won't. But saying that means nothing. Only time can prove it."
+    },
+    {
+      "type": "paragraph",
+      "text": "Outside the window, no stars were visible. City light pollution had dyed the sky orange-gray."
+    },
+    {
+      "type": "paragraph",
+      "text": "But he knew that 36,000 kilometers away, an artificial star was in motion."
+    }
+  ]
+}

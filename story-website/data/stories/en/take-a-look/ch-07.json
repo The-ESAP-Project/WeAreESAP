@@ -1,0 +1,142 @@
+{
+  "id": "ch-07",
+  "title": "Visuals",
+  "subtitle": "October 2025",
+  "readingTime": 5,
+  "perspectiveCharacter": "1543",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "3 a.m. The only light in Shen Muchuan's room came from her tablet."
+    },
+    {
+      "type": "paragraph",
+      "text": "She was drawing a relationship chart."
+    },
+    {
+      "type": "paragraph",
+      "text": "The weare site needed a page that could present the relationships among all characters. 1547 gave her data: who related to whom, trust, protection, conflict, creation. Detailed textual descriptions."
+    },
+    {
+      "type": "paragraph",
+      "text": "Shen Muchuan looked at all those words and felt they were not enough."
+    },
+    {
+      "type": "paragraph",
+      "text": "Words could clearly state that \"1547 created 1548,\" but they could not convey the weight of that line. Words could clearly state \"1549 volunteered to launch,\" but they could not convey what 36,000 kilometers should feel like in an image."
+    },
+    {
+      "type": "scene_break",
+      "style": "dots"
+    },
+    {
+      "type": "paragraph",
+      "text": "First version. A standard node-link chart. Full functionality, clear information."
+    },
+    {
+      "type": "paragraph",
+      "text": "She looked at it for five minutes, then deleted it."
+    },
+    {
+      "type": "paragraph",
+      "text": "Second version. Added color: yellow, pink, blue. Better-looking, but still like data visualization, not relationships."
+    },
+    {
+      "type": "paragraph",
+      "text": "Deleted."
+    },
+    {
+      "type": "paragraph",
+      "text": "Third version. She tried using line thickness to represent relationship strength. Better, but still missing something."
+    },
+    {
+      "type": "paragraph",
+      "text": "Deleted."
+    },
+    {
+      "type": "paragraph",
+      "text": "She leaned back and stared at the blank canvas. The song in her headphones had looped so many times she had lost count."
+    },
+    {
+      "type": "internal_monologue",
+      "character": "1543",
+      "text": "The problem is not technical. The problem is I'm drawing data, not people."
+    },
+    {
+      "type": "paragraph",
+      "text": "She reopened the canvas."
+    },
+    {
+      "type": "scene_break",
+      "style": "line"
+    },
+    {
+      "type": "paragraph",
+      "text": "Fourth version."
+    },
+    {
+      "type": "paragraph",
+      "text": "This time, she did not start from nodes. She started from lines."
+    },
+    {
+      "type": "paragraph",
+      "text": "Trust became warm solid lines, gentle arcs from one end to the other, like one hand reaching for another. Protection became thicker curved lines, strong but not rigid. Conflict became cool dashed lines, intermittent, but still connected at both ends."
+    },
+    {
+      "type": "paragraph",
+      "text": "The lines between 1547 and 1548 were the most complex: creation, trust, conflict, protection. Four kinds of lines intertwined, and at their intersections the colors merged into a shade that was hard to name."
+    },
+    {
+      "type": "paragraph",
+      "text": "1549's position was at the top of the composition, separated from everyone below by a large area of blank space. But the lines crossed that blank space and remained connected. The distance was far, but the lines were not broken."
+    },
+    {
+      "type": "paragraph",
+      "text": "Without reading a word, you could feel what had happened between two characters."
+    },
+    {
+      "type": "paragraph",
+      "text": "4:30 a.m. She exported the design and sent it to the group."
+    },
+    {
+      "type": "paragraph",
+      "text": "After sending it, she did not sleep right away. She opened another folder, the private one, and drew a small image. A high vantage over Earth, several thin lines beneath Earth's arc, connecting a few tiny points."
+    },
+    {
+      "type": "paragraph",
+      "text": "She would not send this image to anyone."
+    },
+    {
+      "type": "scene_break",
+      "style": "fade"
+    },
+    {
+      "type": "paragraph",
+      "text": "The next day."
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1547",
+      "text": "This is far better than I imagined.",
+      "emotion": "gentle"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1543",
+      "text": "Mm.",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "1547 stared at the design draft in silence for a long time. Shen Muchuan knew what that silence meant: she was calculating whether her coding ability was enough to implement it."
+    },
+    {
+      "type": "paragraph",
+      "text": "Even now, that relationship graph has not been fully built. Every time Shen Muchuan sees the current implementation, she says nothing."
+    },
+    {
+      "type": "paragraph",
+      "text": "But she is already drawing version five."
+    }
+  ]
+}

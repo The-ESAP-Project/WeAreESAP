@@ -1,0 +1,117 @@
+{
+  "id": "ch-04",
+  "title": "Take a Look",
+  "subtitle": "May 2024",
+  "readingTime": 5,
+  "perspectiveCharacter": "1543",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "A design discussion in May."
+    },
+    {
+      "type": "paragraph",
+      "text": "The group was discussing interface plans for a new feature. 1547 provided the first version, 2275 implemented the front end, and 1738 proofread the copy. Everyone thought it looked fine and was ready to move forward."
+    },
+    {
+      "type": "paragraph",
+      "text": "Shen Muchuan studied it for a long time."
+    },
+    {
+      "type": "paragraph",
+      "text": "She did not know much about code, and code was not what she was looking at. She was looking at interaction flow: the user path from page A to page B, button placement, hierarchy of information."
+    },
+    {
+      "type": "paragraph",
+      "text": "Then she found a problem."
+    },
+    {
+      "type": "paragraph",
+      "text": "A detail in the interaction logic: after users completed one action, the page jumped to a place that looked reasonable but was actually confusing. The post-jump page looked too similar to the pre-action page. It had nothing to do with bugs, and nothing to do with visuals."
+    },
+    {
+      "type": "paragraph",
+      "text": "Shen Muchuan typed one line in the group."
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1543",
+      "text": "I noticed an issue.",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "Then she explained it, using very short sentences with two annotated screenshots."
+    },
+    {
+      "type": "paragraph",
+      "text": "The group went quiet for a moment."
+    },
+    {
+      "type": "paragraph",
+      "text": "1547 replied first: \"...You're right.\""
+    },
+    {
+      "type": "paragraph",
+      "text": "2275: \"I didn't notice that at all.\""
+    },
+    {
+      "type": "paragraph",
+      "text": "1738: \"True.\""
+    },
+    {
+      "type": "scene_break",
+      "style": "line"
+    },
+    {
+      "type": "paragraph",
+      "text": "That night, Shen Muchuan opened her tablet and began redesigning the interface."
+    },
+    {
+      "type": "paragraph",
+      "text": "No one asked her to do it. The discussion had only concluded that \"this issue needs to be fixed\" without assigning who would fix it. But she felt that if she had seen the problem, she should provide a solution."
+    },
+    {
+      "type": "paragraph",
+      "text": "She worked until 2 a.m. Three versions were discarded. The fourth one finally felt right."
+    },
+    {
+      "type": "paragraph",
+      "text": "And \"right\" had nothing to do with beauty. It meant that after users completed the full flow, there would not be a single moment of confusion. At every step, they knew where they were. At every step, they knew what came next."
+    },
+    {
+      "type": "paragraph",
+      "text": "The next morning, she posted the draft in the group."
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1543",
+      "text": "Take a look.",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "Three words."
+    },
+    {
+      "type": "paragraph",
+      "text": "After sending it, she closed the chat window."
+    },
+    {
+      "type": "paragraph",
+      "text": "She put on her headphones, hit play, and opened a new blank canvas."
+    },
+    {
+      "type": "paragraph",
+      "text": "After an unknown amount of time, notifications came in."
+    },
+    {
+      "type": "paragraph",
+      "text": "1547 said, \"Better than I expected.\" 2275 said, \"This interaction is so smooth.\" 1548 said nothing, but left a like on the design draft."
+    },
+    {
+      "type": "paragraph",
+      "text": "Shen Muchuan looked at the replies, closed the chat window again, put on her headphones, and kept drawing the next image."
+    }
+  ]
+}

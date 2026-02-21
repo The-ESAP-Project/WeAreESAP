@@ -1,0 +1,207 @@
+{
+  "id": "ch-07",
+  "title": "Buffer Overflow",
+  "subtitle": "October 2024",
+  "readingTime": 6,
+  "perspectiveCharacter": "2275",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "Midterm week crashed straight into an ESAP emergency project."
+    },
+    {
+      "type": "paragraph",
+      "text": "Classes, review, homework by day. Server maintenance, alert handling, deployment scripts by night. Laptop closed at 2:00 a.m., alarm at 6:00 a.m., then again."
+    },
+    {
+      "type": "paragraph",
+      "text": "2275 thought she could keep holding. She always thought she could, that was her default setting. When others broke down, she handed them tissues. When others panicked, she said, \"It's okay, I'm here.\" She was the always-online one, the one with extra capacity."
+    },
+    {
+      "type": "paragraph",
+      "text": "Until the capacity ran out."
+    },
+    {
+      "type": "scene_break",
+      "style": "dots"
+    },
+    {
+      "type": "paragraph",
+      "text": "Late one night in October."
+    },
+    {
+      "type": "paragraph",
+      "text": "2275 sat at her dorm desk, with data structures midterm notes and an unfinished monitoring script in front of her. Two windows open side by side. Her eyes moved between them, but nothing went in."
+    },
+    {
+      "type": "paragraph",
+      "text": "The words were jumping. The screen was fine, her eyes were the ones jumping. She was too tired."
+    },
+    {
+      "type": "paragraph",
+      "text": "She rubbed her eyes and tried to continue. But when her fingers touched the keyboard, nothing came out."
+    },
+    {
+      "type": "paragraph",
+      "text": "She knew exactly what to type. Her fingers just wouldn't move, as if a signal had been cut somewhere between brain and hand."
+    },
+    {
+      "type": "paragraph",
+      "text": "Then tears fell."
+    },
+    {
+      "type": "paragraph",
+      "text": "No single reason. No single trigger. Not the exam, not the server, not one specific thing. Everything together had finally exceeded what she could carry."
+    },
+    {
+      "type": "atmosphere",
+      "visual": {
+        "mood": "dark",
+        "animation": "fade-in"
+      },
+      "children": [
+        {
+          "type": "paragraph",
+          "text": "She bent over the desk and cried, quietly. Her roommates were asleep, so she buried her face in her arms, shoulders shaking, no sound."
+        },
+        {
+          "type": "paragraph",
+          "text": "Even healers break. Suns go out too. Servers that run too long without rebooting also crash."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "She picked up her phone and messaged 1738."
+    },
+    {
+      "type": "dialogue",
+      "speaker": "2275",
+      "text": "My buffer is full. I need a reboot too.",
+      "emotion": "weak"
+    },
+    {
+      "type": "scene_break",
+      "style": "line"
+    },
+    {
+      "type": "paragraph",
+      "text": "1738 replied within thirty seconds."
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1738",
+      "text": "Where are you?",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "2275",
+      "text": "Dorm.",
+      "emotion": "weak"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1738",
+      "text": "Want to go for a walk, or talk online?",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "2275",
+      "text": "Online. If I go out I'll wake my roommates.",
+      "emotion": "weak"
+    },
+    {
+      "type": "paragraph",
+      "text": "So they talked."
+    },
+    {
+      "type": "paragraph",
+      "text": "The kind of late-night conversation where two people lean back in two separate chairs and speak in fragments. No structure, no objective."
+    },
+    {
+      "type": "paragraph",
+      "text": "2275 said a lot: exam pressure, server alerts, how she thought she should be able to hold but couldn't, how she was afraid of disappointing people, how she could comfort everyone but no one came to comfort her-"
+    },
+    {
+      "type": "paragraph",
+      "text": "She stopped at that last line, because she realized it wasn't true."
+    },
+    {
+      "type": "paragraph",
+      "text": "1738 was here. At two in the morning, he was here."
+    },
+    {
+      "type": "paragraph",
+      "text": "1738 didn't say, \"You've worked so hard.\" He didn't say, \"Everything will be fine.\" He said:"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1738",
+      "text": "You don't have to be the one who heals everyone all the time.",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "A pause."
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1738",
+      "text": "About the exam: passing is enough, no need for top scores. About the server: I'll take part of it tomorrow. Tonight you don't need to do anything.",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "Tears fell from 2275 again, but this time it felt different."
+    },
+    {
+      "type": "dialogue",
+      "speaker": "2275",
+      "text": "...Thank you.",
+      "emotion": "quiet"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1738",
+      "text": "No need. You've done the same for others.",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "They talked until dawn. In the second half they weren't even talking about pressure anymore, just random things: weird server bugs, whatever sharp one-liner 1548 had dropped that day, the color of Earth in photos 1549 sent down from orbit."
+    },
+    {
+      "type": "paragraph",
+      "text": "By sunrise, 2275's eyes were swollen, but the knot in her chest had loosened."
+    },
+    {
+      "type": "scene_break",
+      "style": "fade"
+    },
+    {
+      "type": "paragraph",
+      "text": "The next day she posted one line in group chat."
+    },
+    {
+      "type": "dialogue",
+      "speaker": "2275",
+      "text": "Today I need a little healing too.",
+      "emotion": "gentle"
+    },
+    {
+      "type": "paragraph",
+      "text": "1547 replied, \"Good work.\" 1549 sent a photo of Earth with the caption, \"A blue marble for you.\" 1548 sent three dots."
+    },
+    {
+      "type": "paragraph",
+      "text": "2275 looked at those three dots and smiled."
+    },
+    {
+      "type": "internal_monologue",
+      "character": "2275",
+      "text": "Healers need healing too.\n\nThat's not weakness. That's system maintenance.\n\nRegular reboot. Clear cache. Free memory. Then back online.\n\nI'm still here."
+    }
+  ]
+}

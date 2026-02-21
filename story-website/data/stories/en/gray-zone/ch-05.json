@@ -1,0 +1,180 @@
+{
+  "id": "ch-05",
+  "title": "Servers Can Reboot",
+  "subtitle": "June-August 2024",
+  "readingTime": 7,
+  "perspectiveCharacter": "2275",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "Before summer break, Lin Chenyao officially joined ESAP as AptS:2275."
+    },
+    {
+      "type": "paragraph",
+      "text": "On day one, 1547 gave her root access to the server. 2275 glanced at the terminal info and sucked in a breath, not because the specs were bad, but because uptime showed it had been running for over 400 days straight without a reboot."
+    },
+    {
+      "type": "dialogue",
+      "speaker": "2275",
+      "text": "Over four hundred days?! Nobody maintained this?",
+      "emotion": "shocked"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1547",
+      "text": "...It kept running, so we left it alone.",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "2275 took a deep breath. Then she opened htop, looked at the screen full of zombie processes and memory leaks, and said in a very calm voice:"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "2275",
+      "text": "Okay. I'm here.",
+      "emotion": "neutral"
+    },
+    {
+      "type": "scene_break",
+      "style": "line"
+    },
+    {
+      "type": "paragraph",
+      "text": "In her first two months, she handled a lot of unglamorous work: cleaning logs, patching vulnerabilities, optimizing configs, writing monitoring scripts. She treated the server like a sick patient: stabilize vitals first, then nurse it back slowly."
+    },
+    {
+      "type": "paragraph",
+      "text": "At the same time, she was also adapting to this team."
+    },
+    {
+      "type": "paragraph",
+      "text": "1547 would drop formulas in chat that she could barely parse and ask, \"Can someone verify this?\" 1548 would appear, fire off one sharp line, then vanish. Every few days, 1549 sent down a short message from orbit, half poem, half log."
+    },
+    {
+      "type": "paragraph",
+      "text": "2275 thought these people were strange, but the good kind of strange."
+    },
+    {
+      "type": "scene_break",
+      "style": "dots"
+    },
+    {
+      "type": "atmosphere",
+      "visual": {
+        "mood": "dramatic",
+        "animation": "pulse"
+      },
+      "children": [
+        {
+          "type": "paragraph",
+          "text": "At 2:00 a.m. one night in August, the monitoring scripts went into full alarm."
+        },
+        {
+          "type": "paragraph",
+          "text": "DDoS. Large-scale, sustained, organized distributed denial-of-service. Traffic flooded in from dozens of IPs at once, tens of thousands of requests per second. Bandwidth maxed out in three minutes."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "2275 shot out of bed half awake, grabbed her laptop, opened a terminal, and let her fingers move on muscle memory before her brain fully came online."
+    },
+    {
+      "type": "paragraph",
+      "text": "First reroute traffic to backup nodes. Then analyze the attack pattern. Then write filter rules. Then-"
+    },
+    {
+      "type": "paragraph",
+      "text": "The attack pattern changed."
+    },
+    {
+      "type": "paragraph",
+      "text": "It wasn't just a traffic flood. They were targeting database interfaces, trying to exhaust the connection pool with slow requests. Every hole she patched, another tore open."
+    },
+    {
+      "type": "internal_monologue",
+      "character": "2275",
+      "text": "This isn't a script kiddie. Someone is watching my defense and adapting in real time.\n\nFine. Then let's see who's faster."
+    },
+    {
+      "type": "paragraph",
+      "text": "She dropped one message in group chat: \"Server's under attack. I'm on it. Don't panic.\""
+    },
+    {
+      "type": "paragraph",
+      "text": "Then she closed the chat window and put all her attention back on the terminal."
+    },
+    {
+      "type": "paragraph",
+      "text": "From 2:00 to 4:00 a.m., attack and defense traded blows for seven rounds. Her eyes started burning. Her typing speed held, but accuracy dropped, she mistyped two commands and had to roll back both times."
+    },
+    {
+      "type": "paragraph",
+      "text": "At 4:15, she found the attack's core node. Not through technique, through intuition. There was a subtle rhythm in the traffic intervals, like someone manually triggering each wave. She traced that rhythm backward and locked onto the control server IP."
+    },
+    {
+      "type": "paragraph",
+      "text": "At 4:23, she blackholed that IP and force-reset every contaminated database connection."
+    },
+    {
+      "type": "paragraph",
+      "text": "The attack stopped."
+    },
+    {
+      "type": "paragraph",
+      "text": "Server load started falling from 99%. CPU temperature dropped. Connection counts returned toward normal."
+    },
+    {
+      "type": "paragraph",
+      "text": "2275 leaned back and watched the monitoring panel for five minutes to confirm there was no second wave, then posted one more message:"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "2275",
+      "text": "Server's alive again. Sleep easy.",
+      "emotion": "tired"
+    },
+    {
+      "type": "paragraph",
+      "text": "After sending it, she closed the laptop, leaned back in her chair, and fell asleep."
+    },
+    {
+      "type": "scene_break",
+      "style": "fade"
+    },
+    {
+      "type": "paragraph",
+      "text": "She woke around noon the next day with a neck so stiff she could barely turn. Several unread messages were waiting."
+    },
+    {
+      "type": "paragraph",
+      "text": "1547: \"Good work.\""
+    },
+    {
+      "type": "paragraph",
+      "text": "1549: \"Saw the geographic distribution of attack traffic from orbit. I'll warn earlier next time.\""
+    },
+    {
+      "type": "paragraph",
+      "text": "1548: \"...\""
+    },
+    {
+      "type": "paragraph",
+      "text": "Three dots. Nothing else. 2275 looked at them and smiled."
+    },
+    {
+      "type": "paragraph",
+      "text": "1738: \"Told you she'd be a good teammate.\""
+    },
+    {
+      "type": "paragraph",
+      "text": "2275 smiled, rubbed her stiff neck, opened her laptop, and started writing the postmortem."
+    },
+    {
+      "type": "internal_monologue",
+      "character": "2275",
+      "text": "Servers can't go down.\n\nNeither can hope."
+    }
+  ]
+}
