@@ -13,6 +13,8 @@
 
 import { generateFeed } from "@/lib/feed-generator";
 
+export const revalidate = 3600; // 1 hour ISR cache
+
 export async function GET() {
   const xml = await generateFeed("zh-CN");
   return new Response(xml, {

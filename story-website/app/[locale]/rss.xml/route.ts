@@ -14,6 +14,8 @@
 import type { FeedLocale } from "@/lib/feed-generator";
 import { generateFeed } from "@/lib/feed-generator";
 
+export const revalidate = 3600; // 1 hour ISR cache
+
 const SUPPORTED_LOCALES = new Set<string>(["en", "ja"]);
 
 export async function GET(
