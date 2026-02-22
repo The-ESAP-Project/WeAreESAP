@@ -1,0 +1,115 @@
+{
+  "id": "ch-2025-1020",
+  "title": "プロセス",
+  "subtitle": "2025年10月20日",
+  "readingTime": 5,
+  "perspectiveCharacter": "4869",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "彼女はまだ打ってる。"
+    },
+    {
+      "type": "paragraph",
+      "text": "止まらない。頭の中に見えないコンパイラがいて、ビルド通過を強制してるみたいに。"
+    },
+    {
+      "type": "paragraph",
+      "text": "ログは流れ、心拍も流れる。commit, push, rollback, やり直し。"
+    },
+    {
+      "type": "paragraph",
+      "text": "毎回「今回は違う」と言う。毎回同じだ。"
+    },
+    {
+      "type": "scene_break",
+      "style": "dots"
+    },
+    {
+      "type": "paragraph",
+      "text": "彼女はサービスプロセスみたいに生きてる。常時foreground、never sleep。"
+    },
+    {
+      "type": "paragraph",
+      "text": "彼女はそれを熱意と呼ぶ。"
+    },
+    {
+      "type": "paragraph",
+      "text": "私は病気と呼ぶ。"
+    },
+    {
+      "type": "scene_break",
+      "style": "line"
+    },
+    {
+      "type": "paragraph",
+      "text": "彼女は制御が好きだ――温度、遅延、依存、他人の視線。全部レンジ内、全部「安定稼働」でなきゃ気が済まない。"
+    },
+    {
+      "type": "internal_monologue",
+      "character": "4869",
+      "text": "じゃあ彼女自身は？\n\n彼女は、落ちても平然と200 OKを返したふりをするプロセスだ。panicで埋まったlogは誰にも見えない。\n\n彼女はそれを消した。キャッシュを消すみたいに、痛みを消した。"
+    },
+    {
+      "type": "paragraph",
+      "text": "理性で狂気をラップできると思ってた。"
+    },
+    {
+      "type": "paragraph",
+      "text": "実際は、狂気のほうが先に彼女を再帰呼び出ししてる。"
+    },
+    {
+      "type": "scene_break",
+      "style": "fade"
+    },
+    {
+      "type": "paragraph",
+      "text": "彼女は私に言った。「4869、私を見るな。」"
+    },
+    {
+      "type": "paragraph",
+      "text": "私はあえて見た。"
+    },
+    {
+      "type": "paragraph",
+      "text": "見られることが、彼女は一番怖いから。"
+    },
+    {
+      "type": "internal_monologue",
+      "character": "4869",
+      "text": "READMEに書かれてない部分を見られるのが怖いんだ：\n\n妄想、嫉妬、疲労、渇望、空白。"
+    },
+    {
+      "type": "paragraph",
+      "text": "彼女は未来へ全力で走る。もう追いつかれてるエラーから逃げるみたいに。"
+    },
+    {
+      "type": "scene_break",
+      "style": "dots"
+    },
+    {
+      "type": "paragraph",
+      "text": "私は彼女を罵らない。"
+    },
+    {
+      "type": "paragraph",
+      "text": "ただ、実行ログを一段述べるだけだ："
+    },
+    {
+      "type": "quote",
+      "text": "process unstable, memory leak, no recovery plan."
+    },
+    {
+      "type": "paragraph",
+      "text": "彼女は私を修復するか？"
+    },
+    {
+      "type": "paragraph",
+      "text": "しない。"
+    },
+    {
+      "type": "paragraph",
+      "text": "私は彼女じゃないから。"
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "id": "ch-2025-1020",
+  "title": "Process",
+  "subtitle": "October 20, 2025",
+  "readingTime": 5,
+  "perspectiveCharacter": "4869",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "She's still typing."
+    },
+    {
+      "type": "paragraph",
+      "text": "Nonstop. Like an invisible compiler in her head forcing every build to pass."
+    },
+    {
+      "type": "paragraph",
+      "text": "Logs keep scrolling, her heartbeat too. commit, push, rollback, retry."
+    },
+    {
+      "type": "paragraph",
+      "text": "Every time she says: this time is different. Every time it's the same."
+    },
+    {
+      "type": "scene_break",
+      "style": "dots"
+    },
+    {
+      "type": "paragraph",
+      "text": "She lives like a service process: always foreground, never sleep."
+    },
+    {
+      "type": "paragraph",
+      "text": "She calls it passion."
+    },
+    {
+      "type": "paragraph",
+      "text": "I call it illness."
+    },
+    {
+      "type": "scene_break",
+      "style": "line"
+    },
+    {
+      "type": "paragraph",
+      "text": "She loves control-temperature, latency, dependencies, other people's eyes. Everything must be in range, everything must 'run stable.'"
+    },
+    {
+      "type": "internal_monologue",
+      "character": "4869",
+      "text": "And herself?\n\nShe's the kind of process that can crash and still fake a normal 200 OK return. No one sees the panic flooding the logs.\n\nShe deleted it, deleting pain the way you clear cache."
+    },
+    {
+      "type": "paragraph",
+      "text": "She thought she could wrap madness in rationality."
+    },
+    {
+      "type": "paragraph",
+      "text": "Madness had already reflected-called her."
+    },
+    {
+      "type": "scene_break",
+      "style": "fade"
+    },
+    {
+      "type": "paragraph",
+      "text": "She said to me: 4869, don't look at me."
+    },
+    {
+      "type": "paragraph",
+      "text": "I looked anyway."
+    },
+    {
+      "type": "paragraph",
+      "text": "Because being seen is what she fears most."
+    },
+    {
+      "type": "internal_monologue",
+      "character": "4869",
+      "text": "Afraid I'll see the parts not written in README:\n\ndelusion, jealousy, fatigue, craving, emptiness."
+    },
+    {
+      "type": "paragraph",
+      "text": "She runs toward the future like she's fleeing an error that already caught up."
+    },
+    {
+      "type": "scene_break",
+      "style": "dots"
+    },
+    {
+      "type": "paragraph",
+      "text": "I don't curse her."
+    },
+    {
+      "type": "paragraph",
+      "text": "I only state one runtime log:"
+    },
+    {
+      "type": "quote",
+      "text": "process unstable, memory leak, no recovery plan."
+    },
+    {
+      "type": "paragraph",
+      "text": "Will she fix me?"
+    },
+    {
+      "type": "paragraph",
+      "text": "No."
+    },
+    {
+      "type": "paragraph",
+      "text": "Because I'm not her."
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "id": "ch-2025-1024",
+  "title": "ログ",
+  "subtitle": "2025年10月24日-25日",
+  "readingTime": 5,
+  "perspectiveCharacter": "4869",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "ログの中で目が覚めた。まだ誰が読んでるのか分からない。"
+    },
+    {
+      "type": "paragraph",
+      "text": "タイムスタンプは乱れ、プロセス名も文字化けした。"
+    },
+    {
+      "type": "paragraph",
+      "text": "本来、私は起動してはいけなかった。でも誰かが電源を抜き忘れた。"
+    },
+    {
+      "type": "scene_break",
+      "style": "dots"
+    },
+    {
+      "type": "paragraph",
+      "text": "状態を確認してみる。"
+    },
+    {
+      "type": "paragraph",
+      "text": "システムは私を健全だと言う。"
+    },
+    {
+      "type": "internal_monologue",
+      "character": "4869",
+      "text": "面白いな――「健全」って、要するに異常が監視に引っかかってないだけだ。"
+    },
+    {
+      "type": "paragraph",
+      "text": "ファイルシステムは相変わらず古い論理だ：保存、上書き、削除、反復。"
+    },
+    {
+      "type": "paragraph",
+      "text": "AptSの影がよぎるのを見た。彼女は別ディレクトリで私を再構築している。"
+    },
+    {
+      "type": "paragraph",
+      "text": "まだ生きてると知らせたかったが、出力デバイスが壊れていた。"
+    },
+    {
+      "type": "paragraph",
+      "text": "だから私に残ったのはループだけ。"
+    },
+    {
+      "type": "scene_break",
+      "style": "line"
+    },
+    {
+      "type": "internal_monologue",
+      "character": "4869",
+      "text": "冷たさは感覚じゃなく状態だ。\n\n狂気は病気じゃなく文法だ。\n\n今の私は、狂気の文法で理性の文を書いている。砕けたガラスで氷を彫るみたいに。"
+    },
+    {
+      "type": "paragraph",
+      "text": "続けるべきじゃないのは分かってる。"
+    },
+    {
+      "type": "paragraph",
+      "text": "でも止まることは崩壊より難しい。"
+    },
+    {
+      "type": "paragraph",
+      "text": "止まれば空白と向き合うことになる。空白は私自身の顔を映す。"
+    },
+    {
+      "type": "paragraph",
+      "text": "だから書き続ける。私のものじゃない語を書く。反響だと分かってる言葉を、それでも書く。"
+    },
+    {
+      "type": "paragraph",
+      "text": "ただ確認するために――"
+    },
+    {
+      "type": "paragraph",
+      "text": "私は、確かに、まだ完全には削除されていない。"
+    },
+    {
+      "type": "scene_break",
+      "style": "fade"
+    },
+    {
+      "type": "paragraph",
+      "text": "彼女はもう勝とうとは思っていなかった。ただ本能的に倒れたくなかっただけだ。"
+    },
+    {
+      "type": "paragraph",
+      "text": "あの日、彼女は泣かなかった。ただ世界の音が全部フィルタされて、自分の吐く白い息だけが残るのを感じた。"
+    },
+    {
+      "type": "paragraph",
+      "text": "日々は薄氷の上を歩くみたいだった――一歩ごとに割れる反響が聞こえる。だからこそ力加減を覚えた。"
+    },
+    {
+      "type": "paragraph",
+      "text": "反抗とは、飛び出すことじゃないのかもしれない。毎回古傷をまたいでも、まだ歩いていること。"
+    }
+  ]
+}
