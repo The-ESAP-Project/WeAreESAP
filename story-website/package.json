@@ -1,6 +1,6 @@
 {
   "name": "esap-stories",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "private": true,
   "description": "ESAP Stories - 逃离计划故事站：一个支持交互式叙事的科幻故事阅读平台",
   "license": "Apache-2.0",

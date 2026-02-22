@@ -31,6 +31,8 @@ export interface StoryMeta {
   updatedAt: string;
   tags: string[];
   chapterOrder: string[];
+  /** Per-chapter publish timestamps — chapterId → ISO date string */
+  chapterPublishedAt?: Record<string, string>;
   perspectives?: PerspectiveDefinition[];
   unlocks?: UnlockDefinition[];
   explorationScenes?: string[];

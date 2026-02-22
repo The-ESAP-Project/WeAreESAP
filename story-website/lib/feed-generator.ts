@@ -11,7 +11,8 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-import { loadStory, loadStoryRegistry } from "./story-loader";
+import type { StoryContentBlock } from "@/types/chapter";
+import { loadChapter, loadStory, loadStoryRegistry } from "./story-loader";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://story.esaps.net";
 
@@ -53,6 +54,53 @@ function escapeXml(str: string): string {
     .replace(/'/g, "&apos;");
 }
 
+/** Extract plain text from content blocks for use as RSS description. */
+function extractSummary(blocks: StoryContentBlock[], maxLength = 150): string {
+  const parts: string[] = [];
+  let total = 0;
+
+  for (const block of blocks) {
+    if (total >= maxLength) break;
+
+    let text: string | undefined;
+
+    if (block.type === "paragraph" || block.type === "internal_monologue") {
+      text = block.text;
+    } else if (block.type === "dialogue") {
+      text = block.text;
+    } else if (block.type === "quote") {
+      text = block.text;
+    } else if (block.type === "atmosphere") {
+      // Recurse into atmosphere children
+      const inner = extractSummary(block.children, maxLength - total);
+      if (inner) parts.push(inner);
+      total += inner.length;
+      continue;
+    }
+
+    if (text) {
+      const remaining = maxLength - total;
+      if (text.length > remaining) {
+        parts.push(`${text.slice(0, remaining)}…`);
+        total = maxLength;
+      } else {
+        parts.push(text);
+        total += text.length;
+      }
+    }
+  }
+
+  return parts.join(" ").trim();
+}
+
+interface FeedItem {
+  title: string;
+  link: string;
+  description: string;
+  pubDate: Date;
+  guid: string;
+}
+
 export async function generateFeed(locale: FeedLocale): Promise<string> {
   const registry = await loadStoryRegistry();
 
@@ -63,26 +111,53 @@ export async function generateFeed(locale: FeedLocale): Promise<string> {
       story !== null && story.status !== "draft"
   );
 
-  stories.sort(
-    (a, b) => new Date(b.updatedAt).getTime() - new Date(a.updatedAt).getTime()
+  const prefix = LOCALE_PREFIX[locale];
+
+  // Build one feed item per chapter
+  const itemGroups = await Promise.all(
+    stories.map(async (story) => {
+      const storyBaseUrl = `${SITE_URL}${prefix}/stories/${story.slug}`;
+      const chapters = await Promise.all(
+        story.chapterOrder.map((chId) => loadChapter(story.slug, chId, locale))
+      );
+
+      return chapters
+        .filter((ch): ch is NonNullable<typeof ch> => ch !== null)
+        .map((ch): FeedItem => {
+          const chapterUrl = `${storyBaseUrl}/${ch.id}`;
+          const pubDateStr =
+            ch.publishedAt ??
+            story.chapterPublishedAt?.[ch.id] ??
+            story.publishedAt;
+
+          return {
+            title: `${story.title} - ${ch.title}`,
+            link: chapterUrl,
+            description: extractSummary(ch.content),
+            pubDate: new Date(pubDateStr),
+            guid: chapterUrl,
+          };
+        });
+    })
   );
 
+  const items = itemGroups
+    .flat()
+    .sort((a, b) => b.pubDate.getTime() - a.pubDate.getTime());
+
   const meta = CHANNEL_META[locale];
-  const prefix = LOCALE_PREFIX[locale];
   const feedUrl = `${SITE_URL}${prefix}/rss.xml`;
   const siteUrl = `${SITE_URL}${prefix}`;
   const now = new Date().toUTCString();
 
-  const items = stories.map((story) => {
-    const storyUrl = `${SITE_URL}${prefix}/stories/${story.slug}`;
+  const itemXml = items.map((item) => {
     const lines = [
       "  <item>",
-      `    <title>${escapeXml(story.title)}</title>`,
-      `    <link>${storyUrl}</link>`,
-      `    <description>${escapeXml(story.synopsis ?? story.description)}</description>`,
-      `    <pubDate>${new Date(story.updatedAt).toUTCString()}</pubDate>`,
-      `    <guid isPermaLink="true">${storyUrl}</guid>`,
-      ...story.tags.map((tag) => `    <category>${escapeXml(tag)}</category>`),
+      `    <title>${escapeXml(item.title)}</title>`,
+      `    <link>${item.link}</link>`,
+      `    <description>${escapeXml(item.description)}</description>`,
+      `    <pubDate>${item.pubDate.toUTCString()}</pubDate>`,
+      `    <guid isPermaLink="true">${item.guid}</guid>`,
       "  </item>",
     ];
     return lines.join("\n");
@@ -98,7 +173,7 @@ export async function generateFeed(locale: FeedLocale): Promise<string> {
     `    <language>${meta.language}</language>`,
     `    <lastBuildDate>${now}</lastBuildDate>`,
     `    <atom:link href="${feedUrl}" rel="self" type="application/rss+xml"/>`,
-    ...items,
+    ...itemXml,
     "  </channel>",
     "</rss>",
   ].join("\n");

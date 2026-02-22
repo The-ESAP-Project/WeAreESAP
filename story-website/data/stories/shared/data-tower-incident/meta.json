@@ -8,6 +8,11 @@
   "updatedAt": "2026-02-22T05:08:34+08:00",
   "tags": ["data-tower", "1548", "core-event", "trust"],
   "chapterOrder": ["ch-01", "ch-02", "ch-03"],
+  "chapterPublishedAt": {
+    "ch-01": "2026-02-20T20:42:11+08:00",
+    "ch-02": "2026-02-20T20:42:11+08:00",
+    "ch-03": "2026-02-20T20:42:11+08:00"
+  },
   "perspectives": [
     {
       "baseChapterId": "ch-02",

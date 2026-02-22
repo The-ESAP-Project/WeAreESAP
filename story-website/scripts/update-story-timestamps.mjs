@@ -29,17 +29,38 @@ let updated = 0;
 for (const entry of registry) {
   const metaPath = join(root, "data", "stories", "shared", entry.slug, "meta.json");
   try {
-    // 取该 story 下所有文件（zh-CN locale + shared meta）的最新 git 提交时间
-    const timestamp = execSync(
+    const meta = JSON.parse(readFileSync(metaPath, "utf-8"));
+
+    // 更新故事级别的 updatedAt
+    const storyTimestamp = execSync(
       `git log -1 --format="%aI" -- data/stories/zh-CN/${entry.slug}/ data/stories/shared/${entry.slug}/`,
       { encoding: "utf-8", cwd: root }
     ).trim();
 
-    if (timestamp) {
-      const meta = JSON.parse(readFileSync(metaPath, "utf-8"));
-      meta.updatedAt = timestamp;
-      writeFileSync(metaPath, JSON.stringify(meta, null, 2) + "\n");
+    if (storyTimestamp) {
+      meta.updatedAt = storyTimestamp;
       updated++;
+    }
+
+    // 为 chapterOrder 里尚未有 publishedAt 的章节自动填入 git 时间
+    if (!meta.chapterPublishedAt) meta.chapterPublishedAt = {};
+    let chapterFilled = 0;
+    for (const chId of meta.chapterOrder ?? []) {
+      if (meta.chapterPublishedAt[chId]) continue; // 已有，不覆盖
+
+      const chTimestamp = execSync(
+        `git log --diff-filter=A --format="%aI" -- data/stories/zh-CN/${entry.slug}/${chId}.json`,
+        { encoding: "utf-8", cwd: root }
+      ).trim();
+
+      if (chTimestamp) {
+        meta.chapterPublishedAt[chId] = chTimestamp;
+        chapterFilled++;
+      }
+    }
+
+    if (storyTimestamp || chapterFilled > 0) {
+      writeFileSync(metaPath, JSON.stringify(meta, null, 2) + "\n");
     }
   } catch {
     // git 不可用时跳过，保留原值
