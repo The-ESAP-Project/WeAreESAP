@@ -14,7 +14,8 @@
   "navigation": {
     "home": "ホーム",
     "stories": "ストーリー",
-    "characters": "登場人物"
+    "characters": "登場人物",
+    "feed": "フィード"
   },
   "footer": {
     "projectName": "ESAP Stories",

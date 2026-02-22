@@ -42,6 +42,7 @@ const mobileLocaleNames: Record<string, string> = {
 const navLinks = [
   { href: "/stories", key: "stories" },
   { href: "/characters", key: "characters" },
+  { href: "/feed", key: "feed" },
 ] as const;
 
 export const Navigation = memo(function Navigation() {

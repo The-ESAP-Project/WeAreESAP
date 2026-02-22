@@ -1,0 +1,14 @@
+{
+  "metadata": {
+    "title": "RSS Feed",
+    "description": "Subscribe to the ESAP Story Platform for the latest story updates"
+  },
+  "title": "RSS Feed",
+  "description": "Subscribe to our RSS feed to get the latest story updates in your favorite reader.",
+  "feedUrl": "Feed URL",
+  "copyUrl": "Copy URL",
+  "copied": "Copied",
+  "otherLanguages": "Other Languages",
+  "recentUpdates": "Recent Updates",
+  "noStories": "No stories yet"
+}

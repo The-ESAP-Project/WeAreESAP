@@ -36,6 +36,7 @@ export default getRequestConfig(async ({ requestLocale }) => {
       search: (await import(`@/messages/${locale}/search.json`)).default,
       characters: (await import(`@/messages/${locale}/characters.json`))
         .default,
+      rss: (await import(`@/messages/${locale}/rss.json`)).default,
     },
   };
 });

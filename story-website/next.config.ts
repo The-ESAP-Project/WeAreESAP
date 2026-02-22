@@ -26,14 +26,8 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       { source: "/rss", destination: "/rss.xml", permanent: true },
-      { source: "/feed", destination: "/rss.xml", permanent: true },
       {
         source: "/:locale(en|ja)/rss",
-        destination: "/:locale/rss.xml",
-        permanent: true,
-      },
-      {
-        source: "/:locale(en|ja)/feed",
         destination: "/:locale/rss.xml",
         permanent: true,
       },

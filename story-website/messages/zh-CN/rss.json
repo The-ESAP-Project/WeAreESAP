@@ -1,0 +1,14 @@
+{
+  "metadata": {
+    "title": "RSS 订阅",
+    "description": "订阅 ESAP 故事平台，获取最新故事更新通知"
+  },
+  "title": "RSS 订阅",
+  "description": "订阅我们的 RSS feed，在你喜欢的阅读器中获取最新故事更新。",
+  "feedUrl": "订阅地址",
+  "copyUrl": "复制链接",
+  "copied": "已复制",
+  "otherLanguages": "其他语言",
+  "recentUpdates": "最近更新",
+  "noStories": "暂无故事"
+}

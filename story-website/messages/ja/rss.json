@@ -1,0 +1,14 @@
+{
+  "metadata": {
+    "title": "RSSフィード",
+    "description": "ESAPストーリープラットフォームを購読して最新のストーリー更新を受け取る"
+  },
+  "title": "RSSフィード",
+  "description": "RSSフィードを購読して、お気に入りのリーダーで最新のストーリー更新を受け取りましょう。",
+  "feedUrl": "フィードURL",
+  "copyUrl": "URLをコピー",
+  "copied": "コピーしました",
+  "otherLanguages": "他の言語",
+  "recentUpdates": "最近の更新",
+  "noStories": "ストーリーがありません"
+}

@@ -15,9 +15,11 @@ import type { ComponentType } from "react";
 import {
   LuArrowLeft,
   LuBookOpen,
+  LuCheck,
   LuChevronDown,
   LuChevronRight,
   LuChevronUp,
+  LuCopy,
   LuEye,
   LuGlobe,
   LuLock,
@@ -50,6 +52,8 @@ export type IconName =
   | "Sun"
   | "Moon"
   | "Rss"
+  | "Copy"
+  | "Check"
   | "ChevronDown"
   | "ChevronRight"
   | "ChevronUp";
@@ -71,6 +75,8 @@ const iconMap: Record<IconName, ComponentType<{ className?: string }>> = {
   Sun: LuSun,
   Moon: LuMoon,
   Rss: LuRss,
+  Copy: LuCopy,
+  Check: LuCheck,
   ChevronDown: LuChevronDown,
   ChevronRight: LuChevronRight,
   ChevronUp: LuChevronUp,

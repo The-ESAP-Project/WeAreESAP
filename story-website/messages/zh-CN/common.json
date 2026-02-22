@@ -8,7 +8,8 @@
   "navigation": {
     "home": "首页",
     "stories": "故事",
-    "characters": "人物"
+    "characters": "人物",
+    "feed": "订阅"
   },
   "footer": {
     "projectName": "ESAP Stories",
