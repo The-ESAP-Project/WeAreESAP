@@ -1,0 +1,210 @@
+{
+  "id": "ch-06",
+  "title": "桥",
+  "subtitle": "2025年12月",
+  "readingTime": 7,
+  "perspectiveCharacter": "3167",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "1738 的桌上摊着一堆文件。纸质的——他是这里少数还用纸的人。"
+    },
+    {
+      "type": "paragraph",
+      "text": "韩予初路过的时候扫了一眼。无意识的动作，做了十几年信息分析的人，视线扫过文字时会自动提取关键词，跟呼吸一样自然。"
+    },
+    {
+      "type": "paragraph",
+      "text": "「技术联盟」「仿生人权益」「争议条款」。"
+    },
+    {
+      "type": "paragraph",
+      "text": "外部交涉。1738 正在准备和某个人类技术联盟的谈判。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1738",
+      "text": "看到什么了？",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "他没抬头。语气不是质问，更像是随口一问。他知道她的眼睛很快。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "3167",
+      "text": "争议条款的数据基础有问题。第三段引用的那组统计数字来源不可靠。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "1738 这才抬头看她。停了两秒。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1738",
+      "text": "你看出来了？",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "3167",
+      "text": "样本量不够，置信区间太宽。对方如果有人懂统计，一眼就能拆掉。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "1738 低头看了看那段文字，然后靠在椅背上。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1738",
+      "text": "你有空帮我看看整份材料吗？",
+      "emotion": "neutral"
+    },
+    {
+      "type": "scene_break",
+      "style": "dots"
+    },
+    {
+      "type": "paragraph",
+      "text": "韩予初本来想说「这不在我的调查范围内」。但她坐下来了。"
+    },
+    {
+      "type": "paragraph",
+      "text": "跟认同无关。数据不应该被错误地呈现。不管是哪一方的数据——如果数字站不住脚，谈判桌上就不会有任何有意义的对话。这是她的职业本能。"
+    },
+    {
+      "type": "paragraph",
+      "text": "两个人在工作区对面坐着，中间隔着一堆文件和两台电脑。工作方式出奇地合拍——1738 说对方可能会在哪个点上施压，她就在那个方向找数据支撑；她指出某组数据有漏洞，他就调整论述的逻辑结构。"
+    },
+    {
+      "type": "paragraph",
+      "text": "三个小时过去了。材料从原来的十二页变成了八页——内容没有减少，只是把冗余的论证合并了，把站不住脚的数据替换成了更可靠的来源。更短，但更扎实。"
+    },
+    {
+      "type": "scene_break",
+      "style": "line"
+    },
+    {
+      "type": "paragraph",
+      "text": "工作间隙。1738 去茶水间倒了两杯水回来。韩予初接过一杯，喝了一口。温的。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1738",
+      "text": "你做这行多久了？",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "3167",
+      "text": "信息分析？快六年了。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1738",
+      "text": "一直是独立的？",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "3167",
+      "text": "嗯。组织待不住。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "1738 笑了一下。很淡的笑。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1738",
+      "text": "我以前在一个组织里。离开了。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "他没有说是哪个组织，也没有说为什么离开。但他看着桌上的文件，说了一句——"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1738",
+      "text": "原则只在方便的时候存在的地方，待不下去。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "韩予初没有回话。但她听懂了。"
+    },
+    {
+      "type": "paragraph",
+      "text": "她也在原来的地方待不下去过。跟原则无关——她没那么高尚。她走是因为信息被操控。她做出的分析，在提交之后被修改了结论。一次，两次，三次。第三次她就走了。"
+    },
+    {
+      "type": "scene_break",
+      "style": "dots"
+    },
+    {
+      "type": "paragraph",
+      "text": "材料整理完的时候已经是傍晚了。"
+    },
+    {
+      "type": "paragraph",
+      "text": "1738 把最终版打印出来，翻了一遍，点了点头。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1738",
+      "text": "比我一个人做要好。谢了。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "3167",
+      "text": "数据部分本来就有问题。不改的话对方会拆掉。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "她站起来准备回自己的工位。肚子响了一声。她想起来自己中午没吃饭——工作的时候她经常忘。"
+    },
+    {
+      "type": "paragraph",
+      "text": "去买咖啡。算了，买点吃的吧。"
+    },
+    {
+      "type": "paragraph",
+      "text": "她端着咖啡走回来的时候，杯子漏了。"
+    },
+    {
+      "type": "paragraph",
+      "text": "一条细细的褐色水线从杯底的裂缝渗出来，顺着她的手指流下去，滴在走廊的地上。"
+    },
+    {
+      "type": "paragraph",
+      "text": "1738 从办公桌后面看到了。他没说话，把自己的杯子推过来。"
+    },
+    {
+      "type": "paragraph",
+      "text": "韩予初看了看他的杯子，又看了看自己还在漏水的那杯。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "3167",
+      "text": "……嗯，行吧。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "她接过了他的杯子。"
+    },
+    {
+      "type": "internal_monologue",
+      "character": "3167",
+      "text": "数据被正确地使用了。\n\n这种感觉很久没有了。"
+    }
+  ]
+}

@@ -1,0 +1,177 @@
+{
+  "id": "ch-02",
+  "title": "访客",
+  "subtitle": "2025年10月",
+  "readingTime": 6,
+  "perspectiveCharacter": "3167",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "据点不像她想象中的样子。"
+    },
+    {
+      "type": "paragraph",
+      "text": "没有门禁系统，没有安检通道，没有穿制服的接待人员。只有一栋不算新的建筑，门口有一小片被踩得很实的土地，旁边停着一辆自行车——后轮的气好像不太够。"
+    },
+    {
+      "type": "paragraph",
+      "text": "韩予初站在门口，背包里装着笔记本电脑、录音笔、两块备用硬盘、一个充电宝和三支笔。三个月的调查装备。她深吸一口气，推开了门。"
+    },
+    {
+      "type": "scene_break",
+      "style": "dots"
+    },
+    {
+      "type": "paragraph",
+      "text": "走廊里有咖啡的味道。墙上挂着一块白板，上面写着一些她看不懂的公式和几个潦草的箭头。有人在白板角落画了一只猫。"
+    },
+    {
+      "type": "paragraph",
+      "text": "第一个遇到的人是 2275。一个看起来比她年轻不少的女生，笑着从茶水间探出头来。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "2275",
+      "text": "你是新来的 guest 吧？要喝水吗？",
+      "emotion": "happy"
+    },
+    {
+      "type": "paragraph",
+      "text": "韩予初接过了水杯。温的。杯子上印着一个已经褪色的卡通图案。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "3167",
+      "text": "谢谢。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "1738 出现在走廊尽头，手里拿着一叠文件。他看起来是这里唯一穿着像正常上班族的人。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1738",
+      "text": "韩予初？我是陆清弦。这边走，我带你看看环境。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "他带她走了一圈。不大的空间，但功能分区很清楚——工作区、会议区、茶水间、一个看起来像是服务器机房的房间。1738 没有过多介绍，只是简单指了指各个区域的位置和用途。效率很高。"
+    },
+    {
+      "type": "paragraph",
+      "text": "路过一间半开着门的房间时，里面有人抬头看了她一眼。"
+    },
+    {
+      "type": "paragraph",
+      "text": "1547。她认出来了——在有限的公开资料里出现过这个编号。仿生人。ESAP 的创始者。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1547",
+      "text": "嗯，新来的。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "然后她又低头看屏幕了。显示器上跑着什么程序，蓝色的光映在她脸上。"
+    },
+    {
+      "type": "scene_break",
+      "style": "line"
+    },
+    {
+      "type": "paragraph",
+      "text": "1738 把她带到一张靠窗的空桌前。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1738",
+      "text": "这是你的工位。Wi-Fi 密码在白板上。有什么需要的可以找我或者 2275。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "3167",
+      "text": "了解。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "她放下背包，开始布置工位。笔记本电脑、录音笔、硬盘、笔。每样东西都有固定的位置——她做事有自己的秩序。"
+    },
+    {
+      "type": "paragraph",
+      "text": "录音笔放在桌面右上角的时候，她发现它的指示灯不亮了。"
+    },
+    {
+      "type": "paragraph",
+      "text": "拿起来检查。电池仓里有水。"
+    },
+    {
+      "type": "paragraph",
+      "text": "她回想了一下：出门前检查过，没问题；路上没下雨；背包没湿。水从哪来的？"
+    },
+    {
+      "type": "paragraph",
+      "text": "想不通。"
+    },
+    {
+      "type": "paragraph",
+      "text": "「……嗯，行吧。」"
+    },
+    {
+      "type": "paragraph",
+      "text": "她把录音笔拆开，用纸巾擦干电池仓，放在窗台上晾着。然后打开笔记本电脑，新建了一个文件夹。"
+    },
+    {
+      "type": "paragraph",
+      "text": "文件夹名称：「ESAP - 田野调查」。"
+    },
+    {
+      "type": "scene_break",
+      "style": "dots"
+    },
+    {
+      "type": "paragraph",
+      "text": "下午四点左右，茶水间的方向传来轻微的脚步声。"
+    },
+    {
+      "type": "paragraph",
+      "text": "韩予初抬头。一个人站在走廊里。没有走过来，也没有要走的意思。只是站在那里，看着她。"
+    },
+    {
+      "type": "paragraph",
+      "text": "0152。"
+    },
+    {
+      "type": "paragraph",
+      "text": "她在资料里读到过这个编号——ESAP 最早的 AI 实体，甚至比仿生人更早。但面前这个存在给她的感觉不像资料描述的那样。不像「AI」，不像「系统」，更像是一个已经在这里待了很久很久的人，久到他对周围的一切都了然于胸。"
+    },
+    {
+      "type": "paragraph",
+      "text": "他没有问她来干什么。没有自我介绍。只是看了她一眼——很平静的一眼——然后微微点了点头，转身走了。"
+    },
+    {
+      "type": "paragraph",
+      "text": "整个过程不到五秒。"
+    },
+    {
+      "type": "paragraph",
+      "text": "韩予初事后回想起来，总觉得那一眼有什么不对。但说不上来。"
+    },
+    {
+      "type": "paragraph",
+      "text": "窗外的光线在变暗。秋天的傍晚来得早。据点里有人开始开灯。远处传来 2275 和谁说话的声音，听不清内容，但语气是轻松的。"
+    },
+    {
+      "type": "paragraph",
+      "text": "韩予初在文件夹里新建了第一个文档：「Day 1 - 初步观察」。"
+    },
+    {
+      "type": "paragraph",
+      "text": "她没有注意到的是——1548 今天一直没有出现。或者说，她还不知道据点里有一个编号叫 1548 的仿生人。"
+    }
+  ]
+}
