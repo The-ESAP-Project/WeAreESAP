@@ -15,7 +15,7 @@
 
 import { AnimatePresence, motion } from "framer-motion";
 import { useTranslations } from "next-intl";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import { PerspectiveSwitch } from "@/components/interactive/PerspectiveSwitch";
 import { ReaderContent } from "@/components/reader/ReaderContent";
 import { ReaderToolbar } from "@/components/reader/ReaderToolbar";
@@ -67,7 +67,6 @@ function ChapterReaderInner({
   const { preferences } = useReadingPreferences();
 
   const [showResumeBanner, setShowResumeBanner] = useState(false);
-  const savedScrollYRef = useRef(0);
 
   const currentLocked = hydrated && !isUnlocked(chapter.id, story, storyState);
   const nextLocked =
@@ -94,18 +93,21 @@ function ChapterReaderInner({
     story,
   ]);
 
-  // Scroll to top on chapter change; show resume banner if a saved position exists
+  // Scroll to top on chapter change; auto-scroll to saved position if exists
   // biome-ignore lint/correctness/useExhaustiveDependencies: chapter.id and hydrated are intentional triggers; chapterScrollPositions read once after hydration
   useEffect(() => {
     setShowResumeBanner(false);
     window.scrollTo(0, 0);
     if (!hydrated) return;
     const savedY = storyState.chapterScrollPositions?.[chapter.id] ?? 0;
-    savedScrollYRef.current = savedY;
     if (savedY > 0) {
-      setShowResumeBanner(true);
-      const timer = setTimeout(() => setShowResumeBanner(false), 5000);
-      return () => clearTimeout(timer);
+      const scrollTimer = setTimeout(() => {
+        window.scrollTo({ top: savedY, behavior: "smooth" });
+        setShowResumeBanner(true);
+        const hideTimer = setTimeout(() => setShowResumeBanner(false), 4000);
+        return () => clearTimeout(hideTimer);
+      }, 300);
+      return () => clearTimeout(scrollTimer);
     }
   }, [chapter.id, hydrated]);
 
@@ -119,13 +121,8 @@ function ChapterReaderInner({
     return () => window.removeEventListener("scroll", handleScroll);
   }, [chapter.id, saveScrollPosition]);
 
-  const handleResume = () => {
-    window.scrollTo({ top: savedScrollYRef.current, behavior: "smooth" });
-    setShowResumeBanner(false);
-  };
-
-  const handleStartOver = () => {
-    saveScrollPosition(chapter.id, 0);
+  const handleBackToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
     setShowResumeBanner(false);
   };
 
@@ -304,17 +301,10 @@ function ChapterReaderInner({
               </span>
               <button
                 type="button"
-                onClick={handleResume}
+                onClick={handleBackToTop}
                 className="text-sm font-medium text-esap-blue hover:opacity-75 transition-opacity shrink-0"
               >
-                {t("resumeBanner.resume")}
-              </button>
-              <button
-                type="button"
-                onClick={handleStartOver}
-                className="text-sm text-muted-foreground hover:text-foreground transition-colors shrink-0"
-              >
-                {t("resumeBanner.startOver")}
+                {t("resumeBanner.backToTop")}
               </button>
             </div>
           </motion.div>

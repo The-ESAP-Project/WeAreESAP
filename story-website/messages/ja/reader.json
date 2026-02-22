@@ -41,8 +41,7 @@
     "back": "読書に戻る"
   },
   "resumeBanner": {
-    "prompt": "前回の続きから読みますか？",
-    "resume": "続きから",
-    "startOver": "最初から"
+    "prompt": "前回の位置にジャンプしました",
+    "backToTop": "先頭に戻る"
   }
 }

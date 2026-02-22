@@ -41,8 +41,7 @@
     "back": "返回阅读"
   },
   "resumeBanner": {
-    "prompt": "回到上次阅读的地方？",
-    "resume": "继续",
-    "startOver": "从头"
+    "prompt": "已跳转到上次阅读位置",
+    "backToTop": "回到顶部"
   }
 }

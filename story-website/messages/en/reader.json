@@ -41,8 +41,7 @@
     "back": "Back to Reading"
   },
   "resumeBanner": {
-    "prompt": "Continue where you left off?",
-    "resume": "Resume",
-    "startOver": "Start over"
+    "prompt": "Jumped to where you left off",
+    "backToTop": "Back to top"
   }
 }
