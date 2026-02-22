@@ -145,6 +145,11 @@ function ChapterReaderInner({
   const sizeClass = `reader-size-${preferences.fontSize}`;
   const leadingClass = `reader-leading-${preferences.lineHeight}`;
 
+  // hydration 前不渲染内容，避免锁定章节闪烁
+  if (!hydrated) {
+    return <div className="min-h-screen" />;
+  }
+
   // 锁定状态：显示提示，不显示内容
   if (currentLocked) {
     return (
