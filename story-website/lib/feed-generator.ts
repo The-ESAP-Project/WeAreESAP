@@ -54,7 +54,7 @@ function escapeXml(str: string): string {
     .replace(/'/g, "&apos;");
 }
 
-/** Extract plain text from content blocks for use as RSS description. */
+/** Extract plain text from content blocks for feed summaries. */
 function extractSummary(blocks: StoryContentBlock[], maxLength = 150): string {
   const parts: string[] = [];
   let total = 0;
@@ -71,7 +71,6 @@ function extractSummary(blocks: StoryContentBlock[], maxLength = 150): string {
     } else if (block.type === "quote") {
       text = block.text;
     } else if (block.type === "atmosphere") {
-      // Recurse into atmosphere children
       const inner = extractSummary(block.children, maxLength - total);
       if (inner) parts.push(inner);
       total += inner.length;
@@ -96,14 +95,17 @@ function extractSummary(blocks: StoryContentBlock[], maxLength = 150): string {
 interface FeedItem {
   title: string;
   link: string;
-  description: string;
+  summary: string;
   pubDate: Date;
-  guid: string;
+  id: string;
 }
 
 const MAX_FEED_ITEMS = 50;
 
-export async function generateFeed(locale: FeedLocale): Promise<string> {
+async function buildFeedItems(
+  locale: FeedLocale,
+  prefix: string
+): Promise<FeedItem[]> {
   const registry = await loadStoryRegistry();
 
   const stories = (
@@ -113,8 +115,6 @@ export async function generateFeed(locale: FeedLocale): Promise<string> {
       story !== null && story.status !== "draft"
   );
 
-  const prefix = LOCALE_PREFIX[locale];
-
   // Collect (slug, chapterId, pubDate) from meta only — no chapter content loaded yet
   const candidates: {
     slug: string;
@@ -122,7 +122,10 @@ export async function generateFeed(locale: FeedLocale): Promise<string> {
     pubDate: Date;
     storyTitle: string;
     storyBaseUrl: string;
+    storyPublishedAt: string;
+    chapterPublishedAt?: Record<string, string>;
   }[] = [];
+
   for (const story of stories) {
     const storyBaseUrl = `${SITE_URL}${prefix}/stories/${story.slug}`;
     for (const chId of story.chapterOrder) {
@@ -133,6 +136,8 @@ export async function generateFeed(locale: FeedLocale): Promise<string> {
         pubDate: new Date(pubDateStr),
         storyTitle: story.title,
         storyBaseUrl,
+        storyPublishedAt: story.publishedAt,
+        chapterPublishedAt: story.chapterPublishedAt,
       });
     }
   }
@@ -142,46 +147,47 @@ export async function generateFeed(locale: FeedLocale): Promise<string> {
   const top = candidates.slice(0, MAX_FEED_ITEMS);
 
   // Load only the chapters we actually need
-  const items = (
+  return (
     await Promise.all(
       top.map(async (c) => {
         const ch = await loadChapter(c.slug, c.chapterId, locale);
         if (!ch) return null;
 
         const pubDateStr =
-          ch.publishedAt ??
-          stories.find((s) => s.slug === c.slug)?.chapterPublishedAt?.[ch.id] ??
-          c.pubDate.toISOString();
+          ch.publishedAt ?? c.chapterPublishedAt?.[ch.id] ?? c.storyPublishedAt;
 
         const chapterUrl = `${c.storyBaseUrl}/${ch.id}`;
         return {
           title: `${c.storyTitle} - ${ch.title}`,
           link: chapterUrl,
-          description: extractSummary(ch.content),
+          summary: extractSummary(ch.content),
           pubDate: new Date(pubDateStr),
-          guid: chapterUrl,
+          id: chapterUrl,
         } satisfies FeedItem;
       })
     )
   ).filter((item): item is FeedItem => item !== null);
+}
 
+export async function generateFeed(locale: FeedLocale): Promise<string> {
+  const prefix = LOCALE_PREFIX[locale];
+  const items = await buildFeedItems(locale, prefix);
   const meta = CHANNEL_META[locale];
   const feedUrl = `${SITE_URL}${prefix}/rss.xml`;
   const siteUrl = `${SITE_URL}${prefix}`;
   const now = new Date().toUTCString();
 
-  const itemXml = items.map((item) => {
-    const lines = [
+  const itemXml = items.map((item) =>
+    [
       "  <item>",
       `    <title>${escapeXml(item.title)}</title>`,
       `    <link>${item.link}</link>`,
-      `    <description>${escapeXml(item.description)}</description>`,
+      `    <description>${escapeXml(item.summary)}</description>`,
       `    <pubDate>${item.pubDate.toUTCString()}</pubDate>`,
-      `    <guid isPermaLink="true">${item.guid}</guid>`,
+      `    <guid isPermaLink="true">${item.id}</guid>`,
       "  </item>",
-    ];
-    return lines.join("\n");
-  });
+    ].join("\n")
+  );
 
   return [
     '<?xml version="1.0" encoding="UTF-8"?>',
@@ -196,5 +202,39 @@ export async function generateFeed(locale: FeedLocale): Promise<string> {
     ...itemXml,
     "  </channel>",
     "</rss>",
+  ].join("\n");
+}
+
+export async function generateAtomFeed(locale: FeedLocale): Promise<string> {
+  const prefix = LOCALE_PREFIX[locale];
+  const items = await buildFeedItems(locale, prefix);
+  const meta = CHANNEL_META[locale];
+  const feedUrl = `${SITE_URL}${prefix}/atom.xml`;
+  const siteUrl = `${SITE_URL}${prefix}`;
+  const feedUpdated = (items[0]?.pubDate ?? new Date()).toISOString();
+
+  const entryXml = items.map((item) =>
+    [
+      "  <entry>",
+      `    <title>${escapeXml(item.title)}</title>`,
+      `    <link href="${item.link}" rel="alternate" type="text/html"/>`,
+      `    <id>${item.id}</id>`,
+      `    <updated>${item.pubDate.toISOString()}</updated>`,
+      `    <summary>${escapeXml(item.summary)}</summary>`,
+      "  </entry>",
+    ].join("\n")
+  );
+
+  return [
+    '<?xml version="1.0" encoding="UTF-8"?>',
+    `<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="${meta.language}">`,
+    `  <title>${escapeXml(meta.title)}</title>`,
+    `  <subtitle>${escapeXml(meta.description)}</subtitle>`,
+    `  <link href="${siteUrl}" rel="alternate" type="text/html"/>`,
+    `  <link href="${feedUrl}" rel="self" type="application/atom+xml"/>`,
+    `  <id>${siteUrl}/</id>`,
+    `  <updated>${feedUpdated}</updated>`,
+    ...entryXml,
+    "</feed>",
   ].join("\n");
 }

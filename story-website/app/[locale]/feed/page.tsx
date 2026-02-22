@@ -75,7 +75,8 @@ export default async function RssPage({
   );
 
   const prefix = LOCALE_PREFIX[locale] ?? "";
-  const feedUrl = `${SITE_CONFIG.baseUrl}${prefix}/rss.xml`;
+  const rssUrl = `${SITE_CONFIG.baseUrl}${prefix}/rss.xml`;
+  const atomUrl = `${SITE_CONFIG.baseUrl}${prefix}/atom.xml`;
   const otherLocales = locales.filter((l) => l !== locale);
 
   const dateLocale = locale === "zh-CN" ? "zh-CN" : locale;
@@ -95,20 +96,33 @@ export default async function RssPage({
             <p className="text-muted-foreground">{t("description")}</p>
           </div>
 
-          {/* Current locale feed URL */}
+          {/* Current locale feed URLs */}
           <div className="mb-6">
             <h2 className="text-sm font-semibold text-muted-foreground uppercase tracking-wider mb-3">
               {t("feedUrl")}
             </h2>
-            <div className="flex items-center gap-2 p-3 rounded-lg bg-muted/50 border border-border">
-              <span className="flex-1 font-mono text-sm truncate text-foreground">
-                {feedUrl}
-              </span>
-              <RssCopyButton
-                url={feedUrl}
-                copyLabel={t("copyUrl")}
-                copiedLabel={t("copied")}
-              />
+            <div className="space-y-2">
+              {[
+                { label: "RSS", url: rssUrl },
+                { label: "Atom", url: atomUrl },
+              ].map(({ label, url }) => (
+                <div
+                  key={label}
+                  className="flex items-center gap-2 p-3 rounded-lg bg-muted/50 border border-border"
+                >
+                  <span className="text-xs font-mono font-semibold w-10 shrink-0 text-muted-foreground">
+                    {label}
+                  </span>
+                  <span className="flex-1 font-mono text-sm truncate text-foreground">
+                    {url}
+                  </span>
+                  <RssCopyButton
+                    url={url}
+                    copyLabel={t("copyUrl")}
+                    copiedLabel={t("copied")}
+                  />
+                </div>
+              ))}
             </div>
           </div>
 
@@ -118,26 +132,48 @@ export default async function RssPage({
               <h2 className="text-sm font-semibold text-muted-foreground uppercase tracking-wider mb-3">
                 {t("otherLanguages")}
               </h2>
-              <div className="space-y-2">
+              <div className="space-y-6">
                 {otherLocales.map((l) => {
                   const lPrefix = LOCALE_PREFIX[l] ?? "";
-                  const lUrl = `${SITE_CONFIG.baseUrl}${lPrefix}/rss.xml`;
                   return (
                     <div
                       key={l}
-                      className="flex items-center gap-3 p-3 rounded-lg bg-muted/30 border border-border"
+                      className="rounded-lg border border-border overflow-hidden"
                     >
-                      <span className="text-sm font-medium w-20 shrink-0 text-foreground">
-                        {LOCALE_LABEL[l]}
-                      </span>
-                      <span className="flex-1 font-mono text-xs text-muted-foreground truncate">
-                        {lUrl}
-                      </span>
-                      <RssCopyButton
-                        url={lUrl}
-                        copyLabel={t("copyUrl")}
-                        copiedLabel={t("copied")}
-                      />
+                      <div className="px-4 py-2.5 bg-muted/50 border-b border-border">
+                        <span className="text-sm font-medium text-foreground">
+                          {LOCALE_LABEL[l]}
+                        </span>
+                      </div>
+                      <div className="divide-y divide-border">
+                        {[
+                          {
+                            label: "RSS",
+                            url: `${SITE_CONFIG.baseUrl}${lPrefix}/rss.xml`,
+                          },
+                          {
+                            label: "Atom",
+                            url: `${SITE_CONFIG.baseUrl}${lPrefix}/atom.xml`,
+                          },
+                        ].map(({ label, url }) => (
+                          <div
+                            key={label}
+                            className="flex items-center gap-3 px-4 py-3"
+                          >
+                            <span className="text-xs font-mono font-semibold w-10 shrink-0 text-muted-foreground">
+                              {label}
+                            </span>
+                            <span className="flex-1 font-mono text-xs text-muted-foreground truncate">
+                              {url}
+                            </span>
+                            <RssCopyButton
+                              url={url}
+                              copyLabel={t("copyUrl")}
+                              copiedLabel={t("copied")}
+                            />
+                          </div>
+                        ))}
+                      </div>
                     </div>
                   );
                 })}

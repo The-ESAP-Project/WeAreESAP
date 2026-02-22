@@ -31,6 +31,12 @@ const nextConfig: NextConfig = {
         destination: "/:locale/rss.xml",
         permanent: true,
       },
+      { source: "/atom", destination: "/atom.xml", permanent: true },
+      {
+        source: "/:locale(en|ja)/atom",
+        destination: "/:locale/atom.xml",
+        permanent: true,
+      },
     ];
   },
 

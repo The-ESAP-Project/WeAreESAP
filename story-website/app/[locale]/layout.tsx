@@ -69,6 +69,7 @@ export async function generateMetadata({
     alternates: {
       types: {
         "application/rss+xml": `${SITE_CONFIG.baseUrl}${localePrefix}/rss.xml`,
+        "application/atom+xml": `${SITE_CONFIG.baseUrl}${localePrefix}/atom.xml`,
       },
     },
     openGraph: {
