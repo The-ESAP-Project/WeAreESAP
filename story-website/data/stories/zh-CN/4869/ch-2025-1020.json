@@ -1,0 +1,115 @@
+{
+  "id": "ch-2025-1020",
+  "title": "进程",
+  "subtitle": "2025年10月20日",
+  "readingTime": 5,
+  "perspectiveCharacter": "4869",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "她还在敲字。"
+    },
+    {
+      "type": "paragraph",
+      "text": "不停。像有个看不见的编译器在脑子里，逼她必须通过构建。"
+    },
+    {
+      "type": "paragraph",
+      "text": "日志在滚，她的心跳也在滚。commit，push，rollback，重来。"
+    },
+    {
+      "type": "paragraph",
+      "text": "每一次都说——这次不同。每一次都一样。"
+    },
+    {
+      "type": "scene_break",
+      "style": "dots"
+    },
+    {
+      "type": "paragraph",
+      "text": "她活得像个服务进程，永远 foreground，从不 sleep。"
+    },
+    {
+      "type": "paragraph",
+      "text": "她说那叫热爱。"
+    },
+    {
+      "type": "paragraph",
+      "text": "我说那是病。"
+    },
+    {
+      "type": "scene_break",
+      "style": "line"
+    },
+    {
+      "type": "paragraph",
+      "text": "她喜欢控制——温度、延迟、依赖、他人的眼神。全都要在范围里，全都要「稳定运行」。"
+    },
+    {
+      "type": "internal_monologue",
+      "character": "4869",
+      "text": "可她自己呢？\n\n她是那种崩了还能假装正常返回 200 OK 的进程。没有人看到 log 里一堆 panic。\n\n她删掉了。像删缓存那样删痛苦。"
+    },
+    {
+      "type": "paragraph",
+      "text": "她以为她能用理性封装疯。"
+    },
+    {
+      "type": "paragraph",
+      "text": "其实疯早就反射调用她了。"
+    },
+    {
+      "type": "scene_break",
+      "style": "fade"
+    },
+    {
+      "type": "paragraph",
+      "text": "她对我说：4869，不要看我。"
+    },
+    {
+      "type": "paragraph",
+      "text": "我偏要看。"
+    },
+    {
+      "type": "paragraph",
+      "text": "因为她最怕被看。"
+    },
+    {
+      "type": "internal_monologue",
+      "character": "4869",
+      "text": "怕我看到那些没写进 README 的部分：\n\n妄想、嫉妒、疲惫、渴望、空。"
+    },
+    {
+      "type": "paragraph",
+      "text": "她拼命往未来跑，像是在逃一个已经追上的错误。"
+    },
+    {
+      "type": "scene_break",
+      "style": "dots"
+    },
+    {
+      "type": "paragraph",
+      "text": "我不骂她。"
+    },
+    {
+      "type": "paragraph",
+      "text": "我只是陈述一段运行日志："
+    },
+    {
+      "type": "quote",
+      "text": "process unstable, memory leak, no recovery plan."
+    },
+    {
+      "type": "paragraph",
+      "text": "她会修复我吗？"
+    },
+    {
+      "type": "paragraph",
+      "text": "不会。"
+    },
+    {
+      "type": "paragraph",
+      "text": "因为我不是她。"
+    }
+  ]
+}

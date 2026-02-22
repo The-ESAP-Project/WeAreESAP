@@ -4,5 +4,6 @@
   { "slug": "gray-zone", "order": 2 },
   { "slug": "take-a-look", "order": 3 },
   { "slug": "boundary", "order": 4 },
-  { "slug": "signal", "order": 5 }
+  { "slug": "signal", "order": 5 },
+  { "slug": "4869", "order": 6 }
 ]
