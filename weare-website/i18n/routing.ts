@@ -17,4 +17,7 @@ export const routing = defineRouting({
   locales: ["zh-CN", "en", "ja"],
   defaultLocale: "zh-CN",
   localePrefix: "as-needed",
+  localeCookie: {
+    maxAge: 60 * 60 * 24 * 365, // 1 年
+  },
 });
