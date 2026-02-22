@@ -91,8 +91,11 @@ export function StoriesClient({ stories, collections }: StoriesClientProps) {
                         story={story}
                         readCount={
                           hydrated
-                            ? (readingState.stories[story.slug]?.chaptersRead
-                                .length ?? 0)
+                            ? (readingState.stories[
+                                story.slug
+                              ]?.chaptersRead.filter((id) =>
+                                story.chapterOrder.includes(id)
+                              ).length ?? 0)
                             : undefined
                         }
                       />

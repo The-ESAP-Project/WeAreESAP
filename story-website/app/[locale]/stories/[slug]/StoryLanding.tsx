@@ -37,7 +37,10 @@ export function StoryLanding({ story, chapterTitles }: StoryLandingProps) {
   );
   const continueChapter =
     storyState.currentChapterId ?? firstUnreadChapter ?? story.chapterOrder[0];
-  const hasProgress = storyState.chaptersRead.length > 0;
+  const readMainChapters = storyState.chaptersRead.filter((id) =>
+    story.chapterOrder.includes(id)
+  ).length;
+  const hasProgress = readMainChapters > 0;
 
   return (
     <div className="min-h-screen">
@@ -108,7 +111,7 @@ export function StoryLanding({ story, chapterTitles }: StoryLandingProps) {
             {hydrated && hasProgress && (
               <span className="ml-4 text-sm text-muted-foreground">
                 {t("progress", {
-                  read: storyState.chaptersRead.length,
+                  read: readMainChapters,
                   total: story.chapterOrder.length,
                 })}
               </span>
