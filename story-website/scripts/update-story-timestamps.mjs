@@ -31,9 +31,9 @@ for (const entry of registry) {
   try {
     const meta = JSON.parse(readFileSync(metaPath, "utf-8"));
 
-    // 更新故事级别的 updatedAt
+    // 更新故事级别的 updatedAt，排除 meta.json 自身避免自我触发
     const storyTimestamp = execSync(
-      `git log -1 --format="%aI" -- data/stories/zh-CN/${entry.slug}/ data/stories/shared/${entry.slug}/`,
+      `git log -1 --format="%aI" -- data/stories/zh-CN/${entry.slug}/ data/stories/shared/${entry.slug}/ ":(exclude)data/stories/shared/${entry.slug}/meta.json"`,
       { encoding: "utf-8", cwd: root }
     ).trim();
 

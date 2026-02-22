@@ -101,6 +101,8 @@ interface FeedItem {
   guid: string;
 }
 
+const MAX_FEED_ITEMS = 50;
+
 export async function generateFeed(locale: FeedLocale): Promise<string> {
   const registry = await loadStoryRegistry();
 
@@ -113,37 +115,55 @@ export async function generateFeed(locale: FeedLocale): Promise<string> {
 
   const prefix = LOCALE_PREFIX[locale];
 
-  // Build one feed item per chapter
-  const itemGroups = await Promise.all(
-    stories.map(async (story) => {
-      const storyBaseUrl = `${SITE_URL}${prefix}/stories/${story.slug}`;
-      const chapters = await Promise.all(
-        story.chapterOrder.map((chId) => loadChapter(story.slug, chId, locale))
-      );
+  // Collect (slug, chapterId, pubDate) from meta only — no chapter content loaded yet
+  const candidates: {
+    slug: string;
+    chapterId: string;
+    pubDate: Date;
+    storyTitle: string;
+    storyBaseUrl: string;
+  }[] = [];
+  for (const story of stories) {
+    const storyBaseUrl = `${SITE_URL}${prefix}/stories/${story.slug}`;
+    for (const chId of story.chapterOrder) {
+      const pubDateStr = story.chapterPublishedAt?.[chId] ?? story.publishedAt;
+      candidates.push({
+        slug: story.slug,
+        chapterId: chId,
+        pubDate: new Date(pubDateStr),
+        storyTitle: story.title,
+        storyBaseUrl,
+      });
+    }
+  }
 
-      return chapters
-        .filter((ch): ch is NonNullable<typeof ch> => ch !== null)
-        .map((ch): FeedItem => {
-          const chapterUrl = `${storyBaseUrl}/${ch.id}`;
-          const pubDateStr =
-            ch.publishedAt ??
-            story.chapterPublishedAt?.[ch.id] ??
-            story.publishedAt;
+  // Sort and cap before loading any chapter content
+  candidates.sort((a, b) => b.pubDate.getTime() - a.pubDate.getTime());
+  const top = candidates.slice(0, MAX_FEED_ITEMS);
 
-          return {
-            title: `${story.title} - ${ch.title}`,
-            link: chapterUrl,
-            description: extractSummary(ch.content),
-            pubDate: new Date(pubDateStr),
-            guid: chapterUrl,
-          };
-        });
-    })
-  );
+  // Load only the chapters we actually need
+  const items = (
+    await Promise.all(
+      top.map(async (c) => {
+        const ch = await loadChapter(c.slug, c.chapterId, locale);
+        if (!ch) return null;
 
-  const items = itemGroups
-    .flat()
-    .sort((a, b) => b.pubDate.getTime() - a.pubDate.getTime());
+        const pubDateStr =
+          ch.publishedAt ??
+          stories.find((s) => s.slug === c.slug)?.chapterPublishedAt?.[ch.id] ??
+          c.pubDate.toISOString();
+
+        const chapterUrl = `${c.storyBaseUrl}/${ch.id}`;
+        return {
+          title: `${c.storyTitle} - ${ch.title}`,
+          link: chapterUrl,
+          description: extractSummary(ch.content),
+          pubDate: new Date(pubDateStr),
+          guid: chapterUrl,
+        } satisfies FeedItem;
+      })
+    )
+  ).filter((item): item is FeedItem => item !== null);
 
   const meta = CHANNEL_META[locale];
   const feedUrl = `${SITE_URL}${prefix}/rss.xml`;
