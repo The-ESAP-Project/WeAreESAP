@@ -105,6 +105,14 @@ export function StoryLanding({ story, chapterTitles }: StoryLandingProps) {
             >
               {hasProgress ? t("continueReading") : t("startReading")}
             </Link>
+            {hydrated && hasProgress && (
+              <span className="ml-4 text-sm text-muted-foreground">
+                {t("progress", {
+                  read: storyState.chaptersRead.length,
+                  total: story.chapterOrder.length,
+                })}
+              </span>
+            )}
           </div>
 
           {/* Chapter list */}

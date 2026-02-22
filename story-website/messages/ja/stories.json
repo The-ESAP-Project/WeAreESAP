@@ -24,6 +24,7 @@
     "readingTime": "推定読書時間",
     "minutes": "分",
     "chapters": "章",
+    "progress": "{read}/{total} 読了",
     "continue": "続きを読む",
     "start": "読み始める"
   },
@@ -35,6 +36,7 @@
     "backToStories": "ストーリー一覧へ",
     "startReading": "読み始める",
     "continueReading": "続きを読む",
+    "progress": "{read}/{total} 読了",
     "locked": "ロック中",
     "completed": "読了"
   },

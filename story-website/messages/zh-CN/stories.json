@@ -24,6 +24,7 @@
     "readingTime": "预计阅读",
     "minutes": "分钟",
     "chapters": "章",
+    "progress": "已读 {read}/{total} 章",
     "continue": "继续阅读",
     "start": "开始阅读"
   },
@@ -35,6 +36,7 @@
     "backToStories": "返回故事列表",
     "startReading": "开始阅读",
     "continueReading": "继续阅读",
+    "progress": "{read}/{total} 已读",
     "locked": "未解锁",
     "completed": "已读"
   },

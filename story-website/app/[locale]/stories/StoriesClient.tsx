@@ -14,9 +14,12 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import { useMemo } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { StoryCard } from "@/components/story/StoryCard";
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
+import { loadState } from "@/lib/reading-state";
+import type { ReadingState } from "@/types/reading-state";
+import { DEFAULT_READING_STATE } from "@/types/reading-state";
 import type { Collection, Story } from "@/types/story";
 
 interface StoriesClientProps {
@@ -26,6 +29,15 @@ interface StoriesClientProps {
 
 export function StoriesClient({ stories, collections }: StoriesClientProps) {
   const t = useTranslations("stories");
+  const [readingState, setReadingState] = useState<ReadingState>(
+    DEFAULT_READING_STATE
+  );
+  const [hydrated, setHydrated] = useState(false);
+
+  useEffect(() => {
+    setReadingState(loadState());
+    setHydrated(true);
+  }, []);
 
   const { collectionGroups, standaloneStories } = useMemo(() => {
     const storiesBySlug = new Map(stories.map((s) => [s.slug, s]));
@@ -75,7 +87,15 @@ export function StoriesClient({ stories, collections }: StoriesClientProps) {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   {groupStories.map((story, i) => (
                     <AnimatedSection key={story.slug} delay={i * 0.1}>
-                      <StoryCard story={story} />
+                      <StoryCard
+                        story={story}
+                        readCount={
+                          hydrated
+                            ? (readingState.stories[story.slug]?.chaptersRead
+                                .length ?? 0)
+                            : undefined
+                        }
+                      />
                     </AnimatedSection>
                   ))}
                 </div>

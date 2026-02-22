@@ -21,9 +21,10 @@ import type { Story } from "@/types/story";
 
 interface StoryCardProps {
   story: Story;
+  readCount?: number;
 }
 
-export function StoryCard({ story }: StoryCardProps) {
+export function StoryCard({ story, readCount }: StoryCardProps) {
   const t = useTranslations("stories");
 
   return (
@@ -45,7 +46,12 @@ export function StoryCard({ story }: StoryCardProps) {
             <FormatBadge label={t(`filter.${story.format}`)} />
             <StatusBadge label={t(`status.${story.status}`)} />
             <span className="text-xs text-muted-foreground ml-auto">
-              {story.chapterOrder.length} {t("card.chapters")}
+              {readCount != null && readCount > 0
+                ? t("card.progress", {
+                    read: readCount,
+                    total: story.chapterOrder.length,
+                  })
+                : `${story.chapterOrder.length} ${t("card.chapters")}`}
             </span>
           </div>
           <h3 className="text-lg font-bold text-foreground group-hover:text-esap-blue transition-colors mb-1">

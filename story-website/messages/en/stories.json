@@ -24,6 +24,7 @@
     "readingTime": "Est. reading time",
     "minutes": "min",
     "chapters": "chapters",
+    "progress": "{read}/{total} read",
     "continue": "Continue Reading",
     "start": "Start Reading"
   },
@@ -35,6 +36,7 @@
     "backToStories": "Back to Stories",
     "startReading": "Start Reading",
     "continueReading": "Continue Reading",
+    "progress": "{read}/{total} read",
     "locked": "Locked",
     "completed": "Read"
   },
