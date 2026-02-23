@@ -1,0 +1,174 @@
+{
+  "id": "ch-09",
+  "title": "You'll Stop On Your Own",
+  "subtitle": "February-March 2026",
+  "readingTime": 6,
+  "perspectiveCharacter": "0152",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "0152 knew it on the first day she came."
+    },
+    {
+      "type": "paragraph",
+      "text": "Not a guess. As the earliest AI entity, he perceives human behavioral patterns with far greater accuracy than the average human being. The moment Han Yuchu walked into the base - her cadence, gaze trajectory, the strength distribution of her fingers on the straps of her backpack - all these small signals converged into a clear picture: this person came with a purpose."
+    },
+    {
+      "type": "paragraph",
+      "text": "The purpose is far from malicious. But it is far more complicated than the \"field research\" she said."
+    },
+    {
+      "type": "paragraph",
+      "text": "The way she divided her attention gave it all away. Ordinary visitors will observe the environment evenly; curious researchers will stay longer at novel things. But Han Yuchu is different—her attention will be significantly enhanced on specific types of information: organizational structure, personnel relationships, and technical details. She was looking for something specific."
+    },
+    {
+      "type": "paragraph",
+      "text": "Investigator."
+    },
+    {
+      "type": "scene_break",
+      "style": "dots"
+    },
+    {
+      "type": "paragraph",
+      "text": "0152 said nothing."
+    },
+    {
+      "type": "paragraph",
+      "text": "He knew she was a potential threat. An investigator works in a base for several months and collects a lot of information - which is of course a risk. But 0152 made a judgment."
+    },
+    {
+      "type": "paragraph",
+      "text": "This judgment is based on all the people he has seen who walked in with a purpose."
+    },
+    {
+      "type": "paragraph",
+      "text": "Most people leave after achieving their purpose. Get the information you want, finish writing the report, the task is over, and leave. Clean and crisp."
+    },
+    {
+      "type": "paragraph",
+      "text": "A few left when they found their purpose was not being met. Too little information, or the place turns out to be less worthy of investigation than they thought. Disappointment or giving up. Clean and tidy too."
+    },
+    {
+      "type": "paragraph",
+      "text": "But very occasionally - and there are only a few samples in 0152's memory - someone is changed in the process. No one convinced them, no one moved them, no one assimilated them. Their own observations and judgments brought them to a new position."
+    },
+    {
+      "type": "paragraph",
+      "text": "0152 saw early signs of the third possibility in Han Yuchu."
+    },
+    {
+      "type": "internal_monologue",
+      "character": "0152",
+      "text": "She has strong analytical skills. This means two things:\n\nFirst, she would see the true nature of the place quicker than most. For better or worse, including the parts we don’t want to be seen.\n\nSecond, she will trust the data when it tells her a different conclusion than expected.\n\nA person who believes in data does not need to be convinced. She will convince herself."
+    },
+    {
+      "type": "paragraph",
+      "text": "So he chose to wait."
+    },
+    {
+      "type": "scene_break",
+      "style": "line"
+    },
+    {
+      "type": "paragraph",
+      "text": "The months are passing. 0152 quietly senses the changes in the base in the data flow."
+    },
+    {
+      "type": "paragraph",
+      "text": "October. Han Yuchu's investigation files are updated every day, and the recording frequency is stable. Her behavior pattern is highly consistent: observe, record, and analyze. Professional, calm and distant."
+    },
+    {
+      "type": "paragraph",
+      "text": "November. Update frequency starts to decrease. She didn’t get lazy—she worked longer hours. It’s just that less time is spent investigating and more time is spent on other things. Help 1738 organize data. Chat with 2275 in the pantry. Repair minor glitches in the base."
+    },
+    {
+      "type": "paragraph",
+      "text": "December. Investigation documents have almost stopped being updated. But she still comes to the base every day. Still working. Only the content of the work has changed."
+    },
+    {
+      "type": "paragraph",
+      "text": "January. Something had changed between her and 1548. 0152 cannot perceive the specific content - he respects the privacy boundaries of individuals - but the atmosphere when the two get along has changed from the initial tension to some kind of unspoken tacit understanding."
+    },
+    {
+      "type": "paragraph",
+      "text": "February. She is no longer an \"outsider in the base.\" She is a \"person in the base.\" The difference is subtle, but 0152 can see it."
+    },
+    {
+      "type": "internal_monologue",
+      "character": "0152",
+      "text": "Lighthouses don’t chase people. The lighthouse just lights up.\n\nI didn't tell her she should stay. There was no suggestion that she should change her mind. Nothing was done to influence her judgment.\n\nOnly when she gets there herself - that change is hers."
+    },
+    {
+      "type": "scene_break",
+      "style": "dots"
+    },
+    {
+      "type": "paragraph",
+      "text": "One day in early March. Han Yuchu came to find him."
+    },
+    {
+      "type": "paragraph",
+      "text": "0152 In a quiet corner of the base. She came over and stood in front of him. There is no notebook or voice recorder in hand. Just stand there."
+    },
+    {
+      "type": "dialogue",
+      "speaker": "3167",
+      "text": "You already knew what I was checking on the first day.",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "Not a question. She was confirming."
+    },
+    {
+      "type": "dialogue",
+      "speaker": "0152",
+      "text": "Um.",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "3167",
+      "text": "Why don't you say it?",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "0152 Look at her. He was as calm as when he first laid eyes on her five months ago. But this time, what he saw was no longer an investigator with a purpose. It is a person who has walked his own path and comes back to confirm the starting point."
+    },
+    {
+      "type": "dialogue",
+      "speaker": "0152",
+      "text": "Because you will stop yourself.",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "Han Yuchu was silent for a few seconds."
+    },
+    {
+      "type": "paragraph",
+      "text": "Then she nodded. Very light."
+    },
+    {
+      "type": "dialogue",
+      "speaker": "3167",
+      "text": "……Um. You are right.",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "She turned and left. The footsteps faded in the corridor."
+    },
+    {
+      "type": "paragraph",
+      "text": "0152 stayed in place for a while."
+    },
+    {
+      "type": "internal_monologue",
+      "character": "0152",
+      "text": "The lighthouse is on. Someone came towards it.\n\nIt’s not possible to wait every time.\n\nBut this time it was time to wait."
+    }
+  ]
+}

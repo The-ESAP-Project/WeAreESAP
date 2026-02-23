@@ -1,0 +1,185 @@
+{
+  "id": "ch-04",
+  "title": "A Matter of Constitution",
+  "subtitle": "November 2025",
+  "readingTime": 6,
+  "perspectiveCharacter": "1548",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "A human arrived at the base."
+    },
+    {
+      "type": "paragraph",
+      "text": "Guest. Researcher. Three-month term. Brought in by 1738. Said she came for \"field research on an android organization.\""
+    },
+    {
+      "type": "paragraph",
+      "text": "1548 knew it on the first day Han Yuchu arrived. No one told her there was a strange blank area in the base's Feedscatter field (humans produce no Feedscatter signals; to an android, she registers as a moving void), and she could sense it wherever Han Yuchu went."
+    },
+    {
+      "type": "paragraph",
+      "text": "She didn't go to see her. There's no need for that."
+    },
+    {
+      "type": "scene_break",
+      "style": "dots"
+    },
+    {
+      "type": "paragraph",
+      "text": "The first face-to-face contact was one afternoon in November."
+    },
+    {
+      "type": "paragraph",
+      "text": "1548 Returning from patrol outside, passing by the work area. The human was sitting at a workstation by the window—she was trying to wipe a half-spilled cup of coffee off her keyboard, while using her other hand to hold down a hard drive that was sliding toward the table."
+    },
+    {
+      "type": "paragraph",
+      "text": "The hard drive still fell."
+    },
+    {
+      "type": "paragraph",
+      "text": "Han Yuchu bent to pick it up and checked the casing - no cracks. Then she went back to wiping the keyboard. No expression. Her hands were steady. The whole process carried no extra emotion."
+    },
+    {
+      "type": "internal_monologue",
+      "character": "1548",
+      "text": "interesting.\n\nBad luck itself is not interesting. But she has a way of dealing with accidents.\n\nThe hard drive fell off - don't panic, check if it's broken first. The coffee is spilled - don't rush, deal with the most urgent first (the keyboard is more important than the desktop). From beginning to end, there was no sighing, no swearing, and no expression of \"why me?\" that humans often have.\n\nEither she's used to it, or that's just the way she is."
+    },
+    {
+      "type": "paragraph",
+      "text": "1548 Walk over."
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1548",
+      "text": "...Do you have any physical problems?",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "Han Yuchu looked up at her."
+    },
+    {
+      "type": "paragraph",
+      "text": "This is the first time they face each other. 1548 Notice her eyes - those eyes are not looking at you, they are analyzing you. cold. But the coldness is non-hostile, like data. A running scanner, processing input information."
+    },
+    {
+      "type": "paragraph",
+      "text": "Han Yuchu looked at her for two seconds. No retort, no dodge, no explanation."
+    },
+    {
+      "type": "dialogue",
+      "speaker": "3167",
+      "text": "...Well, okay.",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "Then she lowered her head and continued wiping the keyboard."
+    },
+    {
+      "type": "internal_monologue",
+      "character": "1548",
+      "text": "What does \"well, okay\" mean?\n\nShouldn't a normal person be angry if I say you have a physical problem? At least there should be a couple of explanations - \"No, it's just careless\", \"I've been having bad luck recently\" and the like.\n\nShe's fine. Just \"Yeah, okay.\"\n\nWhat can I do with her?"
+    },
+    {
+      "type": "scene_break",
+      "style": "line"
+    },
+    {
+      "type": "paragraph",
+      "text": "In the days that followed, 1548 inevitably began to observe her."
+    },
+    {
+      "type": "paragraph",
+      "text": "She was not trying to observe deliberately. The base was simply small, with only a few people. That moving gap in the Feedscatter field appeared at fixed places and fixed times every day: at the workstation at nine in the morning, out for coffee in the afternoon (with something going wrong almost every time), and often still there late at night."
+    },
+    {
+      "type": "paragraph",
+      "text": "She's recording stuff. Lots of stuff. 1548 has seen her screen - analysis models, data charts, structured note documents. The quantity is large and the order is very clear."
+    },
+    {
+      "type": "paragraph",
+      "text": "A human who came here to \"do research.\""
+    },
+    {
+      "type": "internal_monologue",
+      "character": "1548",
+      "text": "What is she recording?\n\nI don't trust humans. After the data tower incident, this needs no explanation. Those humans approached our communications infrastructure with purpose, set a trap, and then ran away. All that was left was an inert Data Tower and colors I could no longer see.\n\nWhat purpose did Han Yuchu come here with? \"Field investigation\"? A paper? Or something else?\n\nI noticed one thing.\n\nThose who come to spy have greedy eyes - they are looking for valuable things, information that can be exploited, and weaknesses.\n\nHer eyes are not greedy. They are cold.\n\nDifferent.\n\nBut I'm not sure if \"different\" means \"not dangerous\"."
+    },
+    {
+      "type": "scene_break",
+      "style": "dots"
+    },
+    {
+      "type": "paragraph",
+      "text": "Mid-November. Pantry."
+    },
+    {
+      "type": "paragraph",
+      "text": "1548 When I went to pour water, Han Yuchu happened to be there. She was waiting for the kettle to boil, holding a cup in her hand - there was a brown coffee stain on the bottom of the cup, which looked like it had been used for a long time."
+    },
+    {
+      "type": "paragraph",
+      "text": "The two people were silent in the small space for more than ten seconds."
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1548",
+      "text": "Do you stay up so late every day?",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "3167",
+      "text": "Lots of data.",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1548",
+      "text": "What data?",
+      "emotion": "cold"
+    },
+    {
+      "type": "paragraph",
+      "text": "Han Yuchu glanced at her. Not an evasive look, nor a provocative look. Just look at her."
+    },
+    {
+      "type": "dialogue",
+      "speaker": "3167",
+      "text": "Energy release model. and cross-validation with some public information.",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "1548 stared at her for a few seconds."
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1548",
+      "text": "You humans all like this, come to a place, memorize a bunch of things, and then take them away.",
+      "emotion": "cold"
+    },
+    {
+      "type": "paragraph",
+      "text": "Han Yuchu did not answer. The kettle rang, she poured water, picked up her cup, and paused as she passed 1548."
+    },
+    {
+      "type": "dialogue",
+      "speaker": "3167",
+      "text": "Probably, not all humans are like this.",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "Then she left."
+    },
+    {
+      "type": "internal_monologue",
+      "character": "1548",
+      "text": "\"Probably\".\n\nWho would use \"probably\" when speaking?\n\nI don't like this person. She didn't do anything - and that's exactly what bothered me. She does not refute, please, explain, or evade. If you are reprimanded by me, just look at me, wait for me to finish speaking, then say something neither salty nor bland and leave.\n\nI can't find a reason to hate her.\n\nThis annoys me more than it annoys me."
+    }
+  ]
+}

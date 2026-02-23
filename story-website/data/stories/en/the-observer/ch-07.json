@@ -1,0 +1,264 @@
+{
+  "id": "ch-07",
+  "title": "Gray Archive",
+  "subtitle": "January 2026",
+  "readingTime": 8,
+  "perspectiveCharacter": "3167",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "1:00 a.m. Encrypted folder."
+    },
+    {
+      "type": "paragraph",
+      "text": "Han Yuchu hasn't opened this folder for a long time. The last time was November - the night she discovered the connection between the accident and the DT-03 incident. She then locked it and continued to be a \"guest\" in the base."
+    },
+    {
+      "type": "paragraph",
+      "text": "But tonight she turned it on again."
+    },
+    {
+      "type": "paragraph",
+      "text": "The cause was a small incident during the day. 1547 and 1548 were discussing the parameter adjustment of a communication system in the work area. Han Yuchu was sitting not far away and could hear sporadic conversations. Mostly technical terms. But there is one sentence——"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1547",
+      "text": "The redundant coverage of DT-01 can be supplemented from here. But that hole in the DT-03...",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "She did not finish. She paused, glanced at 1548, changed her wording, and continued the discussion."
+    },
+    {
+      "type": "paragraph",
+      "text": "That pause. That look. Han Yuchu caught it."
+    },
+    {
+      "type": "scene_break",
+      "style": "dots"
+    },
+    {
+      "type": "paragraph",
+      "text": "She retrieved all the information on the DT-03 incident. Not much is disclosed, but for an information analyst, not much is enough - key information is often hidden between the lines."
+    },
+    {
+      "type": "paragraph",
+      "text": "Event summary: On September 14, 2022, DT-03 Feedscatter field was interfered with. 1549 encountered an attack while performing routine maintenance, and consciousness data began to leak. 1548 arrived at the scene and performed L3 direct connection - full bandwidth unprotected access. Safe upper limit is 4 to 6 seconds."
+    },
+    {
+      "type": "paragraph",
+      "text": "It took her 58 seconds."
+    },
+    {
+      "type": "paragraph",
+      "text": "1549's consciousness data was completely extracted. Completeness rate 99.97%."
+    },
+    {
+      "type": "paragraph",
+      "text": "The price is 1548 irreversible damage to the color vision module. Permanent total color blindness."
+    },
+    {
+      "type": "paragraph",
+      "text": "Han Yuchu leaned back on the chair."
+    },
+    {
+      "type": "internal_monologue",
+      "character": "3167",
+      "text": "58 seconds.\n\nNearly ten times the safe upper limit."
+    },
+    {
+      "type": "paragraph",
+      "text": "There is no record in the public record of who paid the price. But Han Yuchu had done enough data crossovers."
+    },
+    {
+      "type": "paragraph",
+      "text": "1548's behavior pattern - she never comments on color and always refers to brightness and contrast when discussing vision-related topics. Once in the base, 2275 said that the color scheme of a certain design draft was very nice, and 1548 walked by without saying a word."
+    },
+    {
+      "type": "paragraph",
+      "text": "There are 1547 more. One time she accidentally said, \"Gray is good\" - her tone seemed to be repeating what others had said, with something akin to distress that she rarely showed."
+    },
+    {
+      "type": "paragraph",
+      "text": "Han Yuchu spelled it out."
+    },
+    {
+      "type": "scene_break",
+      "style": "line"
+    },
+    {
+      "type": "paragraph",
+      "text": "Two o'clock in the morning. There were footsteps in the corridor."
+    },
+    {
+      "type": "paragraph",
+      "text": "1548 came back from patrol. As she passed the work area, she saw Han Yuchu still there."
+    },
+    {
+      "type": "paragraph",
+      "text": "The two people looked at each other."
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1548",
+      "text": "It's you again.",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "3167",
+      "text": "It's you again.",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "1548 leaned against the doorframe. I haven't taken off my coat yet, and there is mud on my boots. Returning from patrol late at night."
+    },
+    {
+      "type": "paragraph",
+      "text": "Han Yuchu looked at her. Her gaze changed - I don't know when, the way she looked at 1548 no longer looked like a scanner, but more like a person looking at another person."
+    },
+    {
+      "type": "dialogue",
+      "speaker": "3167",
+      "text": "I have a question. Not the kind of question that is investigated.",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1548",
+      "text": "oh?",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "3167",
+      "text": "Something about DT-03. Why don't you practice it?",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "It was quiet for a few seconds."
+    },
+    {
+      "type": "paragraph",
+      "text": "1548's expression did not change. But her body tensed slightly - the instinctive reaction of an android who has received combat training when encountering unexpected stimuli. Very slightly. Han Yuchu saw it."
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1548",
+      "text": "You checked it out.",
+      "emotion": "cold"
+    },
+    {
+      "type": "paragraph",
+      "text": "Not a question."
+    },
+    {
+      "type": "dialogue",
+      "speaker": "3167",
+      "text": "Crossover analysis. Not difficult.",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1548",
+      "text": "Then what? Ready to write it into a report? \"Android 1548 suffered irreversible sensory impairment due to rescue actions.\" Great data point.",
+      "emotion": "cold"
+    },
+    {
+      "type": "paragraph",
+      "text": "Han Yuchu was not hurt by these words. She just looked at 1548, waiting for her to finish."
+    },
+    {
+      "type": "paragraph",
+      "text": "After speaking, 1548 fell silent. Han Yuchu's reaction was not what she expected: no embarrassment, no apology, none of the shyness humans often show when touching sensitive topics."
+    },
+    {
+      "type": "dialogue",
+      "speaker": "3167",
+      "text": "Don't write. This is not what the report is about.",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1548",
+      "text": "Then why do you ask?",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "Han Yuchu thought for a while."
+    },
+    {
+      "type": "dialogue",
+      "speaker": "3167",
+      "text": "Because of the incident I'm tracking, the technical source is tied to the DT-03 incident. In a sense... what you lost is on the same chain as what I investigated.",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "1548 looked at her for a long time. In a gray world, Han Yuchu's outline is a shape composed of different depths of gray - dark hair, light skin, and medium-colored clothes. No color. But 1548 has become accustomed to using grayscale to identify people."
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1548",
+      "text": "Those guys took technology away from the DT-03. And then screwed up.",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "3167",
+      "text": "Judging from the current data, yes.",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1548",
+      "text": "…",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "1548 looked down at her hands. In gray vision, a faint light showed at the finger joints - traces of Fluid Titanium circulating under the skin. She could not see blue. But she knew it was blue."
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1548",
+      "text": "Some scars don't need to heal. They become armor.",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "After saying that, she straightened up and prepared to leave. She paused for a moment when she passed Han Yuchu's workstation."
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1548",
+      "text": "Don't be too late. You humans need to sleep.",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "Then she left. The sound of boots on the hallway floor faded away."
+    },
+    {
+      "type": "paragraph",
+      "text": "Han Yuchu stayed seated where she was."
+    },
+    {
+      "type": "paragraph",
+      "text": "She looked at the encrypted folder open on the screen. All the analysis, all the links, all the data pointing to the truth - it's all there."
+    },
+    {
+      "type": "paragraph",
+      "text": "She didn't record tonight's conversation."
+    },
+    {
+      "type": "paragraph",
+      "text": "This is the first time."
+    }
+  ]
+}

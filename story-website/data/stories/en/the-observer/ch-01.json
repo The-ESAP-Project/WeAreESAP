@@ -1,0 +1,153 @@
+{
+  "id": "ch-01",
+  "title": "Outlier",
+  "subtitle": "Summer 2025",
+  "readingTime": 6,
+  "perspectiveCharacter": "3167",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "The energy release curve is wrong."
+    },
+    {
+      "type": "paragraph",
+      "text": "Han Yuchu stared at the chart on the screen for twenty minutes. The horizontal axis is time and the vertical axis is heat flux density. The accident occurred at 2:41 pm on June 17 in a laboratory located on the edge of an industrial area. The official classification is \"an accident caused by overheating of equipment.\" The report was twelve pages long, and the conclusion was clear and concise."
+    },
+    {
+      "type": "paragraph",
+      "text": "But the curve is wrong."
+    },
+    {
+      "type": "internal_monologue",
+      "character": "3167",
+      "text": "The peak comes too quickly. It took just 0.7 seconds to go from baseline to peak—no known chemical reaction can release this amount of heat in this time window. Nuclear reactions are possible, but there are no radioactive isotopes in the residue.\n\nAnd the shape of the decay curve is wrong. It's not exponential decay, it's a cliff-like decline. It was like all the energy was released in an instant, and then there was nothing left."
+    },
+    {
+      "type": "paragraph",
+      "text": "She zoomed in on the chart down to the millisecond level. The peak is preceded by a very short precursor signal—a high-frequency oscillation that lasts about 27 milliseconds. It's too regular and doesn't sound like noise caused by equipment failure."
+    },
+    {
+      "type": "paragraph",
+      "text": "Han Yuchu is an independent information analyst. She was commissioned to conduct a supplementary investigation of the accident. The client felt the official report was too clean. She agreed."
+    },
+    {
+      "type": "scene_break",
+      "style": "dots"
+    },
+    {
+      "type": "paragraph",
+      "text": "One item on the list of debris at the accident scene caught her attention."
+    },
+    {
+      "type": "paragraph",
+      "text": "No. R-14. A small amount of blue liquid substance adhered to the metal surface of the remains of the experimental platform. Compositional analysis revealed an organic compound containing titanium, but the molecular structure is not in any published compound database. The remarks column says \"to be identified\", and then there is nothing more."
+    },
+    {
+      "type": "internal_monologue",
+      "character": "3167",
+      "text": "blue. liquid. Organic compounds of titanium. The thermal conductivity is approximately 3.7 times that of water. Conductivity is better than copper.\n\nThese parameters combined should not exist in nature."
+    },
+    {
+      "type": "paragraph",
+      "text": "She started checking."
+    },
+    {
+      "type": "paragraph",
+      "text": "There is nothing in formal academic databases. It's not in the patent library either. She changed several gray information channels - archives of technical forums, caches of deleted pages, and several closed communities that required invitation codes to enter."
+    },
+    {
+      "type": "paragraph",
+      "text": "On the third day, the spectrum analyzer used for analysis burned down. The power module is short-circuited and the cause is unknown."
+    },
+    {
+      "type": "paragraph",
+      "text": "\"...Well, okay.\""
+    },
+    {
+      "type": "paragraph",
+      "text": "She changed it."
+    },
+    {
+      "type": "scene_break",
+      "style": "line"
+    },
+    {
+      "type": "paragraph",
+      "text": "Day five. Data transfer was interrupted twice. The first time was due to network fluctuations, and the second time was a sudden poor contact of the USB interface of the hard disk. She copied the data to another hard drive and continued."
+    },
+    {
+      "type": "paragraph",
+      "text": "Day eight."
+    },
+    {
+      "type": "paragraph",
+      "text": "In the fragments of a deep forum post, she found a word: Fluid Titanium."
+    },
+    {
+      "type": "paragraph",
+      "text": "The post itself has been deleted, but search engine caches still retain the first three lines. A \"liquid form of a titanium-based organic compound\" is mentioned, and its key role in the stabilization of certain particles."
+    },
+    {
+      "type": "paragraph",
+      "text": "Fluid Titanium."
+    },
+    {
+      "type": "paragraph",
+      "text": "She did a second round of searches using this keyword. Most of the results are noise, but a few clues point to something called \"Feedscatteron particles\" - subatomic level, far faster than the speed of light, decaying in 34 seconds at normal pressure, but stable in Fluid Titanium for hundreds of thousands of years."
+    },
+    {
+      "type": "internal_monologue",
+      "character": "3167",
+      "text": "27 milliseconds.\n\nThe duration of that precursor signal in the accident curve is 27 milliseconds. And the decay period of Feedscatteron particles in metals is 21.1 milliseconds.\n\nNot an exact match. But close enough."
+    },
+    {
+      "type": "paragraph",
+      "text": "If someone in the laboratory were trying to manipulate Feedscatteron particles, and Feedscatter current exceeded a certain critical value - all particles would decay in an instant, converting all their mass into heat energy."
+    },
+    {
+      "type": "paragraph",
+      "text": "E = mc². Even if the particle mass is extremely small, the heat energy released by the simultaneous decay of a large number is enough to destroy a laboratory."
+    },
+    {
+      "type": "paragraph",
+      "text": "The peak comes too fast, the decay falls off a cliff - the shape of the curve is explained."
+    },
+    {
+      "type": "scene_break",
+      "style": "dots"
+    },
+    {
+      "type": "paragraph",
+      "text": "The information of Feedscatteron particles points to a name: ESAP."
+    },
+    {
+      "type": "paragraph",
+      "text": "Not a company, not a lab, not a government agency. There is very little information and is scattered in various edge channels. The picture that can be spelled out is: an organization related to android technology, mastering the core knowledge of Feedscatteron particles and Fluid Titanium."
+    },
+    {
+      "type": "paragraph",
+      "text": "android."
+    },
+    {
+      "type": "paragraph",
+      "text": "Han Yuchu leaned back on the chair. It was already dark outside the window."
+    },
+    {
+      "type": "paragraph",
+      "text": "What went wrong in any link that allowed a technology that should not appear in a human laboratory to appear there?"
+    },
+    {
+      "type": "paragraph",
+      "text": "She needed a structural explanation. Guesses and hypotheses weren't enough - she wanted a complete chain from source to end. The source of the chain is at ESAP."
+    },
+    {
+      "type": "paragraph",
+      "text": "She opened her browser and started checking ESAP's guest access application process."
+    },
+    {
+      "type": "internal_monologue",
+      "character": "3167",
+      "text": "Plan: three months. Find out the organizational structure, technology sources, and personnel relationships. Write reports. Leave.\n\nThat should be enough."
+    }
+  ]
+}

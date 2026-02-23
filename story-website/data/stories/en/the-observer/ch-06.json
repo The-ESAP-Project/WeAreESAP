@@ -1,0 +1,392 @@
+{
+  "id": "ch-06",
+  "title": "Just Passing By",
+  "subtitle": "December 2025-January 2026",
+  "readingTime": 10,
+  "perspectiveCharacter": "3167",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "The communications panel is at the corner of the hallway. It's not big, it's embedded in the wall, it has a few indicator lights and a row of interfaces."
+    },
+    {
+      "type": "paragraph",
+      "text": "Han Yuchu first noticed it in mid-December. As she passed by, an indicator light on the panel flashed - the flashing method was wrong and the intervals were irregular, which was a sign of poor contact."
+    },
+    {
+      "type": "paragraph",
+      "text": "She stopped and looked. One of the connectors was loose, causing occasional interruptions in the signal. Very small problem. The impact is not big - there may be only an occasional delay of a few tenths of a second in communication, and most people will not feel it at all."
+    },
+    {
+      "type": "paragraph",
+      "text": "Everyone is used to it. In other words, no one noticed."
+    },
+    {
+      "type": "paragraph",
+      "text": "Han Yuchu took out a small screwdriver from her backpack - her habit of carrying tools with her was forced by her unlucky constitution. The equipment may have problems at any time, and she can repair it at any time if she has the tools around her. She tightened the loose connector and checked the other connections."
+    },
+    {
+      "type": "paragraph",
+      "text": "The indicator light returned to its normal steady blinking."
+    },
+    {
+      "type": "paragraph",
+      "text": "2275 just walked across the corridor."
+    },
+    {
+      "type": "dialogue",
+      "speaker": "2275",
+      "text": "Are you fixing this?",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "3167",
+      "text": "...just passing by.",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "2275 looked at the panel and then at the screwdriver in her hand. Without saying anything, she smiled and left."
+    },
+    {
+      "type": "scene_break",
+      "style": "dots"
+    },
+    {
+      "type": "paragraph",
+      "text": "There is a pile of papers spread out on 1738's desk. Paper - he's one of the few people here who still uses paper."
+    },
+    {
+      "type": "paragraph",
+      "text": "Han Yuchu glanced at it as she passed by. It was unconscious. After more than ten years in information analysis, keyword extraction from a quick scan was as natural to her as breathing."
+    },
+    {
+      "type": "paragraph",
+      "text": "\"Technology Alliance\" \"android Rights\" \"Dispute Clauses\"."
+    },
+    {
+      "type": "paragraph",
+      "text": "External negotiations. 1738 is preparing for negotiations with a certain human technology alliance."
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1738",
+      "text": "What did you see?",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "He didn't look up. The tone was not a question, more like a casual question. He knew she had quick eyes."
+    },
+    {
+      "type": "dialogue",
+      "speaker": "3167",
+      "text": "There is a problem with the data basis of the disputed clause. The source of the statistics cited in the third paragraph is unreliable.",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "1738 Then he looked up at her. Paused for two seconds."
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1738",
+      "text": "Did you see it?",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "3167",
+      "text": "The sample size is insufficient and the confidence interval is too wide. If someone on the other side understands statistics, they can dismantle it at a glance.",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "1738 looked down at the text, then leaned back in the chair."
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1738",
+      "text": "Do you have time to look at the entire material for me?",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "Han Yuchu originally wanted to say, \"This is not within the scope of my investigation.\" But she sat down."
+    },
+    {
+      "type": "paragraph",
+      "text": "It has nothing to do with recognition. Data should not be presented incorrectly. It doesn’t matter which side the numbers are – if the numbers don’t hold up, there won’t be any meaningful dialogue at the negotiating table. This is her professional instinct."
+    },
+    {
+      "type": "paragraph",
+      "text": "Two people sat across from each other in the workspace, separated by a pile of files and two computers. The working methods are surprisingly in sync - when 1738 says that the other party may put pressure on a point, she will look for data support in that direction; when she points out that there are loopholes in a certain set of data, he will adjust the logical structure of the argument."
+    },
+    {
+      "type": "paragraph",
+      "text": "Three hours passed. The material went from twelve pages to eight—shorter, but more solid."
+    },
+    {
+      "type": "scene_break",
+      "style": "line"
+    },
+    {
+      "type": "paragraph",
+      "text": "During a break, 1738 went to the pantry and came back with two glasses of water. Han Yuchu took one and had a sip. Warm."
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1738",
+      "text": "How long have you been doing this?",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "3167",
+      "text": "Information analysis? Almost six years.",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1738",
+      "text": "Always been independent?",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "3167",
+      "text": "Um. The organization cannot stay.",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "1738 smiled. A very faint smile."
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1738",
+      "text": "I used to be in an organization. left.",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "He did not say which organization or why he left. But he looked at the documents on the table and said -"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1738",
+      "text": "Principles only exist when it is convenient and cannot stay there.",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "Han Yuchu didn't reply. But she understood."
+    },
+    {
+      "type": "paragraph",
+      "text": "She also couldn't stay where she was. It has nothing to do with principles - she's not that noble. She left because the information was manipulated. The analysis she produced had its conclusions revised after it was submitted. Once, twice, three times. The third time she left."
+    },
+    {
+      "type": "scene_break",
+      "style": "dots"
+    },
+    {
+      "type": "paragraph",
+      "text": "It was already evening when the materials were sorted out."
+    },
+    {
+      "type": "paragraph",
+      "text": "1738 printed out the final version, flipped through it, and nodded."
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1738",
+      "text": "Better than me doing it alone. Thanks.",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "3167",
+      "text": "The data part is inherently problematic. If you don't change it, the other party will tear it down.",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "She stood up and prepared to return to her workstation. My stomach growled. She remembered that she hadn't eaten at noon - she often forgot when she was working."
+    },
+    {
+      "type": "paragraph",
+      "text": "Go buy coffee. Forget it, let's buy something to eat."
+    },
+    {
+      "type": "paragraph",
+      "text": "When she came back with the coffee, the cup leaked."
+    },
+    {
+      "type": "paragraph",
+      "text": "A thin line of brown water seeped out from the crack in the bottom of the cup, flowed down her fingers, and dripped on the floor in the corridor."
+    },
+    {
+      "type": "paragraph",
+      "text": "1738 Saw it from behind the desk. He said nothing and pushed his cup over."
+    },
+    {
+      "type": "paragraph",
+      "text": "Han Yuchu looked at his cup, then at her own cup that was still leaking."
+    },
+    {
+      "type": "dialogue",
+      "speaker": "3167",
+      "text": "...Well, okay.",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "She took his cup."
+    },
+    {
+      "type": "internal_monologue",
+      "character": "3167",
+      "text": "The data is used correctly.\n\nI haven't felt this way for a long time."
+    },
+    {
+      "type": "scene_break",
+      "style": "line"
+    },
+    {
+      "type": "paragraph",
+      "text": "Second week of January. Morning."
+    },
+    {
+      "type": "paragraph",
+      "text": "On the second week of January, when Han Yuchu arrived at her workstation in the morning, there was a paper bag on the desk. Inside was a sandwich and a small carton of orange juice."
+    },
+    {
+      "type": "paragraph",
+      "text": "No signature. But she could only think of one person in the base who would do such a thing."
+    },
+    {
+      "type": "paragraph",
+      "text": "2275 passed her workstation ten minutes later and saw her eating a sandwich."
+    },
+    {
+      "type": "dialogue",
+      "speaker": "2275",
+      "text": "Does the breakfast taste good?",
+      "emotion": "happy"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "3167",
+      "text": "Um. Thanks.",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "2275 waved her hand and left."
+    },
+    {
+      "type": "paragraph",
+      "text": "Han Yuchu bit into her sandwich and thought about one question: why?"
+    },
+    {
+      "type": "paragraph",
+      "text": "She did nothing to help 2275. There is no special intersection. 2275 doesn't even know what she's investigating. There was no reason to bring her breakfast - nothing to do with reward, nothing to do with wooing, and certainly not a social strategy."
+    },
+    {
+      "type": "paragraph",
+      "text": "But 2275 doesn’t seem to have it."
+    },
+    {
+      "type": "internal_monologue",
+      "character": "3167",
+      "text": "That's the kind of person she is."
+    },
+    {
+      "type": "scene_break",
+      "style": "dots"
+    },
+    {
+      "type": "paragraph",
+      "text": "Spent a few more minutes in the pantry. 2275 was talking about school—final exams, a difficult course project, roommates snoring. Han Yuchu listened and occasionally interjected."
+    },
+    {
+      "type": "dialogue",
+      "speaker": "2275",
+      "text": "Was this the same when you were in college? Only sleep four hours a day?",
+      "emotion": "happy"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "3167",
+      "text": "less. But it wasn't because of the schoolwork, it was because the bed collapsed. Repaired three times.",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "2275 smiled. The laugh was genuine, without politeness. Han Yuchu watched her and the corners of her own mouth moved, just slightly."
+    },
+    {
+      "type": "scene_break",
+      "style": "line"
+    },
+    {
+      "type": "paragraph",
+      "text": "The phone vibrated. Email from the client."
+    },
+    {
+      "type": "paragraph",
+      "text": "\"Ms. Han, the investigation has been ongoing for nearly three months. How is the current progress? Can you provide a phased report?\""
+    },
+    {
+      "type": "paragraph",
+      "text": "She looked at the email. I watched it for a long time."
+    },
+    {
+      "type": "paragraph",
+      "text": "Then put the phone back on the table."
+    },
+    {
+      "type": "scene_break",
+      "style": "dots"
+    },
+    {
+      "type": "paragraph",
+      "text": "Late one night, Han Yuchu habitually opened the \"ESAP - Field Investigation\" folder."
+    },
+    {
+      "type": "paragraph",
+      "text": "Last updated: two weeks ago."
+    },
+    {
+      "type": "paragraph",
+      "text": "She stared at the date for a few seconds. Two weeks. She's been here for almost three months, and the investigation folder hasn't been updated in two weeks."
+    },
+    {
+      "type": "paragraph",
+      "text": "She didn't forget."
+    },
+    {
+      "type": "paragraph",
+      "text": "She has been at the base every day for the past two weeks. We are exposed to information every day. But that information - the breakfast brought by 2275, the seriousness with which 1738 prepared negotiation materials, the loose interface of the communication panel, the screen of 1547 that was still on at three o'clock in the morning - these do not belong to the investigation folder."
+    },
+    {
+      "type": "paragraph",
+      "text": "They belong to something else."
+    },
+    {
+      "type": "internal_monologue",
+      "character": "3167",
+      "text": "Not forgotten.\n\nJust not in a hurry."
+    },
+    {
+      "type": "paragraph",
+      "text": "She closed the folder. Another window opened - the background information for the next negotiation sent by 1738 requires data support."
+    },
+    {
+      "type": "paragraph",
+      "text": "She started working."
+    }
+  ]
+}

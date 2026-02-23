@@ -1,0 +1,124 @@
+{
+  "id": "ch-05",
+  "title": "A Rare Moment Without Bad Luck",
+  "subtitle": "November 2025",
+  "readingTime": 7,
+  "perspectiveCharacter": "3167",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "2:14 a.m. She was the only one left in the base."
+    },
+    {
+      "type": "paragraph",
+      "text": "No - 1547 may still be in the computer room. There is an occasional faint light flickering in the direction of her workstation. But that doesn't count. 1547 There is almost no sound when working late at night, and its presence is equivalent to that of a running server."
+    },
+    {
+      "type": "paragraph",
+      "text": "There were three analysis windows open on the screen in front of Han Yuchu. On the left is the original heat flux data of the accident, in the middle is the Feedscatteron technical debris information she has collected from various channels in the past two months, and on the right is a blank correlation analysis model, waiting for her to fill in the clues."
+    },
+    {
+      "type": "paragraph",
+      "text": "This was the only time she was safe from bad luck."
+    },
+    {
+      "type": "paragraph",
+      "text": "Facing pure data, facing numbers and models on the screen - there is no hard drive that can be broken, no coffee that can be spilled, and no equipment that can get water in. There is only a relationship between her and the information. Relations that are clean, precise, and not mocked by probability theory."
+    },
+    {
+      "type": "internal_monologue",
+      "character": "3167",
+      "text": "Accident: June 17, 2025, 14:41. A certain laboratory.\n\nKnown:\n- The heat flux peak comes too fast (0.7 seconds) and the decay is cliff-like.\n- Traces of Fluid Titanium in the residue (No. R-14)\n- The precursor signal lasts about 27 milliseconds and is suspected to be the decay signature of Feedscatteron particles in metals\n\nHypothesis: Someone attempted to manipulate Feedscatteron particles on a human device, and the current exceeded a critical value, causing chain decay.\n\nThe missing link: Where did they get their Feedscatteron technical knowledge?"
+    },
+    {
+      "type": "scene_break",
+      "style": "dots"
+    },
+    {
+      "type": "paragraph",
+      "text": "She spent three days sifting through archives of dark web forums for information. Most of it is noise—conspiracy theories, pseudoscience, fear-mongering about android. But in the early morning of the third day, she found a deleted fragment of the research report."
+    },
+    {
+      "type": "paragraph",
+      "text": "The report has no author signature and no institutional logo. There are only the first three pages of the main text and a half-page appendix. The content is about the design prototype of a \"device with directional interference capability for Feedscatter field\" - including actual measured data of frequency modulation parameters and interference effects."
+    },
+    {
+      "type": "paragraph",
+      "text": "Han Yuchu put the fragments of the report together with the accident data and made a spectrum comparison."
+    },
+    {
+      "type": "paragraph",
+      "text": "Overlap 73%."
+    },
+    {
+      "type": "paragraph",
+      "text": "Not a perfect match. But for two pieces of data coming from different sources and describing different events, a 73% spectrum overlap means one thing: they use the same source of technology."
+    },
+    {
+      "type": "scene_break",
+      "style": "line"
+    },
+    {
+      "type": "paragraph",
+      "text": "She stayed at the ESAP site for almost two months. During this time, she pieced together some information about the DT-03 incident from daily observations and public sources."
+    },
+    {
+      "type": "paragraph",
+      "text": "DT-03. A data tower. Due to human interference in 2022, Feedscatter field dissipated and became permanently inactive. Members of ESAP recovered the jamming equipment and analyzed it afterwards, concluding: \"The designer had knowledge of Feedscatter field that went beyond the public literature.\""
+    },
+    {
+      "type": "paragraph",
+      "text": "Go beyond what is known in the published literature."
+    },
+    {
+      "type": "paragraph",
+      "text": "Han Yuchu conducted another round of cross-analysis between the jamming device parameters in the report fragments and the public information about the DT-03 incident."
+    },
+    {
+      "type": "internal_monologue",
+      "character": "3167",
+      "text": "Chain:\n\nDT-03 Incident → The jamming equipment was recovered, but the designer’s information was not fully ascertained → Fragments of Feedscatteron technical knowledge leaked out through some channel → The human research team obtained these fragments → Trying to reproduce some of the characteristics of Feedscatteron particles on human equipment → The experiment went out of control → Accident\n\nIf the hypothesis is true, the accident was not an isolated incident. It is the end of a longer chain. And upstream of the chain points to the human aspect of the DT-03 incident."
+    },
+    {
+      "type": "paragraph",
+      "text": "She leaned back in her chair. Nothing could be seen outside the window—not even the moon in the late November night."
+    },
+    {
+      "type": "paragraph",
+      "text": "This was deeper than she expected."
+    },
+    {
+      "type": "scene_break",
+      "style": "dots"
+    },
+    {
+      "type": "paragraph",
+      "text": "The screen's light appears bright in a quiet room."
+    },
+    {
+      "type": "paragraph",
+      "text": "Han Yuchu saved the analysis results, but not in the \"ESAP - Field Investigation\" folder. She created a new encrypted folder and put all accident-related analysis into it."
+    },
+    {
+      "type": "paragraph",
+      "text": "She has nothing to hide. It’s just that the nature of the information has changed. It’s no longer just “survey data” – it involves a traumatic event at ESAP. What would happen if she wrote this information into a report and submitted it to the client?"
+    },
+    {
+      "type": "paragraph",
+      "text": "She doesn't know. But she knew she didn't want to hand it over before she figured it out."
+    },
+    {
+      "type": "internal_monologue",
+      "character": "3167",
+      "text": "...Well, okay."
+    },
+    {
+      "type": "paragraph",
+      "text": "She turned off the screen. It's half past three in the morning."
+    },
+    {
+      "type": "paragraph",
+      "text": "When I passed the door of the computer room, the light inside was still on."
+    }
+  ]
+}

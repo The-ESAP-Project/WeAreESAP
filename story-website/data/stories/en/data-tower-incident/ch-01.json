@@ -7,7 +7,10 @@
   "content": [
     {
       "type": "atmosphere",
-      "visual": { "mood": "calm", "animation": "fade-in" },
+      "visual": {
+        "mood": "calm",
+        "animation": "fade-in"
+      },
       "children": [
         {
           "type": "paragraph",
@@ -34,7 +37,10 @@
     },
     {
       "type": "atmosphere",
-      "visual": { "mood": "dramatic", "animation": "fade-in" },
+      "visual": {
+        "mood": "dramatic",
+        "animation": "fade-in"
+      },
       "children": [
         {
           "type": "paragraph",
@@ -86,7 +92,10 @@
     },
     {
       "type": "atmosphere",
-      "visual": { "mood": "dark", "animation": "pulse" },
+      "visual": {
+        "mood": "dark",
+        "animation": "pulse"
+      },
       "children": [
         {
           "type": "paragraph",
