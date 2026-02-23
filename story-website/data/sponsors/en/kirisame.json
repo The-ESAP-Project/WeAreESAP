@@ -1,6 +1,6 @@
 {
   "name": "Kirisame Co.",
-  "description": "A creative brand guided by \"Lunar Recitation Aesthetics\", providing editorial and design support for the ESAP Project.",
+  "description": "Providing editorial and design support for the ESAP Project through a unique visual philosophy.",
   "sections": [
     {
       "id": "about",
@@ -8,7 +8,7 @@
       "content": [
         {
           "type": "paragraph",
-          "content": "Founded in 2017, Kirisame Co. is a creative brand built around the philosophy of \"Lunar Recitation Aesthetics.\" Through design deconstruction and visual philosophy, Kirisame pursues restrained yet expressive forms of communication."
+          "content": "Founded in 2017, Kirisame Co. pursues restrained yet expressive forms of communication through design deconstruction and visual philosophy."
         }
       ]
     },

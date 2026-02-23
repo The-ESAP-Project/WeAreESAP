@@ -5,8 +5,7 @@
   "url": "https://kirisame.asumi.ltd/",
   "heroImage": "/assets/images/sponsors/kirisame/hero.webp",
   "images": [
-    "/assets/images/sponsors/kirisame/img1.webp",
-    "/assets/images/sponsors/kirisame/img2.webp"
+    "/assets/images/sponsors/kirisame/img1.webp"
   ],
   "theme": {
     "primary": "#2a3050",
