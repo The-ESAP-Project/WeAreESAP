@@ -73,8 +73,9 @@ export function SponsorTab({ sponsor }: SponsorTabProps) {
                 src={sponsor.heroImage!}
                 alt={sponsor.name}
                 fill
-                className="object-cover"
+                className="object-cover select-none pointer-events-none [-webkit-touch-callout:none]"
                 sizes="(max-width: 640px) 100vw, 896px"
+                draggable={false}
               />
               <div
                 className="absolute inset-0"
@@ -91,8 +92,9 @@ export function SponsorTab({ sponsor }: SponsorTabProps) {
                       src={sponsor.logo}
                       alt={sponsor.name}
                       fill
-                      className="object-contain p-1.5"
+                      className="object-contain p-1.5 select-none pointer-events-none [-webkit-touch-callout:none]"
                       sizes="56px"
+                      draggable={false}
                     />
                   </div>
                 )}
@@ -125,8 +127,9 @@ export function SponsorTab({ sponsor }: SponsorTabProps) {
                     src={sponsor.logo}
                     alt={sponsor.name}
                     fill
-                    className="object-contain p-1.5"
+                    className="object-contain p-1.5 select-none pointer-events-none [-webkit-touch-callout:none]"
                     sizes="48px"
+                    draggable={false}
                   />
                 </div>
               )}
@@ -179,7 +182,7 @@ export function SponsorTab({ sponsor }: SponsorTabProps) {
               <div
                 key={src}
                 className={cn(
-                  "relative aspect-video rounded-xl overflow-hidden border border-border",
+                  "relative aspect-video rounded-xl overflow-hidden border border-border group",
                   index === 0 && sponsor.images!.length > 2 && "sm:col-span-2"
                 )}
               >
@@ -187,7 +190,8 @@ export function SponsorTab({ sponsor }: SponsorTabProps) {
                   src={src}
                   alt={`${sponsor.name} - ${index + 1}`}
                   fill
-                  className="object-cover transition-transform duration-300 hover:scale-[1.02]"
+                  className="object-cover transition-transform duration-300 group-hover:scale-[1.02] select-none pointer-events-none [-webkit-touch-callout:none]"
+                  draggable={false}
                   sizes={
                     index === 0 && sponsor.images!.length > 2
                       ? "(max-width: 640px) 100vw, 896px"
