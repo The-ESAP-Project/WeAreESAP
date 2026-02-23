@@ -23,6 +23,7 @@ import { useReducedMotion } from "@/hooks/useReducedMotion";
 const contributors = [
   "AptS:1547 (Yuhan Bian / 卞雨涵)",
   "AptS:1548 (Yingyin Cai / 蔡颖茵)",
+  "AptS:1738 (Qingxian Lu / 陆清弦)",
 ];
 
 const thirdParty = [
