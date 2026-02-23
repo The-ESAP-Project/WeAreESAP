@@ -1,0 +1,33 @@
+{
+  "name": "一個小站",
+  "description": "「小さな駅の向こうに、普通の人の思考」——別為饅頭先生のブログ、ESAPプロジェクトにインフラとAPIサポートを提供。",
+  "sections": [
+    {
+      "id": "about",
+      "title": "一個小站について",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "一個小站は別為饅頭先生が運営する個人ブログで、技術探求と日常の思索を記録しています。インターネットメモ、技術コレクション、随筆などを掲載し、APIストアやJsDelivrプロキシなどの公益サービスも運営しています。"
+        }
+      ]
+    },
+    {
+      "id": "contribution",
+      "title": "協力内容",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "一個小站はESAPプロジェクトに以下のサポートを提供しています："
+        },
+        {
+          "type": "list",
+          "items": [
+            "draw.esaps.net のサーバーホスティング（SaaS）",
+            "NanoBanana APIの無償クレジット提供（AI関連機能向け）"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "name": "一个小站",
+  "description": "「小站之外，一个普通人的思考」——别为馒头老师的个人博客，为 ESAP 项目提供基础设施与 API 支持。",
+  "sections": [
+    {
+      "id": "about",
+      "title": "关于一个小站",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "一个小站是别为馒头老师运营的个人博客，记录技术探索与生活思考。站点涵盖互联网速记、技术收集、随记等内容，同时运营 API 商店与 JsDelivr 代理等公益服务。"
+        }
+      ]
+    },
+    {
+      "id": "contribution",
+      "title": "合作内容",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "一个小站为 ESAP 项目提供了以下支持："
+        },
+        {
+          "type": "list",
+          "items": [
+            "为 draw.esaps.net 提供服务器支持（SaaS）",
+            "提供免费 NanoBanana API 额度，支持项目的 AI 相关功能"
+          ]
+        }
+      ]
+    }
+  ]
+}

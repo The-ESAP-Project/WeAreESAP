@@ -1,0 +1,33 @@
+{
+  "name": "YGXZ",
+  "description": "\"Beyond the little station, thoughts of an ordinary person\" — A personal blog by Biewei Mantou, providing infrastructure and API support for the ESAP Project.",
+  "sections": [
+    {
+      "id": "about",
+      "title": "About YGXZ",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "YGXZ (一个小站) is a personal blog run by Biewei Mantou, documenting technology exploration and reflections on life. The site covers internet notes, tech collections, and personal musings, while also operating public services such as an API store and a JsDelivr proxy."
+        }
+      ]
+    },
+    {
+      "id": "contribution",
+      "title": "Contributions",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "YGXZ provides the following support to the ESAP Project:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Server hosting for draw.esaps.net (SaaS)",
+            "Complimentary NanoBanana API credits for the project's AI-related features"
+          ]
+        }
+      ]
+    }
+  ]
+}

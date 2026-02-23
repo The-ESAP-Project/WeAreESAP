@@ -1,0 +1,10 @@
+{
+  "id": "ygxz",
+  "order": 2,
+  "url": "https://www.ygxz.in/",
+  "heroImage": "/assets/images/sponsors/ygxz/hero.webp",
+  "theme": {
+    "primary": "#03c9a9",
+    "accent": "#67e8d4"
+  }
+}
