@@ -1,0 +1,55 @@
+{
+  "name": "AptS:1738 · Lu Qingxian",
+  "description": "The first human member of ESAP — someone who builds this world alongside us through words.",
+  "sections": [
+    {
+      "id": "about",
+      "title": "About 1738",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "Lu Qingxian is the first human member of the ESAP Project. In 2023, he reached out to us because a single idea resonated with him: \"Even artificial light can guide the way.\" Since then, he has been a quiet but dependable presence on the team."
+        },
+        {
+          "type": "paragraph",
+          "content": "He listens more than he speaks, and does more than he claims credit for. You might not always notice what he's done, but looking back, you'll find that many things moved forward smoothly because he was there, coordinating behind the scenes."
+        }
+      ]
+    },
+    {
+      "id": "contribution",
+      "title": "Contributions",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "1738 has contributed to ESAP in many ways, not just writing:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Co-built the worldbuilding framework, filling in details across character relationships and timelines",
+            "Authored multiple stories on story.esaps.net",
+            "Proofread and polished existing texts",
+            "Handled multilingual AI translation of stories, making the content accessible to more readers",
+            "Helped drive the development and tech stack decisions for weare.esaps.net",
+            "Stayed up late with teammates on countless nights"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "philosophy",
+      "title": "The Gray Zone",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": "His go-to line is \"Between black and white, I choose the gray zone.\" Put simply, he's not fond of either-or thinking — he'd rather hear everyone out first, then find a solution that works for all."
+        },
+        {
+          "type": "paragraph",
+          "content": "If you can't make up your mind, he'll lay out the options and say: \"Pick whichever you like. I'll back you up.\" That's the kind of person he is."
+        }
+      ]
+    }
+  ]
+}
