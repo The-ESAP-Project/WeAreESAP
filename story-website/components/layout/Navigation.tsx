@@ -43,6 +43,7 @@ const navLinks = [
   { href: "/stories", key: "stories" },
   { href: "/characters", key: "characters" },
   { href: "/feed", key: "feed" },
+  { href: "/about", key: "about" },
 ] as const;
 
 export const Navigation = memo(function Navigation() {

@@ -37,6 +37,7 @@ export default getRequestConfig(async ({ requestLocale }) => {
       characters: (await import(`@/messages/${locale}/characters.json`))
         .default,
       rss: (await import(`@/messages/${locale}/rss.json`)).default,
+      about: (await import(`@/messages/${locale}/about.json`)).default,
     },
   };
 });

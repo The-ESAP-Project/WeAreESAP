@@ -20,6 +20,7 @@ import {
   LuChevronRight,
   LuChevronUp,
   LuCopy,
+  LuExternalLink,
   LuEye,
   LuGlobe,
   LuLock,
@@ -45,6 +46,7 @@ export type IconName =
   | "Settings"
   | "Search"
   | "Eye"
+  | "ExternalLink"
   | "Lock"
   | "LockOpen"
   | "Menu"
@@ -68,6 +70,7 @@ const iconMap: Record<IconName, ComponentType<{ className?: string }>> = {
   Settings: LuSettings,
   Search: LuSearch,
   Eye: LuEye,
+  ExternalLink: LuExternalLink,
   Lock: LuLock,
   LockOpen: LuLockOpen,
   Menu: LuMenu,

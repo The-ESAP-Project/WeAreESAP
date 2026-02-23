@@ -51,6 +51,7 @@ export const ROUTES = {
   home: "/",
   stories: "/stories",
   characters: "/characters",
+  about: "/about",
 } as const;
 
 export const SITE_CONFIG = {

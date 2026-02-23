@@ -15,7 +15,8 @@
     "home": "Home",
     "stories": "Stories",
     "characters": "Characters",
-    "feed": "Feed"
+    "feed": "Feed",
+    "about": "About"
   },
   "footer": {
     "projectName": "ESAP Stories",

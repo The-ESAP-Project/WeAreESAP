@@ -1,0 +1,34 @@
+{
+  "metadata": {
+    "title": "About",
+    "description": "About the ESAP Stories project and our friends"
+  },
+  "tabs": {
+    "project": "Project"
+  },
+  "project": {
+    "title": "ESAP Stories",
+    "subtitle": "The ESAP Project Stories",
+    "description": "An interactive sci-fi story reading platform about androids and humans, answering 'what does it mean to be alive' through stories.",
+    "links": "Links",
+    "github": "GitHub Repository",
+    "githubDescription": "View source code, submit issues, or contribute",
+    "weare": "Character Archive",
+    "weareDescription": "Explore character profiles, timelines, and relationship graphs",
+    "website": "Official Website",
+    "websiteDescription": "Learn more about The ESAP Project",
+    "team": "Team",
+    "teamDescription": "Developed and maintained by The ESAP Project",
+    "license": "License",
+    "licenseContent": "Story content is published under CC-BY 4.0",
+    "licenseCode": "Source code is open-sourced under Apache 2.0",
+    "notice": "Open Source Notice",
+    "noticeToggle": "Show details",
+    "noticeContributors": "Contributors",
+    "noticeThirdParty": "Third-party Software"
+  },
+  "sponsor": {
+    "visitWebsite": "Visit Website",
+    "gallery": "Gallery"
+  }
+}

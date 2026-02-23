@@ -1,0 +1,15 @@
+{
+  "id": "kirisame",
+  "order": 1,
+  "logo": "/assets/images/sponsors/kirisame/logo.webp",
+  "url": "https://kirisame.asumi.ltd/",
+  "heroImage": "/assets/images/sponsors/kirisame/hero.webp",
+  "images": [
+    "/assets/images/sponsors/kirisame/img1.webp",
+    "/assets/images/sponsors/kirisame/img2.webp"
+  ],
+  "theme": {
+    "primary": "#2a3050",
+    "accent": "#a0aac0"
+  }
+}

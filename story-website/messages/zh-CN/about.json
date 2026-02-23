@@ -1,0 +1,34 @@
+{
+  "metadata": {
+    "title": "关于",
+    "description": "关于 ESAP Stories 项目以及我们的朋友们"
+  },
+  "tabs": {
+    "project": "项目简介"
+  },
+  "project": {
+    "title": "ESAP Stories",
+    "subtitle": "逃离计划故事站",
+    "description": "一个以仿生人与人类为主题的科幻世界观交互式故事阅读平台，用故事回答「活着到底算什么」。",
+    "links": "相关链接",
+    "github": "GitHub 仓库",
+    "githubDescription": "查看源代码、提交 Issue 或参与贡献",
+    "weare": "角色档案馆",
+    "weareDescription": "探索仿生人与人类的角色档案、时间线与关系图谱",
+    "website": "官方网站",
+    "websiteDescription": "了解更多关于逃离计划的信息",
+    "team": "制作团队",
+    "teamDescription": "由 The ESAP Project 开发与维护",
+    "license": "许可协议",
+    "licenseContent": "故事内容采用 CC-BY 4.0 协议发布",
+    "licenseCode": "代码采用 Apache 2.0 协议开源",
+    "notice": "开源声明",
+    "noticeToggle": "查看详情",
+    "noticeContributors": "贡献者",
+    "noticeThirdParty": "第三方软件"
+  },
+  "sponsor": {
+    "visitWebsite": "访问网站",
+    "gallery": "图片展示"
+  }
+}

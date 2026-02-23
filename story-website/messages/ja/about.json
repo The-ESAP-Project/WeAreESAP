@@ -1,0 +1,34 @@
+{
+  "metadata": {
+    "title": "このサイトについて",
+    "description": "ESAP Stories プロジェクトと仲間たちについて"
+  },
+  "tabs": {
+    "project": "プロジェクト紹介"
+  },
+  "project": {
+    "title": "ESAP Stories",
+    "subtitle": "ESAP プロジェクト ストーリーサイト",
+    "description": "アンドロイドと人間をテーマにしたSF世界観のインタラクティブ・ストーリー・リーディング・プラットフォーム。物語で「生きるとは何か」に答えます。",
+    "links": "リンク",
+    "github": "GitHub リポジトリ",
+    "githubDescription": "ソースコードの閲覧、Issue の投稿、コントリビュート",
+    "weare": "キャラクターアーカイブ",
+    "weareDescription": "キャラクターのプロフィール、タイムライン、関係図を探索",
+    "website": "公式サイト",
+    "websiteDescription": "ESAP プロジェクトの詳細情報",
+    "team": "チーム",
+    "teamDescription": "The ESAP Project により開発・メンテナンス",
+    "license": "ライセンス",
+    "licenseContent": "ストーリーコンテンツは CC-BY 4.0 ライセンスで公開",
+    "licenseCode": "ソースコードは Apache 2.0 ライセンスで公開",
+    "notice": "オープンソース表記",
+    "noticeToggle": "詳細を表示",
+    "noticeContributors": "コントリビューター",
+    "noticeThirdParty": "サードパーティソフトウェア"
+  },
+  "sponsor": {
+    "visitWebsite": "ウェブサイトを訪問",
+    "gallery": "ギャラリー"
+  }
+}
