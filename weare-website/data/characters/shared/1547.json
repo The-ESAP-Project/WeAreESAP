@@ -7,5 +7,6 @@
   },
   "avatar": "/assets/images/characters/1547/logo.webp",
   "backgroundImage": "/assets/images/characters/1547/hero.webp",
+  "backgroundPosition": "72% center",
   "tier": "core"
 }
