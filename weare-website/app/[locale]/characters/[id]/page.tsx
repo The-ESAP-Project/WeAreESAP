@@ -22,16 +22,13 @@ import {
   CharacterInfo,
   PullToReveal,
 } from "@/components/character/detail";
-import { CharacterSkeleton, GraphSkeleton } from "@/components/loading";
+import { CharacterSkeleton } from "@/components/loading";
 import { PersonJsonLd } from "@/components/seo";
 import { locales } from "@/i18n/request";
 import { DEFAULT_IMAGES } from "@/lib/constants";
 import { loadJsonFile } from "@/lib/data-loader";
 import { buildAlternates } from "@/lib/metadata";
-import { getCharacterRelationships } from "@/lib/relationship-parser";
 import type { Character } from "@/types/character";
-import type { Relationship } from "@/types/relationship";
-import type { RelationshipNodeData } from "@/types/relationship-node";
 
 // 懒加载非首屏组件（直接导入具体文件，避免 barrel export 影响 tree-shaking）
 const CharacterStory = dynamic(
@@ -80,14 +77,6 @@ const CharacterPhilosophy = dynamic(
       default: mod.CharacterPhilosophy,
     })),
   { loading: () => <CharacterSkeleton /> }
-);
-
-const CharacterRelationships = dynamic(
-  () =>
-    import("@/components/character/detail/CharacterRelationships").then(
-      (mod) => ({ default: mod.CharacterRelationships })
-    ),
-  { loading: () => <GraphSkeleton /> }
 );
 
 // 生成静态参数
@@ -203,34 +192,6 @@ async function getCharacter(
   return loadJsonFile<Character>(["data", "characters"], `${id}.json`, locale);
 }
 
-// 获取相关角色的基本数据（用于关系图谱）
-async function getRelatedCharactersData(
-  relationships: Relationship[],
-  locale: string
-): Promise<Record<string, RelationshipNodeData>> {
-  const characterMap: Record<string, RelationshipNodeData> = {};
-
-  // 并行加载所有相关角色（性能优化：避免串行等待）
-  const relatedCharsPromises = relationships.map((rel) =>
-    getCharacter(rel.targetId, locale)
-  );
-  const relatedChars = await Promise.all(relatedCharsPromises);
-
-  // 构建角色映射表
-  relatedChars.forEach((relatedChar, index) => {
-    if (relatedChar) {
-      const rel = relationships[index];
-      characterMap[rel.targetId] = {
-        id: relatedChar.id,
-        name: relatedChar.name,
-        color: relatedChar.color.primary,
-      };
-    }
-  });
-
-  return characterMap;
-}
-
 export default async function CharacterDetailPage({
   params,
 }: {
@@ -244,15 +205,6 @@ export default async function CharacterDetailPage({
     notFound();
   }
 
-  // 获取关系数据
-  const relationships = await getCharacterRelationships(id);
-
-  // 预获取相关角色的数据
-  const relatedCharactersData = await getRelatedCharactersData(
-    relationships,
-    locale
-  );
-
   return (
     <PullToReveal
       hiddenProfile={character.hiddenProfile}
@@ -261,44 +213,16 @@ export default async function CharacterDetailPage({
     >
       <PersonJsonLd character={character} locale={locale} />
       <main className="min-h-screen">
-        {/* Hero 区域 */}
-        <CharacterHero character={character} />
-
-        {/* 内容区域 */}
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-          <div className="space-y-20">
-            {/* 基本信息 */}
-            <CharacterInfo character={character} />
-
-            {/* 角色故事 */}
-            <CharacterStory character={character} />
-
-            {/* 说话风格 */}
-            <CharacterSpeechStyle character={character} />
-
-            {/* 能力设定 */}
-            <CharacterAbilities character={character} />
-
-            {/* 日常生活 */}
-            <CharacterDailyLife character={character} />
-
-            {/* 特殊时刻 */}
-            <CharacterSpecialMoments character={character} />
-
-            {/* 哲学观 */}
-            <CharacterPhilosophy character={character} />
-
-            {/* 人际关系 */}
-            <CharacterRelationships
-              character={character}
-              relationships={relationships}
-              relatedCharactersData={relatedCharactersData}
-            />
-          </div>
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-16 space-y-6">
+          <CharacterHero character={character} />
+          <CharacterInfo character={character} />
+          <CharacterStory character={character} />
+          <CharacterSpeechStyle character={character} />
+          <CharacterAbilities character={character} />
+          <CharacterDailyLife character={character} />
+          <CharacterSpecialMoments character={character} />
+          <CharacterPhilosophy character={character} />
         </div>
-
-        {/* 底部间距 */}
-        <div className="h-20" />
       </main>
     </PullToReveal>
   );

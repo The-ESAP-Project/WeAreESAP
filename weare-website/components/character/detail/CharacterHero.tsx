@@ -13,13 +13,10 @@
 
 "use client";
 
-import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
-import { useRef } from "react";
-import { TransitionLink } from "@/components/ui";
-import { useReducedMotion } from "@/hooks/useReducedMotion";
-import { getContrastTextColor, getContrastTextColorDark } from "@/lib/utils";
+import { AnimatedSection, TransitionLink } from "@/components/ui";
+import { Icon } from "@/components/ui/Icon";
 import type { Character } from "@/types/character";
 
 interface CharacterHeroProps {
@@ -28,157 +25,71 @@ interface CharacterHeroProps {
 
 export function CharacterHero({ character }: CharacterHeroProps) {
   const t = useTranslations("characters");
-  const sectionRef = useRef<HTMLElement>(null);
-  const shouldReduceMotion = useReducedMotion();
-
-  // 预计算颜色值
-  const lightModeColor = getContrastTextColor(character.color.primary);
-  const darkModeColor = getContrastTextColorDark(character.color.primary);
-
-  // 监听滚动进度
-  const { scrollYProgress } = useScroll({
-    target: sectionRef,
-    offset: ["start start", "end start"],
-  });
-
-  // 背景图视差效果（慢速向下移动，0.5倍速度）
-  const backgroundYTransform = useTransform(
-    scrollYProgress,
-    [0, 1],
-    ["0%", "50%"]
-  );
-  // 如果启用了减少动画，禁用视差效果
-  const backgroundY = shouldReduceMotion ? "0%" : backgroundYTransform;
-
-  // 内容区域视差效果（稍快向上移动，1.2倍速度）
-  const contentYTransform = useTransform(
-    scrollYProgress,
-    [0, 1],
-    ["0%", "-20%"]
-  );
-  // 如果启用了减少动画，禁用视差效果
-  const contentY = shouldReduceMotion ? "0%" : contentYTransform;
-
-  // 内容淡出效果
-  const contentOpacityTransform = useTransform(
-    scrollYProgress,
-    [0, 0.5, 1],
-    [1, 0.8, 0]
-  );
-  // 如果启用了减少动画，保持完全不透明
-  const contentOpacity = shouldReduceMotion ? 1 : contentOpacityTransform;
 
   return (
-    <section
-      ref={sectionRef}
-      className="relative min-h-[700px] md:min-h-[600px] flex items-center justify-center overflow-hidden"
-    >
-      {/* 背景图片层 - z-0，添加视差效果 */}
-      {character.backgroundImage && (
-        <motion.div className="absolute inset-0 z-0" style={{ y: backgroundY }}>
-          <Image
-            src={character.backgroundImage}
-            alt={character.name}
-            fill
-            sizes="100vw"
-            className="object-cover"
-            priority
-          />
-        </motion.div>
-      )}
-
-      {/* 渐变遮罩层 - z-1，加强不透明度 */}
-      <div
-        className="absolute inset-0 z-[1]"
-        style={{
-          background: character.backgroundImage
-            ? `linear-gradient(135deg, ${character.color.primary}40, ${character.color.dark}60)`
-            : `linear-gradient(135deg, ${character.color.primary}50, ${character.color.dark}70)`,
-        }}
-      />
-
-      {/* 返回按钮 - z-20，固定不动 */}
+    <AnimatedSection>
       <TransitionLink
         href="/characters"
-        className="absolute top-8 left-8 z-20 px-4 py-2 rounded-lg bg-black/50 dark:bg-black/70 backdrop-blur-md text-white hover:bg-black/70 dark:hover:bg-black/90 transition-all"
+        className="inline-flex items-center gap-1.5 mb-3 px-3 py-1.5 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-muted/50 transition-all"
       >
+        <Icon name="ArrowLeft" size={14} />
         {t("ui.backToList")}
       </TransitionLink>
 
-      {/* 内容区域 - z-10，添加视差和淡出效果 */}
-      <motion.div
-        className="relative z-10 text-center text-white px-4"
-        initial={{ opacity: 0, y: 30 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-        style={{
-          y: contentY,
-          opacity: contentOpacity,
-          textShadow: "0 2px 8px rgba(0,0,0,0.5)",
-          // @ts-expect-error - CSS 自定义属性在 CSSProperties 中的类型限制
-          "--char-color-light": lightModeColor,
-          "--char-color-dark": darkModeColor,
-        }}
-      >
-        {/* 装饰线 */}
-        <motion.div
-          className="w-24 h-1 rounded-full mx-auto mb-8"
-          initial={{ width: 0 }}
-          animate={{ width: 96 }}
-          transition={{ delay: 0.3, duration: 0.6 }}
-          style={{
-            background: `linear-gradient(90deg, ${character.color.primary}, ${character.color.dark})`,
-          }}
-        />
-
-        {/* 角色代号 */}
-        <motion.div
-          className="text-3xl md:text-4xl font-mono font-bold mb-6 text-white"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.2, duration: 0.6 }}
-        >
-          {character.code}
-        </motion.div>
-
-        {/* 角色名称 */}
-        <motion.h1
-          className="text-5xl md:text-7xl font-bold mb-8"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.4, duration: 0.6 }}
-        >
-          {character.name}
-        </motion.h1>
-
-        {/* 角色定位 */}
-        <motion.div
-          className="text-2xl md:text-3xl mb-8 opacity-90"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.5, duration: 0.6 }}
-        >
-          {character.role}
-        </motion.div>
-
-        {/* 角色引言 */}
-        <motion.p
-          className="text-xl md:text-2xl italic opacity-80 max-w-3xl mx-auto leading-relaxed"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.6, duration: 0.6 }}
-        >
-          &quot;{character.quote}&quot;
-        </motion.p>
-      </motion.div>
-
-      {/* 底部渐变 - z-2，平滑过渡到下方内容 */}
-      <div
-        className="absolute bottom-0 left-0 right-0 h-32 z-[2] pointer-events-none"
-        style={{
-          background: `linear-gradient(to top, var(--background), transparent)`,
-        }}
-      />
-    </section>
+      <div className="relative rounded-xl overflow-hidden border border-border">
+        <div className="relative aspect-[5/2]">
+          {character.backgroundImage ? (
+            <Image
+              src={character.backgroundImage}
+              alt={character.name}
+              fill
+              className="object-cover select-none pointer-events-none [-webkit-touch-callout:none]"
+              style={
+                character.backgroundPosition
+                  ? { objectPosition: character.backgroundPosition }
+                  : undefined
+              }
+              sizes="(max-width: 640px) 100vw, 1024px"
+              priority
+            />
+          ) : (
+            <div
+              className="absolute inset-0"
+              style={{
+                background: `linear-gradient(135deg, ${character.color.primary}, ${character.color.dark})`,
+              }}
+            />
+          )}
+          <div
+            className="absolute inset-0"
+            style={{
+              background: `linear-gradient(to top, ${character.color.dark}ee 0%, ${character.color.dark}80 30%, transparent 70%)`,
+            }}
+          />
+          <div className="absolute bottom-0 left-0 right-0 p-5 flex items-end gap-4">
+            {character.avatar && (
+              <div className="relative w-14 h-14 rounded-xl overflow-hidden border border-white/20 bg-black/30 backdrop-blur-sm shrink-0">
+                <Image
+                  src={character.avatar}
+                  alt={character.name}
+                  fill
+                  className="object-contain p-1.5 select-none pointer-events-none [-webkit-touch-callout:none]"
+                  sizes="56px"
+                  draggable={false}
+                />
+              </div>
+            )}
+            <div>
+              <div className="text-sm font-mono text-white/70 mb-1">
+                {character.code}
+              </div>
+              <h1 className="text-3xl font-bold text-white drop-shadow-lg">
+                {character.name}
+              </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </AnimatedSection>
   );
 }

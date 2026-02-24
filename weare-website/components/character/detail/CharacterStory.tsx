@@ -14,6 +14,8 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import { useMemo } from "react";
+import { AnimatedSection } from "@/components/ui";
 import type { Character } from "@/types/character";
 
 interface CharacterStoryProps {
@@ -22,74 +24,67 @@ interface CharacterStoryProps {
 
 export function CharacterStory({ character }: CharacterStoryProps) {
   const t = useTranslations("characters");
-  // 从 meta 中读取背景故事
   const background = character.meta?.background as string | undefined;
   const characterTraits = character.meta?.characterTraits as
     | string[]
     | undefined;
 
+  const gradientV = useMemo(
+    () => ({
+      background: `linear-gradient(180deg, ${character.color.primary}, ${character.color.dark})`,
+    }),
+    [character.color.primary, character.color.dark]
+  );
+
   if (!background && !characterTraits) {
-    return null; // 如果没有故事内容，不渲染此模块
+    return null;
   }
 
   return (
-    <section className="scroll-mt-24" id="story">
-      <h2 className="text-3xl font-bold mb-8 text-foreground flex items-center gap-3">
-        <span
-          className="w-2 h-8 rounded-full"
-          style={{
-            background: `linear-gradient(to bottom, ${character.color.primary}, ${character.color.dark})`,
-          }}
-        />
-        {t("detail.sections.story")}
-      </h2>
+    <AnimatedSection delay={0.2}>
+      <div className="p-5 rounded-xl border border-border bg-muted/30">
+        <h3 className="text-xl font-semibold text-foreground mb-4 flex items-center gap-3">
+          <span className="w-1 h-6 rounded-full" style={gradientV} />
+          {t("detail.sections.story")}
+        </h3>
 
-      <div className="space-y-8">
-        {/* 背景故事 */}
-        {background && (
-          <div className="bg-muted rounded-2xl p-8 md:p-10">
-            <h3 className="text-xl font-bold mb-6 text-foreground flex items-center gap-2">
-              <span
-                className="w-1.5 h-6 rounded-full"
-                style={{ backgroundColor: character.color.primary }}
-              />
-              {t("detail.story.background")}
-            </h3>
-            <div className="prose prose-lg max-w-none dark:prose-invert">
+        <div className="space-y-4">
+          {/* 背景故事 */}
+          {background && (
+            <div>
+              <h4 className="text-base font-medium text-foreground mb-2">
+                {t("detail.story.background")}
+              </h4>
               <p className="text-foreground/90 leading-relaxed whitespace-pre-wrap">
                 {background}
               </p>
             </div>
-          </div>
-        )}
+          )}
 
-        {/* 性格特征 */}
-        {characterTraits && characterTraits.length > 0 && (
-          <div className="bg-muted rounded-2xl p-8 md:p-10">
-            <h3 className="text-xl font-bold mb-6 text-foreground flex items-center gap-2">
-              <span
-                className="w-1.5 h-6 rounded-full"
-                style={{ backgroundColor: character.color.primary }}
-              />
-              {t("detail.story.traits")}
-            </h3>
-            <ul className="space-y-4">
-              {characterTraits.map((trait, index) => (
-                <li
-                  key={index}
-                  className="flex items-start gap-4 text-foreground/90 leading-relaxed"
-                >
-                  <span
-                    className="flex-shrink-0 w-2 h-2 rounded-full mt-2"
-                    style={{ backgroundColor: character.color.primary }}
-                  />
-                  <span>{trait}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-        )}
+          {/* 性格特征 */}
+          {characterTraits && characterTraits.length > 0 && (
+            <div>
+              <h4 className="text-base font-medium text-foreground mb-2">
+                {t("detail.story.traits")}
+              </h4>
+              <ul className="space-y-2">
+                {characterTraits.map((trait, index) => (
+                  <li
+                    key={index}
+                    className="flex items-start gap-3 text-foreground/90 leading-relaxed"
+                  >
+                    <span
+                      className="flex-shrink-0 w-1.5 h-1.5 rounded-full mt-2"
+                      style={{ backgroundColor: character.color.primary }}
+                    />
+                    <span>{trait}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+        </div>
       </div>
-    </section>
+    </AnimatedSection>
   );
 }

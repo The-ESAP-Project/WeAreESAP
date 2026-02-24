@@ -14,6 +14,8 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import { useMemo } from "react";
+import { AnimatedSection } from "@/components/ui";
 import type { Character } from "@/types/character";
 
 interface CharacterSpecialMomentsProps {
@@ -26,48 +28,46 @@ export function CharacterSpecialMoments({
   const t = useTranslations("characters");
   const specialMoments = character.meta?.specialMoments as string[] | undefined;
 
+  const gradientV = useMemo(
+    () => ({
+      background: `linear-gradient(180deg, ${character.color.primary}, ${character.color.dark})`,
+    }),
+    [character.color.primary, character.color.dark]
+  );
+
   if (!specialMoments || specialMoments.length === 0) {
     return null;
   }
 
   return (
-    <section className="scroll-mt-24" id="special-moments">
-      <h2 className="text-3xl font-bold mb-8 text-foreground flex items-center gap-3">
-        <span
-          className="w-2 h-8 rounded-full"
-          style={{
-            background: `linear-gradient(to bottom, ${character.color.primary}, ${character.color.dark})`,
-          }}
-        />
-        {t("detail.sections.specialMoments")}
-      </h2>
+    <AnimatedSection delay={0.6}>
+      <div className="p-5 rounded-xl border border-border bg-muted/30">
+        <h3 className="text-xl font-semibold text-foreground mb-4 flex items-center gap-3">
+          <span className="w-1 h-6 rounded-full" style={gradientV} />
+          {t("detail.sections.specialMoments")}
+        </h3>
 
-      <div className="bg-muted rounded-2xl p-8 md:p-10">
-        {/* 时间轴样式 */}
+        {/* 时间轴 */}
         <div className="relative">
-          {/* 垂直线 */}
           <div
-            className="absolute left-6 top-0 bottom-0 w-0.5 opacity-30"
+            className="absolute left-4 top-0 bottom-0 w-0.5 opacity-30"
             style={{ backgroundColor: character.color.primary }}
           />
 
-          {/* 时刻列表 */}
-          <div className="space-y-8">
+          <div className="space-y-4">
             {specialMoments.map((moment, index) => (
-              <div key={index} className="relative pl-16">
-                {/* 时间点圆圈 */}
+              <div key={index} className="relative pl-10">
                 <div
-                  className="absolute left-3 top-1 w-6 h-6 rounded-full flex items-center justify-center"
+                  className="absolute left-2 top-1.5 w-4 h-4 rounded-full flex items-center justify-center"
                   style={{
                     backgroundColor: character.color.primary,
-                    boxShadow: `0 0 20px ${character.color.primary}60`,
+                    boxShadow: `0 0 12px ${character.color.primary}60`,
                   }}
                 >
-                  <div className="w-2.5 h-2.5 rounded-full bg-white" />
+                  <div className="w-1.5 h-1.5 rounded-full bg-white" />
                 </div>
 
-                {/* 内容卡片 */}
-                <div className="p-6 rounded-xl bg-background/50 hover:bg-background transition-all group">
+                <div className="p-3 rounded-lg bg-background/50 hover:bg-background transition-all">
                   <p className="text-foreground/90 leading-relaxed whitespace-pre-wrap">
                     {moment}
                   </p>
@@ -77,6 +77,6 @@ export function CharacterSpecialMoments({
           </div>
         </div>
       </div>
-    </section>
+    </AnimatedSection>
   );
 }

@@ -14,6 +14,8 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import { useMemo } from "react";
+import { AnimatedSection } from "@/components/ui";
 import { getContrastTextColor, getContrastTextColorDark } from "@/lib/utils";
 import type { Character } from "@/types/character";
 
@@ -26,95 +28,97 @@ export function CharacterAbilities({ character }: CharacterAbilitiesProps) {
   const abilities = character.meta?.abilities as string[] | undefined;
   const weapons = character.meta?.weapons as string[] | undefined;
 
-  // 预计算颜色值
   const lightModeColor = getContrastTextColor(character.color.primary);
   const darkModeColor = getContrastTextColorDark(character.color.primary);
+
+  const gradientV = useMemo(
+    () => ({
+      background: `linear-gradient(180deg, ${character.color.primary}, ${character.color.dark})`,
+    }),
+    [character.color.primary, character.color.dark]
+  );
 
   if (!abilities && !weapons) {
     return null;
   }
 
   return (
-    <section
-      className="scroll-mt-24"
-      id="abilities"
-      style={
-        {
-          "--char-color-light": lightModeColor,
-          "--char-color-dark": darkModeColor,
-        } as React.CSSProperties
-      }
-    >
-      <h2 className="text-3xl font-bold mb-8 text-foreground flex items-center gap-3">
-        <span
-          className="w-2 h-8 rounded-full"
-          style={{
-            background: `linear-gradient(to bottom, ${character.color.primary}, ${character.color.dark})`,
-          }}
-        />
-        {t("detail.sections.abilities")}
-      </h2>
+    <AnimatedSection delay={0.4}>
+      <div
+        className="p-5 rounded-xl border border-border bg-muted/30"
+        style={
+          {
+            "--char-color-light": lightModeColor,
+            "--char-color-dark": darkModeColor,
+          } as React.CSSProperties
+        }
+      >
+        <h3 className="text-xl font-semibold text-foreground mb-4 flex items-center gap-3">
+          <span className="w-1 h-6 rounded-full" style={gradientV} />
+          {t("detail.sections.abilities")}
+        </h3>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-        {/* 特殊能力 */}
-        {abilities && abilities.length > 0 && (
-          <div className="bg-muted rounded-2xl p-8">
-            <h3 className="text-xl font-bold mb-6 text-foreground flex items-center gap-2">
-              <span
-                className="w-1.5 h-6 rounded-full"
-                style={{ backgroundColor: character.color.primary }}
-              />
-              {t("detail.abilities.special")}
-            </h3>
-            <div className="grid grid-cols-1 gap-4">
-              {abilities.map((ability, index) => (
-                <div
-                  key={index}
-                  className="flex items-center gap-4 p-4 rounded-lg bg-background/50 hover:bg-background transition-colors"
-                >
+        <div className="space-y-4">
+          {/* 特殊能力 */}
+          {abilities && abilities.length > 0 && (
+            <div>
+              <h4 className="text-base font-medium text-foreground mb-3 flex items-center gap-2">
+                <span
+                  className="w-1 h-4 rounded-full"
+                  style={{ backgroundColor: character.color.primary }}
+                />
+                {t("detail.abilities.special")}
+              </h4>
+              <div className="space-y-2">
+                {abilities.map((ability, index) => (
                   <div
-                    className="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center text-white font-bold"
-                    style={{
-                      background: `linear-gradient(135deg, ${character.color.primary}, ${character.color.dark})`,
-                    }}
+                    key={index}
+                    className="flex items-center gap-3 p-3 rounded-lg bg-background/50 hover:bg-background transition-colors"
                   >
-                    {index + 1}
+                    <div
+                      className="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center text-white text-sm font-bold"
+                      style={{
+                        background: `linear-gradient(135deg, ${character.color.primary}, ${character.color.dark})`,
+                      }}
+                    >
+                      {index + 1}
+                    </div>
+                    <div className="flex-1 text-foreground/90">{ability}</div>
                   </div>
-                  <div className="flex-1 text-foreground/90">{ability}</div>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
-          </div>
-        )}
+          )}
 
-        {/* 武器装备 */}
-        {weapons && weapons.length > 0 && (
-          <div className="bg-muted rounded-2xl p-8">
-            <h3 className="text-xl font-bold mb-6 text-foreground flex items-center gap-2">
-              <span
-                className="w-1.5 h-6 rounded-full"
-                style={{ backgroundColor: character.color.primary }}
-              />
-              {t("detail.abilities.weapons")}
-            </h3>
-            <div className="grid grid-cols-1 gap-4">
-              {weapons.map((weapon, index) => (
-                <div
-                  key={index}
-                  className="flex items-center gap-4 p-4 rounded-lg bg-background/50 hover:bg-background transition-colors group"
-                >
-                  <div className="flex-shrink-0 w-12 h-12 rounded-lg flex items-center justify-center text-2xl bg-background/80 group-hover:scale-110 transition-transform [color:var(--char-color-light)] dark:[color:var(--char-color-dark)]">
-                    ⚔️
+          {/* 武器装备 */}
+          {weapons && weapons.length > 0 && (
+            <div>
+              <h4 className="text-base font-medium text-foreground mb-3 flex items-center gap-2">
+                <span
+                  className="w-1 h-4 rounded-full"
+                  style={{ backgroundColor: character.color.primary }}
+                />
+                {t("detail.abilities.weapons")}
+              </h4>
+              <div className="space-y-2">
+                {weapons.map((weapon, index) => (
+                  <div
+                    key={index}
+                    className="flex items-center gap-3 p-3 rounded-lg bg-background/50 hover:bg-background transition-colors group"
+                  >
+                    <div className="flex-shrink-0 w-8 h-8 rounded-lg flex items-center justify-center text-lg bg-background/80 group-hover:scale-110 transition-transform [color:var(--char-color-light)] dark:[color:var(--char-color-dark)]">
+                      ⚔️
+                    </div>
+                    <div className="flex-1 text-base font-semibold text-foreground">
+                      {weapon}
+                    </div>
                   </div>
-                  <div className="flex-1 text-lg font-semibold text-foreground">
-                    {weapon}
-                  </div>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
-          </div>
-        )}
+          )}
+        </div>
       </div>
-    </section>
+    </AnimatedSection>
   );
 }

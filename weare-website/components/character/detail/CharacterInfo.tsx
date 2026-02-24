@@ -14,7 +14,8 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import { getContrastTextColor, getContrastTextColorDark } from "@/lib/utils";
+import { useMemo } from "react";
+import { AnimatedSection } from "@/components/ui";
 import type { Character } from "@/types/character";
 
 interface CharacterInfoProps {
@@ -24,9 +25,12 @@ interface CharacterInfoProps {
 export function CharacterInfo({ character }: CharacterInfoProps) {
   const t = useTranslations("characters");
 
-  // 预计算颜色值
-  const lightModeColor = getContrastTextColor(character.color.primary);
-  const darkModeColor = getContrastTextColorDark(character.color.primary);
+  const gradientH = useMemo(
+    () => ({
+      background: `linear-gradient(90deg, ${character.color.primary}, ${character.color.dark})`,
+    }),
+    [character.color.primary, character.color.dark]
+  );
 
   const infoItems = [
     { label: t("detail.fields.code"), value: character.code },
@@ -54,74 +58,65 @@ export function CharacterInfo({ character }: CharacterInfoProps) {
       label: t("detail.fields.threeBodySystem"),
       value: character.meta?.threeBodySystem as string,
     },
-  ].filter((item) => item.value); // 过滤掉没有值的项
+  ].filter((item) => item.value);
 
   return (
-    <section
-      className="scroll-mt-24"
-      id="info"
-      style={
-        {
-          "--char-color-light": lightModeColor,
-          "--char-color-dark": darkModeColor,
-        } as React.CSSProperties
-      }
-    >
-      <h2 className="text-3xl font-bold mb-8 text-foreground flex items-center gap-3">
-        <span
-          className="w-2 h-8 rounded-full"
-          style={{
-            background: `linear-gradient(to bottom, ${character.color.primary}, ${character.color.dark})`,
-          }}
+    <AnimatedSection delay={0.1}>
+      <div className="relative p-5 rounded-xl border border-border bg-muted/30 overflow-hidden space-y-4">
+        <div
+          className="absolute top-0 left-0 right-0 h-0.5"
+          style={gradientH}
         />
-        {t("detail.sections.info")}
-      </h2>
 
-      <div className="bg-muted rounded-2xl p-8 md:p-10">
-        {/* 网格布局 */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {/* 角色定位 + 引言 */}
+        <div className="space-y-2">
+          <div className="text-sm font-medium text-muted-foreground">
+            {character.role}
+          </div>
+          <p className="text-muted-foreground leading-relaxed italic">
+            &quot;{character.quote}&quot;
+          </p>
+        </div>
+
+        {/* 描述 */}
+        <p className="text-foreground/90 leading-relaxed">
+          {character.description}
+        </p>
+
+        {/* 信息网格 */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
           {infoItems.map((item, index) => (
-            <div key={index} className="space-y-2">
+            <div key={index} className="space-y-1">
               <div className="text-sm text-muted-foreground font-medium">
                 {item.label}
               </div>
-              <div className="text-lg font-semibold text-foreground">
+              <div className="text-base font-semibold text-foreground">
                 {item.value}
               </div>
             </div>
           ))}
         </div>
 
-        {/* 描述 */}
-        <div className="mt-10 pt-8 border-t border-border">
-          <div className="text-sm text-muted-foreground font-medium mb-3">
-            {t("detail.fields.description")}
-          </div>
-          <p className="text-base text-foreground/90 leading-relaxed">
-            {character.description}
-          </p>
+        {/* 分割线 + 关键词 */}
+        <div className="flex items-center gap-4 pt-2">
+          <div className="w-24 h-1 rounded-full" style={gradientH} />
         </div>
 
-        {/* 关键词标签 */}
-        <div className="mt-8">
-          <div className="text-sm text-muted-foreground font-medium mb-4">
-            {t("detail.fields.keywords")}
-          </div>
-          <div className="flex flex-wrap gap-3">
-            {character.keywords.map((keyword, index) => (
-              <span
-                key={index}
-                className="px-5 py-2 rounded-full text-sm font-medium bg-background transition-all hover:scale-105 [color:var(--char-color-light)] dark:[color:var(--char-color-dark)]"
-                style={{
-                  border: `2px solid ${character.color.primary}40`,
-                }}
-              >
-                {keyword}
-              </span>
-            ))}
-          </div>
+        <div className="flex flex-wrap gap-2">
+          {character.keywords.map((keyword, index) => (
+            <span
+              key={index}
+              className="text-xs px-3 py-1 rounded-full"
+              style={{
+                backgroundColor: `${character.color.primary}15`,
+                color: character.color.primary,
+              }}
+            >
+              {keyword}
+            </span>
+          ))}
         </div>
       </div>
-    </section>
+    </AnimatedSection>
   );
 }

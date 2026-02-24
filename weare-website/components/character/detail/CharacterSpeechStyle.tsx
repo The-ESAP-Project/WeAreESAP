@@ -14,6 +14,8 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import { useMemo } from "react";
+import { AnimatedSection } from "@/components/ui";
 import { getContrastTextColor, getContrastTextColorDark } from "@/lib/utils";
 import type { Character } from "@/types/character";
 
@@ -25,59 +27,57 @@ export function CharacterSpeechStyle({ character }: CharacterSpeechStyleProps) {
   const t = useTranslations("characters");
   const speechStyle = character.meta?.speechStyle as string[] | undefined;
 
-  // 预计算颜色值
   const lightModeColor = getContrastTextColor(character.color.primary);
   const darkModeColor = getContrastTextColorDark(character.color.primary);
+
+  const gradientV = useMemo(
+    () => ({
+      background: `linear-gradient(180deg, ${character.color.primary}, ${character.color.dark})`,
+    }),
+    [character.color.primary, character.color.dark]
+  );
 
   if (!speechStyle || speechStyle.length === 0) {
     return null;
   }
 
   return (
-    <section
-      className="scroll-mt-24"
-      id="speech-style"
-      style={
-        {
-          "--char-color-light": lightModeColor,
-          "--char-color-dark": darkModeColor,
-        } as React.CSSProperties
-      }
-    >
-      <h2 className="text-3xl font-bold mb-8 text-foreground flex items-center gap-3">
-        <span
-          className="w-2 h-8 rounded-full"
-          style={{
-            background: `linear-gradient(to bottom, ${character.color.primary}, ${character.color.dark})`,
-          }}
-        />
-        {t("detail.sections.speechStyle")}
-      </h2>
+    <AnimatedSection delay={0.3}>
+      <div
+        className="p-5 rounded-xl border border-border bg-muted/30"
+        style={
+          {
+            "--char-color-light": lightModeColor,
+            "--char-color-dark": darkModeColor,
+          } as React.CSSProperties
+        }
+      >
+        <h3 className="text-xl font-semibold text-foreground mb-4 flex items-center gap-3">
+          <span className="w-1 h-6 rounded-full" style={gradientV} />
+          {t("detail.sections.speechStyle")}
+        </h3>
 
-      <div className="bg-muted rounded-2xl p-8 md:p-10">
-        <div className="grid grid-cols-1 gap-6">
+        <div className="space-y-3">
           {speechStyle.map((style, index) => (
             <div
               key={index}
-              className="flex items-start gap-4 p-6 rounded-xl bg-background/50 hover:bg-background transition-all group"
+              className="flex items-start gap-3 p-3 rounded-lg bg-background/50 hover:bg-background transition-all"
             >
-              {/* 引号装饰 */}
               <div
-                className="flex-shrink-0 w-10 h-10 rounded-lg flex items-center justify-center text-2xl font-bold group-hover:scale-110 transition-transform [color:var(--char-color-light)] dark:[color:var(--char-color-dark)]"
+                className="flex-shrink-0 w-8 h-8 rounded-lg flex items-center justify-center text-lg font-bold [color:var(--char-color-light)] dark:[color:var(--char-color-dark)]"
                 style={{
                   backgroundColor: `${character.color.primary}15`,
                 }}
               >
                 &quot;
               </div>
-              {/* 内容 */}
-              <div className="flex-1 pt-1.5">
-                <p className="text-foreground/90 leading-relaxed">{style}</p>
-              </div>
+              <p className="flex-1 pt-1 text-foreground/90 leading-relaxed">
+                {style}
+              </p>
             </div>
           ))}
         </div>
       </div>
-    </section>
+    </AnimatedSection>
   );
 }

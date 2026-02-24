@@ -399,7 +399,7 @@ export function PullToReveal({
         {enabled && (isPulling || motionProgressValue > 0.001) && (
           <motion.div
             key="pull-indicator"
-            className={`fixed bottom-0 left-0 right-0 z-[9997] pointer-events-none pb-4 ${DEBUG_MODE ? "bg-orange-500/50 border-t-4 border-orange-700" : ""}`}
+            className={`fixed bottom-0 left-0 right-0 z-[9997] pointer-events-none pb-4 ${DEBUG_MODE ? "bg-orange-500/50 border-t-4 border-orange-700" : "bg-gradient-to-t from-[var(--background)] via-[var(--background)]/80 to-transparent"}`}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 10 }}

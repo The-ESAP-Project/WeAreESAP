@@ -32,6 +32,31 @@ async function generateBlurPlaceholders() {
   const publicDir = path.join(__dirname, "../public");
   const outputFile = path.join(__dirname, "../data/blur-placeholders.json");
 
+  const IMAGE_EXTS = new Set([".webp", ".jpg", ".png"]);
+
+  /**
+   * 递归收集目录下所有图片文件
+   * @returns {{ relativePath: string, absolutePath: string }[]}
+   */
+  async function collectImages(dir, baseDir) {
+    const entries = await fs.readdir(dir, { withFileTypes: true });
+    const results = [];
+
+    for (const entry of entries) {
+      const fullPath = path.join(dir, entry.name);
+      if (entry.isDirectory()) {
+        results.push(...await collectImages(fullPath, baseDir));
+      } else if (IMAGE_EXTS.has(path.extname(entry.name).toLowerCase())) {
+        results.push({
+          relativePath: path.relative(publicDir, fullPath).split(path.sep).join("/"),
+          absolutePath: fullPath,
+          filename: path.relative(baseDir, fullPath).split(path.sep).join("/"),
+        });
+      }
+    }
+    return results;
+  }
+
   try {
     const blurDataMap = {};
     let totalFiles = 0;
@@ -47,13 +72,7 @@ async function generateBlurPlaceholders() {
         continue;
       }
 
-      const files = await fs.readdir(fullDir);
-      const imageFiles = files.filter(
-        (file) =>
-          file.endsWith(".webp") ||
-          file.endsWith(".jpg") ||
-          file.endsWith(".png")
-      );
+      const imageFiles = await collectImages(fullDir, fullDir);
 
       if (imageFiles.length === 0) continue;
 
@@ -61,26 +80,24 @@ async function generateBlurPlaceholders() {
       console.log(`📂 ${imageDir}/ 找到 ${imageFiles.length} 个图片文件\n`);
 
       const results = await Promise.allSettled(
-        imageFiles.map(async (file) => {
-          const filePath = path.join(fullDir, file);
-          const buffer = await fs.readFile(filePath);
+        imageFiles.map(async ({ relativePath, absolutePath, filename }) => {
+          const buffer = await fs.readFile(absolutePath);
           const { base64 } = await getPlaiceholder(buffer, { size: 20 });
-          // 用相对路径作为 key，避免不同目录的同名文件冲突
-          const key = `${imageDir}/${file}`;
-          return { key, file, base64 };
+          return { key: relativePath, filename, base64 };
         })
       );
 
       for (const result of results) {
         if (result.status === "fulfilled") {
-          const { key, file, base64 } = result.value;
+          const { key, filename, base64 } = result.value;
           blurDataMap[key] = base64;
           processedCount++;
 
           const sizeKB = (base64.length / 1024).toFixed(2);
-          console.log(`  ✅ ${file.padEnd(20)} → ${sizeKB} KB`);
+          console.log(`  ✅ ${filename.padEnd(25)} → ${sizeKB} KB`);
         } else {
-          const file = imageFiles[results.indexOf(result)];
+          const idx = results.indexOf(result);
+          const file = imageFiles[idx]?.filename || "unknown";
           console.error(
             `  ❌ 处理失败: ${file}`,
             result.reason?.message || result.reason

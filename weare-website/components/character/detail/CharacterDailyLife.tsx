@@ -14,6 +14,8 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import { useMemo } from "react";
+import { AnimatedSection } from "@/components/ui";
 import type { Character } from "@/types/character";
 
 interface CharacterDailyLifeProps {
@@ -24,45 +26,45 @@ export function CharacterDailyLife({ character }: CharacterDailyLifeProps) {
   const t = useTranslations("characters");
   const dailyLife = character.meta?.dailyLife as string[] | undefined;
 
+  const gradientV = useMemo(
+    () => ({
+      background: `linear-gradient(180deg, ${character.color.primary}, ${character.color.dark})`,
+    }),
+    [character.color.primary, character.color.dark]
+  );
+
   if (!dailyLife || dailyLife.length === 0) {
     return null;
   }
 
   return (
-    <section className="scroll-mt-24" id="daily-life">
-      <h2 className="text-3xl font-bold mb-8 text-foreground flex items-center gap-3">
-        <span
-          className="w-2 h-8 rounded-full"
-          style={{
-            background: `linear-gradient(to bottom, ${character.color.primary}, ${character.color.dark})`,
-          }}
-        />
-        {t("detail.sections.dailyLife")}
-      </h2>
+    <AnimatedSection delay={0.5}>
+      <div className="p-5 rounded-xl border border-border bg-muted/30">
+        <h3 className="text-xl font-semibold text-foreground mb-4 flex items-center gap-3">
+          <span className="w-1 h-6 rounded-full" style={gradientV} />
+          {t("detail.sections.dailyLife")}
+        </h3>
 
-      <div className="bg-muted rounded-2xl p-8 md:p-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="space-y-2">
           {dailyLife.map((item, index) => (
             <div
               key={index}
-              className="flex items-start gap-4 p-5 rounded-xl bg-background/50 hover:bg-background transition-all group"
+              className="flex items-start gap-3 p-3 rounded-lg bg-background/50 hover:bg-background transition-all"
             >
-              {/* 圆点装饰 */}
               <div
-                className="flex-shrink-0 w-3 h-3 rounded-full mt-1.5 group-hover:scale-125 transition-transform"
+                className="flex-shrink-0 w-2 h-2 rounded-full mt-2"
                 style={{
                   backgroundColor: character.color.primary,
-                  boxShadow: `0 0 12px ${character.color.primary}60`,
+                  boxShadow: `0 0 8px ${character.color.primary}60`,
                 }}
               />
-              {/* 内容 */}
-              <div className="flex-1">
-                <p className="text-foreground/90 leading-relaxed">{item}</p>
-              </div>
+              <p className="flex-1 text-foreground/90 leading-relaxed">
+                {item}
+              </p>
             </div>
           ))}
         </div>
       </div>
-    </section>
+    </AnimatedSection>
   );
 }

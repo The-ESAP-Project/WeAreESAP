@@ -5,6 +5,7 @@
     "primary": "#8a857e",
     "dark": "#6b665f"
   },
-  "backgroundImage": "/assets/images/characters/img_3167.webp",
+  "avatar": "/assets/images/characters/3167/logo.webp",
+  "backgroundImage": "/assets/images/characters/3167/hero.webp",
   "tier": "member"
 }

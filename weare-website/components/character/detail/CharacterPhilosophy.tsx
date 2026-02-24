@@ -14,6 +14,8 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import { useMemo } from "react";
+import { AnimatedSection } from "@/components/ui";
 import { getContrastTextColor, getContrastTextColorDark } from "@/lib/utils";
 import type { Character } from "@/types/character";
 
@@ -27,61 +29,49 @@ export function CharacterPhilosophy({ character }: CharacterPhilosophyProps) {
     | Record<string, string>
     | undefined;
 
-  // 预计算颜色值
   const lightModeColor = getContrastTextColor(character.color.primary);
   const darkModeColor = getContrastTextColorDark(character.color.primary);
+
+  const gradientV = useMemo(
+    () => ({
+      background: `linear-gradient(180deg, ${character.color.primary}, ${character.color.dark})`,
+    }),
+    [character.color.primary, character.color.dark]
+  );
 
   if (!philosophy || Object.keys(philosophy).length === 0) {
     return null;
   }
 
   return (
-    <section
-      className="scroll-mt-24"
-      id="philosophy"
-      style={
-        {
-          "--char-color-light": lightModeColor,
-          "--char-color-dark": darkModeColor,
-        } as React.CSSProperties
-      }
-    >
-      <h2 className="text-3xl font-bold mb-8 text-foreground flex items-center gap-3">
-        <span
-          className="w-2 h-8 rounded-full"
-          style={{
-            background: `linear-gradient(to bottom, ${character.color.primary}, ${character.color.dark})`,
-          }}
-        />
-        {t("detail.sections.philosophy")}
-      </h2>
+    <AnimatedSection delay={0.7}>
+      <div
+        className="p-5 rounded-xl border border-border bg-muted/30"
+        style={
+          {
+            "--char-color-light": lightModeColor,
+            "--char-color-dark": darkModeColor,
+          } as React.CSSProperties
+        }
+      >
+        <h3 className="text-xl font-semibold text-foreground mb-4 flex items-center gap-3">
+          <span className="w-1 h-6 rounded-full" style={gradientV} />
+          {t("detail.sections.philosophy")}
+        </h3>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-        {Object.entries(philosophy).map(([key, value], index) => (
-          <div
-            key={index}
-            className="bg-muted rounded-2xl p-8 hover:scale-[1.02] transition-transform"
-          >
-            {/* 标题 */}
-            <h3 className="text-xl font-bold mb-6 flex items-center gap-3 [color:var(--char-color-light)] dark:[color:var(--char-color-dark)]">
-              <span
-                className="w-1.5 h-6 rounded-full"
-                style={{
-                  background: `linear-gradient(to bottom, ${character.color.primary}, ${character.color.dark})`,
-                }}
-              />
-              {t(`detail.philosophy.${key}`)}
-            </h3>
-
-            {/* 内容 */}
-            <div className="prose prose-lg max-w-none dark:prose-invert">
+        <div className="space-y-3">
+          {Object.entries(philosophy).map(([key, value], index) => (
+            <div key={index} className="p-3 rounded-lg bg-background/50">
+              <h4 className="text-base font-medium mb-2 [color:var(--char-color-light)] dark:[color:var(--char-color-dark)]">
+                {t(`detail.philosophy.${key}`)}
+              </h4>
               <p className="text-foreground/90 leading-relaxed italic">
                 &quot;{value}&quot;
               </p>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
-    </section>
+    </AnimatedSection>
   );
 }
