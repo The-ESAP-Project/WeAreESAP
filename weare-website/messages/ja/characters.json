@@ -23,7 +23,7 @@
   "ui": {
     "expandHint": "タップして詳細を見る ↓",
     "detailHint": "タップして完全なプロフィールを見る →",
-    "backToList": "← リストに戻る"
+    "backToList": "リストに戻る"
   },
   "detail": {
     "sections": {

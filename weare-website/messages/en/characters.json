@@ -23,7 +23,7 @@
   "ui": {
     "expandHint": "Tap to see more ↓",
     "detailHint": "Tap to view full profile →",
-    "backToList": "← Back to List"
+    "backToList": "Back to List"
   },
   "detail": {
     "sections": {

@@ -23,7 +23,7 @@
   "ui": {
     "expandHint": "点击查看更多 ↓",
     "detailHint": "点击查看完整档案 →",
-    "backToList": "← 返回列表"
+    "backToList": "返回列表"
   },
   "detail": {
     "sections": {

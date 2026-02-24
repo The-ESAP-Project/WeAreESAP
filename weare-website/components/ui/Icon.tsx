@@ -20,6 +20,7 @@ import {
   HiXCircle,
 } from "react-icons/hi2";
 import {
+  LuArrowLeft,
   LuAtom,
   LuBook,
   LuBookMarked,
@@ -109,6 +110,7 @@ export type IconName =
   | "Atom"
   | "Droplet"
   // 导航图标
+  | "ArrowLeft"
   | "Menu"
   | "X"
   // 搜索图标
@@ -171,6 +173,7 @@ const iconMap: Record<IconName, ComponentType<{ className?: string }>> = {
   Droplet: LuDroplet,
 
   // 导航图标 (Lucide)
+  ArrowLeft: LuArrowLeft,
   Menu: LuMenu,
   X: LuX,
 
