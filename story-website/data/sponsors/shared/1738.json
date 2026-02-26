@@ -3,6 +3,7 @@
   "order": 0,
   "logo": "/assets/images/sponsors/1738/logo.webp",
   "heroImage": "/assets/images/sponsors/1738/hero.webp",
+  "images": ["/assets/images/sponsors/1738/image1.webp"],
   "theme": {
     "primary": "#585858",
     "accent": "#9a9a9a"
