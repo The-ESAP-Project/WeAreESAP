@@ -1,24 +1,52 @@
 {
   "hero": {
-    "title": "ESAP",
-    "subtitle": "Creative Technology Studio",
-    "description": "我们通过交互式叙事和世界观构建，探索人与人工智能共存的未来可能"
+    "tagline": "The ESAP Project",
+    "title": "用技术构建想象力的边界",
+    "description": "ESAP 是一个创意科技工作室，通过交互式叙事和沉浸式世界观构建，探索人与人工智能共存的未来可能。"
+  },
+  "stats": {
+    "since": "始于",
+    "sinceYear": "2021",
+    "characters": "原创角色",
+    "charactersCount": "10+",
+    "stories": "交互故事",
+    "storiesCount": "4",
+    "opensource": "开源协议",
+    "opensourceValue": "Apache 2.0"
   },
   "features": {
+    "sectionTitle": "我们做什么",
     "storytelling": {
       "title": "交互叙事",
-      "description": "以分支叙事和沉浸式阅读体验，讲述仿生人与人类共存的未来故事"
+      "description": "以分支叙事和沉浸式阅读体验，讲述仿生人与人类共存的未来故事。每一个选择都会影响故事的走向。"
     },
     "worldbuilding": {
       "title": "世界构建",
-      "description": "构建完整的科幻世界观，涵盖角色档案、技术文档、组织架构和时间线"
+      "description": "构建完整的科幻世界观，涵盖角色档案、技术文档、组织架构和时间线。一个鲜活的、持续生长的虚构宇宙。"
     },
     "opensource": {
       "title": "开源社区",
-      "description": "所有代码开源，创作内容以 CC-BY 4.0 许可共享，欢迎社区参与和贡献"
+      "description": "所有代码在 GitHub 开源，创作内容以 CC-BY 4.0 许可共享。我们相信开放协作的力量。"
     }
   },
+  "showcase": {
+    "title": "我们的作品",
+    "weare": {
+      "title": "We Are ESAP",
+      "description": "角色档案与世界观百科"
+    },
+    "stories": {
+      "title": "ESAP Stories",
+      "description": "交互式科幻故事平台"
+    },
+    "viewAll": "查看全部项目"
+  },
+  "philosophy": {
+    "quote": "我们不只是在写故事，我们在构建一个世界。",
+    "description": "每一个角色都有独立的人格和成长轨迹，每一段技术设定都经过严谨推演。这不是一个人的创作，而是一个社区共同构建的未来。"
+  },
   "cta": {
-    "explore": "探索我们的项目"
+    "explore": "探索我们的项目",
+    "github": "在 GitHub 上查看"
   }
 }

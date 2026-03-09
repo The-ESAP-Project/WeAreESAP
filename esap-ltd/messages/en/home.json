@@ -1,24 +1,52 @@
 {
   "hero": {
-    "title": "ESAP",
-    "subtitle": "Creative Technology Studio",
-    "description": "We explore the future of human-AI coexistence through interactive storytelling and worldbuilding"
+    "tagline": "The ESAP Project",
+    "title": "Building the boundaries of imagination with technology",
+    "description": "ESAP is a creative technology studio exploring the future of human-AI coexistence through interactive storytelling and immersive worldbuilding."
+  },
+  "stats": {
+    "since": "Since",
+    "sinceYear": "2021",
+    "characters": "Original Characters",
+    "charactersCount": "10+",
+    "stories": "Interactive Stories",
+    "storiesCount": "4",
+    "opensource": "License",
+    "opensourceValue": "Apache 2.0"
   },
   "features": {
+    "sectionTitle": "What We Do",
     "storytelling": {
       "title": "Interactive Storytelling",
-      "description": "Branching narratives and immersive reading experiences that tell stories of androids and humans coexisting in the future"
+      "description": "Branching narratives and immersive reading experiences telling stories of androids and humans coexisting. Every choice shapes the story."
     },
     "worldbuilding": {
       "title": "Worldbuilding",
-      "description": "A complete sci-fi universe with character archives, technical documentation, organizational structures, and timelines"
+      "description": "A complete sci-fi universe with character archives, technical documentation, organizational structures, and timelines. A living, ever-growing fictional universe."
     },
     "opensource": {
       "title": "Open Source",
-      "description": "All code is open source, creative content is shared under CC-BY 4.0, and community contributions are welcome"
+      "description": "All code is open source on GitHub, creative content shared under CC-BY 4.0. We believe in the power of open collaboration."
     }
   },
+  "showcase": {
+    "title": "Our Work",
+    "weare": {
+      "title": "We Are ESAP",
+      "description": "Character archive & world encyclopedia"
+    },
+    "stories": {
+      "title": "ESAP Stories",
+      "description": "Interactive sci-fi story platform"
+    },
+    "viewAll": "View All Projects"
+  },
+  "philosophy": {
+    "quote": "We're not just writing stories. We're building a world.",
+    "description": "Every character has an independent personality and growth arc. Every technical detail is rigorously designed. This isn't one person's creation — it's a future built by a community."
+  },
   "cta": {
-    "explore": "Explore Our Projects"
+    "explore": "Explore Our Projects",
+    "github": "View on GitHub"
   }
 }

@@ -20,89 +20,112 @@ export default async function AboutPage({
     role: string;
   }>;
 
+  const accentColors = [
+    { bg: "bg-esap-yellow", border: "border-esap-yellow/20" },
+    { bg: "bg-esap-pink", border: "border-esap-pink/20" },
+    { bg: "bg-esap-blue", border: "border-esap-blue/20" },
+  ];
+
+  const memberColors = ["from-esap-yellow", "from-esap-pink", "from-esap-blue"];
+
   return (
-    <div className="py-16 md:py-24">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Page Title */}
-        <AnimatedSection>
-          <h1 className="text-3xl md:text-4xl font-bold text-foreground">
-            {t("title")}
-          </h1>
-          <div className="mt-4 w-16 h-1 rounded-full bg-linear-to-r from-esap-yellow via-esap-pink to-esap-blue" />
-        </AnimatedSection>
-
-        {/* Mission */}
-        <AnimatedSection delay={0.1}>
-          <section className="mt-12">
-            <h2 className="text-xl font-semibold text-foreground">
-              {t("mission.title")}
-            </h2>
-            <p className="mt-4 text-muted-foreground leading-relaxed">
-              {t("mission.content")}
+    <>
+      {/* Page Header */}
+      <section className="pt-16 md:pt-24 pb-12">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <AnimatedSection>
+            <p className="text-sm font-mono tracking-widest text-muted-foreground uppercase">
+              About
             </p>
-          </section>
-        </AnimatedSection>
+            <h1 className="mt-4 text-4xl md:text-5xl font-bold text-foreground tracking-tight">
+              {t("title")}
+            </h1>
+            <div className="mt-6 w-16 h-1 rounded-full bg-linear-to-r from-esap-yellow via-esap-pink to-esap-blue" />
+          </AnimatedSection>
+        </div>
+      </section>
 
-        {/* Values */}
-        <AnimatedSection delay={0.2}>
-          <section className="mt-12">
-            <h2 className="text-xl font-semibold text-foreground">
+      {/* Mission */}
+      <section className="pb-20 md:pb-28">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <AnimatedSection delay={0.1}>
+            <div className="relative pl-6 border-l-2 border-esap-pink/30">
+              <h2 className="text-lg font-mono tracking-wide text-muted-foreground uppercase">
+                {t("mission.title")}
+              </h2>
+              <p className="mt-6 text-xl md:text-2xl text-foreground leading-relaxed font-light">
+                {t("mission.content")}
+              </p>
+            </div>
+          </AnimatedSection>
+        </div>
+      </section>
+
+      {/* Values */}
+      <section className="py-20 md:py-28 bg-muted/30">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <AnimatedSection>
+            <p className="text-sm font-mono tracking-widest text-muted-foreground uppercase">
               {t("values.title")}
-            </h2>
-            <div className="mt-6 grid grid-cols-1 sm:grid-cols-3 gap-4">
-              {values.map((item, i) => {
-                const colors = [
-                  "border-esap-yellow",
-                  "border-esap-pink",
-                  "border-esap-blue",
-                ];
-                return (
-                  <div
-                    key={item.title}
-                    className={`p-5 rounded-xl bg-muted/50 border-l-4 ${colors[i % 3]}`}
-                  >
-                    <h3 className="font-medium text-foreground">
-                      {item.title}
-                    </h3>
-                    <p className="mt-2 text-sm text-muted-foreground">
-                      {item.description}
-                    </p>
-                  </div>
-                );
-              })}
-            </div>
-          </section>
-        </AnimatedSection>
+            </p>
+            <div className="mt-2 w-12 h-0.5 bg-linear-to-r from-esap-yellow to-esap-pink" />
+          </AnimatedSection>
 
-        {/* Team */}
-        <AnimatedSection delay={0.3}>
-          <section className="mt-12">
-            <h2 className="text-xl font-semibold text-foreground">
-              {t("team.title")}
-            </h2>
-            <div className="mt-6 space-y-3">
-              {members.map((member) => (
+          <div className="mt-14 grid grid-cols-1 md:grid-cols-3 gap-6">
+            {values.map((item, i) => (
+              <AnimatedSection key={item.title} delay={(i + 1) * 0.1}>
                 <div
-                  key={member.name}
-                  className="flex items-center gap-4 p-4 rounded-xl bg-muted/50"
+                  className={`relative p-8 rounded-2xl bg-background border ${accentColors[i % 3].border} h-full`}
                 >
-                  <div className="w-10 h-10 rounded-full bg-linear-to-br from-esap-yellow via-esap-pink to-esap-blue flex items-center justify-center text-white text-sm font-bold">
-                    {member.name.slice(-4, -1)}
-                  </div>
-                  <div>
-                    <p className="font-medium text-foreground font-mono text-sm">
-                      {member.name}
-                    </p>
-                    <p className="text-sm text-muted-foreground">
-                      {member.role}
-                    </p>
-                  </div>
+                  <div
+                    className={`w-3 h-3 rounded-full ${accentColors[i % 3].bg} mb-6`}
+                  />
+                  <h3 className="text-lg font-semibold text-foreground">
+                    {item.title}
+                  </h3>
+                  <p className="mt-3 text-muted-foreground leading-relaxed">
+                    {item.description}
+                  </p>
                 </div>
-              ))}
-            </div>
-          </section>
-        </AnimatedSection>
-      </div>
-    </div>
+              </AnimatedSection>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Team */}
+      <section className="py-20 md:py-28">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <AnimatedSection>
+            <p className="text-sm font-mono tracking-widest text-muted-foreground uppercase">
+              {t("team.title")}
+            </p>
+            <div className="mt-2 w-12 h-0.5 bg-linear-to-r from-esap-blue to-esap-pink" />
+          </AnimatedSection>
+
+          <div className="mt-14 grid grid-cols-1 sm:grid-cols-3 gap-6">
+            {members.map((member, i) => (
+              <AnimatedSection key={member.name} delay={(i + 1) * 0.1}>
+                <div className="group p-6 rounded-2xl border border-border hover:border-border/80 transition-colors">
+                  <div
+                    className={`w-12 h-12 rounded-xl bg-linear-to-br ${memberColors[i % 3]} to-transparent flex items-center justify-center`}
+                  >
+                    <span className="text-sm font-bold font-mono text-foreground">
+                      {member.name.match(/\d{4}/)?.[0] ?? "?"}
+                    </span>
+                  </div>
+                  <p className="mt-5 font-semibold text-foreground font-mono text-sm">
+                    {member.name}
+                  </p>
+                  <p className="mt-1 text-sm text-muted-foreground">
+                    {member.role}
+                  </p>
+                </div>
+              </AnimatedSection>
+            ))}
+          </div>
+        </div>
+      </section>
+    </>
   );
 }
