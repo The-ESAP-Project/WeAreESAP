@@ -1,5 +1,20 @@
+import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { AnimatedSection } from "@/components/ui";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  setRequestLocale(locale);
+  const t = await getTranslations("about");
+  return {
+    title: `${t("title")} - ESAP`,
+    description: t("mission.content"),
+  };
+}
 
 export default async function AboutPage({
   params,

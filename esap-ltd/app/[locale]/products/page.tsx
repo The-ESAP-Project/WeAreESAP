@@ -1,6 +1,21 @@
+import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { AnimatedSection } from "@/components/ui";
 import { EXTERNAL_LINKS } from "@/lib/constants";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  setRequestLocale(locale);
+  const t = await getTranslations("products");
+  return {
+    title: `${t("title")} - ESAP`,
+    description: t("projects.weare.description"),
+  };
+}
 
 export default async function ProductsPage({
   params,

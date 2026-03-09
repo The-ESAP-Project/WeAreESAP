@@ -1,6 +1,21 @@
+import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { AnimatedSection } from "@/components/ui";
 import { EXTERNAL_LINKS } from "@/lib/constants";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  setRequestLocale(locale);
+  const t = await getTranslations("contact");
+  return {
+    title: `${t("title")} - ESAP`,
+    description: t("description"),
+  };
+}
 
 export default async function ContactPage({
   params,
@@ -39,7 +54,7 @@ export default async function ContactPage({
             <AnimatedSection delay={0.1}>
               <a
                 href={`mailto:${t("channels.email.value")}`}
-                className="group block p-8 md:p-10 rounded-2xl border border-border bg-background hover:border-esap-yellow/50 transition-all duration-300 h-full"
+                className="group relative block p-8 md:p-10 rounded-2xl border border-border bg-background hover:border-esap-yellow/50 transition-all duration-300 h-full"
               >
                 <div className="absolute top-0 left-0 w-full h-1 rounded-t-2xl bg-esap-yellow opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 <div className="w-12 h-12 rounded-xl bg-esap-yellow/10 flex items-center justify-center mb-6">
@@ -72,7 +87,7 @@ export default async function ContactPage({
                 href={EXTERNAL_LINKS.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group block p-8 md:p-10 rounded-2xl border border-border bg-background hover:border-esap-blue/50 transition-all duration-300 h-full"
+                className="group relative block p-8 md:p-10 rounded-2xl border border-border bg-background hover:border-esap-blue/50 transition-all duration-300 h-full"
               >
                 <div className="absolute top-0 left-0 w-full h-1 rounded-t-2xl bg-esap-blue opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 <div className="w-12 h-12 rounded-xl bg-esap-blue/10 flex items-center justify-center mb-6">

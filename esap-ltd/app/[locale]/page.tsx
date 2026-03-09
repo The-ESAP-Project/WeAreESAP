@@ -1,5 +1,5 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { AnimatedSection } from "@/components/ui";
+import { AnimatedSection, Typewriter } from "@/components/ui";
 import { Link } from "@/i18n/navigation";
 import { EXTERNAL_LINKS, ROUTES } from "@/lib/constants";
 
@@ -13,9 +13,21 @@ export default async function Home({
   const t = await getTranslations("home");
 
   const features = [
-    { key: "storytelling", accent: "esap-yellow" },
-    { key: "worldbuilding", accent: "esap-pink" },
-    { key: "opensource", accent: "esap-blue" },
+    {
+      key: "storytelling",
+      dot: "bg-esap-yellow",
+      line: "bg-esap-yellow/30 group-hover:bg-esap-yellow",
+    },
+    {
+      key: "worldbuilding",
+      dot: "bg-esap-pink",
+      line: "bg-esap-pink/30 group-hover:bg-esap-pink",
+    },
+    {
+      key: "opensource",
+      dot: "bg-esap-blue",
+      line: "bg-esap-blue/30 group-hover:bg-esap-blue",
+    },
   ] as const;
 
   return (
@@ -36,7 +48,7 @@ export default async function Home({
                 {t("hero.tagline")}
               </p>
               <h1 className="mt-6 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-foreground leading-[1.1]">
-                {t("hero.title")}
+                <Typewriter text={t("hero.title")} speed={80} delay={400} />
               </h1>
               <p className="mt-8 text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl">
                 {t("hero.description")}
@@ -144,19 +156,15 @@ export default async function Home({
             {features.map((feature, i) => (
               <AnimatedSection key={feature.key} delay={i * 0.15}>
                 <div className="group relative h-full">
-                  {/* Accent dot */}
-                  <div
-                    className={`w-3 h-3 rounded-full bg-${feature.accent} mb-6`}
-                  />
+                  <div className={`w-3 h-3 rounded-full ${feature.dot} mb-6`} />
                   <h3 className="text-xl font-semibold text-foreground">
                     {t(`features.${feature.key}.title`)}
                   </h3>
                   <p className="mt-4 text-muted-foreground leading-relaxed">
                     {t(`features.${feature.key}.description`)}
                   </p>
-                  {/* Bottom accent line on hover */}
                   <div
-                    className={`mt-6 h-px bg-${feature.accent}/30 group-hover:bg-${feature.accent} transition-colors duration-500`}
+                    className={`mt-6 h-px ${feature.line} transition-colors duration-500`}
                   />
                 </div>
               </AnimatedSection>
