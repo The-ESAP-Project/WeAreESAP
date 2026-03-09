@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { AnimatedSection } from "@/components/ui";
 
@@ -41,7 +42,11 @@ export default async function AboutPage({
     { bg: "bg-esap-blue", border: "border-esap-blue/20" },
   ];
 
-  const memberColors = ["from-esap-yellow", "from-esap-pink", "from-esap-blue"];
+  const memberStyles = [
+    { border: "border-esap-yellow/40", bg: "bg-esap-yellow/10" },
+    { border: "border-esap-pink/40", bg: "bg-esap-pink/10" },
+    { border: "border-esap-blue/40", bg: "bg-esap-blue/10" },
+  ];
 
   return (
     <>
@@ -119,25 +124,39 @@ export default async function AboutPage({
           </AnimatedSection>
 
           <div className="mt-14 grid grid-cols-1 sm:grid-cols-3 gap-6">
-            {members.map((member, i) => (
-              <AnimatedSection key={member.name} delay={(i + 1) * 0.1}>
-                <div className="group p-6 rounded-2xl border border-border hover:border-border/80 transition-colors">
-                  <div
-                    className={`w-12 h-12 rounded-xl bg-linear-to-br ${memberColors[i % 3]} to-transparent flex items-center justify-center`}
-                  >
-                    <span className="text-sm font-bold font-mono text-foreground">
-                      {member.name.match(/\d{4}/)?.[0] ?? "?"}
-                    </span>
+            {members.map((member, i) => {
+              const id = member.name.match(/\d{4}/)?.[0];
+              const style = memberStyles[i % 3];
+              return (
+                <AnimatedSection key={member.name} delay={(i + 1) * 0.1}>
+                  <div className="group p-8 rounded-2xl border border-border hover:border-border/80 transition-colors text-center">
+                    <div
+                      className={`relative w-20 h-20 mx-auto rounded-full overflow-hidden border-2 ${style.border} ${style.bg}`}
+                    >
+                      <span className="absolute inset-0 flex items-center justify-center text-sm font-bold font-mono text-muted-foreground">
+                        {id ?? "?"}
+                      </span>
+                      {id && (
+                        <Image
+                          src={`/assets/images/characters/${id}/avatar.webp`}
+                          alt={member.name}
+                          width={80}
+                          height={80}
+                          className="absolute inset-0 w-full h-full object-cover"
+                          draggable={false}
+                        />
+                      )}
+                    </div>
+                    <p className="mt-5 font-semibold text-foreground font-mono text-sm">
+                      {member.name}
+                    </p>
+                    <p className="mt-1 text-sm text-muted-foreground">
+                      {member.role}
+                    </p>
                   </div>
-                  <p className="mt-5 font-semibold text-foreground font-mono text-sm">
-                    {member.name}
-                  </p>
-                  <p className="mt-1 text-sm text-muted-foreground">
-                    {member.role}
-                  </p>
-                </div>
-              </AnimatedSection>
-            ))}
+                </AnimatedSection>
+              );
+            })}
           </div>
         </div>
       </section>
