@@ -104,7 +104,7 @@ export const Navigation = memo(function Navigation() {
         <button
           className="md:hidden w-10 h-10 flex items-center justify-center rounded-lg hover:bg-muted transition-colors"
           onClick={() => setMobileMenuOpen((v) => !v)}
-          aria-label="Menu"
+          aria-label={t("menu")}
           aria-expanded={mobileMenuOpen}
         >
           <svg

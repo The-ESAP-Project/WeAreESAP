@@ -76,6 +76,17 @@ export default async function RootLayout({
 
   return (
     <html lang={locale} suppressHydrationWarning>
+      <head>
+        <noscript>
+          {/* biome-ignore lint/security/noDangerouslySetInnerHtml: noscript fallback requires inline style for no-JS visibility */}
+          <style
+            dangerouslySetInnerHTML={{
+              __html:
+                "[style*='opacity: 0'] { opacity: 1 !important; transform: none !important; }",
+            }}
+          />
+        </noscript>
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >

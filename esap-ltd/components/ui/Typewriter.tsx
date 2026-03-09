@@ -14,17 +14,21 @@ export function Typewriter({
   delay?: number;
   className?: string;
 }) {
-  const [displayed, setDisplayed] = useState("");
-  const [done, setDone] = useState(false);
+  // Initialize with full text so SSR/no-JS always shows the title
+  const [displayed, setDisplayed] = useState(text);
+  const [done, setDone] = useState(true);
+  const [hydrated, setHydrated] = useState(false);
   const shouldReduceMotion = useReducedMotion();
   const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
+  // Mark hydration complete
   useEffect(() => {
-    if (shouldReduceMotion) {
-      setDisplayed(text);
-      setDone(true);
-      return;
-    }
+    setHydrated(true);
+  }, []);
+
+  // Only animate after hydration, and only if motion is allowed
+  useEffect(() => {
+    if (!hydrated || shouldReduceMotion) return;
 
     setDisplayed("");
     setDone(false);
@@ -49,17 +53,19 @@ export function Typewriter({
         intervalRef.current = null;
       }
     };
-  }, [text, speed, delay, shouldReduceMotion]);
+  }, [hydrated, text, speed, delay, shouldReduceMotion]);
 
   return (
     <span className={className}>
       {displayed}
-      <span
-        className={`inline-block w-[3px] h-[0.85em] ml-1 align-middle bg-esap-pink ${
-          done ? "animate-blink" : ""
-        }`}
-        aria-hidden="true"
-      />
+      {hydrated && (
+        <span
+          className={`inline-block w-[3px] h-[0.85em] ml-1 align-middle bg-esap-pink ${
+            done ? "animate-blink" : ""
+          }`}
+          aria-hidden="true"
+        />
+      )}
     </span>
   );
 }

@@ -9,11 +9,14 @@
     "home": "首页",
     "about": "关于",
     "products": "项目",
-    "contact": "联系"
+    "contact": "联系",
+    "menu": "菜单"
   },
   "footer": {
     "copyright": "ESAP",
-    "allRightsReserved": "保留所有权利",
+    "licenseCode": "代码：Apache 2.0",
+    "licenseContent": "内容：CC-BY 4.0",
+    "licenseBrand": "品牌及 Logo：保留所有权利",
     "version": "版本",
     "projects": "项目",
     "weareWebsite": "角色档案",

@@ -15,11 +15,14 @@
     "home": "Home",
     "about": "About",
     "products": "Projects",
-    "contact": "Contact"
+    "contact": "Contact",
+    "menu": "Menu"
   },
   "footer": {
     "copyright": "ESAP",
-    "allRightsReserved": "All rights reserved",
+    "licenseCode": "Code: Apache 2.0",
+    "licenseContent": "Content: CC-BY 4.0",
+    "licenseBrand": "Brand & Logo: All rights reserved",
     "version": "Version",
     "projects": "Projects",
     "weareWebsite": "Character Archive",

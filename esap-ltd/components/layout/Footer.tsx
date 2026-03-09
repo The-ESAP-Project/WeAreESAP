@@ -28,8 +28,11 @@ export function Footer() {
               <p className="mt-2 text-sm text-muted-foreground max-w-xs">
                 Creative Technology Studio
               </p>
-              <p className="mt-6 text-xs text-muted-foreground">
-                &copy; {yearRange} {t("copyright")}. {t("allRightsReserved")}.
+              <p className="mt-6 text-xs text-muted-foreground leading-relaxed">
+                &copy; {yearRange} {t("copyright")}
+              </p>
+              <p className="mt-2 text-xs text-muted-foreground/70 leading-relaxed">
+                {t("licenseCode")} · {t("licenseContent")} · {t("licenseBrand")}
               </p>
             </div>
 
