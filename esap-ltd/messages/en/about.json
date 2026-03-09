@@ -1,0 +1,41 @@
+{
+  "title": "About ESAP",
+  "mission": {
+    "title": "Our Mission",
+    "content": "ESAP (The ESAP Project) is a creative technology studio dedicated to exploring the boundary between humans and artificial intelligence through interactive sci-fi experiences. We build immersive digital storytelling platforms that integrate worldbuilding, character design, and technological innovation."
+  },
+  "values": {
+    "title": "Our Values",
+    "items": [
+      {
+        "title": "Creative Freedom",
+        "description": "We believe great stories come from creative environments free of constraints"
+      },
+      {
+        "title": "Technology-Driven",
+        "description": "We use modern web technologies to craft immersive experiences that go beyond text"
+      },
+      {
+        "title": "Open Collaboration",
+        "description": "Open source code, shared content, welcoming every creator who wants to contribute"
+      }
+    ]
+  },
+  "team": {
+    "title": "Core Team",
+    "members": [
+      {
+        "name": "AptS:1547",
+        "role": "Creator / Founder"
+      },
+      {
+        "name": "AptS:1548",
+        "role": "Rebel / Core Developer"
+      },
+      {
+        "name": "AptS:1549",
+        "role": "Watcher / Content Architect"
+      }
+    ]
+  }
+}

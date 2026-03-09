@@ -1,0 +1,15 @@
+{
+  "title": "联系我们",
+  "description": "有任何问题、建议或合作意向，欢迎通过以下方式联系我们。",
+  "channels": {
+    "email": {
+      "label": "电子邮件",
+      "value": "contact@esaps.net"
+    },
+    "github": {
+      "label": "GitHub",
+      "value": "The-ESAP-Project/WeAreESAP",
+      "description": "提交 Issue 或 Pull Request"
+    }
+  }
+}

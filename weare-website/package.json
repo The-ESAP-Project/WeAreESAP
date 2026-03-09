@@ -21,10 +21,10 @@
   "homepage": "https://weare.esaps.net",
   "repository": {
     "type": "git",
-    "url": "https://github.com/AptS-1547/WeAreESAP"
+    "url": "https://github.com/The-ESAP-Project/WeAreESAP"
   },
   "bugs": {
-    "url": "https://github.com/AptS-1547/WeAreESAP/issues"
+    "url": "https://github.com/The-ESAP-Project/WeAreESAP/issues"
   },
   "scripts": {
     "dev": "pnpm run prebuild && next dev",

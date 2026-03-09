@@ -1,0 +1,22 @@
+{
+  "title": "Our Projects",
+  "projects": {
+    "weare": {
+      "title": "We Are ESAP",
+      "badge": "Character Archive & Worldbuilding",
+      "description": "The core platform of the ESAP universe. Browse character profiles, explore technical documentation, understand organizational structures, and dive deep into character relationships through interactive graphs.",
+      "link": "Visit Site"
+    },
+    "stories": {
+      "title": "ESAP Stories",
+      "badge": "Interactive Story Platform",
+      "description": "An immersive sci-fi story reading experience. Branching narratives, chapter unlocks, scene exploration — become part of the story.",
+      "link": "Visit Site"
+    }
+  },
+  "opensource": {
+    "title": "Open Source",
+    "description": "All our code is open source on GitHub. Contributions are welcome.",
+    "link": "View Source"
+  }
+}

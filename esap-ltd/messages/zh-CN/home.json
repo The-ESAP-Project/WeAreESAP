@@ -1,0 +1,24 @@
+{
+  "hero": {
+    "title": "ESAP",
+    "subtitle": "Creative Technology Studio",
+    "description": "我们通过交互式叙事和世界观构建，探索人与人工智能共存的未来可能"
+  },
+  "features": {
+    "storytelling": {
+      "title": "交互叙事",
+      "description": "以分支叙事和沉浸式阅读体验，讲述仿生人与人类共存的未来故事"
+    },
+    "worldbuilding": {
+      "title": "世界构建",
+      "description": "构建完整的科幻世界观，涵盖角色档案、技术文档、组织架构和时间线"
+    },
+    "opensource": {
+      "title": "开源社区",
+      "description": "所有代码开源，创作内容以 CC-BY 4.0 许可共享，欢迎社区参与和贡献"
+    }
+  },
+  "cta": {
+    "explore": "探索我们的项目"
+  }
+}

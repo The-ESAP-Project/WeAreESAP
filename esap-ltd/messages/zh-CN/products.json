@@ -1,0 +1,22 @@
+{
+  "title": "我们的项目",
+  "projects": {
+    "weare": {
+      "title": "We Are ESAP",
+      "badge": "角色档案与世界构建",
+      "description": "ESAP 世界观的核心平台。浏览角色档案、探索技术文档、了解组织架构，通过交互式关系图谱深入理解角色之间的联系。",
+      "link": "访问站点"
+    },
+    "stories": {
+      "title": "ESAP Stories",
+      "badge": "交互式故事平台",
+      "description": "沉浸式的科幻故事阅读体验。分支叙事、章节解锁、场景探索，让你成为故事的一部分。",
+      "link": "访问站点"
+    }
+  },
+  "opensource": {
+    "title": "开源",
+    "description": "我们的所有代码都在 GitHub 上开源，欢迎贡献。",
+    "link": "查看源码"
+  }
+}

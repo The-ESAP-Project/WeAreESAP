@@ -11,7 +11,7 @@ body:
         在提交之前，请确保：
         - 你了解 ESAP 的世界观设定
         - 你的角色不与现有角色冲突
-        - 你已经阅读了 [贡献指南](https://github.com/AptS-1547/WeAreESAP/blob/master/CONTRIBUTING.md)
+        - 你已经阅读了 [贡献指南](https://github.com/The-ESAP-Project/WeAreESAP/blob/master/CONTRIBUTING.md)
 
   - type: input
     id: character-id

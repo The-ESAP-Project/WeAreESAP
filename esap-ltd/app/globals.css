@@ -1,0 +1,102 @@
+@import "tailwindcss";
+@source "../../packages/shared-ui/src";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --background: #ffffff;
+  --foreground: #0a0a0a;
+  --muted: #f5f5f5;
+  --muted-foreground: #737373;
+  --border: #e5e5e5;
+
+  --esap-yellow: #ffd93d;
+  --esap-yellow-dark: #ffc107;
+  --esap-pink: #ff69b4;
+  --esap-pink-dark: #ff1493;
+  --esap-blue: #4da6ff;
+  --esap-blue-dark: #2e8fff;
+}
+
+:root[class~="dark"] {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+  --muted: #1a1a1a;
+  --muted-foreground: #a3a3a3;
+  --border: #262626;
+
+  --esap-yellow: #ffd93d;
+  --esap-yellow-dark: #ffed4e;
+  --esap-pink: #ff69b4;
+  --esap-pink-dark: #ff85c8;
+  --esap-blue: #4da6ff;
+  --esap-blue-dark: #66b3ff;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+
+  --color-esap-yellow: var(--esap-yellow);
+  --color-esap-yellow-dark: var(--esap-yellow-dark);
+  --color-esap-pink: var(--esap-pink);
+  --color-esap-pink-dark: var(--esap-pink-dark);
+  --color-esap-blue: var(--esap-blue);
+  --color-esap-blue-dark: var(--esap-blue-dark);
+
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([class~="light"]) {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+    --muted: #1a1a1a;
+    --muted-foreground: #a3a3a3;
+    --border: #262626;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+a,
+button,
+[role="button"] {
+  transition-property: color, background-color, border-color, opacity;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  body {
+    transition: none;
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "hero": {
+    "title": "ESAP",
+    "subtitle": "Creative Technology Studio",
+    "description": "We explore the future of human-AI coexistence through interactive storytelling and worldbuilding"
+  },
+  "features": {
+    "storytelling": {
+      "title": "Interactive Storytelling",
+      "description": "Branching narratives and immersive reading experiences that tell stories of androids and humans coexisting in the future"
+    },
+    "worldbuilding": {
+      "title": "Worldbuilding",
+      "description": "A complete sci-fi universe with character archives, technical documentation, organizational structures, and timelines"
+    },
+    "opensource": {
+      "title": "Open Source",
+      "description": "All code is open source, creative content is shared under CC-BY 4.0, and community contributions are welcome"
+    }
+  },
+  "cta": {
+    "explore": "Explore Our Projects"
+  }
+}

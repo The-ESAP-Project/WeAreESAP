@@ -1,0 +1,15 @@
+{
+  "title": "Contact Us",
+  "description": "Have questions, suggestions, or collaboration ideas? Reach out through any of the following channels.",
+  "channels": {
+    "email": {
+      "label": "Email",
+      "value": "contact@esaps.net"
+    },
+    "github": {
+      "label": "GitHub",
+      "value": "The-ESAP-Project/WeAreESAP",
+      "description": "Submit an Issue or Pull Request"
+    }
+  }
+}

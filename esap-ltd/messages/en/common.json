@@ -1,0 +1,30 @@
+{
+  "metadata": {
+    "title": "ESAP",
+    "subtitle": "Creative Technology Studio",
+    "description": "ESAP - A creative technology studio dedicated to interactive sci-fi experiences",
+    "keywords": [
+      "ESAP",
+      "creative technology",
+      "sci-fi",
+      "interactive storytelling",
+      "worldbuilding"
+    ]
+  },
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "products": "Projects",
+    "contact": "Contact"
+  },
+  "footer": {
+    "copyright": "ESAP",
+    "allRightsReserved": "All rights reserved",
+    "version": "Version",
+    "projects": "Projects",
+    "weareWebsite": "Character Archive",
+    "storyWebsite": "Stories",
+    "social": "Links",
+    "github": "GitHub"
+  }
+}

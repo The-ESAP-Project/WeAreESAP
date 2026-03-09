@@ -1,57 +1,47 @@
 {
-  "name": "esap-stories",
-  "version": "0.3.0",
+  "name": "esap-ltd",
+  "version": "0.1.0",
   "private": true,
-  "description": "ESAP Stories - 逃离计划故事站：一个支持交互式叙事的科幻故事阅读平台",
+  "description": "ESAP Ltd - Creative Technology Studio",
   "license": "Apache-2.0",
   "author": "AptS:1547 (Yuhan Bian / 卞雨涵 <apts-1547@esaps.net>)",
   "contributors": [
     "AptS:1547 (Yuhan Bian / 卞雨涵 <apts-1547@esaps.net>)",
     "AptS:1548 (Yingyin Cai / 蔡颖茵 <apts-1548@esaps.net>)"
   ],
-  "homepage": "https://story.esaps.net",
+  "homepage": "https://esap.ltd",
   "repository": {
     "type": "git",
     "url": "https://github.com/The-ESAP-Project/WeAreESAP"
   },
   "scripts": {
-    "dev": "pnpm run prebuild && next dev",
-    "prebuild": "node ./scripts/generate-build-info.mjs && node ./scripts/update-story-timestamps.mjs",
-    "build": "next build",
+    "dev": "pnpm run prebuild && next dev --port 3002",
+    "prebuild": "node ./scripts/generate-build-info.mjs",
+    "build": "pnpm run prebuild && next build",
     "start": "next start",
-    "test:unit": "pnpm run prebuild && vitest",
-    "test:unit:run": "pnpm run prebuild && vitest run",
     "lint": "biome check",
     "lint:fix": "biome check --fix",
     "format": "biome format --write .",
-    "license:add": "node ./scripts/add-license-headers.js"
+    "test:unit": "pnpm run prebuild && vitest",
+    "test:unit:run": "pnpm run prebuild && vitest run"
   },
   "dependencies": {
     "@esap/shared-ui": "workspace:*",
     "framer-motion": "12.34.3",
-    "fuse.js": "^7.1.0",
-    "lxgw-wenkai-webfont": "^1.7.0",
     "next": "16.1.6",
     "next-intl": "^4.8.3",
     "next-themes": "^0.4.6",
-    "pangu": "^7.2.0",
     "react": "19.2.4",
-    "react-dom": "19.2.4",
-    "react-icons": "^5.5.0",
-    "yakuhanjp": "^4.1.1"
+    "react-dom": "19.2.4"
   },
   "devDependencies": {
     "@biomejs/biome": "^2.4.4",
     "@tailwindcss/postcss": "^4.2.1",
-    "@testing-library/jest-dom": "^6.9.1",
-    "@testing-library/react": "^16.3.2",
     "@types/node": "^25.3.1",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^5.1.4",
-    "@vitest/coverage-v8": "^4.0.18",
     "jsdom": "^28.1.0",
-    "sharp": "^0.34.5",
     "tailwindcss": "^4.2.1",
     "typescript": "^5.9.3",
     "vitest": "^4.0.18"

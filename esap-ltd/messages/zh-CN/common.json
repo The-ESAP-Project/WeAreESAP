@@ -1,0 +1,24 @@
+{
+  "metadata": {
+    "title": "ESAP",
+    "subtitle": "Creative Technology Studio",
+    "description": "ESAP - 一个致力于交互式科幻体验的创意科技工作室",
+    "keywords": ["ESAP", "创意科技", "科幻", "交互叙事", "世界观构建"]
+  },
+  "navigation": {
+    "home": "首页",
+    "about": "关于",
+    "products": "项目",
+    "contact": "联系"
+  },
+  "footer": {
+    "copyright": "ESAP",
+    "allRightsReserved": "保留所有权利",
+    "version": "版本",
+    "projects": "项目",
+    "weareWebsite": "角色档案",
+    "storyWebsite": "故事站",
+    "social": "链接",
+    "github": "GitHub"
+  }
+}

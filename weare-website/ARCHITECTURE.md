@@ -670,5 +670,5 @@ healthcheck:
 ## 联系方式
 
 - 官网：https://weare.esaps.net
-- GitHub：https://github.com/AptS-1547/WeAreESAP
+- GitHub：https://github.com/The-ESAP-Project/WeAreESAP
 - 邮件：apts-1547@esaps.net
