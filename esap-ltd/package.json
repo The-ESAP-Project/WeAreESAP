@@ -23,7 +23,8 @@
     "lint:fix": "biome check --fix",
     "format": "biome format --write .",
     "test:unit": "pnpm run prebuild && vitest",
-    "test:unit:run": "pnpm run prebuild && vitest run"
+    "test:unit:run": "pnpm run prebuild && vitest run",
+    "license:add": "node ./scripts/add-license-headers.js"
   },
   "dependencies": {
     "@esap/shared-ui": "workspace:*",

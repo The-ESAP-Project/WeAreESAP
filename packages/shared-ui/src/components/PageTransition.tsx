@@ -13,17 +13,27 @@
 
 "use client";
 
-import { ThemeProvider as NextThemesProvider } from "next-themes";
+import { motion } from "framer-motion";
+import type { ReactNode } from "react";
+import { useReducedMotion } from "../hooks/useReducedMotion";
 
-export function ThemeProvider({ children }: { children: React.ReactNode }) {
+interface PageTransitionProps {
+  children: ReactNode;
+}
+
+export function PageTransition({ children }: PageTransitionProps) {
+  const shouldReduceMotion = useReducedMotion();
+
   return (
-    <NextThemesProvider
-      attribute="class"
-      defaultTheme="system"
-      enableSystem
-      disableTransitionOnChange={false}
+    <motion.div
+      initial={shouldReduceMotion ? { opacity: 1 } : { opacity: 0, y: 10 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{
+        duration: shouldReduceMotion ? 0 : 0.4,
+        ease: [0.16, 1, 0.3, 1],
+      }}
     >
       {children}
-    </NextThemesProvider>
+    </motion.div>
   );
 }

@@ -12,9 +12,12 @@
 // limitations under the License.
 
 export { AnimatedSection } from "./components/AnimatedSection";
+export { CountUp } from "./components/CountUp";
 export {
   LanguageSwitcher,
   type LanguageSwitcherProps,
 } from "./components/LanguageSwitcher";
+export { PageTransition } from "./components/PageTransition";
+export { ParallaxSection } from "./components/ParallaxSection";
 export { ThemeToggle } from "./components/ThemeToggle";
 export { useReducedMotion } from "./hooks/useReducedMotion";

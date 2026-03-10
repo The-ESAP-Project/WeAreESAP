@@ -16,7 +16,9 @@
     "about": "About",
     "products": "Projects",
     "contact": "Contact",
-    "menu": "Menu"
+    "menu": "Menu",
+    "language": "Language",
+    "theme": "Theme"
   },
   "footer": {
     "copyright": "ESAP",

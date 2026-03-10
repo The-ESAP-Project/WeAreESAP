@@ -1,5 +1,23 @@
+// Copyright 2021-2026 The ESAP Project
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { AnimatedSection, Typewriter } from "@/components/ui";
+import {
+  AnimatedSection,
+  CountUp,
+  ParallaxSection,
+  Typewriter,
+} from "@/components/ui";
 import { Link } from "@/i18n/navigation";
 import { EXTERNAL_LINKS, ROUTES } from "@/lib/constants";
 
@@ -34,11 +52,17 @@ export default async function Home({
     <>
       {/* Hero - Full viewport */}
       <section className="relative min-h-[calc(100vh-4rem)] flex items-center overflow-hidden">
-        {/* Background decorations */}
+        {/* Background decorations with parallax */}
         <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-20 -right-32 w-96 h-96 rounded-full bg-esap-yellow/5 blur-3xl" />
-          <div className="absolute bottom-20 -left-32 w-96 h-96 rounded-full bg-esap-pink/5 blur-3xl" />
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-esap-blue/3 blur-3xl" />
+          <ParallaxSection speed={0.3}>
+            <div className="absolute top-20 -right-32 w-96 h-96 rounded-full bg-esap-yellow/5 blur-3xl" />
+          </ParallaxSection>
+          <ParallaxSection speed={0.5}>
+            <div className="absolute bottom-20 -left-32 w-96 h-96 rounded-full bg-esap-pink/5 blur-3xl" />
+          </ParallaxSection>
+          <ParallaxSection speed={0.4}>
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-esap-blue/3 blur-3xl" />
+          </ParallaxSection>
         </div>
 
         <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32 w-full">
@@ -110,27 +134,40 @@ export default async function Home({
               {[
                 {
                   label: t("stats.since"),
-                  value: t("stats.sinceYear"),
+                  value: 2021,
+                  isNumber: true,
                 },
                 {
                   label: t("stats.characters"),
-                  value: t("stats.charactersCount"),
+                  value: 10,
+                  suffix: "+",
+                  isNumber: true,
                 },
                 {
                   label: t("stats.stories"),
-                  value: t("stats.storiesCount"),
+                  value: 4,
+                  isNumber: true,
                 },
                 {
                   label: t("stats.opensource"),
                   value: t("stats.opensourceValue"),
+                  isNumber: false,
                 },
-              ].map((stat) => (
+              ].map((stat, i) => (
                 <div
                   key={stat.label}
                   className="py-8 md:py-10 px-4 md:px-8 text-center"
                 >
                   <p className="text-2xl md:text-3xl font-bold text-foreground font-mono">
-                    {stat.value}
+                    {stat.isNumber ? (
+                      <CountUp
+                        value={stat.value as number}
+                        suffix={stat.suffix}
+                        delay={i * 0.1}
+                      />
+                    ) : (
+                      stat.value
+                    )}
                   </p>
                   <p className="mt-1 text-xs md:text-sm text-muted-foreground">
                     {stat.label}
