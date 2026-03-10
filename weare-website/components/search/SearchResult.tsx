@@ -15,6 +15,7 @@
 
 import { useTranslations } from "next-intl";
 import { memo } from "react";
+import { Icon } from "@/components/ui";
 import type { SearchItem, SearchResultType } from "@/types/search";
 
 interface SearchResultProps {
@@ -23,51 +24,9 @@ interface SearchResultProps {
 }
 
 const typeIcons: Record<SearchResultType, React.ReactNode> = {
-  character: (
-    <svg
-      className="w-4 h-4"
-      fill="none"
-      stroke="currentColor"
-      viewBox="0 0 24 24"
-    >
-      <path
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth={2}
-        d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
-      />
-    </svg>
-  ),
-  tech: (
-    <svg
-      className="w-4 h-4"
-      fill="none"
-      stroke="currentColor"
-      viewBox="0 0 24 24"
-    >
-      <path
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth={2}
-        d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-      />
-    </svg>
-  ),
-  timeline: (
-    <svg
-      className="w-4 h-4"
-      fill="none"
-      stroke="currentColor"
-      viewBox="0 0 24 24"
-    >
-      <path
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth={2}
-        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-      />
-    </svg>
-  ),
+  character: <Icon name="User" size={16} />,
+  tech: <Icon name="Monitor" size={16} />,
+  timeline: <Icon name="Clock" size={16} />,
 };
 
 export const SearchResult = memo(function SearchResult({

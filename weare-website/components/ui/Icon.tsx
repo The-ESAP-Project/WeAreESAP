@@ -21,6 +21,7 @@ import {
 } from "react-icons/hi2";
 import {
   LuArrowLeft,
+  LuArrowUp,
   LuAtom,
   LuBook,
   LuBookMarked,
@@ -29,6 +30,7 @@ import {
   LuChartBar,
   LuChevronDown,
   LuCircle,
+  LuClock,
   LuCode,
   LuCoffee,
   LuCog,
@@ -45,6 +47,7 @@ import {
   LuMenu,
   LuMessageCircle,
   LuMessageSquare,
+  LuMonitor,
   LuMoon,
   LuMusic,
   LuPalette,
@@ -57,6 +60,7 @@ import {
   LuStar,
   LuSun,
   LuTarget,
+  LuUser,
   LuUsers,
   LuX,
   LuZap,
@@ -111,6 +115,7 @@ export type IconName =
   | "Droplet"
   // 导航图标
   | "ArrowLeft"
+  | "ArrowUp"
   | "Menu"
   | "X"
   // 搜索图标
@@ -124,7 +129,11 @@ export type IconName =
   | "Eye"
   | "Coffee"
   // 交互图标
-  | "ChevronDown";
+  | "ChevronDown"
+  // 用户图标
+  | "User"
+  | "Monitor"
+  | "Clock";
 
 // 图标映射表
 const iconMap: Record<IconName, ComponentType<{ className?: string }>> = {
@@ -174,6 +183,7 @@ const iconMap: Record<IconName, ComponentType<{ className?: string }>> = {
 
   // 导航图标 (Lucide)
   ArrowLeft: LuArrowLeft,
+  ArrowUp: LuArrowUp,
   Menu: LuMenu,
   X: LuX,
 
@@ -192,6 +202,11 @@ const iconMap: Record<IconName, ComponentType<{ className?: string }>> = {
 
   // 交互图标
   ChevronDown: LuChevronDown,
+
+  // 用户和设备图标
+  User: LuUser,
+  Monitor: LuMonitor,
+  Clock: LuClock,
 };
 
 export interface IconProps {

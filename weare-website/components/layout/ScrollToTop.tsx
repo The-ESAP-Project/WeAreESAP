@@ -15,6 +15,7 @@
 
 import { AnimatePresence, motion } from "framer-motion";
 import { useCallback, useEffect, useMemo, useState } from "react";
+import { Icon } from "@/components/ui";
 import { useReducedMotion } from "@/hooks/useReducedMotion";
 
 interface ScrollToTopProps {
@@ -159,19 +160,9 @@ export function ScrollToTop({ threshold = 400 }: ScrollToTopProps) {
             </svg>
 
             {/* 箭头图标 */}
-            <svg
-              className="absolute inset-0 m-auto w-6 h-6 text-foreground group-hover:-translate-y-1 transition-transform"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M5 10l7-7m0 0l7 7m-7-7v18"
-              />
-            </svg>
+            <div className="absolute inset-0 m-auto w-6 h-6 text-foreground group-hover:-translate-y-1 transition-transform flex items-center justify-center">
+              <Icon name="ArrowUp" size={24} />
+            </div>
           </button>
         </motion.div>
       )}
