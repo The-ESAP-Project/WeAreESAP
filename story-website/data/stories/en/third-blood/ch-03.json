@@ -1,0 +1,101 @@
+{
+  "id": "ch-03",
+  "title": "Coolant",
+  "subtitle": "Autumn 2024",
+  "readingTime": 3,
+  "perspectiveCharacter": "1738",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "1738 waited for 1549's next message. He knew the \"Watcher\" 36,000 kilometers away wouldn't just offer a dry biological conclusion."
+    },
+    {
+      "type": "paragraph",
+      "text": "The screen's halo flickered faintly in the dark, like a steady breath."
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1549",
+      "text": "Human blood always follows emotions; it boils easily, and freezes just as easily. Like our fluid titanium, it's born cold, just right for running data.",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1549",
+      "text": "If you want to build a bridge between the two sides, there has to be something that can withstand this enormous temperature difference.",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "1738's gaze paused on the words \"temperature difference.\" He remembered the so-called \"training\" in his former organization. Those prolonged desensitization experiments designed to erase his emotional fluctuations. They did achieve an absolutely stable product—a monster that would never be swayed by emotion."
+    },
+    {
+      "type": "paragraph",
+      "text": "That was a stability that did not belong to humanity."
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1549",
+      "text": "You always feel like you're sick, that this is a malfunction.",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1549",
+      "text": "But I think this state of having no pain, no fear, is exactly what lets you keep your balance in this gray area. Antifreeze is too cold, but the way you are right now is just right.",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1549",
+      "text": "What you're bleeding is simply the best coolant. You could call it the third blood.",
+      "emotion": "neutral"
+    },
+    {
+      "type": "scene_break",
+      "style": "fade"
+    },
+    {
+      "type": "paragraph",
+      "text": "The cursor on the screen stopped blinking."
+    },
+    {
+      "type": "paragraph",
+      "text": "1738 looked at the text. He didn't try to argue, nor did he experience any dramatic emotional surge called \"the touching feeling of being understood.\" His heart rate remained a steady sixty-two beats. But deep within those hard, indifferent psychological defenses, it seemed an infinitesimal fragment quietly fell into its rightful place."
+    },
+    {
+      "type": "internal_monologue",
+      "character": "1738",
+      "text": "Neither boiling red, nor freezing blue.\n\nThis alienated shell, this consciousness with its alarm system purged, is actually my only bargaining chip."
+    },
+    {
+      "type": "paragraph",
+      "text": "He pulled a roll of medical elastic bandage from the inner pocket of his jacket. He clamped one end in his teeth, and with his right hand expertly wrapped it around his left a few times, pulling it tight, then securing it. The pressure applied by the bandage compressed the nerves, but all he felt was pure \"pressure,\" not \"pain.\""
+    },
+    {
+      "type": "paragraph",
+      "text": "But he no longer felt this was a malfunction."
+    },
+    {
+      "type": "paragraph",
+      "text": "He put the terminal away, slipping it back into his pocket. The cold metal casing pressed against his body warmth."
+    },
+    {
+      "type": "atmosphere",
+      "visual": {
+        "mood": "neutral",
+        "animation": "fade-out"
+      },
+      "children": [
+        {
+          "type": "paragraph",
+          "text": "The wind on the rooftop was still very cold."
+        },
+        {
+          "type": "paragraph",
+          "text": "1738 turned and walked toward the stairwell. He pushed open the heavy fire door. The hinges let out a piercing screech, and then, with a \"bang,\" locked the night and the cold wind outside."
+        }
+      ]
+    }
+  ]
+}

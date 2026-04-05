@@ -1,0 +1,100 @@
+{
+  "id": "ch-02",
+  "title": "Observation",
+  "subtitle": "Autumn 2024",
+  "readingTime": 3,
+  "perspectiveCharacter": "1738",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "The encrypted terminal resting beside him suddenly vibrated. A very short burst, like a skipped heartbeat."
+    },
+    {
+      "type": "paragraph",
+      "text": "The screen lit up, and on the formerly dormant black background, a line of pale green text began to emerge letter by letter. The light hit the side of 1738's face, outlining his profile as hard as a marble statue."
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1549",
+      "text": "The wind on the roof must be strong. You've been standing there completely motionless for almost five minutes.",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "1738 looked at the screen. He didn't reply immediately. He knew that the eyes 36,000 kilometers away didn't need the aid of optical lenses. In the Polaris sensory matrix, the entire surface of the earth was a massive web woven of heat, signals, and wavelengths."
+    },
+    {
+      "type": "paragraph",
+      "text": "A second line of text quickly popped up on the screen."
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1549",
+      "text": "And thermal imaging shows your left hand is losing heat. Run into some trouble?",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "The corner of 1738's mouth twitched infinitesimally. It barely counted as a smile. He reached out and tapped on the terminal's virtual keyboard."
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1738",
+      "text": "A little accident. Scraped some skin.",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "He replied casually. In ESAP, in this team made up of androids, he didn't need to feign the exaggerated reactions humans have when injured."
+    },
+    {
+      "type": "internal_monologue",
+      "character": "1738",
+      "text": "She can't see the blood, but she can see the shift in heat.\n\nThis has become her habit of saying hello."
+    },
+    {
+      "type": "scene_break",
+      "style": "dots"
+    },
+    {
+      "type": "paragraph",
+      "text": "The wind on the roof seemed to pick up, carrying heavier moisture."
+    },
+    {
+      "type": "paragraph",
+      "text": "1738 looked down at his left hand with the hemostatic patch. Along the edges of the white medical material, a faint hint of red had begun to show through. He used the pad of his right thumb to gently rub the edge of that red stain. There was no special sensation, just a slightly damp piece of fabric."
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1738",
+      "text": "Just now, while I was watching it flow out, I was thinking about something.",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "He continued typing with one hand. Not fast, but without the slightest hesitation."
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1738",
+      "text": "The color is fine, the temperature is fine. But I just can't feel the pain. Watching the back of my hand bleed was like looking at a machine leaking oil. All I could think about was whether it would affect my draw speed; I didn't even consider getting a tetanus shot.",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "After the message was sent, the screen dimmed. A few seconds later, 1549's data stream flooded into the terminal again."
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1549",
+      "text": "Humans usually rely on pain to avoid danger. To not have this sensation would probably be diagnosed as some sort of dysfunction in medical terms.",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1549",
+      "text": "But you can just ignore those medical definitions.",
+      "emotion": "neutral"
+    }
+  ]
+}

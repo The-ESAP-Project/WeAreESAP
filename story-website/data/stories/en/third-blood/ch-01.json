@@ -1,0 +1,100 @@
+{
+  "id": "ch-01",
+  "title": "Stripped",
+  "subtitle": "Autumn 2024",
+  "readingTime": 3,
+  "perspectiveCharacter": "1738",
+  "content": [
+    {
+      "type": "atmosphere",
+      "visual": {
+        "mood": "cold",
+        "animation": "fade-in"
+      },
+      "children": [
+        {
+          "type": "paragraph",
+          "text": "The wind blew from the north, carrying the microscopic particles of rust and machine oil peculiar to the industrial zone."
+        },
+        {
+          "type": "paragraph",
+          "text": "1738 leaned against the air conditioning unit on the rooftop. Its metal casing vibrated, sending a low-frequency hum crawling up his spine."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "He raised his left hand. The light from the streetlamp spilled over the railing, barely illuminating the back of his hand. There was a three-centimeter laceration. The flesh was torn open, and dark red liquid was flowing down the texture of the bones, gathering at his fingertips, then dripping onto the concrete floor."
+    },
+    {
+      "type": "paragraph",
+      "text": "Drip."
+    },
+    {
+      "type": "paragraph",
+      "text": "The sound was extremely faint, but he heard it clearly."
+    },
+    {
+      "type": "internal_monologue",
+      "character": "1738",
+      "text": "Temperature is 36.5 degrees.\n\nViscosity normal. Oxidation rate normal."
+    },
+    {
+      "type": "paragraph",
+      "text": "He extended the index and middle fingers of his right hand and pressed them against his carotid artery. Sixty-two beats. His heartbeat was like a newly calibrated metronome, the intervals between each throb flawless. No acceleration, no compensatory pumping from the ruptured blood vessel."
+    },
+    {
+      "type": "scene_break",
+      "style": "dots"
+    },
+    {
+      "type": "paragraph",
+      "text": "He closed his eyes. At that moment, the sound of the wind and the vibration of the AC unit receded into the far distance. In its place was a blinding, temperatureless pure white light."
+    },
+    {
+      "type": "paragraph",
+      "text": "The cold sensation of metal electrodes pressed against his temples. The subtle sting of some high-frequency pulse piercing the cortex. A flat, synthesized voice repeating in his ear:"
+    },
+    {
+      "type": "quote",
+      "text": "The observer needs no subjective anchors. Sever it."
+    },
+    {
+      "type": "paragraph",
+      "text": "Then came the sound of something snapping. Not bone, not muscle, but something much deeper—the fuse connecting \"cognition\" to \"somatic response\" was silently cut."
+    },
+    {
+      "type": "scene_break",
+      "style": "line"
+    },
+    {
+      "type": "paragraph",
+      "text": "He opened his eyes. The rooftop was still dark. The blood on the back of his hand had flowed to his second finger."
+    },
+    {
+      "type": "paragraph",
+      "text": "He looked at that hand as if looking at a specimen placed on a sterile workbench. He knew this body belonged to \"Lu Qingxian,\" he knew damage would lead to infection and tissue necrosis, he could even recite all the chemical equations of the coagulation process."
+    },
+    {
+      "type": "paragraph",
+      "text": "The only thing he couldn't feel was \"pain.\""
+    },
+    {
+      "type": "paragraph",
+      "text": "It was a strange sense of suspension. His consciousness hovered half a meter above his body, coldly observing the damage to this carbon-based shell."
+    },
+    {
+      "type": "paragraph",
+      "text": "He pulled a vacuum-sealed hemostatic patch from the pocket of his tactical jacket. He tore open the seal with his teeth and peeled off the backing with one hand. The movement was fluid, without a trace of trembling caused by nerve reflexes."
+    },
+    {
+      "type": "paragraph",
+      "text": "He pressed the hemostatic patch onto the wound. Hard."
+    },
+    {
+      "type": "internal_monologue",
+      "character": "1738",
+      "text": "Press. Three seconds.\n\nBleeding stopped."
+    }
+  ]
+}
