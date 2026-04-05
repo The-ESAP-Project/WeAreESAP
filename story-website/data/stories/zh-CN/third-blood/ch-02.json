@@ -1,0 +1,100 @@
+{
+  "id": "ch-02",
+  "title": "观测",
+  "subtitle": "2024年秋",
+  "readingTime": 3,
+  "perspectiveCharacter": "1738",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "放在一旁的加密终端突然震动了一下。很短促的一声，像是心跳漏跳了一拍。"
+    },
+    {
+      "type": "paragraph",
+      "text": "屏幕亮起，原本处于休眠状态的黑色背景上，一行淡绿色的文字正在逐个浮现。光线打在1738的侧脸上，把他的轮廓勾勒得如同大理石雕像般坚硬。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1549",
+      "text": "天台上的风很大吧。你在那里一动不动站了快五分钟了。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "1738看着屏幕。他没有立刻回复。他知道，36000公里外的那双眼睛不需要光学镜头的辅助。在极星卫的感知矩阵里，整个地表是一张由热量、信号和波段编织成的巨大网络。"
+    },
+    {
+      "type": "paragraph",
+      "text": "屏幕上很快跳出了第二行字。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1549",
+      "text": "而且热成像显示，你的左手背正在流失热量。遇到麻烦了？",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "1738的嘴角极其轻微地牵动了一下。这几乎算不上是一个笑容。他伸手在终端的虚拟键盘上敲击。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1738",
+      "text": "一点小意外，破了点皮。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "他回得很随意。在ESAP，在这个由仿生人组成的团队里，他不需要刻意装出人类受伤时那种大惊小怪的样子。"
+    },
+    {
+      "type": "internal_monologue",
+      "character": "1738",
+      "text": "她看不到血，但她能看到热量的变化。\n\n这也是她打招呼的习惯了。"
+    },
+    {
+      "type": "scene_break",
+      "style": "dots"
+    },
+    {
+      "type": "paragraph",
+      "text": "天台上的风似乎变大了一些，夹带着更重的湿气。"
+    },
+    {
+      "type": "paragraph",
+      "text": "1738低头看了看贴着止血贴的左手。白色的医用材料边缘，已经隐隐透出了一丝红晕。他用右手的大拇指指腹，轻轻摩挲着那片红晕的边缘。没有任何特殊的触感，只是一片略微湿润的布料。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1738",
+      "text": "刚才看着它流出来的时候，我在想一件事情。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "他单手在键盘上继续输入。动作不快，但没有丝毫犹豫。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1738",
+      "text": "颜色没问题，温度也没问题。可我就是感觉不到疼。看着手背流血，就像在看一台漏油的机器。我满脑子想的都是这会不会影响拔枪的速度，根本没考虑打破伤风的事。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "信息发送出去后，屏幕暗了下去。几秒钟后，属于1549的数据流再次涌入终端。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1549",
+      "text": "人类通常靠疼痛来规避危险。没有这种感觉的话，在医学上大概会被判定为某种功能障碍吧。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1549",
+      "text": "不过那些医学定义，平时听听就算了。",
+      "emotion": "neutral"
+    }
+  ]
+}

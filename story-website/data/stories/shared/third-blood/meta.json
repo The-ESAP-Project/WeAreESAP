@@ -1,0 +1,17 @@
+{
+  "slug": "third-blood",
+  "order": 8,
+  "format": "collection",
+  "status": "completed",
+  "coverImage": "/assets/images/stories/third-blood/cover.webp",
+  "authors": ["1548"],
+  "relatedCharacters": ["1738", "1549"],
+  "tags": ["1738", "1549", "psychology", "bridge"],
+  "chapterOrder": ["ch-01", "ch-02", "ch-03"],
+  "updatedAt": "2026-04-06T04:26:06+08:00",
+  "chapterPublishedAt": {
+    "ch-01": "2026-04-06T04:26:06+08:00",
+    "ch-02": "2026-04-06T04:26:06+08:00",
+    "ch-03": "2026-04-06T04:26:06+08:00"
+  }
+}

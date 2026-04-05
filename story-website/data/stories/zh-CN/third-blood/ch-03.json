@@ -1,0 +1,101 @@
+{
+  "id": "ch-03",
+  "title": "冷却剂",
+  "subtitle": "2024年秋",
+  "readingTime": 3,
+  "perspectiveCharacter": "1738",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "1738等待着1549的下一条信息。他知道，36000公里外的那位“守望者”，不会只给出一个枯燥的生物学结论。"
+    },
+    {
+      "type": "paragraph",
+      "text": "屏幕的光晕在黑暗中微微闪烁，仿佛一种平缓的呼吸。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1549",
+      "text": "人的血总是跟着情绪走，容易沸腾，也很容易冻结。像我们的流体钛，生来就是凉的，用来跑数据刚好合适。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1549",
+      "text": "要是想在这两边搭桥，总得有东西能抗住这种巨大的温差。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "paragraph",
+      "text": "1738的视线停留在“温差”这两个字上。他想起了前组织里那些所谓的“训练”。那些为了抹除他情绪波动而进行的漫长脱敏实验。他们确实得到了一个绝对稳定的产物——一个永远不会被情绪左右的怪物。"
+    },
+    {
+      "type": "paragraph",
+      "text": "那是不属于人类的稳定。"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1549",
+      "text": "你总觉得自己生病了，觉得这是一种故障。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1549",
+      "text": "但我倒觉得，这种没有痛觉、没有恐惧的状态，刚好能让你在这个灰色地带保持平衡。防冻液太冷了，你现在这样就很好。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "dialogue",
+      "speaker": "1549",
+      "text": "你流出的这些，明明是最好的冷却剂。那算得上是第三种血了。",
+      "emotion": "neutral"
+    },
+    {
+      "type": "scene_break",
+      "style": "fade"
+    },
+    {
+      "type": "paragraph",
+      "text": "屏幕上的光标停止了跳动。"
+    },
+    {
+      "type": "paragraph",
+      "text": "1738看着这段文字。没有试图辩解，也没有产生那种名为“被理解的感动”的剧烈情绪波动。他的心率依然是平稳的六十二下。但在那坚硬的、冷漠的心理防线深处，似乎有一块极小的碎片，安静地落到了它该去的位置。"
+    },
+    {
+      "type": "internal_monologue",
+      "character": "1738",
+      "text": "不是沸腾的红，也不是冰冷的蓝。\n\n这具异化的躯壳，这个被清除了警报系统的意识，其实正是我唯一的筹码。"
+    },
+    {
+      "type": "paragraph",
+      "text": "他从外套内侧口袋里抽出一卷医用弹力绷带。牙齿咬住一端，右手熟练地在左手上绕了几圈，用力拉紧，然后固定。绷带施加的压力压迫着神经，但他感受到的依然只是纯粹的“压力”，而非“疼痛”。"
+    },
+    {
+      "type": "paragraph",
+      "text": "但他不再觉得这是一种故障了。"
+    },
+    {
+      "type": "paragraph",
+      "text": "他收起终端，把它重新放回口袋里。冰冷的金属外壳贴着他的体温。"
+    },
+    {
+      "type": "atmosphere",
+      "visual": {
+        "mood": "neutral",
+        "animation": "fade-out"
+      },
+      "children": [
+        {
+          "type": "paragraph",
+          "text": "天台上的风依然很冷。"
+        },
+        {
+          "type": "paragraph",
+          "text": "1738转身走向楼梯间。推开那扇沉重的防火门。铰链发出刺耳的摩擦声，然后“砰”的一声，将黑夜和冷风关在了门外。"
+        }
+      ]
+    }
+  ]
+}
