@@ -106,18 +106,18 @@ cd WeAreESAP
 git checkout -b add-character-你的角色ID
 
 # 添加角色文件
-# → website/data/characters/shared/你的角色ID.json
-# → website/data/characters/zh-CN/你的角色ID.json
+# → weare-website/data/characters/shared/你的角色ID.json
+# → weare-website/data/characters/zh-CN/你的角色ID.json
 # → （可选）en/ 和 ja/ 目录下的翻译文件
 
 # 测试
-cd website
+cd weare-website
 pnpm install
 pnpm dev
 # 访问 http://localhost:3000/characters 确认显示正常
 
 # 提交
-git add website/data/characters/
+git add weare-website/data/characters/
 git commit -m "feat: 添加新角色 - 角色姓名 (ID)"
 git push origin add-character-你的角色ID
 # 然后在 GitHub 上创建 Pull Request
@@ -135,7 +135,7 @@ git push origin add-character-你的角色ID
 ## 代码贡献
 
 ```bash
-cd website
+cd weare-website
 pnpm install
 pnpm dev
 ```
@@ -177,7 +177,7 @@ chore: 更新依赖
 - 改进现有文档清晰度
 - 修正拼写和语法错误
 - 翻译内容到其他语言（en、ja）
-- 网站内容位于 `website/data/` 和 `website/messages/`
+- 网站内容位于 `weare-website/data/` 和 `weare-website/messages/`
 
 ---
 

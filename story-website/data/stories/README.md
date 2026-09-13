@@ -67,7 +67,7 @@ data/stories/
 
 ### `{locale}/{slug}/{chapterId}.json`
 
-章节内容，类型定义见 `types/chapter.ts`。
+章节内容，类型定义见 `../../types/chapter.ts`（相对于本目录）。
 
 ---
 

@@ -65,7 +65,7 @@ WeAreESAP 是一个科幻世界观创作企划的官方网站，讲述仿生人�
 ## 目录结构
 
 ```
-website/
+weare-website/
 ├── app/                        # Next.js App Router
 │   └── [locale]/              # 国际化路由
 │       ├── page.tsx           # 首页
@@ -394,7 +394,7 @@ initial={shouldReduceMotion ? { opacity: 1 } : { opacity: 0, y: 20 }}
     "primary": "#FF6B6B",
     "secondary": "#4ECDC4"
   },
-  "backgroundImage": "/images/characters/9999.jpg"
+  "backgroundImage": "/assets/images/characters/9999.webp"
 }
 ```
 
@@ -422,7 +422,7 @@ initial={shouldReduceMotion ? { opacity: 1 } : { opacity: 0, y: 20 }}
 
 4. **添加头像/背景图**
 
-将图片放到 `public/images/characters/` 目录。
+将图片放到 `public/assets/images/characters/` 目录。
 
 5. **重新构建**
 
@@ -611,7 +611,7 @@ pnpm build
 **输出：**
 
 - `.next/` - Next.js 构建产物
-- `standalone/` - 独立部署包（Docker）
+- `.next/standalone/` - 独立部署包（Docker）
 
 ### Docker 部署
 
@@ -626,7 +626,7 @@ Docker 容器包含健康检查：
 
 ```yaml
 healthcheck:
-  test: ["CMD", "node", "healthcheck.js"]
+  test: ["CMD", "/nodejs/bin/node", "-e", "require('http').get('http://localhost:3000/', (r) => { process.exit(r.statusCode === 200 ? 0 : 1) })"]
   interval: 30s
   timeout: 10s
   retries: 3

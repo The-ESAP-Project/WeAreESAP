@@ -16,7 +16,7 @@
 ## 二、项目目录结构
 
 ```
-website/
+weare-website/
 ├── app/                          # Next.js 13+ App Router 页面
 │   ├── [locale]/                 # 国际化动态路由
 │   │   ├── characters/           # 角色页面

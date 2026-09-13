@@ -62,7 +62,7 @@ pnpm test:e2e:debug
 
 - `e2e/home.spec.ts` - 首页和导航测试
 - `e2e/characters.spec.ts` - 角色页面测试
-- `e2e/i18n.spec.ts` - 国际化测试
+- `e2e/theme-and-i18n.spec.ts` - 主题与国际化测试
 
 ### 系统要求
 
