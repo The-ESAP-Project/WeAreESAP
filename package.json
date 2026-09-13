@@ -1,7 +1,7 @@
 {
   "name": "weareesap-monorepo",
   "private": true,
-  "packageManager": "pnpm@11.13.0",
+  "packageManager": "pnpm@12.4.1",
   "workspaces": [
     "packages/*",
     "weare-website",
