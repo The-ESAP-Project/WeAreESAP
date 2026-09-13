@@ -62,7 +62,11 @@ export const SearchCommand = memo(function SearchCommand() {
             <div className="bg-background border border-border rounded-xl shadow-2xl overflow-hidden">
               {/* 搜索输入框 */}
               <div className="flex items-center gap-3 px-4 py-3 border-b border-border">
-                <Icon name="Search" size={20} className="text-muted-foreground" />
+                <Icon
+                  name="Search"
+                  size={20}
+                  className="text-muted-foreground"
+                />
                 <input
                   ref={inputRef}
                   type="text"

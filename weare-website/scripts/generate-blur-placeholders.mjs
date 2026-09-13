@@ -116,7 +116,7 @@ async function generateBlurPlaceholders() {
     // 保存到 JSON 文件
     await fs.writeFile(
       outputFile,
-      JSON.stringify(blurDataMap, null, 2),
+      `${JSON.stringify(blurDataMap, null, 2)}\n`,
       "utf-8"
     );
 

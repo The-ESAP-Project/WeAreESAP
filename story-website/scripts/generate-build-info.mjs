@@ -38,7 +38,7 @@ try {
 
   // 写入到 data 目录（作为 TypeScript 可导入的文件）
   const outputPath = join(__dirname, "..", "data", "build-info.json");
-  writeFileSync(outputPath, JSON.stringify(buildInfo, null, 2));
+  writeFileSync(outputPath, `${JSON.stringify(buildInfo, null, 2)}\n`);
 
   console.log("✨ 构建信息已生成:", buildInfo);
 } catch (error) {
@@ -52,7 +52,7 @@ try {
   };
 
   const outputPath = join(__dirname, "..", "data", "build-info.json");
-  writeFileSync(outputPath, JSON.stringify(fallbackInfo, null, 2));
+  writeFileSync(outputPath, `${JSON.stringify(fallbackInfo, null, 2)}\n`);
 
   console.log("✨ 使用降级构建信息:", fallbackInfo);
 }

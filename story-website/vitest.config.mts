@@ -20,7 +20,7 @@ export default defineConfig({
         "dist/",
         "data/",
         "scripts/",
-        "**/*.config.{ts,js,mjs}",
+        "**/*.config.{ts,js,mjs,mts}",
         "**/*.d.ts",
         "**/types/**",
         "**/__tests__/**",
@@ -29,7 +29,7 @@ export default defineConfig({
   },
   resolve: {
     alias: {
-      "@": path.resolve(__dirname, "./"),
+      "@": path.resolve(import.meta.dirname, "./"),
     },
   },
 });

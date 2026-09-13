@@ -139,14 +139,14 @@ describe("data-loader", () => {
 
       // Mock readFile：让一个文件的 JSON.parse 失败
       const originalReadFile = fs.readFile;
-      vi.spyOn(fs, "readFile").mockImplementation(async (filePath) => {
+      vi.spyOn(fs, "readFile").mockImplementation(async (filePath, options) => {
         const pathStr = filePath.toString();
         if (pathStr.includes("invalid.json")) {
           // 返回无效的 JSON 字符串，这会导致 JSON.parse 失败
-          return "{ this is not valid json" as unknown as Buffer;
+          return "{ this is not valid json";
         }
         // 对于其他文件，调用原始的 readFile
-        return originalReadFile.call(fs, filePath, "utf-8");
+        return originalReadFile.call(fs, filePath, options);
       });
 
       await loadJsonFiles(["data", "characters"], "zh-CN");

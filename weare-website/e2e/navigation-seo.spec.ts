@@ -195,7 +195,7 @@ test.describe("导航和 SEO", () => {
       await navigateAndWait(page, ROUTES.HOME);
 
       // 记录初始状态
-      page.url();
+      const initialUrl = page.url();
       const initialTitle = await page.title();
 
       // 刷新页面

@@ -15,12 +15,7 @@
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 
 describe("logger", () => {
-  let originalNodeEnv: string | undefined;
-
   beforeEach(() => {
-    // 保存原始 NODE_ENV
-    originalNodeEnv = process.env.NODE_ENV;
-
     // Mock console 方法
     vi.spyOn(console, "log").mockImplementation(() => {});
     vi.spyOn(console, "info").mockImplementation(() => {});
@@ -30,20 +25,14 @@ describe("logger", () => {
   });
 
   afterEach(() => {
-    // 恢复原始 NODE_ENV
-    if (originalNodeEnv === undefined) {
-      delete process.env.NODE_ENV;
-    } else {
-      process.env.NODE_ENV = originalNodeEnv;
-    }
-
+    vi.unstubAllEnvs();
     vi.restoreAllMocks();
     vi.resetModules();
   });
 
   describe("开发环境", () => {
     beforeEach(() => {
-      process.env.NODE_ENV = "development";
+      vi.stubEnv("NODE_ENV", "development");
       vi.resetModules();
     });
 
@@ -109,7 +98,7 @@ describe("logger", () => {
 
   describe("生产环境", () => {
     beforeEach(() => {
-      process.env.NODE_ENV = "production";
+      vi.stubEnv("NODE_ENV", "production");
       vi.resetModules();
     });
 
@@ -156,7 +145,7 @@ describe("logger", () => {
 
   describe("其他环境", () => {
     it("应该在测试环境下不调用 console", async () => {
-      process.env.NODE_ENV = "test";
+      vi.stubEnv("NODE_ENV", "test");
       vi.resetModules();
 
       const { logger } = await import("../logger");
@@ -175,7 +164,7 @@ describe("logger", () => {
     });
 
     it("应该在未设置 NODE_ENV 时不调用 console", async () => {
-      delete process.env.NODE_ENV;
+      vi.stubEnv("NODE_ENV", undefined);
       vi.resetModules();
 
       const { logger } = await import("../logger");

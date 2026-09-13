@@ -9,8 +9,20 @@ allowBuilds:
   '@swc/core': true
   sharp: true
 
+# Keep transitive dependencies at versions containing the current security fixes.
+overrides:
+  baseline-browser-mapping: 2.11.22
+  nanoid: 3.3.19
+  postcss: 8.5.23
+  undici: 7.29.1
+  vite: 8.3.0
+
 minimumReleaseAgeExclude:
   - fuse.js@7.5.0
+
+# Delay brand-new releases and reject packages whose publisher trust regresses.
+minimumReleaseAge: 1440
+trustPolicy: no-downgrade
 
 onlyBuiltDependencies:
   - "@parcel/watcher"

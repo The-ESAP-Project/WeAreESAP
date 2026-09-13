@@ -22,7 +22,7 @@ try {
   };
 
   const outputPath = join(__dirname, "..", "data", "build-info.json");
-  writeFileSync(outputPath, JSON.stringify(buildInfo, null, 2));
+  writeFileSync(outputPath, `${JSON.stringify(buildInfo, null, 2)}\n`);
 
   console.log("Build info generated:", buildInfo);
 } catch (error) {
@@ -35,5 +35,5 @@ try {
   };
 
   const outputPath = join(__dirname, "..", "data", "build-info.json");
-  writeFileSync(outputPath, JSON.stringify(fallbackInfo, null, 2));
+  writeFileSync(outputPath, `${JSON.stringify(fallbackInfo, null, 2)}\n`);
 }
