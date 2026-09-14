@@ -1,0 +1,12 @@
+{
+  "id": "2080",
+  "code": "AptS:2080",
+  "color": {
+    "primary": "#7F1D1D",
+    "dark": "#2B0A0A"
+  },
+  "avatar": "/assets/images/characters/2080/logo.webp",
+  "backgroundImage": "/assets/images/characters/2080/hero.webp",
+  "backgroundPosition": "72% center",
+  "tier": "guest"
+}

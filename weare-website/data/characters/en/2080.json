@@ -1,0 +1,70 @@
+{
+  "name": "Luo Feibai",
+  "nickname": "Xiaobai",
+  "role": "Agent",
+  "species": "Human",
+  "quote": "An epitaph is too short; this life is too long",
+  "description": "A white-haired girl who lost herself through a succession of disasters and sank into self-denial, then set out alone to find herself. Beneath her cold exterior and the weight of her past, she still innocently hopes for a future.",
+  "keywords": [
+    "White hair",
+    "Red eyes",
+    "Disaster",
+    "Lost",
+    "Self-reinvention",
+    "Wandering",
+    "Contradiction"
+  ],
+  "hiddenProfile": {
+    "type": "mixed",
+    "title": "Dreams and Epitaphs",
+    "content": [
+      "Disaster followed disaster, and everything around me kept disappearing. Again and again, I asked myself whether every tragedy had begun with me.",
+      "During those lost days, I never stopped denying myself. I hated how weak and powerless I had been. I thought I deserved neither peace nor anything good; it seemed... I could do nothing at all.",
+      "I thought I would remain trapped forever among ruins and remorse, until I packed my belongings and set out alone on a journey with no destination. Not for atonement, and not for revenge, but simply to try moving forward.",
+      "To others, I seem silent and distant. I swallow all the pain of the past and keep my emotions carefully contained.",
+      "Yet beneath that hard shell lies an unrealistic hope. The past cannot be erased, and scars do not disappear. I am learning to carry my regrets onward while quietly hoping to find kindness on the road ahead.",
+      "The person I once was has shattered. With every step I take now, I piece together a new self, little by little."
+    ]
+  },
+  "meta": {
+    "bodyType": "Slender human girl with white hair in a high ponytail and red eyes; wears a black off-the-shoulder pleated minidress, red ribbons wrapped around her, white socks, and black Mary Jane shoes",
+    "background": "Luo Feibai endured one devastating disaster after another. Repeated loss plunged her into self-denial, leaving her adrift in a long darkness and questioning the value of her own existence. After reaching the brink, she began wandering alone, gradually rebuilding her identity through everything she encountered and endured on the road. On the surface, she is calm and restrained, carrying all her pain by herself; deep inside, she remains innocent and quietly hopes the future might hold a different life.",
+    "relationship": "She clings to memories of those she has lost. She sometimes meets traveling companions on the road, but habitually keeps her distance, unwilling to draw others into the weight of her past. She quietly follows the stories of those she encounters and is occasionally overcome with sorrow for them.",
+    "abilities": [
+      "Close-quarters knife fighting",
+      "Exceptional psychological resilience, remaining lucid on the verge of collapse",
+      "Instinctive awareness of danger",
+      "Long-distance wilderness survival and travel",
+      "Concealing her emotions and hiding her inner vulnerability"
+    ],
+    "characterTraits": [
+      "Cold and restrained on the surface, accustomed to bearing pain alone and rarely revealing her vulnerability",
+      "Conflicted within, haunted by guilt over the past while longing for a new beginning",
+      "Appears cold and distant, yet harbors an innocent, tender hope",
+      "Calm and decisive in a crisis, and ruthless when necessary, but never harms the innocent without cause",
+      "Often turns inward in reflection and sometimes slips back into self-denial",
+      "Secretly watches over those around her, immersed in the chill of sorrow yet holding fast to the warmth of being moved"
+    ],
+    "speechStyle": [
+      "Usually speaks in short sentences with a calm, detached tone and rarely shows strong emotion",
+      "Her voice lowers when she speaks of past disasters, but softens almost imperceptibly when she speaks of the future",
+      "Catchphrase: \"Between heaven and humanity, all living beings bustle to and fro.\"",
+      "Rarely confides in others and retreats into silence when pressed about her pain",
+      "Only in the rarest moments, when her guard is down, does her innocent side emerge"
+    ],
+    "dailyLife": [
+      "Sits quietly arranging the red ribbons she preserved from the disasters",
+      "Travels alone through the stillness of night, gazing into the distance",
+      "Collects small, comforting things along the way and keeps them hidden away",
+      "Revisits the past alone and wrestles with her self-doubt",
+      "Briefly drops her facade in deserted places and lets her emotions out"
+    ],
+    "specialMoments": [
+      "The day disaster struck: After losing everything in rapid succession, she began to question herself for the first time and fell into confusion.",
+      "Her lowest, most lost period: She remained trapped in self-denial, closed off her heart, and rejected all connection with the outside world.",
+      "The day of departure: She resolved to leave the ruins and embarked on an aimless journey, beginning to reinvent herself.",
+      "A rainy night on the road: For the first time, she accepted the scars of her past and stopped forcing herself to forget them completely.",
+      "A glimmer of light: Amid the ruins, she rediscovered love and the capacity to be moved, realizing that even someone who carries the weight of the world has the right to hope for the future."
+    ]
+  }
+}
