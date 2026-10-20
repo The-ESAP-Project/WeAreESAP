@@ -1,0 +1,56 @@
+{
+  "name": "Fleurie",
+  "role": "Provider",
+  "species": "Human",
+  "quote": "As long as the oven is still on, this squad will never fall apart.",
+  "description": "A senior logistics officer at the Observation Bureau. She has no supernatural powers at all, yet holds the squad's sanity together with nothing but ordinary warmth.",
+  "keywords": ["Warmth", "Comfort", "Resilience", "Pink"],
+  "hiddenProfile": {
+    "type": "mixed",
+    "title": "The Oven Is Still On",
+    "content": [
+      "Every one of them is stronger than me. Deduction, teleportation, fluid shapeshifting — I have none of it. I am an ordinary human from Earth.",
+      "When I was first assigned to Squad 100, I assumed I was there to fill a seat. Everything around me was cold instruments and cross-dimensional alarms, and the first thing I brought in was an oven.",
+      "But I came to realise this squad was not short on combat power. Nieve can deduce the optimal outcome for everyone, yet cannot tell when someone is having a bad day. Mooon sat in that isolation room for so long, and nobody thought to bring her a slice of cake.",
+      "I cannot save anyone from a dimensional collapse. What I can do is make sure this room still smells of osmanthus once the alarms stop.",
+      "So I turned the lounge into what it is now — no tactical table, just an oven and a couch buried in wool blankets. People say that is not what a special squad should look like.",
+      "And yet every time they come back from a mission, this is where they come first."
+    ]
+  },
+  "meta": {
+    "bodyType": "Human girl from Earth with long hair, a flower hairpiece and a stubborn cowlick; wears a pink dress always tied with a bow, knee socks and flower-trimmed shoes",
+    "background": "Fleurie is a senior officer in the logistics department of the Interstellar Anomalous Biology Observation Bureau, and the gravitational centre of Special Squad 100. As an ordinary human from Earth she has no combat enhancements or supernatural abilities, but her capacity for emotional reassurance and her tolerance for pressure are extraordinary. She handles supply for the entire squad and steadies everyone's sanity when systems fail. In a bureau full of cold instruments and cross-dimensional alarms, Squad 100's lounge has no tactical table — only an oven that perpetually smells of osmanthus and a large couch covered in wool blankets, both of which are essentially hers. When Mooon was first contained she was profoundly withdrawn; it was Fleurie walking into the isolation room with carrots and a freshly baked cake that made her willing to approach another person for the first time. Within the ESAP framework, the Observation Bureau is an outposted observation unit independent of the main line, and Squad 100 handles the containment and observation of cross-dimensional anomalous life. They are not involved in core Feedscatter research, but they live through the same age of dimensional collapse.",
+    "relationship": "Her earliest and deepest bond is with Mooon (0102), whom she drew out of the isolation room with a single slice of carrot cake. With Nieve (0103) she forms a complementary pair: Nieve handles deduction and decisions while she handles people, covering the gap left by Nieve's obliviousness. Zephy's (0104) sudden impulses always reach her first, and she decodes what the other means instantly. She has no direct contact with the ESAP core members, belonging to an outposted bureau unit.",
+    "abilities": [
+      "Emotional reassurance and psychological support",
+      "Exceptional tolerance for pressure",
+      "Squad-wide logistics and supply coordination",
+      "Baking (osmanthus, cakes)",
+      "Holding the team's sanity together when systems collapse"
+    ],
+    "characterTraits": [
+      "Gentle but firmly her own person, not merely a peacemaker",
+      "Highly pressure-resistant; the more chaotic the scene, the steadier she gets",
+      "Loves pink, and her dress always has a bow on it",
+      "Unusually easy to win over with floral scents",
+      "Fights an age of imminent dimensional collapse with the most ordinary sense of daily life"
+    ],
+    "speechStyle": [
+      "Gentle in tone, prefers questions over assertions",
+      "Skips the big speeches and says concrete things like \"eat something first\"",
+      "Understands what someone means before they speak, then simply starts arranging things",
+      "Rarely shows her own exhaustion, and deflects with a smile when asked"
+    ],
+    "dailyLife": [
+      "Minding the oven so the lounge always smells of osmanthus",
+      "Preparing supplies for the squad, remembering everyone's preferences",
+      "Clearing up after the alarms stop and putting the room back in order",
+      "Handing cake to Mooon, watching her slowly grow willing to come near people"
+    ],
+    "specialMoments": [
+      "The day in the isolation room: she walked in with carrots and a freshly baked cake, and for the first time Mooon let someone come close.",
+      "Remaking the lounge: she turned down the issued tactical table and replaced it with an oven and a couch buried in wool blankets.",
+      "The day of departure: Zephy came to take her hand after reading the stars; she decoded it instantly, smiled, and began rounding everyone up."
+    ]
+  }
+}

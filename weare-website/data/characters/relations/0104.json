@@ -1,0 +1,23 @@
+{
+  "characterId": "0104",
+  "relationships": [
+    {
+      "targetId": "0101",
+      "type": "friend",
+      "label": "出发的号令",
+      "description": "看完星象第一个去拉她的手——「带上你的蛋糕，我们要出发了」"
+    },
+    {
+      "targetId": "0102",
+      "type": "friend",
+      "label": "拉着走的人",
+      "description": "突发奇想时拉着 0102 瞬移去其他星系看日出"
+    },
+    {
+      "targetId": "0103",
+      "type": "friend",
+      "label": "最爱逗的人",
+      "description": "嫌对方喝咖啡太慢，一把抢过来喝掉，还要揉她毛茸茸的耳朵"
+    }
+  ]
+}

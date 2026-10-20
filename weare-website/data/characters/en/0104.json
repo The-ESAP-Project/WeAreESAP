@@ -1,0 +1,59 @@
+{
+  "name": "Zephy",
+  "role": "Timeline Observer",
+  "species": "Wind Spirit",
+  "quote": "The cards say petting a fluffy puppy today raises our mission success rate by 30 percent!",
+  "description": "A wind spirit serving as the squad's mobile unit and assault specialist. Her nerve conduction runs past its limits, fast as a gust of wind, and she reads future probability with tarot and a crystal ball.",
+  "keywords": ["Wind spirit", "Higher-dimensional magic", "Mischievous", "Teleportation"],
+  "hiddenProfile": {
+    "type": "mixed",
+    "title": "Probability",
+    "content": [
+      "They all assume it is a little girl's game of make-believe. The tarot cards, the crystal ball, all the trinkets I carry around.",
+      "Let them. I do treat them as toys — they just happen to show me other things along the way.",
+      "Every time a card turns over, the road ahead splits into many. Most of them I leave unexamined; it is exhausting, and knowing too much does no good.",
+      "In some of those branches, this room is empty. I looked once, and I have never turned that direction again.",
+      "So I am always hurrying them along. Nieve drinks her coffee too slowly, Mooon walks too slowly, Fleurie always has to switch off the oven first — faster, while this particular road still exists.",
+      "\"I have read the stars. Bring your cake, we are leaving.\"",
+      "I have said it many times. Every time, they have followed."
+    ]
+  },
+  "meta": {
+    "bodyType": "A wind spirit girl with bohemian twin braids and a leaf hairpiece; wears a layered fringed top and billowing trousers with wrappings along her arms, carrying tarot cards and a crystal ball",
+    "background": "The mobile unit and assault specialist of Special Squad 100, also serving as its Timeline Observer. With bohemian twin braids and nerve conduction running past its limits, she is fast as a gust of wind and the most mischievous veteran on the squad. She not only draws wherever she happens to be but carries tarot cards and a crystal ball with her. To everyone else this is a little girl's game of magic; in fact it is her reading the probability of the future through higher-dimensional magic. Her arrival shattered the quiet of the lounge for good — she is forever complaining that Nieve drinks coffee too slowly and snatching the cup away to finish it herself, or acting on a sudden whim and hauling Mooon and Fleurie off to teleport to another star system and watch the sunrise. Her post as Timeline Observer sits at an interesting divide from Feedscatter computation in the ESAP setting: the ultrafast computation of Feedscatter particles serves the reconstruction of human minds and the carrying of memory, a rebuilding of what already exists, whereas her higher-dimensional probability reading points at branches that have not yet happened. The Bureau has never studied the two side by side, which may be one reason Squad 100 has been allowed to remain an independent unit.",
+    "relationship": "Nieve (0103) is her favourite target — snatching coffee, ruffling ears, complaining about the pace, she has done all of it. After reading the stars she goes first to take Fleurie's (0101) hand and tell her to bring the cake. She frequently hauls Mooon (0102) off to teleport to other star systems and watch the sunrise. She has no direct contact with the ESAP core members.",
+    "abilities": [
+      "Extreme mobility from overdriven nerve conduction",
+      "Short-range teleportation (can carry teammates)",
+      "Higher-dimensional probability reading, with tarot and a crystal ball as her media",
+      "Observation of timeline branches",
+      "Assault and close-range disruption",
+      "Drawing"
+    ],
+    "characterTraits": [
+      "Mischievous, and the loudest source of cheer in any group",
+      "Athletic to a fault, forever barrelling into things",
+      "Treats tarot cards as toys, though the magic does appear to work",
+      "An incorrigible dog lover",
+      "Acts entirely on sudden whims; she is the one who broke the lounge's quiet",
+      "Her standing as a veteran sits in sharp contrast with her childlike manner"
+    ],
+    "speechStyle": [
+      "Speaks very fast, often packing two or three matters into one sentence",
+      "Uses divination results as pretexts; \"the cards say\" is her catchphrase",
+      "Reports the good and withholds the bad, never voicing an ugly branch she has seen",
+      "Her reasons for hurrying people are absurd, but her purpose is precise"
+    ],
+    "dailyLife": [
+      "Hanging upside down from the rack above the lounge to watch people",
+      "Drawing wherever she happens to be, palette and paper scattered around her",
+      "Turning tarot cards and reading the crystal ball for probability branches",
+      "Stealing Nieve's coffee and ruffling her fluffy ears"
+    ],
+    "specialMoments": [
+      "Joining Squad 100: her arrival shattered the quiet of the lounge for good.",
+      "The branch with the empty room: in one reading she saw a future without them, and has never turned that direction since.",
+      "The day of departure: hanging upside down, she put away the crystal ball and tarot cards and took Fleurie's hand, eyes shining — \"I have read the stars.\""
+    ]
+  }
+}
