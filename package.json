@@ -7,5 +7,8 @@
     "weare-website",
     "story-website",
     "esap-ltd"
-  ]
+  ],
+  "engines": {
+    "node": ">=24.22.1 <25"
+  }
 }

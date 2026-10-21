@@ -615,8 +615,11 @@ pnpm build
 
 ### Docker 部署
 
+构建和运行要求 Node.js 24.22.1 或更新的 24.x 安全版本；完整说明见[部署指南](../docs/DEPLOYMENT.md)。
+
 ```bash
-docker build -t weare-esap .
+# 在仓库根目录运行
+docker build --pull -f weare-website/Dockerfile -t weare-esap .
 docker run -p 3000:3000 weare-esap
 ```
 
@@ -626,7 +629,7 @@ Docker 容器包含健康检查：
 
 ```yaml
 healthcheck:
-  test: ["CMD", "/nodejs/bin/node", "-e", "require('http').get('http://localhost:3000/', (r) => { process.exit(r.statusCode === 200 ? 0 : 1) })"]
+  test: ["CMD", "/nodejs/bin/node", "-e", "require('http').get('http://127.0.0.1:3000/', (r) => { process.exit(r.statusCode === 200 ? 0 : 1) })"]
   interval: 30s
   timeout: 10s
   retries: 3

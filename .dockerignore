@@ -1,0 +1,17 @@
+# All site images use the monorepo root as their build context.
+.git
+**/node_modules
+**/.next
+**/out
+**/coverage
+**/playwright-report
+**/test-results
+**/.vercel
+**/.env
+**/.env.*
+**/*.log
+**/.DS_Store
+.pnpm-store
+.turbo
+.cache
+tmp

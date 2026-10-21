@@ -35,13 +35,15 @@ In this world: feedscatteron particles redefined computation, fluid titanium sus
 
 ### Local Development
 
-Requires Node.js >= 18.17 and [pnpm](https://pnpm.sh/).
+Requires **Node.js 24.22.1 or a newer 24.x security release** and the pinned **pnpm 12.4.1**. Run `nvm install && nvm use` from the repository root to use `.nvmrc`. See the [deployment guide](docs/DEPLOYMENT.md) for Docker, Vercel, and standalone requirements.
 
 ```bash
 git clone https://github.com/The-ESAP-Project/WeAreESAP.git
-cd WeAreESAP/weare-website
-
-pnpm install
+cd WeAreESAP
+nvm install && nvm use
+corepack enable
+pnpm install --frozen-lockfile
+cd weare-website
 pnpm dev              # Dev server → http://localhost:3000
 pnpm run build        # Production build
 pnpm run test:unit    # Unit tests

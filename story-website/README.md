@@ -31,7 +31,7 @@
 
 ## 开发
 
-需要 [pnpm](https://pnpm.io/) 和 Node.js 18+。在仓库根目录先 `pnpm install`，然后：
+需要 Node.js **24.22.1 或更新的 24.x 安全版本**和 **pnpm 12.4.1**。在仓库根目录先运行 `nvm install && nvm use`、`corepack enable`、`pnpm install --frozen-lockfile`，然后：
 
 ```bash
 cd story-website
@@ -78,3 +78,5 @@ types/                  TypeScript 类型定义
 ---
 
 **向那卫星许愿** — The ESAP Project
+
+部署方式与安全版本要求见[部署指南](../docs/DEPLOYMENT.md)。

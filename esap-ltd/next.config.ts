@@ -6,6 +6,7 @@ const withNextIntl = createNextIntlPlugin();
 
 const nextConfig: NextConfig = {
   output: "standalone",
+  outputFileTracingRoot: path.join(__dirname, ".."),
   transpilePackages: ["@esap/shared-ui"],
 
   turbopack: {

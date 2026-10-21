@@ -4,188 +4,165 @@ on:
   push:
     branches: [master]
     paths:
-      - 'website/**'
-      - 'docs/**'
-      - '!website/**/*.md'  # 排除文档
-      - '!website/data/**'  # 排除数据文件
-      - '!website/.next/**' # 排除构建产物
-      - '!website/public/**' # 排除公共资源
-      - '!website/coverage/**'
-      - '!website/test-results/**'
-      - '!website/playwright-report/**'
+      - 'weare-website/**'
+      - 'story-website/**'
+      - 'esap-ltd/**'
+      - 'packages/**'
+      - 'package.json'
+      - 'pnpm-lock.yaml'
+      - 'pnpm-workspace.yaml'
+      - '.npmrc'
+      - '.nvmrc'
+      - '.node-version'
+      - '.dockerignore'
       - '.github/workflows/test.yml'
   pull_request:
     branches: [master, preview]
     paths:
-      - 'website/**'
-      - 'docs/**'
-      - '!website/**/*.md'  # 排除文档
-      - '!website/data/**'  # 排除数据文件
-      - '!website/.next/**' # 排除构建产物
-      - '!website/public/**' # 排除公共资源
-      - '!website/coverage/**'
-      - '!website/test-results/**'
-      - '!website/playwright-report/**'
+      - 'weare-website/**'
+      - 'story-website/**'
+      - 'esap-ltd/**'
+      - 'packages/**'
+      - 'package.json'
+      - 'pnpm-lock.yaml'
+      - 'pnpm-workspace.yaml'
+      - '.npmrc'
+      - '.nvmrc'
+      - '.node-version'
+      - '.dockerignore'
       - '.github/workflows/test.yml'
-
-defaults:
-  run:
-    working-directory: website
 
 jobs:
   lint:
     name: Lint & Format Check
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v4
+      - uses: actions/checkout@v7.0.1
+      - uses: pnpm/action-setup@v6.1.0
+      - uses: actions/setup-node@v7.1.0
         with:
-          version: 10
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '22'
+          node-version-file: '.nvmrc'
           cache: 'pnpm'
-          cache-dependency-path: website/pnpm-lock.yaml
-
-      - name: Install dependencies
-        run: pnpm install --frozen-lockfile
-
-      - name: Run ESLint
-        run: pnpm lint
-
-      - name: Check code formatting
-        run: pnpm format:check
+          cache-dependency-path: pnpm-lock.yaml
+      - run: pnpm install --frozen-lockfile
+      - name: Check all workspace packages with Biome
+        run: pnpm -r lint
 
   test-unit:
-    name: Unit Tests
+    name: Unit Tests (${{ matrix.site }})
     runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        site: [weare-website, story-website, esap-ltd]
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v4
+      - uses: actions/checkout@v7.0.1
+      - uses: pnpm/action-setup@v6.1.0
+      - uses: actions/setup-node@v7.1.0
         with:
-          version: 10
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '22'
+          node-version-file: '.nvmrc'
           cache: 'pnpm'
-          cache-dependency-path: website/pnpm-lock.yaml
-
-      - name: Install dependencies
-        run: pnpm install --frozen-lockfile
-
-      - name: Run unit tests
-        run: pnpm test:unit:run
-
-      - name: Generate coverage report
-        if: always()
-        run: pnpm test:unit:coverage
-
-      - name: Upload coverage report
-        if: always()
-        uses: actions/upload-artifact@v4
+          cache-dependency-path: pnpm-lock.yaml
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm --dir ${{ matrix.site }} run prebuild
+      - name: Run unit tests with coverage
+        if: matrix.site == 'weare-website'
+        run: pnpm --dir weare-website exec vitest run --coverage
+      - name: Run unit tests (allow sites without test files)
+        if: matrix.site != 'weare-website'
+        run: pnpm --dir ${{ matrix.site }} exec vitest run --passWithNoTests
+      - uses: actions/upload-artifact@v7.0.2
+        if: always() && matrix.site == 'weare-website'
         with:
           name: coverage-report
-          path: website/coverage/
+          path: weare-website/coverage/
           retention-days: 30
 
   test-e2e:
     name: E2E Tests
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v4
+      - uses: actions/checkout@v7.0.1
+      - uses: pnpm/action-setup@v6.1.0
+      - uses: actions/setup-node@v7.1.0
         with:
-          version: 10
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '22'
+          node-version-file: '.nvmrc'
           cache: 'pnpm'
-          cache-dependency-path: website/pnpm-lock.yaml
-
-      - name: Install dependencies
-        run: pnpm install --frozen-lockfile
-
-      - name: Install Playwright browsers
-        run: pnpm exec playwright install --with-deps
-
-      - name: Run E2E tests
-        run: pnpm test:e2e
-
-      - name: Upload Playwright report
+          cache-dependency-path: pnpm-lock.yaml
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm --dir weare-website exec playwright install --with-deps chromium firefox
+      - run: pnpm --dir weare-website run test:e2e
+      - uses: actions/upload-artifact@v7.0.2
         if: always()
-        uses: actions/upload-artifact@v4
         with:
           name: playwright-report
-          path: website/playwright-report/
+          path: weare-website/playwright-report/
           retention-days: 30
 
   build:
-    name: Build
+    name: Build (${{ matrix.site }})
     runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        site: [weare-website, story-website, esap-ltd]
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v4
+      - uses: actions/checkout@v7.0.1
+      - uses: pnpm/action-setup@v6.1.0
+      - uses: actions/setup-node@v7.1.0
         with:
-          version: 10
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '22'
+          node-version-file: '.nvmrc'
           cache: 'pnpm'
-          cache-dependency-path: website/pnpm-lock.yaml
-
-      - name: Install dependencies
-        run: pnpm install --frozen-lockfile
-
-      - name: Build project
-        run: pnpm build
+          cache-dependency-path: pnpm-lock.yaml
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm --dir ${{ matrix.site }} run build
         env:
           NODE_ENV: production
+          NEXT_TELEMETRY_DISABLED: '1'
+      - name: Check standalone server
+        run: test -f '${{ matrix.site }}/.next/standalone/${{ matrix.site }}/server.js'
 
-      - name: Check build output
+  docker:
+    name: Docker (${{ matrix.site }})
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        site: [weare-website, story-website, esap-ltd]
+    steps:
+      - uses: actions/checkout@v7.0.1
+      - run: docker build --pull -f '${{ matrix.site }}/Dockerfile' -t esap-site .
+      - name: Check runtime version and container health
         run: |
-          if [ ! -d ".next" ]; then
-            echo "Build failed: .next directory not found"
-            exit 1
-          fi
-          echo "Build successful!"
+          docker run --rm esap-site --version
+          container_id=$(docker run -d -e PORT=3080 esap-site)
+          trap 'docker logs "$container_id"; docker rm -f "$container_id"' EXIT
+          for _ in {1..20}; do
+            health=$(docker inspect --format '{{.State.Health.Status}}' "$container_id")
+            if [ "$health" = healthy ]; then
+              exit 0
+            fi
+            sleep 3
+          done
+          exit 1
 
-  # 汇总所有任务的状态
   all-tests-passed:
     name: All Tests Passed
     runs-on: ubuntu-latest
-    needs: [lint, test-unit, test-e2e, build]
+    needs: [lint, test-unit, test-e2e, build, docker]
     if: always()
-    defaults:
-      run:
-        working-directory: .
     steps:
       - name: Check if all jobs passed
+        env:
+          LINT_RESULT: ${{ needs.lint.result }}
+          UNIT_RESULT: ${{ needs.test-unit.result }}
+          E2E_RESULT: ${{ needs.test-e2e.result }}
+          BUILD_RESULT: ${{ needs.build.result }}
+          DOCKER_RESULT: ${{ needs.docker.result }}
         run: |
-          if [ "${{ needs.lint.result }}" != "success" ] || \
-             [ "${{ needs.test-unit.result }}" != "success" ] || \
-             [ "${{ needs.test-e2e.result }}" != "success" ] || \
-             [ "${{ needs.build.result }}" != "success" ]; then
-            echo "❌ 有测试失败了"
-            exit 1
-          fi
-          echo "✅ 所有测试都通过了！"
+          for result in "$LINT_RESULT" "$UNIT_RESULT" "$E2E_RESULT" "$BUILD_RESULT" "$DOCKER_RESULT"; do
+            if [ "$result" != success ]; then
+              echo 'CI failed'
+              exit 1
+            fi
+          done

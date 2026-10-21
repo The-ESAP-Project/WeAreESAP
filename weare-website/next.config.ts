@@ -6,6 +6,7 @@ const withNextIntl = createNextIntlPlugin();
 
 const nextConfig: NextConfig = {
   output: "standalone",
+  outputFileTracingRoot: path.join(__dirname, ".."),
   transpilePackages: ["@esap/shared-ui"],
 
   // turbopack.root 指向 monorepo 根，让 Turbopack 能访问 pnpm virtual store (.pnpm/)

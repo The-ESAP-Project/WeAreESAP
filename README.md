@@ -35,13 +35,15 @@
 
 ### 本地开发
 
-需要 Node.js >= 18.17 和 [pnpm](https://pnpm.sh/)。
+需要 Node.js **24.22.1 或更新的 24.x 安全版本**和仓库锁定的 **pnpm 12.4.1**。使用 `nvm install && nvm use` 读取根目录 `.nvmrc`，在仓库根目录安装依赖。部署要求见[部署指南](docs/DEPLOYMENT.md)。
 
 ```bash
 git clone https://github.com/The-ESAP-Project/WeAreESAP.git
-cd WeAreESAP/weare-website
-
-pnpm install
+cd WeAreESAP
+nvm install && nvm use
+corepack enable
+pnpm install --frozen-lockfile
+cd weare-website
 pnpm dev              # 开发服务器 → http://localhost:3000
 pnpm run build        # 生产构建
 pnpm run test:unit    # 单元测试
