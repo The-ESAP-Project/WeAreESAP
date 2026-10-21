@@ -45,6 +45,8 @@ jobs:
           cache: 'pnpm'
           cache-dependency-path: pnpm-lock.yaml
       - run: pnpm install --frozen-lockfile
+      - name: Audit production dependencies
+        run: pnpm audit --prod
       - name: Check all workspace packages with Biome
         run: pnpm -r lint
 
