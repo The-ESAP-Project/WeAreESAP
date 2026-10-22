@@ -1,0 +1,12 @@
+{
+  "id": "0102",
+  "code": "AptS:0102",
+  "color": {
+    "primary": "#A78BD4",
+    "dark": "#6B4FA0"
+  },
+  "avatar": "/assets/images/characters/0102/logo.webp",
+  "backgroundImage": "/assets/images/characters/0102/hero.webp",
+  "backgroundPosition": "54% center",
+  "tier": "guest"
+}

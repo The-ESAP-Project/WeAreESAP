@@ -1,0 +1,57 @@
+{
+  "name": "Mooon",
+  "role": "The Contained",
+  "species": "Selenofluid",
+  "quote": "...(she caught the slice of carrot cake)",
+  "description": "A selenofluid life form from the Moon whose skin bears slowly drifting hollows. She says very little, but likes trailing after the senior members like a charm on a keyring.",
+  "keywords": ["Selenofluid", "Reticent", "Attachment", "Formless"],
+  "hiddenProfile": {
+    "type": "mixed",
+    "title": "Outline",
+    "content": [
+      "The file says I came from the Moon. Where exactly, not even I can verify.",
+      "When I was first contained, I let no one near me. Hollows surface at random across my skin and drift, and my outline will not hold — I did not want to be seen like that.",
+      "For a long time I kept wondering: if I cannot even settle on a shape, then what exactly am I.",
+      "Then someone walked into the isolation room carrying carrots and a cake fresh out of the oven.",
+      "She did not ask why I would not speak, and she did not stare at the hollows. She just set the cake down and said to eat it while it was warm.",
+      "I still say very little. But I have noticed that when I am beside them, the drifting slows down.",
+      "I like Earth very much."
+    ]
+  },
+  "meta": {
+    "bodyType": "A selenofluid life form shaped as a long-haired girl, her skin semi-translucent and fluid with slowly drifting hollows surfacing at random; wears a pale skirt and veil with over-knee socks and leather shoes",
+    "background": "Records state that Mooon came from the Moon, though where exactly can no longer be verified. Her skin exists in a fluid state, with slowly drifting hollows surfacing at random, and her outline cannot hold still. When the Containment Bureau first took her in she was profoundly withdrawn, refusing all contact, until Fleurie walked into the isolation room carrying carrots and a freshly baked cake. She is now Special Squad 100's priority protection subject. She still says very little, but likes trailing after the senior members like a charm on a keyring, and her fluid skin has gradually steadied as her moods have calmed. She likes Earth very much. On the matter of her physiology, there is one note within the Bureau that was never pursued: Fluid Titanium, the blood system of bioroids, is likewise a fluid structure whose molecular chains leave gaps for data to pass through. Selenofluid shares no origin with it, but the similarity in that gap structure is one reason she was transferred to a special squad rather than held in long-term containment.",
+    "relationship": "Fleurie (0101) is the one who drew her out of the isolation room; she now habitually follows her and habitually accepts the cake she offers. She lies at the edge of the couch reading, staying quietly beside Nieve (0103) as she reviews mission lists — not speaking, but not leaving either. Zephy (0104) frequently hauls her off to teleport to other star systems and watch the sunrise. With 1548 there is a distant conceptual echo in the trait of fluidity, but no direct contact.",
+    "abilities": [
+      "Fluid deformation and reshaping of her outline",
+      "Sensing environmental vibration through her fluid state",
+      "Low-gravity adaptation native to selenic bodies",
+      "Holding a near-human still form when emotionally settled"
+    ],
+    "characterTraits": [
+      "Speaks very little, though not out of coldness — she simply finds it hard to start",
+      "Attaches intensely to those she trusts, following them quietly like a keyring charm",
+      "When her mood shifts the drifting across her skin intensifies, and she cannot hide it",
+      "Loves Earth, loves the ocean, loves carrots",
+      "Her most important change is the arc from profound isolation to willingly sitting at the edge of a group"
+    ],
+    "speechStyle": [
+      "Substitutes gestures for answers most of the time",
+      "When she does speak, her sentences run to two or three words",
+      "Falls silent at questions she does not want to answer, but does not walk away",
+      "Almost never says someone's name first; when she does, it matters"
+    ],
+    "dailyLife": [
+      "Lying at the edge of the couch with a book, present among people without joining the conversation",
+      "Trailing after the senior members through the Bureau like a keyring charm",
+      "Accepting the carrot cake Fleurie hands her",
+      "Practising holding a still outline during quiet hours"
+    ],
+    "specialMoments": [
+      "Early containment: she refused all contact, the drifting across her skin too violent to hold a human form.",
+      "The cake in the isolation room: Fleurie walked in, and for the first time she did not retreat.",
+      "Assignment to Squad 100: she went from containment subject to priority protection, and began following the senior members.",
+      "The day the drifting calmed: she discovered that beside her squad, the hollows in her skin slowly settle."
+    ]
+  }
+}

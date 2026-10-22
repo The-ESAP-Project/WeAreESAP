@@ -1,0 +1,23 @@
+{
+  "characterId": "0102",
+  "relationships": [
+    {
+      "targetId": "0101",
+      "type": "friend",
+      "label": "最深的联结",
+      "description": "被 0101 用一块胡萝卜蛋糕领出隔离室，此后习惯像挂件一样跟着她"
+    },
+    {
+      "targetId": "0103",
+      "type": "friend",
+      "label": "沉默的陪伴",
+      "description": "趴在沙发边缘看书，待在查任务列表的 0103 旁边，不说话但不离开"
+    },
+    {
+      "targetId": "0104",
+      "type": "friend",
+      "label": "被拉走的人",
+      "description": "经常被 0104 一把拉走，瞬移去其他星系看日出"
+    }
+  ]
+}
