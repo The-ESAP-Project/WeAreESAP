@@ -1,0 +1,56 @@
+{
+  "name": "Nieve",
+  "role": "Anchor",
+  "species": "Arctic Fox (Beastkin)",
+  "quote": "(Her ears twitched. She rolled her eyes, and did not even bother to dodge.)",
+  "description": "A 603-year-old pure white arctic fox, the squad's tactical commander and finest close-quarters fighter. She looks like a mascot with no drive at all, and is in fact the Bureau's foremost strategist.",
+  "keywords": ["Oblivious", "Deduction", "Ambition", "Disguise"],
+  "hiddenProfile": {
+    "type": "mixed",
+    "title": "The Hole Card",
+    "content": [
+      "Six hundred and three years. Long enough to learn where a squad is most likely to die — not from a shortage of firepower, but because someone upstairs wants it.",
+      "So I never hide what I am, and I never explain how far ahead I can actually see. A wool sweater, a cup of coffee, the look of a mascot with no drive whatsoever. That is enough.",
+      "They have sent people to negotiate a few times. On every occasion I knew what they would play before the conversation began, and what they believed they had concealed.",
+      "In the end they could not even keep their hole cards.",
+      "The three of them probably know none of this. Fleurie only knows I drink too much coffee, Zephy complains I drink it too slowly, and Mooon says nothing at all.",
+      "They do not need to know. They only need to stay in that room that smells of osmanthus — that is the outcome I want, not the price I pay."
+    ]
+  },
+  "meta": {
+    "bodyType": "A pure white arctic fox beastkin girl of 603 years, with voluminous white hair, fox ears and a large tail; wears a dense wool sweater and short skirt with tall boots, and is perpetually holding coffee",
+    "background": "Six hundred and three years old, tactical commander and finest close-quarters fighter of Special Squad 100. Day to day she wears a dense wool sweater, holds a cup of coffee, and looks like a mascot with no drive at all — she frequently fails to register changes in anyone's mood whatsoever. The impression is deeply deceptive: her physical reaction speed is among the highest in the Bureau, and her capacity for mental deduction is formidable. She is ambitious with clearly defined goals, and she is the anchor of the entire squad. The Bureau's external leadership has long sought to wrest control of Squad 100 from her, and every attempt has been countered by her precise deduction — they could not even keep their hole cards. She makes no effort to conceal her beastkin nature; in an institution teeming with cross-dimensional anomalous life, there was never much reason to.",
+    "relationship": "With Fleurie (0101) she forms a complementary pair — the part she cannot perceive, other people's feelings, is covered by Fleurie, while the squad's continued existence rests on her deduction. Mooon (0102) sits quietly beside her to read, and she never sends her away. She tolerates everything Zephy (0104) does: complaints about her coffee pace, the cup snatched away mid-drink, her ears being ruffled. She sighs about it, but her tail honestly steers everyone toward the door. She stands in long-running opposition to the Bureau's external leadership, which has repeatedly tried to seize control of Squad 100. She shares a vulpine appearance with ESAP core member 1547 but is neither the same species nor any relation.",
+    "abilities": [
+      "Top-tier physical reaction speed",
+      "High-precision tactical deduction and parallel prediction",
+      "Close-quarters combat (the squad's finest)",
+      "Countering internal power plays within the organisation",
+      "Sustaining the disguise of a harmless mascot indefinitely"
+    ],
+    "characterTraits": [
+      "Obliviousness maxed out; she routinely fails to notice shifts in anyone's mood",
+      "The languid exterior and ever-present coffee are a deeply deceptive disguise",
+      "Her mind moves extremely fast, and so do her reflexes (in the literal sense)",
+      "Deeply ambitious and goal-driven, with the follow-through to match",
+      "Complains about the trouble while always putting the squad first — her tail is more honest than her mouth"
+    ],
+    "speechStyle": [
+      "Flat in tone, short in sentence, rarely explaining the basis for her judgements",
+      "Brushes off follow-up questions with \"mm\" or \"up to you\"",
+      "Becomes abruptly precise when issuing mission orders, wholly at odds with her usual languor",
+      "Never voices concern, but simply has the matter already arranged"
+    ],
+    "dailyLife": [
+      "Sitting in the middle of the couch reviewing mission lists, deducing the optimal route for the next operation",
+      "Drinking coffee slowly, frequently having it snatched away by Zephy halfway through",
+      "Moving through the Bureau in a dense wool sweater, taken for a mascot",
+      "Letting Zephy ruffle her ears without bothering to dodge"
+    ],
+    "specialMoments": [
+      "Negotiations with leadership: external forces moved several times to seize control of the squad, and every outcome was deduced and countered before the conversation began.",
+      "Forming the squad: she chose three members whose combination appeared to have no tactical logic whatsoever.",
+      "The day of departure: she sighed, set down her coffee and stood, and her tail steered everyone toward the door first."
+    ]
+  }
+}

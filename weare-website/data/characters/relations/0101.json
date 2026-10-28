@@ -1,0 +1,23 @@
+{
+  "characterId": "0101",
+  "relationships": [
+    {
+      "targetId": "0102",
+      "type": "friend",
+      "label": "领出隔离室的人",
+      "description": "端着胡萝卜和刚出炉的蛋糕走进隔离室，让 0102 第一次愿意靠近别人"
+    },
+    {
+      "targetId": "0103",
+      "type": "work",
+      "label": "分工互补",
+      "description": "0103 管推演与决策，她管人，补上对方钝感力留下的缺口"
+    },
+    {
+      "targetId": "0104",
+      "type": "friend",
+      "label": "0 秒解码",
+      "description": "0104 的突发奇想总是第一个找她，她能瞬间听懂并开始张罗"
+    }
+  ]
+}

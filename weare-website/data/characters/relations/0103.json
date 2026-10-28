@@ -1,0 +1,23 @@
+{
+  "characterId": "0103",
+  "relationships": [
+    {
+      "targetId": "0101",
+      "type": "work",
+      "label": "互补关系",
+      "description": "察觉不到他人情绪的部分由 0101 兜着，小队的存续由她的推演能力保障"
+    },
+    {
+      "targetId": "0102",
+      "type": "friend",
+      "label": "不赶人",
+      "description": "0102 安静待在她旁边看书，她从不把人赶走"
+    },
+    {
+      "targetId": "0104",
+      "type": "friend",
+      "label": "被逗的对象",
+      "description": "咖啡被抢、耳朵被揉、动作被嫌慢，全都容忍，连躲都懒得躲"
+    }
+  ]
+}
